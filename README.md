@@ -31,7 +31,7 @@ knowledge_base/index/chunks.jsonl
 src/mas4mbts/knowledge/         Knowledge ingestion and retrieval tools
 src/mas4mbts/agents/            Agent implementation
 src/mas4mbts/schemas/           ETM JSON Schema
-examples/                       Example inputs and generated outputs
+examples/phase1_test_suite/     Example contracts, contexts, and threat models
 ```
 
 ## Build Knowledge Base
@@ -79,7 +79,7 @@ The current hybrid retriever combines BM25 sparse retrieval, deterministic local
 
 ```powershell
 python -m src.mas4mbts.agents.erc_threat_model_agent `
-  --input examples/erc20_contract_context.json `
+  --input examples/phase1_test_suite/contexts/simple_erc20_token.context.json `
   --output examples/erc20_threat_model.generated.json
 ```
 
