@@ -1,0 +1,72 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2917",
+  "erc": "ERC-2917",
+  "events": [
+    {
+      "name": "InterestRatePerBlockChanged",
+      "signature": "InterestRatePerBlockChanged(uint,uint)"
+    },
+    {
+      "name": "ProductivityIncreased",
+      "signature": "ProductivityIncreased(address,uint)"
+    },
+    {
+      "name": "ProductivityDecreased",
+      "signature": "ProductivityDecreased(address,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "interestsPerBlock",
+      "operation_type": "contract_interaction",
+      "signature": "interestsPerBlock()"
+    },
+    {
+      "name": "changeInterestRatePerBlock",
+      "operation_type": "contract_interaction",
+      "signature": "changeInterestRatePerBlock(uint)"
+    },
+    {
+      "name": "getProductivity",
+      "operation_type": "contract_interaction",
+      "signature": "getProductivity(address)"
+    },
+    {
+      "name": "increaseProductivity",
+      "operation_type": "contract_interaction",
+      "signature": "increaseProductivity(address,uint)"
+    },
+    {
+      "name": "decreaseProductivity",
+      "operation_type": "contract_interaction",
+      "signature": "decreaseProductivity(address,uint)"
+    },
+    {
+      "name": "take",
+      "operation_type": "contract_interaction",
+      "signature": "take()"
+    },
+    {
+      "name": "takeWithBlock",
+      "operation_type": "contract_interaction",
+      "signature": "takeWithBlock()"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint()"
+    }
+  ],
+  "id": "ERC2917",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2917",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2917.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Based on the product of effective collateral and time, ERC2917 calculates the reward a user can get at any time, and realize the real decentralized DeFi. Here below is the formula for the calculation of reward for a user U: ![concept image](../assets/eip-2917/erc-reward-formula.png \"erc-reward-formula\") where \u2206p<sub>i</sub> denotes individual productivity of the user U between the consecutive block numbers t<sub>i-1</sub> and t<sub>i</sub>, \u2206P<sub>i</sub> denotes global productivity between the consecutive block numbers t<sub>i-1</sub> and t<sub>i</sub>, and \u2206G<sub>i</sub> denotes gross product between the consecutive block numbers t<sub>i-1</sub> and t<sub>i</sub>. The formula ensures that there is no benefit in case of exiting earlier or entering later in the computation. The reward a us",
+  "title": "Staking Reward Calculation"
+}

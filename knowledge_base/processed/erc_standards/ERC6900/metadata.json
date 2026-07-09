@@ -1,0 +1,146 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6900",
+  "erc": "ERC-6900",
+  "events": [
+    {
+      "name": "ExecutionInstalled",
+      "signature": "ExecutionInstalled(address,ExecutionManifest)"
+    },
+    {
+      "name": "ExecutionUninstalled",
+      "signature": "ExecutionUninstalled(address,bool,ExecutionManifest)"
+    },
+    {
+      "name": "ValidationInstalled",
+      "signature": "ValidationInstalled(address,uint32)"
+    },
+    {
+      "name": "ValidationUninstalled",
+      "signature": "ValidationUninstalled(address,uint32,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(address,uint256,bytes)"
+    },
+    {
+      "name": "executeBatch",
+      "operation_type": "contract_interaction",
+      "signature": "executeBatch(Call[])"
+    },
+    {
+      "name": "executeWithRuntimeValidation",
+      "operation_type": "contract_interaction",
+      "signature": "executeWithRuntimeValidation(bytes,bytes)"
+    },
+    {
+      "name": "installExecution",
+      "operation_type": "contract_interaction",
+      "signature": "installExecution(address,ExecutionManifest,bytes)"
+    },
+    {
+      "name": "uninstallExecution",
+      "operation_type": "contract_interaction",
+      "signature": "uninstallExecution(address,ExecutionManifest,bytes)"
+    },
+    {
+      "name": "installValidation",
+      "operation_type": "contract_interaction",
+      "signature": "installValidation(ValidationConfig,bytes4[],bytes,bytes[])"
+    },
+    {
+      "name": "uninstallValidation",
+      "operation_type": "contract_interaction",
+      "signature": "uninstallValidation(ModuleEntity,bytes,bytes[])"
+    },
+    {
+      "name": "accountId",
+      "operation_type": "contract_interaction",
+      "signature": "accountId()"
+    },
+    {
+      "name": "getExecutionData",
+      "operation_type": "contract_interaction",
+      "signature": "getExecutionData(bytes4)"
+    },
+    {
+      "name": "getValidationData",
+      "operation_type": "contract_interaction",
+      "signature": "getValidationData(ModuleEntity)"
+    },
+    {
+      "name": "onInstall",
+      "operation_type": "contract_interaction",
+      "signature": "onInstall(bytes)"
+    },
+    {
+      "name": "onUninstall",
+      "operation_type": "contract_interaction",
+      "signature": "onUninstall(bytes)"
+    },
+    {
+      "name": "moduleId",
+      "operation_type": "contract_interaction",
+      "signature": "moduleId()"
+    },
+    {
+      "name": "validateUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "validateUserOp(uint32,PackedUserOperation,bytes32)"
+    },
+    {
+      "name": "validateRuntime",
+      "operation_type": "contract_interaction",
+      "signature": "validateRuntime(address,uint32,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "validateSignature",
+      "operation_type": "contract_interaction",
+      "signature": "validateSignature(address,uint32,address,bytes32,bytes)"
+    },
+    {
+      "name": "preUserOpValidationHook",
+      "operation_type": "contract_interaction",
+      "signature": "preUserOpValidationHook(uint32,PackedUserOperation,bytes32)"
+    },
+    {
+      "name": "preRuntimeValidationHook",
+      "operation_type": "contract_interaction",
+      "signature": "preRuntimeValidationHook(uint32,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "preSignatureValidationHook",
+      "operation_type": "contract_interaction",
+      "signature": "preSignatureValidationHook(uint32,address,bytes32,bytes)"
+    },
+    {
+      "name": "executionManifest",
+      "operation_type": "contract_interaction",
+      "signature": "executionManifest()"
+    },
+    {
+      "name": "preExecutionHook",
+      "operation_type": "contract_interaction",
+      "signature": "preExecutionHook(uint32,address,uint256,bytes)"
+    },
+    {
+      "name": "postExecutionHook",
+      "operation_type": "contract_interaction",
+      "signature": "postExecutionHook(uint32,bytes)"
+    }
+  ],
+  "id": "ERC6900",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6900",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6900.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal standardizes smart contract accounts and account modules, which are smart contracts that allow for composable logic within smart contract accounts. This proposal is compliant with [ERC-4337](./eip-4337.md). This standard emphasizes secure permissioning of modules, and maximal interoperability between all spec-compliant accounts and modules. This modular approach splits account functionality into three categories, implements them in external contracts, and defines an expected execution flow from accounts.",
+  "title": "Modular Smart Contract Accounts"
+}

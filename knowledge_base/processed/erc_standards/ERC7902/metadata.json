@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7902",
+  "erc": "ERC-7902",
+  "events": [],
+  "functions": [],
+  "id": "ERC7902",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7902",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7902.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "[EIP-5792](./eip-5792) defines a baseline JSON-RPC API for a communication between wallets and dapps, and provides an ability to extend the base protocol with \"capabilities\". This proposal defines a set of \"capabilities\" the wallets may want to implement in order to provide a comprehensive support for Account Abstraction (AA). These \"capabilities\" enable passing any data that may be required when using a Paymaster contract, allows limiting the time range during which the UserOperation is considered valid, provides a way for the dApp to manually control the semi-abstracted nonce and AA-specific gas limits of the UserOp, and even allow the dApp to take part in selecting the [EIP-7702](./eip-7702) account implementation.",
+  "title": "Wallet Capabilities for Account Abstraction"
+}

@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7585",
+  "erc": "ERC-7585",
+  "events": [],
+  "functions": [
+    {
+      "name": "verifyDataProof",
+      "operation_type": "contract_interaction",
+      "signature": "verifyDataProof(mixHash,blockHeight,m_index,m_path,m_leaf_data)"
+    },
+    {
+      "name": "getPublicDataOwner",
+      "operation_type": "contract_interaction",
+      "signature": "getPublicDataOwner(bytes32)"
+    },
+    {
+      "name": "tokenIdIsMixHash",
+      "operation_type": "contract_interaction",
+      "signature": "tokenIdIsMixHash()"
+    },
+    {
+      "name": "tokenDataHash",
+      "operation_type": "contract_interaction",
+      "signature": "tokenDataHash(uint256)"
+    }
+  ],
+  "id": "ERC7585",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7585",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7585.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a design for \"minimum value selection\" storage proofs on Merkle trees. The design consists of two main components: 1. A hashing algorithm termed MixHash, aimed to replace the commonly used Keccak256 and SHA256 algorithms. 2. Public data storage proofs. This enables anyone to present a proof to a public network, verifying their possession of a copy of specific public data marked by MixHash. Additionally, the proposal discusses the practical implementation of this design in various scenarios and suggests some improvements to the [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) standards.",
+  "title": "MixHash and Public Data Storage Proofs"
+}

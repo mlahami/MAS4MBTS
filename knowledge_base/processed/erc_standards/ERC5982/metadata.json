@@ -1,0 +1,115 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5982",
+  "erc": "ERC-5982",
+  "events": [
+    {
+      "name": "RoleGranted",
+      "signature": "RoleGranted(address,bytes32,address,bytes)"
+    },
+    {
+      "name": "RoleRevoked",
+      "signature": "RoleRevoked(address,bytes32,address,bytes)"
+    },
+    {
+      "name": "RoleCreated",
+      "signature": "RoleCreated(address,bytes32,bytes32,string,string,string,bytes32)"
+    },
+    {
+      "name": "RoleDestroyed",
+      "signature": "RoleDestroyed(address,bytes32,bytes32)"
+    },
+    {
+      "name": "RolePowerSet",
+      "signature": "RolePowerSet(address,bytes32,bytes4,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "hasRole",
+      "operation_type": "contract_interaction",
+      "signature": "hasRole(bytes32,address)"
+    },
+    {
+      "name": "grantRole",
+      "operation_type": "contract_interaction",
+      "signature": "grantRole(bytes32,address)"
+    },
+    {
+      "name": "revokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "revokeRole(bytes32,address)"
+    },
+    {
+      "name": "grantRole",
+      "operation_type": "contract_interaction",
+      "signature": "grantRole(bytes32,address,bytes)"
+    },
+    {
+      "name": "revokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "revokeRole(bytes32,address,bytes)"
+    },
+    {
+      "name": "createRole",
+      "operation_type": "contract_interaction",
+      "signature": "createRole(bytes32,bytes32,string,string,string,bytes32)"
+    },
+    {
+      "name": "destroyRole",
+      "operation_type": "contract_interaction",
+      "signature": "destroyRole(bytes32,bytes32)"
+    },
+    {
+      "name": "setRolePower",
+      "operation_type": "contract_interaction",
+      "signature": "setRolePower(bytes32,bytes4,bytes)"
+    },
+    {
+      "name": "hasRole",
+      "operation_type": "contract_interaction",
+      "signature": "hasRole(bytes32,address,bytes)"
+    },
+    {
+      "name": "canGrantRole",
+      "operation_type": "contract_interaction",
+      "signature": "canGrantRole(bytes32,bytes32,bytes)"
+    },
+    {
+      "name": "canRevokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "canRevokeRole(bytes32,bytes32,address,bytes)"
+    },
+    {
+      "name": "canExecute",
+      "operation_type": "contract_interaction",
+      "signature": "canExecute(bytes32,bytes4,bytes32,bytes)"
+    },
+    {
+      "name": "roleName",
+      "operation_type": "contract_interaction",
+      "signature": "roleName(bytes32)"
+    },
+    {
+      "name": "roleDescription",
+      "operation_type": "contract_interaction",
+      "signature": "roleDescription(bytes32)"
+    },
+    {
+      "name": "roleURI",
+      "operation_type": "contract_interaction",
+      "signature": "roleURI(bytes32)"
+    }
+  ],
+  "id": "ERC5982",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5982",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5982.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP defines an interface for role-based access control for smart contracts. Roles are defined as `byte32`. The interface specifies how to read, grant, create, and destroy roles. It specifies the meaning of role power in terms of the ability to call a given method identified by a `bytes4` method selector. It also specifies how metadata of roles are represented.",
+  "title": "Role-based Access Control"
+}

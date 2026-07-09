@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Calculation**",
+  "cwe": "CWE-682",
+  "description": "Bitwise operations (e.g., `&`, `|`, `^`, `<<`, `>>`) can be efficient alternatives to arithmetic operations but are prone to errors if not used correctly. Misusing bitwise shifts can cause unintended value changes, integer overflows, or precision loss. Solidity lacks native overflow checks for bitwise shifts, making incorrect handling particularly dangerous in financial calculations or cryptographic functions.",
+  "id": "VULN-OWASP-SCWE-066",
+  "name": "Incorrect Handling of Bitwise Operations",
+  "owasp": "SCWE-066",
+  "remediation": "- Ensure bitwise shifts do not exceed the size of the data type (e.g., shifting a `uint8` left by 8+ bits). - Validate input ranges before performing shifts to prevent overflow or precision loss. - Avoid unnecessary bitwise operations in financial calculations unless explicitly needed.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-066.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

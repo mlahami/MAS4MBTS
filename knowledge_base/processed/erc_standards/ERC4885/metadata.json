@@ -1,0 +1,57 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4885",
+  "erc": "ERC-4885",
+  "events": [
+    {
+      "name": "InitializeSubscriptionToken",
+      "signature": "InitializeSubscriptionToken(string,string,address,address,address,address,string)"
+    },
+    {
+      "name": "SubscribeToNFT",
+      "signature": "SubscribeToNFT(address,uint256,string)"
+    },
+    {
+      "name": "Deposit",
+      "signature": "Deposit(address,uint256,uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "subscribeToNFT",
+      "operation_type": "contract_interaction",
+      "signature": "subscribeToNFT(address,uint256,string)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,uint256,uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    }
+  ],
+  "id": "ERC4885",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4885",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4885.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for subscribing to non-fungible and multi tokens. [EIP-20](./eip-20.md) tokens are deposited in exchange for subscription tokens that give the right to use said non-fungible and multi tokens for a specified time limited or unlimited period.",
+  "title": "Subscription NFTs and Multi Tokens"
+}

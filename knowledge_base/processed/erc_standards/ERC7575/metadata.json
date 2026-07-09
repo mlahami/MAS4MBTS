@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7575",
+  "erc": "ERC-7575",
+  "events": [],
+  "functions": [
+    {
+      "name": "updateVault",
+      "operation_type": "contract_interaction",
+      "signature": "updateVault(address,address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC7575",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7575",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7575.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The following standard adapts [ERC-4626](./eip-4626.md) to support multiple assets or entry points for the same share token. This also enables Vaults which don't have a true share token but rather convert between two arbitrary external tokens. It adds a new `share` method to the Vault, to allow the [ERC-20](./eip-20.md) dependency to be externalized. It also adds Vault-to-Share lookup to the share token. Lastly, it enforces [ERC-165](./eip-165.md) support for Vaults and the share token.",
+  "title": "Multi-Asset ERC-4626 Vaults"
+}

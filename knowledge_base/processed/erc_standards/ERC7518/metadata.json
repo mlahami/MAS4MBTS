@@ -1,0 +1,164 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7518",
+  "erc": "ERC-7518",
+  "events": [
+    {
+      "name": "TokensLocked",
+      "signature": "TokensLocked(address,uint,uint256,uint256)"
+    },
+    {
+      "name": "TokenUnlocked",
+      "signature": "TokenUnlocked(address,uint)"
+    },
+    {
+      "name": "TokensForceTransferred",
+      "signature": "TokensForceTransferred(address,address,uint,uint256)"
+    },
+    {
+      "name": "AddressFrozen",
+      "signature": "AddressFrozen(address,bytes)"
+    },
+    {
+      "name": "AddressUnfrozen",
+      "signature": "AddressUnfrozen(address,bytes)"
+    },
+    {
+      "name": "TransferRestricted",
+      "signature": "TransferRestricted(uint)"
+    },
+    {
+      "name": "TransferRestrictionRemoved",
+      "signature": "TransferRestrictionRemoved(uint)"
+    },
+    {
+      "name": "PayoutDelivered",
+      "signature": "PayoutDelivered(address,address,uint256)"
+    },
+    {
+      "name": "WrappedTokenAddressSet",
+      "signature": "WrappedTokenAddressSet(address)"
+    },
+    {
+      "name": "TokensWrapped",
+      "signature": "TokensWrapped(uint,uint256)"
+    },
+    {
+      "name": "TokensUnwrapped",
+      "signature": "TokensUnwrapped(uint,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transferableBalance",
+      "operation_type": "contract_interaction",
+      "signature": "transferableBalance(address,uint)"
+    },
+    {
+      "name": "lockedBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "lockedBalanceOf(address,uint256)"
+    },
+    {
+      "name": "restrictTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "restrictTransfer(uint)"
+    },
+    {
+      "name": "removeRestriction",
+      "operation_type": "contract_interaction",
+      "signature": "removeRestriction(uint)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "canTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "canTransfer(address,address,uint,uint,bytes)"
+    },
+    {
+      "name": "lockTokens",
+      "operation_type": "contract_interaction",
+      "signature": "lockTokens(address,uint,uint256,uint256)"
+    },
+    {
+      "name": "unlockToken",
+      "operation_type": "contract_interaction",
+      "signature": "unlockToken(address,uint256)"
+    },
+    {
+      "name": "forceTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "forceTransfer(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "freezeAddress",
+      "operation_type": "contract_interaction",
+      "signature": "freezeAddress(address,bytes)"
+    },
+    {
+      "name": "unFreeze",
+      "operation_type": "contract_interaction",
+      "signature": "unFreeze(address,bytes)"
+    },
+    {
+      "name": "payout",
+      "operation_type": "contract_interaction",
+      "signature": "payout(address,uint256)"
+    },
+    {
+      "name": "batchPayout",
+      "operation_type": "contract_interaction",
+      "signature": "batchPayout(address[],uint256[])"
+    },
+    {
+      "name": "setWrappedToken",
+      "operation_type": "contract_interaction",
+      "signature": "setWrappedToken(address)"
+    },
+    {
+      "name": "wrapToken",
+      "operation_type": "contract_interaction",
+      "signature": "wrapToken(uint256,bytes)"
+    },
+    {
+      "name": "wrapTokenFromPartition",
+      "operation_type": "contract_interaction",
+      "signature": "wrapTokenFromPartition(bytes32,uint256,uint256,bytes)"
+    },
+    {
+      "name": "unwrapToken",
+      "operation_type": "contract_interaction",
+      "signature": "unwrapToken(uint256,uint256,bytes)"
+    },
+    {
+      "name": "wrappedBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "wrappedBalanceOf(address,uint256,bytes)"
+    },
+    {
+      "name": "originalBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "originalBalanceOf(address,uint256,bytes)"
+    },
+    {
+      "name": "setWrappedTokenAddress",
+      "operation_type": "contract_interaction",
+      "signature": "setWrappedTokenAddress(address)"
+    }
+  ],
+  "id": "ERC7518",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7518",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7518.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal is a security token standard that extends [ERC-1155](./eip-1155.md) to provide a flexible framework for managing compliant real-asset security tokens. It introduces the concept of partitions, where each `tokenId` represents a distinct partition with its own set of rights and privileges. This makes it suitable for various use cases, particularly semi-fungible asset management. The standard also includes features like token locking, forced transfers for recovery, address freezing, payouts, and dynamic compliance management using off-chain vouchers.",
+  "title": "Dynamic Compliant Interop Security Token"
+}

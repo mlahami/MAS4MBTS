@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1178",
+  "erc": "ERC-1178",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "className",
+      "operation_type": "contract_interaction",
+      "signature": "className(uint256)"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "individualSupply",
+      "operation_type": "contract_interaction",
+      "signature": "individualSupply(uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address,uint256)"
+    },
+    {
+      "name": "classesOwned",
+      "operation_type": "contract_interaction",
+      "signature": "classesOwned(address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,uint256)"
+    },
+    {
+      "name": "approveForToken",
+      "operation_type": "contract_interaction",
+      "signature": "approveForToken(uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "exchange",
+      "operation_type": "contract_interaction",
+      "signature": "exchange(address,uint256,uint256,uint256,uint256)"
+    }
+  ],
+  "id": "ERC1178",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1178",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1178.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard allows for the implementation of a standard API for multi-class fungible tokens (henceforth referred to as \"MCFTs\") within smart contracts. This standard provides basic functionality to track and transfer ownership of MCFTs.",
+  "title": "Multi-class Token Standard"
+}

@@ -1,0 +1,108 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7579",
+  "erc": "ERC-7579",
+  "events": [
+    {
+      "name": "ModuleInstalled",
+      "signature": "ModuleInstalled(uint256,address)"
+    },
+    {
+      "name": "ModuleUninstalled",
+      "signature": "ModuleUninstalled(uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(bytes32,bytes)"
+    },
+    {
+      "name": "executeFromExecutor",
+      "operation_type": "contract_interaction",
+      "signature": "executeFromExecutor(bytes32,bytes)"
+    },
+    {
+      "name": "executeUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "executeUserOp(PackedUserOperation,bytes32)"
+    },
+    {
+      "name": "accountId",
+      "operation_type": "contract_interaction",
+      "signature": "accountId()"
+    },
+    {
+      "name": "supportsExecutionMode",
+      "operation_type": "contract_interaction",
+      "signature": "supportsExecutionMode(bytes32)"
+    },
+    {
+      "name": "supportsModule",
+      "operation_type": "contract_interaction",
+      "signature": "supportsModule(uint256)"
+    },
+    {
+      "name": "installModule",
+      "operation_type": "contract_interaction",
+      "signature": "installModule(uint256,address,bytes)"
+    },
+    {
+      "name": "uninstallModule",
+      "operation_type": "contract_interaction",
+      "signature": "uninstallModule(uint256,address,bytes)"
+    },
+    {
+      "name": "isModuleInstalled",
+      "operation_type": "contract_interaction",
+      "signature": "isModuleInstalled(uint256,address,bytes)"
+    },
+    {
+      "name": "onInstall",
+      "operation_type": "contract_interaction",
+      "signature": "onInstall(bytes)"
+    },
+    {
+      "name": "onUninstall",
+      "operation_type": "contract_interaction",
+      "signature": "onUninstall(bytes)"
+    },
+    {
+      "name": "isModuleType",
+      "operation_type": "contract_interaction",
+      "signature": "isModuleType(uint256)"
+    },
+    {
+      "name": "validateUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "validateUserOp(PackedUserOperation,bytes32)"
+    },
+    {
+      "name": "isValidSignatureWithSender",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignatureWithSender(address,bytes32,bytes)"
+    },
+    {
+      "name": "preCheck",
+      "operation_type": "contract_interaction",
+      "signature": "preCheck(address,uint256,bytes)"
+    },
+    {
+      "name": "postCheck",
+      "operation_type": "contract_interaction",
+      "signature": "postCheck(bytes)"
+    }
+  ],
+  "id": "ERC7579",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7579",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7579.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal outlines the minimally required interfaces and behavior for modular smart accounts and modules to ensure interoperability across implementations. For accounts, the standard specifies execution, config and fallback interfaces as well as compliance to [ERC-165](./eip-165.md) and [ERC-1271](./eip-1271.md). For modules, the standard specifies a core interface, module types and type-specific interfaces.",
+  "title": "Minimal Modular Smart Accounts"
+}

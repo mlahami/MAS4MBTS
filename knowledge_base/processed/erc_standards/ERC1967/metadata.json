@@ -1,0 +1,132 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1967",
+  "erc": "ERC-1967",
+  "events": [
+    {
+      "name": "Upgraded",
+      "signature": "Upgraded(address)"
+    },
+    {
+      "name": "BeaconUpgraded",
+      "signature": "BeaconUpgraded(address)"
+    },
+    {
+      "name": "AdminChanged",
+      "signature": "AdminChanged(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "implementation",
+      "operation_type": "contract_interaction",
+      "signature": "implementation()"
+    },
+    {
+      "name": "_implementation",
+      "operation_type": "contract_interaction",
+      "signature": "_implementation()"
+    },
+    {
+      "name": "_getImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "_getImplementation()"
+    },
+    {
+      "name": "_setImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "_setImplementation(address)"
+    },
+    {
+      "name": "_upgradeTo",
+      "operation_type": "contract_interaction",
+      "signature": "_upgradeTo(address)"
+    },
+    {
+      "name": "_upgradeToAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "_upgradeToAndCall(address,bytes,bool)"
+    },
+    {
+      "name": "_upgradeToAndCallSecure",
+      "operation_type": "contract_interaction",
+      "signature": "_upgradeToAndCallSecure(address,bytes,bool)"
+    },
+    {
+      "name": "_getAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "_getAdmin()"
+    },
+    {
+      "name": "_setAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "_setAdmin(address)"
+    },
+    {
+      "name": "_changeAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "_changeAdmin(address)"
+    },
+    {
+      "name": "_getBeacon",
+      "operation_type": "contract_interaction",
+      "signature": "_getBeacon()"
+    },
+    {
+      "name": "_setBeacon",
+      "operation_type": "contract_interaction",
+      "signature": "_setBeacon(address)"
+    },
+    {
+      "name": "_upgradeBeaconToAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "_upgradeBeaconToAndCall(address,bytes,bool)"
+    },
+    {
+      "name": "_delegate",
+      "operation_type": "contract_interaction",
+      "signature": "_delegate(address)"
+    },
+    {
+      "name": "_fallback",
+      "operation_type": "contract_interaction",
+      "signature": "_fallback()"
+    },
+    {
+      "name": "_beforeFallback",
+      "operation_type": "contract_interaction",
+      "signature": "_beforeFallback()"
+    },
+    {
+      "name": "getAddressSlot",
+      "operation_type": "contract_interaction",
+      "signature": "getAddressSlot(bytes32)"
+    },
+    {
+      "name": "getBooleanSlot",
+      "operation_type": "contract_interaction",
+      "signature": "getBooleanSlot(bytes32)"
+    },
+    {
+      "name": "getBytes32Slot",
+      "operation_type": "contract_interaction",
+      "signature": "getBytes32Slot(bytes32)"
+    },
+    {
+      "name": "getUint256Slot",
+      "operation_type": "contract_interaction",
+      "signature": "getUint256Slot(bytes32)"
+    }
+  ],
+  "id": "ERC1967",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1967",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1967.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Delegating **proxy contracts** are widely used for both upgradeability and gas savings. These proxies rely on a **logic contract** (also known as implementation contract or master copy) that is called using `delegatecall`. This allows proxies to keep a persistent state (storage and balance) while the code is delegated to the logic contract. To avoid clashes in storage usage between the proxy and logic contract, the address of the logic contract is typically saved in a specific storage slot (for example `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc` in OpenZeppelin contracts) guaranteed to be never allocated by a compiler. This EIP proposes a set of standard slots to store proxy information. This allows clients like block explorers to properly extract and show this inf",
+  "title": "Proxy Storage Slots"
+}

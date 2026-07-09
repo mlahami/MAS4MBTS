@@ -1,0 +1,16 @@
+{
+  "category": "Improper Verification of Cryptographic Signature",
+  "cwe": "CWE-347",
+  "description": "Insufficient hash verification refers to the failure to properly verify hashes, such as message hashes or transaction hashes. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of the contract's logic.",
+  "id": "VULN-OWASP-SCWE-026",
+  "name": "Insufficient Hash Verification",
+  "owasp": "SCWE-026",
+  "remediation": "- **Validate hashes:** Ensure all hashes are properly verified before processing. - **Use secure libraries:** Leverage well-audited libraries for hash verification. - **Test thoroughly:** Conduct extensive testing to ensure hash verification works as intended.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-026.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

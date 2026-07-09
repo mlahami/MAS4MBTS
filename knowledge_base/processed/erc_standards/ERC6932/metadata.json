@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6932",
+  "erc": "ERC-6932",
+  "events": [],
+  "functions": [
+    {
+      "name": "subscribers",
+      "operation_type": "contract_interaction",
+      "signature": "subscribers(uint)"
+    },
+    {
+      "name": "subscriptionInfo",
+      "operation_type": "contract_interaction",
+      "signature": "subscriptionInfo()"
+    },
+    {
+      "name": "subscribe",
+      "operation_type": "contract_interaction",
+      "signature": "subscribe()"
+    },
+    {
+      "name": "unsubscribe",
+      "operation_type": "contract_interaction",
+      "signature": "unsubscribe()"
+    },
+    {
+      "name": "subscriptionFee",
+      "operation_type": "contract_interaction",
+      "signature": "subscriptionFee()"
+    },
+    {
+      "name": "subscriptionFrequency",
+      "operation_type": "contract_interaction",
+      "signature": "subscriptionFrequency()"
+    }
+  ],
+  "id": "ERC6932",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6932",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6932.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This subscription-based [ERC-20](./eip-20.md) token extends the basic [ERC-20](./eip-20.md) token standard with a `subscribe` and `unsubscribe` function, which allow users to subscribe or unsubscribe from the subscription service. The `subscriptionFee` and `subscriptionFrequency` variables define the cost and frequency of the subscription. The `nextPaymentDate` mapping keeps track of the next payment date for each subscriber. This token standard will enable automatic periodic deductions from user balances as determined by the merchant subscriber. Simplify and streamline subscription-based services on the Ethereum network, offering enhanced convenience and efficiency for users and merchants alike. A `renewSubscription` method, that will be used by token holders to renew their subscription t",
+  "title": "Subscription-Based Token"
+}

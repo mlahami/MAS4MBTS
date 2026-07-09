@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7739",
+  "erc": "ERC-7739",
+  "events": [],
+  "functions": [
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7739",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7739",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7739.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal defines a standard to prevent signature replays across multiple smart accounts when they are owned by a single Externally Owned Account (EOA). This is achieved through a defensive rehashing scheme for [ERC-1271](./eip-1271.md) verification using specific nested [EIP-712](./eip-712.md) typed structures, which preserves the readability of the signed contents during wallet client signature requests.",
+  "title": "Readable Typed Signatures for Smart Accounts"
+}

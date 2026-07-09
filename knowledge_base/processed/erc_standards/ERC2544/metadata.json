@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2544",
+  "erc": "ERC-2544",
+  "events": [],
+  "functions": [
+    {
+      "name": "resolve",
+      "operation_type": "contract_interaction",
+      "signature": "resolve(bytes,bytes)"
+    },
+    {
+      "name": "getResolver",
+      "operation_type": "contract_interaction",
+      "signature": "getResolver(name)"
+    },
+    {
+      "name": "resolve",
+      "operation_type": "contract_interaction",
+      "signature": "resolve(name,func,...args)"
+    }
+  ],
+  "id": "ERC2544",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2544",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2544.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The Ethereum Name Service Specification (EIP-137) establishes a two-step name resolution process. First, an ENS client performs the namehash algorithm on the name to determine the associated \"node\", and supplies that node to the ENS Registry contract to determine the resolver. Then, if a resolver has been set on the Registry, the client supplies that same node to the resolver contract, which will return the associated address or other record. As currently specified, this process terminates if a resolver is not set on the ENS Registry for a given node. This EIP changes the name resolution process by adding an additional step if a resolver is not set for a domain. This step strips out the leftmost label from the name, derives the node of the new fragment, and supplies that node to the ENS Re",
+  "title": "ENS Wildcard Resolution"
+}

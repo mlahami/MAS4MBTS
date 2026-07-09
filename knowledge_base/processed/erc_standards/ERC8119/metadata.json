@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8119",
+  "erc": "ERC-8119",
+  "events": [],
+  "functions": [
+    {
+      "name": "setMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "setMetadata(string,bytes)"
+    },
+    {
+      "name": "getMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadata(string)"
+    }
+  ],
+  "id": "ERC8119",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8119",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8119.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines standard formats for parameterized string keys used in EVM key-value storage. It supports two encodings: a slash/colon form for a single parameter (`<key-label>/<key-parameter>` or `<key-label>:<key-parameter>`) and a bracket form for one or more parameters (`<key-label>[<key-parameter-1>][<key-parameter-2>]...`).",
+  "title": "Parameterized Storage Keys"
+}

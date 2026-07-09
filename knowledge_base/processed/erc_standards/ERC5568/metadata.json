@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5568",
+  "erc": "ERC-5568",
+  "events": [],
+  "functions": [
+    {
+      "name": "walletSignal24",
+      "operation_type": "contract_interaction",
+      "signature": "walletSignal24(bytes32,bytes)"
+    }
+  ],
+  "id": "ERC5568",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5568",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5568.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This ERC introduces a minimalistic machine-readable (binary) format to signal to wallets that an action needs to be taken by the user using a well-known function and revert reason. It provides just enough data to be extendable by future ERCs and to take in arbitrary parameters (up to 64 kB of data). Example use cases could include approving a token for an exchange, sending an HTTP request, or requesting the user to rotate their keys after a certain period of time to enforce good hygiene.",
+  "title": "Well-Known Format for Required Actions"
+}

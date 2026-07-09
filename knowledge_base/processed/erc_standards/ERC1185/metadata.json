@@ -1,0 +1,76 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1185",
+  "erc": "ERC-1185",
+  "events": [
+    {
+      "name": "DNSRecordChanged",
+      "signature": "DNSRecordChanged(bytes32,bytes,uint16,bytes)"
+    },
+    {
+      "name": "DNSRecordDeleted",
+      "signature": "DNSRecordDeleted(bytes32,bytes,uint16)"
+    },
+    {
+      "name": "DNSZoneCleared",
+      "signature": "DNSZoneCleared(bytes32)"
+    },
+    {
+      "name": "DNSZonehashChanged",
+      "signature": "DNSZonehashChanged(bytes32,bytes,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setDNSRecords",
+      "operation_type": "contract_interaction",
+      "signature": "setDNSRecords(bytes32,bytes)"
+    },
+    {
+      "name": "dnsRecord",
+      "operation_type": "contract_interaction",
+      "signature": "dnsRecord(bytes32,bytes32,uint16)"
+    },
+    {
+      "name": "hasDNSRecords",
+      "operation_type": "contract_interaction",
+      "signature": "hasDNSRecords(bytes32,bytes32)"
+    },
+    {
+      "name": "clearDNSZone",
+      "operation_type": "contract_interaction",
+      "signature": "clearDNSZone(bytes32)"
+    },
+    {
+      "name": "setZonehash",
+      "operation_type": "contract_interaction",
+      "signature": "setZonehash(bytes32,bytes)"
+    },
+    {
+      "name": "zonehash",
+      "operation_type": "contract_interaction",
+      "signature": "zonehash(bytes32)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "setDNSRRSet",
+      "operation_type": "contract_interaction",
+      "signature": "setDNSRRSet(bytes32,bytes,uint16,bytes,uint256,uint256,bool)"
+    }
+  ],
+  "id": "ERC1185",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1185",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1185.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP defines a resolver profile for ENS that provides features for storage and lookup of DNS records. This allows ENS to be used as a store of authoritative DNS information.",
+  "title": "Storage of DNS Records in ENS"
+}

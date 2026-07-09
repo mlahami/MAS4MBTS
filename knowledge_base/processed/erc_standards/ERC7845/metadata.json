@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7845",
+  "erc": "ERC-7845",
+  "events": [],
+  "functions": [],
+  "id": "ERC7845",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7845",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7845.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "> \"Hey smart speaker, swap my Shiba Inu for Pillar\" > \"Assistant, how much USDC can I buy with what's in my wallet?\" > \"Send 10 OP to Vitalik and 5 PEPE to Deimantas\" The Universal Orchestrator RPC aims to standardise the **minimum shape and requirements** of a **request for a solution** **_from_** an arbitrary system managing an Ethereum wallet **_to_**, ultimately, an Orchestrator. An arbitrary system could be a website, device, app, server program etc - anything that manages an Ethereum wallet, **speaks Ethereum JSON-RPC** and is looking to request solutions from an Orchestrator. All solutions from an Orchestrator are ChA\u00b9 (Chain Abstraction-first) by default. ![Flow](../assets/eip-7845/flow.jpg)",
+  "title": "Universal Orchestrator RPC"
+}

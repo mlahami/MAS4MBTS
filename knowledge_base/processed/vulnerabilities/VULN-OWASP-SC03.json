@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Price oracle manipulation describes any situation where a smart contract relies on price or valuation data that can be **directly or indirectly influenced by an attacker**, causing the protocol to make decisions based on incorrect values. Oracles are trust boundaries: the contract implicitly trusts that the price it receives reflects real-world or on-chain market conditions. When that trust is violated\u2014whether by manipulation, staleness, or misconfiguration\u2014protocol behavior is distorted. This affects all contract types that consume price data: DeFi lending and borrowing (collateral valuation, liquidation), AMMs and DEXes (spot and TWAP-based pricing), yield vaults (NAV calculations, share valuation), liquid staking and derivatives (ETH/stake price feeds), NFT and token valuations (floor price oracles), and cross-chain bridges (asset pricing for mint/burn ratios). On non-EVM chains (e.g., Move, Solana), similar patterns apply wherever external price sources feed into on-chain logic. Few areas to focus on: - **DEX-based oracles** (spot price, TWAP, geometric mean) and resistance to flash loans, JIT liquidity, or concentrated liquidity skew - **Off-chain and hybrid feeds** (Chainlink, Pyth, custom relayers) and assumptions about freshness, deviation, and multi-source aggregation - **Liquidity and market depth** of the underlying price source (thin pools vs. deep markets) - **Cross-chain and L2 pricing** (finality delays, sequencer ordering, message relay assumptions) Attackers exploit: - **Spot price manipulation** via large trades, flash loans, or JIT liquidity in the same block - **TWAP manipulation** over short windows or during low-liquidity periods - **Stale or stuck data** when contracts do not enforce freshness or fallback behavior - **Deviation and outlier handlin",
+  "id": "VULN-OWASP-SC03",
+  "name": "SC03:2026 Price Oracle Manipulation",
+  "owasp": "SC03",
+  "remediation": "- **Aggregate multiple sources**: - Use median/mean of several DEXs / oracles. - Reject outliers and anomalous deviations. - **Time-based defenses**: - Use TWAPs over sufficient windows to resist short-lived manipulations. - Reject prices older than a maximum staleness threshold. - **Liquidity-aware design**: - Avoid basing core prices on **illiquid pools**. - Cap impact of a single pool/feed on global pricing. - **Fail-safe behavior**: - On suspicious or unavailable data, **halt sensitive operations** (borrowing, liquidations). - Use circuit breakers and rate limiting on parameter changes. - **Monitoring & alerting**: - Track price deviations between your oracle and reference markets. - Set automated alerts for out-of-band movements or stuck oracles.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC03-PriceOracleManipulation.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

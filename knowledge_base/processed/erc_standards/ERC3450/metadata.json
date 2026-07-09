@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3450",
+  "erc": "ERC-3450",
+  "events": [],
+  "functions": [],
+  "id": "ERC3450",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3450",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3450.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A standardized approach to splitting a BIP-39 mnemonic into _N_ BIP-39 mnemonics, called shares, so that _T_ shares are required to recover the original mnemonic and no information about the original mnemonic, other than its size, is leaked with less than _T_ shares.",
+  "title": "Standardized Shamir Secret Sharing Scheme for BIP-39 Mnemonics"
+}

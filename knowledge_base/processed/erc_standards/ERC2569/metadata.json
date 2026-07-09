@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2569",
+  "erc": "ERC-2569",
+  "events": [],
+  "functions": [
+    {
+      "name": "getTokenImageSvg",
+      "operation_type": "contract_interaction",
+      "signature": "getTokenImageSvg(uint256)"
+    },
+    {
+      "name": "setTokenImageSvg",
+      "operation_type": "contract_interaction",
+      "signature": "setTokenImageSvg(uint256,string)"
+    },
+    {
+      "name": "mintWithTokenImageSvg",
+      "operation_type": "contract_interaction",
+      "signature": "mintWithTokenImageSvg(address,uint256,string)"
+    },
+    {
+      "name": "mintNonFungibleWithImageSvg",
+      "operation_type": "contract_interaction",
+      "signature": "mintNonFungibleWithImageSvg(uint256,address[],string)"
+    },
+    {
+      "name": "mintFungibleWithImageSvg",
+      "operation_type": "contract_interaction",
+      "signature": "mintFungibleWithImageSvg(uint256,address[],uint256[],string)"
+    },
+    {
+      "name": "getTokenImageSvg",
+      "operation_type": "contract_interaction",
+      "signature": "getTokenImageSvg()"
+    }
+  ],
+  "id": "ERC2569",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2569",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2569.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This set of interfaces allow a smart contract to save an SVG image in Ethereum and to retrieve an SVG image from Ethereum for fungible tokens, non-fungible tokens and tokens based on standards that will be developed in the future. The interface set has two interfaces: one to save an SVG file in Ethereum and the other to retrieve an SVG file from Ethereum. Typical applications include but not limited to: * A solution for storage of a fungible token's icon. * A solution for storage of a non-fungible token's icon. * A solution for storage of the icon/logo of a DAO's reputation token.",
+  "title": "Saving and Displaying Image Onchain for Universal Tokens"
+}

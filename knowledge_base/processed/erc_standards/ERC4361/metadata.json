@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4361",
+  "erc": "ERC-4361",
+  "events": [],
+  "functions": [],
+  "id": "ERC4361",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4361",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4361.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Sign-In with Ethereum describes how Ethereum accounts authenticate with off-chain services by signing a standard message format parameterized by scope, session details, and security mechanisms (e.g., a nonce). The goals of this specification are to provide a self-custodied alternative to centralized identity providers, improve interoperability across off-chain services for Ethereum-based authentication, and provide wallet vendors a consistent machine-readable message format to achieve improved user experiences and consent management.",
+  "title": "Sign-In with Ethereum"
+}

@@ -1,0 +1,117 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1417",
+  "erc": "ERC-1417",
+  "events": [
+    {
+      "name": "TriedToVote",
+      "signature": "TriedToVote(address,uint8,uint)"
+    },
+    {
+      "name": "CastVote",
+      "signature": "CastVote(address,uint8,uint)"
+    },
+    {
+      "name": "RevokedVote",
+      "signature": "RevokedVote(address,uint8,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "vote",
+      "operation_type": "contract_interaction",
+      "signature": "vote(uint8)"
+    },
+    {
+      "name": "revokeVote",
+      "operation_type": "contract_interaction",
+      "signature": "revokeVote()"
+    },
+    {
+      "name": "getProposals",
+      "operation_type": "contract_interaction",
+      "signature": "getProposals()"
+    },
+    {
+      "name": "canVote",
+      "operation_type": "contract_interaction",
+      "signature": "canVote(address)"
+    },
+    {
+      "name": "getVoteTally",
+      "operation_type": "contract_interaction",
+      "signature": "getVoteTally(uint)"
+    },
+    {
+      "name": "getVoterCount",
+      "operation_type": "contract_interaction",
+      "signature": "getVoterCount(uint)"
+    },
+    {
+      "name": "calculateVoteWeight",
+      "operation_type": "contract_interaction",
+      "signature": "calculateVoteWeight(address)"
+    },
+    {
+      "name": "winningProposal",
+      "operation_type": "contract_interaction",
+      "signature": "winningProposal()"
+    },
+    {
+      "name": "getName",
+      "operation_type": "contract_interaction",
+      "signature": "getName()"
+    },
+    {
+      "name": "getPollType",
+      "operation_type": "contract_interaction",
+      "signature": "getPollType()"
+    },
+    {
+      "name": "getVoterBaseLogic",
+      "operation_type": "contract_interaction",
+      "signature": "getVoterBaseLogic()"
+    },
+    {
+      "name": "getStartTime",
+      "operation_type": "contract_interaction",
+      "signature": "getStartTime()"
+    },
+    {
+      "name": "getEndTime",
+      "operation_type": "contract_interaction",
+      "signature": "getEndTime()"
+    },
+    {
+      "name": "getProtocolAddresses",
+      "operation_type": "contract_interaction",
+      "signature": "getProtocolAddresses()"
+    },
+    {
+      "name": "getVoteTallies",
+      "operation_type": "contract_interaction",
+      "signature": "getVoteTallies()"
+    },
+    {
+      "name": "getVoterCounts",
+      "operation_type": "contract_interaction",
+      "signature": "getVoterCounts()"
+    },
+    {
+      "name": "getVoterBaseDenominator",
+      "operation_type": "contract_interaction",
+      "signature": "getVoterBaseDenominator()"
+    }
+  ],
+  "id": "ERC1417",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1417",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1417.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for polls to be used with MVTs (refer [EIP-1261](./eip-1261.md)). The standard provides basic functionality to vote, unvote, tally votes, get voter turnout, and a lot more. The poll standard attempts to modularize blockchain voting by breaking down a poll into 4 crucial building blocks: voterbase qualification, vote weight calculation, vote consequences, and vote tallying. By creating a common interface for polls that have different kinds of building blocks, the poll standard makes it possible to make interactive front end applications which can seamlessly get data from a poll contract in order to bring transparency into consensus and decision making on the blockchain. We considered the usage of polls with MVTs because",
+  "title": "Poll Standard"
+}

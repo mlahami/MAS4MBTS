@@ -1,0 +1,90 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7432",
+  "erc": "ERC-7432",
+  "events": [
+    {
+      "name": "TokenLocked",
+      "signature": "TokenLocked(address,address,uint256)"
+    },
+    {
+      "name": "RoleGranted",
+      "signature": "RoleGranted(address,uint256,bytes32,address,address,uint64,bool,bytes)"
+    },
+    {
+      "name": "RoleRevoked",
+      "signature": "RoleRevoked(address,uint256,bytes32)"
+    },
+    {
+      "name": "TokenUnlocked",
+      "signature": "TokenUnlocked(address,address,uint256)"
+    },
+    {
+      "name": "RoleApprovalForAll",
+      "signature": "RoleApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "grantRole",
+      "operation_type": "contract_interaction",
+      "signature": "grantRole(Role)"
+    },
+    {
+      "name": "revokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "revokeRole(address,uint256,bytes32)"
+    },
+    {
+      "name": "unlockToken",
+      "operation_type": "contract_interaction",
+      "signature": "unlockToken(address,uint256)"
+    },
+    {
+      "name": "setRoleApprovalForAll",
+      "operation_type": "contract_interaction",
+      "signature": "setRoleApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(address,uint256)"
+    },
+    {
+      "name": "recipientOf",
+      "operation_type": "contract_interaction",
+      "signature": "recipientOf(address,uint256,bytes32)"
+    },
+    {
+      "name": "roleData",
+      "operation_type": "contract_interaction",
+      "signature": "roleData(address,uint256,bytes32)"
+    },
+    {
+      "name": "roleExpirationDate",
+      "operation_type": "contract_interaction",
+      "signature": "roleExpirationDate(address,uint256,bytes32)"
+    },
+    {
+      "name": "isRoleRevocable",
+      "operation_type": "contract_interaction",
+      "signature": "isRoleRevocable(address,uint256,bytes32)"
+    },
+    {
+      "name": "isRoleApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isRoleApprovedForAll(address,address,address)"
+    }
+  ],
+  "id": "ERC7432",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7432",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7432.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard introduces role management for NFTs. Each role assignment is associated with a single NFT and expires automatically at a given timestamp. Roles are defined as `bytes32` and feature a custom `data` field of arbitrary size to allow customization.",
+  "title": "Non-Fungible Token Roles"
+}

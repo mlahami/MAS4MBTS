@@ -1,0 +1,16 @@
+{
+  "category": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+  "cwe": "CWE-362",
+  "description": "Contracts that create predictable, orderable state changes expose value to block builders and searchers (MEV). Sandwich attacks, backrunning, and liquidation front-running are examples. When a user's transaction has a predictable effect (e.g., large swap moving price), an attacker can place transactions before and after to extract value. SCWE-037 covers front-running; this weakness addresses the broader MEV surface\u2014design choices that make extraction easy.",
+  "id": "VULN-OWASP-SCWE-142",
+  "name": "Extractable Value from Predictable Transaction Ordering",
+  "owasp": "SCWE-142",
+  "remediation": "- Use private mempools or commit-reveal schemes for sensitive transactions. - Implement slippage protection (SCWE-090) and deadline parameters (SCWE-141). - Consider batch auctions, fair ordering, or MEV-aware design (e.g., CoW Protocol) where applicable.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-142.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

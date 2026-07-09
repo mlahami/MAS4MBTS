@@ -1,0 +1,64 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7496",
+  "erc": "ERC-7496",
+  "events": [
+    {
+      "name": "TraitUpdated",
+      "signature": "TraitUpdated(bytes32,uint256,bytes32)"
+    },
+    {
+      "name": "TraitUpdatedRange",
+      "signature": "TraitUpdatedRange(bytes32,uint256,uint256)"
+    },
+    {
+      "name": "TraitUpdatedRangeUniformValue",
+      "signature": "TraitUpdatedRangeUniformValue(bytes32,uint256,uint256,bytes32)"
+    },
+    {
+      "name": "TraitUpdatedList",
+      "signature": "TraitUpdatedList(bytes32,uint256[])"
+    },
+    {
+      "name": "TraitUpdatedListUniformValue",
+      "signature": "TraitUpdatedListUniformValue(bytes32,uint256[],bytes32)"
+    },
+    {
+      "name": "TraitMetadataURIUpdated",
+      "signature": "TraitMetadataURIUpdated()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getTraitValue",
+      "operation_type": "contract_interaction",
+      "signature": "getTraitValue(uint256,bytes32)"
+    },
+    {
+      "name": "getTraitValues",
+      "operation_type": "contract_interaction",
+      "signature": "getTraitValues(uint256,bytes32[])"
+    },
+    {
+      "name": "getTraitMetadataURI",
+      "operation_type": "contract_interaction",
+      "signature": "getTraitMetadataURI()"
+    },
+    {
+      "name": "setTrait",
+      "operation_type": "contract_interaction",
+      "signature": "setTrait(uint256,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC7496",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7496",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7496.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification introduces a new interface that extends [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) that defines methods for setting and getting dynamic onchain traits associated with non-fungible tokens. These dynamic traits can be used to represent properties, characteristics, redeemable entitlements, or other attributes that can change over time. By defining these traits onchain, they can be used and modified by other onchain contracts.",
+  "title": "NFT Dynamic Traits"
+}

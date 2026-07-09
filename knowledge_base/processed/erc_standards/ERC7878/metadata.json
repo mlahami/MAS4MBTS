@@ -1,0 +1,58 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7878",
+  "erc": "ERC-7878",
+  "events": [
+    {
+      "name": "ObituaryStarted",
+      "signature": "ObituaryStarted(address,address)"
+    },
+    {
+      "name": "ObituaryCancelled",
+      "signature": "ObituaryCancelled(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setWill",
+      "operation_type": "contract_interaction",
+      "signature": "setWill(address[],uint256)"
+    },
+    {
+      "name": "getWill",
+      "operation_type": "contract_interaction",
+      "signature": "getWill(address)"
+    },
+    {
+      "name": "announceObit",
+      "operation_type": "contract_interaction",
+      "signature": "announceObit(address,address)"
+    },
+    {
+      "name": "cancelObit",
+      "operation_type": "contract_interaction",
+      "signature": "cancelObit(address)"
+    },
+    {
+      "name": "getObit",
+      "operation_type": "contract_interaction",
+      "signature": "getObit(address)"
+    },
+    {
+      "name": "bequeath",
+      "operation_type": "contract_interaction",
+      "signature": "bequeath(address)"
+    }
+  ],
+  "id": "ERC7878",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7878",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7878.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes a standard interface for contracts to allow tokens to be inherited after the owner's death. The interface allows token owners to set up a Will and designate executors to enable the transfer of tokens to inheritors after a specified waiting period.",
+  "title": "Bequeathable Contracts"
+}

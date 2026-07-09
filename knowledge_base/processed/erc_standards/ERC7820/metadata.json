@@ -1,0 +1,86 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7820",
+  "erc": "ERC-7820",
+  "events": [
+    {
+      "name": "ContractRegistered",
+      "signature": "ContractRegistered(address,address)"
+    },
+    {
+      "name": "ContractUnregistered",
+      "signature": "ContractUnregistered(address,address)"
+    },
+    {
+      "name": "RoleGranted",
+      "signature": "RoleGranted(address,bytes32,address)"
+    },
+    {
+      "name": "RoleRevoked",
+      "signature": "RoleRevoked(address,bytes32,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerContract",
+      "operation_type": "contract_interaction",
+      "signature": "registerContract(address)"
+    },
+    {
+      "name": "unRegisterContract",
+      "operation_type": "contract_interaction",
+      "signature": "unRegisterContract(address)"
+    },
+    {
+      "name": "grantRole",
+      "operation_type": "contract_interaction",
+      "signature": "grantRole(address[],bytes32[],address[])"
+    },
+    {
+      "name": "revokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "revokeRole(address[],bytes32[],address[])"
+    },
+    {
+      "name": "getContractInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getContractInfo(address)"
+    },
+    {
+      "name": "getRoleInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getRoleInfo(address)"
+    },
+    {
+      "name": "getRoleInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getRoleInfo(address,address,bytes32)"
+    },
+    {
+      "name": "_grantRole",
+      "operation_type": "contract_interaction",
+      "signature": "_grantRole(address,bytes32,address)"
+    },
+    {
+      "name": "_revokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "_revokeRole(address,bytes32,address)"
+    },
+    {
+      "name": "_isAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "_isAdmin(address,address)"
+    }
+  ],
+  "id": "ERC7820",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7820",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7820.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The Access Control Registry (ACR) standard defines a universal interface for managing role-based access control across multiple smart contracts. This standard introduces a centralized registry system allowing access control management for multiple smart contracts. The single access-control registry smart contract manages the user roles across multiple contracts, and can be queryed for contract-specific role information. Additionally, the ACR standard provides functionality to grant and revoke roles for specific accounts, either individually or in bulk, ensuring that only authorized users can perform specific actions within a specific contract. The core of the standard includes: - **Registration and Unregistration**: Contracts can register with the ACR, specifying an admin who can manage ro",
+  "title": "Access Control Registry"
+}

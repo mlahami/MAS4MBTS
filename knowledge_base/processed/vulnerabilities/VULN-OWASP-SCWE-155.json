@@ -1,0 +1,16 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "Contracts that rely on a single administrative key (EOA or contract) without multisig, timelock, or key rotation create a single point of failure. Compromise of that key (phishing, malware, physical theft) gives full control; loss of the key (e.g., no backup) can permanently lock critical functions. SCWE-129 covers single EOA admin; this weakness focuses on the *risk* of single-key design and the absence of mitigations.",
+  "id": "VULN-OWASP-SCWE-155",
+  "name": "Single Point of Failure in Administrative Key Management",
+  "owasp": "SCWE-155",
+  "remediation": "- Use multisig wallets (e.g., Gnosis Safe) for administrative actions. - Implement timelocks for sensitive operations (SCWE-020). - Plan for key rotation or recovery mechanisms.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-155.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

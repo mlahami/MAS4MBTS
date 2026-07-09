@@ -1,0 +1,57 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6617",
+  "erc": "ERC-6617",
+  "events": [
+    {
+      "name": "PermissionGranted",
+      "signature": "PermissionGranted(address,uint256,address)"
+    },
+    {
+      "name": "PermissionRevoked",
+      "signature": "PermissionRevoked(address,uint256,address)"
+    },
+    {
+      "name": "UpdatePermissionDescription",
+      "signature": "UpdatePermissionDescription(uint256,string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "hasPermission",
+      "operation_type": "contract_interaction",
+      "signature": "hasPermission(address,uint256)"
+    },
+    {
+      "name": "grantPermission",
+      "operation_type": "contract_interaction",
+      "signature": "grantPermission(address,uint256)"
+    },
+    {
+      "name": "revokePermission",
+      "operation_type": "contract_interaction",
+      "signature": "revokePermission(address,uint256)"
+    },
+    {
+      "name": "getPermissionDescription",
+      "operation_type": "contract_interaction",
+      "signature": "getPermissionDescription(uint256)"
+    },
+    {
+      "name": "setPermissionDescription",
+      "operation_type": "contract_interaction",
+      "signature": "setPermissionDescription(uint256,string,string)"
+    }
+  ],
+  "id": "ERC6617",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6617",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6617.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP offers a standard for building a bit-based permission and role system. Each permission is represented by a single bit. By using an `uint256`, up to $256$ permissions and $2^{256}$ roles can be defined. We are able to specify the importance of each permission based on the order of the bits.",
+  "title": "Bit Based Permission"
+}

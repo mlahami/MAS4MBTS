@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2535",
+  "erc": "ERC-2535",
+  "events": [
+    {
+      "name": "DiamondCut",
+      "signature": "DiamondCut(FacetCut[],address,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "diamondCut",
+      "operation_type": "contract_interaction",
+      "signature": "diamondCut(FacetCut[],address,bytes)"
+    },
+    {
+      "name": "facets",
+      "operation_type": "contract_interaction",
+      "signature": "facets()"
+    },
+    {
+      "name": "facetFunctionSelectors",
+      "operation_type": "contract_interaction",
+      "signature": "facetFunctionSelectors(address)"
+    },
+    {
+      "name": "facetAddresses",
+      "operation_type": "contract_interaction",
+      "signature": "facetAddresses()"
+    },
+    {
+      "name": "facetAddress",
+      "operation_type": "contract_interaction",
+      "signature": "facetAddress(bytes4)"
+    }
+  ],
+  "id": "ERC2535",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2535",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2535.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "<img align=\"right\" src=\"../assets/eip-2535/diamond.svg\" width=\"230\" height=\"230\" alt=\"Diamonds contract structure\"> This proposal standardizes diamonds, which are modular smart contract systems that can be upgraded/extended after deployment, and have virtually no size limit. More technically, a **diamond** is a contract with external functions that are supplied by contracts called **facets**. Facets are separate, independent contracts that can share internal functions, libraries, and state variables.",
+  "title": "Diamonds, Multi-Facet Proxy"
+}

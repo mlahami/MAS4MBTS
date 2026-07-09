@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "This weakness occurs when smart contracts execute token swaps through DEX routers (e.g., Uniswap, PancakeSwap, SushiSwap) with the amountOutMin parameter set to 0 or a hardcoded static value. This disables slippage protection and allows trades to execute regardless of adverse price movement. As a result, users or protocols may receive significantly fewer tokens than expected, especially under high volatility, front-running, or sandwich attack conditions.",
+  "id": "VULN-OWASP-SCWE-090",
+  "name": "Missing Slippage Protection in Automated Token Swaps",
+  "owasp": "SCWE-090",
+  "remediation": "- Always validate amountOutMin based on live price quotes (e.g., using on-chain oracles or pre-trade estimates). - Allow users to configure slippage tolerance (0.5%, 1%, etc.), and enforce it in contract logic. - Never hardcode 0 or static values for amountOutMin.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-090.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

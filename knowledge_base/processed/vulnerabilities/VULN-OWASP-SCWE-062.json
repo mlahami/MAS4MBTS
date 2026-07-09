@@ -1,0 +1,16 @@
+{
+  "category": "Dead Code",
+  "cwe": "CWE-561",
+  "description": "Code with no effects or Dead Code- refers to segments of a smart contract that are never executed or do not alter the contract's state or output. This can lead to unnecessary gas consumption, complicate the contract\u2019s logic, and potentially confuse developers. Dead code often appears as leftover code from previous iterations or functions that are no longer in use but have not been removed. Removing such code improves contract efficiency and readability.",
+  "id": "VULN-OWASP-SCWE-062",
+  "name": "Dead Code",
+  "owasp": "SCWE-062",
+  "remediation": "To mitigate this vulnerability, ensure that all functions, variables, and logic in the smart contract have a purpose and contribute to the contract\u2019s behavior. Unused code should be removed to reduce complexity, save gas, and improve maintainability.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-062.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

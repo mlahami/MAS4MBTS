@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5528",
+  "erc": "ERC-5528",
+  "events": [],
+  "functions": [
+    {
+      "name": "escrowFund",
+      "operation_type": "contract_interaction",
+      "signature": "escrowFund(address,uint256)"
+    },
+    {
+      "name": "escrowRefund",
+      "operation_type": "contract_interaction",
+      "signature": "escrowRefund(address,uint256)"
+    },
+    {
+      "name": "escrowWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "escrowWithdraw()"
+    },
+    {
+      "name": "_transfer",
+      "operation_type": "contract_interaction",
+      "signature": "_transfer(address,address,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    }
+  ],
+  "id": "ERC5528",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5528",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5528.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [EIP-20](./eip-20.md). This specification defines a type of escrow service with the following flow: - The seller issues tokens. - The seller creates an escrow smart contract with detailed escrow information like contract addresses, lock period, exchange rate, additional escrow success conditions, etc. - The seller funds seller tokens to the *Escrow Contract*. - Buyers fund buyer tokens which are pre-defined in the *Escrow Contract*. - When the escrow status meets success, the seller can withdraw buyer tokens, and buyers can withdraw seller tokens based on exchange rates. - Buyers can withdraw (or refund) their funded token if the escrow process is failed or is in the middle of the escrow process.",
+  "title": "Refundable Fungible Token"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2494",
+  "erc": "ERC-2494",
+  "events": [],
+  "functions": [],
+  "id": "ERC2494",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2494",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2494.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Two of the main issues behind why blockchain technology is not broadly used by individuals and industry are scalability and privacy guarantees. With a set of cryptographic tools called zero-knowledge proofs (ZKP) it is possible to address both of these problems. More specifically, the most suitable protocols for blockchain are called zk-SNARKs (zero-knowledge Succinct Non-interactive ARguments of Knowledge), as they are non-interactive, have succinct proof size and sublinear verification time. These types of protocols allow proving generic computational statements that can be modelled with arithmetic circuits defined over a finite field (also called zk-SNARK circuits). To verify a zk-SNARK proof, it is necessary to use an elliptic curve. In Ethereum, the curve is alt_bn128 (also referred a",
+  "title": "Baby Jubjub Elliptic Curve"
+}

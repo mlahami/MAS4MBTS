@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4527",
+  "erc": "ERC-4527",
+  "events": [],
+  "functions": [],
+  "id": "ERC4527",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4527",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4527.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The purpose of this EIP is to provide a process and data transmission protocol via QR Code between offline signers and watch-only wallets.",
+  "title": "QR Code transmission protocol for wallets"
+}

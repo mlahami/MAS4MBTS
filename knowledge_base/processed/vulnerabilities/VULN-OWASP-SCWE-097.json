@@ -1,0 +1,16 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "When a function\u2019s visibility is omitted in Solidity, it defaults to `public`, allowing any caller to invoke logic that may have been intended to be internal or private. This expands the attack surface, enabling unauthorized state changes, fund movements, or reentrancy entry points.",
+  "id": "VULN-OWASP-SCWE-097",
+  "name": "Missing Explicit Function Visibility",
+  "owasp": "SCWE-097",
+  "remediation": "- Explicitly declare visibility (`private`, `internal`, `public`, `external`) on every function. - Use linters/static analysis to enforce visibility declarations. - Restrict privileged logic with proper access modifiers and role checks.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-097.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

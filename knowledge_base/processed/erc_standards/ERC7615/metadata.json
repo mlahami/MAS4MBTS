@@ -1,0 +1,123 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7615",
+  "erc": "ERC-7615",
+  "events": [
+    {
+      "name": "ForceApprove",
+      "signature": "ForceApprove(bytes4,address)"
+    },
+    {
+      "name": "ForceCancel",
+      "signature": "ForceCancel(bytes4,address)"
+    },
+    {
+      "name": "RenounceForceApprove",
+      "signature": "RenounceForceApprove()"
+    },
+    {
+      "name": "RenounceForceCancel",
+      "signature": "RenounceForceCancel()"
+    },
+    {
+      "name": "Approve",
+      "signature": "Approve(bytes4,address,bytes)"
+    },
+    {
+      "name": "Cancel",
+      "signature": "Cancel(bytes4,address,bytes)"
+    },
+    {
+      "name": "Log",
+      "signature": "Log(bytes4,bytes,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isForceApproved",
+      "operation_type": "contract_interaction",
+      "signature": "isForceApproved(bytes4,address)"
+    },
+    {
+      "name": "forceApprove",
+      "operation_type": "contract_interaction",
+      "signature": "forceApprove(bytes4,address)"
+    },
+    {
+      "name": "forceCancel",
+      "operation_type": "contract_interaction",
+      "signature": "forceCancel(bytes4,address)"
+    },
+    {
+      "name": "isRenounceForceApprove",
+      "operation_type": "contract_interaction",
+      "signature": "isRenounceForceApprove()"
+    },
+    {
+      "name": "isRenounceForceCancel",
+      "operation_type": "contract_interaction",
+      "signature": "isRenounceForceCancel()"
+    },
+    {
+      "name": "renounceForceApprove",
+      "operation_type": "contract_interaction",
+      "signature": "renounceForceApprove(bytes)"
+    },
+    {
+      "name": "renounceForceCancel",
+      "operation_type": "contract_interaction",
+      "signature": "renounceForceCancel(bytes)"
+    },
+    {
+      "name": "inbox",
+      "operation_type": "contract_interaction",
+      "signature": "inbox(bytes4)"
+    },
+    {
+      "name": "isApproved",
+      "operation_type": "contract_interaction",
+      "signature": "isApproved(bytes4,address,bytes)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(bytes4,address,bytes)"
+    },
+    {
+      "name": "cancel",
+      "operation_type": "contract_interaction",
+      "signature": "cancel(bytes4,address,bytes)"
+    },
+    {
+      "name": "isLocked",
+      "operation_type": "contract_interaction",
+      "signature": "isLocked(bytes4,bytes)"
+    },
+    {
+      "name": "exec",
+      "operation_type": "contract_interaction",
+      "signature": "exec(bytes4,bytes)"
+    },
+    {
+      "name": "send",
+      "operation_type": "contract_interaction",
+      "signature": "send(uint256)"
+    },
+    {
+      "name": "_push",
+      "operation_type": "contract_interaction",
+      "signature": "_push(bytes4,uint256)"
+    }
+  ],
+  "id": "ERC7615",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7615",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7615.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a push-based mechanism for sending data, allowing publisher contract to automatically push certain data to subscriber contracts during a call. The specific implementation relies on two interfaces: one for publisher contract to push data, and another for the subscriber contract to receive data. When the publisher contract is called, it checks if the called function corresponds to subscriber addresses. If it does, the publisher contract push data to the subscriber contracts.",
+  "title": "Atomic Push-based Data Feed Among Contracts"
+}

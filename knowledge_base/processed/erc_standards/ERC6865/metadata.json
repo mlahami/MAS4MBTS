@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6865",
+  "erc": "ERC-6865",
+  "events": [],
+  "functions": [
+    {
+      "name": "visualizeEIP712Message",
+      "operation_type": "contract_interaction",
+      "signature": "visualizeEIP712Message(bytes,bytes32)"
+    }
+  ],
+  "id": "ERC6865",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6865",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6865.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Numerous protocols employ distinct [EIP-712](./eip-712.md) schemas, leading to unavoidable inconsistencies across the ecosystem. To address this issue, we propose a standardized approach for dApps to implement an on-chain view function called `visualizeEIP712Message`. This function takes an abi encoded EIP-712 payload message as input and returns a universally agreed-upon structured data format that emphasizes the potential impact on users' assets. Wallets can then display this structured data in a user-friendly manner, ensuring a consistent experience for end-users when interacting with various dApps and protocols.",
+  "title": "On-Chain EIP-712 Visualization"
+}

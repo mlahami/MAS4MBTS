@@ -1,0 +1,86 @@
+{
+  "assets": [
+    {
+      "criticality": "high",
+      "name": "Token balances",
+      "type": "contract_state"
+    },
+    {
+      "criticality": "high",
+      "name": "Token allowances",
+      "type": "contract_state"
+    },
+    {
+      "criticality": "high",
+      "name": "Total supply",
+      "type": "contract_state"
+    }
+  ],
+  "category": "ERC",
+  "eip": "EIP-20",
+  "erc": "ERC-20",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    }
+  ],
+  "id": "ERC20",
+  "security_properties": [
+    {
+      "description": "Only a token holder can transfer its own tokens.",
+      "name": "Transfer authorization"
+    },
+    {
+      "description": "A spender cannot transfer more than the approved allowance.",
+      "name": "Allowance bounded spending"
+    },
+    {
+      "description": "Transfers preserve balance and total-supply invariants.",
+      "name": "Accounting integrity"
+    }
+  ],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-20",
+    "source_id": "ethereum_ercs_website"
+  },
+  "status": "Final",
+  "summary": "ERC-20 defines a standard interface for fungible tokens, including token transfers, delegated transfers, allowances, and transfer/approval events.",
+  "title": "Token Standard"
+}

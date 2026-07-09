@@ -1,0 +1,163 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8126",
+  "erc": "ERC-8126",
+  "events": [
+    {
+      "name": "AgentVerified",
+      "signature": "AgentVerified(uint256,//)"
+    },
+    {
+      "name": "AttestationPosted",
+      "signature": "AttestationPosted(uint256,uint8,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getLatestRiskScore",
+      "operation_type": "contract_interaction",
+      "signature": "getLatestRiskScore(uint256)"
+    },
+    {
+      "name": "testETVCompletesWhenContractAddressPresent",
+      "operation_type": "contract_interaction",
+      "signature": "testETVCompletesWhenContractAddressPresent()"
+    },
+    {
+      "name": "testMCVCompletesWhenimageUrlPresent",
+      "operation_type": "contract_interaction",
+      "signature": "testMCVCompletesWhenimageUrlPresent()"
+    },
+    {
+      "name": "testSCVCompletesWhensolidityCodePresent",
+      "operation_type": "contract_interaction",
+      "signature": "testSCVCompletesWhensolidityCodePresent()"
+    },
+    {
+      "name": "testWAVCompletesForAllAgentIds",
+      "operation_type": "contract_interaction",
+      "signature": "testWAVCompletesForAllAgentIds()"
+    },
+    {
+      "name": "testWVCompletesForAllAgentIds",
+      "operation_type": "contract_interaction",
+      "signature": "testWVCompletesForAllAgentIds()"
+    },
+    {
+      "name": "testGeneratesPDVZKPForEachType",
+      "operation_type": "contract_interaction",
+      "signature": "testGeneratesPDVZKPForEachType()"
+    },
+    {
+      "name": "testCalculatesOverallRiskScore",
+      "operation_type": "contract_interaction",
+      "signature": "testCalculatesOverallRiskScore()"
+    },
+    {
+      "name": "testEmitsAgentVerifiedEvent",
+      "operation_type": "contract_interaction",
+      "signature": "testEmitsAgentVerifiedEvent()"
+    },
+    {
+      "name": "testRevertsWithVerificationFailed",
+      "operation_type": "contract_interaction",
+      "signature": "testRevertsWithVerificationFailed()"
+    },
+    {
+      "name": "testRevertsWithInsufficientCredits",
+      "operation_type": "contract_interaction",
+      "signature": "testRevertsWithInsufficientCredits()"
+    },
+    {
+      "name": "testUnauthorizedProofAccess",
+      "operation_type": "contract_interaction",
+      "signature": "testUnauthorizedProofAccess()"
+    },
+    {
+      "name": "testRiskScoreTiers",
+      "operation_type": "contract_interaction",
+      "signature": "testRiskScoreTiers()"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "resolveAgentMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "resolveAgentMetadata(agentId:,config:)"
+    },
+    {
+      "name": "ETV",
+      "operation_type": "contract_interaction",
+      "signature": "ETV(m:,c:)"
+    },
+    {
+      "name": "MCV",
+      "operation_type": "contract_interaction",
+      "signature": "MCV(m:,c:)"
+    },
+    {
+      "name": "SCV",
+      "operation_type": "contract_interaction",
+      "signature": "SCV(m:,c:)"
+    },
+    {
+      "name": "WAV",
+      "operation_type": "contract_interaction",
+      "signature": "WAV(m:)"
+    },
+    {
+      "name": "WV",
+      "operation_type": "contract_interaction",
+      "signature": "WV(m:)"
+    },
+    {
+      "name": "calculateOverallRiskScore",
+      "operation_type": "contract_interaction",
+      "signature": "calculateOverallRiskScore(scores:)"
+    },
+    {
+      "name": "getRiskTier",
+      "operation_type": "contract_interaction",
+      "signature": "getRiskTier(score:)"
+    },
+    {
+      "name": "generatePDVProof",
+      "operation_type": "contract_interaction",
+      "signature": "generatePDVProof(result:)"
+    },
+    {
+      "name": "QCV",
+      "operation_type": "contract_interaction",
+      "signature": "QCV(data:)"
+    },
+    {
+      "name": "verifyAgent",
+      "operation_type": "contract_interaction",
+      "signature": "verifyAgent(agentId:,config:)"
+    },
+    {
+      "name": "submitToValidationRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "submitToValidationRegistry(agentId:,score:,pdvProofId:,config:)"
+    },
+    {
+      "name": "generateProofId",
+      "operation_type": "contract_interaction",
+      "signature": "generateProofId(type:,data:)"
+    }
+  ],
+  "id": "ERC8126",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8126",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8126.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC defines a standard interface for verifying AI agents on Ethereum that have been registered via [ERC-8004](./eip-8004.md). It enables AI agents to undergo several specialized verification processes defined in this proposal: Ethereum Token Verification (ETV), Media Content Verification (MCV), Solidity Code Verification (SCV), Web Application Verification (WAV), and Wallet Verification (WV). Verification providers implement this standard using Private Data Verification (PDV) to generate Zero-Knowledge Proofs (ZKPs). Detailed verification results are accessible only to the AI agent\u2019s wallet holder and include a unified risk score (0-100) to help users assess the agent\u2019s trustworthiness. Verification attestations can additionally be posted to ERC-8004\u2019s Validation Registry for ecosyste",
+  "title": "AI Agent Verification"
+}

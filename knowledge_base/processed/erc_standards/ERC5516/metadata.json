@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5516",
+  "erc": "ERC-5516",
+  "events": [
+    {
+      "name": "Issued",
+      "signature": "Issued(uint256,address,address[],string)"
+    },
+    {
+      "name": "Renounced",
+      "signature": "Renounced(uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "issue",
+      "operation_type": "contract_interaction",
+      "signature": "issue(address[],string)"
+    },
+    {
+      "name": "renounce",
+      "operation_type": "contract_interaction",
+      "signature": "renounce(uint256)"
+    },
+    {
+      "name": "has",
+      "operation_type": "contract_interaction",
+      "signature": "has(address,uint256)"
+    },
+    {
+      "name": "issuerOf",
+      "operation_type": "contract_interaction",
+      "signature": "issuerOf(uint256)"
+    },
+    {
+      "name": "uri",
+      "operation_type": "contract_interaction",
+      "signature": "uri(uint256)"
+    }
+  ],
+  "id": "ERC5516",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5516",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5516.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP proposes a standard interface for non-transferable, multi-owner Soulbound tokens. Previous account-bound token standards face the issue of users losing their account keys or having them rotated, thereby losing their tokens in the process. This EIP provides a solution to this issue that allows for the recycling of SBTs.",
+  "title": "Soulbound Multi-owner Tokens"
+}

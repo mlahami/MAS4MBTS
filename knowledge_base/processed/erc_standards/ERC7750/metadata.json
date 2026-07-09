@@ -1,0 +1,125 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7750",
+  "erc": "ERC-7750",
+  "events": [
+    {
+      "name": "CompanyRegistered",
+      "signature": "CompanyRegistered(uint,address,string,string)"
+    },
+    {
+      "name": "EmployeeTokenMinted",
+      "signature": "EmployeeTokenMinted(uint,address)"
+    },
+    {
+      "name": "ContractCreated",
+      "signature": "ContractCreated(uint,uint,uint,uint,uint)"
+    },
+    {
+      "name": "ContractExecuted",
+      "signature": "ContractExecuted(uint)"
+    },
+    {
+      "name": "SalaryDeposited",
+      "signature": "SalaryDeposited(uint,uint)"
+    },
+    {
+      "name": "SalaryReleased",
+      "signature": "SalaryReleased(uint,address)"
+    },
+    {
+      "name": "DisputeRaised",
+      "signature": "DisputeRaised(uint,address)"
+    },
+    {
+      "name": "DisputeResolved",
+      "signature": "DisputeResolved(uint,bool)"
+    },
+    {
+      "name": "ContractTerminated",
+      "signature": "ContractTerminated(uint,string)"
+    },
+    {
+      "name": "ReviewSubmitted",
+      "signature": "ReviewSubmitted(uint,uint,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerCompany",
+      "operation_type": "contract_interaction",
+      "signature": "registerCompany(string,string)"
+    },
+    {
+      "name": "getCompany",
+      "operation_type": "contract_interaction",
+      "signature": "getCompany(uint)"
+    },
+    {
+      "name": "mintEmployeeToken",
+      "operation_type": "contract_interaction",
+      "signature": "mintEmployeeToken(address,string)"
+    },
+    {
+      "name": "getEmploymentHistory",
+      "operation_type": "contract_interaction",
+      "signature": "getEmploymentHistory(uint)"
+    },
+    {
+      "name": "createContract",
+      "operation_type": "contract_interaction",
+      "signature": "createContract(uint,uint,uint,uint,string,string)"
+    },
+    {
+      "name": "executeContract",
+      "operation_type": "contract_interaction",
+      "signature": "executeContract(uint)"
+    },
+    {
+      "name": "depositSalary",
+      "operation_type": "contract_interaction",
+      "signature": "depositSalary(uint)"
+    },
+    {
+      "name": "releaseSalary",
+      "operation_type": "contract_interaction",
+      "signature": "releaseSalary(uint)"
+    },
+    {
+      "name": "raiseDispute",
+      "operation_type": "contract_interaction",
+      "signature": "raiseDispute(uint)"
+    },
+    {
+      "name": "resolveDispute",
+      "operation_type": "contract_interaction",
+      "signature": "resolveDispute(uint,bool)"
+    },
+    {
+      "name": "terminateContract",
+      "operation_type": "contract_interaction",
+      "signature": "terminateContract(uint,string)"
+    },
+    {
+      "name": "submitReview",
+      "operation_type": "contract_interaction",
+      "signature": "submitReview(uint,uint,string)"
+    },
+    {
+      "name": "getReviews",
+      "operation_type": "contract_interaction",
+      "signature": "getReviews(uint)"
+    }
+  ],
+  "id": "ERC7750",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7750",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7750.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This ERC proposes a Decentralized Employment System (DES) built on the Ethereum blockchain. The DES facilitates the creation and management of companies, records comprehensive employment histories through unique employee tokens, enables the formation and execution of labor contracts, automates salary payments via an escrow mechanism, incorporates a robust moderation system for dispute resolution, and implements a reputation-based review system for both employers and employees. By leveraging blockchain's transparency and immutability, the DES ensures accountability and trust throughout the employment lifecycle, from company creation and hiring to contract fulfillment and termination. The system operates post employee testing and prior to the final hiring and contract signing. Employees poss",
+  "title": "Decentralized Employment System"
+}

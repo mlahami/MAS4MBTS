@@ -1,0 +1,48 @@
+{
+  "records": [
+    {
+      "id": "VULN-ACCESS-001",
+      "name": "Missing access control",
+      "category": "Authorization",
+      "description": "A privileged function can be executed by an unauthorized actor.",
+      "severity": "high",
+      "cwe": "CWE-284",
+      "swc": "SWC-105",
+      "owasp": "Smart Contract Access Control",
+      "source": {"source_id": "swc_registry", "note": "Historical SWC label complemented by OWASP/CWE."}
+    },
+    {
+      "id": "VULN-REENTRANCY-001",
+      "name": "Reentrancy",
+      "category": "External call",
+      "description": "External control flow can re-enter a function before state is finalized.",
+      "severity": "high",
+      "cwe": "CWE-841",
+      "swc": "SWC-107",
+      "owasp": "Smart Contract Reentrancy",
+      "source": {"source_id": "swc_registry", "note": "Historical SWC label complemented by OWASP/CWE."}
+    },
+    {
+      "id": "VULN-ORDERING-001",
+      "name": "Transaction-ordering dependent allowance update",
+      "category": "Transaction ordering",
+      "description": "A state update can be exploited by front-running or transaction ordering.",
+      "severity": "medium",
+      "cwe": "CWE-362",
+      "swc": "SWC-114",
+      "owasp": "Smart Contract Transaction Order Dependence",
+      "source": {"source_id": "swc_registry", "note": "Historical SWC label complemented by OWASP/CWE."}
+    },
+    {
+      "id": "VULN-ACCOUNTING-001",
+      "name": "Incorrect token accounting",
+      "category": "Business logic",
+      "description": "Token balances, total supply, assets, or shares are updated inconsistently.",
+      "severity": "high",
+      "cwe": "CWE-682",
+      "swc": "N/A",
+      "owasp": "Smart Contract Business Logic Errors",
+      "source": {"source_id": "owasp_smart_contract_security"}
+    }
+  ]
+}

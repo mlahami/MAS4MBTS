@@ -1,0 +1,16 @@
+{
+  "category": "Use of Insufficiently Random Values",
+  "cwe": "CWE-330",
+  "description": "Using VRF services without validating `requestId`, sender, or subscription can let attackers spoof fulfillments or drain subscription balances. Misconfigured key hashes, gas limits, or shared subscriptions can cause predictable failures and force fallback logic that leaks randomness.",
+  "id": "VULN-OWASP-SCWE-115",
+  "name": "Weak VRF Parameterization or Callback Validation",
+  "owasp": "SCWE-115",
+  "remediation": "- Bind VRF fulfillments to tracked `requestId` values and trusted coordinator addresses. - Use dedicated subscriptions, appropriate key hashes, and sane callback gas limits. - Revert on unexpected fulfillments and avoid using fallback pseudo-randomness.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-115.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

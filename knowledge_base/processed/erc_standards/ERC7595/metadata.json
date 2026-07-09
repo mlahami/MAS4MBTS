@@ -1,0 +1,242 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7595",
+  "erc": "ERC-7595",
+  "events": [
+    {
+      "name": "Collateralized",
+      "signature": "Collateralized(uint256,uint256,address)"
+    },
+    {
+      "name": "Uncollateralized",
+      "signature": "Uncollateralized(uint256,uint256,address)"
+    },
+    {
+      "name": "Dispersed",
+      "signature": "Dispersed(address,uint256)"
+    },
+    {
+      "name": "Harvested",
+      "signature": "Harvested(address,uint256,uint256)"
+    },
+    {
+      "name": "Collateralized",
+      "signature": "Collateralized(address,uint256,uint256,address)"
+    },
+    {
+      "name": "Uncollateralized",
+      "signature": "Uncollateralized(address,uint256,uint256,address)"
+    },
+    {
+      "name": "Dispersed",
+      "signature": "Dispersed(address,address,uint256)"
+    },
+    {
+      "name": "Harvested",
+      "signature": "Harvested(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "commissions",
+      "operation_type": "contract_interaction",
+      "signature": "commissions(uint256)"
+    },
+    {
+      "name": "blackHole",
+      "operation_type": "contract_interaction",
+      "signature": "blackHole()"
+    },
+    {
+      "name": "communityToken",
+      "operation_type": "contract_interaction",
+      "signature": "communityToken()"
+    },
+    {
+      "name": "communityPool",
+      "operation_type": "contract_interaction",
+      "signature": "communityPool(uint256)"
+    },
+    {
+      "name": "communityBalance",
+      "operation_type": "contract_interaction",
+      "signature": "communityBalance(address)"
+    },
+    {
+      "name": "disperseTokens",
+      "operation_type": "contract_interaction",
+      "signature": "disperseTokens(uint256)"
+    },
+    {
+      "name": "disperseBalance",
+      "operation_type": "contract_interaction",
+      "signature": "disperseBalance(address)"
+    },
+    {
+      "name": "disperseTotalTaken",
+      "operation_type": "contract_interaction",
+      "signature": "disperseTotalTaken(address)"
+    },
+    {
+      "name": "disperseTaken",
+      "operation_type": "contract_interaction",
+      "signature": "disperseTaken(uint256,address)"
+    },
+    {
+      "name": "collateralTokens",
+      "operation_type": "contract_interaction",
+      "signature": "collateralTokens(uint256,uint256)"
+    },
+    {
+      "name": "collateralBalances",
+      "operation_type": "contract_interaction",
+      "signature": "collateralBalances(uint256,address)"
+    },
+    {
+      "name": "getAmount",
+      "operation_type": "contract_interaction",
+      "signature": "getAmount(uint256,address)"
+    },
+    {
+      "name": "harvest",
+      "operation_type": "contract_interaction",
+      "signature": "harvest(uint256[],address[])"
+    },
+    {
+      "name": "collateralize",
+      "operation_type": "contract_interaction",
+      "signature": "collateralize(uint256,uint256[],address[])"
+    },
+    {
+      "name": "uncollateralize",
+      "operation_type": "contract_interaction",
+      "signature": "uncollateralize(uint256,uint256[],address[])"
+    },
+    {
+      "name": "disperse",
+      "operation_type": "contract_interaction",
+      "signature": "disperse(uint256[],address[])"
+    },
+    {
+      "name": "totalCollections",
+      "operation_type": "contract_interaction",
+      "signature": "totalCollections()"
+    },
+    {
+      "name": "blackHole",
+      "operation_type": "contract_interaction",
+      "signature": "blackHole(address)"
+    },
+    {
+      "name": "collections",
+      "operation_type": "contract_interaction",
+      "signature": "collections(uint256)"
+    },
+    {
+      "name": "collectionIds",
+      "operation_type": "contract_interaction",
+      "signature": "collectionIds(address)"
+    },
+    {
+      "name": "specificCollections",
+      "operation_type": "contract_interaction",
+      "signature": "specificCollections(address)"
+    },
+    {
+      "name": "commissions",
+      "operation_type": "contract_interaction",
+      "signature": "commissions(address,uint256)"
+    },
+    {
+      "name": "communityToken",
+      "operation_type": "contract_interaction",
+      "signature": "communityToken(address)"
+    },
+    {
+      "name": "communityPool",
+      "operation_type": "contract_interaction",
+      "signature": "communityPool(address,uint256)"
+    },
+    {
+      "name": "communityBalance",
+      "operation_type": "contract_interaction",
+      "signature": "communityBalance(address,address)"
+    },
+    {
+      "name": "disperseTokens",
+      "operation_type": "contract_interaction",
+      "signature": "disperseTokens(address,uint256)"
+    },
+    {
+      "name": "disperseBalance",
+      "operation_type": "contract_interaction",
+      "signature": "disperseBalance(address,address)"
+    },
+    {
+      "name": "disperseTotalTaken",
+      "operation_type": "contract_interaction",
+      "signature": "disperseTotalTaken(address,address)"
+    },
+    {
+      "name": "disperseTaken",
+      "operation_type": "contract_interaction",
+      "signature": "disperseTaken(address,uint256,address)"
+    },
+    {
+      "name": "collateralTokens",
+      "operation_type": "contract_interaction",
+      "signature": "collateralTokens(address,uint256,uint256)"
+    },
+    {
+      "name": "collateralBalances",
+      "operation_type": "contract_interaction",
+      "signature": "collateralBalances(address,uint256,address)"
+    },
+    {
+      "name": "getAmount",
+      "operation_type": "contract_interaction",
+      "signature": "getAmount(address,uint256,address)"
+    },
+    {
+      "name": "setSpecificCollection",
+      "operation_type": "contract_interaction",
+      "signature": "setSpecificCollection(address)"
+    },
+    {
+      "name": "registerCollection",
+      "operation_type": "contract_interaction",
+      "signature": "registerCollection(address,address,uint256,uint256)"
+    },
+    {
+      "name": "harvest",
+      "operation_type": "contract_interaction",
+      "signature": "harvest(address,uint256[],address[])"
+    },
+    {
+      "name": "collateralize",
+      "operation_type": "contract_interaction",
+      "signature": "collateralize(address,uint256,uint256[],address[])"
+    },
+    {
+      "name": "uncollateralize",
+      "operation_type": "contract_interaction",
+      "signature": "uncollateralize(address,uint256,uint256[],address[])"
+    },
+    {
+      "name": "disperse",
+      "operation_type": "contract_interaction",
+      "signature": "disperse(address,uint256[],address[])"
+    }
+  ],
+  "id": "ERC7595",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7595",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7595.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal recommends an extension of [ERC-721](./eip-721.md) to allow for collateralization using a list of [ERC-20](./eip-20.md) based tokens. The proprietor of this ERC collection could hold both the native coin and [ERC-20](./eip-20.md) based tokens, with the `ownerOf` tokenId being able to unlock the associated portion of the underlying [ERC-20](./eip-20.md) balance.",
+  "title": "Collateralized NFT"
+}

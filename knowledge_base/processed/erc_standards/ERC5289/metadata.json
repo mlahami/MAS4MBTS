@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5289",
+  "erc": "ERC-5289",
+  "events": [
+    {
+      "name": "DocumentSigned",
+      "signature": "DocumentSigned(address,uint16)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "legalDocument",
+      "operation_type": "contract_interaction",
+      "signature": "legalDocument(uint16)"
+    },
+    {
+      "name": "documentSigned",
+      "operation_type": "contract_interaction",
+      "signature": "documentSigned(address,uint16)"
+    },
+    {
+      "name": "documentSignedAt",
+      "operation_type": "contract_interaction",
+      "signature": "documentSignedAt(address,uint16)"
+    },
+    {
+      "name": "signDocument",
+      "operation_type": "contract_interaction",
+      "signature": "signDocument(address,uint16)"
+    }
+  ],
+  "id": "ERC5289",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5289",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5289.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Currently, the real-world applications of smart contracts are limited by the fact that they aren't legally binding. This EIP proposes a standard that allows smart contracts to be legally binding by providing IPFS links to legal documents and ensuring that the users of the smart contract have privity with the relevant legal documents. Please note that the authors are not lawyers, and that this EIP is not legal advice.",
+  "title": "Ethereum Notary Interface"
+}

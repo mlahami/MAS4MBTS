@@ -1,0 +1,87 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5496",
+  "erc": "ERC-5496",
+  "events": [
+    {
+      "name": "PrivilegeAssigned",
+      "signature": "PrivilegeAssigned(uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "PrivilegeTotalChanged",
+      "signature": "PrivilegeTotalChanged(uint256,uint256)"
+    },
+    {
+      "name": "PrivilegeCloned",
+      "signature": "PrivilegeCloned(uint,uint,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setPrivilege",
+      "operation_type": "contract_interaction",
+      "signature": "setPrivilege(uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "privilegeExpires",
+      "operation_type": "contract_interaction",
+      "signature": "privilegeExpires(uint256,uint256)"
+    },
+    {
+      "name": "hasPrivilege",
+      "operation_type": "contract_interaction",
+      "signature": "hasPrivilege(uint256,uint256,address)"
+    },
+    {
+      "name": "clonePrivilege",
+      "operation_type": "contract_interaction",
+      "signature": "clonePrivilege(uint,uint,address)"
+    },
+    {
+      "name": "unwrap",
+      "operation_type": "contract_interaction",
+      "signature": "unwrap(uint256,address)"
+    },
+    {
+      "name": "setPrivilege",
+      "operation_type": "contract_interaction",
+      "signature": "setPrivilege(uint,uint,address,uint64)"
+    },
+    {
+      "name": "_setPrivilegeTotal",
+      "operation_type": "contract_interaction",
+      "signature": "_setPrivilegeTotal(uint)"
+    },
+    {
+      "name": "getPrivilegeInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getPrivilegeInfo(uint,uint)"
+    },
+    {
+      "name": "setDelegator",
+      "operation_type": "contract_interaction",
+      "signature": "setDelegator(address,bool)"
+    },
+    {
+      "name": "_isDelegatorOrHolder",
+      "operation_type": "contract_interaction",
+      "signature": "_isDelegatorOrHolder(address,uint256,uint)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC5496",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5496",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5496.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This EIP defines an interface extending [EIP-721](./eip-721.md) to provide shareable multi-privileges for NFTs. Privileges may be on-chain (voting rights, permission to claim an airdrop) or off-chain (a coupon for an online store, a discount at a local restaurant, access to VIP lounges in airports). Each NFT may contain many privileges, and the holder of a privilege can verifiably transfer that privilege to others. Privileges may be non-shareable or shareable. Shareable privileges can be cloned, with the provider able to adjust the details according to the spreading path. Expiration periods can also be set for each privilege.",
+  "title": "Multi-privilege Management NFT Extension"
+}

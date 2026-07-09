@@ -1,0 +1,134 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4886",
+  "erc": "ERC-4886",
+  "events": [],
+  "functions": [
+    {
+      "name": "nominationExists",
+      "operation_type": "contract_interaction",
+      "signature": "nominationExists(address)"
+    },
+    {
+      "name": "nominationExistsForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "nominationExistsForCaller()"
+    },
+    {
+      "name": "proxyRecordExists",
+      "operation_type": "contract_interaction",
+      "signature": "proxyRecordExists(address)"
+    },
+    {
+      "name": "proxyRecordExistsForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "proxyRecordExistsForCaller()"
+    },
+    {
+      "name": "nominatorRecordExists",
+      "operation_type": "contract_interaction",
+      "signature": "nominatorRecordExists(address)"
+    },
+    {
+      "name": "nominatorRecordExistsForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "nominatorRecordExistsForCaller()"
+    },
+    {
+      "name": "getProxyRecord",
+      "operation_type": "contract_interaction",
+      "signature": "getProxyRecord(address)"
+    },
+    {
+      "name": "getProxyRecordForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "getProxyRecordForCaller()"
+    },
+    {
+      "name": "getNominatorRecord",
+      "operation_type": "contract_interaction",
+      "signature": "getNominatorRecord(address)"
+    },
+    {
+      "name": "getNominatorRecordForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "getNominatorRecordForCaller()"
+    },
+    {
+      "name": "addressIsActive",
+      "operation_type": "contract_interaction",
+      "signature": "addressIsActive(address)"
+    },
+    {
+      "name": "addressIsActiveForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "addressIsActiveForCaller()"
+    },
+    {
+      "name": "getNomination",
+      "operation_type": "contract_interaction",
+      "signature": "getNomination(address)"
+    },
+    {
+      "name": "getNominationForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "getNominationForCaller()"
+    },
+    {
+      "name": "getAddresses",
+      "operation_type": "contract_interaction",
+      "signature": "getAddresses(address)"
+    },
+    {
+      "name": "getAddressesForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "getAddressesForCaller()"
+    },
+    {
+      "name": "getRole",
+      "operation_type": "contract_interaction",
+      "signature": "getRole(address)"
+    },
+    {
+      "name": "getRoleForCaller",
+      "operation_type": "contract_interaction",
+      "signature": "getRoleForCaller()"
+    },
+    {
+      "name": "makeNomination",
+      "operation_type": "contract_interaction",
+      "signature": "makeNomination(address,uint256)"
+    },
+    {
+      "name": "acceptNomination",
+      "operation_type": "contract_interaction",
+      "signature": "acceptNomination(address,address,uint256)"
+    },
+    {
+      "name": "updateDeliveryAddress",
+      "operation_type": "contract_interaction",
+      "signature": "updateDeliveryAddress(address,uint256)"
+    },
+    {
+      "name": "deleteRecordByNominator",
+      "operation_type": "contract_interaction",
+      "signature": "deleteRecordByNominator(uint256)"
+    },
+    {
+      "name": "deleteRecordByProxy",
+      "operation_type": "contract_interaction",
+      "signature": "deleteRecordByProxy(uint256)"
+    }
+  ],
+  "id": "ERC4886",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4886",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4886.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A proxy protocol that allows users to nominate a proxy address to act on behalf of another wallet address, together with a delivery address for new assets. Smart contracts and applications making use of the protocol can take a proxy address and lookup holding information for the nominator address. This has a number of practical applications, including allowing users to store valuable assets safely in a cold wallet and interact with smart contracts using a proxy address of low value. The assets in the nominator are protected as all contract interactions take place with the proxy address. This eliminates a number of exploits seen recently where users' assets are drained through a malicious contract interaction. In addition, the register holds a delivery address, allowing new assets to be del",
+  "title": "Proxy Ownership Register"
+}

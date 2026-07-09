@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5485",
+  "erc": "ERC-5485",
+  "events": [],
+  "functions": [
+    {
+      "name": "sourceOfAccreditation",
+      "operation_type": "contract_interaction",
+      "signature": "sourceOfAccreditation()"
+    },
+    {
+      "name": "jurisdiction",
+      "operation_type": "contract_interaction",
+      "signature": "jurisdiction()"
+    },
+    {
+      "name": "imposeEnforcement",
+      "operation_type": "contract_interaction",
+      "signature": "imposeEnforcement(IERC5247Executables)"
+    }
+  ],
+  "id": "ERC5485",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5485",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5485.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Defines a standard interface for smart contracts to declare their sovereignty status, observed jurisdiction, accreditation within that jurisdiction, and the mechanisms by which they may receive, and record enforcement actions.",
+  "title": "Jurisdiction, Accreditation, and Enforcement"
+}

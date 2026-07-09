@@ -1,0 +1,22 @@
+\subsection{ERC Security Knowledge Base}
+\label{subsec:erc-security-kb}
+
+To support the RAG-based ERC threat modeling agent, we constructed a versioned and extensible security knowledge base. The knowledge base combines primary ERC-specific sources with complementary vulnerability, security-control, and risk-assessment knowledge. It includes official ERC specifications collected from the Ethereum ERC repository, smart contract weakness information from SWC and OWASP Smart Contract Security, and auxiliary knowledge from MITRE ATT\&CK, DREAD, CVSS, and NIST SP 800-53. The collected raw artifacts are stored as traceable snapshots with source URLs, repository metadata, timestamps, and SHA-256 hashes. These artifacts are then normalized into structured records covering ERC standards, vulnerabilities, threat patterns, and auxiliary risk/contextualization models. The resulting indexed knowledge base currently contains 600 normalized ERC standards, 207 vulnerability records, 4 auxiliary knowledge records, and 815 retrieval-ready documents. This structure enables the agent to retrieve ERC-specific specifications, weakness descriptions, mitigation guidance, and risk-prioritization knowledge while preserving reproducibility and source traceability.
+
+\begin{table}[t]
+\centering
+\caption{Structure of the collected ERC security knowledge base}
+\label{tab:erc-security-kb}
+\begin{tabular}{p{0.18\linewidth} p{0.25\linewidth} p{0.33\linewidth} p{0.16\linewidth}}
+\hline
+\textbf{KB Layer} & \textbf{Sources} & \textbf{Role in the System} & \textbf{Current Status} \\
+\hline
+ERC standards & Ethereum ERC repository & Provides official ERC specifications, functions, events, and standard metadata. & 600 normalized ERC records \\
+Vulnerability knowledge & SWC Registry; OWASP Smart Contract Security & Provides smart contract weaknesses, descriptions, CWE/SWC/OWASP mappings, and remediation guidance. & 207 vulnerability records \\
+Threat patterns & Curated security patterns & Links common smart contract threats to assets, entry points, STRIDE categories, security properties, and test objectives. & Seeded and indexed \\
+Auxiliary knowledge & MITRE ATT\&CK; DREAD; CVSS; NIST SP 800-53 & Enriches threats with adversary context, risk scoring, prioritization, and mitigation guidance. & 4 auxiliary records \\
+Raw snapshots & GitHub repositories and official web pages & Preserves traceability using source URLs, timestamps, commits, and SHA-256 hashes. & 958 raw files \\
+Retrieval index & Normalized KB records & Provides retrieval-ready documents for the RAG agent. & 815 indexed documents \\
+\hline
+\end{tabular}
+\end{table}

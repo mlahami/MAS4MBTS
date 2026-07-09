@@ -1,0 +1,210 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1484",
+  "erc": "ERC-1484",
+  "events": [
+    {
+      "name": "IdentityCreated",
+      "signature": "IdentityCreated(address,uint,address,address,address[],address[],bool)"
+    },
+    {
+      "name": "AssociatedAddressAdded",
+      "signature": "AssociatedAddressAdded(address,uint,address,address,bool)"
+    },
+    {
+      "name": "AssociatedAddressRemoved",
+      "signature": "AssociatedAddressRemoved(address,uint,address,bool)"
+    },
+    {
+      "name": "ProviderAdded",
+      "signature": "ProviderAdded(address,uint,address,bool)"
+    },
+    {
+      "name": "ProviderRemoved",
+      "signature": "ProviderRemoved(address,uint,address,bool)"
+    },
+    {
+      "name": "ResolverAdded",
+      "signature": "ResolverAdded(address,uint,address,bool)"
+    },
+    {
+      "name": "ResolverRemoved",
+      "signature": "ResolverRemoved(address,uint,address,bool)"
+    },
+    {
+      "name": "RecoveryAddressChangeTriggered",
+      "signature": "RecoveryAddressChangeTriggered(address,uint,address,address,bool)"
+    },
+    {
+      "name": "RecoveryTriggered",
+      "signature": "RecoveryTriggered(address,uint,address[],address)"
+    },
+    {
+      "name": "IdentityDestroyed",
+      "signature": "IdentityDestroyed(address,uint,address,bool)"
+    },
+    {
+      "name": "AssociatedAddressAdded",
+      "signature": "AssociatedAddressAdded(address,uint,address,address)"
+    },
+    {
+      "name": "AssociatedAddressRemoved",
+      "signature": "AssociatedAddressRemoved(address,uint,address)"
+    },
+    {
+      "name": "ResolverAdded",
+      "signature": "ResolverAdded(address,uint,address)"
+    },
+    {
+      "name": "ResolverRemoved",
+      "signature": "ResolverRemoved(address,uint,address)"
+    },
+    {
+      "name": "RecoveryAddressChangeTriggered",
+      "signature": "RecoveryAddressChangeTriggered(address,uint,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "identityExists",
+      "operation_type": "contract_interaction",
+      "signature": "identityExists(uint)"
+    },
+    {
+      "name": "hasIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "hasIdentity(address)"
+    },
+    {
+      "name": "getEIN",
+      "operation_type": "contract_interaction",
+      "signature": "getEIN(address)"
+    },
+    {
+      "name": "isAssociatedAddressFor",
+      "operation_type": "contract_interaction",
+      "signature": "isAssociatedAddressFor(uint,address)"
+    },
+    {
+      "name": "isProviderFor",
+      "operation_type": "contract_interaction",
+      "signature": "isProviderFor(uint,address)"
+    },
+    {
+      "name": "isResolverFor",
+      "operation_type": "contract_interaction",
+      "signature": "isResolverFor(uint,address)"
+    },
+    {
+      "name": "getIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "getIdentity(uint)"
+    },
+    {
+      "name": "createIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "createIdentity(address,address[],address[])"
+    },
+    {
+      "name": "createIdentityDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "createIdentityDelegated(address,address,address[],address[],uint8,bytes32,bytes32,uint)"
+    },
+    {
+      "name": "addAssociatedAddress",
+      "operation_type": "contract_interaction",
+      "signature": "addAssociatedAddress(address,address,uint8,bytes32,bytes32,uint)"
+    },
+    {
+      "name": "addAssociatedAddressDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "addAssociatedAddressDelegated(address,address,uint8[2],bytes32[2],bytes32[2],uint[2])"
+    },
+    {
+      "name": "removeAssociatedAddress",
+      "operation_type": "contract_interaction",
+      "signature": "removeAssociatedAddress()"
+    },
+    {
+      "name": "removeAssociatedAddressDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "removeAssociatedAddressDelegated(address,uint8,bytes32,bytes32,uint)"
+    },
+    {
+      "name": "addProviders",
+      "operation_type": "contract_interaction",
+      "signature": "addProviders(address[])"
+    },
+    {
+      "name": "addProvidersFor",
+      "operation_type": "contract_interaction",
+      "signature": "addProvidersFor(uint,address[])"
+    },
+    {
+      "name": "removeProviders",
+      "operation_type": "contract_interaction",
+      "signature": "removeProviders(address[])"
+    },
+    {
+      "name": "removeProvidersFor",
+      "operation_type": "contract_interaction",
+      "signature": "removeProvidersFor(uint,address[])"
+    },
+    {
+      "name": "addResolvers",
+      "operation_type": "contract_interaction",
+      "signature": "addResolvers(address[])"
+    },
+    {
+      "name": "addResolversFor",
+      "operation_type": "contract_interaction",
+      "signature": "addResolversFor(uint,address[])"
+    },
+    {
+      "name": "removeResolvers",
+      "operation_type": "contract_interaction",
+      "signature": "removeResolvers(address[])"
+    },
+    {
+      "name": "removeResolversFor",
+      "operation_type": "contract_interaction",
+      "signature": "removeResolversFor(uint,address[])"
+    },
+    {
+      "name": "triggerRecoveryAddressChange",
+      "operation_type": "contract_interaction",
+      "signature": "triggerRecoveryAddressChange(address)"
+    },
+    {
+      "name": "triggerRecoveryAddressChangeFor",
+      "operation_type": "contract_interaction",
+      "signature": "triggerRecoveryAddressChangeFor(uint,address)"
+    },
+    {
+      "name": "triggerRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "triggerRecovery(uint,address,uint8,bytes32,bytes32,uint)"
+    },
+    {
+      "name": "triggerDestruction",
+      "operation_type": "contract_interaction",
+      "signature": "triggerDestruction(uint,address[],address[],bool)"
+    },
+    {
+      "name": "isSigned",
+      "operation_type": "contract_interaction",
+      "signature": "isSigned(address,bytes32,uint8,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC1484",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1484",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1484.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP proposes an identity management and aggregation framework on the Ethereum blockchain. It allows entities to claim an `Identity` via a singular `Identity Registry` smart contract, associate it with Ethereum addresses in a variety of meaningful ways, and use it to interact with smart contracts. This enables arbitrarily complex identity-related functionality. Notably (among other features) ERC-1484 `Identities`: are self-sovereign, can natively support [ERC-725](./eip-725.md) and [ERC-1056](./eip-1056.md) identities, are [DID compliant](https://github.com/NoahZinsmeister/ERC-1484/blob/master/best-practices/DID-Method.md), and can be fully powered by [meta-transactions](https://github.com/NoahZinsmeister/ERC-1484/tree/master/contracts/examples/Providers/MetaTransactions).",
+  "title": "Digital Identity Aggregator"
+}

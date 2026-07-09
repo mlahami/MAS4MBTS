@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7769",
+  "erc": "ERC-7769",
+  "events": [],
+  "functions": [],
+  "id": "ERC7769",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7769",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7769.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Defines new JSON-RPC API methods which enable [ERC-4337](./eip-4337) wallets to communicate with `UserOpeation` mempool nodes and bundlers, matching the functionality that exists for Ethereum transactions. Additionally, a set of `debug` JSON-RPC API methods is defined in order to facilitate development, testing and debugging issues with ERC-4337 implementations.",
+  "title": "JSON-RPC API for ERC-4337"
+}

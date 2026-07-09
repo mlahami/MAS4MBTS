@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "id": "TP-ACCESS-001",
+      "name": "Unauthorized privileged action",
+      "description": "A privileged entry point such as mint, burn, pause, or administrative update is callable by an unauthorized actor.",
+      "applicable_to": ["ERC-20", "ERC-721", "ERC-1155", "ERC-4626"],
+      "related_entry_points": ["mint", "burn", "pause", "setApprovalForAll", "setURI"],
+      "stride": "Elevation of Privilege",
+      "vulnerability": "Missing access control",
+      "cwe": "CWE-284",
+      "swc": "SWC-105",
+      "owasp": "Smart Contract Access Control",
+      "security_property": "Only authorized actors can execute privileged operations.",
+      "test_objective": "Verify that unauthorized callers cannot execute privileged functions.",
+      "countermeasure": "Use role-based access control, owner checks, and least-privilege permissions."
+    },
+    {
+      "id": "TP-ERC20-ALLOWANCE-001",
+      "name": "ERC-20 approval race condition",
+      "description": "A spender exploits transaction ordering around approve() to consume both old and new allowances.",
+      "applicable_to": ["ERC-20"],
+      "related_entry_points": ["approve", "transferFrom"],
+      "stride": "Tampering",
+      "vulnerability": "Transaction-ordering dependent allowance update",
+      "cwe": "CWE-362",
+      "swc": "SWC-114",
+      "owasp": "Smart Contract Transaction Order Dependence",
+      "security_property": "Allowance updates must not allow unintended double spending.",
+      "test_objective": "Verify that allowance changes cannot be exploited through front-running.",
+      "countermeasure": "Use increase/decrease allowance or require resetting allowance to zero before changing it."
+    },
+    {
+      "id": "TP-REENTRANCY-001",
+      "name": "Reentrancy during value or token transfer",
+      "description": "A callback or external value transfer allows re-entry before state is finalized.",
+      "applicable_to": ["ERC-20", "ERC-721", "ERC-1155", "ERC-4626"],
+      "related_entry_points": ["withdraw", "redeem", "safeTransferFrom", "safeBatchTransferFrom"],
+      "stride": "Tampering",
+      "vulnerability": "Reentrancy",
+      "cwe": "CWE-841",
+      "swc": "SWC-107",
+      "owasp": "Smart Contract Reentrancy",
+      "security_property": "State must be updated before external calls that may transfer control.",
+      "test_objective": "Verify that a malicious receiver cannot re-enter and consume state twice.",
+      "countermeasure": "Apply checks-effects-interactions and/or a reentrancy guard."
+    },
+    {
+      "id": "TP-ACCOUNTING-001",
+      "name": "Token accounting invariant violation",
+      "description": "A token operation incorrectly updates balances, ownership, supply, assets, or shares.",
+      "applicable_to": ["ERC-20", "ERC-721", "ERC-1155", "ERC-4626"],
+      "related_entry_points": ["transfer", "transferFrom", "safeTransferFrom", "safeBatchTransferFrom", "deposit", "withdraw", "redeem", "mint", "burn"],
+      "stride": "Tampering",
+      "vulnerability": "Incorrect token accounting",
+      "cwe": "CWE-682",
+      "swc": "N/A",
+      "owasp": "Smart Contract Business Logic Errors",
+      "security_property": "Token operations must preserve standard-specific accounting invariants.",
+      "test_objective": "Verify that state transitions preserve token accounting invariants.",
+      "countermeasure": "Check preconditions and assert post-state accounting invariants."
+    }
+  ]
+}

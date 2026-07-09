@@ -1,0 +1,90 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7992",
+  "erc": "ERC-7992",
+  "events": [
+    {
+      "name": "ModelRegistered",
+      "signature": "ModelRegistered(uint256,address,ModelCommitment)"
+    },
+    {
+      "name": "ModelUpdated",
+      "signature": "ModelUpdated(uint256,ModelCommitment,ModelCommitment)"
+    },
+    {
+      "name": "ModelDeprecated",
+      "signature": "ModelDeprecated(uint256)"
+    },
+    {
+      "name": "InferenceVerified",
+      "signature": "InferenceVerified(uint256,bytes32,bytes,address)"
+    },
+    {
+      "name": "InferenceStored",
+      "signature": "InferenceStored(bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerModel",
+      "operation_type": "contract_interaction",
+      "signature": "registerModel(ModelCommitment)"
+    },
+    {
+      "name": "updateModel",
+      "operation_type": "contract_interaction",
+      "signature": "updateModel(uint256,ModelCommitment)"
+    },
+    {
+      "name": "deprecateModel",
+      "operation_type": "contract_interaction",
+      "signature": "deprecateModel(uint256)"
+    },
+    {
+      "name": "getModel",
+      "operation_type": "contract_interaction",
+      "signature": "getModel(uint256)"
+    },
+    {
+      "name": "verifyInference",
+      "operation_type": "contract_interaction",
+      "signature": "verifyInference(uint256,bytes32,bytes,bytes)"
+    },
+    {
+      "name": "proofSystemOf",
+      "operation_type": "contract_interaction",
+      "signature": "proofSystemOf(uint256)"
+    },
+    {
+      "name": "registry",
+      "operation_type": "contract_interaction",
+      "signature": "registry()"
+    },
+    {
+      "name": "verifyAndStoreInference",
+      "operation_type": "contract_interaction",
+      "signature": "verifyAndStoreInference(uint256,bytes32,bytes,bytes)"
+    },
+    {
+      "name": "getInference",
+      "operation_type": "contract_interaction",
+      "signature": "getInference(bytes32)"
+    },
+    {
+      "name": "_dummyVerify",
+      "operation_type": "contract_interaction",
+      "signature": "_dummyVerify(bytes,bytes32,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7992",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7992",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7992.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC standardizes how smart contracts reference machine-learning (ML) models and accept zero-knowledge attestations of their inferences. It defines a registry that issues a `modelId` for a `ModelCommitment`, hashes of the model\u2019s weights/architecture, proving circuit/AIR, and verifying key, along with a `proofSystemId` for the proving system, and exposes discoverability via [ERC-165](./eip-165.md). A verifier interface provides `verifyInference(modelId, inputCommitment, output, proof)`: it retrieves the model commitment, dispatches verification to the declared proof system, and reverts on any mismatch or invalid proof; success implies validity and emits `InferenceVerified`. Inputs are bound by domain-separated commitments (nonceable for replay protection), outputs are ABI-encoded bytes",
+  "title": "Verifiable ML Model Inference (ZKML)"
+}

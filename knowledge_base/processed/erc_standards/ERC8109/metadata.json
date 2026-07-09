@@ -1,0 +1,50 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8109",
+  "erc": "ERC-8109",
+  "events": [
+    {
+      "name": "DiamondFunctionAdded",
+      "signature": "DiamondFunctionAdded(bytes4,address)"
+    },
+    {
+      "name": "DiamondFunctionReplaced",
+      "signature": "DiamondFunctionReplaced(bytes4,address,address)"
+    },
+    {
+      "name": "DiamondFunctionRemoved",
+      "signature": "DiamondFunctionRemoved(bytes4,address)"
+    },
+    {
+      "name": "DiamondDelegateCall",
+      "signature": "DiamondDelegateCall(address,bytes)"
+    },
+    {
+      "name": "DiamondMetadata",
+      "signature": "DiamondMetadata(bytes32,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "facetAddress",
+      "operation_type": "contract_interaction",
+      "signature": "facetAddress(bytes4)"
+    },
+    {
+      "name": "functionFacetPairs",
+      "operation_type": "contract_interaction",
+      "signature": "functionFacetPairs()"
+    }
+  ],
+  "id": "ERC8109",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8109",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8109.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Withdrawn",
+  "summary": "A diamond is a proxy contract that `delegatecall`s to multiple implementation contracts called facets. ![Diagram showing how a diamond contract works](../assets/eip-8109/basic-diamond-diagram.svg) Diamond contracts were originally standardized by [ERC-2535](./eip-2535.md). This standard refines that specification by simplifying terminology, reducing the implementation complexity of introspection functions, and standardizing specific events. This standard preserves the full capabilities of diamond contracts while reducing complexity. It also specifies an optional upgrade path for existing ERC-2535 diamonds.",
+  "title": "Diamonds, Simplified"
+}

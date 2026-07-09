@@ -1,0 +1,16 @@
+{
+  "category": "Improper Verification of Cryptographic Signature",
+  "cwe": "CWE-347",
+  "description": "Meta-transaction forwarders that relay calls without verifying the signer, nonce, chain, or expiry let relayers execute arbitrary actions on behalf of victims. Missing replay protection allows the same signed request to be executed multiple times.",
+  "id": "VULN-OWASP-SCWE-106",
+  "name": "Unauthenticated Meta-Transactions",
+  "owasp": "SCWE-106",
+  "remediation": "- Verify EIP-712 typed data signatures against the declared signer. - Track and increment per-signer nonces; enforce deadlines and chainId. - Restrict trusted forwarders and sanitize `msg.sender`/`msg.data` assumptions in downstream calls.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-106.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

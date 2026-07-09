@@ -1,0 +1,26 @@
+{
+  "applicable_to": [
+    "ERC-20",
+    "ERC-721",
+    "ERC-1155",
+    "ERC-4626"
+  ],
+  "countermeasure": "Use role-based access control, owner checks, and least-privilege permissions.",
+  "cwe": "CWE-284",
+  "description": "A privileged entry point such as mint, burn, pause, or administrative update is callable by an unauthorized actor.",
+  "id": "TP-ACCESS-001",
+  "name": "Unauthorized privileged action",
+  "owasp": "Smart Contract Access Control",
+  "related_entry_points": [
+    "mint",
+    "burn",
+    "pause",
+    "setApprovalForAll",
+    "setURI"
+  ],
+  "security_property": "Only authorized actors can execute privileged operations.",
+  "stride": "Elevation of Privilege",
+  "swc": "SWC-105",
+  "test_objective": "Verify that unauthorized callers cannot execute privileged functions.",
+  "vulnerability": "Missing access control"
+}

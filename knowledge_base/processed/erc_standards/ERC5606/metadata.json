@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5606",
+  "erc": "ERC-5606",
+  "events": [
+    {
+      "name": "Bundled",
+      "signature": "Bundled(uint256,DelegateData[],address)"
+    },
+    {
+      "name": "Unbundled",
+      "signature": "Unbundled(uint256,DelegateData[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "delegateTokens",
+      "operation_type": "contract_interaction",
+      "signature": "delegateTokens(uint256)"
+    },
+    {
+      "name": "unbundle",
+      "operation_type": "contract_interaction",
+      "signature": "unbundle(DelegateData[],uint256)"
+    },
+    {
+      "name": "bundle",
+      "operation_type": "contract_interaction",
+      "signature": "bundle(DelegateData[],uint256)"
+    },
+    {
+      "name": "initBundle",
+      "operation_type": "contract_interaction",
+      "signature": "initBundle(DelegateData[])"
+    }
+  ],
+  "id": "ERC5606",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5606",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5606.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This specification defines a minimal interface to create a multiverse NFT standard for digital assets such as wearables and in-game items that, in turn, index the delegate NFTs on each platform where this asset exists. These platforms could be metaverses, play-to-earn games or NFT marketplaces. This proposal depends on and extends [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md). The standard also allows for the \u2018bundling\u2019 and \u2018unbundling\u2019 of these delegate NFTs within the multiverse NFT so holders can trade them individually or as a bundle.",
+  "title": "Multiverse NFTs"
+}

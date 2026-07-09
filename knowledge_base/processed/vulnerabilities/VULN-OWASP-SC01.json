@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Improper access control describes any situation where a smart contract does not rigorously enforce *who* may invoke privileged behavior, *under which* conditions, and *with which* parameters. In modern DeFi systems this goes far beyond a single `onlyOwner` modifier. Governance contracts, multisigs, guardians, proxy admins, and cross\u2011chain routers all participate in enforcing who can mint or burn tokens, move reserves, reconfigure pools, pause or unpause core logic, or upgrade implementations. If any of these trust boundaries are weak or inconsistently applied, an attacker may be able to impersonate a privileged actor or cause the system to treat an untrusted address as if it were authorized. Few areas to focus on: - **Ownership / admin controls** (e.g., `onlyOwner`, governor, multisig) - **Upgrade and pause mechanisms** (proxy admins, guardians) - **Fund movement and accounting** (mint/burn, pool reconfiguration, fee routing) - **Cross-chain or cross-module trust boundaries** (bridges, vault routers, L2 messengers) Attackers exploit: - **Missing modifiers or role checks** on sensitive functions - **Incorrect assumption of `msg.sender`** (e.g., via delegate calls or meta-transactions) - **Unprotected initialization / re-initialization** of contracts or proxies - **Privilege confusion** across modules (e.g., off-by-one checks, mistaken trusted addresses) When combined with other issues (e.g., logic bugs, upgradeability flaws), access control failures can lead to full protocol compromise.",
+  "id": "VULN-OWASP-SC01",
+  "name": "SC01:2026 Access Control Vulnerabilities",
+  "owasp": "SC01",
+  "remediation": "Robust access control starts with using battle\u2011tested primitives such as OpenZeppelin\u2019s `Ownable` and `AccessControl` rather than bespoke role systems. Privileged roles should be few, clearly documented, and ideally held by well\u2011secured multisigs or governance modules instead of EOAs. Initialization routines for upgradeable contracts must be locked after first use, with `initializer`/`reinitializer` guards and explicit versioning to prevent re\u2011initialization attacks. Upgrade paths for proxies and core components should be tightly controlled and observable, with events emitted for every privilege change or upgrade so that off\u2011chain monitoring can quickly detect abuse. Finally, access control policies should be encoded in tests, fuzzing properties, and, where possible, formal specifications, verifying properties such as \u201cno unprivileged address can ever drain funds or seize admin control.\u201d",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC01-AccessControlVulnerabilities.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

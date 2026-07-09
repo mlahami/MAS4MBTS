@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7513",
+  "erc": "ERC-7513",
+  "events": [],
+  "functions": [
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(bytes)"
+    },
+    {
+      "name": "validatePermission",
+      "operation_type": "contract_interaction",
+      "signature": "validatePermission()"
+    },
+    {
+      "name": "register",
+      "operation_type": "contract_interaction",
+      "signature": "register(bytes,uint256)"
+    },
+    {
+      "name": "auditTo",
+      "operation_type": "contract_interaction",
+      "signature": "auditTo(uint256,bool)"
+    },
+    {
+      "name": "isAccessible",
+      "operation_type": "contract_interaction",
+      "signature": "isAccessible(address,uint256)"
+    },
+    {
+      "name": "verificationStatusOf",
+      "operation_type": "contract_interaction",
+      "signature": "verificationStatusOf(uint256)"
+    },
+    {
+      "name": "executeIntent",
+      "operation_type": "contract_interaction",
+      "signature": "executeIntent(Action[])"
+    }
+  ],
+  "id": "ERC7513",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7513",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7513.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Smart NFT is the fusion of Smart Contract and NFT. An NFT with the logic of a Smart Contract can be executed, enabling on-chain interactions. Transitioning from an NFT to a Smart NFT is akin to going from a regular landline telephone to a smartphone, opening up broader and more intelligent possibilities for NFTs.",
+  "title": "Smart NFT - A Component for Intent-Centric"
+}

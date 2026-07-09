@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3448",
+  "erc": "ERC-3448",
+  "events": [],
+  "functions": [
+    {
+      "name": "createFromBytes",
+      "operation_type": "contract_interaction",
+      "signature": "createFromBytes(address,uint256,uint256[])"
+    },
+    {
+      "name": "createFromCalldata",
+      "operation_type": "contract_interaction",
+      "signature": "createFromCalldata(address,uint256,uint256[])"
+    },
+    {
+      "name": "getMetadataWithoutCall",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadataWithoutCall()"
+    },
+    {
+      "name": "getMetadataViaCall",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadataViaCall()"
+    }
+  ],
+  "id": "ERC3448",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3448",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3448.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "By standardizing on a known minimal bytecode proxy implementation with support for immutable metadata, this standard allows users and third party tools (e.g. Etherscan) to: (a) simply discover that a contract will always redirect in a known manner and (b) depend on the behavior of the code at the destination contract as the behavior of the redirecting contract and (c) verify/view the attached metadata. Tooling can interrogate the bytecode at a redirecting address to determine the location of the code that will run along with the associated metadata - and can depend on representations about that code (verified source, third-party audits, etc). This implementation forwards all calls via `DELEGATECALL` and any (calldata) input plus the metadata at the end of the bytecode to the implementation",
+  "title": "MetaProxy Standard"
+}

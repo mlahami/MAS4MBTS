@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "id": "AUX-RISK-DREAD-001",
+      "kind": "risk_scoring_model",
+      "name": "DREAD",
+      "role": "threat_prioritization",
+      "description": "Qualitative scoring model for prioritizing threats using Damage, Reproducibility, Exploitability, Affected Users, and Discoverability.",
+      "source": {
+        "source_id": "dread"
+      },
+      "applies_to": [
+        "early-stage threat modeling",
+        "generated ETM threats",
+        "pre-deployment risk ranking"
+      ],
+      "fields": [
+        {"name": "damage", "scale": "0-10", "meaning": "Potential damage if exploited."},
+        {"name": "reproducibility", "scale": "0-10", "meaning": "Ease of reproducing the attack."},
+        {"name": "exploitability", "scale": "0-10", "meaning": "Ease of exploitation."},
+        {"name": "affected_users", "scale": "0-10", "meaning": "Scope of affected users or assets."},
+        {"name": "discoverability", "scale": "0-10", "meaning": "Ease of discovering the weakness."}
+      ],
+      "usage_guidelines": [
+        "Use DREAD for lightweight prioritization of generated threats.",
+        "Store the scoring rationale, not only the numeric score.",
+        "Use as optional ETM enrichment through a RiskAssessment relation."
+      ]
+    },
+    {
+      "id": "AUX-RISK-CVSS-001",
+      "kind": "risk_scoring_model",
+      "name": "CVSS",
+      "role": "vulnerability_scoring",
+      "description": "Standardized scoring model for assessing the severity of known vulnerabilities using metrics such as attack vector, complexity, privileges, user interaction, scope, and CIA impact.",
+      "source": {
+        "source_id": "first_cvss",
+        "source_url": "https://www.first.org/cvss/"
+      },
+      "applies_to": [
+        "known vulnerabilities",
+        "deployed smart contract weaknesses",
+        "security reporting"
+      ],
+      "fields": [
+        {"name": "attack_vector", "meaning": "How the vulnerability is exploited."},
+        {"name": "attack_complexity", "meaning": "Conditions beyond attacker control required for exploitation."},
+        {"name": "privileges_required", "meaning": "Privileges required before exploitation."},
+        {"name": "user_interaction", "meaning": "Whether another user must participate."},
+        {"name": "confidentiality", "meaning": "Impact on confidentiality."},
+        {"name": "integrity", "meaning": "Impact on integrity."},
+        {"name": "availability", "meaning": "Impact on availability."}
+      ],
+      "usage_guidelines": [
+        "Use CVSS when a threat is grounded in a concrete vulnerability.",
+        "Adapt metric interpretation carefully for blockchain execution semantics.",
+        "Keep the vector string and rationale in the generated model."
+      ]
+    }
+  ]
+}

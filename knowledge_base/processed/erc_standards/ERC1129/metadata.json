@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1129",
+  "erc": "ERC-1129",
+  "events": [
+    {
+      "name": "NewAnnouncement",
+      "signature": "NewAnnouncement(string,string)"
+    },
+    {
+      "name": "RemovedAnnouncement",
+      "signature": "RemovedAnnouncement(string,string,string,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "theNumberOfAnnouncements",
+      "operation_type": "contract_interaction",
+      "signature": "theNumberOfAnnouncements()"
+    },
+    {
+      "name": "readPosts",
+      "operation_type": "contract_interaction",
+      "signature": "readPosts(uint256)"
+    },
+    {
+      "name": "givePostingPermission",
+      "operation_type": "contract_interaction",
+      "signature": "givePostingPermission(address,bool,string)"
+    },
+    {
+      "name": "postAnnouncement",
+      "operation_type": "contract_interaction",
+      "signature": "postAnnouncement(string)"
+    },
+    {
+      "name": "removeAnnouncement",
+      "operation_type": "contract_interaction",
+      "signature": "removeAnnouncement(uint256,string)"
+    }
+  ],
+  "id": "ERC1129",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1129",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1129.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The proposed ERC defines format on how to post announcements about the service as well as how to remove them. It also defines mechanics on posting permissions and human friendly interface.",
+  "title": "Standardised DAPP announcements"
+}

@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5560",
+  "erc": "ERC-5560",
+  "events": [
+    {
+      "name": "Redeem",
+      "signature": "Redeem(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isRedeemable",
+      "operation_type": "contract_interaction",
+      "signature": "isRedeemable(uint256)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC5560",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5560",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5560.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The EIP is a Redeemable NFT extension which adds a `redeem` function to [EIP-721](./eip-721.md). It can be implemented when an NFT issuer wants his/her NFT to be redeemed for a physical object.",
+  "title": "Redeemable NFTs"
+}

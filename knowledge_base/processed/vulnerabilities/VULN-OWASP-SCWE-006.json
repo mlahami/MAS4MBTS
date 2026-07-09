@@ -1,0 +1,16 @@
+{
+  "category": "Improper Adherence to Coding Standards",
+  "cwe": "CWE-710",
+  "description": "Inconsistent inheritance hierarchies occur when a contract inherits from multiple contracts or libraries in an inconsistent or contradictory way. This leads to unexpected behavior or errors due to conflicting function implementations, state variables, or access controls. A proper and consistent inheritance structure is essential for clear logic and predictable contract execution. Some common issues in inheritance hierarchies include: - Ambiguous function overrides. - Conflicting variable definitions. - Misuse of multiple inheritance, which can lead to the diamond problem. Inconsistent inheritance can significantly compromise a contract\u2019s functionality and security, especially when multiple contracts or libraries with similar function names are used.",
+  "id": "VULN-OWASP-SCWE-006",
+  "name": "Inconsistent Inheritance Hierarchy",
+  "owasp": "SCWE-006",
+  "remediation": "- **Clear Inheritance Structure:** Ensure that the inheritance hierarchy is logically structured and does not have overlapping functionalities or conflicting state variables. - **Use Explicit Overrides:** Clearly override functions when necessary to avoid ambiguity, and ensure there is no unintentional function masking. - **Favor Single Inheritance or Controlled Multiple Inheritance:** Avoid overly complex inheritance structures; if multiple inheritance is necessary, consider using design patterns like the Diamond Problem Resolver (i.e., using interfaces or abstract contracts). - **Regular Audits:** Periodically audit the inheritance structure to identify any inconsistencies early on.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-006.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

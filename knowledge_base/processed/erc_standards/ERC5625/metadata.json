@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5625",
+  "erc": "ERC-5625",
+  "events": [],
+  "functions": [],
+  "id": "ERC5625",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5625",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5625.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP extends the NFT metadata JSON schema defined in [EIP-721](./eip-721.md) and [EIP-1155](./eip-1155.md), adding a `dStorage` key that provides information about how the NFT data is stored.",
+  "title": "NFT Metadata JSON Schema dStorage Extension"
+}

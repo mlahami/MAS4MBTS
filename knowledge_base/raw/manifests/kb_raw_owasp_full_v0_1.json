@@ -1,0 +1,2136 @@
+{
+  "created_at": "2026-07-06T15:15:37+00:00",
+  "file_count": 301,
+  "raw_root": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw",
+  "snapshot_id": "kb_raw_owasp_full_v0_1",
+  "source_count": 1,
+  "source_records": [
+    {
+      "archive": {
+        "bytes": 24128817,
+        "sha256": "45c88a3eaf4a4cbbcda25cd6d7aa709668d9d2d4d94b07b45745fb53f39f43a7",
+        "status": 200,
+        "url": "https://github.com/OWASP/owasp-scs/archive/refs/heads/main.zip"
+      },
+      "collected_at": "2026-07-06T15:15:37+00:00",
+      "files": [
+        {
+          "bytes": 4632,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\.github\\CODE_OF_CONDUCT.md",
+          "repo_path": ".github/CODE_OF_CONDUCT.md",
+          "sha256": "1cee6e51a0a19531126925e2123d242a9994239fac328592ed020bffb73c5b3f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/.github/CODE_OF_CONDUCT.md"
+        },
+        {
+          "bytes": 152,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\.github\\CONTRIBUTING.md",
+          "repo_path": ".github/CONTRIBUTING.md",
+          "sha256": "87074232c9dd9aa895b0bfb48db1b4164b02eac2af4bd4bf6eb16dff2dc3a667",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/.github/CONTRIBUTING.md"
+        },
+        {
+          "bytes": 2703,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\.github\\ISSUE_TEMPLATE\\make-donation.yml",
+          "repo_path": ".github/ISSUE_TEMPLATE/make-donation.yml",
+          "sha256": "c1ec926a1ea0c2c16fd65064d9c02e735302bdef8a7e4585c31389f9ef5c6796",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/.github/ISSUE_TEMPLATE/make-donation.yml"
+        },
+        {
+          "bytes": 771,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\.github\\SECURITY.md",
+          "repo_path": ".github/SECURITY.md",
+          "sha256": "479775c1e0780670862e51c1a0cb6b8bbc1aa083753ce97d052c3705696de2f8",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/.github/SECURITY.md"
+        },
+        {
+          "bytes": 996,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\.github\\workflows\\ci.yml",
+          "repo_path": ".github/workflows/ci.yml",
+          "sha256": "f4f582eb91b6bac36319ba241ee020b3b92f5dcc82ea978a224edf03f3fcf0b1",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/.github/workflows/ci.yml"
+        },
+        {
+          "bytes": 159,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\CHANGELOG.md",
+          "repo_path": "CHANGELOG.md",
+          "sha256": "c2fb97f25ff9700ecde13c4343578100dea6b353d1a7562dc1f9d3f68475e4f3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/CHANGELOG.md"
+        },
+        {
+          "bytes": 18608,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\License.md",
+          "repo_path": "License.md",
+          "sha256": "49a60855fd3ad4038516217d0ddef5f1c485299f2185d096ccaf3a927e35dc60",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/License.md"
+        },
+        {
+          "bytes": 4515,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\README.md",
+          "repo_path": "README.md",
+          "sha256": "d3d576fa17d23c1ba6f6d9acae3993143b6cf2fd0bb5d4681585e194440320f2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/README.md"
+        },
+        {
+          "bytes": 1446,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\about_cookies.md",
+          "repo_path": "about_cookies.md",
+          "sha256": "05248ea155fa5e0b7fb7776e72ecc9966c70760b5cb46ab3f152e6547dbbdfd0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/about_cookies.md"
+        },
+        {
+          "bytes": 25,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\cross_references.yaml",
+          "repo_path": "cross_references.yaml",
+          "sha256": "4e801fa48f7fdc1f5f6bda524f1c1d7d692a5ef28178b7d296de66eb1a08f6de",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/cross_references.yaml"
+        },
+        {
+          "bytes": 2321,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\0x01-Foreword.md",
+          "repo_path": "docs/SCSTG/0x01-Foreword.md",
+          "sha256": "2195dbd700f034a3c27376884d1fd08cf4f5da7ea236f6af48058349784290b0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/0x01-Foreword.md"
+        },
+        {
+          "bytes": 2238,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\0x02a-Frontispiece.md",
+          "repo_path": "docs/SCSTG/0x02a-Frontispiece.md",
+          "sha256": "1a189562bda84e3b7077a1cc4366f41ea4f5a962cf995aa19c959783d989fbe3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/0x02a-Frontispiece.md"
+        },
+        {
+          "bytes": 405,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\0x02b-SCSVS-SCSTG-Adoption.md",
+          "repo_path": "docs/SCSTG/0x02b-SCSVS-SCSTG-Adoption.md",
+          "sha256": "aa691203a9f94eab1f3b62fd469124a7bf5b65830c021a173ca1530be246ffa5",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/0x02b-SCSVS-SCSTG-Adoption.md"
+        },
+        {
+          "bytes": 4916,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\0x02c-Acknowledgements.md",
+          "repo_path": "docs/SCSTG/0x02c-Acknowledgements.md",
+          "sha256": "97d890589b066342731a2a6ab5b7cd26fe23f4b50e8e4a3cf7ecdd63fe6c3b6c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/0x02c-Acknowledgements.md"
+        },
+        {
+          "bytes": 6641,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\0x03-Overview.md",
+          "repo_path": "docs/SCSTG/0x03-Overview.md",
+          "sha256": "81b28ceb5749826bc8c6684f669b2f2b334f332c098842cc36cf2dbf3218b86f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/0x03-Overview.md"
+        },
+        {
+          "bytes": 6302,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\0x04a-Smart-Contract-Taxonomy.md",
+          "repo_path": "docs/SCSTG/0x04a-Smart-Contract-Taxonomy.md",
+          "sha256": "aeba488b7a3e5e90aeb8985d149c279873377637f78c3d7f7703170a2430c5ac",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/0x04a-Smart-Contract-Taxonomy.md"
+        },
+        {
+          "bytes": 1993,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\index.md",
+          "repo_path": "docs/SCSTG/index.md",
+          "sha256": "44e0400743dcfdfd441a6328c20c9c5b716790b0027c80c08103434908f7fe82",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/index.md"
+        },
+        {
+          "bytes": 3394,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-ARCH\\SCSTG-TEST-0007.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-ARCH/SCSTG-TEST-0007.md",
+          "sha256": "5f632d1513421c2bd0fff5b4a9ab0e6c6698fd1d6508ae3ca81ccf4162e57779",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-ARCH/SCSTG-TEST-0007.md"
+        },
+        {
+          "bytes": 1980,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-ARCH\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-ARCH/overview/index.md",
+          "sha256": "1fdf8b1bc193c4756c393f6a3eb62bd3da82de9517d8adcbbde68f193b9c2760",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-ARCH/overview/index.md"
+        },
+        {
+          "bytes": 2812,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\SCSTG-TEST-0001.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0001.md",
+          "sha256": "784811289862914c6f1f00e360c1dc8c59e4f0c1c1187e8fc98560d101714ba5",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0001.md"
+        },
+        {
+          "bytes": 882,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\SCSTG-TEST-0002.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0002.md",
+          "sha256": "637d9be5495795d3fa5e10557254a9d0c8c96b144721cbf8aa6e2078daeecd11",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0002.md"
+        },
+        {
+          "bytes": 1687,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\SCSTG-TEST-0003.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0003.md",
+          "sha256": "d4dfd0a6f27491bbaf07aa8a8f936caa92c3de2267c52d36ac7fa5b8981695bf",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0003.md"
+        },
+        {
+          "bytes": 679,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\SCSTG-TEST-0004.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0004.md",
+          "sha256": "04b78992e82e9e91b7d8fba4ad28de49cbc10e0b966b7bb4e2da7430d1ad1535",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0004.md"
+        },
+        {
+          "bytes": 662,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\SCSTG-TEST-0005.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0005.md",
+          "sha256": "aff3108a7af64dc1847747d29a444595fa46f8d63d0947073678a65c1dbb3b18",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0005.md"
+        },
+        {
+          "bytes": 2114,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\SCSTG-TEST-0006.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0006.md",
+          "sha256": "82a3b62b0d9805b8f83084064f9c1146752ea75b9237822532f240069fa0c5b7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/SCSTG-TEST-0006.md"
+        },
+        {
+          "bytes": 1940,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-AUTH\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-AUTH/overview/index.md",
+          "sha256": "ee5a8a015fc00ec01c214bc6147613a855f6181569c2237be036f3790315db43",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-AUTH/overview/index.md"
+        },
+        {
+          "bytes": 3633,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-BLOCK\\SCSTG-TEST-0008.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-BLOCK/SCSTG-TEST-0008.md",
+          "sha256": "e291f9ad294684739ea6ca585b5b22642859659c82452d949870ac1f0f50d547",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-BLOCK/SCSTG-TEST-0008.md"
+        },
+        {
+          "bytes": 4196,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-BLOCK\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-BLOCK/overview/index.md",
+          "sha256": "649ca95b9fa87f898149eb83413ff7107fc98def427b1fb465e7025783e7c94a",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-BLOCK/overview/index.md"
+        },
+        {
+          "bytes": 4971,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-BRIDGE\\SCSTG-TEST-0009.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-BRIDGE/SCSTG-TEST-0009.md",
+          "sha256": "be3d7c4558ec524d08fd66c5715fbd6a0980bf8b34a9cf22e882b6365c6979df",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-BRIDGE/SCSTG-TEST-0009.md"
+        },
+        {
+          "bytes": 5700,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-BRIDGE\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-BRIDGE/overview/index.md",
+          "sha256": "44aa71b90442b20be78a8aa3e68d06c62fca4057b388eb14a3728eaa401d71f2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-BRIDGE/overview/index.md"
+        },
+        {
+          "bytes": 4786,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-CODE\\SCSTG-TEST-0010.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-CODE/SCSTG-TEST-0010.md",
+          "sha256": "aaccef07bcc542392f316e8cfc834570a5e3f5d651719f71c840c64d37b541f6",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-CODE/SCSTG-TEST-0010.md"
+        },
+        {
+          "bytes": 3469,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-CODE\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-CODE/overview/index.md",
+          "sha256": "acdc4ad6a0b4219c935093fb9f0641970aa4ec6c35944770a3d1ae2e80987e2c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-CODE/overview/index.md"
+        },
+        {
+          "bytes": 2481,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-COMM\\SCSTG-TEST-0011.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-COMM/SCSTG-TEST-0011.md",
+          "sha256": "1d7bbc8ff1e6bae101d935f717b7add40da8123edd52319c55f35370390aa2b2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-COMM/SCSTG-TEST-0011.md"
+        },
+        {
+          "bytes": 1947,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-COMM\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-COMM/overview/index.md",
+          "sha256": "fd55016a2ee3c38d0c7344fb69ad56187bf732fef5411f2e3271d673fc0cdbe0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-COMM/overview/index.md"
+        },
+        {
+          "bytes": 3309,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-COMP\\SCSTG-TEST-0012.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-COMP/SCSTG-TEST-0012.md",
+          "sha256": "23139efe3b3cfad6351f6eb0d7070581d16f63cd7b248c62757741b1bfb447fd",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-COMP/SCSTG-TEST-0012.md"
+        },
+        {
+          "bytes": 5080,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-COMP\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-COMP/overview/index.md",
+          "sha256": "07fd776c28feb70127a6e342511880ba9386b4d3869323f953b3113112bc6696",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-COMP/overview/index.md"
+        },
+        {
+          "bytes": 4771,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-CRYPTO\\SCSTG-TEST-0013.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-CRYPTO/SCSTG-TEST-0013.md",
+          "sha256": "e762b1525c615952c04b382cc82ab4cfed632d5b4d9547feb94e0876c422b779",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-CRYPTO/SCSTG-TEST-0013.md"
+        },
+        {
+          "bytes": 2614,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-CRYPTO\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-CRYPTO/overview/index.md",
+          "sha256": "00bb09d1f464875e116dba8eeb8ede61a522e2ed4ee8222257aa16645e6e3b31",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-CRYPTO/overview/index.md"
+        },
+        {
+          "bytes": 2507,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-DEFI\\SCSTG-TEST-0014.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-DEFI/SCSTG-TEST-0014.md",
+          "sha256": "7a2474e6e6dcbc65ce8d9ed2ad954688f2189b7cc4772e1b15ef2934fe0ab77f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-DEFI/SCSTG-TEST-0014.md"
+        },
+        {
+          "bytes": 2634,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-DEFI\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-DEFI/overview/index.md",
+          "sha256": "6efae406a0bcb19976fd8b68d1b231635d16e8ccb175cb751410a9c82e6a8134",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-DEFI/overview/index.md"
+        },
+        {
+          "bytes": 2666,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-GOV\\SCSTG-TEST-0015.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-GOV/SCSTG-TEST-0015.md",
+          "sha256": "f7e29a53b03f915ff22c576bb7e0114a666f0ef3c47719bca257166febcd9c85",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-GOV/SCSTG-TEST-0015.md"
+        },
+        {
+          "bytes": 3624,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-GOV\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-GOV/overview/index.md",
+          "sha256": "87645981d36146d57f080f419cfc3845120445cf5637901490fbb0f9beff83ae",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-GOV/overview/index.md"
+        },
+        {
+          "bytes": 3267,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-ORACLE\\SCSTG-TEST-0016.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-ORACLE/SCSTG-TEST-0016.md",
+          "sha256": "7f148051673bee9b66ebdb1b6f87709fbd863a27e8aa1353d6b411145a9b95d6",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-ORACLE/SCSTG-TEST-0016.md"
+        },
+        {
+          "bytes": 4016,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\SCSVS-ORACLE\\overview\\index.md",
+          "repo_path": "docs/SCSTG/tests/SCSVS-ORACLE/overview/index.md",
+          "sha256": "c2dca0541d95ff64ecf5c48915976e68f5a90db2cd544c621448adbde6b31ded",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/SCSVS-ORACLE/overview/index.md"
+        },
+        {
+          "bytes": 37,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSTG\\tests\\index.md",
+          "repo_path": "docs/SCSTG/tests/index.md",
+          "sha256": "e22fd466ac1b6fd4986b892f6a1857245b28d43e663134c5b14a4a14f01770d2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSTG/tests/index.md"
+        },
+        {
+          "bytes": 2699,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\01-Frontispiece.md",
+          "repo_path": "docs/SCSVS/01-Frontispiece.md",
+          "sha256": "50ce4ab84ef655c364da5a259df9d8ceddce452e5496e69825fb3409ec21db67",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/01-Frontispiece.md"
+        },
+        {
+          "bytes": 4246,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\02-Preface.md",
+          "repo_path": "docs/SCSVS/02-Preface.md",
+          "sha256": "c9a445394a6a379f551df437408b769e094b507b83442c59fb3caa57f9e1fdb0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/02-Preface.md"
+        },
+        {
+          "bytes": 3248,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\03-Using-SCSVS.md",
+          "repo_path": "docs/SCSVS/03-Using-SCSVS.md",
+          "sha256": "e9a200df80a25ec0cd1b9c404f98e03477b46711969fa48ba70904d7120e9974",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/03-Using-SCSVS.md"
+        },
+        {
+          "bytes": 3065,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\04-Assessment_and_Certification.md",
+          "repo_path": "docs/SCSVS/04-Assessment_and_Certification.md",
+          "sha256": "f4f41613990d00cd349819759c5159ceb88f0368cd2b6cd3f342d4cff4e5775c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/04-Assessment_and_Certification.md"
+        },
+        {
+          "bytes": 467,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\05-SCSVS-ARCH.md",
+          "repo_path": "docs/SCSVS/05-SCSVS-ARCH.md",
+          "sha256": "787a125301533c660feebaba755d0e58746ea4110b1fb327bc84a9c446bc4f09",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/05-SCSVS-ARCH.md"
+        },
+        {
+          "bytes": 324,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\06-SCSVS-CODE.md",
+          "repo_path": "docs/SCSVS/06-SCSVS-CODE.md",
+          "sha256": "3f9212eeb76e303eb5cdfb97e0df8681838f186d8d7a04feb2d7afdf23afa5e8",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/06-SCSVS-CODE.md"
+        },
+        {
+          "bytes": 390,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\07-SCSVS-GOV.md",
+          "repo_path": "docs/SCSVS/07-SCSVS-GOV.md",
+          "sha256": "7cc19d0a7d00f7a25fc3dfa5c8c1318ea5194a622b368a7d8a3167fd0a23be33",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/07-SCSVS-GOV.md"
+        },
+        {
+          "bytes": 357,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\08-SCSVS-AUTH.md",
+          "repo_path": "docs/SCSVS/08-SCSVS-AUTH.md",
+          "sha256": "117fa14546553a8b991e0a4ad1f0f2dd174d0934f72d1576b29561a64d34e281",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/08-SCSVS-AUTH.md"
+        },
+        {
+          "bytes": 372,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\09-SCSVS-COMM.md",
+          "repo_path": "docs/SCSVS/09-SCSVS-COMM.md",
+          "sha256": "45518588550be1d1f644f4f80258ac8d3512db3ca1f1b6fd276a1bdf611e4fc4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/09-SCSVS-COMM.md"
+        },
+        {
+          "bytes": 256,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\10-SCSVS-CRYPTO.md",
+          "repo_path": "docs/SCSVS/10-SCSVS-CRYPTO.md",
+          "sha256": "27853411cf9d41562bd8d1cfcae2792865091160daf465942f4fce0373965ae2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/10-SCSVS-CRYPTO.md"
+        },
+        {
+          "bytes": 226,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\11-SCSVS-ORACLE.md",
+          "repo_path": "docs/SCSVS/11-SCSVS-ORACLE.md",
+          "sha256": "8a68dbefb2b14c6b83ae289f984f2fd85c0d9d08003cb5f9bda3f0ed9bba9129",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/11-SCSVS-ORACLE.md"
+        },
+        {
+          "bytes": 188,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\12-SCSVS-BLOCK.md",
+          "repo_path": "docs/SCSVS/12-SCSVS-BLOCK.md",
+          "sha256": "0930de2076d196c9269655326dca0aa22eedf30d81fae84a5d98fe90acffc87b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/12-SCSVS-BLOCK.md"
+        },
+        {
+          "bytes": 211,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\13-SCSVS-BRIDGE.md",
+          "repo_path": "docs/SCSVS/13-SCSVS-BRIDGE.md",
+          "sha256": "69ff0a7fd621bf6d9ec7f6ee593f470d9c06a6bc892b1be394b8a7d58a90f031",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/13-SCSVS-BRIDGE.md"
+        },
+        {
+          "bytes": 190,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\14-SCSVS-DEFI.md",
+          "repo_path": "docs/SCSVS/14-SCSVS-DEFI.md",
+          "sha256": "5f439e21a034bb5cffb33e80cf340a169c6ce3e54e4ede049cc6cfbb0dc7ea29",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/14-SCSVS-DEFI.md"
+        },
+        {
+          "bytes": 231,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\15-SCSVS-COMP.md",
+          "repo_path": "docs/SCSVS/15-SCSVS-COMP.md",
+          "sha256": "3f667809d75a8de748d73f31854a7eb2555792256c1e55a8bc6afb374be02e03",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/15-SCSVS-COMP.md"
+        },
+        {
+          "bytes": 6822,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\16-Appendix-A_Glossary.md",
+          "repo_path": "docs/SCSVS/16-Appendix-A_Glossary.md",
+          "sha256": "db07d130b48910120851917a08f9e44b90e4be2300b54f9706edd46d3e590060",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/16-Appendix-A_Glossary.md"
+        },
+        {
+          "bytes": 306,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\17-Appendix-B_References.md",
+          "repo_path": "docs/SCSVS/17-Appendix-B_References.md",
+          "sha256": "431771516e95df53b48c05bb3425703d4ef800e0de4047654e647026cb804896",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/17-Appendix-B_References.md"
+        },
+        {
+          "bytes": 3514,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-ARCH-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-ARCH-1.md",
+          "sha256": "83a0ae1cd55ad14081d03ce02ee9074f048f953995af80723590f26c587b2570",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-ARCH-1.md"
+        },
+        {
+          "bytes": 3251,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-ARCH-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-ARCH-2.md",
+          "sha256": "70cddaffcdc0b6ad135c3bd45c8f39e25c1d4e6dd0fc0b464c16f720a3837b44",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-ARCH-2.md"
+        },
+        {
+          "bytes": 2484,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-ARCH-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-ARCH-3.md",
+          "sha256": "1bcb76471a8467aff8153345f71981e8eb8a467394cdf9300b73874710291cb5",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-ARCH-3.md"
+        },
+        {
+          "bytes": 2618,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-AUTH-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-AUTH-1.md",
+          "sha256": "a0f14a292668270c780855abbbde5c19fd85005993deceee93ae4c6bda6e26c2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-AUTH-1.md"
+        },
+        {
+          "bytes": 1760,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-AUTH-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-AUTH-2.md",
+          "sha256": "d0ede6e1e28b93715de273da50713650b84d7a67834bbc4e423448ac621e4d9c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-AUTH-2.md"
+        },
+        {
+          "bytes": 2593,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-AUTH-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-AUTH-3.md",
+          "sha256": "d999e56b77ebda5d3849fcd6cc20c0892993500dd67b9c403379010c6fac66c0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-AUTH-3.md"
+        },
+        {
+          "bytes": 1654,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-BLOCK-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-BLOCK-1.md",
+          "sha256": "129ed44aa3718f38dcb9e0ac022e898e61bab2fbe2b9cf7e355c8704a5f50f2b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-BLOCK-1.md"
+        },
+        {
+          "bytes": 1579,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-BLOCK-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-BLOCK-2.md",
+          "sha256": "b5f9fbcc95b2a58fdc72fb02c54d19eb33bbf85cbcb7378b7eecf6c2880ea247",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-BLOCK-2.md"
+        },
+        {
+          "bytes": 2029,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-BRIDGE-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-BRIDGE-1.md",
+          "sha256": "4e315305de822be82f289c8c56d8108de1569010b2bb4be749368b1698540295",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-BRIDGE-1.md"
+        },
+        {
+          "bytes": 2619,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-BRIDGE-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-BRIDGE-2.md",
+          "sha256": "41333e2ed7b4b8f73251a83792b56bf8f8d33f5e22802146e5d3db50db6d49c4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-BRIDGE-2.md"
+        },
+        {
+          "bytes": 1339,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-BRIDGE-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-BRIDGE-3.md",
+          "sha256": "b60973939cdebb8da7d67026c9bd9d8a1f1accfe709509327e3e6cc6f8aecd12",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-BRIDGE-3.md"
+        },
+        {
+          "bytes": 734,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-BRIDGE-4.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-BRIDGE-4.md",
+          "sha256": "41db4e47c7d503947da384c7b66a1c484cfd8610bbc35af6fea375674a8deee7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-BRIDGE-4.md"
+        },
+        {
+          "bytes": 2181,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-CODE-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-CODE-1.md",
+          "sha256": "8627e31cf147b546b970b8aa9af35324fe62e23f4d5419caf72c1ef589239f05",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-CODE-1.md"
+        },
+        {
+          "bytes": 2601,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-CODE-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-CODE-2.md",
+          "sha256": "80bd133054bc2db7463c98158a7df95496811891aff5c300496bc1cca306d1c7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-CODE-2.md"
+        },
+        {
+          "bytes": 2561,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-CODE-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-CODE-3.md",
+          "sha256": "63d264bda6fc69170dba4b374dd695463cda5d107a2bc24a149ab7433cd6863e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-CODE-3.md"
+        },
+        {
+          "bytes": 2784,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMM-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMM-1.md",
+          "sha256": "eba546d785f296fddbc874e05bb7c44ef9a6af17b9415cbbb8e70782f836c6f1",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMM-1.md"
+        },
+        {
+          "bytes": 2612,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMM-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMM-2.md",
+          "sha256": "0d36db0d4ba0489af6c55a2ed506191b58109fa13b5403dba44720db3e19c573",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMM-2.md"
+        },
+        {
+          "bytes": 2218,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMM-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMM-3.md",
+          "sha256": "9e90d960a42993343a7c3d403dd2bef565bb73128f6c7a54869c69e10dbe642b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMM-3.md"
+        },
+        {
+          "bytes": 1269,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMM-4.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMM-4.md",
+          "sha256": "769ba2c03d67ecdf6e7def95317d824551812757c898814f0440a01360ce68a8",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMM-4.md"
+        },
+        {
+          "bytes": 1644,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMP-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMP-1.md",
+          "sha256": "f7eed90a9c09a839e6d355d116ae272e12242db6db3207c3aed6bf8ab0465a6c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMP-1.md"
+        },
+        {
+          "bytes": 865,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMP-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMP-2.md",
+          "sha256": "f2d183ead08be45086822a816dbb11d2103e84d4e81e932362ba7e72f3d9c54b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMP-2.md"
+        },
+        {
+          "bytes": 784,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMP-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMP-3.md",
+          "sha256": "a3b0f74b66c23c9ded766368e235303168f1214e49e1ce05ede7855d263723fc",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMP-3.md"
+        },
+        {
+          "bytes": 843,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMP-4.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMP-4.md",
+          "sha256": "0c7fee853548c862ac36df9744273c83ae122fb4b585e27be95bc69e443d18be",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMP-4.md"
+        },
+        {
+          "bytes": 547,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMP-5.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMP-5.md",
+          "sha256": "6e9a4aa76c86a65ee750e5ca7b0aa4f2f7c3149cae6b5b37541aa45464467504",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMP-5.md"
+        },
+        {
+          "bytes": 669,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-COMP-6.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-COMP-6.md",
+          "sha256": "03c416bfd00dba7a6c514daa8fdb9f05cf56a14933cd5e004c776f52e466175e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-COMP-6.md"
+        },
+        {
+          "bytes": 2272,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-CRYPTO-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-CRYPTO-1.md",
+          "sha256": "46303d7140125026b367f2d4c4d88b19917892b5d678f11ef378e272a81f0969",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-CRYPTO-1.md"
+        },
+        {
+          "bytes": 1298,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-CRYPTO-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-CRYPTO-2.md",
+          "sha256": "4d933cee771ce02627d363ed4b85e082c1a6d8c1956803ff82bde9cd53b39b5d",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-CRYPTO-2.md"
+        },
+        {
+          "bytes": 773,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-CRYPTO-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-CRYPTO-3.md",
+          "sha256": "97c06a3be0329b715da314109335dd518d19d05035097235a82a4d5a58d7defa",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-CRYPTO-3.md"
+        },
+        {
+          "bytes": 1110,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-DEFI-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-DEFI-1.md",
+          "sha256": "a997a432fb38c7f8770bfcd0688a072a74617e1ca9a2fe0780997ee67d09a014",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-DEFI-1.md"
+        },
+        {
+          "bytes": 765,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-DEFI-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-DEFI-2.md",
+          "sha256": "2a8daea02dcfb296fcae5bdcae13a64066a29d307e13cae2565d6b287b060bf5",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-DEFI-2.md"
+        },
+        {
+          "bytes": 1509,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-GOV-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-GOV-1.md",
+          "sha256": "9aef5fa5b7c37bb955ee95e6e81c729ecc3e25d1a009e84704210e5c839da1da",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-GOV-1.md"
+        },
+        {
+          "bytes": 1552,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-GOV-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-GOV-2.md",
+          "sha256": "e8ac0526cf208cfed97d5bce8ccd5bffd0b53fbc2307965aa379c72eb3c91d39",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-GOV-2.md"
+        },
+        {
+          "bytes": 2122,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-GOV-3.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-GOV-3.md",
+          "sha256": "760e2107c6a4cc03b45b1c92d4ce4743e818b8141a9350536472ec1cc014c7c6",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-GOV-3.md"
+        },
+        {
+          "bytes": 2238,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-ORACLE-1.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-ORACLE-1.md",
+          "sha256": "5bb4ca8fcdffd209f723919c47e34c236ca17f071bd1a411f0927ffec78538c6",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-ORACLE-1.md"
+        },
+        {
+          "bytes": 3158,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\controls\\SCSVS-ORACLE-2.md",
+          "repo_path": "docs/SCSVS/controls/SCSVS-ORACLE-2.md",
+          "sha256": "51232834777e46cee4c7c07b8403ef445d2f00ea692316d1a788fef5c7d81e32",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/controls/SCSVS-ORACLE-2.md"
+        },
+        {
+          "bytes": 3558,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\index.md",
+          "repo_path": "docs/SCSVS/index.md",
+          "sha256": "396788a10a007479d7c04e23acb69d69b8128b3d5cb930d60e0b071fec32b317",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/index.md"
+        },
+        {
+          "bytes": 110169,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCSVS\\scsvs.yaml",
+          "repo_path": "docs/SCSVS/scsvs.yaml",
+          "sha256": "26f1a42ffa368e0f46edd1e7e0d3437c0830499b806ee37697b72bc953e5f773",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCSVS/scsvs.yaml"
+        },
+        {
+          "bytes": 3946,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-001.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-001.md",
+          "sha256": "c79b5709822b2f1fb7ad1ccd69e05723056ca6052e2b5c531b2a1703bf0287de",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-001.md"
+        },
+        {
+          "bytes": 2961,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-002.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-002.md",
+          "sha256": "184e653dbcc00da57160e77fff0ab0e6510686c73d690d71d95fee471d0f7090",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-002.md"
+        },
+        {
+          "bytes": 5141,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-003.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-003.md",
+          "sha256": "39cf5fbc4561fc4d6c83258feade887605bb3e08d523a5de86bcae69b1a996e3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-003.md"
+        },
+        {
+          "bytes": 4517,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-004.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-004.md",
+          "sha256": "66b40a238ebfc34412543927b456d08ebf64bd9e6c14608778db53b0e2a5f03f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-004.md"
+        },
+        {
+          "bytes": 4203,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-005.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-005.md",
+          "sha256": "563f9804a1603846f79748c4333b0be163c9cc663393db0240c14d52709cf2ce",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-005.md"
+        },
+        {
+          "bytes": 3477,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-006.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-006.md",
+          "sha256": "85001cca918d3215459e0927fd8c60b55992fa579c32dadacca9ba76564c064b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-006.md"
+        },
+        {
+          "bytes": 2984,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-051.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-051.md",
+          "sha256": "5454040970d92eee7a6c1b43cb88e5686f32be6540ca80d3268dc23084e0a9a4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-051.md"
+        },
+        {
+          "bytes": 1648,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-052.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-052.md",
+          "sha256": "a33df30d603c86b1f9cf40ebe36ce7c610b53222526928c297db19e2cff92715",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-052.md"
+        },
+        {
+          "bytes": 2275,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-064.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-064.md",
+          "sha256": "96268a7b9961c16b5d76a393768d584504df22bf4be6fe4afa8fb4002d7ef423",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-064.md"
+        },
+        {
+          "bytes": 1774,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-070.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-070.md",
+          "sha256": "6108057119d1fa723eb238d4905b793b2e2ab70c14551f9e42dc4cf2d1311295",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-070.md"
+        },
+        {
+          "bytes": 2594,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-071.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-071.md",
+          "sha256": "633a46a052b0378056db652a47e7631eeb3a05413c1788f29e9c8b64793f1ee7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-071.md"
+        },
+        {
+          "bytes": 2624,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-080.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-080.md",
+          "sha256": "9e36cc7dcecfd86c713dfc7f388e4d16a993f2941111f41e7f143d3b7e91b0a7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-080.md"
+        },
+        {
+          "bytes": 1815,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-098.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-098.md",
+          "sha256": "2278140694c23f645b04fd77c6b1f27b11e7e23c34b4cf601a704994a2550b6e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-098.md"
+        },
+        {
+          "bytes": 1450,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-099.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-099.md",
+          "sha256": "b5a622446c67b8ae86861b305a33ac74ea8166867a22c673322fa062a9ab3a99",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-099.md"
+        },
+        {
+          "bytes": 1256,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-117.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-117.md",
+          "sha256": "0ab38836fe978e1b8ac0b7c5d93a465f676fcfb53ec1ca084fca55463d02e545",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-117.md"
+        },
+        {
+          "bytes": 1329,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-118.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-118.md",
+          "sha256": "ee01a96e6f136e59707b2769b02239c07afbbb3f6b77aee6fe9fb47b212d3d7a",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-118.md"
+        },
+        {
+          "bytes": 1905,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-119.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-119.md",
+          "sha256": "4ba0251ba65f6ef756ef7a6f7f1895c6168a68a38fc3489c3938bd63230d61ef",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-119.md"
+        },
+        {
+          "bytes": 1678,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-145.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-145.md",
+          "sha256": "d9ea783b24a45086f0f8c46f93b4d245cb4712da04a5f5d95b5d2e3dd6a7c15c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-145.md"
+        },
+        {
+          "bytes": 1862,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-150.md",
+          "repo_path": "docs/SCWE/SCSVS-ARCH/SCWE-150.md",
+          "sha256": "c1efb3d6babf6772cb72e6fdd3246f8324e1af2f0da3453e28f215cfc04b5863",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ARCH/SCWE-150.md"
+        },
+        {
+          "bytes": 2490,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-016.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-016.md",
+          "sha256": "b25edd3dfd5bd59d8b2218631b91d61ff213c148438abebfe53d7628749d186f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-016.md"
+        },
+        {
+          "bytes": 3024,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-017.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-017.md",
+          "sha256": "41c404530b902736292b9e7a3b7d08e586c2ed0addb372cd7457eb90570a7b25",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-017.md"
+        },
+        {
+          "bytes": 2902,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-018.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-018.md",
+          "sha256": "725639c067e5356d02d3898e47e562212acb01f708a0fddf088fb5b2f0d98923",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-018.md"
+        },
+        {
+          "bytes": 3248,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-019.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-019.md",
+          "sha256": "b2229efea09eee236ca718abf1786c84624b2fde84fb8aaaffe7e7b759b8968f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-019.md"
+        },
+        {
+          "bytes": 3374,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-020.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-020.md",
+          "sha256": "41911b0a73b76e11c0e3de45bae49b1e737ddf04d1c5c56a8e1cb17ad1bb4677",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-020.md"
+        },
+        {
+          "bytes": 1781,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-038.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-038.md",
+          "sha256": "21c6c52abbac2630ec552cf44f2dcc67b1646abf1197d41bf7f5bc3bfee02404",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-038.md"
+        },
+        {
+          "bytes": 3190,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-045.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-045.md",
+          "sha256": "04f4b017f3e7017a42fc7c5b443d3fe4136ff82575d7846e1f35d33dcde3a244",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-045.md"
+        },
+        {
+          "bytes": 2217,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-049.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-049.md",
+          "sha256": "6aaae654acc95d4ba86c9a6fecd8f2d678b0d8b30145aa9c240d46e01ff77e3c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-049.md"
+        },
+        {
+          "bytes": 2181,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-050.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-050.md",
+          "sha256": "5ef030ab191c56ca0668ade33f7b4d0e99e7777af1c4bc3b6a14302a7b987c1c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-050.md"
+        },
+        {
+          "bytes": 2016,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-105.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-105.md",
+          "sha256": "de463526d92f628d3e8f5b5b8f766c89e135af5e98c485a8564210d3b0031e6c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-105.md"
+        },
+        {
+          "bytes": 1782,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-106.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-106.md",
+          "sha256": "8388774142b8fa4398709f20008d62cec51ac4718cf989e68ebe125b2b0ef48c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-106.md"
+        },
+        {
+          "bytes": 1597,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-129.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-129.md",
+          "sha256": "fc4bc3092db1dacee8ff0f7c6dc275715aa1b238080f6eaa97da839f9d686340",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-129.md"
+        },
+        {
+          "bytes": 2147,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-139.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-139.md",
+          "sha256": "07276bc963da5da4e36cf5e8fa7095fe99c1e9d7833641c528338bbb1355e38a",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-139.md"
+        },
+        {
+          "bytes": 1776,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-147.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-147.md",
+          "sha256": "f8d9440d8418aed8e25b2061de04d6d77e5c2d8e059fe0f64da54f1c768ff078",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-147.md"
+        },
+        {
+          "bytes": 2328,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-155.md",
+          "repo_path": "docs/SCWE/SCSVS-AUTH/SCWE-155.md",
+          "sha256": "97010a397d0523375b9bdd827e437d2fdf7de90801ed276f6bb529c31c5d4d7c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-AUTH/SCWE-155.md"
+        },
+        {
+          "bytes": 2225,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-024.md",
+          "repo_path": "docs/SCWE/SCSVS-BLOCK/SCWE-024.md",
+          "sha256": "edb74bfc5ea248b4d0a809efa0f8d93a21356e4f40be0dae69f9400245bce72b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BLOCK/SCWE-024.md"
+        },
+        {
+          "bytes": 5626,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-031.md",
+          "repo_path": "docs/SCWE/SCSVS-BLOCK/SCWE-031.md",
+          "sha256": "d13505326234c2df49e1d7b23aef1d35f2ffe227038d99b801a13c24e8c8eb1e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BLOCK/SCWE-031.md"
+        },
+        {
+          "bytes": 2324,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-065.md",
+          "repo_path": "docs/SCWE/SCSVS-BLOCK/SCWE-065.md",
+          "sha256": "a15b853bcda8485b5d5e2dd2575bb5a3a6b3ee9ec2eb7d9e8d00917e28b2090c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BLOCK/SCWE-065.md"
+        },
+        {
+          "bytes": 1639,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-073.md",
+          "repo_path": "docs/SCWE/SCSVS-BLOCK/SCWE-073.md",
+          "sha256": "537c7ffaa7d39a0233cc3bc3e297db7ddc7e9b43bb1c68644c4288e283a6a8af",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BLOCK/SCWE-073.md"
+        },
+        {
+          "bytes": 1191,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-127.md",
+          "repo_path": "docs/SCWE/SCSVS-BLOCK/SCWE-127.md",
+          "sha256": "7ddd66cc0c46c4d5aef96b8f2c2c52e489141b1fce8a07647cf41015cd4cf227",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BLOCK/SCWE-127.md"
+        },
+        {
+          "bytes": 1669,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-153.md",
+          "repo_path": "docs/SCWE/SCSVS-BLOCK/SCWE-153.md",
+          "sha256": "d5a6bcba58dd10acd2534ee02f6c93774fa0df95477a0d7971f6fc08160da8b7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BLOCK/SCWE-153.md"
+        },
+        {
+          "bytes": 2225,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-032.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-032.md",
+          "sha256": "fd964ccdfa339c7f1f128115e49be259b086db14a8b3de0219413a42cb0b875e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-032.md"
+        },
+        {
+          "bytes": 1607,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-033.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-033.md",
+          "sha256": "44e46e755ce6174b4f9e8747fa48c0841794977dba481210f89a27a42c237e92",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-033.md"
+        },
+        {
+          "bytes": 8169,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-034.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-034.md",
+          "sha256": "b1626f6ec6f74198842bc2b014f49721ea52feed43a4895ef37eb812b8511d5f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-034.md"
+        },
+        {
+          "bytes": 4811,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-087.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-087.md",
+          "sha256": "e6ef8522bd9c5fd6d933ee91fb84b135046a2e0fbd64101dde86995395c9d3d3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-087.md"
+        },
+        {
+          "bytes": 3629,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-094.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-094.md",
+          "sha256": "decb5efbd791e8be7300ef2f41ed4a8dab86418de59c142b73574e3dd9764ed2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-094.md"
+        },
+        {
+          "bytes": 2875,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-096.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-096.md",
+          "sha256": "aae66f660eec46008616672261670adf85c424a09462be9a105c31134ff1cd98",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-096.md"
+        },
+        {
+          "bytes": 1115,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-132.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-132.md",
+          "sha256": "d8aedeaf3fa0442d763f3c134371fdfd1bd5f5dbaeb0cb46f10223122138392d",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-132.md"
+        },
+        {
+          "bytes": 1241,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-133.md",
+          "repo_path": "docs/SCWE/SCSVS-BRIDGE/SCWE-133.md",
+          "sha256": "aa429197e845e1373508febe057ca31ba2d29071c23a4e9bbc364907f69c7899",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-BRIDGE/SCWE-133.md"
+        },
+        {
+          "bytes": 2937,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-007.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-007.md",
+          "sha256": "d7a59d7da121458ff3bea764bfa64da387bc8fc849f2c6b8c7068372fc17bce0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-007.md"
+        },
+        {
+          "bytes": 2997,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-008.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-008.md",
+          "sha256": "6c1aa66774b563cd6043c256cfc446c351d0a829d87ef1940c9a704655ff4943",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-008.md"
+        },
+        {
+          "bytes": 2702,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-009.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-009.md",
+          "sha256": "af6d9f24db6720ba15e143f5f1e8054bca107c4fcbc1803f6ce1d11bc1b642c4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-009.md"
+        },
+        {
+          "bytes": 3713,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-010.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-010.md",
+          "sha256": "6b8c38b973058e5cb325ea2087912d935bc88a275616bab393027041fc699c29",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-010.md"
+        },
+        {
+          "bytes": 2615,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-011.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-011.md",
+          "sha256": "c9dc57955ffcdf437589a1f22e04905713dc7b83986136323cdd74f3e7750592",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-011.md"
+        },
+        {
+          "bytes": 3843,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-013.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-013.md",
+          "sha256": "606a13c4b8ab7eceebfc9104511897bf7664e12b51532ce3d8cfbebd68d437f3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-013.md"
+        },
+        {
+          "bytes": 3738,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-014.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-014.md",
+          "sha256": "b05488b6279dcedb264b40a248fc1b594a997499bc969cb24f66719032101950",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-014.md"
+        },
+        {
+          "bytes": 2105,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-039.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-039.md",
+          "sha256": "ae0b716af3bd8e085a09623061c78969244fa6ac2b9721089a708d3fbc8a37bd",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-039.md"
+        },
+        {
+          "bytes": 2395,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-040.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-040.md",
+          "sha256": "024348e349476960dd21eff8b372aae8f137e0ce92d74ec6640805d5c1131ad1",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-040.md"
+        },
+        {
+          "bytes": 2287,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-041.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-041.md",
+          "sha256": "8782805e0b03371ad920023a9ce8cb0ae3d671b53f3e9005231baf863b563846",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-041.md"
+        },
+        {
+          "bytes": 2343,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-046.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-046.md",
+          "sha256": "a5c842791f513a2a667eddc26fd4c0dd42fa57298d914e2cfeaff7b6bb5a6813",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-046.md"
+        },
+        {
+          "bytes": 1499,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-047.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-047.md",
+          "sha256": "b6a41e731df5353606e5bc64efa88211163187214bc978e813d34ed5ee973466",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-047.md"
+        },
+        {
+          "bytes": 1724,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-048.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-048.md",
+          "sha256": "8a30f2501f97eb499badea23035766fc2fee42208e9372dca3f7a7fe29ef2d72",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-048.md"
+        },
+        {
+          "bytes": 2883,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-053.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-053.md",
+          "sha256": "9dc8281b0c4841129220975e77686d9c9b049e7e62a8d2a83f37f583df78c4b4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-053.md"
+        },
+        {
+          "bytes": 1709,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-060.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-060.md",
+          "sha256": "1b593993e8fdd5d447021d01e37dac9ca7119e5727ede4829b48b77f510a93ab",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-060.md"
+        },
+        {
+          "bytes": 1490,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-061.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-061.md",
+          "sha256": "a9aca9244125e1c8c45f3e6c97f7ad4f10cc7c8a02a87e22ed3962921fe91eeb",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-061.md"
+        },
+        {
+          "bytes": 1609,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-062.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-062.md",
+          "sha256": "8293f471ebcd10e68594aa84463429486621e6331c54bd2856a2b2c63873df6d",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-062.md"
+        },
+        {
+          "bytes": 2693,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-066.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-066.md",
+          "sha256": "a3969a18817311d3a74676d8f3bc83b185bfdb56f517149f4984d1e3ec654138",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-066.md"
+        },
+        {
+          "bytes": 2054,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-067.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-067.md",
+          "sha256": "e478d40b502b0185cfe7d2b3180276780c671ac09519f25e1f142ba097bece97",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-067.md"
+        },
+        {
+          "bytes": 1954,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-068.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-068.md",
+          "sha256": "1ffac0db5a1bdc419e46a94315b9d9e1abe367786755aef1c1ff611616a83664",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-068.md"
+        },
+        {
+          "bytes": 1944,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-069.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-069.md",
+          "sha256": "d5950e895424a53ebd08c9301e34c83a19ab27984f4a84e3b8c3347e34c1d82c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-069.md"
+        },
+        {
+          "bytes": 1822,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-072.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-072.md",
+          "sha256": "59015d5bccc5de44e1aded246be36c7d6929a643d3ffb730f8ab3add17cc9ab4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-072.md"
+        },
+        {
+          "bytes": 2108,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-076.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-076.md",
+          "sha256": "a1ba5b94c953ec43bbf7053fe28dfc340e7bc60134321ebddb5624847beadf40",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-076.md"
+        },
+        {
+          "bytes": 2116,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-089.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-089.md",
+          "sha256": "58da25ac0a4a56979cb940cad0f633b961f6e5ff04f1c208ba86f84e62e79856",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-089.md"
+        },
+        {
+          "bytes": 2309,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-090.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-090.md",
+          "sha256": "fc86a7d45242e4e74e53f7deea539d9f5211b4d9b3eae37eab99d25326e58164",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-090.md"
+        },
+        {
+          "bytes": 3627,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-091.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-091.md",
+          "sha256": "2b60df8afc08b18aa225d0879c905b9105e500b917d75b81641827b0dd972711",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-091.md"
+        },
+        {
+          "bytes": 3402,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-092.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-092.md",
+          "sha256": "2fb1fb1081abf0261bef73e6d89e2cab35a8a4e54c3d021a728a11a545cb3d54",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-092.md"
+        },
+        {
+          "bytes": 2040,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-093.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-093.md",
+          "sha256": "73f473c40c86cd5211dd33ea6d2a8f8811b62af2fc68feb5f5d4316b1edf1d39",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-093.md"
+        },
+        {
+          "bytes": 4141,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-095.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-095.md",
+          "sha256": "80e8a3ffd8c26fa8389c669b9e601f848ad4fa1df70ace477be2cae44b27f711",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-095.md"
+        },
+        {
+          "bytes": 1527,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-097.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-097.md",
+          "sha256": "f14ec76570526919e5b0f6230270e4adc109726cd51407b7407ab454e9e47587",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-097.md"
+        },
+        {
+          "bytes": 1311,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-120.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-120.md",
+          "sha256": "ce76125ff43089de0d05d5984021b6c2ab1ad0b13be1dcf85644103208bee5bf",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-120.md"
+        },
+        {
+          "bytes": 1217,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-121.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-121.md",
+          "sha256": "4fd2b3bb0055713b218dc808eed0d81af05b2989fb3a6e2b374e59712fc34ded",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-121.md"
+        },
+        {
+          "bytes": 1360,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-122.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-122.md",
+          "sha256": "5c6833a985e4b39698755124e31da1a38f354e58108b05b41d46dee93d4bfef2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-122.md"
+        },
+        {
+          "bytes": 1304,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-123.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-123.md",
+          "sha256": "9326cb314bcee2b82a3b8cccccded4c142efbc3f29a2b4bfcdce8525ed86a33c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-123.md"
+        },
+        {
+          "bytes": 1292,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-124.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-124.md",
+          "sha256": "df4e8b541eecb2dc6313464cb2c248f4795a4ca85b26e0f54771655e6a625771",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-124.md"
+        },
+        {
+          "bytes": 3357,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-137.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-137.md",
+          "sha256": "2bfc0decc49f3a2708a8e805f9d3088de6a35f81eaa2372a877f69b489b03b62",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-137.md"
+        },
+        {
+          "bytes": 2075,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-141.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-141.md",
+          "sha256": "b0a4fe2177644f97bd12c2863d18aa9289d3e593dd23163f5647a921044f8617",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-141.md"
+        },
+        {
+          "bytes": 1803,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-143.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-143.md",
+          "sha256": "618c03305f92182d2e39a0e000c56952862b0815f1b7286c98775df119f0d874",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-143.md"
+        },
+        {
+          "bytes": 2187,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-144.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-144.md",
+          "sha256": "111c4e4bc683ab0cf8ee1bdfc9bb217720f782fbd374bbb8288a63d7cceeab55",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-144.md"
+        },
+        {
+          "bytes": 1927,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-146.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-146.md",
+          "sha256": "bd863817e41d8c376a2c2f918dd12af1e2879833e8e77b39d42c29734123af3f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-146.md"
+        },
+        {
+          "bytes": 1766,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-152.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-152.md",
+          "sha256": "c8448d99aaf4f99cebe8d315d068531c5c43d2ac24a1c026199e26d46cae9d22",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-152.md"
+        },
+        {
+          "bytes": 1580,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-154.md",
+          "repo_path": "docs/SCWE/SCSVS-CODE/SCWE-154.md",
+          "sha256": "65f777c2022414449f5cb2be92115eb4995358c6b6bf4dae081d982a1ef4fd73",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CODE/SCWE-154.md"
+        },
+        {
+          "bytes": 1414,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-021.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-021.md",
+          "sha256": "392ccd0ccca0b7005f5e86cfeada718d4eead9dceb7862275935ce539e385c11",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-021.md"
+        },
+        {
+          "bytes": 1691,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-022.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-022.md",
+          "sha256": "43180916366cad5878673708b639cfb66c014ceb30acc59498c1465c07c526fc",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-022.md"
+        },
+        {
+          "bytes": 1660,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-023.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-023.md",
+          "sha256": "13692eef12d419e78aad9dbe2ad68cc6c5428fa4e9378e93fe4d39bbd65d1420",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-023.md"
+        },
+        {
+          "bytes": 2790,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-035.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-035.md",
+          "sha256": "4e5063e0c235f0245437f1e14f67f6e474be262644b4106aa87757516e5f752d",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-035.md"
+        },
+        {
+          "bytes": 2287,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-042.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-042.md",
+          "sha256": "f60f68d768bc5d7e5862c8f6f2040a0f581cc9932a606b78b44866b4402f0368",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-042.md"
+        },
+        {
+          "bytes": 3419,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-063.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-063.md",
+          "sha256": "287be5a41bbc9c977bd8cbb788c87f09603a987f0ad111993cfbfbc926b34c5f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-063.md"
+        },
+        {
+          "bytes": 1826,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-103.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-103.md",
+          "sha256": "0079af8a729055c23e64e2a8c560eb7f67917daf12964d3f3f4faa57a31738ee",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-103.md"
+        },
+        {
+          "bytes": 1938,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-104.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-104.md",
+          "sha256": "ddf768f27ecf68b25bf4607afe7aa26dd4ddf3f004c0713364bc34a37248dde7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-104.md"
+        },
+        {
+          "bytes": 1678,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-107.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-107.md",
+          "sha256": "32ccd52b1884fc0090fba5067103812b6d56a81dbc81690801fc6787b1bfd33c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-107.md"
+        },
+        {
+          "bytes": 1489,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-108.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-108.md",
+          "sha256": "c475c06e52512cf10c8cb0757985b40fd02ba7c6fff2e7c15a77c2d924184ccb",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-108.md"
+        },
+        {
+          "bytes": 1358,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-128.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-128.md",
+          "sha256": "a2b4c364f46a6a504371ee628ed116b30433e06c29d8e1e6065d9d16f75b8dc2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-128.md"
+        },
+        {
+          "bytes": 1833,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-134.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-134.md",
+          "sha256": "2ad81358ee4a88df15085652d9892e6965d4099bd31d923d559bf993d6ebeba3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-134.md"
+        },
+        {
+          "bytes": 2767,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-138.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-138.md",
+          "sha256": "1ae4d60b56551dd349256e9b35bf1bf5bf7f273d700fa26436d717b6c6bd63e2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-138.md"
+        },
+        {
+          "bytes": 1825,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-149.md",
+          "repo_path": "docs/SCWE/SCSVS-COMM/SCWE-149.md",
+          "sha256": "3a52826fcd60fcb89ab599918a84ab9f8c97b981657c18638c4fda713ed654ad",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMM/SCWE-149.md"
+        },
+        {
+          "bytes": 1842,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-057.md",
+          "repo_path": "docs/SCWE/SCSVS-COMP/SCWE-057.md",
+          "sha256": "f9bc7fe90a4dc289f03cdaae9e9667e37c832100e4d1f383c59c6cc25d8ff7ce",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMP/SCWE-057.md"
+        },
+        {
+          "bytes": 2809,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-083.md",
+          "repo_path": "docs/SCWE/SCSVS-COMP/SCWE-083.md",
+          "sha256": "9587f39ab7e1eb3378db93d3ae1793fe5d3f15df2ee54b3aa33441ce35cf1e53",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMP/SCWE-083.md"
+        },
+        {
+          "bytes": 1721,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-110.md",
+          "repo_path": "docs/SCWE/SCSVS-COMP/SCWE-110.md",
+          "sha256": "76cd0a4fc80ca9b09c8c3505349c1f1fd1fbd88066c92900ad72f6b3d7bea25b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMP/SCWE-110.md"
+        },
+        {
+          "bytes": 1778,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-111.md",
+          "repo_path": "docs/SCWE/SCSVS-COMP/SCWE-111.md",
+          "sha256": "308fbad82fe2ffdbe66ddd4de2cb6c4b85819bad44da255f6d53ae7efa8c3a59",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMP/SCWE-111.md"
+        },
+        {
+          "bytes": 1908,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-135.md",
+          "repo_path": "docs/SCWE/SCSVS-COMP/SCWE-135.md",
+          "sha256": "00e95f21d1ce3f3c57e78b9b56bd7bb26e02320b463f21da034f1e1d89b9855e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-COMP/SCWE-135.md"
+        },
+        {
+          "bytes": 1329,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-025.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-025.md",
+          "sha256": "cba5d006696cc7639d70a7e907c852c38cf70d9ec61440ed4ee4461699d06a11",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-025.md"
+        },
+        {
+          "bytes": 1487,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-026.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-026.md",
+          "sha256": "3139cf0c7dead35bec9ecfcd1dba8731abb4c92e1762d1274af63995907e9430",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-026.md"
+        },
+        {
+          "bytes": 1463,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-027.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-027.md",
+          "sha256": "046d1310334c0547de9c9350a4c4e26a8499b85380247a1930920f61043cf3bd",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-027.md"
+        },
+        {
+          "bytes": 2707,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-054.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-054.md",
+          "sha256": "0be3153596a2461fbd7b0b3d84ec6b15bd2800235309eb84b3773e2d8eb424e9",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-054.md"
+        },
+        {
+          "bytes": 2514,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-055.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-055.md",
+          "sha256": "58fbbd6c2e56fb1168ea5fc13ffe0e2d903983b79d1502e8098f1c6f35f119ff",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-055.md"
+        },
+        {
+          "bytes": 2936,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-056.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-056.md",
+          "sha256": "ac00d83fba5f9e55c5d21017422fb261d5b9ab38fcc8d79684d19391a3f90174",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-056.md"
+        },
+        {
+          "bytes": 1944,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-074.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-074.md",
+          "sha256": "f730589759301d50c11fad2493f38047bbbd2347c468e3eaf5148fd25343655e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-074.md"
+        },
+        {
+          "bytes": 3875,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-084.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-084.md",
+          "sha256": "7cfa6e1f27e465ae219626c36e476e8d9a672d6b6c15227f027bee77b4f83f6f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-084.md"
+        },
+        {
+          "bytes": 1499,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-114.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-114.md",
+          "sha256": "2ee48e8310d12365c2d3fc0f0fd73746eabfe73815a89cf93008cf9059ffa958",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-114.md"
+        },
+        {
+          "bytes": 1814,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-115.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-115.md",
+          "sha256": "2c98e2f62290c4efdaa33213ec3c4816e38018ac113c018a30413a03a7579db1",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-115.md"
+        },
+        {
+          "bytes": 1155,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-131.md",
+          "repo_path": "docs/SCWE/SCSVS-CRYPTO/SCWE-131.md",
+          "sha256": "00c362f21b4edb40fbedc7e4c16dc661a6cf0e4f5e11f481b2ead0ef1189c16b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-CRYPTO/SCWE-131.md"
+        },
+        {
+          "bytes": 2789,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-036.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-036.md",
+          "sha256": "2ae1bf227a1bc73ab6702f864917ac6cd031bc5df95c926ba1617bedf64eb8b4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-036.md"
+        },
+        {
+          "bytes": 1978,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-058.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-058.md",
+          "sha256": "20f4a0fa83bd0c2173fe12c6ffcf19436dfa85479e56c1c86d8d0485554a9e44",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-058.md"
+        },
+        {
+          "bytes": 1970,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-059.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-059.md",
+          "sha256": "f47fb93bd551d374323b44f3e176c67b8d094feec70c1416b1fbe5ec2ab964d1",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-059.md"
+        },
+        {
+          "bytes": 2923,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-077.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-077.md",
+          "sha256": "8810fd6aef873472cc2773f85d35f750c35f027706430f0a2c669f60f7c28fdb",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-077.md"
+        },
+        {
+          "bytes": 1465,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-082.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-082.md",
+          "sha256": "c74ca0e50972b85ea4550e8a3f402b2b0f34f9714ca57a558088cada6ba3f154",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-082.md"
+        },
+        {
+          "bytes": 1701,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-109.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-109.md",
+          "sha256": "0d21de044d1d2c825f18c1f6c2a5498d49f967d31fce8d61b26595b01e5e7204",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-109.md"
+        },
+        {
+          "bytes": 1612,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-116.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-116.md",
+          "sha256": "e855c7a1cead834eab0ed4b0cd3b2c5eb264df6ac8f28df653407e424ced67dc",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-116.md"
+        },
+        {
+          "bytes": 1247,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-125.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-125.md",
+          "sha256": "dd1a13595efcad7d50e2c7bbbcb0155dfc1c816f509afb8722f0285dda24ad77",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-125.md"
+        },
+        {
+          "bytes": 1270,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-126.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-126.md",
+          "sha256": "070795524a3b2bf67cc05bbd91c2bc66969dc5900bb0360bc722ded72cf4e18b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-126.md"
+        },
+        {
+          "bytes": 1915,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-148.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-148.md",
+          "sha256": "8aec7986c746443af0abd34d22e4471c5bb2f7bc7e0133fdec7b7992146969c8",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-148.md"
+        },
+        {
+          "bytes": 2156,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-151.md",
+          "repo_path": "docs/SCWE/SCSVS-DEFI/SCWE-151.md",
+          "sha256": "2137c0135e20caf5ceb1d60e11438d7f166bdea4efb55ca816b6b8d59c0ae1e0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-DEFI/SCWE-151.md"
+        },
+        {
+          "bytes": 3720,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-012.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-012.md",
+          "sha256": "eee90b9aee7a863d22205f9e90776146872eea49521a94b507eb1920ee92803c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-012.md"
+        },
+        {
+          "bytes": 4205,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-015.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-015.md",
+          "sha256": "dc54d520aaa5b8f8fe32b36c63fb6dbd6e605fe7d8bd03d03a939ed2f11878f9",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-015.md"
+        },
+        {
+          "bytes": 3012,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-037.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-037.md",
+          "sha256": "dd3446d5fc7d57ebd68f36e82389cee8a5d205a7e869bcbafc44057b5588c15a",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-037.md"
+        },
+        {
+          "bytes": 2680,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-043.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-043.md",
+          "sha256": "f61e2d3f83a9c1670593ba366f398206afb618d3340856e7b818fed9534b22cf",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-043.md"
+        },
+        {
+          "bytes": 1426,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-044.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-044.md",
+          "sha256": "ae71e949a26c9e964ed908241ea8a2a82fcbfd688f483f1237c7d1c5105ab8f0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-044.md"
+        },
+        {
+          "bytes": 3483,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-075.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-075.md",
+          "sha256": "473de0bbcb7bbe58b6c55db8072058f1c9c2d626426561c86f0484223f046467",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-075.md"
+        },
+        {
+          "bytes": 1556,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-078.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-078.md",
+          "sha256": "085d129c88c93932281ef6dd0800ed5a0ade84610561b08ce8be2548d915802b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-078.md"
+        },
+        {
+          "bytes": 2307,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-079.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-079.md",
+          "sha256": "ea475ad55d4a422912d53804b1232050660bbc86b2be2a0e23b6e7f37fd21a54",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-079.md"
+        },
+        {
+          "bytes": 3247,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-081.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-081.md",
+          "sha256": "c3d6a9370110da30e88b4096e92ced283e17e7b388dff766b144d6e528464b60",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-081.md"
+        },
+        {
+          "bytes": 2280,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-100.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-100.md",
+          "sha256": "4c86ffc45a65eefb7f5d014c226138dca86dcad65af13268bd19016d9e5f614b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-100.md"
+        },
+        {
+          "bytes": 1867,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-101.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-101.md",
+          "sha256": "416ec0aabe08a95f8218be131c952f6c3a1ddc32eb71868ce4df2f641e8a95de",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-101.md"
+        },
+        {
+          "bytes": 1796,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-102.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-102.md",
+          "sha256": "5683ff539f83e221089f5ba44ef78d0221168fa2c47bfa3e1a781b9f9fbfe307",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-102.md"
+        },
+        {
+          "bytes": 1357,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-136.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-136.md",
+          "sha256": "b24993743090a3a5ca0f92da5ce7fe25f40d6b03181fca422fec28211f13e34f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-136.md"
+        },
+        {
+          "bytes": 2898,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-140.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-140.md",
+          "sha256": "a77c34096cd7ceb8c323aa1208a950f0958e9cc953c9e0cffa51b213102031cf",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-140.md"
+        },
+        {
+          "bytes": 2014,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-142.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-142.md",
+          "sha256": "cf0e9c17c763b20f960f39ac188d96403f8c469650b4d942d9b3416646f8f451",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-142.md"
+        },
+        {
+          "bytes": 2227,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-156.md",
+          "repo_path": "docs/SCWE/SCSVS-GOV/SCWE-156.md",
+          "sha256": "b6f5e75c1a8083e58fd7a93e63cb9b5daa6e88f4d17ab75fd8a5070c1393fcae",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-GOV/SCWE-156.md"
+        },
+        {
+          "bytes": 3528,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-028.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-028.md",
+          "sha256": "da933dd67dd4e5702890640f7eaad28fbbd8bf8415d13b172eab0f6cd7f14302",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-028.md"
+        },
+        {
+          "bytes": 2536,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-029.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-029.md",
+          "sha256": "8c6c4ba14ae97ef7a9933ee347622cfb3b1ed799b62fd13447f0c071032616d7",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-029.md"
+        },
+        {
+          "bytes": 1619,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-030.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-030.md",
+          "sha256": "906f6be9b2fb19856b4410f20101efeccaeac7997bd1cc9cd646a4769d8c3430",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-030.md"
+        },
+        {
+          "bytes": 2673,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-085.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-085.md",
+          "sha256": "fb0390d546cf82ca035ebdab9a3dfc62a7e52fea87db8b67809701a9b6efe180",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-085.md"
+        },
+        {
+          "bytes": 2237,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-086.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-086.md",
+          "sha256": "129d79f3c2340cea368f28c8f85bf18384c1668376d26658ee8bdb05a2e2de6b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-086.md"
+        },
+        {
+          "bytes": 3125,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-088.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-088.md",
+          "sha256": "782402aa760e7b7059057a9d13d032d5ad609dc44f169db02040f69b4ee1d669",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-088.md"
+        },
+        {
+          "bytes": 1478,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-112.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-112.md",
+          "sha256": "8c653b2d70cf4208ef781b47629b2e36a9fddcb58681b663bdf22b20a2fc7f5b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-112.md"
+        },
+        {
+          "bytes": 2250,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-113.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-113.md",
+          "sha256": "22a610216caa2d9a70f495c61434dbc0ee85812cd7ac610091d709f88c280db3",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-113.md"
+        },
+        {
+          "bytes": 1244,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-130.md",
+          "repo_path": "docs/SCWE/SCSVS-ORACLE/SCWE-130.md",
+          "sha256": "1730cac7fd7f39c46c8f1b87beea6a48feaca237dc28cb35bdd270b3fb2b1833",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/SCSVS-ORACLE/SCWE-130.md"
+        },
+        {
+          "bytes": 3201,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\index.md",
+          "repo_path": "docs/SCWE/index.md",
+          "sha256": "74dbf50b2c8ae6d307245fa0b16710b5ed94bfac7fd7d054fa219de739ff6b46",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/SCWE/index.md"
+        },
+        {
+          "bytes": 110607,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\assets\\data\\scs-checklist.yaml",
+          "repo_path": "docs/assets/data/scs-checklist.yaml",
+          "sha256": "5c395cb95e34d0a43bd274cdf1001e5c062d5848cabe7c37cc959346878ab046",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/assets/data/scs-checklist.yaml"
+        },
+        {
+          "bytes": 261,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\assets\\data\\talks.yaml",
+          "repo_path": "docs/assets/data/talks.yaml",
+          "sha256": "f0b1a04fda89e961ba8e348e401075ad0eda0163e7efe9d8a1ecb4d3fa267a5c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/assets/data/talks.yaml"
+        },
+        {
+          "bytes": 3644,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\checklists\\index.md",
+          "repo_path": "docs/checklists/index.md",
+          "sha256": "cc017ea0041dcbab7de11544557e9f6e97fc227a261401aea5e659ff241a3d3d",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/checklists/index.md"
+        },
+        {
+          "bytes": 2937,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\checklists\\interactive.md",
+          "repo_path": "docs/checklists/interactive.md",
+          "sha256": "38a27c84b8d474b0cc330f96fb9eebe79c7cb181772b2020b02865de0cf697a2",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/checklists/interactive.md"
+        },
+        {
+          "bytes": 5557,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contact.md",
+          "repo_path": "docs/contact.md",
+          "sha256": "d7d7edfedb56d38b6056f5b881ea3c4aac6b5080aa8f5c93c347b6a34162ff23",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contact.md"
+        },
+        {
+          "bytes": 6039,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contributing.md",
+          "repo_path": "docs/contributing.md",
+          "sha256": "ae3a35988e3dda2b0a6ea3f5532ef6238f9ed757460a8bdde726291e09407e23",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contributing.md"
+        },
+        {
+          "bytes": 3337,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contributing\\1_How_Can_You_Contribute.md",
+          "repo_path": "docs/contributing/1_How_Can_You_Contribute.md",
+          "sha256": "04f81bc3d493536f0fc6fe5a5785b346b8c9874078df0072c9cb846b1bee8a00",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contributing/1_How_Can_You_Contribute.md"
+        },
+        {
+          "bytes": 5021,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contributing\\2_Getting_Started.md",
+          "repo_path": "docs/contributing/2_Getting_Started.md",
+          "sha256": "447e70285a9fa360141c1a17e012c9a4803ee27fd812ef48d21c9a0826987a3a",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contributing/2_Getting_Started.md"
+        },
+        {
+          "bytes": 3952,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contributing\\3_PRs_and_Reviews.md",
+          "repo_path": "docs/contributing/3_PRs_and_Reviews.md",
+          "sha256": "31ba461a19b0730ec937b4c9a5f91de6f68ac93cbc9e1f207635937c277b52d6",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contributing/3_PRs_and_Reviews.md"
+        },
+        {
+          "bytes": 486,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contributing\\4_Add_new_Language.md",
+          "repo_path": "docs/contributing/4_Add_new_Language.md",
+          "sha256": "b7fbb7cf450617ad3c8ced2541ab33e7eb42bb6b327494d4e2d7903b88de592c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contributing/4_Add_new_Language.md"
+        },
+        {
+          "bytes": 18213,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\contributing\\5_Style_Guide.md",
+          "repo_path": "docs/contributing/5_Style_Guide.md",
+          "sha256": "c68df0ab5538e8f68955216c192205848c4432cbdad3148071daf5cba7cdc00c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/contributing/5_Style_Guide.md"
+        },
+        {
+          "bytes": 2163,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\donate.md",
+          "repo_path": "docs/donate.md",
+          "sha256": "bfb50b9d8a355df20e97532f1e31154cd2d58793d3191e77fb535bba1541f822",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/donate.md"
+        },
+        {
+          "bytes": 1254,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\donate\\how_to_donate.md",
+          "repo_path": "docs/donate/how_to_donate.md",
+          "sha256": "9062b67cde3aa5884ace6a6dc36bcaf716d88eb70ed1dd1e3bbf814e3692189e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/donate/how_to_donate.md"
+        },
+        {
+          "bytes": 1231,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\donate\\packages.md",
+          "repo_path": "docs/donate/packages.md",
+          "sha256": "de7ae6414998ec2b5066452a1ff83db1721534560be309d43bb81af950de2eea",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/donate/packages.md"
+        },
+        {
+          "bytes": 4887,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\index.md",
+          "repo_path": "docs/index.md",
+          "sha256": "c13059b92284893bbce990488d9e76166e5d95fa2a9d15d06a4022774aeaebf8",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/index.md"
+        },
+        {
+          "bytes": 3779,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\news\\index.md",
+          "repo_path": "docs/news/index.md",
+          "sha256": "abf628fa59c610953a23ed7d30d4524f5641d821612ea16a4ab6dc6d2dc53eb9",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/news/index.md"
+        },
+        {
+          "bytes": 8737,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC01-AccessControlVulnerabilities.md",
+          "repo_path": "docs/sctop10/SC01-AccessControlVulnerabilities.md",
+          "sha256": "94834773c6c84c59566c63c9b29f55004470dd7c3f60eb6a2774a30fa295f227",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC01-AccessControlVulnerabilities.md"
+        },
+        {
+          "bytes": 8119,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC02-BusinessLogicVulnerabilities.md",
+          "repo_path": "docs/sctop10/SC02-BusinessLogicVulnerabilities.md",
+          "sha256": "a5aaddf3d331ff7b6ee9cbd93fbb540c9d5159cceb5d15efb08658665f33dee9",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC02-BusinessLogicVulnerabilities.md"
+        },
+        {
+          "bytes": 7978,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC03-PriceOracleManipulation.md",
+          "repo_path": "docs/sctop10/SC03-PriceOracleManipulation.md",
+          "sha256": "f180ee0be3e433e729d666d40e351f5a343316984a059e12039fdaa1136bc48c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC03-PriceOracleManipulation.md"
+        },
+        {
+          "bytes": 7636,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC04-FlashLoanAttacks.md",
+          "repo_path": "docs/sctop10/SC04-FlashLoanAttacks.md",
+          "sha256": "2db02f321857cc2e517a18521a5d0cedbe93f21c5c7e34d923487045eda7e2b8",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC04-FlashLoanAttacks.md"
+        },
+        {
+          "bytes": 6662,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC05-LackOfInputValidation.md",
+          "repo_path": "docs/sctop10/SC05-LackOfInputValidation.md",
+          "sha256": "17b39974479b9216bc0a0c3f43417cb5ffcc1c946179b90c127108315d9d4ffe",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC05-LackOfInputValidation.md"
+        },
+        {
+          "bytes": 6903,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC06-UncheckedExternalCalls.md",
+          "repo_path": "docs/sctop10/SC06-UncheckedExternalCalls.md",
+          "sha256": "d349389f78ab71d69c620389020a1c5011155f38ab8fadb79a12ef9580e3bf87",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC06-UncheckedExternalCalls.md"
+        },
+        {
+          "bytes": 6580,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC07-ArithmeticErrors.md",
+          "repo_path": "docs/sctop10/SC07-ArithmeticErrors.md",
+          "sha256": "23867274729079680268e816ef466565353eac65ac957d65cdb3a465cb5942e4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC07-ArithmeticErrors.md"
+        },
+        {
+          "bytes": 6044,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC08-ReentrancyAttacks.md",
+          "repo_path": "docs/sctop10/SC08-ReentrancyAttacks.md",
+          "sha256": "26ef9fea4c1bcbb9a679de262a96774fd8492aca8661b7d6763b5ef45fc04fca",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC08-ReentrancyAttacks.md"
+        },
+        {
+          "bytes": 9218,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC09-IntegerOverflowUnderflow.md",
+          "repo_path": "docs/sctop10/SC09-IntegerOverflowUnderflow.md",
+          "sha256": "c2961bcbc8808c1e93a4857fe0f86837b5ac40da81c3b5816f72ac2409c9b73e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC09-IntegerOverflowUnderflow.md"
+        },
+        {
+          "bytes": 7204,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC10-ProxyAndUpgradeabilityVulnerabilities.md",
+          "repo_path": "docs/sctop10/SC10-ProxyAndUpgradeabilityVulnerabilities.md",
+          "sha256": "ea6b2f2f781417cbb580cfaa3c6ca99f7952aeb05b07de95535e743bbe883d0e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/SC10-ProxyAndUpgradeabilityVulnerabilities.md"
+        },
+        {
+          "bytes": 32877,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\Web3-Attack-Vectors-Top15.md",
+          "repo_path": "docs/sctop10/Web3-Attack-Vectors-Top15.md",
+          "sha256": "45f39dc71dbe8a26feb0754d27d6e1ecb321be94e5b39538484c634fcfbd816f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/Web3-Attack-Vectors-Top15.md"
+        },
+        {
+          "bytes": 1583,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2023\\Top10:2023.md",
+          "repo_path": "docs/sctop10/archive/2023/Top10:2023.md",
+          "sha256": "db69117d1e06a0c70536f5114e60eadff2c86d5b574f7d47289d0403e3518c03",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2023/Top10:2023.md"
+        },
+        {
+          "bytes": 2856,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC01-AccessControlVulnerabilities.md",
+          "repo_path": "docs/sctop10/archive/2025/SC01-AccessControlVulnerabilities.md",
+          "sha256": "20f5cdd20ef116267c58a2a7176d3ca90fe9adab4f2e1ffbdfef15e8f525c4ac",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC01-AccessControlVulnerabilities.md"
+        },
+        {
+          "bytes": 4077,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC02-PriceOracleManipulation.md",
+          "repo_path": "docs/sctop10/archive/2025/SC02-PriceOracleManipulation.md",
+          "sha256": "a427383ed3143c16ebd62d9fc641b8a9917f17eb3343123ab2387626561c5951",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC02-PriceOracleManipulation.md"
+        },
+        {
+          "bytes": 4469,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC03-LogicErrors.md",
+          "repo_path": "docs/sctop10/archive/2025/SC03-LogicErrors.md",
+          "sha256": "f68abbe6fe88abd1fcbad3aa4120dab8852e631342a9be4d71163ef85653ea4a",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC03-LogicErrors.md"
+        },
+        {
+          "bytes": 2795,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC04-LackOfInputValidation.md",
+          "repo_path": "docs/sctop10/archive/2025/SC04-LackOfInputValidation.md",
+          "sha256": "5799e6e0597c0e748e854685e09cc81169c88e1d6f470065cfc1e0b90a9319f1",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC04-LackOfInputValidation.md"
+        },
+        {
+          "bytes": 3014,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC05-Reentrancy.md",
+          "repo_path": "docs/sctop10/archive/2025/SC05-Reentrancy.md",
+          "sha256": "0e943fcdc9d165aa6c197f1b7f79a5ac37759bc3187289e95a6c7ffb0b92ed47",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC05-Reentrancy.md"
+        },
+        {
+          "bytes": 2667,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC06-UncheckedExternalCalls.md",
+          "repo_path": "docs/sctop10/archive/2025/SC06-UncheckedExternalCalls.md",
+          "sha256": "260fb371e0c7d536b52c1b12bc2e114a040e62ca77d596e88d4927d8bb9b829e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC06-UncheckedExternalCalls.md"
+        },
+        {
+          "bytes": 2138,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC07-FlashLoanAttacks.md",
+          "repo_path": "docs/sctop10/archive/2025/SC07-FlashLoanAttacks.md",
+          "sha256": "efafc558775cb01caa0adc5273dd64b03a726f1145d061166cfb8153ba57702e",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC07-FlashLoanAttacks.md"
+        },
+        {
+          "bytes": 4546,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC08-IntegerOverUnderFlow.md",
+          "repo_path": "docs/sctop10/archive/2025/SC08-IntegerOverUnderFlow.md",
+          "sha256": "08c7adaa2b15f82390a79b8e86b8913555d6a03f4ff25f64b493fc9d2fa49fb6",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC08-IntegerOverUnderFlow.md"
+        },
+        {
+          "bytes": 5003,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC09-InsecureRandomness.md",
+          "repo_path": "docs/sctop10/archive/2025/SC09-InsecureRandomness.md",
+          "sha256": "7209a9797e0f3ab8862104cefa35381467839b482ed56a290c3d548fa3e7fec0",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC09-InsecureRandomness.md"
+        },
+        {
+          "bytes": 3800,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\SC10-DenialOfService.md",
+          "repo_path": "docs/sctop10/archive/2025/SC10-DenialOfService.md",
+          "sha256": "2f3f3f28453c5d674590479ebcdb91f36933ee5ca136e29a65b704f3c3121e16",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/SC10-DenialOfService.md"
+        },
+        {
+          "bytes": 5748,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\archive\\2025\\Top10:2025.md",
+          "repo_path": "docs/sctop10/archive/2025/Top10:2025.md",
+          "sha256": "151cc2476d90ea16de3c7b1f6fdb0b244a25dbed0ed439493ebb702a38325855",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/archive/2025/Top10:2025.md"
+        },
+        {
+          "bytes": 16630,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\data-sources.md",
+          "repo_path": "docs/sctop10/data-sources.md",
+          "sha256": "c140bb632ea6a8171aaddf13ade8f0b5f53b3ae4a725751fe75e644bfe5ea5da",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/data-sources.md"
+        },
+        {
+          "bytes": 9516,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\index.md",
+          "repo_path": "docs/sctop10/index.md",
+          "sha256": "3db214a435ffc9b6d1d3e57b94ef892828e33c9302746509dcd199ada2ee6b59",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/index.md"
+        },
+        {
+          "bytes": 7430,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\methodology.md",
+          "repo_path": "docs/sctop10/methodology.md",
+          "sha256": "0134ca5e72a050e84fb29e605681e33fc9e69bc7a96e21135c8cb161b0e785b4",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/sctop10/methodology.md"
+        },
+        {
+          "bytes": 30,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\tags.md",
+          "repo_path": "docs/tags.md",
+          "sha256": "414fccfbc1e97acaddf016906375c06dc9339ce4dbbeffbd6361a93c36997f6b",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/tags.md"
+        },
+        {
+          "bytes": 56,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\talks.md",
+          "repo_path": "docs/talks.md",
+          "sha256": "2419d1dd2ab5430d90992db4eddb851949939d86c51e229ca450d5f8ad9ff59c",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/docs/talks.md"
+        },
+        {
+          "bytes": 13869,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\mkdocs.yml",
+          "repo_path": "mkdocs.yml",
+          "sha256": "9a9c40fcb5939da8c54f193213bda5af3c4776640f22726b7c930c91cc4d1e4f",
+          "url": "https://github.com/OWASP/owasp-scs/blob/main/mkdocs.yml"
+        }
+      ],
+      "ref": "main",
+      "repo": {
+        "commit_sha": "02dd6a8b0427fe19da79f0c3d457108208d9a627",
+        "default_branch": "main",
+        "html_url": "https://github.com/OWASP/owasp-scs",
+        "owner": "OWASP",
+        "repo": "owasp-scs"
+      },
+      "source_id": "owasp_smart_contract_security"
+    }
+  ]
+}

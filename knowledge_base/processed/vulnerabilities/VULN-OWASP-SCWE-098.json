@@ -1,0 +1,16 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "Proxy-based contracts ship without constructors; if the initializer is callable by anyone, an attacker can front-run deployment and seize ownership, set trusted roles, or lock upgrades. This permanently compromises the implementation behind the proxy.",
+  "id": "VULN-OWASP-SCWE-098",
+  "name": "Initialization Front-Running in Upgradeable Contracts",
+  "owasp": "SCWE-098",
+  "remediation": "- Protect initializer functions with access control and `initializer`/`reinitializer` guards. - Invoke initialization atomically during deployment or via a deploy-time call data payload. - Use `disableInitializers()` on the implementation contract to prevent accidental takeover.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-098.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

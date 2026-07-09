@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5570",
+  "erc": "ERC-5570",
+  "events": [],
+  "functions": [],
+  "id": "ERC5570",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5570",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5570.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC proposes a standard schema for digital receipts of transactions. Digital Receipt Non-Fungible Tokens are issued by a vendor when a customer makes a purchase from their store and contains transaction details necessary for record keeping. Digital Receipt Non-Fungible Tokens extend [ERC-721](./eip-721.md) which allows for the management and ownership of unique tokens.",
+  "title": "Digital Receipt Non-Fungible Tokens"
+}

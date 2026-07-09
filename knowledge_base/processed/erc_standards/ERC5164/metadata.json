@@ -1,0 +1,33 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5164",
+  "erc": "ERC-5164",
+  "events": [
+    {
+      "name": "MessageDispatched",
+      "signature": "MessageDispatched(bytes32,address,uint256,address,bytes)"
+    },
+    {
+      "name": "MessageIdExecuted",
+      "signature": "MessageIdExecuted(uint256,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "dispatchMessage",
+      "operation_type": "contract_interaction",
+      "signature": "dispatchMessage(uint256,address,bytes)"
+    }
+  ],
+  "id": "ERC5164",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5164",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5164.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This specification defines a cross-chain execution interface for EVM-based blockchains. Implementations of this specification will allow contracts on one chain to call contracts on another by sending a cross-chain message. The specification defines two components: the \"Message Dispatcher\" and the \"Message Executor\". The Message Dispatcher lives on the calling side, and the executor lives on the receiving side. When a message is sent, a Message Dispatcher will move the message through a transport layer to a Message Executor, where they are executed. Implementations of this specification must implement both components.",
+  "title": "Cross-Chain Execution"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Use of a Dangerous Function",
+  "cwe": "CWE-676",
+  "description": "Some Solidity functions and features have been deprecated over time due to security risks, inefficiencies, or better alternatives being introduced in newer versions of Solidity. Using deprecated functions can expose contracts to known vulnerabilities and potential attacks. Examples include `suicide()`, which was replaced by `selfdestruct()`, and `sha3()`, which was replaced by `keccak256()`.",
+  "id": "VULN-OWASP-SCWE-072",
+  "name": "Use of Deprecated Solidity Functions",
+  "owasp": "SCWE-072",
+  "remediation": "Always check the Solidity documentation to ensure that the functions you're using are not deprecated. If a function is deprecated, replace it with its recommended alternative to maintain the contract's security and ensure compatibility with future Solidity versions. **Note:** As of EIP-6049 (Solidity 0.8.24+), `selfdestruct` is deprecated and will be removed in a future EVM version.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-072.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

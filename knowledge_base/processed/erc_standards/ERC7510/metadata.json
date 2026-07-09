@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7510",
+  "erc": "ERC-7510",
+  "events": [
+    {
+      "name": "UpdateParentTokens",
+      "signature": "UpdateParentTokens(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "parentTokensOf",
+      "operation_type": "contract_interaction",
+      "signature": "parentTokensOf(uint256)"
+    },
+    {
+      "name": "isParentToken",
+      "operation_type": "contract_interaction",
+      "signature": "isParentToken(uint256,Token)"
+    },
+    {
+      "name": "setParentTokens",
+      "operation_type": "contract_interaction",
+      "signature": "setParentTokens(uint256,Token[])"
+    },
+    {
+      "name": "deployContractFixture",
+      "operation_type": "contract_interaction",
+      "signature": "deployContractFixture()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_burn",
+      "operation_type": "contract_interaction",
+      "signature": "_burn(uint256)"
+    },
+    {
+      "name": "_clear",
+      "operation_type": "contract_interaction",
+      "signature": "_clear(uint256)"
+    }
+  ],
+  "id": "ERC7510",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7510",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7510.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It proposes a way to maintain hierarchical relationship between tokens from different contracts. This standard provides an interface to query the parent tokens of an NFT or whether the parent relation exists between two NFTs.",
+  "title": "Cross-Contract Hierarchical NFT"
+}

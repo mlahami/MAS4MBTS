@@ -1,0 +1,17 @@
+{
+  "category": "Irrelevant Code",
+  "cwe": "CWE-1164",
+  "description": "Unused variables are allowed in Solidity and they do not pose a direct security issue. It is best practice though to avoid them as they can: - cause an increase in computations (and unnecessary gas consumption) - indicate bugs or malformed data structures and they are generally a sign of poor code quality - cause code noise and decrease readability of the code",
+  "id": "VULN-SWC-131",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Remove all unused variables from the code base.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-131.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-131"
+}

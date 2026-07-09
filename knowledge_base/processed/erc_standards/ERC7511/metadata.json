@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7511",
+  "erc": "ERC-7511",
+  "events": [],
+  "functions": [
+    {
+      "name": "clone0",
+      "operation_type": "contract_interaction",
+      "signature": "clone0(address)"
+    }
+  ],
+  "id": "ERC7511",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7511",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7511.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "With the `PUSH0` opcode ([EIP-3855](./eip-3855.md)), introduced with the Shanghai upgrade, we optimized the previous Minimal Proxy Contract ([ERC-1167](./eip-1167.md)) by 200 gas at deployment and 5 gas at runtime, while retaining the same functionality.",
+  "title": "Minimal Proxy Contract with PUSH0"
+}

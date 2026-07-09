@@ -1,0 +1,36 @@
+{
+  "id": "ERC1155",
+  "erc": "ERC-1155",
+  "eip": "EIP-1155",
+  "title": "Multi Token Standard",
+  "status": "Final",
+  "category": "ERC",
+  "source": {
+    "source_id": "ethereum_ercs_website",
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1155"
+  },
+  "summary": "ERC-1155 defines a multi-token standard supporting fungible, non-fungible, and semi-fungible tokens with single and batch transfers.",
+  "functions": [
+    {"name": "balanceOf", "signature": "balanceOf(address,uint256)", "operation_type": "balance_query"},
+    {"name": "balanceOfBatch", "signature": "balanceOfBatch(address[],uint256[])", "operation_type": "batch_balance_query"},
+    {"name": "safeTransferFrom", "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)", "operation_type": "single_token_transfer"},
+    {"name": "safeBatchTransferFrom", "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)", "operation_type": "batch_token_transfer"},
+    {"name": "setApprovalForAll", "signature": "setApprovalForAll(address,bool)", "operation_type": "operator_approval"}
+  ],
+  "events": [
+    {"name": "TransferSingle", "signature": "TransferSingle(address,address,address,uint256,uint256)"},
+    {"name": "TransferBatch", "signature": "TransferBatch(address,address,address,uint256[],uint256[])"},
+    {"name": "ApprovalForAll", "signature": "ApprovalForAll(address,address,bool)"}
+  ],
+  "assets": [
+    {"name": "Per-token balances", "type": "contract_state", "criticality": "high"},
+    {"name": "Batch transfer integrity", "type": "state_transition", "criticality": "high"},
+    {"name": "Operator approvals", "type": "contract_state", "criticality": "high"},
+    {"name": "Token URI metadata", "type": "metadata", "criticality": "medium"}
+  ],
+  "security_properties": [
+    {"name": "Operator authorization", "description": "Only owners or approved operators can transfer tokens."},
+    {"name": "Batch accounting integrity", "description": "Batch transfers must preserve per-token accounting."},
+    {"name": "Safe receiver compatibility", "description": "Transfers to contracts must validate ERC-1155 receiver hooks."}
+  ]
+}

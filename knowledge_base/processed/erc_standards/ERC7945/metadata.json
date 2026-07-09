@@ -1,0 +1,73 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7945",
+  "erc": "ERC-7945",
+  "events": [
+    {
+      "name": "ConfidentialTransfer",
+      "signature": "ConfidentialTransfer(address,address,address,bytes)"
+    },
+    {
+      "name": "ConfidentialApproval",
+      "signature": "ConfidentialApproval(address,address,bytes,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "confidentialBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialBalanceOf(address)"
+    },
+    {
+      "name": "confidentialTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransfer(address,bytes,bytes)"
+    },
+    {
+      "name": "confidentialTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferFrom(address,address,bytes,bytes)"
+    },
+    {
+      "name": "confidentialApprove",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialApprove(address,bytes,bytes)"
+    },
+    {
+      "name": "confidentialAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialAllowance(address,address)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "confidentialTotalSupply",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTotalSupply()"
+    }
+  ],
+  "id": "ERC7945",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7945",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7945.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Classic token contracts like [ERC-20](./eip-20.md) enable their token holders to make transfers and/or approve others to make transfers on their behalves. The generality of token standard [ERC-20](./eip-20.md) catalyzed decentralized finance and many other blockchain applications. However, when it comes to privacy, although some technical schemes have been proposed, few standards have been established, which limits the evolution of privacy-preserving blockchain applications. This proposal draws up a standard interface for fungible token contracts supporting confidential transactions. It provides basic transfer functionality without loss of generality, and allowance and approve functionalities. Contracts following the standard can provide confidentiality for users\u2019 balances and token transf",
+  "title": "Confidential Transactions Supported Token"
+}

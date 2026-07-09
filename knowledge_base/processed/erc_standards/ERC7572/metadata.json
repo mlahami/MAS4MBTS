@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7572",
+  "erc": "ERC-7572",
+  "events": [
+    {
+      "name": "ContractURIUpdated",
+      "signature": "ContractURIUpdated()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "contractURI",
+      "operation_type": "contract_interaction",
+      "signature": "contractURI()"
+    },
+    {
+      "name": "setContractURI",
+      "operation_type": "contract_interaction",
+      "signature": "setContractURI(string)"
+    }
+  ],
+  "id": "ERC7572",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7572",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7572.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification standardizes `contractURI()` to return contract-level metadata. This is useful for dapps and offchain indexers to show rich information about a contract, such as its name, description and image, without specifying it manually or individually for each dapp.",
+  "title": "Contract-level metadata via `contractURI()`"
+}

@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1504",
+  "erc": "ERC-1504",
+  "events": [],
+  "functions": [
+    {
+      "name": "live",
+      "operation_type": "contract_interaction",
+      "signature": "live()"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(string,uint256,uint16)"
+    },
+    {
+      "name": "registerUpgrader",
+      "operation_type": "contract_interaction",
+      "signature": "registerUpgrader(address)"
+    },
+    {
+      "name": "isUpgraderRegistered",
+      "operation_type": "contract_interaction",
+      "signature": "isUpgraderRegistered()"
+    },
+    {
+      "name": "done",
+      "operation_type": "contract_interaction",
+      "signature": "done()"
+    },
+    {
+      "name": "setHandler",
+      "operation_type": "contract_interaction",
+      "signature": "setHandler(address,address)"
+    },
+    {
+      "name": "startUpgrading",
+      "operation_type": "contract_interaction",
+      "signature": "startUpgrading(address)"
+    },
+    {
+      "name": "getProposalPeriod",
+      "operation_type": "contract_interaction",
+      "signature": "getProposalPeriod()"
+    },
+    {
+      "name": "setProposalPeriod",
+      "operation_type": "contract_interaction",
+      "signature": "setProposalPeriod(uint256)"
+    },
+    {
+      "name": "canBeUpgraded",
+      "operation_type": "contract_interaction",
+      "signature": "canBeUpgraded(address)"
+    },
+    {
+      "name": "startProposal",
+      "operation_type": "contract_interaction",
+      "signature": "startProposal()"
+    },
+    {
+      "name": "getResolution",
+      "operation_type": "contract_interaction",
+      "signature": "getResolution()"
+    }
+  ],
+  "id": "ERC1504",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1504",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1504.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Ethereum smart contracts have suffered a number of security issues in the past few years. The cost of fixing such a bug in smart contract is significant; for example, the consequences of The DAO attack in June 2016 caused tremendous financial loss and the hard fork of Ethereum blockchain. The following standard makes it possible to upgrade a standard API within smart contracts. This standard provides basic functionalities to upgrade the operations of the contract without data migration. To ensure the decentralization/community interests, it also contains a voting mechanism to control the upgrading process.",
+  "title": "Upgradable Smart Contract"
+}

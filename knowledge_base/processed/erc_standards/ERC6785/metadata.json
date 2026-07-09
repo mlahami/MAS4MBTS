@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6785",
+  "erc": "ERC-6785",
+  "events": [
+    {
+      "name": "UpdateUtility",
+      "signature": "UpdateUtility(uint256,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setUtilityUri",
+      "operation_type": "contract_interaction",
+      "signature": "setUtilityUri(uint256,string)"
+    },
+    {
+      "name": "utilityUriOf",
+      "operation_type": "contract_interaction",
+      "signature": "utilityUriOf(uint256)"
+    },
+    {
+      "name": "utilityHistoryOf",
+      "operation_type": "contract_interaction",
+      "signature": "utilityHistoryOf(uint256)"
+    }
+  ],
+  "id": "ERC6785",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6785",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6785.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification defines standard functions and an extension of the metadata schema that outlines what a token's utility entails and how the utility may be used and/or accessed. This specification is an optional extension of [ERC-721](./eip-721.md).",
+  "title": "ERC-721 Utilities Information Extension"
+}

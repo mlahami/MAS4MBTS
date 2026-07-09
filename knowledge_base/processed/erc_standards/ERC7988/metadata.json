@@ -1,0 +1,58 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7988",
+  "erc": "ERC-7988",
+  "events": [
+    {
+      "name": "BatchExecuted",
+      "signature": "BatchExecuted(bytes32)"
+    },
+    {
+      "name": "ModuleChanged",
+      "signature": "ModuleChanged(bytes32,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "executeBatch",
+      "operation_type": "contract_interaction",
+      "signature": "executeBatch(address[],uint256[],bytes[],address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "setPolicyModule",
+      "operation_type": "contract_interaction",
+      "signature": "setPolicyModule(address)"
+    },
+    {
+      "name": "setRecoveryModule",
+      "operation_type": "contract_interaction",
+      "signature": "setRecoveryModule(address)"
+    },
+    {
+      "name": "preCheck",
+      "operation_type": "contract_interaction",
+      "signature": "preCheck(address,bytes,uint256)"
+    },
+    {
+      "name": "postCheck",
+      "operation_type": "contract_interaction",
+      "signature": "postCheck(address,bytes,uint256)"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7988",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7988",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7988.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Minimal Avatar Smart Wallet (MASW) is an immutable delegate\u2011wallet that any EOA can designate via [EIP\u20117702](./eip-7702) (txType `0x04`). Once designated, the wallet's code remains active for every subsequent transaction until the owner sends a new `0x04` to clear or replace it. During each delegated call the EOA is the avatar and MASW's code executes as the delegate at the same address, enabling atomic batched calls ([EIP\u2011712](./eip-712) signed) and optional sponsor gas reimbursement in ETH or [ERC\u201120](./eip-20). The contract offers one primary function, `executeBatch`, plus two plug\u2011in hooks: a Policy Module for pre/post guards and a Recovery Module for alternate signature validation. Replay attacks are prevented by a global metaNonce, an expiry, and a chain\u2011bound `EIP\u2011712` domain separa",
+  "title": "Minimal Avatar Smart Wallet (MASW)"
+}

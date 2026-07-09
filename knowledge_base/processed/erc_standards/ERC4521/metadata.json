@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4521",
+  "erc": "ERC-4521",
+  "events": [],
+  "functions": [
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    }
+  ],
+  "id": "ERC4521",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4521",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4521.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "ERC-721, the popular standard for non-fungible tokens (NFTs), includes send functions, such as `transferFrom()` and `safeTransferFrom()`, but does not include a backwards-compatible `transfer()` found in fungible ERC-20 tokens. This standard provides references to add such a `transfer()`.",
+  "title": "721/20-compatible transfer"
+}

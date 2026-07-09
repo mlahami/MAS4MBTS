@@ -1,0 +1,69 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-165",
+  "erc": "ERC-165",
+  "events": [],
+  "functions": [
+    {
+      "name": "hello",
+      "operation_type": "contract_interaction",
+      "signature": "hello()"
+    },
+    {
+      "name": "world",
+      "operation_type": "contract_interaction",
+      "signature": "world(int)"
+    },
+    {
+      "name": "calculateSelector",
+      "operation_type": "contract_interaction",
+      "signature": "calculateSelector()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "doesContractImplementInterface",
+      "operation_type": "contract_interaction",
+      "signature": "doesContractImplementInterface(address,bytes4)"
+    },
+    {
+      "name": "noThrowCall",
+      "operation_type": "contract_interaction",
+      "signature": "noThrowCall(address,bytes4)"
+    },
+    {
+      "name": "ERC165MappingImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "ERC165MappingImplementation()"
+    },
+    {
+      "name": "is2D",
+      "operation_type": "contract_interaction",
+      "signature": "is2D()"
+    },
+    {
+      "name": "skinColor",
+      "operation_type": "contract_interaction",
+      "signature": "skinColor()"
+    },
+    {
+      "name": "Lisa",
+      "operation_type": "contract_interaction",
+      "signature": "Lisa()"
+    }
+  ],
+  "id": "ERC165",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-165",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-165.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Herein, we standardize the following: 1. How interfaces are identified 2. How a contract will publish the interfaces it implements 3. How to detect if a contract implements ERC-165 4. How to detect if a contract implements any given interface",
+  "title": "Standard Interface Detection"
+}

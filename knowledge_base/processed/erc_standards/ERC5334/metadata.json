@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5334",
+  "erc": "ERC-5334",
+  "events": [
+    {
+      "name": "UpdateUser",
+      "signature": "UpdateUser(uint256,address,uint64,uint8)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setUser",
+      "operation_type": "contract_interaction",
+      "signature": "setUser(uint256,address,uint64,uint8)"
+    },
+    {
+      "name": "userOf",
+      "operation_type": "contract_interaction",
+      "signature": "userOf(uint256)"
+    },
+    {
+      "name": "userExpires",
+      "operation_type": "contract_interaction",
+      "signature": "userExpires(uint256)"
+    },
+    {
+      "name": "userLevel",
+      "operation_type": "contract_interaction",
+      "signature": "userLevel(uint256)"
+    }
+  ],
+  "id": "ERC5334",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5334",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5334.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "An [EIP-721](./eip-721.md) extension that adds an additional role (`user`) which can be granted to addresses, and a time where the role is automatically revoked (`expires`) and (`level`) . The `user` role represents permission to \"use\" the NFT, but not the ability to transfer it or set users.",
+  "title": "EIP-721 User And Expires And Level Extension"
+}

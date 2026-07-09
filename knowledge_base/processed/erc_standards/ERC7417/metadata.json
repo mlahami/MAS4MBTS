@@ -1,0 +1,243 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7417",
+  "erc": "ERC-7417",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256,bytes)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint,bytes)"
+    },
+    {
+      "name": "TransferData",
+      "signature": "TransferData(bytes)"
+    },
+    {
+      "name": "ERC223WrapperCreated",
+      "signature": "ERC223WrapperCreated(address,address)"
+    },
+    {
+      "name": "ERC20WrapperCreated",
+      "signature": "ERC20WrapperCreated(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getERC20WrapperFor",
+      "operation_type": "contract_interaction",
+      "signature": "getERC20WrapperFor(address)"
+    },
+    {
+      "name": "getERC223WrapperFor",
+      "operation_type": "contract_interaction",
+      "signature": "getERC223WrapperFor(address)"
+    },
+    {
+      "name": "getERC20OriginFor",
+      "operation_type": "contract_interaction",
+      "signature": "getERC20OriginFor(address)"
+    },
+    {
+      "name": "getERC223OriginFor",
+      "operation_type": "contract_interaction",
+      "signature": "getERC223OriginFor(address)"
+    },
+    {
+      "name": "predictWrapperAddress",
+      "operation_type": "contract_interaction",
+      "signature": "predictWrapperAddress(address,bool)"
+    },
+    {
+      "name": "createERC223Wrapper",
+      "operation_type": "contract_interaction",
+      "signature": "createERC223Wrapper(address)"
+    },
+    {
+      "name": "createERC20Wrapper",
+      "operation_type": "contract_interaction",
+      "signature": "createERC20Wrapper(address)"
+    },
+    {
+      "name": "wrapERC20toERC223",
+      "operation_type": "contract_interaction",
+      "signature": "wrapERC20toERC223(address,uint256)"
+    },
+    {
+      "name": "unwrapERC20toERC223",
+      "operation_type": "contract_interaction",
+      "signature": "unwrapERC20toERC223(address,uint256)"
+    },
+    {
+      "name": "convertERC20",
+      "operation_type": "contract_interaction",
+      "signature": "convertERC20(address,uint256)"
+    },
+    {
+      "name": "isWrapper",
+      "operation_type": "contract_interaction",
+      "signature": "isWrapper(address)"
+    },
+    {
+      "name": "tokenReceived",
+      "operation_type": "contract_interaction",
+      "signature": "tokenReceived(address,uint,bytes)"
+    },
+    {
+      "name": "extractStuckERC20",
+      "operation_type": "contract_interaction",
+      "signature": "extractStuckERC20(address)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "isContract",
+      "operation_type": "contract_interaction",
+      "signature": "isContract(address)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_registerInterface",
+      "operation_type": "contract_interaction",
+      "signature": "_registerInterface(bytes4)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint,bytes)"
+    },
+    {
+      "name": "standard",
+      "operation_type": "contract_interaction",
+      "signature": "standard()"
+    },
+    {
+      "name": "origin",
+      "operation_type": "contract_interaction",
+      "signature": "origin()"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,bytes)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256)"
+    },
+    {
+      "name": "safeTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransfer(address,address,uint)"
+    },
+    {
+      "name": "rescueERC20",
+      "operation_type": "contract_interaction",
+      "signature": "rescueERC20(address,uint256)"
+    },
+    {
+      "name": "set",
+      "operation_type": "contract_interaction",
+      "signature": "set(address)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,address,uint)"
+    }
+  ],
+  "id": "ERC7417",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7417",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7417.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "There are multiple token standards on Ethereum chain currently. This EIP introduces a concept of cross-standard interoperability by creating a service that allows [ERC-20](./eip-20.md) tokens to be upgraded to [ERC-223](./eip-223.md) tokens anytime. [ERC-223](./eip-223.md) tokens can be converted back to [ERC-20](./eip-20.md) version without any restrictions to avoid any problems with backwards compatibility and allow different standards to co-exist and become interoperable and interchangeable. In order to perform the conversion, a user must deposit tokens of one standard to the Converter contract and it will automatically send tokens of another standard back.",
+  "title": "Token Converter"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7673",
+  "erc": "ERC-7673",
+  "events": [],
+  "functions": [],
+  "id": "ERC7673",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7673",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7673.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Introduce base256emoji for use as the primary input and display for account addresses in all user interfaces.",
+  "title": "Distinguishable base256emoji Addresses"
+}

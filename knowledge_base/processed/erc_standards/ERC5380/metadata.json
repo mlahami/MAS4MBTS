@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5380",
+  "erc": "ERC-5380",
+  "events": [
+    {
+      "name": "EntitlementChanged",
+      "signature": "EntitlementChanged(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "entitle",
+      "operation_type": "contract_interaction",
+      "signature": "entitle(address,address,uint256)"
+    },
+    {
+      "name": "maxEntitlements",
+      "operation_type": "contract_interaction",
+      "signature": "maxEntitlements(address,uint256)"
+    },
+    {
+      "name": "entitlementOf",
+      "operation_type": "contract_interaction",
+      "signature": "entitlementOf(address,address,uint256)"
+    },
+    {
+      "name": "entitlementOfUserByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "entitlementOfUserByIndex(address,uint256)"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI()"
+    }
+  ],
+  "id": "ERC5380",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5380",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5380.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes a new interface that allows [ERC-721](./eip-721.md) token owners to grant limited usage of those tokens to other addresses.",
+  "title": "ERC-721 Entitlement Extension"
+}

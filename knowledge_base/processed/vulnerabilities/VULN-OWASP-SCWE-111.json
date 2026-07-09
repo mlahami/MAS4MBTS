@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Calculation",
+  "cwe": "CWE-682",
+  "description": "Rebasing tokens change user balances over time. Protocols that track deposited amounts as fixed units (instead of shares) can become insolvent or let users withdraw more than their fair share after positive or negative rebases.",
+  "id": "VULN-OWASP-SCWE-111",
+  "name": "Rebase Token Balance Drift",
+  "owasp": "SCWE-111",
+  "remediation": "- Track user positions using share-based accounting that scales with total supply. - Normalize balances on every interaction or use wrappers that expose a non-rebasing interface (e.g., wstETH). - Validate integrations against tokens with elastic supply and document unsupported assets.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-111.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,126 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8180",
+  "erc": "ERC-8180",
+  "events": [
+    {
+      "name": "BlobBatchRegistered",
+      "signature": "BlobBatchRegistered(bytes32,address,bytes32,address,address)"
+    },
+    {
+      "name": "CalldataBatchRegistered",
+      "signature": "CalldataBatchRegistered(bytes32,address,bytes32,address,address)"
+    },
+    {
+      "name": "KeyRegistered",
+      "signature": "KeyRegistered(address,bytes,uint256)"
+    },
+    {
+      "name": "MessageExposed",
+      "signature": "MessageExposed(bytes32,bytes32,address,address,uint64)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "signature",
+      "operation_type": "contract_interaction",
+      "signature": "signature(varies)"
+    },
+    {
+      "name": "registerBlobBatch",
+      "operation_type": "contract_interaction",
+      "signature": "registerBlobBatch(uint256,uint16,uint16,bytes32,address,address)"
+    },
+    {
+      "name": "registerCalldataBatch",
+      "operation_type": "contract_interaction",
+      "signature": "registerCalldataBatch(bytes,bytes32,address,address)"
+    },
+    {
+      "name": "registerBlobBatches",
+      "operation_type": "contract_interaction",
+      "signature": "registerBlobBatches(BlobBatchCall[])"
+    },
+    {
+      "name": "decode",
+      "operation_type": "contract_interaction",
+      "signature": "decode(bytes)"
+    },
+    {
+      "name": "schemeId",
+      "operation_type": "contract_interaction",
+      "signature": "schemeId()"
+    },
+    {
+      "name": "schemeName",
+      "operation_type": "contract_interaction",
+      "signature": "schemeName()"
+    },
+    {
+      "name": "pubKeySize",
+      "operation_type": "contract_interaction",
+      "signature": "pubKeySize()"
+    },
+    {
+      "name": "signatureSize",
+      "operation_type": "contract_interaction",
+      "signature": "signatureSize()"
+    },
+    {
+      "name": "register",
+      "operation_type": "contract_interaction",
+      "signature": "register(bytes,bytes)"
+    },
+    {
+      "name": "getKey",
+      "operation_type": "contract_interaction",
+      "signature": "getKey(address)"
+    },
+    {
+      "name": "isRegistered",
+      "operation_type": "contract_interaction",
+      "signature": "isRegistered(address)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(bytes,bytes32,bytes)"
+    },
+    {
+      "name": "verifyWithRegisteredKey",
+      "operation_type": "contract_interaction",
+      "signature": "verifyWithRegisteredKey(address,bytes32,bytes)"
+    },
+    {
+      "name": "supportsAggregation",
+      "operation_type": "contract_interaction",
+      "signature": "supportsAggregation()"
+    },
+    {
+      "name": "verifyAggregated",
+      "operation_type": "contract_interaction",
+      "signature": "verifyAggregated(bytes[],bytes32[],bytes)"
+    },
+    {
+      "name": "isExposed",
+      "operation_type": "contract_interaction",
+      "signature": "isExposed(bytes32)"
+    },
+    {
+      "name": "declareBlobSegment",
+      "operation_type": "contract_interaction",
+      "signature": "declareBlobSegment(uint256,uint16,uint16,bytes32)"
+    }
+  ],
+  "id": "ERC8180",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8180",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8180.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines interfaces for decentralized authenticated messaging over [EIP-4844](./eip-4844.md) blobs. The core registration interface extends [ERC-8179](./eip-8179.md) (Blob Space Segments) with a decoder pointer and a signature registry pointer: the decoder is an untrusted on-chain contract that extracts messages from payloads; the signature registry is a trusted contract that verifies signatures. Separating decoding from verification ensures that a buggy or malicious decoder cannot cause impersonation \u2014 it can only produce wrong messages that fail signature verification against the trusted registry. Three interfaces: 1. **`IERC_BAM_Core`** (extends `IERC_BSS`): register message batches from blobs or calldata with segment coordinates, decoder address, and signature registry address",
+  "title": "Blob Authenticated Messaging"
+}

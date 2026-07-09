@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2680",
+  "erc": "ERC-2680",
+  "events": [],
+  "functions": [],
+  "id": "ERC2680",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2680",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2680.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Ethereum wallets have no standards for their layout in persistent storage, making different wallet implementations incompatible. This defines a standard for the placement of Ethereum walletstores and keystores, making it possible for different software to work with the same wallets and keys.",
+  "title": "Ethereum 2 wallet layout"
+}

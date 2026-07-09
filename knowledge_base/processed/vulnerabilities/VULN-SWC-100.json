@@ -1,0 +1,17 @@
+{
+  "category": "Improper Adherence to Coding Standards",
+  "cwe": "CWE-710",
+  "description": "Functions that do not have a function visibility type specified are `public` by default. This can lead to a vulnerability if a developer forgot to set the visibility and a malicious user is able to make unauthorized or unintended state changes.",
+  "id": "VULN-SWC-100",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Functions can be specified as being `external`, `public`, `internal` or `private`. It is recommended to make a conscious decision on which visibility type is appropriate for a function. This can dramatically reduce the attack surface of a contract system.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-100.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-100"
+}

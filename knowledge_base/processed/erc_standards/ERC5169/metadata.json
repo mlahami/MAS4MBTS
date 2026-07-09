@@ -1,0 +1,38 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5169",
+  "erc": "ERC-5169",
+  "events": [
+    {
+      "name": "ScriptUpdate",
+      "signature": "ScriptUpdate(string[])"
+    },
+    {
+      "name": "ScriptUpdate",
+      "signature": "ScriptUpdate(scriptURI)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "scriptURI",
+      "operation_type": "contract_interaction",
+      "signature": "scriptURI()"
+    },
+    {
+      "name": "setScriptURI",
+      "operation_type": "contract_interaction",
+      "signature": "setScriptURI(string[])"
+    }
+  ],
+  "id": "ERC5169",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5169",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5169.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP provides a contract interface adding a `scriptURI()` function for locating executable scripts associated with the token.",
+  "title": "Client Script URI for Token Contracts"
+}

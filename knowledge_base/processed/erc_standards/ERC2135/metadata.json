@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2135",
+  "erc": "ERC-2135",
+  "events": [
+    {
+      "name": "OnConsumption",
+      "signature": "OnConsumption(address,uint256,uint256,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "consume",
+      "operation_type": "contract_interaction",
+      "signature": "consume(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "isConsumableBy",
+      "operation_type": "contract_interaction",
+      "signature": "isConsumableBy(address,uint256,uint256)"
+    }
+  ],
+  "id": "ERC2135",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2135",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2135.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP defines an interface to mark a digital asset as \"consumable\" and to react to its \"consumption.\"",
+  "title": "Consumable Interface (Tickets, etc)"
+}

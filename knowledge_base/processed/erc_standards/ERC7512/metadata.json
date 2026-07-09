@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7512",
+  "erc": "ERC-7512",
+  "events": [],
+  "functions": [],
+  "id": "ERC7512",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7512",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7512.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The proposal aims to create a standard for an onchain representation of audit reports that can be parsed by contracts to extract relevant information about the audits, such as who performed the audits and what standards have been verified.",
+  "title": "Onchain Representation for Audits"
+}

@@ -1,0 +1,768 @@
+{
+  "ercStandard": {
+    "id": "ERC777",
+    "name": "ERC-777",
+    "version": "EIP-777",
+    "description": "ERC-777 Token Standard. ERC-777 Token Standard. This standard defines a new way to interact with a token contract while remaining backward compatible with [ERC-20]. It defines advanced features to interact with tokens. Namely, *operators* to send tokens on behalf of another address&mdash;contract or regular account&mda"
+  },
+  "smartContract": {
+    "id": "SC1",
+    "contractName": "AdvancedOperatorToken",
+    "address": "N/A",
+    "compilerVersion": "0.8.20"
+  },
+  "actors": [
+    {
+      "id": "ACT1",
+      "actorName": "Contract owner or admin",
+      "actorType": "Privileged user"
+    },
+    {
+      "id": "ACT2",
+      "actorName": "Asset holder",
+      "actorType": "External user"
+    },
+    {
+      "id": "ACT3",
+      "actorName": "Approved operator or spender",
+      "actorType": "Delegated user"
+    },
+    {
+      "id": "ACT4",
+      "actorName": "Attacker",
+      "actorType": "Malicious external user"
+    }
+  ],
+  "trustLevels": [
+    {
+      "id": "TL1",
+      "levelName": "Trusted administrator",
+      "permissions": [
+        "manage privileged functions"
+      ]
+    },
+    {
+      "id": "TL2",
+      "levelName": "Asset holder",
+      "permissions": [
+        "transfer owned assets",
+        "approve delegated access"
+      ]
+    },
+    {
+      "id": "TL3",
+      "levelName": "Approved delegate",
+      "permissions": [
+        "operate within granted approvals"
+      ]
+    },
+    {
+      "id": "TL4",
+      "levelName": "Untrusted external user",
+      "permissions": [
+        "call public functions"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "A1",
+      "assetName": "Standard-specific balances or ownership state",
+      "assetType": "Contract state",
+      "criticality": "High"
+    },
+    {
+      "id": "A2",
+      "assetName": "Delegated permissions or approvals",
+      "assetType": "Access control state",
+      "criticality": "High"
+    },
+    {
+      "id": "A3",
+      "assetName": "Supply or accounting invariants",
+      "assetType": "Business invariant",
+      "criticality": "High"
+    },
+    {
+      "id": "A4",
+      "assetName": "Metadata or configuration",
+      "assetType": "Metadata",
+      "criticality": "Medium"
+    },
+    {
+      "id": "A5",
+      "assetName": "External interaction state",
+      "assetType": "Integration boundary",
+      "criticality": "Medium"
+    }
+  ],
+  "entryPoints": [
+    {
+      "id": "EP1",
+      "functionName": "send(address,uint256,bytes)",
+      "visibility": "public",
+      "operationType": "Token send"
+    },
+    {
+      "id": "EP2",
+      "functionName": "operatorSend(address,address,uint256,bytes,bytes)",
+      "visibility": "public",
+      "operationType": "Operator token send"
+    },
+    {
+      "id": "EP3",
+      "functionName": "authorizeOperator(address)",
+      "visibility": "public",
+      "operationType": "Operator authorization"
+    },
+    {
+      "id": "EP4",
+      "functionName": "revokeOperator(address)",
+      "visibility": "public",
+      "operationType": "Operator revocation"
+    },
+    {
+      "id": "EP5",
+      "functionName": "tokensReceived(address,address,address,uint256,bytes,bytes)",
+      "visibility": "external",
+      "operationType": "Receive hook"
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "V1",
+      "vulnerabilityName": "Improper standard operation authorization",
+      "category": "Authorization",
+      "severity": "High",
+      "CWE": "CWE-284",
+      "SWC": "SWC-105",
+      "knowledgeSources": [
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-097#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-097",
+          "title": "Missing Explicit Function Visibility",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-097.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-016#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-016",
+          "title": "Insufficient Authorization Checks",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-016.json"
+        }
+      ]
+    },
+    {
+      "id": "V2",
+      "vulnerabilityName": "Incorrect standard accounting",
+      "category": "Business logic",
+      "severity": "High",
+      "CWE": "CWE-682",
+      "SWC": "N/A",
+      "knowledgeSources": [
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SC10#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SC10",
+          "title": "SC10:2026 Proxy & Upgradeability Vulnerabilities",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC10.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-035#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-035",
+          "title": "Insecure Delegatecall Usage",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-035.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SC02#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SC02",
+          "title": "SC02:2026 Business Logic Vulnerabilities",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC02.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-097#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-097",
+          "title": "Missing Explicit Function Visibility",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-097.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-027#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-027",
+          "title": "Vulnerable Cryptographic Algorithms",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-027.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SC06#chunk:002",
+          "documentId": "vulnerability:VULN-OWASP-SC06",
+          "title": "SC06:2026 Unchecked External Calls",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC06.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-SWC-129#chunk:001",
+          "documentId": "vulnerability:VULN-SWC-129",
+          "title": "Please note, this content is no longer actively maintained.",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-SWC-129.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-016#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-016",
+          "title": "Insufficient Authorization Checks",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-016.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-050#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-050",
+          "title": "Unprotected SELFDESTRUCT Instruction",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-050.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-014#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-014",
+          "title": "Lack of Emergency Stop Mechanism",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-014.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-005#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-005",
+          "title": "Insecure Upgradeable Proxy Design",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-005.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-SWC-132#chunk:001",
+          "documentId": "vulnerability:VULN-SWC-132",
+          "title": "Please note, this content is no longer actively maintained.",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-SWC-132.json"
+        },
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SCWE-057#chunk:001",
+          "documentId": "vulnerability:VULN-OWASP-SCWE-057",
+          "title": "Write to Arbitrary Storage Location",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-057.json"
+        }
+      ]
+    },
+    {
+      "id": "V3",
+      "vulnerabilityName": "Unsafe standard callback interaction",
+      "category": "External call",
+      "severity": "High",
+      "CWE": "CWE-841",
+      "SWC": "SWC-107",
+      "knowledgeSources": [
+        {
+          "chunkId": "vulnerability:VULN-OWASP-SC06#chunk:002",
+          "documentId": "vulnerability:VULN-OWASP-SC06",
+          "title": "SC06:2026 Unchecked External Calls",
+          "kind": "vulnerability",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC06.json"
+        }
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "id": "T1",
+      "threatName": "Unauthorized Standard Operation",
+      "description": "An unauthorized caller executes a privileged or ownership-sensitive standard operation.",
+      "STRIDECategory": "Elevation of Privilege",
+      "knowledgeSources": [
+        {
+          "chunkId": "auxiliary:AUX-MITRE-001#chunk:001",
+          "documentId": "auxiliary:AUX-MITRE-001",
+          "title": "MITRE ATT&CK for blockchain threat contextualization",
+          "kind": "auxiliary",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-MITRE-001.json"
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "threatName": "Standard Accounting Invariant Violation",
+      "description": "A state transition violates balances, ownership, supply, share, or token-ID invariants.",
+      "STRIDECategory": "Tampering",
+      "knowledgeSources": [
+        {
+          "chunkId": "auxiliary:AUX-MITRE-001#chunk:001",
+          "documentId": "auxiliary:AUX-MITRE-001",
+          "title": "MITRE ATT&CK for blockchain threat contextualization",
+          "kind": "auxiliary",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-MITRE-001.json"
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "threatName": "Unsafe External Callback or Receiver Interaction",
+      "description": "A standard operation invokes an external receiver, hook, or callback in an unsafe state.",
+      "STRIDECategory": "Tampering",
+      "knowledgeSources": [
+        {
+          "chunkId": "auxiliary:AUX-MITRE-001#chunk:001",
+          "documentId": "auxiliary:AUX-MITRE-001",
+          "title": "MITRE ATT&CK for blockchain threat contextualization",
+          "kind": "auxiliary",
+          "sourcePath": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-MITRE-001.json"
+        }
+      ]
+    }
+  ],
+  "countermeasures": [
+    {
+      "id": "CM1",
+      "countermeasureName": "Standard-aware authorization checks",
+      "description": "Enforce owner, role, operator, allowance, or standard-specific authorization preconditions."
+    },
+    {
+      "id": "CM2",
+      "countermeasureName": "Standard invariant checks",
+      "description": "Validate preconditions and assert post-state invariants for each state-changing operation."
+    },
+    {
+      "id": "CM3",
+      "countermeasureName": "Callback-safe state transition",
+      "description": "Use checks-effects-interactions, reentrancy protection, and receiver magic-value validation where applicable."
+    }
+  ],
+  "securityProperties": [
+    {
+      "id": "SP1",
+      "propertyName": "Authorized standard operations",
+      "description": "Sensitive standard operations can only be executed by authorized actors."
+    },
+    {
+      "id": "SP2",
+      "propertyName": "Standard accounting integrity",
+      "description": "State transitions preserve standard-specific accounting and ownership invariants."
+    },
+    {
+      "id": "SP3",
+      "propertyName": "Callback safety",
+      "description": "External callbacks cannot observe or exploit inconsistent intermediate state."
+    }
+  ],
+  "testObjectives": [
+    {
+      "id": "TO1",
+      "objectiveName": "Unauthorized standard operation test",
+      "expectedBehavior": "Sensitive entry points revert for callers lacking standard-specific authority."
+    },
+    {
+      "id": "TO2",
+      "objectiveName": "Standard accounting invariant test",
+      "expectedBehavior": "State-changing operations preserve balances, ownership, supply, and related invariants."
+    },
+    {
+      "id": "TO3",
+      "objectiveName": "Unsafe callback interaction test",
+      "expectedBehavior": "Receiver hooks and callbacks cannot re-enter or bypass standard safety checks."
+    }
+  ],
+  "relations": [
+    {
+      "type": "defines",
+      "from": "ERC777",
+      "to": "SC1"
+    },
+    {
+      "type": "exposes",
+      "from": "SC1",
+      "to": "EP1"
+    },
+    {
+      "type": "exposes",
+      "from": "SC1",
+      "to": "EP2"
+    },
+    {
+      "type": "exposes",
+      "from": "SC1",
+      "to": "EP3"
+    },
+    {
+      "type": "exposes",
+      "from": "SC1",
+      "to": "EP4"
+    },
+    {
+      "type": "exposes",
+      "from": "SC1",
+      "to": "EP5"
+    },
+    {
+      "type": "mayTrigger",
+      "from": "EP3",
+      "to": "T1"
+    },
+    {
+      "type": "targets",
+      "from": "T1",
+      "to": "A2"
+    },
+    {
+      "type": "targets",
+      "from": "T1",
+      "to": "A1"
+    },
+    {
+      "type": "exploits",
+      "from": "T1",
+      "to": "V1"
+    },
+    {
+      "type": "mitigatedBy",
+      "from": "T1",
+      "to": "CM1"
+    },
+    {
+      "type": "violates",
+      "from": "T1",
+      "to": "SP1"
+    },
+    {
+      "type": "validatedBy",
+      "from": "T1",
+      "to": "TO1"
+    },
+    {
+      "type": "mayTrigger",
+      "from": "EP1",
+      "to": "T2"
+    },
+    {
+      "type": "targets",
+      "from": "T2",
+      "to": "A1"
+    },
+    {
+      "type": "targets",
+      "from": "T2",
+      "to": "A3"
+    },
+    {
+      "type": "exploits",
+      "from": "T2",
+      "to": "V2"
+    },
+    {
+      "type": "mitigatedBy",
+      "from": "T2",
+      "to": "CM2"
+    },
+    {
+      "type": "violates",
+      "from": "T2",
+      "to": "SP2"
+    },
+    {
+      "type": "validatedBy",
+      "from": "T2",
+      "to": "TO2"
+    },
+    {
+      "type": "mayTrigger",
+      "from": "EP1",
+      "to": "T3"
+    },
+    {
+      "type": "targets",
+      "from": "T3",
+      "to": "A5"
+    },
+    {
+      "type": "targets",
+      "from": "T3",
+      "to": "A1"
+    },
+    {
+      "type": "exploits",
+      "from": "T3",
+      "to": "V3"
+    },
+    {
+      "type": "mitigatedBy",
+      "from": "T3",
+      "to": "CM3"
+    },
+    {
+      "type": "violates",
+      "from": "T3",
+      "to": "SP3"
+    },
+    {
+      "type": "validatedBy",
+      "from": "T3",
+      "to": "TO3"
+    }
+  ],
+  "knowledgeSources": [
+    {
+      "id": "erc:ERC777#chunk:001",
+      "document_id": "erc:ERC777",
+      "kind": "erc_standard",
+      "title": "ERC-777 Token Standard",
+      "cwe": "N/A",
+      "swc": "N/A",
+      "owasp": "N/A",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\erc_standards\\ERC777\\metadata.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.031754032258064516,
+        "sparse_score": 8.854332946564812,
+        "dense_score": 0.1291708600737556
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SC10#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SC10",
+      "kind": "vulnerability",
+      "title": "SC10:2026 Proxy & Upgradeability Vulnerabilities",
+      "cwe": "N/A",
+      "swc": "N/A",
+      "owasp": "SC10",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC10.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.030303030303030304,
+        "sparse_score": 7.102893429027459,
+        "dense_score": 0.12702146976599116
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-035#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-035",
+      "kind": "vulnerability",
+      "title": "Insecure Delegatecall Usage",
+      "cwe": "CWE-250",
+      "swc": "N/A",
+      "owasp": "SCWE-035",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-035.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.029030910609857977,
+        "sparse_score": 6.242240453122614,
+        "dense_score": 0.1631471165368321
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SC02#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SC02",
+      "kind": "vulnerability",
+      "title": "SC02:2026 Business Logic Vulnerabilities",
+      "cwe": "N/A",
+      "swc": "N/A",
+      "owasp": "SC02",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC02.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.02854251012145749,
+        "sparse_score": 8.225053696509416,
+        "dense_score": 0.10188534162169866
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-097#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-097",
+      "kind": "vulnerability",
+      "title": "Missing Explicit Function Visibility",
+      "cwe": "CWE-284",
+      "swc": "N/A",
+      "owasp": "SCWE-097",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-097.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.029571646010002173,
+        "sparse_score": 10.684736232844205,
+        "dense_score": 0.08139569275564795
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-027#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-027",
+      "kind": "vulnerability",
+      "title": "Vulnerable Cryptographic Algorithms",
+      "cwe": "CWE-327",
+      "swc": "N/A",
+      "owasp": "SCWE-027",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-027.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.01639344262295082,
+        "sparse_score": 0.0,
+        "dense_score": 0.16425230069367708
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SC06#chunk:002",
+      "document_id": "vulnerability:VULN-OWASP-SC06",
+      "kind": "vulnerability",
+      "title": "SC06:2026 Unchecked External Calls",
+      "cwe": "N/A",
+      "swc": "N/A",
+      "owasp": "SC06",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SC06.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.016129032258064516,
+        "sparse_score": 11.18105103114768,
+        "dense_score": 0.0
+      }
+    },
+    {
+      "id": "vulnerability:VULN-SWC-129#chunk:001",
+      "document_id": "vulnerability:VULN-SWC-129",
+      "kind": "vulnerability",
+      "title": "Please note, this content is no longer actively maintained.",
+      "cwe": "CWE-480",
+      "swc": "SWC-129",
+      "owasp": "N/A",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-SWC-129.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.031754032258064516,
+        "sparse_score": 21.486859749665832,
+        "dense_score": 0.1801645310978548
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-016#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-016",
+      "kind": "vulnerability",
+      "title": "Insufficient Authorization Checks",
+      "cwe": "CWE-862",
+      "swc": "N/A",
+      "owasp": "SCWE-016",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-016.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.02976190476190476,
+        "sparse_score": 7.954459518463139,
+        "dense_score": 0.19571012594342946
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-050#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-050",
+      "kind": "vulnerability",
+      "title": "Unprotected SELFDESTRUCT Instruction",
+      "cwe": "CWE-732",
+      "swc": "N/A",
+      "owasp": "SCWE-050",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-050.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.027031963470319637,
+        "sparse_score": 7.77314534568864,
+        "dense_score": 0.12443182828384206
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-014#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-014",
+      "kind": "vulnerability",
+      "title": "Lack of Emergency Stop Mechanism",
+      "cwe": "CWE-693",
+      "swc": "N/A",
+      "owasp": "SCWE-014",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-014.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.026687875574407917,
+        "sparse_score": 5.068749836594777,
+        "dense_score": 0.0741656932483308
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-005#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-005",
+      "kind": "vulnerability",
+      "title": "Insecure Upgradeable Proxy Design",
+      "cwe": "CWE-668",
+      "swc": "N/A",
+      "owasp": "SCWE-005",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-005.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.02546333601933924,
+        "sparse_score": 3.711628611123498,
+        "dense_score": 0.1018350154434631
+      }
+    },
+    {
+      "id": "vulnerability:VULN-SWC-132#chunk:001",
+      "document_id": "vulnerability:VULN-SWC-132",
+      "kind": "vulnerability",
+      "title": "Please note, this content is no longer actively maintained.",
+      "cwe": "CWE-667",
+      "swc": "SWC-132",
+      "owasp": "N/A",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-SWC-132.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.024404761904761905,
+        "sparse_score": 3.8519526398099657,
+        "dense_score": 0.07870417814679403
+      }
+    },
+    {
+      "id": "auxiliary:AUX-NIST-001#chunk:001",
+      "document_id": "auxiliary:AUX-NIST-001",
+      "kind": "auxiliary",
+      "title": "NIST SP 800-53 mitigation guidance",
+      "cwe": "N/A",
+      "swc": "N/A",
+      "owasp": "N/A",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-NIST-001.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.01639344262295082,
+        "sparse_score": 14.5267899500257,
+        "dense_score": 0.0
+      }
+    },
+    {
+      "id": "auxiliary:AUX-MITRE-001#chunk:001",
+      "document_id": "auxiliary:AUX-MITRE-001",
+      "kind": "auxiliary",
+      "title": "MITRE ATT&CK for blockchain threat contextualization",
+      "cwe": "N/A",
+      "swc": "N/A",
+      "owasp": "N/A",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-MITRE-001.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.027252906976744186,
+        "sparse_score": 9.935528891906648,
+        "dense_score": 0.06963106238227912
+      }
+    },
+    {
+      "id": "vulnerability:VULN-OWASP-SCWE-057#chunk:001",
+      "document_id": "vulnerability:VULN-OWASP-SCWE-057",
+      "kind": "vulnerability",
+      "title": "Write to Arbitrary Storage Location",
+      "cwe": "CWE-20",
+      "swc": "N/A",
+      "owasp": "SCWE-057",
+      "source_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-OWASP-SCWE-057.json",
+      "retrieval": {
+        "mode": "hybrid_bm25_dense_hash_rrf",
+        "fused_score": 0.027106227106227107,
+        "sparse_score": 4.609629667029185,
+        "dense_score": 0.08253126141202305
+      }
+    }
+  ]
+}

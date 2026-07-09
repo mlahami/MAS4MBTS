@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5023",
+  "erc": "ERC-5023",
+  "events": [
+    {
+      "name": "Share",
+      "signature": "Share(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "share",
+      "operation_type": "contract_interaction",
+      "signature": "share(address,uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256)"
+    },
+    {
+      "name": "setTokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "setTokenURI(uint256,string)"
+    },
+    {
+      "name": "setBaseURI",
+      "operation_type": "contract_interaction",
+      "signature": "setBaseURI(string)"
+    },
+    {
+      "name": "_baseURI",
+      "operation_type": "contract_interaction",
+      "signature": "_baseURI()"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    }
+  ],
+  "id": "ERC5023",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5023",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5023.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP standardizes an interface for non-fungible value-holding shareable tokens. Shareability is accomplished by minting copies of existing tokens for new recipients. Sharing and associated events allow the construction of a graph describing who has shared what to which party.",
+  "title": "Shareable Non-Fungible Token"
+}

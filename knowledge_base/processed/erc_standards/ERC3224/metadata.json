@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3224",
+  "erc": "ERC-3224",
+  "events": [],
+  "functions": [
+    {
+      "name": "eipXXXDescribe",
+      "operation_type": "contract_interaction",
+      "signature": "eipXXXDescribe(bytes)"
+    }
+  ],
+  "id": "ERC3224",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3224",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3224.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Human-readable descriptions for machine executable operations, described in higher level machine readable data, so that wallets can provide meaningful feedback to the user describing the action the user is about to perform.",
+  "title": "Described Data"
+}

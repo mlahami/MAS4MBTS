@@ -1,0 +1,86 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2746",
+  "erc": "ERC-2746",
+  "events": [
+    {
+      "name": "CallRuleTree",
+      "signature": "CallRuleTree(address)"
+    },
+    {
+      "name": "CallRuleSet",
+      "signature": "CallRuleSet(address,bytes32)"
+    },
+    {
+      "name": "CallRule",
+      "signature": "CallRule(address,bytes32,bytes32,uint)"
+    },
+    {
+      "name": "RuleSetError",
+      "signature": "RuleSetError(address,bytes32,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "addAttribute(bytes32,uint,uint,string,bool,bool)"
+    },
+    {
+      "name": "addRuleTree",
+      "operation_type": "contract_interaction",
+      "signature": "addRuleTree(address,bytes32,string)"
+    },
+    {
+      "name": "addRuleSet",
+      "operation_type": "contract_interaction",
+      "signature": "addRuleSet(address,bytes32,string,bytes32,bool,bool,bool)"
+    },
+    {
+      "name": "addRule",
+      "operation_type": "contract_interaction",
+      "signature": "addRule(address,bytes32,bytes32,bytes32,uint,string,bool)"
+    },
+    {
+      "name": "executeRuleTree",
+      "operation_type": "contract_interaction",
+      "signature": "executeRuleTree(address)"
+    },
+    {
+      "name": "getRuleProps",
+      "operation_type": "contract_interaction",
+      "signature": "getRuleProps(address,bytes32,uint)"
+    },
+    {
+      "name": "getRuleSetProps",
+      "operation_type": "contract_interaction",
+      "signature": "getRuleSetProps(address,bytes32)"
+    },
+    {
+      "name": "getRuleTreeProps",
+      "operation_type": "contract_interaction",
+      "signature": "getRuleTreeProps(address)"
+    },
+    {
+      "name": "removeRuleTree",
+      "operation_type": "contract_interaction",
+      "signature": "removeRuleTree(address)"
+    },
+    {
+      "name": "addRule",
+      "operation_type": "contract_interaction",
+      "signature": "addRule()"
+    }
+  ],
+  "id": "ERC2746",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2746",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2746.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard proposes an interface that will allow the creation of hierarchal sets of rules (i.e., RuleTrees) that can be invoked to evaluate and manipulate a registered data domain. At the time of this draft, all intentions to insert additional functionality onto the blockchain requires the coding and creation of a newly deployed contract. However, this standard will allow users to deploy a contract just once, one which will then allow them to create (and invoke) pipelines of commands within that contract.",
+  "title": "Rules Engine Standard"
+}

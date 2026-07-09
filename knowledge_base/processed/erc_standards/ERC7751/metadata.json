@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7751",
+  "erc": "ERC-7751",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(address,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256)"
+    },
+    {
+      "name": "test_BubbledNestedReverts",
+      "operation_type": "contract_interaction",
+      "signature": "test_BubbledNestedReverts(uint256)"
+    },
+    {
+      "name": "foo",
+      "operation_type": "contract_interaction",
+      "signature": "foo(address,bytes)"
+    }
+  ],
+  "id": "ERC7751",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7751",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7751.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC proposes a standard for handling bubbled up reverts in Ethereum smart contracts using a dedicated custom error. This standard aims to improve the clarity and usability of revert reasons by allowing additional context to be passed alongside the raw bytes of the bubbled up revert. The `WrappedError` custom error should wrap reverts from called contracts and provide a consistent interface for parsing and handling reverts in tools like Etherscan or Tenderly.",
+  "title": "Wrapping of bubbled up reverts"
+}

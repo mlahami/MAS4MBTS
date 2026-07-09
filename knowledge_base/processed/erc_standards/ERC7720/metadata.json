@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7720",
+  "erc": "ERC-7720",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(uint256,address,address,address,uint256,uint40,bytes32)"
+    },
+    {
+      "name": "Withdraw",
+      "signature": "Withdraw(uint256,address,address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,address,uint256,uint40,bytes32)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256)"
+    },
+    {
+      "name": "getTransaction",
+      "operation_type": "contract_interaction",
+      "signature": "getTransaction(uint256)"
+    }
+  ],
+  "id": "ERC7720",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7720",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7720.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard specifies that allows users to deposit [ERC-20](./eip-20.md) tokens for a beneficiary. The beneficiary can withdraw the tokens only after a specified future timestamp. Each deposit transaction is assigned a unique ID and includes details such as the token address, sender, recipient, amount, unlock time, and withdrawal status.",
+  "title": "Deferred Token Transfer"
+}

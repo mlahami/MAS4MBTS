@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6147",
+  "erc": "ERC-6147",
+  "events": [
+    {
+      "name": "UpdateGuardLog",
+      "signature": "UpdateGuardLog(uint256,address,address,uint64)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "changeGuard",
+      "operation_type": "contract_interaction",
+      "signature": "changeGuard(uint256,address,uint64)"
+    },
+    {
+      "name": "removeGuard",
+      "operation_type": "contract_interaction",
+      "signature": "removeGuard(uint256)"
+    },
+    {
+      "name": "transferAndRemove",
+      "operation_type": "contract_interaction",
+      "signature": "transferAndRemove(address,address,uint256)"
+    },
+    {
+      "name": "guardInfo",
+      "operation_type": "contract_interaction",
+      "signature": "guardInfo(uint256)"
+    },
+    {
+      "name": "_updateGuard",
+      "operation_type": "contract_interaction",
+      "signature": "_updateGuard(uint256,address,uint64,bool)"
+    },
+    {
+      "name": "_checkGuard",
+      "operation_type": "contract_interaction",
+      "signature": "_checkGuard(uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "_burn",
+      "operation_type": "contract_interaction",
+      "signature": "_burn(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC6147",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6147",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6147.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It separates the holding right and transfer right of non-fungible tokens (NFTs) and Soulbound Tokens (SBTs) and defines a new role, `guard` with `expires`. The flexibility of the `guard` setting enables the design of NFT anti-theft, NFT lending, NFT leasing, SBT, etc.",
+  "title": "Guard of NFT/SBT, an Extension of ERC-721"
+}

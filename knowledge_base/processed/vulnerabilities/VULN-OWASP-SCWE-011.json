@@ -1,0 +1,16 @@
+{
+  "category": "Improper Encoding or Escaping of Output",
+  "cwe": "CWE-116",
+  "description": "Insecure ABI encoding and decoding occur when a smart contract improperly handles data serialization and deserialization, leading to vulnerabilities such as data corruption, type confusion, or reentrancy attacks. Solidity provides ABI encoding functions like `abi.encode()`, `abi.encodePacked()`, and `abi.decode()`, but improper usage can cause unexpected behavior. Common issues with insecure ABI handling: - **Collision Risks in `abi.encodePacked()`**: Multiple concatenated parameters can lead to ambiguous encoding, making it vulnerable to hash collisions. - **Unchecked Decoding**: Improper use of `abi.decode()` can result in unintended memory corruption or type confusion. - **Lack of Input Validation**: Encoding user inputs without verification can introduce security flaws. - **Mismatched Data Types**: Decoding an incorrectly encoded data structure can lead to invalid memory access.",
+  "id": "VULN-OWASP-SCWE-011",
+  "name": "Insecure ABI Encoding and Decoding",
+  "owasp": "SCWE-011",
+  "remediation": "- **Use `abi.encode()` Instead of `abi.encodePacked()` for Hashing**: Prevent collision risks by ensuring unique encoding. - **Validate Data Before Decoding**: Ensure the encoded data conforms to the expected structure before decoding. - **Match Encoding and Decoding Types**: Always use the correct type structure when decoding to avoid unintended behavior. - **Avoid Direct ABI Decoding of External Calls**: Use strict validation mechanisms when handling data from external contracts.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-011.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

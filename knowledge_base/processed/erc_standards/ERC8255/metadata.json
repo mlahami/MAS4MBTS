@@ -1,0 +1,63 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8255",
+  "erc": "ERC-8255",
+  "events": [
+    {
+      "name": "ApprovalExpiration",
+      "signature": "ApprovalExpiration(address,address,uint64)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "maxApprovalDuration",
+      "operation_type": "contract_interaction",
+      "signature": "maxApprovalDuration()"
+    },
+    {
+      "name": "allowanceAndExpiration",
+      "operation_type": "contract_interaction",
+      "signature": "allowanceAndExpiration(address,address)"
+    },
+    {
+      "name": "approveForDuration",
+      "operation_type": "contract_interaction",
+      "signature": "approveForDuration(address,uint256,uint32)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "_approveWithDefaultDuration",
+      "operation_type": "contract_interaction",
+      "signature": "_approveWithDefaultDuration(address,address,uint256)"
+    },
+    {
+      "name": "_approve",
+      "operation_type": "contract_interaction",
+      "signature": "_approve(address,address,uint256,uint32)"
+    }
+  ],
+  "id": "ERC8255",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8255",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8255.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification extends [ERC-20](./eip-20.md) approvals with an expiration timestamp. Existing `approve(address,uint256)` calls remain valid, but approvals created through that function expire after the token contract's default maximum approval duration unless the spender is treated as legacy-compatible. If the token also implements [ERC-2612](./eip-2612.md), approvals created through `permit` use the same default-duration rule and legacy-compatible exception without changing the `permit` signature. A new function allows token owners to approve a spender for a shorter duration, and a new view function exposes the allowance and its expiration.",
+  "title": "Expiring Token Approvals"
+}

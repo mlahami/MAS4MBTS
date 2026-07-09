@@ -1,0 +1,108 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5507",
+  "erc": "ERC-5507",
+  "events": [
+    {
+      "name": "Refund",
+      "signature": "Refund(address,uint256)"
+    },
+    {
+      "name": "RefundFrom",
+      "signature": "RefundFrom(address,address,uint256)"
+    },
+    {
+      "name": "RefundBatch",
+      "signature": "RefundBatch(address,uint256[])"
+    },
+    {
+      "name": "RefundFromBatch",
+      "signature": "RefundFromBatch(address,address,uint256)"
+    },
+    {
+      "name": "Refund",
+      "signature": "Refund(address,uint256,uint256)"
+    },
+    {
+      "name": "RefundBatch",
+      "signature": "RefundBatch(address,uint256[],//)"
+    },
+    {
+      "name": "RefundFromBatch",
+      "signature": "RefundFromBatch(address,address,uint256[],//)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "refund",
+      "operation_type": "contract_interaction",
+      "signature": "refund(uint256)"
+    },
+    {
+      "name": "refundFrom",
+      "operation_type": "contract_interaction",
+      "signature": "refundFrom(address,uint256)"
+    },
+    {
+      "name": "refundOf",
+      "operation_type": "contract_interaction",
+      "signature": "refundOf()"
+    },
+    {
+      "name": "refundDeadlineOf",
+      "operation_type": "contract_interaction",
+      "signature": "refundDeadlineOf()"
+    },
+    {
+      "name": "refundOf",
+      "operation_type": "contract_interaction",
+      "signature": "refundOf(uint256)"
+    },
+    {
+      "name": "refundDeadlineOf",
+      "operation_type": "contract_interaction",
+      "signature": "refundDeadlineOf(uint256)"
+    },
+    {
+      "name": "refundBatch",
+      "operation_type": "contract_interaction",
+      "signature": "refundBatch(uint256[])"
+    },
+    {
+      "name": "refundFromBatch",
+      "operation_type": "contract_interaction",
+      "signature": "refundFromBatch(address,uint256[])"
+    },
+    {
+      "name": "refund",
+      "operation_type": "contract_interaction",
+      "signature": "refund(uint256,uint256)"
+    },
+    {
+      "name": "refundFrom",
+      "operation_type": "contract_interaction",
+      "signature": "refundFrom(address,uint256,uint256)"
+    },
+    {
+      "name": "refundBatch",
+      "operation_type": "contract_interaction",
+      "signature": "refundBatch(uint256[],uint256[])"
+    },
+    {
+      "name": "refundFromBatch",
+      "operation_type": "contract_interaction",
+      "signature": "refundFromBatch(address,uint256[],uint256[],as,`refundOf`,and,ERC-721,and)"
+    }
+  ],
+  "id": "ERC5507",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5507",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5507.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC adds refund functionality for initial token offerings to [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), and [ERC-1155](./eip-1155.md). Funds are held in escrow until a predetermined time before they are claimable. Until that predetermined time passes, users can receive a refund for tokens they have purchased.",
+  "title": "Refundable Tokens"
+}

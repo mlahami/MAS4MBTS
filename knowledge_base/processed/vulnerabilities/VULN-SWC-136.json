@@ -1,0 +1,17 @@
+{
+  "category": "Access to Critical Private Variable via Public Method",
+  "cwe": "CWE-767",
+  "description": "It is a common misconception that `private` type variables cannot be read. Even if your contract is not published, attackers can look at contract transactions to determine values stored in the state of the contract. For this reason, it's important that unencrypted private data is not stored in the contract code or state.",
+  "id": "VULN-SWC-136",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Any private data should either be stored off-chain, or carefully encrypted.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-136.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-136"
+}

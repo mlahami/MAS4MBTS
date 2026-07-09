@@ -1,0 +1,16 @@
+{
+  "category": "Improper Privilege Management",
+  "cwe": "CWE-269",
+  "description": "Privileged role mismanagement occurs when a smart contract incorrectly assigns roles or permissions, granting excessive privileges to certain users. This can lead to users obtaining permissions beyond what is necessary for their intended function, creating a potential for privilege escalation or unauthorized actions. In the context of smart contracts, improper privilege management can lead to critical vulnerabilities such as unauthorized contract changes, malicious interactions, or loss of funds. Common causes include: - Insufficient checks for users attempting to access privileged functions. - Roles being dynamically assigned without validation. - Inadequate access control mechanisms for sensitive contract functions.",
+  "id": "VULN-OWASP-SCWE-017",
+  "name": "Privileged Role Mismanagement",
+  "owasp": "SCWE-017",
+  "remediation": "- **Role-based access control (RBAC):** Implement strict role checks using modifiers to ensure that users can only perform actions that correspond to their assigned roles. - **Principle of least privilege:** Limit the privileges of each role to the bare minimum needed to perform their task. - **Use of trusted or immutable sources:** Ensure that privileged roles cannot be arbitrarily changed by unauthorized users or during attacks. - **Periodic reviews and audits:** Regularly review roles and permissions to ensure they are correctly assigned and maintained.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-017.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

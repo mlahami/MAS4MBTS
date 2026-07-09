@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2470",
+  "erc": "ERC-2470",
+  "events": [],
+  "functions": [
+    {
+      "name": "deploy",
+      "operation_type": "contract_interaction",
+      "signature": "deploy(bytes,bytes32)"
+    }
+  ],
+  "id": "ERC2470",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2470",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2470.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Some contracts are designed to be Singletons which have the same address no matter what chain they are, which means that should exist one instance for all, such as [EIP-1820] and [EIP-2429]. These contracts are usually deployed using a method known as [Nick]'s method, so anyone can deploy those contracts on any chain and they have a deterministic address. This standard proposes the creation of a CREATE2 factory using this method, so other projects requiring this feature can use this factory in any chain with the same setup, even in development chains.",
+  "title": "Singleton Factory"
+}

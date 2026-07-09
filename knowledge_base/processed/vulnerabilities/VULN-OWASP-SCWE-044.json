@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Insecure use of storage refers to vulnerabilities that arise when storage variables are improperly managed. This can lead to: - Unauthorized access to sensitive data. - Loss of funds or data. - Exploitation of vulnerabilities in contract logic.",
+  "id": "VULN-OWASP-SCWE-044",
+  "name": "Insecure Use of Storage",
+  "owasp": "SCWE-044",
+  "remediation": "- **Encrypt sensitive data:** Encrypt sensitive data before storing it. - **Validate inputs:** Ensure all storage updates are properly validated. - **Test thoroughly:** Conduct extensive testing to ensure storage is secure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-044.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

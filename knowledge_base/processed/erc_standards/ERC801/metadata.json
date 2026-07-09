@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-801",
+  "erc": "ERC-801",
+  "events": [
+    {
+      "name": "RIP",
+      "signature": "RIP()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isAlive",
+      "operation_type": "contract_interaction",
+      "signature": "isAlive()"
+    },
+    {
+      "name": "getBlockOfDeath",
+      "operation_type": "contract_interaction",
+      "signature": "getBlockOfDeath()"
+    },
+    {
+      "name": "getType",
+      "operation_type": "contract_interaction",
+      "signature": "getType()"
+    }
+  ],
+  "id": "ERC801",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-801",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-801.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows the implementation of canaries within contracts. This standard provides basic functionality to check if a canary is alive, keeping the canary alive and optionally manage feeders.",
+  "title": "Canary Standard"
+}

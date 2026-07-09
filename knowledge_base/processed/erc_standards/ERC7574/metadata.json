@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7574",
+  "erc": "ERC-7574",
+  "events": [],
+  "functions": [
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(bytes)"
+    },
+    {
+      "name": "issueSBT",
+      "operation_type": "contract_interaction",
+      "signature": "issueSBT(address,string)"
+    },
+    {
+      "name": "updateTokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "updateTokenURI(uint256,string)"
+    }
+  ],
+  "id": "ERC7574",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7574",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7574.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification defines a mechanism for issuing a non-transferable Soul Bound Token (SBT) as proof of successful authentication based on a [Decentralized Identity (DID)](https://www.w3.org/TR/2022/REC-did-core-20220719/). The proposed approach enables on-chain verification of credential possession using zero-knowledge proofs, allowing a smart contract to validate authentication without revealing personal information. Upon successful verification, an SBT is issued to the user\u2019s address and can be used by relying services as an authentication and access control primitive.",
+  "title": "Authentication SBT using Credential"
+}

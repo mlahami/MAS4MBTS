@@ -1,0 +1,16 @@
+{
+  "category": "Improper Enforcement of Behavioral Workflow",
+  "cwe": "CWE-841",
+  "description": "ERC721 `safeTransferFrom` and ERC1155 `safeTransferFrom` invoke `onERC721Received` or `onERC1155Received` on the recipient contract. If the recipient is a contract that accepts NFTs and performs sensitive logic (e.g., withdrawals, state updates) inside these callbacks without reentrancy protection, an attacker can reenter the sender contract during the transfer and exploit stale state\u2014similar to ERC777 hooks (SCWE-104) but for NFTs.",
+  "id": "VULN-OWASP-SCWE-138",
+  "name": "Reentrancy via ERC721/ERC1155 Safe Transfer Callbacks",
+  "owasp": "SCWE-138",
+  "remediation": "- Add `nonReentrant` guards around functions that perform NFT transfers and any logic that could be reentered via the receiver callback. - Update state (e.g., balances, accounting) before calling `safeTransferFrom`. - Consider using `transferFrom` instead of `safeTransferFrom` when the recipient is trusted, to avoid callbacks.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-138.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

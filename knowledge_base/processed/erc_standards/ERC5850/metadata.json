@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5850",
+  "erc": "ERC-5850",
+  "events": [],
+  "functions": [
+    {
+      "name": "cnNew",
+      "operation_type": "contract_interaction",
+      "signature": "cnNew(int128,int128)"
+    },
+    {
+      "name": "RealIm",
+      "operation_type": "contract_interaction",
+      "signature": "RealIm(bytes32)"
+    }
+  ],
+  "id": "ERC5850",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5850",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5850.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP proposes a natural way for complex numbers to be stored in and retrieved from the `bytes32` data-type. It splits the storage space exactly in half and, most importantly, assigns the real number part to the least significant 16 bytes and the imaginary number part to the most significant 16 bytes.",
+  "title": "Complex Numbers stored in `bytes32` types"
+}

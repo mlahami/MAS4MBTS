@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8121",
+  "erc": "ERC-8121",
+  "events": [],
+  "functions": [
+    {
+      "name": "hook",
+      "operation_type": "contract_interaction",
+      "signature": "hook(bytes4,string,string,string,bytes)"
+    },
+    {
+      "name": "hook",
+      "operation_type": "contract_interaction",
+      "signature": "hook(string,string,string,bytes)"
+    },
+    {
+      "name": "selector",
+      "operation_type": "contract_interaction",
+      "signature": "selector(acts)"
+    },
+    {
+      "name": "getContractMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "getContractMetadata(string)"
+    },
+    {
+      "name": "signature",
+      "operation_type": "contract_interaction",
+      "signature": "signature(checksum,if)"
+    }
+  ],
+  "id": "ERC8121",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8121",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8121.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC introduces hooks for cross-chain function calls. A hook fully specifies what function to call, with what parameters, on which contract, on which chain. Hooks require clients to use [ERC-3668](./eip-3668.md) to resolve, enabling cross-chain and off-chain verifiable data resolution. Hooks are particularly useful for redirecting metadata to known contracts with verifiable security properties, such as credential registries for Proof-of-Personhood (PoP) or Know-Your-Agent (KYA) for AI agent identity.",
+  "title": "Cross-Chain Function Calls via Hooks"
+}

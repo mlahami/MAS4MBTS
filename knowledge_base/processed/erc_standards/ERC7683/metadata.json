@@ -1,0 +1,109 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7683",
+  "erc": "ERC-7683",
+  "events": [],
+  "functions": [
+    {
+      "name": "resolve",
+      "operation_type": "contract_interaction",
+      "signature": "resolve(bytes)"
+    },
+    {
+      "name": "Call",
+      "operation_type": "contract_interaction",
+      "signature": "Call(bytes,bytes4,bytes[],bytes[])"
+    },
+    {
+      "name": "PaymentRecipient",
+      "operation_type": "contract_interaction",
+      "signature": "PaymentRecipient()"
+    },
+    {
+      "name": "PaymentChain",
+      "operation_type": "contract_interaction",
+      "signature": "PaymentChain()"
+    },
+    {
+      "name": "StepCaller",
+      "operation_type": "contract_interaction",
+      "signature": "StepCaller(uint256)"
+    },
+    {
+      "name": "ExecutionOutput",
+      "operation_type": "contract_interaction",
+      "signature": "ExecutionOutput(string,uint256)"
+    },
+    {
+      "name": "Witness",
+      "operation_type": "contract_interaction",
+      "signature": "Witness(string,bytes,uint256[])"
+    },
+    {
+      "name": "Query",
+      "operation_type": "contract_interaction",
+      "signature": "Query(bytes,bytes4,bytes[],uint256)"
+    },
+    {
+      "name": "QueryEvents",
+      "operation_type": "contract_interaction",
+      "signature": "QueryEvents(bytes,bytes1,bytes32,bytes32,bytes32,bytes32,uint256)"
+    },
+    {
+      "name": "ERC20",
+      "operation_type": "contract_interaction",
+      "signature": "ERC20(bytes,bytes,bytes,uint256,uint256,uint256)"
+    },
+    {
+      "name": "SpendsERC20",
+      "operation_type": "contract_interaction",
+      "signature": "SpendsERC20(bytes,bytes,bytes,bytes)"
+    },
+    {
+      "name": "SpendsGas",
+      "operation_type": "contract_interaction",
+      "signature": "SpendsGas(bytes)"
+    },
+    {
+      "name": "TimingBounds",
+      "operation_type": "contract_interaction",
+      "signature": "TimingBounds(string,bytes,bytes)"
+    },
+    {
+      "name": "NeedsStep",
+      "operation_type": "contract_interaction",
+      "signature": "NeedsStep(uint256)"
+    },
+    {
+      "name": "NeedsVariable",
+      "operation_type": "contract_interaction",
+      "signature": "NeedsVariable(uint256)"
+    },
+    {
+      "name": "RevertPolicy",
+      "operation_type": "contract_interaction",
+      "signature": "RevertPolicy(string,bytes)"
+    },
+    {
+      "name": "Constant",
+      "operation_type": "contract_interaction",
+      "signature": "Constant(uint256)"
+    },
+    {
+      "name": "Variable",
+      "operation_type": "contract_interaction",
+      "signature": "Variable(uint256)"
+    }
+  ],
+  "id": "ERC7683",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7683",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7683.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a solver-facing interface for intent protocols. A protocol exposes orders as opaque payloads and provides a *resolver* contract that translates those payloads into a common order representation. Resolvers are used by solvers, offchain via `eth_call`, to obtain the information needed to evaluate and fulfill an order. This enables *programmable intent solvers* to add support for intent protocols by vetting their resolvers instead of implementing protocol-specific execution logic.",
+  "title": "Cross Chain Intents"
+}

@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7085",
+  "erc": "ERC-7085",
+  "events": [],
+  "functions": [
+    {
+      "name": "setRelationship",
+      "operation_type": "contract_interaction",
+      "signature": "setRelationship(uint256,uint256,uint256)"
+    },
+    {
+      "name": "setAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setAttribute(uint256,string,uint256)"
+    },
+    {
+      "name": "getAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getAttribute(uint256,string)"
+    },
+    {
+      "name": "getAttributeNames",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributeNames(uint256)"
+    },
+    {
+      "name": "getRelationship",
+      "operation_type": "contract_interaction",
+      "signature": "getRelationship(uint256,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "setAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setAttribute(uint256,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC7085",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7085",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7085.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal builds on [ERC-1155](./eip-1155.md) and creates a standard for referring relationships and quantifiable attributes between non-isolated [ERC-721](./eip-721.md) or [ERC-1155](./eip-1155.md) non-fungible tokens (NFTs). It enables users to build a graph of NFTs and set quantifiable attributes for each NFT, facilitating more complex NFT ecosystems. While a similar proposal exists for [ERC-721](./eip-721.md) tokens, it does not provide a way to establish quantifiable relationships or object attributes.",
+  "title": "NFT Relationship Enhancement"
+}

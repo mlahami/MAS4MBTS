@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4944",
+  "erc": "ERC-4944",
+  "events": [],
+  "functions": [
+    {
+      "name": "transferTokens",
+      "operation_type": "contract_interaction",
+      "signature": "transferTokens(IERC20,address,uint256)"
+    },
+    {
+      "name": "balanceTokens",
+      "operation_type": "contract_interaction",
+      "signature": "balanceTokens(IERC20)"
+    }
+  ],
+  "id": "ERC4944",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4944",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4944.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following describes standard functions for an [ERC-721](./eip-721.md) compatible contract with a total supply of one. This allows an NFT to be associated uniquely with a single contract address.",
+  "title": "Contract with Exactly One Non-fungible Token"
+}

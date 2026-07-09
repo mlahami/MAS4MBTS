@@ -1,0 +1,115 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2009",
+  "erc": "ERC-2009",
+  "events": [
+    {
+      "name": "TokenAdded",
+      "signature": "TokenAdded(bytes32,address)"
+    },
+    {
+      "name": "TokenReplaced",
+      "signature": "TokenReplaced(bytes32,address,address)"
+    },
+    {
+      "name": "TokenRemoved",
+      "signature": "TokenRemoved(bytes32)"
+    },
+    {
+      "name": "AuthorizedAccumulatedOperator",
+      "signature": "AuthorizedAccumulatedOperator(address,bytes32)"
+    },
+    {
+      "name": "RevokedAccumulatedOperator",
+      "signature": "RevokedAccumulatedOperator(address,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "checkTransferAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkTransferAllowed(bytes32,address,address,uint256)"
+    },
+    {
+      "name": "checkTransferFromAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkTransferFromAllowed(bytes32,address,address,address,uint256)"
+    },
+    {
+      "name": "checkMintAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkMintAllowed(bytes32,address,uint256)"
+    },
+    {
+      "name": "checkBurnAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkBurnAllowed(bytes32,address,uint256)"
+    },
+    {
+      "name": "updateTransferAccumulated",
+      "operation_type": "contract_interaction",
+      "signature": "updateTransferAccumulated(bytes32,address,address,uint256)"
+    },
+    {
+      "name": "updateMintAccumulated",
+      "operation_type": "contract_interaction",
+      "signature": "updateMintAccumulated(bytes32,address,uint256)"
+    },
+    {
+      "name": "updateBurnAccumulated",
+      "operation_type": "contract_interaction",
+      "signature": "updateBurnAccumulated(bytes32,address,uint256)"
+    },
+    {
+      "name": "addToken",
+      "operation_type": "contract_interaction",
+      "signature": "addToken(bytes32,address)"
+    },
+    {
+      "name": "replaceToken",
+      "operation_type": "contract_interaction",
+      "signature": "replaceToken(bytes32,address)"
+    },
+    {
+      "name": "removeToken",
+      "operation_type": "contract_interaction",
+      "signature": "removeToken(bytes32)"
+    },
+    {
+      "name": "isToken",
+      "operation_type": "contract_interaction",
+      "signature": "isToken(address)"
+    },
+    {
+      "name": "getTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "getTokenId(address)"
+    },
+    {
+      "name": "authorizeAccumulatedOperator",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeAccumulatedOperator(address)"
+    },
+    {
+      "name": "revokeAccumulatedOperator",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAccumulatedOperator(address)"
+    },
+    {
+      "name": "isAccumulatedOperatorFor",
+      "operation_type": "contract_interaction",
+      "signature": "isAccumulatedOperatorFor(address,bytes32)"
+    }
+  ],
+  "id": "ERC2009",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2009",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2009.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A regulated token needs to comply with several legal requirements, especially [KYC][KYC-Wikipedia] and [AML][AML-Wikipedia]. If the necessary checks have to be made off-chain the token transfer becomes centralized. Further the transfer in this case takes longer to complete as it can not be done in one transaction, but requires a second confirmation step. The goal of this proposal is to make this second step unnecessary by providing a service for compliance checks.",
+  "title": "Compliance Service"
+}

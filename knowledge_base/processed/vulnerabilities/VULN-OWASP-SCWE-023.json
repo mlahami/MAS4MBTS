@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Lack of communication authenticity refers to the failure to verify the authenticity of messages or transactions. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of the contract's logic.",
+  "id": "VULN-OWASP-SCWE-023",
+  "name": "Lack of Communication Authenticity",
+  "owasp": "SCWE-023",
+  "remediation": "- **Use signatures:** Require signed messages for critical actions. - **Validate inputs:** Ensure all messages are properly validated before processing. - **Implement secure communication:** Use secure protocols and libraries for communication.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-023.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

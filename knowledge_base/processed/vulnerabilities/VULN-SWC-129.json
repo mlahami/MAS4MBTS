@@ -1,0 +1,17 @@
+{
+  "category": "Use of Incorrect Operator",
+  "cwe": "CWE-480",
+  "description": "A typographical error can occur for example when the intent of a defined operation is to sum a number to a variable (+=) but it has accidentally been defined in a wrong way (=+), introducing a typo which happens to be a valid operator. Instead of calculating the sum it initializes the variable again. The unary + operator is deprecated in new solidity compiler versions.",
+  "id": "VULN-SWC-129",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "The weakness can be avoided by performing pre-condition checks on any math operation or using a vetted library for arithmetic calculations such as SafeMath developed by OpenZeppelin.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-129.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-129"
+}

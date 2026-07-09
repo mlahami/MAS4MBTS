@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8054",
+  "erc": "ERC-8054",
+  "events": [],
+  "functions": [
+    {
+      "name": "totalSupplyAt",
+      "operation_type": "contract_interaction",
+      "signature": "totalSupplyAt(uint48)"
+    },
+    {
+      "name": "balanceOfAt",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfAt(address,uint48)"
+    },
+    {
+      "name": "checkpointNonce",
+      "operation_type": "contract_interaction",
+      "signature": "checkpointNonce()"
+    }
+  ],
+  "id": "ERC8054",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8054",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8054.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard extends [ERC-20](./eip-20.md) to enable efficient token forking through checkpoint-based balance tracking. A forkable ERC-20 token records balance snapshots at each state change. A forked ERC-20 token inherits all balances from a specific checkpoint in the source token, allowing instant, gas-free distribution to holders without airdrops or claiming mechanisms.",
+  "title": "Forkable ERC-20 Token"
+}

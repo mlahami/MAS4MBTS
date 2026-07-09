@@ -1,0 +1,141 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6105",
+  "erc": "ERC-6105",
+  "events": [
+    {
+      "name": "UpdateListing",
+      "signature": "UpdateListing(uint256,address,uint256,uint64,address,uint256)"
+    },
+    {
+      "name": "Purchased",
+      "signature": "Purchased(uint256,address,address,uint256,address,uint256)"
+    },
+    {
+      "name": "UpdateCollectionOffer",
+      "signature": "UpdateCollectionOffer(address,uint256,uint256,uint64,address)"
+    },
+    {
+      "name": "UpdateItemOffer",
+      "signature": "UpdateItemOffer(uint256,address,uint256,uint64,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "listItem",
+      "operation_type": "contract_interaction",
+      "signature": "listItem(uint256,uint256,uint64,address)"
+    },
+    {
+      "name": "listItem",
+      "operation_type": "contract_interaction",
+      "signature": "listItem(uint256,uint256,uint64,address,uint256)"
+    },
+    {
+      "name": "delistItem",
+      "operation_type": "contract_interaction",
+      "signature": "delistItem(uint256)"
+    },
+    {
+      "name": "buyItem",
+      "operation_type": "contract_interaction",
+      "signature": "buyItem(uint256,uint256,address)"
+    },
+    {
+      "name": "getListing",
+      "operation_type": "contract_interaction",
+      "signature": "getListing(uint256)"
+    },
+    {
+      "name": "makeCollectionOffer",
+      "operation_type": "contract_interaction",
+      "signature": "makeCollectionOffer(uint256,uint256,uint64,address)"
+    },
+    {
+      "name": "acceptCollectionOffer",
+      "operation_type": "contract_interaction",
+      "signature": "acceptCollectionOffer(uint256,uint256,address,address)"
+    },
+    {
+      "name": "acceptCollectionOffer",
+      "operation_type": "contract_interaction",
+      "signature": "acceptCollectionOffer(uint256,uint256,address,address,uint256)"
+    },
+    {
+      "name": "cancelCollectionOffer",
+      "operation_type": "contract_interaction",
+      "signature": "cancelCollectionOffer()"
+    },
+    {
+      "name": "getCollectionOffer",
+      "operation_type": "contract_interaction",
+      "signature": "getCollectionOffer(address)"
+    },
+    {
+      "name": "makeItemOffer",
+      "operation_type": "contract_interaction",
+      "signature": "makeItemOffer(uint256,uint256,uint64,address)"
+    },
+    {
+      "name": "cancelItemOffer",
+      "operation_type": "contract_interaction",
+      "signature": "cancelItemOffer(uint256)"
+    },
+    {
+      "name": "acceptItemOffer",
+      "operation_type": "contract_interaction",
+      "signature": "acceptItemOffer(uint256,uint256,address,address)"
+    },
+    {
+      "name": "acceptItemOffer",
+      "operation_type": "contract_interaction",
+      "signature": "acceptItemOffer(uint256,uint256,address,address,uint256)"
+    },
+    {
+      "name": "getItemOffer",
+      "operation_type": "contract_interaction",
+      "signature": "getItemOffer(uint256,address)"
+    },
+    {
+      "name": "_removeListing",
+      "operation_type": "contract_interaction",
+      "signature": "_removeListing(uint256)"
+    },
+    {
+      "name": "_isForSale",
+      "operation_type": "contract_interaction",
+      "signature": "_isForSale(uint256)"
+    },
+    {
+      "name": "_calculateRoyalties",
+      "operation_type": "contract_interaction",
+      "signature": "_calculateRoyalties(uint256,uint256,uint256)"
+    },
+    {
+      "name": "_processSupportedTokenPayment",
+      "operation_type": "contract_interaction",
+      "signature": "_processSupportedTokenPayment(uint256,address,address,address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_beforeTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_beforeTokenTransfer(address,address,uint256,uint256)"
+    }
+  ],
+  "id": "ERC6105",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6105",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6105.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC adds a marketplace functionality to [ERC-721](./eip-721.md) to enable non-fungible token trading without relying on an intermediary trading platform. At the same time, creators may implement more diverse royalty schemes.",
+  "title": "No Intermediary NFT Trading Protocol"
+}

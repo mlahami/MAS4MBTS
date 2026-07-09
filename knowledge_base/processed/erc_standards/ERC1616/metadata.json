@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1616",
+  "erc": "ERC-1616",
+  "events": [],
+  "functions": [
+    {
+      "name": "hasAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "hasAttribute(address,uint256)"
+    },
+    {
+      "name": "getAttributeValue",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributeValue(address,uint256)"
+    },
+    {
+      "name": "countAttributeTypes",
+      "operation_type": "contract_interaction",
+      "signature": "countAttributeTypes()"
+    },
+    {
+      "name": "getAttributeTypeID",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributeTypeID(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "joinWhitehats",
+      "operation_type": "contract_interaction",
+      "signature": "joinWhitehats()"
+    },
+    {
+      "name": "joinBlackhats",
+      "operation_type": "contract_interaction",
+      "signature": "joinBlackhats()"
+    },
+    {
+      "name": "totalHats",
+      "operation_type": "contract_interaction",
+      "signature": "totalHats()"
+    }
+  ],
+  "id": "ERC1616",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1616",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1616.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP contains the following core ideas: 1. Instead of relying directly on the reputation of a claims issuer to assess the veracity of a given claim, trust can be brought up to the level of a registry curator. This registry which we call an \"**Attribute Registry**\" allows for reduced complexity in implementation since a party needing to verify an attribute can now work with a trusted claims aggregator instead of relying on individual claim providers. 2. Claims are abstracted as standard \"attributes\" which represent metadata assigned to an account, with claims decoupled from the issuing party. Attributes are registered as a flat `uint256 -> uint256` key-value pair on each account, with the important property that **each attribute type has one canonical value per address**. This property",
+  "title": "Attribute Registry Standard"
+}

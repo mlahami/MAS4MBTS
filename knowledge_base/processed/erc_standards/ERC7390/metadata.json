@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7390",
+  "erc": "ERC-7390",
+  "events": [
+    {
+      "name": "Created",
+      "signature": "Created(uint256)"
+    },
+    {
+      "name": "Bought",
+      "signature": "Bought(uint256,uint256,address)"
+    },
+    {
+      "name": "Exercised",
+      "signature": "Exercised(uint256,uint256)"
+    },
+    {
+      "name": "Expired",
+      "signature": "Expired(uint256)"
+    },
+    {
+      "name": "Canceled",
+      "signature": "Canceled(uint256)"
+    },
+    {
+      "name": "PremiumUpdated",
+      "signature": "PremiumUpdated(uint256,uint256)"
+    },
+    {
+      "name": "AllowedUpdated",
+      "signature": "AllowedUpdated(uint256,address[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "operation_type": "contract_interaction",
+      "signature": "create(VanillaOptionData)"
+    },
+    {
+      "name": "buy",
+      "operation_type": "contract_interaction",
+      "signature": "buy(uint256,uint256)"
+    },
+    {
+      "name": "exercise",
+      "operation_type": "contract_interaction",
+      "signature": "exercise(uint256,uint256)"
+    },
+    {
+      "name": "retrieveExpiredTokens",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveExpiredTokens(uint256,address)"
+    },
+    {
+      "name": "cancel",
+      "operation_type": "contract_interaction",
+      "signature": "cancel(uint256,address)"
+    },
+    {
+      "name": "updatePremium",
+      "operation_type": "contract_interaction",
+      "signature": "updatePremium(uint256,uint256)"
+    },
+    {
+      "name": "updateAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "updateAllowed(uint256,address[])"
+    },
+    {
+      "name": "issuance",
+      "operation_type": "contract_interaction",
+      "signature": "issuance(uint256)"
+    }
+  ],
+  "id": "ERC7390",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7390",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7390.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines a comprehensive set of functions and events facilitating seamless interactions (creation, management, exercising, etc.) for vanilla options. Vanilla options grant the right, without obligation, to buy or sell an asset at a set price within a specified timeframe. This standard doesn't represent a simple option that would be useless after the expiration date. Instead, it can store as many issuance as needed. Each issuance is identified by an id, and can be bought, exercised, cancelled, etc., independently of the other issuances.\\ Every issuance is collateralized, meaning that the writer has to provide the collateral to the contract before the buyer can buy the option. The writer can retrieve the collateral if the buyer hasn't exercised in the exercise window.\\ A buyer c",
+  "title": "Vanilla Options for ERC-20 Tokens"
+}

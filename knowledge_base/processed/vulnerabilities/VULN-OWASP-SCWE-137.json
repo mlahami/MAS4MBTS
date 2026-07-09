@@ -1,0 +1,16 @@
+{
+  "category": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+  "cwe": "CWE-367",
+  "description": "Read-only reentrancy occurs when a `view` or `pure` function is called during an external callback (e.g., from a lending protocol reading collateral, or an integrator querying state). The view function returns stale state because the contract's effects have not yet been applied\u2014the callback happens mid-transaction, before state updates complete. External protocols that rely on this state for critical decisions (e.g., liquidations, pricing, health checks) can be exploited to drain funds or bypass invariants. This is distinct from classic reentrancy (SCWE-046): no state-modifying function is reentered, but the *read* of inconsistent state by external callers during a callback causes the vulnerability.",
+  "id": "VULN-OWASP-SCWE-137",
+  "name": "Read-Only Reentrancy via View Function State Staleness",
+  "owasp": "SCWE-137",
+  "remediation": "- Apply `nonReentrant` guards to functions that make external calls, even if the caller only reads state\u2014external protocols may call back into view functions. - Use a \"read-your-writes\" pattern: ensure view functions reflect in-flight state or document that they are unsafe during callbacks. - Integrators should not rely on view functions of contracts that perform external calls without reentrancy guards.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-137.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "Due to missing or insufficient access controls, malicious parties can self-destruct the contract.",
+  "id": "VULN-SWC-106",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Consider removing the self-destruct functionality unless it is absolutely required. If there is a valid use-case, it is recommended to implement a multisig scheme so that multiple parties must approve the self-destruct action.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-106.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-106"
+}

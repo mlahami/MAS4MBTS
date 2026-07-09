@@ -1,0 +1,16 @@
+{
+  "category": "Insufficient Logging",
+  "cwe": "CWE-778",
+  "description": "Events in Solidity play a critical role in logging contract activity and ensuring transparency. Improper event handling can lead to security risks such as: 1. **Missing critical event emissions** \u2013 Making external monitoring difficult. 2. **Emitting misleading or incorrect data** \u2013 Resulting in users or external systems making incorrect assumptions. 3. **Logging sensitive information** \u2013 Leaking private or security-sensitive data. Failure to handle events properly can affect contract auditing, debugging, and external monitoring tools, making it difficult to detect anomalies or track contract states correctly.",
+  "id": "VULN-OWASP-SCWE-063",
+  "name": "Insecure Event Emission",
+  "owasp": "SCWE-063",
+  "remediation": "- Emit events for all critical state changes, such as token transfers, ownership changes, or contract upgrades. - Ensure that the data logged in events accurately represents the actual contract state. - Avoid logging sensitive information such as private keys, hashes used for authentication, or confidential business logic.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-063.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

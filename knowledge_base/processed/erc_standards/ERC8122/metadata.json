@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8122",
+  "erc": "ERC-8122",
+  "events": [
+    {
+      "name": "parameters",
+      "signature": "parameters(`service_type`,`service`,or)"
+    },
+    {
+      "name": "Registered",
+      "signature": "Registered(uint256,address,string,string,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "register",
+      "operation_type": "contract_interaction",
+      "signature": "register(address,string,string,address)"
+    },
+    {
+      "name": "register",
+      "operation_type": "contract_interaction",
+      "signature": "register(address,MetadataEntry[])"
+    },
+    {
+      "name": "registerBatch",
+      "operation_type": "contract_interaction",
+      "signature": "registerBatch(address[],MetadataEntry[][])"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "setContractMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "setContractMetadata(string,bytes)"
+    }
+  ],
+  "id": "ERC8122",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8122",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8122.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This protocol proposes a lightweight onchain registry for **discovering AI agents** using [ERC-6909](./eip-6909.md) as the underlying registry design, [ERC-7930](./eip-7930.md) for cross-chain agent identification, and [ERC-8048](./eip-8048.md) for onchain metadata. Each agent is represented as a token ID with a single owner and fully onchain metadata, enabling agent discovery and ownership transfer without reliance on external storage.",
+  "title": "Minimal Agent Registry"
+}

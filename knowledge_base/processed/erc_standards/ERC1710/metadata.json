@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1710",
+  "erc": "ERC-1710",
+  "events": [],
+  "functions": [],
+  "id": "ERC1710",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1710",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1710.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Since most normal web browsers (specifically on mobile devices) can not run decentralized applications correctly because of the lack of web3 support, it is necessary to differentiate them from normal urls, so they can be opened in web3 browsers if available.",
+  "title": "URL Format for Web3 Browsers"
+}

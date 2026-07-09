@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Insecure cross-chain messaging refers to vulnerabilities that arise when communicating between different blockchains. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of vulnerabilities in cross-chain logic. - Economic inconsistencies due to unvalidated msg.value in message handlers.",
+  "id": "VULN-OWASP-SCWE-034",
+  "name": "Insecure Cross-Chain Messaging",
+  "owasp": "SCWE-034",
+  "remediation": "- **Validate messages:** Ensure all cross-chain messages are properly validated. - **Use secure protocols:** Leverage secure cross-chain communication protocols. - **Test thoroughly:** Conduct extensive testing to ensure cross-chain logic is secure. - **Validate msg.value:** Decode expected value from the message payload or protocol parameters and require that `msg.value` matches (or meets) this expectation; revert on mismatch.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-034.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

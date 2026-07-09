@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1046",
+  "erc": "ERC-1046",
+  "events": [],
+  "functions": [
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI()"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    }
+  ],
+  "id": "ERC1046",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1046",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1046.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "[ERC-721](./eip-721.md) introduced a `tokenURI` function for non-fungible tokens to handle miscellaneous metadata such as: - thumbnail image - title - description - special asset properties - etc. This ERC adds a `tokenURI` function to [ERC-20](./eip-20.md), and extends [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) to enable interoperability between all three types of token URI.",
+  "title": "tokenURI Interoperability"
+}

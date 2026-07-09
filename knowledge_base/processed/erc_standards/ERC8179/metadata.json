@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8179",
+  "erc": "ERC-8179",
+  "events": [
+    {
+      "name": "BlobSegmentDeclared",
+      "signature": "BlobSegmentDeclared(bytes32,address,uint16,uint16,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "declareBlobSegment",
+      "operation_type": "contract_interaction",
+      "signature": "declareBlobSegment(uint256,uint16,uint16,bytes32)"
+    },
+    {
+      "name": "getSegments",
+      "operation_type": "contract_interaction",
+      "signature": "getSegments(bytes32,uint256,uint256)"
+    },
+    {
+      "name": "segmentCount",
+      "operation_type": "contract_interaction",
+      "signature": "segmentCount(bytes32)"
+    },
+    {
+      "name": "declareBlobSegments",
+      "operation_type": "contract_interaction",
+      "signature": "declareBlobSegments(BlobSegmentParams[])"
+    }
+  ],
+  "id": "ERC8179",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8179",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8179.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a minimal interface for on-chain declaration of field element sub-ranges (\"segments\") within [EIP-4844](./eip-4844.md) blobs. A single function, `declareBlobSegment`, emits an event binding a `[startFE, endFE)` half-open range to the blob's versioned hash, allowing unambiguous sub-blob coordination across protocols. Zero storage (event-only) makes declarations ~7x cheaper than stateful alternatives.",
+  "title": "Blob Space Segments"
+}

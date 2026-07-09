@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7617",
+  "erc": "ERC-7617",
+  "events": [],
+  "functions": [],
+  "id": "ERC7617",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7617",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7617.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "In the context of the [ERC-6860](./eip-6860.md) `web3://` standard, this ERC extends the [ERC-6944](./eip-6944.md) resolve mode: This standard defines a new optional ``web3-next-chunk`` HTTP header returned by the `request()` call, that contains a `web3://` URL pointing to the next data chunk of the resource data. Chunks are streamed to the `web3://` client, and it loops until the ``web3-next-chunk`` header is no longer present.",
+  "title": "Chunk support for ERC-5219 mode in Web3 URL"
+}

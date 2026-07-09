@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7930",
+  "erc": "ERC-7930",
+  "events": [],
+  "functions": [],
+  "id": "ERC7930",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7930",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7930.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal introduces a **binary format** to describe a _chain-specific address_. This is achieved through a versioned, length-prefixed binary envelope that supports arbitrary-length data. The interpretation and serialization rules for the data within this envelope are defined by the [CAIP-350] companion standard, which provide profiles for each chain type and defines the serialization rules for each namespace.",
+  "title": "Interoperable Addresses"
+}

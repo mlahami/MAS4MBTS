@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3156",
+  "erc": "ERC-3156",
+  "events": [],
+  "functions": [
+    {
+      "name": "maxFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "maxFlashLoan(address)"
+    },
+    {
+      "name": "flashFee",
+      "operation_type": "contract_interaction",
+      "signature": "flashFee(address,uint256)"
+    },
+    {
+      "name": "flashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "flashLoan(IERC3156FlashBorrower,address,uint256,bytes)"
+    },
+    {
+      "name": "onFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "onFlashLoan(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "flashBorrow",
+      "operation_type": "contract_interaction",
+      "signature": "flashBorrow(address,uint256)"
+    },
+    {
+      "name": "_flashFee",
+      "operation_type": "contract_interaction",
+      "signature": "_flashFee(address,uint256)"
+    }
+  ],
+  "id": "ERC3156",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3156",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3156.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A flash loan is a smart contract transaction in which a lender smart contract lends assets to a borrower smart contract with the condition that the assets are returned, plus an optional fee, before the end of the transaction. This ERC specifies interfaces for lenders to accept flash loan requests, and for borrowers to take temporary control of the transaction within the lender execution. The process for the safe execution of flash loans is also specified.",
+  "title": "Flash Loans"
+}

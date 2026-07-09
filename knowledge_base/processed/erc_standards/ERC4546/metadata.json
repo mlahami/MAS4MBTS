@@ -1,0 +1,109 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4546",
+  "erc": "ERC-4546",
+  "events": [],
+  "functions": [
+    {
+      "name": "acceptERC20Deposit",
+      "operation_type": "contract_interaction",
+      "signature": "acceptERC20Deposit(address,address,uint)"
+    },
+    {
+      "name": "acceptERC721Deposit",
+      "operation_type": "contract_interaction",
+      "signature": "acceptERC721Deposit(address,address,uint)"
+    },
+    {
+      "name": "acceptERC1155Deposit",
+      "operation_type": "contract_interaction",
+      "signature": "acceptERC1155Deposit(address,address,uint,uint,bytes)"
+    },
+    {
+      "name": "acceptERC1155BatchDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "acceptERC1155BatchDeposit(address,address,uint[],uint[],bytes)"
+    },
+    {
+      "name": "acceptEtherDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "acceptEtherDeposit(address,uint)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint,uint,bytes)"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "depositERC20",
+      "operation_type": "contract_interaction",
+      "signature": "depositERC20(address,address,uint)"
+    },
+    {
+      "name": "if",
+      "operation_type": "contract_interaction",
+      "signature": "if(returndata.length)"
+    },
+    {
+      "name": "depositERC721",
+      "operation_type": "contract_interaction",
+      "signature": "depositERC721(address,address,uint)"
+    },
+    {
+      "name": "safeDepositERC721",
+      "operation_type": "contract_interaction",
+      "signature": "safeDepositERC721(address,address,uint,bytes)"
+    },
+    {
+      "name": "safeDepositERC1155",
+      "operation_type": "contract_interaction",
+      "signature": "safeDepositERC1155(address,address,uint,uint,bytes)"
+    },
+    {
+      "name": "batchDepositERC1155",
+      "operation_type": "contract_interaction",
+      "signature": "batchDepositERC1155(address,address,uint[],uint[],bytes)"
+    },
+    {
+      "name": "depositEther",
+      "operation_type": "contract_interaction",
+      "signature": "depositEther(address)"
+    },
+    {
+      "name": "_assertContract",
+      "operation_type": "contract_interaction",
+      "signature": "_assertContract(address)"
+    }
+  ],
+  "id": "ERC4546",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4546",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4546.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The wrapped deposit contract handles deposits of assets (Ether, [ERC-20](./eip-20.md), [ERC-721](./eip-721.md)) on behalf of a user. A user must only approve a spend limit once and then an asset may be deposited to any number of different applications that support deposits from the contract.",
+  "title": "Wrapped Deposits"
+}

@@ -1,0 +1,124 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1203",
+  "erc": "ERC-1203",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Convert",
+      "signature": "Convert(uint256,uint256,uint256)"
+    },
+    {
+      "name": "Conversion",
+      "signature": "Conversion(uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply(uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,uint256)"
+    },
+    {
+      "name": "fullyDilutedTotalSupply",
+      "operation_type": "contract_interaction",
+      "signature": "fullyDilutedTotalSupply()"
+    },
+    {
+      "name": "fullyDilutedBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "fullyDilutedBalanceOf(address)"
+    },
+    {
+      "name": "fullyDilutedAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "fullyDilutedAllowance(address,address)"
+    },
+    {
+      "name": "convert",
+      "operation_type": "contract_interaction",
+      "signature": "convert(uint256,uint256,uint256)"
+    }
+  ],
+  "id": "ERC1203",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1203",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1203.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for MCTs within smart contracts. This standard provides basic functionality to track, transfer, and convert MCTs.",
+  "title": "ERC-1203 Multi-Class Token Standard (ERC-20 Extension)"
+}

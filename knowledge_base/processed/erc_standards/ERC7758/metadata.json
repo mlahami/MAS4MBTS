@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7758",
+  "erc": "ERC-7758",
+  "events": [
+    {
+      "name": "AuthorizationUsed",
+      "signature": "AuthorizationUsed(address,bytes32)"
+    },
+    {
+      "name": "AuthorizationCanceled",
+      "signature": "AuthorizationCanceled(address,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "authorizationState",
+      "operation_type": "contract_interaction",
+      "signature": "authorizationState(address,bytes32)"
+    },
+    {
+      "name": "transferWithAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "transferWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "receiveWithAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "receiveWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "cancelAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "cancelAuthorization(address,bytes32,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,bytes)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(bytes)"
+    },
+    {
+      "name": "_transfer",
+      "operation_type": "contract_interaction",
+      "signature": "_transfer(address,address,uint256)"
+    },
+    {
+      "name": "makeDomainSeparator",
+      "operation_type": "contract_interaction",
+      "signature": "makeDomainSeparator(string,string)"
+    },
+    {
+      "name": "recover",
+      "operation_type": "contract_interaction",
+      "signature": "recover(bytes32,uint8,bytes32,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7758",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7758",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7758.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "A set of functions to enable meta-transactions and atomic interactions with [ERC-20](./eip-20.md) token contracts via signatures conforming to the [EIP-712](./eip-712.md) typed message signing specification. This enables the user to: - delegate the gas payment to someone else, - pay for gas in the token itself rather than in ETH, - perform one or more token transfers and other operations in a single atomic transaction, - transfer ERC-20 tokens to another address, and have the recipient submit the transaction, - batch multiple transactions with minimal overhead, and - create and perform multiple transactions without having to worry about them failing due to accidental nonce-reuse or improper ordering by the miner.",
+  "title": "Transfer With Authorization"
+}

@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1386",
+  "erc": "ERC-1386",
+  "events": [],
+  "functions": [
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(Attestation)"
+    },
+    {
+      "name": "addattestorKey",
+      "operation_type": "contract_interaction",
+      "signature": "addattestorKey(address,string,uint)"
+    },
+    {
+      "name": "replaceKey",
+      "operation_type": "contract_interaction",
+      "signature": "replaceKey(address,string,uint,address)"
+    },
+    {
+      "name": "removeKey",
+      "operation_type": "contract_interaction",
+      "signature": "removeKey(address)"
+    },
+    {
+      "name": "validateKey",
+      "operation_type": "contract_interaction",
+      "signature": "validateKey(address,string)"
+    },
+    {
+      "name": "revokeAttestations",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAttestations(Bloomfilter)"
+    }
+  ],
+  "id": "ERC1386",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1386",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1386.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "",
+  "title": "Attestation management contract"
+}

@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1438",
+  "erc": "ERC-1438",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint)"
+    },
+    {
+      "name": "approveAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "approveAndCall(address,uint,bytes)"
+    },
+    {
+      "name": "receiveApproval",
+      "operation_type": "contract_interaction",
+      "signature": "receiveApproval(address,uint256,address,bytes)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,address,uint)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,address,uint)"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(address,uint,uint256[])"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(address,uint,bytes)"
+    }
+  ],
+  "id": "ERC1438",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1438",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1438.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "There have been suggestions for modified tokens based on erc20, but since many tokens have already been built on erc20, it is necessary to increase the utilization of already developed erc20 tokens. Therefore, we propose a universal wallet that can use erc20 tokens universally. We also propose a component dApp that allows you to create and save your avatar (& social badge system), and use it immediately in other services. All of the dApps suggested in this document are based on decentralized development and use that anyone can create and participate in.",
+  "title": "dApp Components (avatar) & Universal Wallet"
+}

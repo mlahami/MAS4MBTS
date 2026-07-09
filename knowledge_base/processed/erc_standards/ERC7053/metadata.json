@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7053",
+  "erc": "ERC-7053",
+  "events": [
+    {
+      "name": "Commit",
+      "signature": "Commit(address,string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "commit",
+      "operation_type": "contract_interaction",
+      "signature": "commit(string,string)"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize()"
+    },
+    {
+      "name": "getCommits",
+      "operation_type": "contract_interaction",
+      "signature": "getCommits(string)"
+    }
+  ],
+  "id": "ERC7053",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7053",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7053.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes an interoperable indexing strategy designed to enhance the organization and retrieval of digital media information across multiple smart contracts and EVM-compatible blockchains. This system enhances the traceability and verification of cross-contract and cross-chain data, facilitating a more efficient discovery of storage locations and crucial information related to media assets. The major purpose is to foster an integrated digital media environment on the blockchain.",
+  "title": "Interoperable Digital Media Indexing"
+}

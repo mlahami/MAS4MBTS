@@ -1,0 +1,113 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6981",
+  "erc": "ERC-6981",
+  "events": [
+    {
+      "name": "AccountCreated",
+      "signature": "AccountCreated(address,address,uint256)"
+    },
+    {
+      "name": "AccountClaimed",
+      "signature": "AccountClaimed(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createAccount",
+      "operation_type": "contract_interaction",
+      "signature": "createAccount(uint256)"
+    },
+    {
+      "name": "claimAccount",
+      "operation_type": "contract_interaction",
+      "signature": "claimAccount(address,uint256,uint256,bytes32,bytes)"
+    },
+    {
+      "name": "account",
+      "operation_type": "contract_interaction",
+      "signature": "account(uint256)"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    },
+    {
+      "name": "setOwner",
+      "operation_type": "contract_interaction",
+      "signature": "setOwner(address)"
+    },
+    {
+      "name": "createRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "createRegistry(uint96,address,bytes)"
+    },
+    {
+      "name": "registry",
+      "operation_type": "contract_interaction",
+      "signature": "registry(address,uint96)"
+    },
+    {
+      "name": "_getSalt",
+      "operation_type": "contract_interaction",
+      "signature": "_getSalt(address,uint96)"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(address,address,bytes)"
+    },
+    {
+      "name": "updateSigner",
+      "operation_type": "contract_interaction",
+      "signature": "updateSigner(address)"
+    },
+    {
+      "name": "_verify",
+      "operation_type": "contract_interaction",
+      "signature": "_verify(address,uint256,uint256,bytes32,bytes)"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "onERC721Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC721Received(address,address,uint256,bytes)"
+    },
+    {
+      "name": "onERC1155Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC1155Received(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "onERC1155BatchReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "executeCall",
+      "operation_type": "contract_interaction",
+      "signature": "executeCall(address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC6981",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6981",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6981.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The following specifies a system for services to link their users to a claimable Ethereum address. Services can provide a signed message and unique salt to their users which can be used to deploy a smart contract wallet to the deterministic address through a registry contract using the `create2` opcode.",
+  "title": "Reserved Ownership Accounts"
+}

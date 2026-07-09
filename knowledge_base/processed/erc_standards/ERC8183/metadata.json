@@ -1,0 +1,163 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8183",
+  "erc": "ERC-8183",
+  "events": [
+    {
+      "name": "JobCreated",
+      "signature": "JobCreated(uint256,address,address,address,uint256,address)"
+    },
+    {
+      "name": "ProviderSet",
+      "signature": "ProviderSet(uint256,address)"
+    },
+    {
+      "name": "BudgetSet",
+      "signature": "BudgetSet(uint256,uint256)"
+    },
+    {
+      "name": "JobFunded",
+      "signature": "JobFunded(uint256,address,uint256)"
+    },
+    {
+      "name": "JobSubmitted",
+      "signature": "JobSubmitted(uint256,address,bytes32)"
+    },
+    {
+      "name": "JobCompleted",
+      "signature": "JobCompleted(uint256,address,bytes32)"
+    },
+    {
+      "name": "JobRejected",
+      "signature": "JobRejected(uint256,address,bytes32)"
+    },
+    {
+      "name": "JobExpired",
+      "signature": "JobExpired(uint256)"
+    },
+    {
+      "name": "PaymentReleased",
+      "signature": "PaymentReleased(uint256,address,uint256)"
+    },
+    {
+      "name": "EvaluatorFeePaid",
+      "signature": "EvaluatorFeePaid(uint256,address,uint256)"
+    },
+    {
+      "name": "Refunded",
+      "signature": "Refunded(uint256,address,uint256)"
+    },
+    {
+      "name": "HookWhitelistUpdated",
+      "signature": "HookWhitelistUpdated(address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "beforeAction",
+      "operation_type": "contract_interaction",
+      "signature": "beforeAction(uint256,bytes4,bytes)"
+    },
+    {
+      "name": "afterAction",
+      "operation_type": "contract_interaction",
+      "signature": "afterAction(uint256,bytes4,bytes)"
+    },
+    {
+      "name": "fund",
+      "operation_type": "contract_interaction",
+      "signature": "fund(uint256,uint256)"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(address,address)"
+    },
+    {
+      "name": "_authorizeUpgrade",
+      "operation_type": "contract_interaction",
+      "signature": "_authorizeUpgrade(address)"
+    },
+    {
+      "name": "setPlatformFee",
+      "operation_type": "contract_interaction",
+      "signature": "setPlatformFee(uint256,address)"
+    },
+    {
+      "name": "setEvaluatorFee",
+      "operation_type": "contract_interaction",
+      "signature": "setEvaluatorFee(uint256)"
+    },
+    {
+      "name": "setHookWhitelist",
+      "operation_type": "contract_interaction",
+      "signature": "setHookWhitelist(address,bool)"
+    },
+    {
+      "name": "_beforeHook",
+      "operation_type": "contract_interaction",
+      "signature": "_beforeHook(address,uint256,bytes4,bytes)"
+    },
+    {
+      "name": "_afterHook",
+      "operation_type": "contract_interaction",
+      "signature": "_afterHook(address,uint256,bytes4,bytes)"
+    },
+    {
+      "name": "createJob",
+      "operation_type": "contract_interaction",
+      "signature": "createJob(address,address,uint256,string,address)"
+    },
+    {
+      "name": "setProvider",
+      "operation_type": "contract_interaction",
+      "signature": "setProvider(uint256,address)"
+    },
+    {
+      "name": "setBudget",
+      "operation_type": "contract_interaction",
+      "signature": "setBudget(uint256,uint256,bytes)"
+    },
+    {
+      "name": "fund",
+      "operation_type": "contract_interaction",
+      "signature": "fund(uint256,bytes)"
+    },
+    {
+      "name": "submit",
+      "operation_type": "contract_interaction",
+      "signature": "submit(uint256,bytes32,bytes)"
+    },
+    {
+      "name": "complete",
+      "operation_type": "contract_interaction",
+      "signature": "complete(uint256,bytes32,bytes)"
+    },
+    {
+      "name": "reject",
+      "operation_type": "contract_interaction",
+      "signature": "reject(uint256,bytes32,bytes)"
+    },
+    {
+      "name": "claimRefund",
+      "operation_type": "contract_interaction",
+      "signature": "claimRefund(uint256)"
+    },
+    {
+      "name": "getJob",
+      "operation_type": "contract_interaction",
+      "signature": "getJob(uint256)"
+    }
+  ],
+  "id": "ERC8183",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8183",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8183.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification defines the **Agentic Commerce Protocol**: a **job** with escrowed budget, four states (Open \u2192 Funded \u2192 Submitted \u2192 Terminal), and an **evaluator** who alone may mark the job completed. The client funds the job; the provider submits work; the evaluator attests completion or rejection once submitted (or the evaluator rejects while Funded before submission, or the client rejects while Open, or the job expires and the client is refunded). Optional attestation **reason** (e.g. hash) on complete/reject enables audit and composition with reputation (e.g. [ERC-8004](./eip-8004.md)).",
+  "title": "Agentic Commerce"
+}

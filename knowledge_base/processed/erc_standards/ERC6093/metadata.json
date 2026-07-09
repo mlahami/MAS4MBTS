@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6093",
+  "erc": "ERC-6093",
+  "events": [],
+  "functions": [],
+  "id": "ERC6093",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6093",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6093.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP defines a standard set of custom errors for commonly-used tokens, which are defined as [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), and [ERC-1155](./eip-1155.md) tokens. Ethereum applications and wallets have historically relied on revert reason strings to display the cause of transaction errors to users. Recent Solidity versions offer rich revert reasons with error-specific decoding (sometimes called \"custom errors\"). This EIP defines a standard set of errors designed to give at least the same relevant information as revert reason strings, but in a structured and expected way that clients can implement decoding for.",
+  "title": "Custom errors for commonly-used tokens"
+}

@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7246",
+  "erc": "ERC-7246",
+  "events": [
+    {
+      "name": "Encumber",
+      "signature": "Encumber(address,address,uint)"
+    },
+    {
+      "name": "Release",
+      "signature": "Release(address,address,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "encumberedBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "encumberedBalanceOf(address)"
+    },
+    {
+      "name": "encumbrances",
+      "operation_type": "contract_interaction",
+      "signature": "encumbrances(address,address)"
+    },
+    {
+      "name": "encumber",
+      "operation_type": "contract_interaction",
+      "signature": "encumber(address,uint)"
+    },
+    {
+      "name": "encumberFrom",
+      "operation_type": "contract_interaction",
+      "signature": "encumberFrom(address,address,uint)"
+    },
+    {
+      "name": "release",
+      "operation_type": "contract_interaction",
+      "signature": "release(address,uint)"
+    },
+    {
+      "name": "availableBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "availableBalanceOf(address)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint)"
+    },
+    {
+      "name": "_encumber",
+      "operation_type": "contract_interaction",
+      "signature": "_encumber(address,address,uint)"
+    },
+    {
+      "name": "_release",
+      "operation_type": "contract_interaction",
+      "signature": "_release(address,address,uint)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint)"
+    },
+    {
+      "name": "_spendEncumbrance",
+      "operation_type": "contract_interaction",
+      "signature": "_spendEncumbrance(address,address,uint256)"
+    }
+  ],
+  "id": "ERC7246",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7246",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7246.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This ERC proposes an extension to the [ERC-20](./eip-20.md) token standard by adding Encumber\u2014the ability for an account to grant another account exclusive right to move some portion of their balance. Encumber is a stronger version of [ERC-20](./eip-20.md) allowances. While [ERC-20](./eip-20.md) approve grants another account the permission to transfer a specified token amount, encumber grants the same permission while ensuring that the tokens will be available when needed.",
+  "title": "Encumber - Splitting Ownership & Guarantees"
+}

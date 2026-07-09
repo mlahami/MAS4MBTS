@@ -1,0 +1,64 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6358",
+  "erc": "ERC-6358",
+  "events": [
+    {
+      "name": "TransactionSent",
+      "signature": "TransactionSent(bytes,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "decodeData",
+      "operation_type": "contract_interaction",
+      "signature": "decodeData(bytes)"
+    },
+    {
+      "name": "getTransactionHash",
+      "operation_type": "contract_interaction",
+      "signature": "getTransactionHash(ERC6358TransactionData)"
+    },
+    {
+      "name": "sendOmniverseTransaction",
+      "operation_type": "contract_interaction",
+      "signature": "sendOmniverseTransaction(ERC6358TransactionData)"
+    },
+    {
+      "name": "getTransactionCount",
+      "operation_type": "contract_interaction",
+      "signature": "getTransactionCount(bytes)"
+    },
+    {
+      "name": "getTransactionData",
+      "operation_type": "contract_interaction",
+      "signature": "getTransactionData(bytes,uint256)"
+    },
+    {
+      "name": "getChainId",
+      "operation_type": "contract_interaction",
+      "signature": "getChainId()"
+    },
+    {
+      "name": "omniverseBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "omniverseBalanceOf(bytes)"
+    },
+    {
+      "name": "omniverseOwnerOf",
+      "operation_type": "contract_interaction",
+      "signature": "omniverseOwnerOf(uint256)"
+    }
+  ],
+  "id": "ERC6358",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6358",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6358.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This ERC standardizes an interface for contract-layer consensus-agnostic verifiable cross-chain bridging, through which we can define a new global token inherited from [ERC-20](./eip-20.md)/[ERC-721](./eip-721.md) over multi-chains. ### Figure.1 Architecture ![img](../assets/eip-6358/img/o-dlt.png) With this ERC, we can create a global token protocol, that leverages smart contracts or similar mechanisms on existing blockchains to record the token states synchronously. The synchronization could be made by trustless off-chain synchronizers.",
+  "title": "Cross-Chain Token States Synchronization"
+}

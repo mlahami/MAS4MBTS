@@ -1,0 +1,16 @@
+{
+  "category": "**: [Improper Adherence to Coding Standards",
+  "cwe": "CWE-710",
+  "description": "This weakness occurs when functions declare parameters without names (only types). Unnamed parameters reduce code clarity and hinder maintainability, making it difficult for reviewers and future maintainers to understand the purpose and expected usage of each argument. In smart contracts, where correctness is critical, this ambiguity can result in misinterpretation, incorrect argument ordering in calls or refactors, and subtle logic errors.",
+  "id": "VULN-OWASP-SCWE-093",
+  "name": "Unnamed Function Parameters",
+  "owasp": "SCWE-093",
+  "remediation": "- Always provide descriptive names for all function parameters. - Choose meaningful, self-explanatory names consistent with a coding standard. - Supplement with NatSpec where helpful to document parameter intent and units. - Enforce naming conventions with linters and code review checklists.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-093.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

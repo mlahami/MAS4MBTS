@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7950",
+  "erc": "ERC-7950",
+  "events": [],
+  "functions": [],
+  "id": "ERC7950",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7950",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7950.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard proposes a way to encode the combination of a chain ID and a transaction hash into one string.",
+  "title": "Encode chain id with transaction hash"
+}

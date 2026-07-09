@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Dependency on block gas limit refers to the reliance on the Ethereum block gas limit for contract operations, which can lead to: - Failed transactions if gas limits are exceeded. - Exploitation of vulnerabilities in gas-intensive operations. - Loss of funds or data.",
+  "id": "VULN-OWASP-SCWE-032",
+  "name": "Dependency on Block Gas Limit",
+  "owasp": "SCWE-032",
+  "remediation": "- **Optimize gas usage:** Minimize gas consumption in contract operations. - **Avoid unbounded loops:** Ensure loops have a fixed upper limit. - **Test thoroughly:** Conduct extensive testing to ensure operations stay within gas limits.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-032.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

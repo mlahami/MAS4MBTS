@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1822",
+  "erc": "ERC-1822",
+  "events": [],
+  "functions": [
+    {
+      "name": "updateCodeAddress",
+      "operation_type": "contract_interaction",
+      "signature": "updateCodeAddress(address)"
+    },
+    {
+      "name": "proxiableUUID",
+      "operation_type": "contract_interaction",
+      "signature": "proxiableUUID()"
+    },
+    {
+      "name": "constructor1",
+      "operation_type": "contract_interaction",
+      "signature": "constructor1()"
+    },
+    {
+      "name": "updateCode",
+      "operation_type": "contract_interaction",
+      "signature": "updateCode(address)"
+    },
+    {
+      "name": "setOwner",
+      "operation_type": "contract_interaction",
+      "signature": "setOwner(address)"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize()"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "constructor1",
+      "operation_type": "contract_interaction",
+      "signature": "constructor1(uint256)"
+    }
+  ],
+  "id": "ERC1822",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1822",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1822.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following describes a standard for proxy contracts which is universally compatible with all contracts, and does not create incompatibility between the proxy and business-logic contracts. This is achieved by utilizing a unique storage position in the proxy contract to store the Logic Contract's address. A compatibility check ensures successful upgrades. Upgrading can be performed unlimited times, or as determined by custom logic. In addition, a method for selecting from multiple constructors is provided, which does not inhibit the ability to verify bytecode.",
+  "title": "Universal Upgradeable Proxy Standard (UUPS)"
+}

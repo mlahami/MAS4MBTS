@@ -1,0 +1,16 @@
+{
+  "category": "Insufficient Verification of Data Authenticity",
+  "cwe": "CWE-345",
+  "description": "Cross-chain handlers that accept payloads without checking the source `chainId` or endpoint domain allow replay of messages from other networks or forks. Attackers can re-trigger transfers, minting, or governance actions on unintended chains.",
+  "id": "VULN-OWASP-SCWE-107",
+  "name": "Missing Chain ID Validation in Cross-Chain Messages",
+  "owasp": "SCWE-107",
+  "remediation": "- Bind every inbound message to an expected source chain/domain and trusted sender. - Include `chainId`/domain separators in signed payloads and verify them before execution. - Maintain replay protection (nonces) per (sourceChain, sourceSender).",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-107.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

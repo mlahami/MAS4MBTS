@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5269",
+  "erc": "ERC-5269",
+  "events": [
+    {
+      "name": "OnSupportERC",
+      "signature": "OnSupportERC(address,//)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "supportERC",
+      "operation_type": "contract_interaction",
+      "signature": "supportERC(address,uint256,bytes32,bytes)"
+    },
+    {
+      "name": "deployFixture",
+      "operation_type": "contract_interaction",
+      "signature": "deployFixture()"
+    },
+    {
+      "name": "_supportERC",
+      "operation_type": "contract_interaction",
+      "signature": "_supportERC(address,uint256,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC5269",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5269",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5269.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "An interface for better identification and detection of ERCs by number. It designates a field called `majorERCIdentifier` which is normally known or referred to as \"ERC number\". For example, [ERC-721](./eip-721.md) has a `majorERCIdentifier = 721`. This ERC has a `majorERCIdentifier = 5269`. Calling it a `majorERCIdentifier` instead of `ERCNumber` makes it future-proof: anticipating there is a possibility where future ERCs are not numbered or if we want to incorporate other types of standards. It also proposes a new concept of `minorERCIdentifier` which is left for authors of individual ERC to define. For example, ERC-721's author may define `ERC721Metadata` interface as `minorERCIdentifier= keccak256(\"ERC721Metadata\")`. It also proposes an event to allow smart contracts to optionally decl",
+  "title": "ERC Detection and Discovery"
+}

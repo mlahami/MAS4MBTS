@@ -1,0 +1,109 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7841",
+  "erc": "ERC-7841",
+  "events": [],
+  "functions": [
+    {
+      "name": "chain_id",
+      "operation_type": "contract_interaction",
+      "signature": "chain_id()"
+    },
+    {
+      "name": "inboxDigest",
+      "operation_type": "contract_interaction",
+      "signature": "inboxDigest(uint32)"
+    },
+    {
+      "name": "outboxDigest",
+      "operation_type": "contract_interaction",
+      "signature": "outboxDigest(uint32)"
+    },
+    {
+      "name": "getMetadataDigest",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadataDigest(Metadata)"
+    },
+    {
+      "name": "send",
+      "operation_type": "contract_interaction",
+      "signature": "send(Metadata,bytes)"
+    },
+    {
+      "name": "recv",
+      "operation_type": "contract_interaction",
+      "signature": "recv(Metadata)"
+    },
+    {
+      "name": "populateInbox",
+      "operation_type": "contract_interaction",
+      "signature": "populateInbox(Message[],bytes)"
+    },
+    {
+      "name": "randSessionId",
+      "operation_type": "contract_interaction",
+      "signature": "randSessionId()"
+    },
+    {
+      "name": "getMetadataDigest",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadataDigest(uint32,uint32,address,address,uint256)"
+    },
+    {
+      "name": "_resetMailbox",
+      "operation_type": "contract_interaction",
+      "signature": "_resetMailbox()"
+    },
+    {
+      "name": "send",
+      "operation_type": "contract_interaction",
+      "signature": "send(uint32,address,uint256,bytes)"
+    },
+    {
+      "name": "recv",
+      "operation_type": "contract_interaction",
+      "signature": "recv(uint32,address,address,uint256)"
+    },
+    {
+      "name": "xTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "xTransfer(uint32,address,uint256)"
+    },
+    {
+      "name": "xReceive",
+      "operation_type": "contract_interaction",
+      "signature": "xReceive(uint32,uint128)"
+    },
+    {
+      "name": "remoteCall",
+      "operation_type": "contract_interaction",
+      "signature": "remoteCall(uint32,address,bytes)"
+    },
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(uint32,uint128)"
+    },
+    {
+      "name": "callChainB",
+      "operation_type": "contract_interaction",
+      "signature": "callChainB(uint256)"
+    },
+    {
+      "name": "fun",
+      "operation_type": "contract_interaction",
+      "signature": "fun(uint256)"
+    }
+  ],
+  "id": "ERC7841",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7841",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7841.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a **mailbox API** and **message format** for sending and receiving data between L2s. This standard makes it easier for developers to build cross-chain applications that work over a variety of VMs, chain settlement mechanisms (e.g., ZK or optimistic settlement), and messaging protocols (e.g., synchronous or asynchronous protocols). This ERC accomplishes this by 1.) defining a mailbox interface through which cross-chain messages can be sent and received independent of their payload; 2.) defining a VM-agnostic message format and address type to make the interface compatible with many VMs; 3.) keeping the mailbox interface minimal to make it compatible with many kinds of cross-chain communication. Example applications include an intent-based bridge, a liquidity-unifying DEX o",
+  "title": "Cross-chain Message Format and Mailbox"
+}

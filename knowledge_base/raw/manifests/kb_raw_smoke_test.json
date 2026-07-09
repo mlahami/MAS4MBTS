@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-07-06T11:37:26+00:00",
+  "file_count": 2,
+  "raw_root": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw",
+  "snapshot_id": "kb_raw_smoke_test",
+  "source_count": 2,
+  "source_records": [
+    {
+      "collected_at": "2026-07-06T11:37:24+00:00",
+      "files": [
+        {
+          "bytes": 5601,
+          "erc": "ERC-20",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\erc-20.md",
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-20.md"
+        }
+      ],
+      "ref": "master",
+      "repo": {
+        "commit_sha": "1db063deea10dea82850c8630478c1b825b199c7",
+        "default_branch": "master",
+        "html_url": "https://github.com/ethereum/ERCs",
+        "owner": "ethereum",
+        "repo": "ERCs"
+      },
+      "source_id": "ethereum_ercs_repo"
+    },
+    {
+      "collected_at": "2026-07-06T11:37:26+00:00",
+      "files": [
+        {
+          "bytes": 332799,
+          "page_id": "owasp_scs_home",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\owasp_scs_home.html",
+          "sha256": "c194d118be5ec27d275435854acf79e2079c3a452e3632de426d4d76da1f6699",
+          "status": 200,
+          "url": "https://scs.owasp.org/"
+        }
+      ],
+      "source_id": "owasp_smart_contract_security"
+    }
+  ]
+}

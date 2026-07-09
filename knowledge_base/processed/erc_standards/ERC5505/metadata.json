@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5505",
+  "erc": "ERC-5505",
+  "events": [
+    {
+      "name": "ForcedSaleSet",
+      "signature": "ForcedSaleSet(bool)"
+    },
+    {
+      "name": "ForceSaleClaimed",
+      "signature": "ForceSaleClaimed(uint256,uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setForcedSaleRequirement",
+      "operation_type": "contract_interaction",
+      "signature": "setForcedSaleRequirement(uint128,address)"
+    },
+    {
+      "name": "setForcedSaleTWAP",
+      "operation_type": "contract_interaction",
+      "signature": "setForcedSaleTWAP(uint256)"
+    },
+    {
+      "name": "execForcedSale",
+      "operation_type": "contract_interaction",
+      "signature": "execForcedSale(uint256)"
+    },
+    {
+      "name": "claimForcedSale",
+      "operation_type": "contract_interaction",
+      "signature": "claimForcedSale()"
+    }
+  ],
+  "id": "ERC5505",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5505",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5505.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "To propose an extension of smart contract interfaces for asset-backed, fractionalized projects using the [EIP-1155](./eip-1155.md) standard such that total acquisition will become possible. This proposal focuses on physical asset, where total acquisition should be able to happen.",
+  "title": "EIP-1155 asset backed NFT extension"
+}

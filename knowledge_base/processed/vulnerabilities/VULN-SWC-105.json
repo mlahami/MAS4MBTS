@@ -1,0 +1,17 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "Due to missing or insufficient access controls, malicious parties can withdraw some or all Ether from the contract account. This bug is sometimes caused by unintentionally exposing initialization functions. By wrongly naming a function intended to be a constructor, the constructor code ends up in the runtime byte code and can be called by anyone to re-initialize the contract.",
+  "id": "VULN-SWC-105",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Implement controls so withdrawals can only be triggered by authorized parties or according to the specs of the smart contract system.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-105.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-105"
+}

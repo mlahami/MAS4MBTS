@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "In Solidity, calling external contracts with a hardcoded gas value can lead to various issues, such as running out of gas or allowing a malicious contract to manipulate gas consumption. Hardcoding the gas amount is inflexible and may lead to resource exhaustion or cause the transaction to fail when the gas limit is insufficient for the operation.",
+  "id": "VULN-OWASP-SCWE-073",
+  "name": "Message Call with Hardcoded Gas Amount",
+  "owasp": "SCWE-073",
+  "remediation": "Instead of hardcoding gas values, it is better to allow the gas to be automatically determined or adjust the gas dynamically depending on the needs of the transaction. This ensures that the transaction can complete successfully while avoiding unnecessary resource consumption.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-073.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

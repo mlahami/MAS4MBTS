@@ -1,0 +1,155 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3475",
+  "erc": "ERC-3475",
+  "events": [
+    {
+      "name": "Issue",
+      "signature": "Issue(address,address,Transaction[])"
+    },
+    {
+      "name": "Redeem",
+      "signature": "Redeem(address,address,Transaction[])"
+    },
+    {
+      "name": "burn",
+      "signature": "burn(address,address,Transaction[])"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,address,Transaction[])"
+    },
+    {
+      "name": "ApprovalFor",
+      "signature": "ApprovalFor(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef,0x82a55a613429Aeb3D01fbE6841bE1AcA4fFD5b2B,[IERC3475.Transaction(1,14,500)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,Transaction[])"
+    },
+    {
+      "name": "transferAllowanceFrom",
+      "operation_type": "contract_interaction",
+      "signature": "transferAllowanceFrom(0x2d03B6C79B75eE7aB35298878D05fe36DC1fE8Ef,0x82a55a613429Aeb3D01fbE6841bE1AcA4fFD5b2B,[IERC3475.Transaction(1,14,500)"
+    },
+    {
+      "name": "transferAllowanceFrom",
+      "operation_type": "contract_interaction",
+      "signature": "transferAllowanceFrom(address,address,Transaction[])"
+    },
+    {
+      "name": "issue",
+      "operation_type": "contract_interaction",
+      "signature": "issue(address,Transaction[])"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(address,Transaction[])"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,Transaction[])"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,Transaction[])"
+    },
+    {
+      "name": "setApprovalFor",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalFor(address,bool)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply(uint256,uint256)"
+    },
+    {
+      "name": "redeemedSupply",
+      "operation_type": "contract_interaction",
+      "signature": "redeemedSupply(uint256,uint256)"
+    },
+    {
+      "name": "activeSupply",
+      "operation_type": "contract_interaction",
+      "signature": "activeSupply(uint256,uint256)"
+    },
+    {
+      "name": "burnedSupply",
+      "operation_type": "contract_interaction",
+      "signature": "burnedSupply(uint256,uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address,uint256,uint256)"
+    },
+    {
+      "name": "classMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "classMetadata(uint256)"
+    },
+    {
+      "name": "nonceMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "nonceMetadata(uint256,uint256)"
+    },
+    {
+      "name": "classValues",
+      "operation_type": "contract_interaction",
+      "signature": "classValues(uint256,uint256)"
+    },
+    {
+      "name": "nonceValues",
+      "operation_type": "contract_interaction",
+      "signature": "nonceValues(uint256,uint256,uint256)"
+    },
+    {
+      "name": "getProgress",
+      "operation_type": "contract_interaction",
+      "signature": "getProgress(uint256,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address,uint256,uint256)"
+    },
+    {
+      "name": "isApprovedFor",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedFor(address,address)"
+    },
+    {
+      "name": "setApprovalFor",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalFor(address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve()"
+    }
+  ],
+  "id": "ERC3475",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3475",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3475.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "- This EIP allows the creation of tokenized obligations with abstract on-chain metadata storage. Issuing bonds with multiple redemption data cannot be achieved with existing token standards. - This EIP enables each bond class ID to represent a new configurable token type and corresponding to each class, corresponding bond nonces to represent an issuing condition or any other form of data in uint256. Every single nonce of a bond class can have its metadata, supply, and other redemption conditions. - Bonds created by this EIP can also be batched for issuance/redemption conditions for efficiency on gas costs and UX side. And finally, bonds created from this standard can be divided and exchanged in a secondary market.",
+  "title": "Abstract Storage Bonds"
+}

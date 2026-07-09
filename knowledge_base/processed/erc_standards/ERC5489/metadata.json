@@ -1,0 +1,57 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5489",
+  "erc": "ERC-5489",
+  "events": [
+    {
+      "name": "SlotAuthorizationCreated",
+      "signature": "SlotAuthorizationCreated(uint256,address)"
+    },
+    {
+      "name": "SlotAuthorizationRevoked",
+      "signature": "SlotAuthorizationRevoked(uint256,address)"
+    },
+    {
+      "name": "SlotUriUpdated",
+      "signature": "SlotUriUpdated(uint256,address,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "authorizeSlotTo",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeSlotTo(uint256,address)"
+    },
+    {
+      "name": "revokeAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAuthorization(uint256,address)"
+    },
+    {
+      "name": "revokeAllAuthorizations",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAllAuthorizations(uint256)"
+    },
+    {
+      "name": "setSlotUri",
+      "operation_type": "contract_interaction",
+      "signature": "setSlotUri(uint256,string)"
+    },
+    {
+      "name": "getSlotUri",
+      "operation_type": "contract_interaction",
+      "signature": "getSlotUri(uint256,address)"
+    }
+  ],
+  "id": "ERC5489",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5489",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5489.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes a new extension for NFTs (non-fungible token, aka [EIP-721](./eip-721.md)): nft-hyperlink-extention (hNFT), embedding NFTs with hyperlinks, referred to as \u201chNFTs\u201d. As owners of hNFTs, users may authorize a URL slot to a specific address which can be either an externally-owned account (EOA) or a contract address and hNFT owners are entitled to revoke that authorization at any time. The address which has slot authorization can manage the URL of that slot.",
+  "title": "NFT Hyperlink Extension"
+}

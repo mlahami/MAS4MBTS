@@ -1,0 +1,16 @@
+{
+  "category": "**:  [Incorrect Conversion between Numeric Types",
+  "cwe": "CWE-681",
+  "description": "This issue arises when smart contracts perform arithmetic involving token values and price feeds without properly aligning decimal places across different sources (e.g. ERC-20 tokens with varying decimals and Chainlink oracles with fixed 8-decimal prices). Failing to normalize decimals before calculations can lead to severely inflated or deflated results, causing users to be overcharged, underpaid, or otherwise economically exploited.",
+  "id": "VULN-OWASP-SCWE-088",
+  "name": "Improper Decimal Normalization in Price-Based Calculations",
+  "owasp": "SCWE-088",
+  "remediation": "- Always normalize decimals across all involved assets and feeds. - Use centralized utility functions for all price/token conversions. - Add sanity checks to detect outlier results (e.g., revert if output is >1000x expected range). - When possible, emit intermediate calculation steps for auditing.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-088.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

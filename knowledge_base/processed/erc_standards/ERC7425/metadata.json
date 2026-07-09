@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7425",
+  "erc": "ERC-7425",
+  "events": [
+    {
+      "name": "policies",
+      "signature": "policies(address,uint256,uint256,address)"
+    },
+    {
+      "name": "depositR",
+      "signature": "depositR(address,uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "ownerTime",
+      "operation_type": "contract_interaction",
+      "signature": "ownerTime(uint256)"
+    },
+    {
+      "name": "ownerDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "ownerDeposit(uint256,uint256)"
+    },
+    {
+      "name": "ownerWithdrawals",
+      "operation_type": "contract_interaction",
+      "signature": "ownerWithdrawals(uint256)"
+    },
+    {
+      "name": "tokenDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "tokenDeposit(uint256)"
+    },
+    {
+      "name": "tokenWithdrawal",
+      "operation_type": "contract_interaction",
+      "signature": "tokenWithdrawal(uint256)"
+    },
+    {
+      "name": "userDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "userDeposit(address,uint256)"
+    },
+    {
+      "name": "userWithdrawals",
+      "operation_type": "contract_interaction",
+      "signature": "userWithdrawals(address,uint256)"
+    },
+    {
+      "name": "proposalDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "proposalDeposit(uint256,address,uint256)"
+    },
+    {
+      "name": "proposalWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "proposalWithdraw(uint256,address,address,uint256)"
+    },
+    {
+      "name": "openProposal",
+      "operation_type": "contract_interaction",
+      "signature": "openProposal(address,uint256,address)"
+    },
+    {
+      "name": "closeProposal",
+      "operation_type": "contract_interaction",
+      "signature": "closeProposal(address,uint256,uint256,bool)"
+    },
+    {
+      "name": "depositReserve",
+      "operation_type": "contract_interaction",
+      "signature": "depositReserve(address,address,uint256)"
+    }
+  ],
+  "id": "ERC7425",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7425",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7425.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This document describes a tokenized reserve mechanism. This includes functionality that allow stakeholders to participate in goverance stategies wthin the reserve.",
+  "title": "Tokenized Reserve"
+}

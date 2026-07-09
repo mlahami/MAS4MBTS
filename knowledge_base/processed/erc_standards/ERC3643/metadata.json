@@ -1,0 +1,519 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3643",
+  "erc": "ERC-3643",
+  "events": [
+    {
+      "name": "AgentAdded",
+      "signature": "AgentAdded(address)"
+    },
+    {
+      "name": "AgentRemoved",
+      "signature": "AgentRemoved(address)"
+    },
+    {
+      "name": "UpdatedTokenInformation",
+      "signature": "UpdatedTokenInformation(string,string,uint8,string,address)"
+    },
+    {
+      "name": "IdentityRegistryAdded",
+      "signature": "IdentityRegistryAdded(address)"
+    },
+    {
+      "name": "ComplianceAdded",
+      "signature": "ComplianceAdded(address)"
+    },
+    {
+      "name": "RecoverySuccess",
+      "signature": "RecoverySuccess(address,address,address)"
+    },
+    {
+      "name": "AddressFrozen",
+      "signature": "AddressFrozen(address,bool,address)"
+    },
+    {
+      "name": "TokensFrozen",
+      "signature": "TokensFrozen(address,uint256)"
+    },
+    {
+      "name": "TokensUnfrozen",
+      "signature": "TokensUnfrozen(address,uint256)"
+    },
+    {
+      "name": "Paused",
+      "signature": "Paused(address)"
+    },
+    {
+      "name": "Unpaused",
+      "signature": "Unpaused(address)"
+    },
+    {
+      "name": "ClaimTopicsRegistrySet",
+      "signature": "ClaimTopicsRegistrySet(address)"
+    },
+    {
+      "name": "IdentityStorageSet",
+      "signature": "IdentityStorageSet(address)"
+    },
+    {
+      "name": "TrustedIssuersRegistrySet",
+      "signature": "TrustedIssuersRegistrySet(address)"
+    },
+    {
+      "name": "IdentityRegistered",
+      "signature": "IdentityRegistered(address,IIdentity)"
+    },
+    {
+      "name": "IdentityRemoved",
+      "signature": "IdentityRemoved(address,IIdentity)"
+    },
+    {
+      "name": "IdentityUpdated",
+      "signature": "IdentityUpdated(IIdentity,IIdentity)"
+    },
+    {
+      "name": "CountryUpdated",
+      "signature": "CountryUpdated(address,uint16)"
+    },
+    {
+      "name": "IdentityStored",
+      "signature": "IdentityStored(address,IIdentity)"
+    },
+    {
+      "name": "IdentityUnstored",
+      "signature": "IdentityUnstored(address,IIdentity)"
+    },
+    {
+      "name": "IdentityModified",
+      "signature": "IdentityModified(IIdentity,IIdentity)"
+    },
+    {
+      "name": "CountryModified",
+      "signature": "CountryModified(address,uint16)"
+    },
+    {
+      "name": "IdentityRegistryBound",
+      "signature": "IdentityRegistryBound(address)"
+    },
+    {
+      "name": "IdentityRegistryUnbound",
+      "signature": "IdentityRegistryUnbound(address)"
+    },
+    {
+      "name": "TokenBound",
+      "signature": "TokenBound(address)"
+    },
+    {
+      "name": "TokenUnbound",
+      "signature": "TokenUnbound(address)"
+    },
+    {
+      "name": "TrustedIssuerAdded",
+      "signature": "TrustedIssuerAdded(IClaimIssuer,uint[])"
+    },
+    {
+      "name": "TrustedIssuerRemoved",
+      "signature": "TrustedIssuerRemoved(IClaimIssuer)"
+    },
+    {
+      "name": "ClaimTopicsUpdated",
+      "signature": "ClaimTopicsUpdated(IClaimIssuer,uint[])"
+    },
+    {
+      "name": "ClaimTopicAdded",
+      "signature": "ClaimTopicAdded(uint256)"
+    },
+    {
+      "name": "ClaimTopicRemoved",
+      "signature": "ClaimTopicRemoved(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addAgent",
+      "operation_type": "contract_interaction",
+      "signature": "addAgent(address)"
+    },
+    {
+      "name": "removeAgent",
+      "operation_type": "contract_interaction",
+      "signature": "removeAgent(address)"
+    },
+    {
+      "name": "isAgent",
+      "operation_type": "contract_interaction",
+      "signature": "isAgent(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "onchainID",
+      "operation_type": "contract_interaction",
+      "signature": "onchainID()"
+    },
+    {
+      "name": "version",
+      "operation_type": "contract_interaction",
+      "signature": "version()"
+    },
+    {
+      "name": "identityRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "identityRegistry()"
+    },
+    {
+      "name": "compliance",
+      "operation_type": "contract_interaction",
+      "signature": "compliance()"
+    },
+    {
+      "name": "paused",
+      "operation_type": "contract_interaction",
+      "signature": "paused()"
+    },
+    {
+      "name": "isFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "isFrozen(address)"
+    },
+    {
+      "name": "getFrozenTokens",
+      "operation_type": "contract_interaction",
+      "signature": "getFrozenTokens(address)"
+    },
+    {
+      "name": "setName",
+      "operation_type": "contract_interaction",
+      "signature": "setName(string)"
+    },
+    {
+      "name": "setSymbol",
+      "operation_type": "contract_interaction",
+      "signature": "setSymbol(string)"
+    },
+    {
+      "name": "setOnchainID",
+      "operation_type": "contract_interaction",
+      "signature": "setOnchainID(address)"
+    },
+    {
+      "name": "pause",
+      "operation_type": "contract_interaction",
+      "signature": "pause()"
+    },
+    {
+      "name": "unpause",
+      "operation_type": "contract_interaction",
+      "signature": "unpause()"
+    },
+    {
+      "name": "setAddressFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "setAddressFrozen(address,bool)"
+    },
+    {
+      "name": "freezePartialTokens",
+      "operation_type": "contract_interaction",
+      "signature": "freezePartialTokens(address,uint256)"
+    },
+    {
+      "name": "unfreezePartialTokens",
+      "operation_type": "contract_interaction",
+      "signature": "unfreezePartialTokens(address,uint256)"
+    },
+    {
+      "name": "setIdentityRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "setIdentityRegistry(address)"
+    },
+    {
+      "name": "setCompliance",
+      "operation_type": "contract_interaction",
+      "signature": "setCompliance(address)"
+    },
+    {
+      "name": "forcedTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "forcedTransfer(address,address,uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256)"
+    },
+    {
+      "name": "recoveryAddress",
+      "operation_type": "contract_interaction",
+      "signature": "recoveryAddress(address,address,address)"
+    },
+    {
+      "name": "batchTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "batchTransfer(address[],uint256[])"
+    },
+    {
+      "name": "batchForcedTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "batchForcedTransfer(address[],address[],uint256[])"
+    },
+    {
+      "name": "batchMint",
+      "operation_type": "contract_interaction",
+      "signature": "batchMint(address[],uint256[])"
+    },
+    {
+      "name": "batchBurn",
+      "operation_type": "contract_interaction",
+      "signature": "batchBurn(address[],uint256[])"
+    },
+    {
+      "name": "batchSetAddressFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "batchSetAddressFrozen(address[],bool[])"
+    },
+    {
+      "name": "batchFreezePartialTokens",
+      "operation_type": "contract_interaction",
+      "signature": "batchFreezePartialTokens(address[],uint256[])"
+    },
+    {
+      "name": "batchUnfreezePartialTokens",
+      "operation_type": "contract_interaction",
+      "signature": "batchUnfreezePartialTokens(address[],uint256[])"
+    },
+    {
+      "name": "identityStorage",
+      "operation_type": "contract_interaction",
+      "signature": "identityStorage()"
+    },
+    {
+      "name": "issuersRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "issuersRegistry()"
+    },
+    {
+      "name": "topicsRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "topicsRegistry()"
+    },
+    {
+      "name": "setIdentityRegistryStorage",
+      "operation_type": "contract_interaction",
+      "signature": "setIdentityRegistryStorage(address)"
+    },
+    {
+      "name": "setClaimTopicsRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "setClaimTopicsRegistry(address)"
+    },
+    {
+      "name": "setTrustedIssuersRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "setTrustedIssuersRegistry(address)"
+    },
+    {
+      "name": "registerIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "registerIdentity(address,IIdentity,uint16)"
+    },
+    {
+      "name": "deleteIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "deleteIdentity(address)"
+    },
+    {
+      "name": "updateCountry",
+      "operation_type": "contract_interaction",
+      "signature": "updateCountry(address,uint16)"
+    },
+    {
+      "name": "updateIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "updateIdentity(address,IIdentity)"
+    },
+    {
+      "name": "batchRegisterIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "batchRegisterIdentity(address[],IIdentity[],uint16[])"
+    },
+    {
+      "name": "contains",
+      "operation_type": "contract_interaction",
+      "signature": "contains(address)"
+    },
+    {
+      "name": "isVerified",
+      "operation_type": "contract_interaction",
+      "signature": "isVerified(address)"
+    },
+    {
+      "name": "identity",
+      "operation_type": "contract_interaction",
+      "signature": "identity(address)"
+    },
+    {
+      "name": "investorCountry",
+      "operation_type": "contract_interaction",
+      "signature": "investorCountry(address)"
+    },
+    {
+      "name": "storedIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "storedIdentity(address)"
+    },
+    {
+      "name": "storedInvestorCountry",
+      "operation_type": "contract_interaction",
+      "signature": "storedInvestorCountry(address)"
+    },
+    {
+      "name": "addIdentityToStorage",
+      "operation_type": "contract_interaction",
+      "signature": "addIdentityToStorage(address,IIdentity,uint16)"
+    },
+    {
+      "name": "removeIdentityFromStorage",
+      "operation_type": "contract_interaction",
+      "signature": "removeIdentityFromStorage(address)"
+    },
+    {
+      "name": "modifyStoredInvestorCountry",
+      "operation_type": "contract_interaction",
+      "signature": "modifyStoredInvestorCountry(address,uint16)"
+    },
+    {
+      "name": "modifyStoredIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "modifyStoredIdentity(address,IIdentity)"
+    },
+    {
+      "name": "bindIdentityRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "bindIdentityRegistry(address)"
+    },
+    {
+      "name": "unbindIdentityRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "unbindIdentityRegistry(address)"
+    },
+    {
+      "name": "linkedIdentityRegistries",
+      "operation_type": "contract_interaction",
+      "signature": "linkedIdentityRegistries()"
+    },
+    {
+      "name": "bindToken",
+      "operation_type": "contract_interaction",
+      "signature": "bindToken(address)"
+    },
+    {
+      "name": "unbindToken",
+      "operation_type": "contract_interaction",
+      "signature": "unbindToken(address)"
+    },
+    {
+      "name": "isTokenBound",
+      "operation_type": "contract_interaction",
+      "signature": "isTokenBound(address)"
+    },
+    {
+      "name": "getTokenBound",
+      "operation_type": "contract_interaction",
+      "signature": "getTokenBound()"
+    },
+    {
+      "name": "canTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "canTransfer(address,address,uint256)"
+    },
+    {
+      "name": "transferred",
+      "operation_type": "contract_interaction",
+      "signature": "transferred(address,address,uint256)"
+    },
+    {
+      "name": "created",
+      "operation_type": "contract_interaction",
+      "signature": "created(address,uint256)"
+    },
+    {
+      "name": "destroyed",
+      "operation_type": "contract_interaction",
+      "signature": "destroyed(address,uint256)"
+    },
+    {
+      "name": "addTrustedIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "addTrustedIssuer(IClaimIssuer,uint[])"
+    },
+    {
+      "name": "removeTrustedIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "removeTrustedIssuer(IClaimIssuer)"
+    },
+    {
+      "name": "updateIssuerClaimTopics",
+      "operation_type": "contract_interaction",
+      "signature": "updateIssuerClaimTopics(IClaimIssuer,uint[])"
+    },
+    {
+      "name": "getTrustedIssuers",
+      "operation_type": "contract_interaction",
+      "signature": "getTrustedIssuers()"
+    },
+    {
+      "name": "isTrustedIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "isTrustedIssuer(address)"
+    },
+    {
+      "name": "getTrustedIssuerClaimTopics",
+      "operation_type": "contract_interaction",
+      "signature": "getTrustedIssuerClaimTopics(IClaimIssuer)"
+    },
+    {
+      "name": "getTrustedIssuersForClaimTopic",
+      "operation_type": "contract_interaction",
+      "signature": "getTrustedIssuersForClaimTopic(uint256)"
+    },
+    {
+      "name": "hasClaimTopic",
+      "operation_type": "contract_interaction",
+      "signature": "hasClaimTopic(address,uint)"
+    },
+    {
+      "name": "addClaimTopic",
+      "operation_type": "contract_interaction",
+      "signature": "addClaimTopic(uint256)"
+    },
+    {
+      "name": "removeClaimTopic",
+      "operation_type": "contract_interaction",
+      "signature": "removeClaimTopic(uint256)"
+    },
+    {
+      "name": "getClaimTopics",
+      "operation_type": "contract_interaction",
+      "signature": "getClaimTopics()"
+    }
+  ],
+  "id": "ERC3643",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3643",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3643.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The T-REX token is an institutional grade security token standard. This standard provides a library of interfaces for the management and compliant transfer of security tokens, using an automated onchain validator system leveraging onchain identities for eligibility checks. The standard defines several interfaces that are described hereunder: - Token - Identity Registry - Identity Registry Storage - Compliance - Trusted Issuers Registry - Claim Topics Registry",
+  "title": "T-REX - Token for Regulated EXchanges"
+}

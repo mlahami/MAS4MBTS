@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Calculation",
+  "cwe": "CWE-682",
+  "description": "Using mixed rounding strategies (floor vs. ceil vs. truncation) across mint/burn/withdraw logic causes value drift. Attackers can cycle operations to accumulate dust gains or trigger unfair liquidations due to asymmetry.",
+  "id": "VULN-OWASP-SCWE-124",
+  "name": "Inconsistent Rounding Direction in Financial Math",
+  "owasp": "SCWE-124",
+  "remediation": "- Define and document a single rounding direction per invariant (e.g., always round in favor of the protocol or user). - Centralize math helpers and reuse them across all financial paths. - Add property-based tests to ensure invariant preservation under rounding.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-124.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

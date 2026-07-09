@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4804",
+  "erc": "ERC-4804",
+  "events": [],
+  "functions": [],
+  "id": "ERC4804",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4804",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4804.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard translates an RFC 2396 URI like `web3://uniswap.eth/` to an EVM message such as: ``` EVMMessage { To: 0xaabbccddee.... // where uniswap.eth's address registered at ENS Calldata: 0x ... } ```",
+  "title": "Web3 URL to EVM Call Message Translation"
+}

@@ -1,0 +1,84 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2020",
+  "erc": "ERC-2020",
+  "events": [],
+  "functions": [
+    {
+      "name": "currency",
+      "operation_type": "contract_interaction",
+      "signature": "currency()"
+    },
+    {
+      "name": "version",
+      "operation_type": "contract_interaction",
+      "signature": "version()"
+    },
+    {
+      "name": "availableFunds",
+      "operation_type": "contract_interaction",
+      "signature": "availableFunds(address)"
+    },
+    {
+      "name": "checkTransferAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkTransferAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkApproveAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkApproveAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkHoldAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkHoldAllowed(address,address,address,uint256)"
+    },
+    {
+      "name": "checkAuthorizeHoldOperatorAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkAuthorizeHoldOperatorAllowed(address,address)"
+    },
+    {
+      "name": "checkOrderTransferAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkOrderTransferAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkAuthorizeClearableTransferOperatorAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkAuthorizeClearableTransferOperatorAllowed(address,address)"
+    },
+    {
+      "name": "checkOrderFundAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkOrderFundAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkAuthorizeFundOperatorAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkAuthorizeFundOperatorAllowed(address,address)"
+    },
+    {
+      "name": "checkOrderPayoutAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkOrderPayoutAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkAuthorizePayoutOperatorAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkAuthorizePayoutOperatorAllowed(address,address)"
+    }
+  ],
+  "id": "ERC2020",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2020",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2020.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Financial institutions work today with electronic systems, which hold account balances in databases on core banking systems. In order for an institution to be allowed to maintain records of client balances segregated and available for clients, such institution must be regulated under a known legal framework and must possess a license to do so. Maintaining a license under regulatory supervision entails ensuring compliance (i.e. performing KYC on all clients and ensuring good AML practices before allowing transactions) and demonstrating technical and operational solvency through periodic audits, so clients depositing funds with the institution can rest assured that their money is safe.",
+  "title": "E-Money Standard Token"
+}

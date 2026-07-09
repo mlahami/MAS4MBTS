@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6381",
+  "erc": "ERC-6381",
+  "events": [
+    {
+      "name": "Emoted",
+      "signature": "Emoted(address,address,uint256,bytes4,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "emoteCountOf",
+      "operation_type": "contract_interaction",
+      "signature": "emoteCountOf(address,uint256,bytes4)"
+    },
+    {
+      "name": "bulkEmoteCountOf",
+      "operation_type": "contract_interaction",
+      "signature": "bulkEmoteCountOf(address[],uint256[],bytes4[])"
+    },
+    {
+      "name": "hasEmoterUsedEmote",
+      "operation_type": "contract_interaction",
+      "signature": "hasEmoterUsedEmote(address,address,uint256,bytes4)"
+    },
+    {
+      "name": "haveEmotersUsedEmotes",
+      "operation_type": "contract_interaction",
+      "signature": "haveEmotersUsedEmotes(address[],address[],uint256[],bytes4[])"
+    },
+    {
+      "name": "prepareMessageToPresignEmote",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignEmote(address,uint256,bytes4,bool,uint256)"
+    },
+    {
+      "name": "bulkPrepareMessagesToPresignEmote",
+      "operation_type": "contract_interaction",
+      "signature": "bulkPrepareMessagesToPresignEmote(address[],uint256[],bytes4[],bool[],uint256[])"
+    },
+    {
+      "name": "emote",
+      "operation_type": "contract_interaction",
+      "signature": "emote(address,uint256,bytes4,bool)"
+    },
+    {
+      "name": "bulkEmote",
+      "operation_type": "contract_interaction",
+      "signature": "bulkEmote(address[],uint256[],bytes4[],bool[])"
+    },
+    {
+      "name": "presignedEmote",
+      "operation_type": "contract_interaction",
+      "signature": "presignedEmote(address,address,uint256,bytes4,bool,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "bulkPresignedEmote",
+      "operation_type": "contract_interaction",
+      "signature": "bulkPresignedEmote(address[],address[],uint256[],bytes4[],bool[],uint256[],uint8[],bytes32[],bytes32[])"
+    }
+  ],
+  "id": "ERC6381",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6381",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6381.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The Public Non-Fungible Token Emote Repository standard provides an enhanced interactive utility for [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) by allowing NFTs to be emoted at. This proposal introduces the ability to react to NFTs using Unicode standardized emoji in a public non-gated repository smart contract that is accessible at the same address in all of the networks.",
+  "title": "Public Non-Fungible Token Emote Repository"
+}

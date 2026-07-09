@@ -1,0 +1,25 @@
+{
+  "applicable_to": [
+    "ERC-20",
+    "ERC-721",
+    "ERC-1155",
+    "ERC-4626"
+  ],
+  "countermeasure": "Apply checks-effects-interactions and/or a reentrancy guard.",
+  "cwe": "CWE-841",
+  "description": "A callback or external value transfer allows re-entry before state is finalized.",
+  "id": "TP-REENTRANCY-001",
+  "name": "Reentrancy during value or token transfer",
+  "owasp": "Smart Contract Reentrancy",
+  "related_entry_points": [
+    "withdraw",
+    "redeem",
+    "safeTransferFrom",
+    "safeBatchTransferFrom"
+  ],
+  "security_property": "State must be updated before external calls that may transfer control.",
+  "stride": "Tampering",
+  "swc": "SWC-107",
+  "test_objective": "Verify that a malicious receiver cannot re-enter and consume state twice.",
+  "vulnerability": "Reentrancy"
+}

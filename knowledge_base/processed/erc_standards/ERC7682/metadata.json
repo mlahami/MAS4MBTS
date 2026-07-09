@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7682",
+  "erc": "ERC-7682",
+  "events": [],
+  "functions": [],
+  "id": "ERC7682",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7682",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7682.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "An [EIP-5792](./eip-5792.md) compliant capability that allows wallets to indicate to apps that they have access to funds beyond those that can be accounted for by looking up balances onchain given the wallet's address. A wallet's ability to access auxiliary funds is communicated to apps as part of its response to an [EIP-5792](./eip-5792.md) `wallet_getCapabilities` request. The following standard does not specify the source of these auxiliary funds, but some examples are: - Funds from offchain sources that can be onramped and used just-in-time - Wallets that manage many accounts, where assets across those accounts can be transfered to the required account before submitting a transaction requested by an app",
+  "title": "Auxiliary Funds Capability"
+}

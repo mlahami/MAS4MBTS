@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7007",
+  "erc": "ERC-7007",
+  "events": [
+    {
+      "name": "AigcData",
+      "signature": "AigcData(uint256,bytes,bytes,bytes)"
+    },
+    {
+      "name": "Update",
+      "signature": "Update(uint256,bytes,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addAigcData",
+      "operation_type": "contract_interaction",
+      "signature": "addAigcData(uint256,bytes,bytes,bytes)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(bytes,bytes,bytes)"
+    },
+    {
+      "name": "tokenId",
+      "operation_type": "contract_interaction",
+      "signature": "tokenId(bytes)"
+    },
+    {
+      "name": "prompt",
+      "operation_type": "contract_interaction",
+      "signature": "prompt(uint256)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(bytes,bytes)"
+    }
+  ],
+  "id": "ERC7007",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7007",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7007.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The verifiable AI-generated content (AIGC) non-fungible token (NFT) standard is an extension of the [ERC-721](./eip-721.md) token standard for AIGC. It proposes a set of interfaces for basic interactions and enumerable interactions for AIGC-NFTs. The standard includes an `addAigcData` and `verify` function interface, a new `AigcData` event, optional `Enumerable` and `Updatable` extensions, and a JSON schema for AIGC-NFT metadata. Additionally, it incorporates Zero-Knowledge Machine Learning (zkML) and Optimistic Machine Learning (opML) capabilities to enable verification of AIGC data correctness. In this standard, the `tokenId` is indexed by the `prompt`.",
+  "title": "Verifiable AI-Generated Content Token"
+}

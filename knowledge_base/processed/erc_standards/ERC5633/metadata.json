@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5633",
+  "erc": "ERC-5633",
+  "events": [
+    {
+      "name": "Soulbound",
+      "signature": "Soulbound(uint256,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isSoulbound",
+      "operation_type": "contract_interaction",
+      "signature": "isSoulbound(uint256)"
+    }
+  ],
+  "id": "ERC5633",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5633",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5633.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard is an extension of [EIP-1155](./eip-1155.md). It proposes a smart contract interface that can represent any number of soulbound and non-soulbound NFT types. Soulbound is the property of a token that prevents it from being transferred between accounts. This standard allows for each token ID to have its own soulbound property.",
+  "title": "Composable Soulbound NFT, EIP-1155 Extension"
+}

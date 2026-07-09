@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Permission Assignment for Critical Resource",
+  "cwe": "CWE-732",
+  "description": "Unprotected Ether withdrawal occurs when a smart contract allows withdrawal of Ether (ETH) without sufficient access control or proper authorization mechanisms. This vulnerability exposes the contract to unauthorized or malicious users, enabling them to drain funds without any checks on the withdrawal request.",
+  "id": "VULN-OWASP-SCWE-049",
+  "name": "Unprotected Ether Withdrawal",
+  "owasp": "SCWE-049",
+  "remediation": "To prevent this vulnerability, implement strong access control mechanisms like the `onlyOwner` modifier or a more flexible role-based access control (RBAC) system. Ensure that only authorized users (e.g., the contract owner or specific users) can initiate Ether withdrawals. Always verify user permissions before allowing access to critical contract functions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-049.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

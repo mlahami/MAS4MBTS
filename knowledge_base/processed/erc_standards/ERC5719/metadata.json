@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5719",
+  "erc": "ERC-5719",
+  "events": [],
+  "functions": [
+    {
+      "name": "getAlternativeSignature",
+      "operation_type": "contract_interaction",
+      "signature": "getAlternativeSignature(bytes32)"
+    }
+  ],
+  "id": "ERC5719",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5719",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5719.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Smart contract wallet signed messages can become stale, meaning a signature that once was valid could become invalid at any point. Signatures MAY become stale for reasons like: * The internal set of signers changed * The wallet makes signatures expirable * The contract was updated to a new implementation The following standard allows smart contract wallets to expose a URI that clients can use to replace a stale signature with a valid one.",
+  "title": "Signature replacement interface"
+}

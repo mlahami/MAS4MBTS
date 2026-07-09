@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4972",
+  "erc": "ERC-4972",
+  "events": [],
+  "functions": [
+    {
+      "name": "ownedAccount",
+      "operation_type": "contract_interaction",
+      "signature": "ownedAccount(bytes32)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "nameService",
+      "operation_type": "contract_interaction",
+      "signature": "nameService()"
+    }
+  ],
+  "id": "ERC4972",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4972",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4972.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The ERC suggests expanding the capabilities of the name service, such as ENS, by enabling each human-readable identity to be linked to a single smart contract account that can be controlled by the owner of the name identity.",
+  "title": "Name-Owned Account"
+}

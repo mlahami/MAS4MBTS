@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Insufficient protection against front-running refers to vulnerabilities that allow malicious actors to exploit the order of transactions for profit. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of the contract\u2019s logic.",
+  "id": "VULN-OWASP-SCWE-037",
+  "name": "Insufficient Protection Against Front-Running",
+  "owasp": "SCWE-037",
+  "remediation": "- **Use commit-reveal schemes:** Implement commit-reveal mechanisms to hide transaction details until they are finalized. - **Add delays:** Introduce time delays for critical operations to reduce the risk of front-running. - **Test thoroughly:** Conduct extensive testing to ensure front-running protection is effective.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-037.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7730",
+  "erc": "ERC-7730",
+  "events": [],
+  "functions": [
+    {
+      "name": "ABI",
+      "operation_type": "contract_interaction",
+      "signature": "ABI(derived)"
+    },
+    {
+      "name": "signature",
+      "operation_type": "contract_interaction",
+      "signature": "signature(types)"
+    },
+    {
+      "name": "call",
+      "operation_type": "contract_interaction",
+      "signature": "call(for)"
+    },
+    {
+      "name": "myFunction",
+      "operation_type": "contract_interaction",
+      "signature": "myFunction(address,uint256,MyParamType)"
+    }
+  ],
+  "id": "ERC7730",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7730",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7730.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification defines a JSON format carrying additional information required to correctly display structured data for human verification on wallet screens or for machine consumption e.g. by transaction simulation engines. The [ERC-7730](./eip-7730.md) specification enriches type data contained in the ABIs and schemas of structured messages (structures like the calldata of an EVM transaction, an [EIP-712](./eip-712.md) message or an [EIP-4337](./eip-4337.md) User Operation) with additional formatting information and dynamic value interpolation, enabling both human-readable display with contextual intent descriptions and machine-interpretable data processing. For instance, a solidity field containing an amount, encoded as an uint256, can be converted to the right magnitude and appended",
+  "title": "Structured Data Clear Signing Format"
+}

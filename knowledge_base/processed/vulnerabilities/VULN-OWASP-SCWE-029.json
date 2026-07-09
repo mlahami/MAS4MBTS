@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Lack of decentralized oracle sources refers to the reliance on a single oracle for critical data, which can be manipulated or compromised. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of the contract's logic.",
+  "id": "VULN-OWASP-SCWE-029",
+  "name": "Lack of Decentralized Oracle Sources",
+  "owasp": "SCWE-029",
+  "remediation": "- **Use multiple oracles:** Leverage multiple decentralized oracles for critical data. - **Validate inputs:** Ensure all oracle data is properly validated before use. - **Implement fallback mechanisms:** Use fallback oracles in case of failure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-029.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

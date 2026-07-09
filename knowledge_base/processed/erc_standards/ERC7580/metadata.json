@@ -1,0 +1,38 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7580",
+  "erc": "ERC-7580",
+  "events": [
+    {
+      "name": "onTrackStartRecorded",
+      "signature": "onTrackStartRecorded(uint256,address,bytes32)"
+    },
+    {
+      "name": "onTrackEndRecorded",
+      "signature": "onTrackEndRecorded(uint256,address,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "onTrackStart",
+      "operation_type": "contract_interaction",
+      "signature": "onTrackStart(uint256,address,bytes32)"
+    },
+    {
+      "name": "onTrackEnd",
+      "operation_type": "contract_interaction",
+      "signature": "onTrackEnd(uint256,address,bytes32)"
+    }
+  ],
+  "id": "ERC7580",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7580",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7580.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a standard interface for advertisement clients to track user actions in contracts and check corresponding rewards from advertisement protocols. Contracts implementing the interface use events to define a region of interest within a transaction. A Dapp could implement this interface to join an advertisement protocol, which enable projects to fund users for specific actions in a contract. While users could benefit from project funds, dapps would also get proportional rewards once they joined the protocol.",
+  "title": "Advertisement Tracking Interface"
+}

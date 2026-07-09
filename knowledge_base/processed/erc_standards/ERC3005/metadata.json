@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3005",
+  "erc": "ERC-3005",
+  "events": [],
+  "functions": [
+    {
+      "name": "processMetaBatch",
+      "operation_type": "contract_interaction",
+      "signature": "processMetaBatch(address[],address[],uint256[],uint256[],uint256[],uint8[],bytes32[],bytes32[])"
+    },
+    {
+      "name": "nonceOf",
+      "operation_type": "contract_interaction",
+      "signature": "nonceOf(address)"
+    },
+    {
+      "name": "processMetaBatch",
+      "operation_type": "contract_interaction",
+      "signature": "processMetaBatch(...,...)"
+    }
+  ],
+  "id": "ERC3005",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3005",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3005.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP defines a new function called `processMetaBatch()` that extends any fungible token standard, and enables batched meta transactions coming from many senders in one on-chain transaction. The function must be able to receive multiple meta transactions data and process it. This means validating the data and the signature, before proceeding with token transfers based on the data. The function enables senders to make gasless transactions, while reducing the relayer's gas cost due to batching.",
+  "title": "Batched meta transactions"
+}

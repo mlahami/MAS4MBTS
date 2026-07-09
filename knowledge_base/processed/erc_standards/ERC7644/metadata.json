@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7644",
+  "erc": "ERC-7644",
+  "events": [
+    {
+      "name": "NameChanged",
+      "signature": "NameChanged(uint256,bytes32,bytes32,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "nameOf",
+      "operation_type": "contract_interaction",
+      "signature": "nameOf(uint256)"
+    },
+    {
+      "name": "tokenIdOf",
+      "operation_type": "contract_interaction",
+      "signature": "tokenIdOf(bytes32)"
+    },
+    {
+      "name": "setName",
+      "operation_type": "contract_interaction",
+      "signature": "setName(uint256,bytes32,uint256)"
+    },
+    {
+      "name": "nameInfo",
+      "operation_type": "contract_interaction",
+      "signature": "nameInfo(bytes32)"
+    },
+    {
+      "name": "_setTokenName",
+      "operation_type": "contract_interaction",
+      "signature": "_setTokenName(uint256,bytes32,uint256)"
+    }
+  ],
+  "id": "ERC7644",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7644",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7644.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This extension defines an interface that adds a naming mechanism to [ERC-721](./eip-721.md) tokens. It allows each token to have a unique name with a set expiration date, ensuring uniqueness within the current NFT contract. The interface includes functions for assigning, updating, and querying names and their associated tokens, ensuring that names remain unique until they expire. The entity responsible for setting names depends on the specific use case scenario when utilizing this extension.",
+  "title": "ERC-721 Name Registry Extension"
+}

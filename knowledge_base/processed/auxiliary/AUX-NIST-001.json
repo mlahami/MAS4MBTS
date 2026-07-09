@@ -1,0 +1,41 @@
+{
+  "applies_to": [
+    "access control",
+    "audit logging",
+    "configuration management",
+    "incident response",
+    "monitoring",
+    "risk assessment"
+  ],
+  "description": "Auxiliary control catalog used to enrich generated countermeasures with governance, monitoring, access control, audit, and configuration-management guidance.",
+  "id": "AUX-NIST-001",
+  "kind": "control_mapping",
+  "mappings": [
+    {
+      "control_area": "Access Control",
+      "threat_family": "Unauthorized privileged action",
+      "use_in_etm": "Enrich countermeasures with least privilege, role separation, and privileged action review."
+    },
+    {
+      "control_area": "System and Information Integrity",
+      "threat_family": "Oracle manipulation",
+      "use_in_etm": "Enrich countermeasures with monitoring, validation, and integrity checks on external data sources."
+    },
+    {
+      "control_area": "Risk Assessment and Audit",
+      "threat_family": "Governance manipulation",
+      "use_in_etm": "Enrich countermeasures with auditability, approval workflows, and change-management controls."
+    }
+  ],
+  "name": "NIST SP 800-53 mitigation guidance",
+  "role": "mitigation_guidance",
+  "source": {
+    "source_id": "nist_sp_800_53",
+    "source_url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+  },
+  "usage_guidelines": [
+    "Use NIST as mitigation guidance, not as an ERC vulnerability source.",
+    "Attach NIST control areas to countermeasures when useful for reporting.",
+    "Keep smart-contract-specific mitigations from OWASP, EthTrust, and OpenZeppelin as primary technical controls."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7586",
+  "erc": "ERC-7586",
+  "events": [
+    {
+      "name": "Swap",
+      "signature": "Swap(uint256,address)"
+    },
+    {
+      "name": "TerminateSwap",
+      "signature": "TerminateSwap(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "fixedRatePayer",
+      "operation_type": "contract_interaction",
+      "signature": "fixedRatePayer()"
+    },
+    {
+      "name": "floatingRatePayer",
+      "operation_type": "contract_interaction",
+      "signature": "floatingRatePayer()"
+    },
+    {
+      "name": "ratesDecimals",
+      "operation_type": "contract_interaction",
+      "signature": "ratesDecimals()"
+    },
+    {
+      "name": "swapRate",
+      "operation_type": "contract_interaction",
+      "signature": "swapRate()"
+    },
+    {
+      "name": "spread",
+      "operation_type": "contract_interaction",
+      "signature": "spread()"
+    },
+    {
+      "name": "dayCountBasis",
+      "operation_type": "contract_interaction",
+      "signature": "dayCountBasis()"
+    },
+    {
+      "name": "notionalCurrency",
+      "operation_type": "contract_interaction",
+      "signature": "notionalCurrency()"
+    },
+    {
+      "name": "paymentAssets",
+      "operation_type": "contract_interaction",
+      "signature": "paymentAssets()"
+    },
+    {
+      "name": "notionalAmount",
+      "operation_type": "contract_interaction",
+      "signature": "notionalAmount()"
+    },
+    {
+      "name": "paymentFrequency",
+      "operation_type": "contract_interaction",
+      "signature": "paymentFrequency()"
+    },
+    {
+      "name": "fixPaymentDates",
+      "operation_type": "contract_interaction",
+      "signature": "fixPaymentDates()"
+    },
+    {
+      "name": "floatingPaymentDates",
+      "operation_type": "contract_interaction",
+      "signature": "floatingPaymentDates()"
+    },
+    {
+      "name": "startingDate",
+      "operation_type": "contract_interaction",
+      "signature": "startingDate()"
+    },
+    {
+      "name": "maturityDate",
+      "operation_type": "contract_interaction",
+      "signature": "maturityDate()"
+    },
+    {
+      "name": "benchmark",
+      "operation_type": "contract_interaction",
+      "signature": "benchmark()"
+    },
+    {
+      "name": "oracleContractsForBenchmark",
+      "operation_type": "contract_interaction",
+      "signature": "oracleContractsForBenchmark()"
+    },
+    {
+      "name": "swap",
+      "operation_type": "contract_interaction",
+      "signature": "swap()"
+    },
+    {
+      "name": "terminateSwap",
+      "operation_type": "contract_interaction",
+      "signature": "terminateSwap()"
+    }
+  ],
+  "id": "ERC7586",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7586",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7586.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal introduces a standardized framework for on-chain interest rate swaps. The proposed standard aims to facilitate the seamless exchange of fixed and floating interest rate cash flows between parties, providing a foundation for decentralized finance (DeFi) applications.",
+  "title": "Interest Rate Swaps"
+}

@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1844",
+  "erc": "ERC-1844",
+  "events": [],
+  "functions": [
+    {
+      "name": "interfaceImplementer",
+      "operation_type": "contract_interaction",
+      "signature": "interfaceImplementer(bytes32,bytes4)"
+    }
+  ],
+  "id": "ERC1844",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1844",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1844.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP specifies a method for exposing interfaces associated with an ENS name or an address (typically a contract address) and allowing applications to discover those interfaces and interact with them. Interfaces can be implemented either by the target contract (if any) or by any other contract.",
+  "title": "ENS Interface Discovery"
+}

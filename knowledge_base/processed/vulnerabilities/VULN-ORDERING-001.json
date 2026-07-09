@@ -1,0 +1,14 @@
+{
+  "category": "Transaction ordering",
+  "cwe": "CWE-362",
+  "description": "A state update can be exploited by front-running or transaction ordering.",
+  "id": "VULN-ORDERING-001",
+  "name": "Transaction-ordering dependent allowance update",
+  "owasp": "Smart Contract Transaction Order Dependence",
+  "severity": "medium",
+  "source": {
+    "note": "Historical SWC label complemented by OWASP/CWE.",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-114"
+}

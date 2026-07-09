@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6662",
+  "erc": "ERC-6662",
+  "events": [],
+  "functions": [
+    {
+      "name": "getAuthenticationInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getAuthenticationInfo()"
+    }
+  ],
+  "id": "ERC6662",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6662",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6662.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a new **IAccountMetadata** interface as an extension for [ERC-4337](./eip-4337.md) to store authentication data on-chain to support a more user-friendly authentication model.",
+  "title": "AA Account Metadata For Authentication"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Type Conversion or Cast",
+  "cwe": "CWE-704",
+  "description": "Insecure use of inline assembly refers to vulnerabilities that arise when low-level assembly code is used improperly. This can lead to: - Incorrect type conversions or casts. - Exploitation of vulnerabilities in low-level operations. - Loss of funds or data.",
+  "id": "VULN-OWASP-SCWE-039",
+  "name": "Insecure Use of Inline Assembly",
+  "owasp": "SCWE-039",
+  "remediation": "- **Avoid inline assembly:** Use high-level Solidity code whenever possible. - **Validate inputs:** Ensure all inputs to assembly code are properly validated. - **Test thoroughly:** Conduct extensive testing to ensure assembly code is secure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-039.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

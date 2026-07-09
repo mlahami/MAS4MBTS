@@ -1,0 +1,113 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5773",
+  "erc": "ERC-5773",
+  "events": [
+    {
+      "name": "AssetSet",
+      "signature": "AssetSet(uint64)"
+    },
+    {
+      "name": "AssetAddedToTokens",
+      "signature": "AssetAddedToTokens(uint256[],uint64,uint64)"
+    },
+    {
+      "name": "AssetAccepted",
+      "signature": "AssetAccepted(uint256,uint64,uint64)"
+    },
+    {
+      "name": "AssetRejected",
+      "signature": "AssetRejected(uint256,uint64)"
+    },
+    {
+      "name": "AssetPrioritySet",
+      "signature": "AssetPrioritySet(uint256)"
+    },
+    {
+      "name": "ApprovalForAssets",
+      "signature": "ApprovalForAssets(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAllForAssets",
+      "signature": "ApprovalForAllForAssets(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "acceptAsset",
+      "operation_type": "contract_interaction",
+      "signature": "acceptAsset(uint256,uint256,uint64)"
+    },
+    {
+      "name": "rejectAsset",
+      "operation_type": "contract_interaction",
+      "signature": "rejectAsset(uint256,uint256,uint64)"
+    },
+    {
+      "name": "rejectAllAssets",
+      "operation_type": "contract_interaction",
+      "signature": "rejectAllAssets(uint256,uint256)"
+    },
+    {
+      "name": "setPriority",
+      "operation_type": "contract_interaction",
+      "signature": "setPriority(uint256,uint64[])"
+    },
+    {
+      "name": "getActiveAssets",
+      "operation_type": "contract_interaction",
+      "signature": "getActiveAssets(uint256)"
+    },
+    {
+      "name": "getPendingAssets",
+      "operation_type": "contract_interaction",
+      "signature": "getPendingAssets(uint256)"
+    },
+    {
+      "name": "getActiveAssetPriorities",
+      "operation_type": "contract_interaction",
+      "signature": "getActiveAssetPriorities(uint256)"
+    },
+    {
+      "name": "getAssetReplacements",
+      "operation_type": "contract_interaction",
+      "signature": "getAssetReplacements(uint256,uint64)"
+    },
+    {
+      "name": "getAssetMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "getAssetMetadata(uint256,uint64)"
+    },
+    {
+      "name": "approveForAssets",
+      "operation_type": "contract_interaction",
+      "signature": "approveForAssets(address,uint256)"
+    },
+    {
+      "name": "getApprovedForAssets",
+      "operation_type": "contract_interaction",
+      "signature": "getApprovedForAssets(uint256)"
+    },
+    {
+      "name": "setApprovalForAllForAssets",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalForAllForAssets(address,bool)"
+    },
+    {
+      "name": "isApprovedForAllForAssets",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAllForAssets(address,address)"
+    }
+  ],
+  "id": "ERC5773",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5773",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5773.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The Multi-Asset NFT standard allows for the construction of a new primitive: context-dependent output of information per single NFT. The context-dependent output of information means that the asset in an appropriate format is displayed based on how the token is being accessed. I.e. if the token is being opened in an e-book reader, the PDF asset is displayed, if the token is opened in the marketplace, the PNG or the SVG asset is displayed, if the token is accessed from within a game, the 3D model asset is accessed and if the token is accessed by the (Internet of Things) IoT hub, the asset providing the necessary addressing and specification information is accessed. An NFT can have multiple assets (outputs), which can be any kind of file to be served to the consumer, and orders them by prior",
+  "title": "Context-Dependent Multi-Asset Tokens"
+}

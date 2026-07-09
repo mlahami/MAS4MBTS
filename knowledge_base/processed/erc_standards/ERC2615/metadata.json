@@ -1,0 +1,241 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2615",
+  "erc": "ERC-2615",
+  "events": [
+    {
+      "name": "TransferUser",
+      "signature": "TransferUser(address,address,uint256,address)"
+    },
+    {
+      "name": "ApprovalForUser",
+      "signature": "ApprovalForUser(address,address,uint256)"
+    },
+    {
+      "name": "TransferOwner",
+      "signature": "TransferOwner(address,address,uint256,address)"
+    },
+    {
+      "name": "ApprovalForOwner",
+      "signature": "ApprovalForOwner(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "LienApproval",
+      "signature": "LienApproval(address,uint256)"
+    },
+    {
+      "name": "TenantRightApproval",
+      "signature": "TenantRightApproval(address,uint256)"
+    },
+    {
+      "name": "LienSet",
+      "signature": "LienSet(address,uint256,bool)"
+    },
+    {
+      "name": "TenantRightSet",
+      "signature": "TenantRightSet(address,uint256,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "balanceOfOwner",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfOwner(address)"
+    },
+    {
+      "name": "balanceOfUser",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfUser(address)"
+    },
+    {
+      "name": "userOf",
+      "operation_type": "contract_interaction",
+      "signature": "userOf(uint256)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "safeTransferOwner",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransferOwner(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferOwner",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransferOwner(address,address,uint256,bytes)"
+    },
+    {
+      "name": "safeTransferUser",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransferUser(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferUser",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransferUser(address,address,uint256,bytes)"
+    },
+    {
+      "name": "approveForOwner",
+      "operation_type": "contract_interaction",
+      "signature": "approveForOwner(address,uint256)"
+    },
+    {
+      "name": "getApprovedForOwner",
+      "operation_type": "contract_interaction",
+      "signature": "getApprovedForOwner(uint256)"
+    },
+    {
+      "name": "approveForUser",
+      "operation_type": "contract_interaction",
+      "signature": "approveForUser(address,uint256)"
+    },
+    {
+      "name": "getApprovedForUser",
+      "operation_type": "contract_interaction",
+      "signature": "getApprovedForUser(uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "approveLien",
+      "operation_type": "contract_interaction",
+      "signature": "approveLien(address,uint256)"
+    },
+    {
+      "name": "getApprovedLien",
+      "operation_type": "contract_interaction",
+      "signature": "getApprovedLien(uint256)"
+    },
+    {
+      "name": "setLien",
+      "operation_type": "contract_interaction",
+      "signature": "setLien(uint256)"
+    },
+    {
+      "name": "getCurrentLien",
+      "operation_type": "contract_interaction",
+      "signature": "getCurrentLien(uint256)"
+    },
+    {
+      "name": "revokeLien",
+      "operation_type": "contract_interaction",
+      "signature": "revokeLien(uint256)"
+    },
+    {
+      "name": "approveTenantRight",
+      "operation_type": "contract_interaction",
+      "signature": "approveTenantRight(address,uint256)"
+    },
+    {
+      "name": "getApprovedTenantRight",
+      "operation_type": "contract_interaction",
+      "signature": "getApprovedTenantRight(uint256)"
+    },
+    {
+      "name": "setTenantRight",
+      "operation_type": "contract_interaction",
+      "signature": "setTenantRight(uint256)"
+    },
+    {
+      "name": "getCurrentTenantRight",
+      "operation_type": "contract_interaction",
+      "signature": "getCurrentTenantRight(uint256)"
+    },
+    {
+      "name": "revokeTenantRight",
+      "operation_type": "contract_interaction",
+      "signature": "revokeTenantRight(uint256)"
+    },
+    {
+      "name": "onERCXReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onERCXReceived(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "totalNumberOfItems",
+      "operation_type": "contract_interaction",
+      "signature": "totalNumberOfItems()"
+    },
+    {
+      "name": "itemOfOwnerByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "itemOfOwnerByIndex(address,uint256,uint256)"
+    },
+    {
+      "name": "itemByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "itemByIndex(uint256)"
+    },
+    {
+      "name": "itemURI",
+      "operation_type": "contract_interaction",
+      "signature": "itemURI(uint256)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    }
+  ],
+  "id": "ERC2615",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2615",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2615.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard is an extension of ERC721. It proposes additional roles, the right of tenants to enable rentals, and the right of lien. With ERC2615, NFT owners will be able to rent out their NFTs and take out a mortgage by collateralizing their NFTs. For example, this standard can apply to: - Virtual items (in-game assets, virtual artwork, etc.) - Physical items (houses, automobiles, etc.) - Intellectual property rights - DAO membership tokens NFT developers are also able to easily integrate ERC2615 since it is fully backwards-compatible with the ERC721 standard. One notable point is that the person who has the right to use an application is not the owner but the user (i.e. tenant). Application developers must implement this specification into their applications.",
+  "title": "Non-Fungible Token with mortgage and rental functions"
+}

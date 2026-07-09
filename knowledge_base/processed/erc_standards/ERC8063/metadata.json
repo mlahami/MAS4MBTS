@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8063",
+  "erc": "ERC-8063",
+  "events": [],
+  "functions": [
+    {
+      "name": "isMember",
+      "operation_type": "contract_interaction",
+      "signature": "isMember(address,uint256)"
+    },
+    {
+      "name": "getDiscount",
+      "operation_type": "contract_interaction",
+      "signature": "getDiscount(address)"
+    },
+    {
+      "name": "isMember",
+      "operation_type": "contract_interaction",
+      "signature": "isMember(address)"
+    }
+  ],
+  "id": "ERC8063",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8063",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8063.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal defines a \"Group\" as an [ERC-20](./eip-20.md) token where token balance represents membership level. Groups are standard ERC-20 tokens with the semantic interpretation that holding tokens means membership in the group. Unlike binary membership, this supports threshold-based membership: holding more tokens grants higher membership tiers or privileges. By being pure ERC-20, Groups inherit full compatibility with existing wallets, explorers, and tooling with no additional implementation burden.",
+  "title": "Groups - Membership Tokens"
+}

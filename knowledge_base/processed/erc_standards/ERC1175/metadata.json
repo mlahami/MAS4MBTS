@@ -1,0 +1,255 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1175",
+  "erc": "ERC-1175",
+  "events": [
+    {
+      "name": "Wallet",
+      "signature": "Wallet(address,address)"
+    },
+    {
+      "name": "Shop",
+      "signature": "Shop(address,address,address)"
+    },
+    {
+      "name": "Pay",
+      "signature": "Pay(address,uint256,uint256)"
+    },
+    {
+      "name": "Refund",
+      "signature": "Refund(address,uint256,uint256)"
+    },
+    {
+      "name": "Item",
+      "signature": "Item(uint256,uint256)"
+    },
+    {
+      "name": "Info",
+      "signature": "Info(bytes)"
+    },
+    {
+      "name": "InfoItem",
+      "signature": "InfoItem(uint256,bytes)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint)"
+    },
+    {
+      "name": "Prize",
+      "signature": "Prize(address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createWallet",
+      "operation_type": "contract_interaction",
+      "signature": "createWallet()"
+    },
+    {
+      "name": "isWallet",
+      "operation_type": "contract_interaction",
+      "signature": "isWallet(address)"
+    },
+    {
+      "name": "createShop",
+      "operation_type": "contract_interaction",
+      "signature": "createShop(address)"
+    },
+    {
+      "name": "isShop",
+      "operation_type": "contract_interaction",
+      "signature": "isShop(address)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "withdrawal",
+      "operation_type": "contract_interaction",
+      "signature": "withdrawal(address,uint256)"
+    },
+    {
+      "name": "paySafe",
+      "operation_type": "contract_interaction",
+      "signature": "paySafe(address,uint256)"
+    },
+    {
+      "name": "payUnsafe",
+      "operation_type": "contract_interaction",
+      "signature": "payUnsafe(address,uint256)"
+    },
+    {
+      "name": "payCancel",
+      "operation_type": "contract_interaction",
+      "signature": "payCancel(address,uint256)"
+    },
+    {
+      "name": "refund",
+      "operation_type": "contract_interaction",
+      "signature": "refund(uint256,uint256)"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(uint256)"
+    },
+    {
+      "name": "refund",
+      "operation_type": "contract_interaction",
+      "signature": "refund(address,uint256,uint256)"
+    },
+    {
+      "name": "resister",
+      "operation_type": "contract_interaction",
+      "signature": "resister(uint8,uint256,uint256)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(uint256,uint256,uint256)"
+    },
+    {
+      "name": "price",
+      "operation_type": "contract_interaction",
+      "signature": "price(uint256)"
+    },
+    {
+      "name": "canBuy",
+      "operation_type": "contract_interaction",
+      "signature": "canBuy(address,uint256)"
+    },
+    {
+      "name": "isBuyer",
+      "operation_type": "contract_interaction",
+      "signature": "isBuyer(address,uint256)"
+    },
+    {
+      "name": "info",
+      "operation_type": "contract_interaction",
+      "signature": "info(bytes)"
+    },
+    {
+      "name": "upVote",
+      "operation_type": "contract_interaction",
+      "signature": "upVote()"
+    },
+    {
+      "name": "dnVote",
+      "operation_type": "contract_interaction",
+      "signature": "dnVote()"
+    },
+    {
+      "name": "about",
+      "operation_type": "contract_interaction",
+      "signature": "about()"
+    },
+    {
+      "name": "infoItem",
+      "operation_type": "contract_interaction",
+      "signature": "infoItem(uint256,bytes)"
+    },
+    {
+      "name": "upVoteItem",
+      "operation_type": "contract_interaction",
+      "signature": "upVoteItem(uint256)"
+    },
+    {
+      "name": "dnVoteItem",
+      "operation_type": "contract_interaction",
+      "signature": "dnVoteItem(uint256)"
+    },
+    {
+      "name": "aboutItem",
+      "operation_type": "contract_interaction",
+      "signature": "aboutItem(uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint)"
+    },
+    {
+      "name": "safeAdd",
+      "operation_type": "contract_interaction",
+      "signature": "safeAdd(uint,uint)"
+    },
+    {
+      "name": "safeSub",
+      "operation_type": "contract_interaction",
+      "signature": "safeSub(uint,uint)"
+    },
+    {
+      "name": "safeMul",
+      "operation_type": "contract_interaction",
+      "signature": "safeMul(uint,uint)"
+    },
+    {
+      "name": "safeDiv",
+      "operation_type": "contract_interaction",
+      "signature": "safeDiv(uint,uint)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,address,uint256)"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(address,uint256)"
+    },
+    {
+      "name": "prize",
+      "operation_type": "contract_interaction",
+      "signature": "prize(address,uint256,uint256)"
+    },
+    {
+      "name": "payCancel",
+      "operation_type": "contract_interaction",
+      "signature": "payCancel(uint256)"
+    },
+    {
+      "name": "refund",
+      "operation_type": "contract_interaction",
+      "signature": "refund(address,uint256)"
+    }
+  ],
+  "id": "ERC1175",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1175",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1175.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The mutual trust between the wallet and the shop created by the authenticated contract allows you to pay for and purchase items at a simple process.",
+  "title": "Wallet & shop standard for all tokens (erc20)"
+}

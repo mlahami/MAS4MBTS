@@ -1,0 +1,66 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7406",
+  "erc": "ERC-7406",
+  "events": [
+    {
+      "name": "NewOwner",
+      "signature": "NewOwner(bytes32,bytes32,address)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(bytes32,bytes32,address)"
+    },
+    {
+      "name": "NewResolver",
+      "signature": "NewResolver(bytes32,bytes32,address)"
+    },
+    {
+      "name": "NewNamespace",
+      "signature": "NewNamespace(bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner(bytes32,bytes32)"
+    },
+    {
+      "name": "resolver",
+      "operation_type": "contract_interaction",
+      "signature": "resolver(bytes32,bytes32)"
+    },
+    {
+      "name": "setOwner",
+      "operation_type": "contract_interaction",
+      "signature": "setOwner(bytes32,bytes32,address)"
+    },
+    {
+      "name": "createNamespace",
+      "operation_type": "contract_interaction",
+      "signature": "createNamespace(bytes32)"
+    },
+    {
+      "name": "setResolver",
+      "operation_type": "contract_interaction",
+      "signature": "setResolver(bytes32,bytes32,address)"
+    },
+    {
+      "name": "ERC7406",
+      "operation_type": "contract_interaction",
+      "signature": "ERC7406(address)"
+    }
+  ],
+  "id": "ERC7406",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7406",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7406.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes a universally accepted description for onchain registry entries with support for multi-namespaces, where each entry is structured as a mapping type. The multi-namespace registry enables the storage of a collection of key-value mappings within the blockchain, serving as a definitive source of information with a traceable history of changes. These mapping records act as pointers combined with onchain assets, offering enhanced versatility in various use cases by encapsulating extensive details. The proposed solution introduces a general mapping data structure that is flexible enough to support and be compatible with different situations, providing a more scalable and powerful alternative to current ENS-like registries.",
+  "title": "Multi-Namespace Onchain Registry"
+}

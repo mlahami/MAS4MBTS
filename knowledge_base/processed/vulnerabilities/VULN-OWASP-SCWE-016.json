@@ -1,0 +1,16 @@
+{
+  "category": "Missing Authorization",
+  "cwe": "CWE-862",
+  "description": "Insufficient authorization occurs when the contract does not verify whether a user has the appropriate permissions to perform specific actions. This vulnerability arises when there are missing or improperly implemented authorization checks, allowing unauthorized users to access functions they should not have access to. Common causes of insufficient authorization include: - Missing access control modifiers or incorrect configuration. - Failure to validate roles before granting access to sensitive functions. - Poor handling of user permissions, which could lead to privilege escalation.",
+  "id": "VULN-OWASP-SCWE-016",
+  "name": "Insufficient Authorization Checks",
+  "owasp": "SCWE-016",
+  "remediation": "- **Implement role-based access control (RBAC):** Define roles such as `admin`, `user`, etc., and assign permissions accordingly to ensure only authorized users can call restricted functions. - **Use access control modifiers:** Protect sensitive functions with appropriate modifiers (e.g., `onlyOwner`, `onlyAdmin`) to restrict access. - **Principle of least privilege:** Ensure each user only has access to the minimal set of actions they need to perform their role. - **Thorough testing:** Test for authorization vulnerabilities to ensure all restricted functions are properly secured.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-016.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

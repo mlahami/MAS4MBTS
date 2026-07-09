@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2942",
+  "erc": "ERC-2942",
+  "events": [],
+  "functions": [],
+  "id": "ERC2942",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2942",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2942.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "When interacting with the EthPM ecosystem, users and tooling can benefit from a URI scheme to identify EthPM assets. Being able to specify a package, registry, or release with a single string makes simplifies the steps required to install, publish, or distribute EthPM packages.",
+  "title": "EthPM URI Specification"
+}

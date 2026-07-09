@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6492",
+  "erc": "ERC-6492",
+  "events": [],
+  "functions": [
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    },
+    {
+      "name": "isValidSigImpl",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSigImpl(address,bytes32,bytes,bool,bool)"
+    },
+    {
+      "name": "isValidSigWithSideEffects",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSigWithSideEffects(address,bytes32,bytes)"
+    },
+    {
+      "name": "isValidSig",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSig(address,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC6492",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6492",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6492.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Contracts can sign verifiable messages via [ERC-1271](./eip-1271.md). However, if the contract is not deployed yet, [ERC-1271](./eip-1271.md) verification is impossible, as you can't call the `isValidSignature` function on said contract. We propose a standard way for any contract or off-chain actor to verify whether a signature on behalf of a given counterfactual contract (that is not deployed yet) is valid. This standard way extends [ERC-1271](./eip-1271.md).",
+  "title": "Signature Validation for Predeploy Contracts"
+}

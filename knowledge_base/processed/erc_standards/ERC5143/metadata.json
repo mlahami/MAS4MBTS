@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5143",
+  "erc": "ERC-5143",
+  "events": [],
+  "functions": [
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint256,address,uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint256,address,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256,address,address,uint256)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(uint256,address,address,uint256)"
+    }
+  ],
+  "id": "ERC5143",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5143",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5143.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard extends the [EIP-4626](./eip-4626.md) Tokenized Vault standard with functions dedicated to the safe interaction between EOAs and the vault when price is subject to slippage.",
+  "title": "Slippage Protection for Tokenized Vault"
+}

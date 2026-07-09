@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3722",
+  "erc": "ERC-3722",
+  "events": [
+    {
+      "name": "NewPost",
+      "signature": "NewPost(address,string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "post",
+      "operation_type": "contract_interaction",
+      "signature": "post(string,string)"
+    }
+  ],
+  "id": "ERC3722",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3722",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3722.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A ridiculously simple general purpose social media smart contract. It takes two strings (`content` and `tag`) as parameters and emits those strings, along with msg.sender, as an event. That's it. The EIP also includes a proposed standard json format for a Twitter-like application, where each `post()` call can include multiple posts and/or operations. The assumption being that application state will be constructed off-chain via some indexer.",
+  "title": "Poster"
+}

@@ -1,0 +1,46 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6268",
+  "erc": "ERC-6268",
+  "events": [
+    {
+      "name": "LockedSingle",
+      "signature": "LockedSingle(uint256)"
+    },
+    {
+      "name": "LockedBatch",
+      "signature": "LockedBatch(uint256[])"
+    },
+    {
+      "name": "UnlockedSingle",
+      "signature": "UnlockedSingle(uint256)"
+    },
+    {
+      "name": "UnlockedBatch",
+      "signature": "UnlockedBatch(uint256[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "locked",
+      "operation_type": "contract_interaction",
+      "signature": "locked(uint256)"
+    },
+    {
+      "name": "lockedBatch",
+      "operation_type": "contract_interaction",
+      "signature": "lockedBatch(uint256[])"
+    }
+  ],
+  "id": "ERC6268",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6268",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6268.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP standardizes an interface indicating [EIP-1155](./eip-1155.md)-compatible token non-transferability using [EIP-165](./eip-165.md) feature detection.",
+  "title": "Untransferability Indicator for EIP-1155"
+}

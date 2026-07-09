@@ -1,0 +1,16 @@
+{
+  "category": "Integer Overflow or Wraparound",
+  "cwe": "CWE-190",
+  "description": "Integer overflows and underflows occur when arithmetic operations exceed the bounds of the integer data type, causing the value to \"wrap around\" to an unexpected number.",
+  "id": "VULN-OWASP-SCWE-047",
+  "name": "Integer Overflows and Underflows",
+  "owasp": "SCWE-047",
+  "remediation": "- **Use Solidity 0.8.0 or later:** Leverage the compiler\u2019s built-in overflow and underflow checks. - **Apply SafeMath libraries:** Use libraries like OpenZeppelin\u2019s `SafeMath` for versions before 0.8.0.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-047.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

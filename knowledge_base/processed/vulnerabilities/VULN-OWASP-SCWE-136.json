@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Governance proposals that execute arbitrary call lists without gas limits or batching can exceed block gas, making proposals unexecutable (DoS). Attackers can submit proposals with expensive calls to jam governance or brick queued actions.",
+  "id": "VULN-OWASP-SCWE-136",
+  "name": "Unbounded Proposal Execution Gas",
+  "owasp": "SCWE-136",
+  "remediation": "- Enforce per-call and total gas limits; split proposals into bounded batches. - Allow graceful skipping of failed subcalls with clear status, or pre-validate gas cost. - Add simulation checks before queuing and block proposals that exceed safe gas budgets.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-136.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

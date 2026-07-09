@@ -1,0 +1,102 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7962",
+  "erc": "ERC-7962",
+  "events": [
+    {
+      "name": "KeyHashTransfer721",
+      "signature": "KeyHashTransfer721(uint256,bytes32,bytes32)"
+    },
+    {
+      "name": "KeyHashBurn721",
+      "signature": "KeyHashBurn721(uint256,bytes32)"
+    },
+    {
+      "name": "KeyHashTransfer20",
+      "signature": "KeyHashTransfer20(bytes32,bytes32,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint256,bytes32)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(uint256,bytes32,bytes,bytes,uint256)"
+    },
+    {
+      "name": "destroy",
+      "operation_type": "contract_interaction",
+      "signature": "destroy(uint256,bytes,bytes,uint256)"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(bytes32)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(bytes32,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(bytes32,bytes32,uint256,bytes,bytes,uint256,bytes32)"
+    },
+    {
+      "name": "getNonce",
+      "operation_type": "contract_interaction",
+      "signature": "getNonce(bytes32)"
+    },
+    {
+      "name": "_addressFromUncompressedKey",
+      "operation_type": "contract_interaction",
+      "signature": "_addressFromUncompressedKey(bytes)"
+    }
+  ],
+  "id": "ERC7962",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7962",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7962.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes two token interfaces: **ERC-KeyHash721** for non-fungible tokens (NFTs) and **ERC-KeyHash20** for fungible tokens (similar to [ERC-20](./eip-20.md)). Both of them utilize cryptographic key hashes (\u201ckeyHash\u201d, or `keccak256(key)`) instead of Ethereum addresses to manage ownership. This enhances privacy by authorizing by the public key\u2019s ECDSA signature (address derived from `keccak256(key[1:])`) and matching `keyHash = keccak256(key)`, without storing addresses on\u2011chain. Consequently, it empowers users to conduct transactions using any address they choose. By separating ownership from transaction initiation, these standards allow gas fees to be paid by third parties without relinquishing token control, making them suitable for batch transactions and gas sponsorship. Securit",
+  "title": "Key Hash Based Tokens"
+}

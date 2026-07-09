@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7891",
+  "erc": "ERC-7891",
+  "events": [
+    {
+      "name": "Split",
+      "signature": "Split(uint256,uint256,uint8)"
+    },
+    {
+      "name": "Merged",
+      "signature": "Merged(uint256,uint256[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "mintParent",
+      "operation_type": "contract_interaction",
+      "signature": "mintParent(string)"
+    },
+    {
+      "name": "mintSplit",
+      "operation_type": "contract_interaction",
+      "signature": "mintSplit(uint256,uint8)"
+    },
+    {
+      "name": "mintMerge",
+      "operation_type": "contract_interaction",
+      "signature": "mintMerge(uint256,uint256[])"
+    },
+    {
+      "name": "sharePass",
+      "operation_type": "contract_interaction",
+      "signature": "sharePass(uint256,uint256,uint8)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    }
+  ],
+  "id": "ERC7891",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7891",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7891.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard extends [EIP-721](./eip-721.md) and [EIP-6150](./eip-6150.md). This introduces a structured parent-child relationship between NFTs, allowing an NFT to be fractionally split into multiple child NFTs and merged back into a single entity. It provides interfaces to retrieve an NFT's parent, children, and hierarchical status, ensuring flexible ownership management. This standard is particularly useful for applications in fractional ownership, asset distribution, and composable digital assets, opening new possibilities in fields like real estate, gaming, and decentralized finance.",
+  "title": "Splitting and Merging of NFTs"
+}

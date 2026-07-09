@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5437",
+  "erc": "ERC-5437",
+  "events": [
+    {
+      "name": "SecurityContactChanged",
+      "signature": "SecurityContactChanged(uint8,bytes,bytes)"
+    },
+    {
+      "name": "OnSecurityNotification",
+      "signature": "OnSecurityNotification(uint8,bytes,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getSecurityContact",
+      "operation_type": "contract_interaction",
+      "signature": "getSecurityContact(uint8,bytes)"
+    },
+    {
+      "name": "setSecurityContact",
+      "operation_type": "contract_interaction",
+      "signature": "setSecurityContact(uint8,bytes,bytes)"
+    },
+    {
+      "name": "securityNotify",
+      "operation_type": "contract_interaction",
+      "signature": "securityNotify(uint8,bytes)"
+    },
+    {
+      "name": "bountyPolicy",
+      "operation_type": "contract_interaction",
+      "signature": "bountyPolicy(uint256)"
+    }
+  ],
+  "id": "ERC5437",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5437",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5437.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "An interface for security notice using asymmetric encryption. The interface exposes an asymmetric encryption key and a destination of delivery.",
+  "title": "Security Contact Interface"
+}

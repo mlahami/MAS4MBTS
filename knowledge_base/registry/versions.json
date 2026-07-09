@@ -1,0 +1,5 @@
+{
+  "knowledge_base_version": "0.1.0",
+  "schema_version": "0.1.0",
+  "created_for": "RAG-based Threat Modeling Agent for ERC Smart Contracts"
+}

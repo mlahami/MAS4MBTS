@@ -1,0 +1,96 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7743",
+  "erc": "ERC-7743",
+  "events": [
+    {
+      "name": "TokenMinted",
+      "signature": "TokenMinted(uint256,address)"
+    },
+    {
+      "name": "TokenTransferred",
+      "signature": "TokenTransferred(uint256,address,address)"
+    },
+    {
+      "name": "TransferValueUpdated",
+      "signature": "TransferValueUpdated(uint256,uint256,uint256)"
+    },
+    {
+      "name": "ArchivedStatusUpdated",
+      "signature": "ArchivedStatusUpdated(uint256,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "mintToken",
+      "operation_type": "contract_interaction",
+      "signature": "mintToken()"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "archive",
+      "operation_type": "contract_interaction",
+      "signature": "archive(uint256)"
+    },
+    {
+      "name": "provide",
+      "operation_type": "contract_interaction",
+      "signature": "provide(string,uint256,bytes32,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "isOwner",
+      "operation_type": "contract_interaction",
+      "signature": "isOwner(uint256,address)"
+    },
+    {
+      "name": "getOwnersCount",
+      "operation_type": "contract_interaction",
+      "signature": "getOwnersCount(uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "setTransferValue",
+      "operation_type": "contract_interaction",
+      "signature": "setTransferValue(uint256,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC7743",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7743",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7743.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC proposes a new standard for non-fungible tokens (NFTs) that supports multiple owners. The MO-NFT standard allows a single NFT to have multiple owners, reflecting the shared and distributable nature of digital assets. This model incorporates mechanisms for provider-defined transfer fees and ownership archiving, enabling flexible and collaborative ownership structures. It maintains compatibility with the existing [ERC-721](./eip-721.md) standard to ensure interoperability with current tools and platforms.",
+  "title": "Multi-Owner Non-Fungible Tokens (MO-NFT)"
+}

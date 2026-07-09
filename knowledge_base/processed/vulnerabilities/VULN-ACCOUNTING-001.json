@@ -1,0 +1,13 @@
+{
+  "category": "Business logic",
+  "cwe": "CWE-682",
+  "description": "Token balances, total supply, assets, or shares are updated inconsistently.",
+  "id": "VULN-ACCOUNTING-001",
+  "name": "Incorrect token accounting",
+  "owasp": "Smart Contract Business Logic Errors",
+  "severity": "high",
+  "source": {
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,77 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3754",
+  "erc": "ERC-3754",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC3754",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3754",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3754.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "In this standard, a non-fungible token stands as atomic existence and encourages layers of abstraction built on top of it. Ideal for representing concepts like rights, a form of abstract ownership. Such right can take the form of NFT options, oracle membership, virtual coupons, etc., and can then be made liquid because of this tokenization.",
+  "title": "A Vanilla Non-Fungible Token Standard"
+}

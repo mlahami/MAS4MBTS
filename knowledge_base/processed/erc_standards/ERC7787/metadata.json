@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7787",
+  "erc": "ERC-7787",
+  "events": [
+    {
+      "name": "VotingUnitsUpdated",
+      "signature": "VotingUnitsUpdated(address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "gracePeriod",
+      "operation_type": "contract_interaction",
+      "signature": "gracePeriod()"
+    },
+    {
+      "name": "decayPeriod",
+      "operation_type": "contract_interaction",
+      "signature": "decayPeriod()"
+    },
+    {
+      "name": "getVotes",
+      "operation_type": "contract_interaction",
+      "signature": "getVotes(address)"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "grantVotingUnits",
+      "operation_type": "contract_interaction",
+      "signature": "grantVotingUnits(address,uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    }
+  ],
+  "id": "ERC7787",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7787",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7787.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces the Soulbound Degradable Governance (SDG) standard, where governance power should be granted as non-transferable tokens that decay over time unless renewed through participation. SDG enables young DAOs to implement merit-based governance by detaching governance power from economic power while on early stages of development.",
+  "title": "Soulbound Degradable Governance"
+}

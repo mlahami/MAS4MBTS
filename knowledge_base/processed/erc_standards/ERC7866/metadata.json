@@ -1,0 +1,62 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7866",
+  "erc": "ERC-7866",
+  "events": [
+    {
+      "name": "ProfileCreated",
+      "signature": "ProfileCreated(address,string,string)"
+    },
+    {
+      "name": "AvatarUpdated",
+      "signature": "AvatarUpdated(address,string,string)"
+    },
+    {
+      "name": "DappAvatarUpdated",
+      "signature": "DappAvatarUpdated(address,address,string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createProfile",
+      "operation_type": "contract_interaction",
+      "signature": "createProfile(string)"
+    },
+    {
+      "name": "setDefaultAvatar",
+      "operation_type": "contract_interaction",
+      "signature": "setDefaultAvatar(string,string)"
+    },
+    {
+      "name": "setDappAvatar",
+      "operation_type": "contract_interaction",
+      "signature": "setDappAvatar(address,string,string)"
+    },
+    {
+      "name": "getDefaultAvatar",
+      "operation_type": "contract_interaction",
+      "signature": "getDefaultAvatar(address)"
+    },
+    {
+      "name": "getDappAvatar",
+      "operation_type": "contract_interaction",
+      "signature": "getDappAvatar(address,address)"
+    },
+    {
+      "name": "generateDID",
+      "operation_type": "contract_interaction",
+      "signature": "generateDID(address)"
+    }
+  ],
+  "id": "ERC7866",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7866",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7866.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP proposes a standard for decentralised, interoperable user profiles known as Decentralised Profiles. Profiles are implemented as **Soul Bound Tokens (SBTs)** that are immutable, non-transferable, and tied to unique identifiers across multiple blockchain networks. The standard provides a unified structure for user metadata, including dApp-specific customisation, default profiles, and seamless cross-chain compatibility. Profiles can be leveraged for identity management, reputation systems, and personalised dApp experiences.",
+  "title": "Decentralised User Profiles"
+}

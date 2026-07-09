@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5564",
+  "erc": "ERC-5564",
+  "events": [
+    {
+      "name": "Announcement",
+      "signature": "Announcement(uint256,address,address,bytes,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "generateStealthAddress",
+      "operation_type": "contract_interaction",
+      "signature": "generateStealthAddress(bytes)"
+    },
+    {
+      "name": "checkStealthAddress",
+      "operation_type": "contract_interaction",
+      "signature": "checkStealthAddress(address,bytes,bytes,bytes)"
+    },
+    {
+      "name": "computeStealthKey",
+      "operation_type": "contract_interaction",
+      "signature": "computeStealthKey(address,bytes,bytes,bytes)"
+    },
+    {
+      "name": "selector",
+      "operation_type": "contract_interaction",
+      "signature": "selector(e.g.,high-order)"
+    },
+    {
+      "name": "announce",
+      "operation_type": "contract_interaction",
+      "signature": "announce(uint256,address,bytes,bytes)"
+    }
+  ],
+  "id": "ERC5564",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5564",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5564.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This specification establishes a standardized method for interacting with stealth addresses, which allow senders of transactions or transfers to non-interactively generate private accounts exclusively accessible by their recipients. Moreover, this specification enables developers to create stealth address protocols based on the foundational implementation outlined in this ERC, utilizing a singleton contract deployed at `0x55649E01B5Df198D18D95b5cc5051630cfD45564` to emit the necessary information for recipients. In addition to the base implementation, this ERC also outlines the first implementation of a cryptographic scheme, specifically the SECP256k1 curve.",
+  "title": "Stealth Addresses"
+}

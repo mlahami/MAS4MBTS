@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7641",
+  "erc": "ERC-7641",
+  "events": [],
+  "functions": [
+    {
+      "name": "claimableRevenue",
+      "operation_type": "contract_interaction",
+      "signature": "claimableRevenue(address,uint256)"
+    },
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim(uint256)"
+    },
+    {
+      "name": "snapshot",
+      "operation_type": "contract_interaction",
+      "signature": "snapshot()"
+    },
+    {
+      "name": "redeemableOnBurn",
+      "operation_type": "contract_interaction",
+      "signature": "redeemableOnBurn(uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    },
+    {
+      "name": "claimableERC20",
+      "operation_type": "contract_interaction",
+      "signature": "claimableERC20(address,uint256,address)"
+    },
+    {
+      "name": "redeemableERC20OnBurn",
+      "operation_type": "contract_interaction",
+      "signature": "redeemableERC20OnBurn(uint256,address)"
+    }
+  ],
+  "id": "ERC7641",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7641",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7641.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal outlines an extension of the prevailing [ERC-20](./eip-20.md) token standard, introducing a seamlessly integrated revenue-sharing mechanism. It incorporates a suite of interfaces designed to foster fair distribution of revenue among token holders while preserving the essential attributes of [ERC-20](./eip-20.md). Central to this design is the establishment of a communal revenue pool, aggregating revenues from diverse sources. The token, in essence, embodies shares, affording holders the ability to burn their tokens and redeem a proportionate share from the revenue pool. This innovative burning mechanism guarantees that, when the revenue pool is non-empty, the token's value remains at least commensurate with the share of the revenue pool. Additionally, in periodic intervals, t",
+  "title": "Intrinsic RevShare Token"
+}

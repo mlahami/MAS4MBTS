@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Transaction Order Dependence (TOD) occurs when the outcome of a contract's execution depends on the order of transactions. Attackers can exploit this issue by submitting transactions in a specific order, manipulating the contract's state and gaining an unfair advantage, such as front-running or back-running other transactions. This can lead to unexpected behavior and resource consumption.",
+  "id": "VULN-OWASP-SCWE-052",
+  "name": "Transaction Order Dependence",
+  "owasp": "SCWE-052",
+  "remediation": "To mitigate TOD vulnerabilities, ensure that the contract's logic does not depend on transaction order. Use techniques like commit-reveal schemes or randomization to prevent attackers from predicting the transaction order and exploiting it.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-052.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

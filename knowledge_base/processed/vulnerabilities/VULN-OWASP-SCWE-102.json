@@ -1,0 +1,16 @@
+{
+  "category": "Improper Enforcement of Behavioral Workflow",
+  "cwe": "CWE-841",
+  "description": "Calling external contracts before updating local state breaks the checks-effects-interactions (CEI) pattern. Attackers can reenter or observe stale state to perform double-withdrawals, bypass limits, or corrupt accounting.",
+  "id": "VULN-OWASP-SCWE-102",
+  "name": "Missing Checks-Effects-Interactions Pattern",
+  "owasp": "SCWE-102",
+  "remediation": "- Perform input validation and state updates before external calls. - Use reentrancy guards on functions that transfer value or call untrusted contracts. - Prefer pull-based withdrawals to avoid pushing funds inside complex flows.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-102.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,52 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7968",
+  "erc": "ERC-7968",
+  "events": [
+    {
+      "name": "TransactionProposed",
+      "signature": "TransactionProposed(uint256)"
+    },
+    {
+      "name": "TransactionCompleted",
+      "signature": "TransactionCompleted(uint256)"
+    },
+    {
+      "name": "FallbackScenarioExecuted",
+      "signature": "FallbackScenarioExecuted(address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "proposeTransaction",
+      "operation_type": "contract_interaction",
+      "signature": "proposeTransaction(address,uint256,address)"
+    },
+    {
+      "name": "completeTransaction",
+      "operation_type": "contract_interaction",
+      "signature": "completeTransaction(uint256,bytes)"
+    },
+    {
+      "name": "sendFundsToOwner",
+      "operation_type": "contract_interaction",
+      "signature": "sendFundsToOwner(address)"
+    },
+    {
+      "name": "verifySignature",
+      "operation_type": "contract_interaction",
+      "signature": "verifySignature(address,address,uint256,address,bytes)"
+    }
+  ],
+  "id": "ERC7968",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7968",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7968.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces an innovative token transfer processing model designed for third parties, enabling seamless use of Ethereum-based tokens (e.g., [ERC-20](./eip-20.md)) by non-crypto-native actors. The concept allows a third-party payment processor to initiate token transfers on behalf of another party and to cover the associated transaction (gas) fees. The main party (user) always remains the explicit owner of the tokens, which are securely held and referenced under their ownership in the smart contract. The transfer process is two-phased: 1. **Initiation:** The payment processor proposes a token transfer via the smart contract. This proposal is emitted as an on-chain event, including all relevant transfer details and a unique hash of the transaction (\u201cproposal hash\u201d). 2. **Approva",
+  "title": "Owner-Authorized Token Transfer Protocol"
+}

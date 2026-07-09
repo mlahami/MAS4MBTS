@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3589",
+  "erc": "ERC-3589",
+  "events": [
+    {
+      "name": "AssemblyAsset",
+      "signature": "AssemblyAsset(address,uint256,uint256,address[],uint256[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "hash",
+      "operation_type": "contract_interaction",
+      "signature": "hash(uint256,address[],uint256[])"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,address[],uint256[])"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(address,address[],uint256[])"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256,uint256,address[],uint256[])"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC3589",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3589",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3589.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The ERC-1155 multi-token contract defines a way to batch transfer tokens, but those tokens must be minted by the ERC-1155 contract itself. This EIP is an ERC-721 extension with ability to assemble assets such as ether, ERC-20 tokens, ERC-721 tokens and ERC-1155 tokens into one ERC-721 token whose token id is also the asset's signature. As assets get assembled into one, batch transfer or swap can be implemented very easily.",
+  "title": "Assemble assets into NFTs"
+}

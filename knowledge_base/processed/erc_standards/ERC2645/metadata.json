@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2645",
+  "erc": "ERC-2645",
+  "events": [],
+  "functions": [],
+  "id": "ERC2645",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2645",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2645.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "We provide a Derivation Path allowing a user to derive hierarchical keys for Layer-2 solutions depending on the zk-technology, the application, the user\u2019s Layer-1 address, as well as an efficient grinding method to enforce the private key distribution within the curve domain. The propose Derivation Path is defined as follow ``` m / purpose' / layer' / application' / eth_address_1' / eth_address_2' / index ```",
+  "title": "Hierarchical Deterministic Wallet for Layer-2"
+}

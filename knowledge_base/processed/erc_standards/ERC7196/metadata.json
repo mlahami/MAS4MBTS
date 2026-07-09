@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7196",
+  "erc": "ERC-7196",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    }
+  ],
+  "id": "ERC7196",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7196",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7196.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC is a new asset designed based on the user contract wallet (including account abstraction), and is forward compatible with [ERC-20](./eip-20.md). To keep token assets simple, this ERC removes the `transferFrom`, `approve` and `allowance` functions of ERC-20.",
+  "title": "Simple token, Simplified ERC-20"
+}

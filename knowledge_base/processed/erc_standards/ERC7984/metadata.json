@@ -1,0 +1,117 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7984",
+  "erc": "ERC-7984",
+  "events": [
+    {
+      "name": "ConfidentialTransfer",
+      "signature": "ConfidentialTransfer(address,address,bytes32)"
+    },
+    {
+      "name": "OperatorSet",
+      "signature": "OperatorSet(address,address,uint48)"
+    },
+    {
+      "name": "AmountDisclosed",
+      "signature": "AmountDisclosed(bytes32,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "contractURI",
+      "operation_type": "contract_interaction",
+      "signature": "contractURI()"
+    },
+    {
+      "name": "confidentialTotalSupply",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTotalSupply()"
+    },
+    {
+      "name": "confidentialBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialBalanceOf(address)"
+    },
+    {
+      "name": "isOperator",
+      "operation_type": "contract_interaction",
+      "signature": "isOperator(address,address)"
+    },
+    {
+      "name": "setOperator",
+      "operation_type": "contract_interaction",
+      "signature": "setOperator(address,uint48)"
+    },
+    {
+      "name": "confidentialTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransfer(address,bytes32)"
+    },
+    {
+      "name": "confidentialTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransfer(address,bytes32,bytes)"
+    },
+    {
+      "name": "confidentialTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferFrom(address,address,bytes32)"
+    },
+    {
+      "name": "confidentialTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferFrom(address,address,bytes32,bytes)"
+    },
+    {
+      "name": "confidentialTransferAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferAndCall(address,bytes32,bytes)"
+    },
+    {
+      "name": "confidentialTransferAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferAndCall(address,bytes32,bytes,bytes)"
+    },
+    {
+      "name": "confidentialTransferFromAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferFromAndCall(address,address,bytes32,bytes)"
+    },
+    {
+      "name": "confidentialTransferFromAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "confidentialTransferFromAndCall(address,address,bytes32,bytes,bytes)"
+    },
+    {
+      "name": "onConfidentialTransferReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onConfidentialTransferReceived(address,address,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7984",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7984",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7984.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The following standard describes confidential fungible tokens via pointers. All amounts in this standard are represented by confidential pointers; therefore, balances and transfer amounts are confidential. Pointers refer to data stored elsewhere--onchain or offchain. The logistics of pointer resolution, operation, and location are implementation specific. The interface defines functions to transfer tokens with pointers, as well as approve operators, allowing the token to be transferred by a third party.",
+  "title": "Confidential Fungible Token"
+}

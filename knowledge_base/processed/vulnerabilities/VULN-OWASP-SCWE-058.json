@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Denial of Service (DoS) with block gas limit occurs when a contract is designed in such a way that its execution depends on a large amount of gas, potentially exceeding the block gas limit. This can result in the transaction failing, causing the contract to become unavailable or unusable. Attackers can exploit this vulnerability by creating transactions that consume excessive gas, effectively locking the contract or preventing normal operation.",
+  "id": "VULN-OWASP-SCWE-058",
+  "name": "DoS with Block Gas Limit",
+  "owasp": "SCWE-058",
+  "remediation": "To mitigate this vulnerability, ensure that operations that depend on gas consumption are efficient and that gas limits are taken into account when designing contract logic. Avoid functions that require large amounts of gas to complete, and consider implementing features like batching or chunking operations to spread the gas usage across multiple transactions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-058.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

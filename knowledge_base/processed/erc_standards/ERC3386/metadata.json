@@ -1,0 +1,66 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3386",
+  "erc": "ERC-3386",
+  "events": [
+    {
+      "name": "MintSingle",
+      "signature": "MintSingle(address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "MintBatch",
+      "signature": "MintBatch(address,address,uint256[],uint256[],uint256)"
+    },
+    {
+      "name": "BurnSingle",
+      "signature": "BurnSingle(address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "BurnBatch",
+      "signature": "BurnBatch(address,address,uint256[],uint256[],uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256,uint256)"
+    },
+    {
+      "name": "batchMint",
+      "operation_type": "contract_interaction",
+      "signature": "batchMint(address,uint256[],uint256[])"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,address,uint256)"
+    },
+    {
+      "name": "batchBurn",
+      "operation_type": "contract_interaction",
+      "signature": "batchBurn(address,address,uint256[])"
+    },
+    {
+      "name": "idBurn",
+      "operation_type": "contract_interaction",
+      "signature": "idBurn(address,address,uint256,uint256)"
+    },
+    {
+      "name": "batchIdBurn",
+      "operation_type": "contract_interaction",
+      "signature": "batchIdBurn(address,address,uint256[],uint256[])"
+    }
+  ],
+  "id": "ERC3386",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3386",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3386.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard outlines a smart contract interface to wrap identifiable tokens with fungible tokens. This allows for derivative [ERC-20](./eip-20.md) tokens to be minted by locking the base [ERC-721](./eip-721.md) non-fungible tokens and [ERC-1155](./eip-1155.md) multi tokens into a pool. The derivative tokens can be burned to redeem base tokens out of the pool. These derivatives have no reference to the unique id of these base tokens, and should have a proportional rate of exchange with the base tokens. As representatives of the base tokens, these generic derivative tokens can be traded and otherwise utilized according to ERC-20, such that the unique identifier of each base token is irrelevant. ERC-721 and ERC-1155 tokens are considered valid base, tokens because they have unique identifie",
+  "title": "ERC-721 and ERC-1155 to ERC-20 Wrapper"
+}

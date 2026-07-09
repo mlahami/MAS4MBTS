@@ -1,0 +1,133 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3561",
+  "erc": "ERC-3561",
+  "events": [
+    {
+      "name": "NextLogicDefined",
+      "signature": "NextLogicDefined(address,uint)"
+    },
+    {
+      "name": "NextLogicCanceled",
+      "signature": "NextLogicCanceled(address)"
+    },
+    {
+      "name": "ProposingUpgradesRestrictedUntil",
+      "signature": "ProposingUpgradesRestrictedUntil(uint,uint)"
+    },
+    {
+      "name": "ZeroTrustPeriodSet",
+      "signature": "ZeroTrustPeriodSet(uint)"
+    },
+    {
+      "name": "Upgraded",
+      "signature": "Upgraded(address)"
+    },
+    {
+      "name": "AdminChanged",
+      "signature": "AdminChanged(address,address)"
+    },
+    {
+      "name": "NextLogicCanceled",
+      "signature": "NextLogicCanceled()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "proposeTo",
+      "operation_type": "contract_interaction",
+      "signature": "proposeTo(address,bytes)"
+    },
+    {
+      "name": "upgrade",
+      "operation_type": "contract_interaction",
+      "signature": "upgrade(bytes)"
+    },
+    {
+      "name": "cancelUpgrade",
+      "operation_type": "contract_interaction",
+      "signature": "cancelUpgrade()"
+    },
+    {
+      "name": "prolongLock",
+      "operation_type": "contract_interaction",
+      "signature": "prolongLock(uint)"
+    },
+    {
+      "name": "setZeroTrustPeriod",
+      "operation_type": "contract_interaction",
+      "signature": "setZeroTrustPeriod(uint)"
+    },
+    {
+      "name": "_logic",
+      "operation_type": "contract_interaction",
+      "signature": "_logic()"
+    },
+    {
+      "name": "_nextLogic",
+      "operation_type": "contract_interaction",
+      "signature": "_nextLogic()"
+    },
+    {
+      "name": "_proposeBlock",
+      "operation_type": "contract_interaction",
+      "signature": "_proposeBlock()"
+    },
+    {
+      "name": "_nextLogicBlock",
+      "operation_type": "contract_interaction",
+      "signature": "_nextLogicBlock()"
+    },
+    {
+      "name": "_zeroTrustPeriod",
+      "operation_type": "contract_interaction",
+      "signature": "_zeroTrustPeriod()"
+    },
+    {
+      "name": "_admin",
+      "operation_type": "contract_interaction",
+      "signature": "_admin()"
+    },
+    {
+      "name": "_setAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "_setAdmin(address)"
+    },
+    {
+      "name": "changeAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "changeAdmin(address)"
+    },
+    {
+      "name": "_fallback",
+      "operation_type": "contract_interaction",
+      "signature": "_fallback()"
+    },
+    {
+      "name": "_updateNextBlockSlot",
+      "operation_type": "contract_interaction",
+      "signature": "_updateNextBlockSlot()"
+    },
+    {
+      "name": "_setNextLogic",
+      "operation_type": "contract_interaction",
+      "signature": "_setNextLogic(address)"
+    },
+    {
+      "name": "_delegate",
+      "operation_type": "contract_interaction",
+      "signature": "_delegate(address)"
+    }
+  ],
+  "id": "ERC3561",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3561",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3561.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Removing trust from upgradeability proxy is necessary for anonymous developers. In order to accomplish this, instant and potentially malicious upgrades must be prevented. This EIP introduces additional storage slots for upgradeability proxy which are assumed to decrease trust in interaction with upgradeable smart contracts. Defined by the admin implementation logic can be made an active implementation logic only after Zero Trust Period allows.",
+  "title": "Trust Minimized Upgradeability Proxy"
+}

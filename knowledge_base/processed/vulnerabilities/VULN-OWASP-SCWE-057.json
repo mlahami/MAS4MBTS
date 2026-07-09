@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Writing to arbitrary storage locations can occur when a contract fails to properly validate inputs before interacting with storage variables. An attacker may exploit this vulnerability to overwrite sensitive storage slots, leading to unintended contract behavior, state manipulation, or loss of funds.",
+  "id": "VULN-OWASP-SCWE-057",
+  "name": "Write to Arbitrary Storage Location",
+  "owasp": "SCWE-057",
+  "remediation": "To mitigate this vulnerability, ensure that all inputs to storage-related operations are properly validated. Avoid allowing external users to specify arbitrary storage locations. Use access control mechanisms to restrict who can modify sensitive state variables and ensure that only trusted users or contract functions can write to critical storage locations.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-057.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+  "cwe": "CWE-362",
+  "description": "The Ethereum network processes transactions in blocks, with new blocks getting confirmed approximately every 17 seconds. Miners review the transactions they have received and select which ones to include in a block, based on who has paid a high enough gas price to be included. Additionally, when transactions are sent to the Ethereum network, they are forwarded to each node for processing. Thus, a person who is running an Ethereum node can tell which transactions are going to occur before they are finalized. A race condition vulnerability occurs when code depends on the order of the transactions submitted to it. The simplest example of a race condition is when a smart contract gives a reward for submitting information. Suppose a contract will give out 1 token to the first person who solves a math problem. Alice solves the problem and submits the answer to the network with a standard gas price. Eve runs an Ethereum node and can see the answer to the math problem in the transaction that Alice submitted to the network. So, Eve submits the answer to the network with a much higher gas price, and thus it gets processed and committed before Alice's transaction. Eve receives one token, and Alice gets nothing, even though it was Alice who worked to solve the problem. A common way this occurs in practice is when a contract rewards people for calling out bad behavior in a protocol by giving a bad actor's deposit to the person who proved they were misbehaving. The race condition that happens most frequently on the network today is the race condition in the ERC20 token standard. The ERC2",
+  "id": "VULN-SWC-114",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "A possible way to remedy race conditions in the submission of information in exchange for a reward is called a commit reveal hash scheme. Instead of submitting the answer, the party who has the answer submits hash(salt, address, answer) \\[salt being some number of their choosing\\]; the contract stores this hash and the sender's address. To claim the reward, the sender then submits a transaction with the salt, and answer. The contract hashes (salt, msg.sender, answer) and checks the hash produced against the stored hash. If the hash matches, the contract releases the reward. The best fix for the ERC20 race condition is to add a field to the inputs of approve, which is the expected current value, and to have approve revert if Eve's current allowance is not what Alice indicated she was expecting. However, this means that your contract no longer conforms to the ERC20 standard. If it is important to your project to have the contract conform to ERC20, you can add a safe approve function. From the user's perspective, it is possible to mitigate the ERC20 race condition by setting approvals to zero before changing them.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-114.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-114"
+}

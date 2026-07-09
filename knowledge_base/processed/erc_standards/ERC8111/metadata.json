@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8111",
+  "erc": "ERC-8111",
+  "events": [],
+  "functions": [
+    {
+      "name": "bind",
+      "operation_type": "contract_interaction",
+      "signature": "bind(sig:,v:)"
+    },
+    {
+      "name": "recover",
+      "operation_type": "contract_interaction",
+      "signature": "recover(bytes32,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC8111",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8111",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8111.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Recoverable ECDSA signatures can flip `s` and `v` while remaining valid, so they can be compressed to 64 bytes by restricting `v`.",
+  "title": "Bound Signatures"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Use of Same Variable for Multiple Purposes**",
+  "cwe": "CWE-1109",
+  "description": "Shadowing variables or functions is a scenario where a local variable or function shares the same name as one in a larger or outer scope. This can cause ambiguity and lead to unexpected behavior or bugs, as the inner variable or function hides the outer one. This problem is especially tricky in Solidity due to its inheritance model, where a child contract might unintentionally override parent contract variables or functions.",
+  "id": "VULN-OWASP-SCWE-010",
+  "name": "Shadowing Variables and Functions",
+  "owasp": "SCWE-010",
+  "remediation": "- **Use unique and descriptive names**: Always use unique names for variables and functions to avoid shadowing. Use clear, descriptive names for contract variables and functions. - **Avoid redeclaring variables in nested scopes**: Ensure that variables or functions in inner scopes don\u2019t conflict with those in outer scopes. - **Static analysis tools**: Use static analysis tools to detect and warn about shadowing issues.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-010.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

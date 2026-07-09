@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6596",
+  "erc": "ERC-6596",
+  "events": [],
+  "functions": [],
+  "id": "ERC6596",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6596",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6596.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP proposes the establishment of a comprehensive metadata standard for Cultural and Historical Asset Tokens (CHATs) on the Ethereum platform. These tokens represent cultural and historical assets such as artwork, artifacts, collectibles, and rare items, providing crucial context and provenance to substantiate their significance and value. While existing NFT standards ensure the immutability and decentralized ownership of assets on the blockchain, based on our research they do not adequately capture the cultural and historical importance and value of such assets needed for widespread adoption by institutions such as museums. The CHAT standard aims to overcome these limitations by preserving the provenance, history, and evolving context of cultural and historical assets, thus substanti",
+  "title": "Cultural and Historical Asset Token"
+}

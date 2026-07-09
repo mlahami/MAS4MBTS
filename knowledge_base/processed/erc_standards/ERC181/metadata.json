@@ -1,0 +1,64 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-181",
+  "erc": "ERC-181",
+  "events": [],
+  "functions": [
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim(address)"
+    },
+    {
+      "name": "claimWithResolver",
+      "operation_type": "contract_interaction",
+      "signature": "claimWithResolver(address,address)"
+    },
+    {
+      "name": "setName",
+      "operation_type": "contract_interaction",
+      "signature": "setName(string)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name(bytes32)"
+    },
+    {
+      "name": "setName",
+      "operation_type": "contract_interaction",
+      "signature": "setName(bytes32,string)"
+    },
+    {
+      "name": "DefaultReverseResolver",
+      "operation_type": "contract_interaction",
+      "signature": "DefaultReverseResolver(AbstractENS)"
+    },
+    {
+      "name": "ReverseRegistrar",
+      "operation_type": "contract_interaction",
+      "signature": "ReverseRegistrar(AbstractENS,Resolver)"
+    },
+    {
+      "name": "node",
+      "operation_type": "contract_interaction",
+      "signature": "node(address)"
+    },
+    {
+      "name": "sha3HexAddress",
+      "operation_type": "contract_interaction",
+      "signature": "sha3HexAddress(address)"
+    }
+  ],
+  "id": "ERC181",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-181",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-181.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "",
+  "title": "ENS support for reverse resolution of Ethereum addresses"
+}

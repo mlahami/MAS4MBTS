@@ -1,0 +1,16 @@
+{
+  "category": "**: [Insufficient Verification of Data Authenticity",
+  "cwe": "CWE-345",
+  "description": "This weakness occurs when smart contracts consume data from oracles (e.g., Chainlink) without validating critical fields in the response such as `answeredInRound`, `timestamp`, or even the `answer` itself. Failing to validate these fields can lead to: - Use of stale price data from old oracle rounds. - Acceptance of incomplete oracle responses (e.g., `timestamp == 0`). - Execution based on invalid or zero-priced data. This can severely affect the security of DeFi protocols or any smart contract relying on accurate, fresh data feeds.",
+  "id": "VULN-OWASP-SCWE-086",
+  "name": "Missing Validation of Oracle Response Fields (Stale or Incomplete Data)",
+  "owasp": "SCWE-086",
+  "remediation": "- **Validate `answer` field:** Ensure the value returned is greater than zero and not malformed. - **Check `answeredInRound >= roundId`:** Confirms that the data is not from a stale round. - **Verify `timestamp != 0`:** Ensures that the oracle actually returned a complete result. Additional best practices include: - Using fallback mechanisms or thresholds for deviation checks. - Halting sensitive functions if oracle data is suspect or missing.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-086.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7201",
+  "erc": "ERC-7201",
+  "events": [],
+  "functions": [
+    {
+      "name": "_getMainStorage",
+      "operation_type": "contract_interaction",
+      "signature": "_getMainStorage()"
+    },
+    {
+      "name": "_getXTimesY",
+      "operation_type": "contract_interaction",
+      "signature": "_getXTimesY()"
+    }
+  ],
+  "id": "ERC7201",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7201",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7201.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "We define the NatSpec annotation `@custom:storage-location` to document storage namespaces and their location in storage in Solidity or Vyper source code. Additionally, we define a formula to derive a location from an arbitrary identifier. The formula is chosen to be safe against collisions with the storage layouts used by Solidity and Vyper.",
+  "title": "Namespaced Storage Layout"
+}

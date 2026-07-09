@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1444",
+  "erc": "ERC-1444",
+  "events": [],
+  "functions": [
+    {
+      "name": "textFor",
+      "operation_type": "contract_interaction",
+      "signature": "textFor(bytes32)"
+    },
+    {
+      "name": "set",
+      "operation_type": "contract_interaction",
+      "signature": "set(Localization)"
+    },
+    {
+      "name": "set",
+      "operation_type": "contract_interaction",
+      "signature": "set(bytes32,string)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(bytes32)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(bytes32,address)"
+    },
+    {
+      "name": "getLocalizationFor",
+      "operation_type": "contract_interaction",
+      "signature": "getLocalizationFor(address)"
+    }
+  ],
+  "id": "ERC1444",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1444",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1444.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "An on-chain system for providing user feedback by converting machine-efficient codes into human-readable strings in any language or phrasing. The system does not impose a list of languages, but rather lets users create, share, and use the localizated text of their choice.",
+  "title": "Localized Messaging with Signal-to-Text"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2333",
+  "erc": "ERC-2333",
+  "events": [],
+  "functions": [],
+  "id": "ERC2333",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2333",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2333.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This standard is a method for deriving a tree-hierarchy of BLS12-381 keys based on an entropy seed. Starting with the aforementioned seed, a tree of keys is built out using only the parent node's private key and the index of the desired child. This allows for a practically limitless number of keys to be derived for many different purposes while only requiring knowledge of a single ancestor key in the tree. This allows for keys, or families thereof, to be provisioned for different purposes by further standards. In addition to the above, this method of deriving keys provides an emergency backup signature scheme that is resistant to quantum computers for in the event that BLS12-381 is ever deemed insecure.",
+  "title": "BLS12-381 Key Generation"
+}

@@ -1,0 +1,107 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2021",
+  "erc": "ERC-2021",
+  "events": [
+    {
+      "name": "PayoutOrdered",
+      "signature": "PayoutOrdered(address,string,address,uint256,string)"
+    },
+    {
+      "name": "PayoutInProcess",
+      "signature": "PayoutInProcess(address,string)"
+    },
+    {
+      "name": "PayoutFundsInSuspense",
+      "signature": "PayoutFundsInSuspense(address,string)"
+    },
+    {
+      "name": "PayoutExecuted",
+      "signature": "PayoutExecuted(address,string)"
+    },
+    {
+      "name": "PayoutRejected",
+      "signature": "PayoutRejected(address,string,string)"
+    },
+    {
+      "name": "PayoutCancelled",
+      "signature": "PayoutCancelled(address,string)"
+    },
+    {
+      "name": "PayoutOperatorAuthorized",
+      "signature": "PayoutOperatorAuthorized(address,address)"
+    },
+    {
+      "name": "PayoutOperatorRevoked",
+      "signature": "PayoutOperatorRevoked(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "authorizePayoutOperator",
+      "operation_type": "contract_interaction",
+      "signature": "authorizePayoutOperator(address)"
+    },
+    {
+      "name": "revokePayoutOperator",
+      "operation_type": "contract_interaction",
+      "signature": "revokePayoutOperator(address)"
+    },
+    {
+      "name": "orderPayout",
+      "operation_type": "contract_interaction",
+      "signature": "orderPayout(string,uint256,string)"
+    },
+    {
+      "name": "orderPayoutFrom",
+      "operation_type": "contract_interaction",
+      "signature": "orderPayoutFrom(string,address,uint256,string)"
+    },
+    {
+      "name": "cancelPayout",
+      "operation_type": "contract_interaction",
+      "signature": "cancelPayout(string)"
+    },
+    {
+      "name": "processPayout",
+      "operation_type": "contract_interaction",
+      "signature": "processPayout(string)"
+    },
+    {
+      "name": "putFundsInSuspenseInPayout",
+      "operation_type": "contract_interaction",
+      "signature": "putFundsInSuspenseInPayout(string)"
+    },
+    {
+      "name": "executePayout",
+      "operation_type": "contract_interaction",
+      "signature": "executePayout(string)"
+    },
+    {
+      "name": "rejectPayout",
+      "operation_type": "contract_interaction",
+      "signature": "rejectPayout(string,string)"
+    },
+    {
+      "name": "isPayoutOperatorFor",
+      "operation_type": "contract_interaction",
+      "signature": "isPayoutOperatorFor(address,address)"
+    },
+    {
+      "name": "retrievePayoutData",
+      "operation_type": "contract_interaction",
+      "signature": "retrievePayoutData(string)"
+    }
+  ],
+  "id": "ERC2021",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2021",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2021.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Token wallet owners (or approved addresses) can order payout requests through blockchain. This is done by calling the ```orderPayoutFrom``` or ```orderPayoutFrom``` methods, which initiate the workflow for the token contract operator to either honor or reject the payout request. In this case, payout instructions are provided when submitting the request, which are used by the operator to determine the destination of the funds. In general, it is not advisable to place explicit routing instructions for the payouts on a verbatim basis on the blockchain, and it is advised to use a private communication alternatives, such as private channels, encrypted storage or similar, to do so (external to the blockchain ledger). Another (less desirable) possibility is to place these instructions on the inst",
+  "title": "Payoutable Token"
+}

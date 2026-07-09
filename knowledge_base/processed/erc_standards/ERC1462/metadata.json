@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1462",
+  "erc": "ERC-1462",
+  "events": [
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "checkTransferAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkTransferAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkTransferFromAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkTransferFromAllowed(address,address,uint256)"
+    },
+    {
+      "name": "checkMintAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkMintAllowed(address,uint256)"
+    },
+    {
+      "name": "checkBurnAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "checkBurnAllowed(address,uint256)"
+    },
+    {
+      "name": "attachDocument",
+      "operation_type": "contract_interaction",
+      "signature": "attachDocument(bytes32,string,bytes32)"
+    },
+    {
+      "name": "lookupDocument",
+      "operation_type": "contract_interaction",
+      "signature": "lookupDocument(bytes32)"
+    }
+  ],
+  "id": "ERC1462",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1462",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1462.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP defines a minimal set of additions to the default token standard such as [ERC-20](./eip-20.md), that allows for compliance with domestic and international legal requirements. Such requirements include KYC (Know Your Customer) and AML (Anti Money Laundering) regulations, and the ability to lock tokens for an account, and restrict them from transfer due to a legal dispute. Also the ability to attach additional legal documentation, in order to set up a dual-binding relationship between the token and off-chain legal entities. The scope of this standard is being kept as narrow as possible to avoid restricting potential use-cases of this base security token. Any additional functionality and limitations not defined in this standard may be enforced on per-project basis.",
+  "title": "Base Security Token"
+}

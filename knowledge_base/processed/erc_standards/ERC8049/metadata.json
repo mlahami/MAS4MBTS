@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8049",
+  "erc": "ERC-8049",
+  "events": [
+    {
+      "name": "ContractMetadataUpdated",
+      "signature": "ContractMetadataUpdated(string,string,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "contractMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "contractMetadata(string)"
+    },
+    {
+      "name": "setContractMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "setContractMetadata(string,bytes)"
+    },
+    {
+      "name": "_contractMetadataStorage",
+      "operation_type": "contract_interaction",
+      "signature": "_contractMetadataStorage()"
+    }
+  ],
+  "id": "ERC8049",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8049",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8049.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a standard for storing contract-level metadata onchain. It extends [ERC-7572](./eip-7572.md)'s contract-level metadata concept by providing onchain storage. Contracts MAY optionally use [ERC-8042](./eip-8042.md)'s Diamond Storage pattern for predictable storage locations, enabling cross-chain compatibility and supporting upgradable contracts.",
+  "title": "Contract-Level Onchain Metadata"
+}

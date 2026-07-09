@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7087",
+  "erc": "ERC-7087",
+  "events": [],
+  "functions": [],
+  "id": "ERC7087",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7087",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7087.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard extends the [ERC-6860](./eip-6860.md) `web3://` standard: in smart contracts not designed for `web3://` (thus using auto mode), the MIME type of the returned data is either implicit (not advertised by the smart contract) or included within the returned data ([RFC 2397](https://www.rfc-editor.org/rfc/rfc2397) data URLs). This standard defines additional query parameters so that a MIME type can be returned when fetching a `web3://` URL in these scenarios.",
+  "title": "MIME type for Web3 URL in Auto Mode"
+}

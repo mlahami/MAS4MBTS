@@ -1,0 +1,30 @@
+{
+  "applicable_to": [
+    "ERC-20",
+    "ERC-721",
+    "ERC-1155",
+    "ERC-4626"
+  ],
+  "countermeasure": "Check preconditions and assert post-state accounting invariants.",
+  "cwe": "CWE-682",
+  "description": "A token operation incorrectly updates balances, ownership, supply, assets, or shares.",
+  "id": "TP-ACCOUNTING-001",
+  "name": "Token accounting invariant violation",
+  "owasp": "Smart Contract Business Logic Errors",
+  "related_entry_points": [
+    "transfer",
+    "transferFrom",
+    "safeTransferFrom",
+    "safeBatchTransferFrom",
+    "deposit",
+    "withdraw",
+    "redeem",
+    "mint",
+    "burn"
+  ],
+  "security_property": "Token operations must preserve standard-specific accounting invariants.",
+  "stride": "Tampering",
+  "swc": "N/A",
+  "test_objective": "Verify that state transitions preserve token accounting invariants.",
+  "vulnerability": "Incorrect token accounting"
+}

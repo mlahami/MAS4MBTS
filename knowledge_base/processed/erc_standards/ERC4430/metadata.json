@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4430",
+  "erc": "ERC-4430",
+  "events": [],
+  "functions": [
+    {
+      "name": "eipXXXDescribe",
+      "operation_type": "contract_interaction",
+      "signature": "eipXXXDescribe(bytes,bytes32)"
+    }
+  ],
+  "id": "ERC4430",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4430",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4430.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Use a contract method to provide *virtual functions* which can generate a human-readable description at the same time as the machine-readable bytecode, allowing the user to agree to the human-readable component in a UI while the machine can execute the bytecode once accepted.",
+  "title": "Described Transactions"
+}

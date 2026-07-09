@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mas4mbts/auxiliary-knowledge.schema.json",
+  "title": "Auxiliary Knowledge Record",
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "name",
+    "role",
+    "description",
+    "source",
+    "applies_to"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"type": "string"},
+    "name": {"type": "string"},
+    "role": {"type": "string"},
+    "description": {"type": "string"},
+    "source": {"type": "object"},
+    "applies_to": {"type": "array", "items": {"type": "string"}},
+    "fields": {"type": "array", "items": {"type": "object"}},
+    "mappings": {"type": "array", "items": {"type": "object"}},
+    "usage_guidelines": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3525",
+  "erc": "ERC-3525",
+  "events": [
+    {
+      "name": "TransferValue",
+      "signature": "TransferValue(uint256,uint256,uint256)"
+    },
+    {
+      "name": "ApprovalValue",
+      "signature": "ApprovalValue(uint256,address,uint256)"
+    },
+    {
+      "name": "SlotChanged",
+      "signature": "SlotChanged(uint256,uint256,uint256)"
+    },
+    {
+      "name": "ApprovalForSlot",
+      "signature": "ApprovalForSlot(address,uint256,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "valueDecimals",
+      "operation_type": "contract_interaction",
+      "signature": "valueDecimals()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(uint256)"
+    },
+    {
+      "name": "slotOf",
+      "operation_type": "contract_interaction",
+      "signature": "slotOf(uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(uint256,address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(uint256,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(uint256,uint256,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(uint256,address,uint256)"
+    },
+    {
+      "name": "slotCount",
+      "operation_type": "contract_interaction",
+      "signature": "slotCount()"
+    },
+    {
+      "name": "slotByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "slotByIndex(uint256)"
+    },
+    {
+      "name": "tokenSupplyInSlot",
+      "operation_type": "contract_interaction",
+      "signature": "tokenSupplyInSlot(uint256)"
+    },
+    {
+      "name": "tokenInSlotByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "tokenInSlotByIndex(uint256,uint256)"
+    },
+    {
+      "name": "setApprovalForSlot",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalForSlot(address,uint256,address,bool)"
+    },
+    {
+      "name": "isApprovedForSlot",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForSlot(address,uint256,address)"
+    },
+    {
+      "name": "onERC3525Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC3525Received(address,uint256,uint256,uint256,bytes)"
+    },
+    {
+      "name": "contractURI",
+      "operation_type": "contract_interaction",
+      "signature": "contractURI()"
+    },
+    {
+      "name": "slotURI",
+      "operation_type": "contract_interaction",
+      "signature": "slotURI(uint256)"
+    }
+  ],
+  "id": "ERC3525",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3525",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3525.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This is a standard for semi-fungible tokens. The set of smart contract interfaces described in this document defines an [ERC-721](./eip-721.md) compatible token standard. This standard introduces an `<ID, SLOT, VALUE>` triple scalar model that represents the semi-fungible structure of a token. It also introduces new transfer models as well as approval models that reflect the semi-fungible nature of the tokens. Token contains an ERC-721 equivalent ID property to identify itself as a universally unique entity, so that the tokens can be transferred between addresses and approved to be operated in ERC-721 compatible way. Token also contains a `value` property, representing the quantitative nature of the token. The meaning of the 'value' property is quite like that of the 'balance' property of",
+  "title": "Semi-Fungible Token"
+}

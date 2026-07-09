@@ -1,0 +1,16 @@
+{
+  "category": "Unchecked Return Value",
+  "cwe": "CWE-252",
+  "description": "Unchecked call return value vulnerabilities occur when a contract fails to validate the success or failure of low-level calls, such as `call`, `delegatecall`, and `staticcall`. Ignoring the return values of these calls can result in undetected errors, allowing malicious or unintended actions to succeed silently.",
+  "id": "VULN-OWASP-SCWE-048",
+  "name": "Unchecked Call Return Value",
+  "owasp": "SCWE-048",
+  "remediation": "- **Check return values:** Always verify the success of low-level calls. - **Use higher-level abstractions:** Prefer method calls or, if you are confident that 2300 gas are sufficient for the recipient to handle the transfer, `transfer` over `call`, as they revert on failure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-048.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

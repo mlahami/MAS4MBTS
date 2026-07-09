@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5615",
+  "erc": "ERC-5615",
+  "events": [],
+  "functions": [
+    {
+      "name": "exists",
+      "operation_type": "contract_interaction",
+      "signature": "exists(uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply(uint256)"
+    }
+  ],
+  "id": "ERC5615",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5615",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5615.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC standardizes an existing mechanism to fetch token supply data from [ERC-1155](./eip-1155.md) tokens. It adds a `totalSupply` function, which fetches the number of tokens with a given `id`, and an `exists` function, which checks for the existence of a given `id`.",
+  "title": "ERC-1155 Supply Extension"
+}

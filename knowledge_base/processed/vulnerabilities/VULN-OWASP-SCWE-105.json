@@ -1,0 +1,16 @@
+{
+  "category": "Improper Verification of Cryptographic Signature",
+  "cwe": "CWE-347",
+  "description": "Improper EIP-2612 permit implementations that omit chain-specific domain separators, do not increment nonces, or ignore expiration allow signatures to be replayed across chains or multiple times. Attackers can repeatedly approve spending or re-use permits on forked networks.",
+  "id": "VULN-OWASP-SCWE-105",
+  "name": "Permit Signature Replay via Missing Domain Separator or Nonce",
+  "owasp": "SCWE-105",
+  "remediation": "- Build EIP-712 domain separators including `name`, `version`, `chainId`, and `verifyingContract`. - Maintain per-owner nonces and increment on every successful permit. - Enforce deadlines and reject expired signatures.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-105.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

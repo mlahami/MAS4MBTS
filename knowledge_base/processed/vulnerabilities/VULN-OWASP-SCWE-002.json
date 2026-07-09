@@ -1,0 +1,16 @@
+{
+  "category": "Improper Adherence to Coding Standards",
+  "cwe": "CWE-710",
+  "description": "Excessive contract complexity refers to situations where the design or implementation of a smart contract becomes overly complicated, making it difficult to understand, audit, and maintain. Such complexity increases the likelihood of introducing bugs and vulnerabilities that may not be apparent during development or testing. It often arises from: - Overuse of complex inheritance structures or external libraries. - Too many functions, interdependencies, and conditions within the contract. - Unnecessarily convoluted logic that could be simplified. The more complex the code, the higher the chance that mistakes are made, especially if future developers or auditors need to interact with the contract. Complexity can lead to hidden vulnerabilities that may be exploited over time.",
+  "id": "VULN-OWASP-SCWE-002",
+  "name": "Excessive Contract Complexity",
+  "owasp": "SCWE-002",
+  "remediation": "- **Refactor and simplify the code**: Break down complex functions into smaller, easier-to-understand components. - **Limit inheritance depth**: Use inheritance judiciously and prefer composition over deep inheritance chains. - **Use clear and descriptive names**: Functions, variables, and events should have self-explanatory names that indicate their purpose. - **Avoid redundant logic**: Consolidate repeated logic into reusable functions or libraries. - **Ensure modularity**: Split the contract into manageable modules that focus on specific tasks, improving readability and maintainability.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-002.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

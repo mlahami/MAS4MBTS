@@ -1,0 +1,90 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5173",
+  "erc": "ERC-5173",
+  "events": [
+    {
+      "name": "FRClaimed",
+      "signature": "FRClaimed(address,uint256)"
+    },
+    {
+      "name": "FRDistributed",
+      "signature": "FRDistributed(uint256,uint256,uint256)"
+    },
+    {
+      "name": "Listed",
+      "signature": "Listed(uint256,uint256)"
+    },
+    {
+      "name": "Unlisted",
+      "signature": "Unlisted(uint256)"
+    },
+    {
+      "name": "Bought",
+      "signature": "Bought(uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "list",
+      "operation_type": "contract_interaction",
+      "signature": "list(uint256,uint256)"
+    },
+    {
+      "name": "unlist",
+      "operation_type": "contract_interaction",
+      "signature": "unlist(uint256)"
+    },
+    {
+      "name": "buy",
+      "operation_type": "contract_interaction",
+      "signature": "buy(uint256)"
+    },
+    {
+      "name": "releaseFR",
+      "operation_type": "contract_interaction",
+      "signature": "releaseFR(address)"
+    },
+    {
+      "name": "retrieveFRInfo",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveFRInfo(uint256)"
+    },
+    {
+      "name": "retrieveAllottedFR",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveAllottedFR(address)"
+    },
+    {
+      "name": "retrieveListInfo",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveListInfo(uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,uint256)"
+    },
+    {
+      "name": "_calculateFR",
+      "operation_type": "contract_interaction",
+      "signature": "_calculateFR(uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "_distributeFR",
+      "operation_type": "contract_interaction",
+      "signature": "_distributeFR(uint256,uint256)"
+    }
+  ],
+  "id": "ERC5173",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5173",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5173.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces the Non-Fungible Future Rewards (nFR) framework, extending [ERC-721](./eip-721.md) tokens (NFTs) features to let token holders benefit from value appreciation after transferring ownership. By integrating cooperative game theory, it aligns stakeholder incentives, addressing inefficiencies in asset transactions. The framework fosters collaboration, transparency, and equitable profit sharing. It improves equity and efficiency, recognizes all ownership stages, and establishes a cooperative asset transaction model.",
+  "title": "NFT Future Rewards (nFR)"
+}

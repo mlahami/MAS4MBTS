@@ -1,0 +1,16 @@
+{
+  "category": "Use of Incorrectly-Resolved Name or Reference**",
+  "cwe": "CWE-706",
+  "description": "The `CREATE2` opcode allows for deterministic contract deployment, meaning the contract's address can be precomputed before deployment. However, improper handling of the salt parameter, constructor arguments, or contract bytecode can lead to vulnerabilities such as address predictability, re-deployment attacks, and malicious contract substitution. If an attacker can influence the salt or code, they may deploy a contract at a known address before the legitimate one, leading to security risks.",
+  "id": "VULN-OWASP-SCWE-051",
+  "name": "Improper Use of CREATE2 for Contract Deployment",
+  "owasp": "SCWE-051",
+  "remediation": "To prevent misuse of `CREATE2`: - Use unpredictable and unique salt values (e.g., incorporating nonces, sender addresses, or randomness). - Ensure the deployed contract logic remains consistent to prevent re-deployment attacks. - Hash important contract parameters into the salt to prevent unintended address collisions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-051.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

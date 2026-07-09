@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5008",
+  "erc": "ERC-5008",
+  "events": [
+    {
+      "name": "NonceChanged",
+      "signature": "NonceChanged(uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "nonce",
+      "operation_type": "contract_interaction",
+      "signature": "nonce(uint256)"
+    }
+  ],
+  "id": "ERC5008",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5008",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5008.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It proposes adding a `nonce` function to ERC-721 tokens.",
+  "title": "ERC-721 Nonce Extension"
+}

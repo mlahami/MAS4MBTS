@@ -1,0 +1,56 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4987",
+  "erc": "ERC-4987",
+  "events": [
+    {
+      "name": "Hold",
+      "signature": "Hold(address,address,uint256)"
+    },
+    {
+      "name": "Release",
+      "signature": "Release(address,address,uint256)"
+    },
+    {
+      "name": "Hold",
+      "signature": "Hold(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Release",
+      "signature": "Release(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "heldBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "heldBalanceOf(address,address)"
+    },
+    {
+      "name": "heldOwnerOf",
+      "operation_type": "contract_interaction",
+      "signature": "heldOwnerOf(address,uint256)"
+    },
+    {
+      "name": "heldBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "heldBalanceOf(address,address,uint256)"
+    },
+    {
+      "name": "getOwner",
+      "operation_type": "contract_interaction",
+      "signature": "getOwner(uint256)"
+    }
+  ],
+  "id": "ERC4987",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4987",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4987.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The proposed standard defines a lightweight interface to expose functional ownership and balances of held tokens. A held token is a token owned by a contract. This standard may be implemented by smart contracts which hold [EIP-20](./eip-20.md), [EIP-721](./eip-721.md), or [EIP-1155](./eip-1155.md) tokens and is intended to be consumed by both on-chain and off-chain systems that rely on ownership and balance verification.",
+  "title": "Held token interface"
+}

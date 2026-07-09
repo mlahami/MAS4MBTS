@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7531",
+  "erc": "ERC-7531",
+  "events": [
+    {
+      "name": "RightsHolderChange",
+      "signature": "RightsHolderChange(address,uint256,address,bytes4)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "rightsHolderOf",
+      "operation_type": "contract_interaction",
+      "signature": "rightsHolderOf(address,uint256,bytes4)"
+    },
+    {
+      "name": "supportedERC7531Rights",
+      "operation_type": "contract_interaction",
+      "signature": "supportedERC7531Rights()"
+    },
+    {
+      "name": "supportsERC7531Right",
+      "operation_type": "contract_interaction",
+      "signature": "supportsERC7531Right(bytes4)"
+    }
+  ],
+  "id": "ERC7531",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7531",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7531.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "The ownership of [ERC-721](./eip-721.md) tokens when staked in a pool presents challenges, particularly when it involves older, non-lockable NFTs like, for example, Crypto Punks or Bored Ape Yacht Club (BAYC) tokens. This proposal introduces an interface to address these challenges by allowing staked NFTs to be recognized by their original owners, even after they've been staked.",
+  "title": "Staked ERC-721 Ownership Recognition"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8117",
+  "erc": "ERC-8117",
+  "events": [],
+  "functions": [],
+  "id": "ERC8117",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8117",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8117.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a standard presentation-layer transformation whose primary purpose is to **prevent address-poisoning attacks**. Addresses with long leading zeros \u2014 increasingly common due to gas-optimization techniques and CREATE2 address mining \u2014 are a favoured target: the human eye skips over a monotonous run of zeros, allowing an attacker to substitute a crafted address that shares only the first few and last few visible characters. By condensing the low-entropy zero prefix into a compact subscript count, this standard forces the high-entropy suffix into immediate visual prominence, making poisoned addresses far easier to detect. It defines two display formats: 1. **Subscript Notation** (Unicode) \u2014 for wallets, block explorers, and mobile apps: `0x0\u2088abcd\u20261234` 2. **Parenthesis Notatio",
+  "title": "Anti-Poisoning Compact EVM Address Format"
+}

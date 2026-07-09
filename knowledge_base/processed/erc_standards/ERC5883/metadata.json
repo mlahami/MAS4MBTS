@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5883",
+  "erc": "ERC-5883",
+  "events": [],
+  "functions": [
+    {
+      "name": "approveTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "approveTransfer(address,address)"
+    },
+    {
+      "name": "requestTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "requestTransfer(address,address)"
+    },
+    {
+      "name": "addNeighbour",
+      "operation_type": "contract_interaction",
+      "signature": "addNeighbour(address)"
+    },
+    {
+      "name": "removeNeighbour",
+      "operation_type": "contract_interaction",
+      "signature": "removeNeighbour(address)"
+    }
+  ],
+  "id": "ERC5883",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5883",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5883.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP standardizes a mechanism of a social recovery where a token may be transferred from an inaccessible account to a new account, given enough approvals from other identities. This approval is not purely technical, but rather needs human intervention. These humans are - based on the Soul Bound Token proposal - called Souls. When enough Souls give their approval (which is a Yes/No decision) and a threshold is reached, a token is transferred from an old to a new identity.",
+  "title": "Token Transfer by Social Recovery"
+}

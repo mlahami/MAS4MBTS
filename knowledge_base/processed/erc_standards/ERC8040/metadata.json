@@ -1,0 +1,61 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8040",
+  "erc": "ERC-8040",
+  "events": [
+    {
+      "name": "Minted",
+      "signature": "Minted(uint256,string,string)"
+    },
+    {
+      "name": "Audited",
+      "signature": "Audited(uint256,bytes)"
+    },
+    {
+      "name": "Attested",
+      "signature": "Attested(uint256,bytes,string)"
+    },
+    {
+      "name": "Retired",
+      "signature": "Retired(uint256,uint256,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "mintESGToken",
+      "operation_type": "contract_interaction",
+      "signature": "mintESGToken(Metadata)"
+    },
+    {
+      "name": "auditESGToken",
+      "operation_type": "contract_interaction",
+      "signature": "auditESGToken(uint256,bytes)"
+    },
+    {
+      "name": "retireESGToken",
+      "operation_type": "contract_interaction",
+      "signature": "retireESGToken(uint256,string)"
+    },
+    {
+      "name": "esgURI",
+      "operation_type": "contract_interaction",
+      "signature": "esgURI(uint256)"
+    },
+    {
+      "name": "getMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadata(uint256)"
+    }
+  ],
+  "id": "ERC8040",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8040",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8040.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines an overlay interface and metadata schema for representing Environmental, Social, and Governance (ESG) assets with existing token standards. Compliant contracts expose ESG metadata through a token-specific URI and an optional on-chain metadata view, record attestations as cryptographic digests, and emit events when assets are minted, audited, attested, or retired. The interface is intended to be implemented alongside [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), or [ERC-1155](./eip-1155.md) so that ESG assets can keep their normal transfer semantics while adding machine-readable lifecycle state.",
+  "title": "ESG Tokenization Protocol"
+}

@@ -1,0 +1,63 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7936",
+  "erc": "ERC-7936",
+  "events": [
+    {
+      "name": "VersionRegistered",
+      "signature": "VersionRegistered(bytes32,address)"
+    },
+    {
+      "name": "DefaultVersionChanged",
+      "signature": "DefaultVersionChanged(bytes32,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerVersion",
+      "operation_type": "contract_interaction",
+      "signature": "registerVersion(bytes32,address)"
+    },
+    {
+      "name": "removeVersion",
+      "operation_type": "contract_interaction",
+      "signature": "removeVersion(bytes32)"
+    },
+    {
+      "name": "setDefaultVersion",
+      "operation_type": "contract_interaction",
+      "signature": "setDefaultVersion(bytes32)"
+    },
+    {
+      "name": "getImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "getImplementation(bytes32)"
+    },
+    {
+      "name": "getDefaultVersion",
+      "operation_type": "contract_interaction",
+      "signature": "getDefaultVersion()"
+    },
+    {
+      "name": "getVersions",
+      "operation_type": "contract_interaction",
+      "signature": "getVersions()"
+    },
+    {
+      "name": "executeAtVersion",
+      "operation_type": "contract_interaction",
+      "signature": "executeAtVersion(bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7936",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7936",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7936.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP standardizes an interface for proxy contracts that allows callers to explicitly select which version of an implementation contract they want to interact with. Unlike traditional proxy patterns that only expose the latest implementation, this standard enables backward compatibility by maintaining access to previous implementations while supporting upgrades. The versioned proxy maintains a registry of implementation addresses mapped to version identifiers, allowing callers to specify their desired version at call time.",
+  "title": "Versioned Proxy Contract Interface"
+}

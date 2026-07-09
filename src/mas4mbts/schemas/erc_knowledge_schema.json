@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mas4mbts/erc-knowledge.schema.json",
+  "title": "ERC Knowledge Record",
+  "type": "object",
+  "required": [
+    "id",
+    "erc",
+    "eip",
+    "title",
+    "status",
+    "category",
+    "source",
+    "summary",
+    "functions",
+    "events",
+    "assets",
+    "security_properties"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "erc": {"type": "string"},
+    "eip": {"type": "string"},
+    "title": {"type": "string"},
+    "status": {"type": "string"},
+    "category": {"type": "string"},
+    "source": {"type": "object"},
+    "summary": {"type": "string"},
+    "functions": {"type": "array", "items": {"type": "object"}},
+    "events": {"type": "array", "items": {"type": "object"}},
+    "assets": {"type": "array", "items": {"type": "object"}},
+    "security_properties": {"type": "array", "items": {"type": "object"}}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1523",
+  "erc": "ERC-1523",
+  "events": [],
+  "functions": [
+    {
+      "name": "policyMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "policyMetadata(uint256,bytes32)"
+    }
+  ],
+  "id": "ERC1523",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1523",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1523.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for insurance policies within smart contracts. Insurance policies are financial assets which are unique in some aspects, as they are connected to a customer, a specific risk, or have other unique properties like premium, period, carrier, underwriter etc. Nevertheless, there are many potential applications where insurance policies can be traded, transferred or otherwise treated as an asset. The ERC 721 standard already provides the standard and technical means to handle policies as a specific class of non fungible tokens. insurance In this proposal, we define a minimum metadata structure with properties which are common to the greatest possible class of policies.",
+  "title": "Standard for Insurance Policies as ERC-721 Non Fungible Tokens"
+}

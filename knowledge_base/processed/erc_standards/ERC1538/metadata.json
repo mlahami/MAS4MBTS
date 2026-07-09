@@ -1,0 +1,82 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1538",
+  "erc": "ERC-1538",
+  "events": [
+    {
+      "name": "OwnershipTransferred",
+      "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+      "name": "CommitMessage",
+      "signature": "CommitMessage(string)"
+    },
+    {
+      "name": "FunctionUpdate",
+      "signature": "FunctionUpdate(bytes4,address,address,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "delegateAddress",
+      "operation_type": "contract_interaction",
+      "signature": "delegateAddress(string)"
+    },
+    {
+      "name": "addFunction",
+      "operation_type": "contract_interaction",
+      "signature": "addFunction(address,address,string,string)"
+    },
+    {
+      "name": "updateContract",
+      "operation_type": "contract_interaction",
+      "signature": "updateContract(address,string,string)"
+    },
+    {
+      "name": "totalFunctions",
+      "operation_type": "contract_interaction",
+      "signature": "totalFunctions()"
+    },
+    {
+      "name": "functionByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "functionByIndex(uint256)"
+    },
+    {
+      "name": "functionExists",
+      "operation_type": "contract_interaction",
+      "signature": "functionExists(string)"
+    },
+    {
+      "name": "functionSignatures",
+      "operation_type": "contract_interaction",
+      "signature": "functionSignatures()"
+    },
+    {
+      "name": "delegateFunctionSignatures",
+      "operation_type": "contract_interaction",
+      "signature": "delegateFunctionSignatures(address)"
+    },
+    {
+      "name": "functionById",
+      "operation_type": "contract_interaction",
+      "signature": "functionById(bytes4)"
+    },
+    {
+      "name": "delegateAddresses",
+      "operation_type": "contract_interaction",
+      "signature": "delegateAddresses()"
+    }
+  ],
+  "id": "ERC1538",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1538",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1538.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Withdrawn",
+  "summary": "A transparent contract is a proxy contract design pattern that provides the following: 1. A way to add, replace and remove multiple functions of a contract atomically (at the same time). 1. Standard events to show what functions are added, replaced and removed from a contract, and why the changes are made. 2. A standard way to query a contract to discover and retrieve information about all functions exposed by it. 3. Solves the 24KB maximum contract size limitation, making the maximum contract size of a transparent contract practically unlimited. This standard makes the worry about contract size a thing of the past. 4. Enables an upgradeable contract to become immutable in the future if desired.",
+  "title": "Transparent Contract Standard"
+}

@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5298",
+  "erc": "ERC-5298",
+  "events": [],
+  "functions": [
+    {
+      "name": "claimTo",
+      "operation_type": "contract_interaction",
+      "signature": "claimTo(address,bytes32,address,uint256)"
+    },
+    {
+      "name": "getENS",
+      "operation_type": "contract_interaction",
+      "signature": "getENS()"
+    },
+    {
+      "name": "setENS",
+      "operation_type": "contract_interaction",
+      "signature": "setENS(address)"
+    },
+    {
+      "name": "onERC721Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC721Received(address,address,uint256,bytes)"
+    },
+    {
+      "name": "claimTo",
+      "operation_type": "contract_interaction",
+      "signature": "claimTo(address,bytes32,address)"
+    }
+  ],
+  "id": "ERC5298",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5298",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5298.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP standardizes an interface for smart contracts to hold [EIP-721](./eip-721.md) and [EIP-1155](./eip-1155.md) tokens on behalf of ENS domains.",
+  "title": "ENS Trust to hold NFTs under ENS name"
+}

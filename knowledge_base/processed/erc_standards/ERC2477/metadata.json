@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2477",
+  "erc": "ERC-2477",
+  "events": [],
+  "functions": [
+    {
+      "name": "tokenURIIntegrity",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURIIntegrity(uint256)"
+    },
+    {
+      "name": "tokenURISchemaIntegrity",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURISchemaIntegrity(uint256)"
+    },
+    {
+      "name": "tokenURIIntegrity",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURIIntegrity(1234)"
+    },
+    {
+      "name": "tokenURISchemaIntegrity",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURISchemaIntegrity(1234)"
+    }
+  ],
+  "id": "ERC2477",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2477",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2477.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "An interface `ERC2477` with two functions `tokenURIIntegrity` and `tokenURISchemaIntegrity` are specified for smart contracts and a narrative is provided to explain how this improves the integrity of the token metadata documents.",
+  "title": "Token Metadata Integrity"
+}

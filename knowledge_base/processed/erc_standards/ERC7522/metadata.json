@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7522",
+  "erc": "ERC-7522",
+  "events": [],
+  "functions": [
+    {
+      "name": "getVerificationKeyOfIdp",
+      "operation_type": "contract_interaction",
+      "signature": "getVerificationKeyOfIdp()"
+    },
+    {
+      "name": "getIdHash",
+      "operation_type": "contract_interaction",
+      "signature": "getIdHash(address)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(UserOp,OpenIdZkProofPublicInput,bytes)"
+    },
+    {
+      "name": "verifyAggregated",
+      "operation_type": "contract_interaction",
+      "signature": "verifyAggregated(UserOp[],OpenIdZkProofPublicInput[],bytes)"
+    }
+  ],
+  "id": "ERC7522",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7522",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7522.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Account Abstraction facilitates new use cases for smart accounts, empowering users with the ability to tailor authentication and recovery mechanisms to their specific needs. To unlock the potential for more convenient verification methods such as social login, we inevitably need to connect smart accounts and OpenID Connect(OIDC), given its status as the most widely accepted authentication protocol. In this EIP, we proposed a [ERC-4337](./eip-4337.md) compatible OIDC ZK verifier. Users can link their ERC-4337 accounts with OIDC identities and authorize an OIDC verifier to validate user operations by verifying the linked OIDC identity on-chain.",
+  "title": "OIDC ZK Verifier for AA Account"
+}

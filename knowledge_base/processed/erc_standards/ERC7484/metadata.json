@@ -1,0 +1,89 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7484",
+  "erc": "ERC-7484",
+  "events": [],
+  "functions": [
+    {
+      "name": "check",
+      "operation_type": "contract_interaction",
+      "signature": "check(address)"
+    },
+    {
+      "name": "checkForAccount",
+      "operation_type": "contract_interaction",
+      "signature": "checkForAccount(address,address)"
+    },
+    {
+      "name": "check",
+      "operation_type": "contract_interaction",
+      "signature": "check(address,uint256)"
+    },
+    {
+      "name": "checkForAccount",
+      "operation_type": "contract_interaction",
+      "signature": "checkForAccount(address,address,uint256)"
+    },
+    {
+      "name": "trustAttesters",
+      "operation_type": "contract_interaction",
+      "signature": "trustAttesters(uint8,address[])"
+    },
+    {
+      "name": "check",
+      "operation_type": "contract_interaction",
+      "signature": "check(address,address[],uint256)"
+    },
+    {
+      "name": "check",
+      "operation_type": "contract_interaction",
+      "signature": "check(address,uint256,address[],uint256)"
+    },
+    {
+      "name": "checkModule",
+      "operation_type": "contract_interaction",
+      "signature": "checkModule(address)"
+    },
+    {
+      "name": "checkModuleWithModuleTypeAndAttesters",
+      "operation_type": "contract_interaction",
+      "signature": "checkModuleWithModuleTypeAndAttesters(address,address[],uint256,uint16)"
+    },
+    {
+      "name": "installModule",
+      "operation_type": "contract_interaction",
+      "signature": "installModule(uint256,address,bytes)"
+    },
+    {
+      "name": "executeFromExecutor",
+      "operation_type": "contract_interaction",
+      "signature": "executeFromExecutor(ModeCode,bytes)"
+    },
+    {
+      "name": "_check",
+      "operation_type": "contract_interaction",
+      "signature": "_check(address,address)"
+    },
+    {
+      "name": "_getAttestation",
+      "operation_type": "contract_interaction",
+      "signature": "_getAttestation(address,address)"
+    },
+    {
+      "name": "_getAttesters",
+      "operation_type": "contract_interaction",
+      "signature": "_getAttesters(address)"
+    }
+  ],
+  "id": "ERC7484",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7484",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7484.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal standardizes the interface and functionality of Module Registries, allowing modular smart accounts to verify the security of modules using a Registry Adapter. It also provides a reference implementation of a Singleton Module Registry.",
+  "title": "Registry Extension for ERC-7579"
+}

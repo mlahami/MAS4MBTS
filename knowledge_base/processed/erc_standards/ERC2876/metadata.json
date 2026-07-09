@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2876",
+  "erc": "ERC-2876",
+  "events": [],
+  "functions": [
+    {
+      "name": "generateAddress",
+      "operation_type": "contract_interaction",
+      "signature": "generateAddress(baseAddress,nonce)"
+    },
+    {
+      "name": "checksumMatch",
+      "operation_type": "contract_interaction",
+      "signature": "checksumMatch(bytes8)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(bytes8)"
+    }
+  ],
+  "id": "ERC2876",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2876",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2876.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "An ERC-2876 compatible **deposit system** can accept ETH payments from multiple depositors without the need for managing multiple keys or requiring use of a hot wallet. An ERC-2876 compatible **wallet application** can send ETH to ERC-2876 compatible **deposit systems** in a way that the **deposit system** can differentiate their payment using the 8 byte id specified in this standard. Adoption of ERC-2876 by all exchanges (as a deposit system and as a wallet for their withdrawal systems), merchants, and all wallet applications/libraries will likely decrease total network gas usage by these systems, since two value transactions cost 42000 gas while a simple ETH forwarding contract will cost closer to 30000 gas depending on the underlying implementation. This also has the benefit for deposit",
+  "title": "Deposit contract and address standard"
+}

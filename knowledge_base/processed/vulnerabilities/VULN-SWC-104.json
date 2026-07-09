@@ -1,0 +1,17 @@
+{
+  "category": "Unchecked Return Value",
+  "cwe": "CWE-252",
+  "description": "The return value of a message call is not checked. Execution will resume even if the called contract throws an exception. If the call fails accidentally or an attacker forces the call to fail, this may cause unexpected behaviour in the subsequent program logic.",
+  "id": "VULN-SWC-104",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "If you choose to use low-level call methods, make sure to handle the possibility that the call will fail by checking the return value.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-104.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-104"
+}

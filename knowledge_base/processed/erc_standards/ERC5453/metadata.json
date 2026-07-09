@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5453",
+  "erc": "ERC-5453",
+  "events": [],
+  "functions": [
+    {
+      "name": "eip5453Nonce",
+      "operation_type": "contract_interaction",
+      "signature": "eip5453Nonce(address)"
+    },
+    {
+      "name": "isEligibleEndorser",
+      "operation_type": "contract_interaction",
+      "signature": "isEligibleEndorser(address)"
+    },
+    {
+      "name": "computeValidityDigest",
+      "operation_type": "contract_interaction",
+      "signature": "computeValidityDigest(bytes32,uint256,uint256,uint256)"
+    },
+    {
+      "name": "computeFunctionParamHash",
+      "operation_type": "contract_interaction",
+      "signature": "computeFunctionParamHash(string,bytes)"
+    },
+    {
+      "name": "computeExtensionDataTypeA",
+      "operation_type": "contract_interaction",
+      "signature": "computeExtensionDataTypeA(uint256,uint256,uint256,address,bytes)"
+    },
+    {
+      "name": "computeExtensionDataTypeB",
+      "operation_type": "contract_interaction",
+      "signature": "computeExtensionDataTypeB(uint256,uint256,uint256,address[],bytes[])"
+    },
+    {
+      "name": "methodName",
+      "operation_type": "contract_interaction",
+      "signature": "methodName(type1,type2,...)"
+    },
+    {
+      "name": "_validate",
+      "operation_type": "contract_interaction",
+      "signature": "_validate(bytes32,SingleEndorsementData)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256,bytes)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256)"
+    },
+    {
+      "name": "forward",
+      "operation_type": "contract_interaction",
+      "signature": "forward(address,uint256,uint256,bytes,bytes)"
+    },
+    {
+      "name": "forward",
+      "operation_type": "contract_interaction",
+      "signature": "forward(address,uint256,uint256,bytes)"
+    }
+  ],
+  "id": "ERC5453",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5453",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5453.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This EIP establishes a general protocol for permitting and approving function calls in the same transaction relying on [ERC-5750](./eip-5750.md). Unlike a few prior art ([ERC-2612](./eip-2612.md) for [ERC-20](./eip-20.md), [ERC-4494](./eip-4494.md) for [ERC-721](./eip-721.md) that usually only permit for a single behavior (`transfer` for ERC-20 and `safeTransferFrom` for ERC-721) and a single approver in two transactions (first a `permit(...)` TX, then a `transfer`-like TX), this EIP provides a way to permit arbitrary behaviors and aggregating multiple approvals from arbitrary number of approvers in the same transaction, allowing for Multi-Sig or Threshold Signing behavior.",
+  "title": "Endorsement - Permit for Any Functions"
+}

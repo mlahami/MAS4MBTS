@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6823",
+  "erc": "ERC-6823",
+  "events": [],
+  "functions": [
+    {
+      "name": "getTokenLocationRoot",
+      "operation_type": "contract_interaction",
+      "signature": "getTokenLocationRoot()"
+    }
+  ],
+  "id": "ERC6823",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6823",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6823.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The aim of this proposal is to enhance the precision of off-chain simulations for transactions that involve contracts complying with the [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), or [ERC-1155](./eip-1155.md) standards. To achieve this, a method is proposed for obtaining the reserved storage slot of the mapping responsible to track ownership of compliant tokens. The proposed extension offers a standardized entry point that allows for identifying the reserved storage slot of a mapping in a compatible manner. This not only facilitates capturing state changes more precisely but also enables external tools and services to do so without requiring expertise in the particular implementation details.",
+  "title": "Token Mapping Slot Retrieval Extension"
+}

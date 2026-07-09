@@ -1,0 +1,57 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4974",
+  "erc": "ERC-4974",
+  "events": [
+    {
+      "name": "NewOperator",
+      "signature": "NewOperator(address)"
+    },
+    {
+      "name": "Rating",
+      "signature": "Rating(address,int8)"
+    },
+    {
+      "name": "Removal",
+      "signature": "Removal(address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setOperator",
+      "operation_type": "contract_interaction",
+      "signature": "setOperator(address)"
+    },
+    {
+      "name": "rate",
+      "operation_type": "contract_interaction",
+      "signature": "rate(address,int8)"
+    },
+    {
+      "name": "removeRating",
+      "operation_type": "contract_interaction",
+      "signature": "removeRating(address)"
+    },
+    {
+      "name": "ratingOf",
+      "operation_type": "contract_interaction",
+      "signature": "ratingOf(address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC4974",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4974",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4974.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard defines a standardized interface for assigning and managing numerical ratings on the Ethereum blockchain. This allows ratings to be codified within smart contracts and recognized by other applications, enabling a wide range of new use cases for tokens.",
+  "title": "Ratings"
+}

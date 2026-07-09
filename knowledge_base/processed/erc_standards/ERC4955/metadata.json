@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4955",
+  "erc": "ERC-4955",
+  "events": [],
+  "functions": [],
+  "id": "ERC4955",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4955",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4955.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP standardizes a schema for NFTs metadata to add new field namespaces to the JSON schema for [EIP-721](./eip-721.md) and [EIP-1155](./eip-1155.md) NFTs.",
+  "title": "Vendor Metadata Extension for NFTs"
+}

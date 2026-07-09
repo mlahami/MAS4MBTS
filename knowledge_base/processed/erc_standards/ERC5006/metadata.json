@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5006",
+  "erc": "ERC-5006",
+  "events": [
+    {
+      "name": "CreateUserRecord",
+      "signature": "CreateUserRecord(uint256,uint256,uint64,address,address,uint64)"
+    },
+    {
+      "name": "DeleteUserRecord",
+      "signature": "DeleteUserRecord(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "usableBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "usableBalanceOf(address,uint256)"
+    },
+    {
+      "name": "frozenBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "frozenBalanceOf(address,uint256)"
+    },
+    {
+      "name": "userRecordOf",
+      "operation_type": "contract_interaction",
+      "signature": "userRecordOf(uint256)"
+    },
+    {
+      "name": "createUserRecord",
+      "operation_type": "contract_interaction",
+      "signature": "createUserRecord(address,address,uint256,uint64,uint64)"
+    },
+    {
+      "name": "deleteUserRecord",
+      "operation_type": "contract_interaction",
+      "signature": "deleteUserRecord(uint256)"
+    }
+  ],
+  "id": "ERC5006",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5006",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5006.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [ERC-1155](./eip-1155.md). It proposes an additional role (`user`) which can be granted to addresses that represent a `user` of the assets rather than an `owner`.",
+  "title": "Rental NFT, NFT User Extension"
+}

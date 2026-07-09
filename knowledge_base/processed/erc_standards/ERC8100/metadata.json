@@ -1,0 +1,68 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8100",
+  "erc": "ERC-8100",
+  "events": [
+    {
+      "name": "SettlementRequested",
+      "signature": "SettlementRequested(address,string,string)"
+    },
+    {
+      "name": "Updated",
+      "signature": "Updated(address,uint256,uint256,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "stateXmlTemplate",
+      "operation_type": "contract_interaction",
+      "signature": "stateXmlTemplate()"
+    },
+    {
+      "name": "stateVersion",
+      "operation_type": "contract_interaction",
+      "signature": "stateVersion()"
+    },
+    {
+      "name": "stateHash",
+      "operation_type": "contract_interaction",
+      "signature": "stateHash()"
+    },
+    {
+      "name": "statePartXmlTemplate",
+      "operation_type": "contract_interaction",
+      "signature": "statePartXmlTemplate(uint256)"
+    },
+    {
+      "name": "signature",
+      "operation_type": "contract_interaction",
+      "signature": "signature(optional)"
+    },
+    {
+      "name": "couponAmounts",
+      "operation_type": "contract_interaction",
+      "signature": "couponAmounts()"
+    },
+    {
+      "name": "cashflows",
+      "operation_type": "contract_interaction",
+      "signature": "cashflows()"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(uint256,uint256,bool)"
+    }
+  ],
+  "id": "ERC8100",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8100",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8100.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC introduces `IXMLRepresentableState`, a standard interface and XML binding schema that allows an EVM smart contract to define a static XML template with machine-readable bindings to its state and view functions. Off-chain renderers use this template to build a canonical XML representation of the contract's state at a specific block, without incurring any on-chain gas cost. In this ERC, \"canonical\" refers to the semantic content defined by the rendering rules; byte-for-byte identical XML output across renderers is not required. This ERC defines the notion of an *XML-complete* contract (see Specification). Informally, an XML-complete contract exposes, via bindings in its XML template, all mutable state that the author considers semantically relevant for future behaviour at a given (c",
+  "title": "Representable Contract State"
+}

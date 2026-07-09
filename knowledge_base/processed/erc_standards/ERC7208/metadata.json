@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7208",
+  "erc": "ERC-7208",
+  "events": [],
+  "functions": [
+    {
+      "name": "read",
+      "operation_type": "contract_interaction",
+      "signature": "read(bytes32,bytes4,bytes)"
+    },
+    {
+      "name": "write",
+      "operation_type": "contract_interaction",
+      "signature": "write(bytes32,bytes4,bytes)"
+    },
+    {
+      "name": "setDIImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "setDIImplementation(bytes32,address)"
+    },
+    {
+      "name": "isAdmin",
+      "operation_type": "contract_interaction",
+      "signature": "isAdmin(bytes32,address)"
+    },
+    {
+      "name": "allocate",
+      "operation_type": "contract_interaction",
+      "signature": "allocate(address)"
+    },
+    {
+      "name": "transferOwnership",
+      "operation_type": "contract_interaction",
+      "signature": "transferOwnership(bytes32,address)"
+    },
+    {
+      "name": "grantAdminRole",
+      "operation_type": "contract_interaction",
+      "signature": "grantAdminRole(bytes32,address)"
+    },
+    {
+      "name": "revokeAdminRole",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAdminRole(bytes32,address)"
+    },
+    {
+      "name": "isApprovedDataManager",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedDataManager(bytes32,address)"
+    },
+    {
+      "name": "allowDataManager",
+      "operation_type": "contract_interaction",
+      "signature": "allowDataManager(bytes32,address,bool)"
+    },
+    {
+      "name": "read",
+      "operation_type": "contract_interaction",
+      "signature": "read(address,bytes32,bytes4,bytes)"
+    },
+    {
+      "name": "write",
+      "operation_type": "contract_interaction",
+      "signature": "write(address,bytes32,bytes4,bytes)"
+    }
+  ],
+  "id": "ERC7208",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7208",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7208.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC defines a series of interfaces for the abstraction of storage of on-chain data by implementing the logic functions that govern such data on independent smart contracts. \"On-chain Data Containers\" (ODCs) refer to the separation and indexing of data storage away from data management. We propose that on-chain data can be abstracted and stored in smart contracts called \"Data Objects\" (DO), which answer to external data indexing mechanisms named \"Data Points\" (DP). This data can be accessed and modified by implementing (one or many) separate smart contracts identified as \"Data Managers\" (DM). We introduce two mechanisms for access management: first, through a \"Data Index\" (DI) implementation, the \"Data Managers\" (DM) can be gated from accessing \"Data Objects\" (DO); second, a \"Data Poin",
+  "title": "On-Chain Data Containers"
+}

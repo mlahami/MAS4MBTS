@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7540",
+  "erc": "ERC-7540",
+  "events": [],
+  "functions": [
+    {
+      "name": "requestDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "requestDeposit(uint256,address,address)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint256,address,address)"
+    },
+    {
+      "name": "setOperator",
+      "operation_type": "contract_interaction",
+      "signature": "setOperator(address,bool)"
+    }
+  ],
+  "id": "ERC7540",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7540",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7540.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The following standard extends [ERC-4626](./eip-4626.md) by adding support for asynchronous deposit and redemption flows. The async flows are called Requests. New methods are added to asynchronously Request a deposit or redemption, and view the status of the Request. The existing `deposit`, `mint`, `withdraw`, and `redeem` ERC-4626 methods are used for executing Claimable Requests. Implementations can choose whether to add asynchronous flows for deposits, redemptions, or both.",
+  "title": "Asynchronous ERC-4626 Tokenized Vaults"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Flash loan\u2013facilitated attacks describe exploits where an attacker uses **uncollateralized, same-transaction borrowing** (flash loans) to amplify an underlying vulnerability into a profitable, protocol-draining attack. Flash loans are not inherently vulnerable\u2014they are a legitimate DeFi primitive\u2014but they grant attackers arbitrarily large, transient capital within a single transaction. Any protocol that makes trust assumptions based on *capital at risk* or *historical position size* is exposed when an attacker can temporarily hold massive balances without putting their own funds at risk. This affects all contract types that assume economic constraints or proportional exposure: lending protocols (governance vote weight, liquidation thresholds, collateral ratios), AMMs (share minting, arbitrage, oracle skew), yield vaults (deposit/withdraw/share accounting), governance (vote buying, flash-loan governance attacks), NFT and token valuation (floor price, collateral valuation), and cross-protocol composability where one contract\u2019s state is influenced by another\u2019s liquidity. On non-EVM chains, similar concepts exist (e.g., transient large positions within a single block or batch). Few areas to focus on: - **Governance and voting** (flash-loan vote buying, snapshot manipulation) - **Oracle and pricing** (manipulating DEX/TWAP feeds with borrowed liquidity) - **Share and accounting logic** (rounding, proportional calculations that assume bounded input) - **Liquidation and collateral checks** (position size\u2013dependent thresholds) - **Composability** (protocols that trust caller balance or pool state in a single transaction) Attackers construct batched transactions that: 1. Borrow large capital via flash loan (Aave, dYdX, Uniswap V3 flash, or equivalent). 2. Manipulate protocol sta",
+  "id": "VULN-OWASP-SC04",
+  "name": "SC04:2026 Flash Loan\u2013Facilitated Attacks",
+  "owasp": "SC04",
+  "remediation": "- **Assume flash loans exist**: design economic and accounting logic on the assumption that arbitrarily large, transient capital is available to attackers. - **Rate limit sensitive operations**: - Per-block or per-epoch limits on rebasing, rebalancing, or high-impact state transitions. - Dynamic fees that increase with the magnitude/frequency of actions. - **Cap exposure per interaction**: - Set maximum slippage, max position sizes, and borrowing caps. - Limit how much state can change in a single transaction. - **Simulate flash loan scenarios**: - Include flash-loan-style tests in QA and audits. - Use fuzzing to discover profitable multi-call sequences. - **Combine with strong oracles and logic**: - Flash loans are usually the *multiplier*; underlying issues (SC02, SC03, SC07) must be fixed at the root.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC04-FlashLoanAttacks.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

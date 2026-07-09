@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-926",
+  "erc": "ERC-926",
+  "events": [],
+  "functions": [
+    {
+      "name": "provider",
+      "operation_type": "contract_interaction",
+      "signature": "provider(address)"
+    },
+    {
+      "name": "setProvider",
+      "operation_type": "contract_interaction",
+      "signature": "setProvider(address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC926",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-926",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-926.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP specifies a registry for address metadata, permitting both contracts and external accounts to supply metadata about themselves to onchain and offchain callers. This permits use-cases such as generalised authorisations, providing token acceptance settings, and claims registries.",
+  "title": "Address metadata registry"
+}

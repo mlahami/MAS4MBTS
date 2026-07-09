@@ -1,0 +1,16 @@
+{
+  "category": "Security Misconfiguration",
+  "cwe": "CWE-933",
+  "description": "Poor governance documentation refers to the **lack of clear, transparent, and publicly accessible records** regarding a smart contract system\u2019s decision-making processes, upgrade mechanisms, and role-based permissions. Without proper documentation, **users, developers, and auditors struggle to understand the governance model**, leading to **reduced trust, misconfigurations, and potential security vulnerabilities**. Key risks associated with poor governance documentation: - **Unclear Decision-Making Process**: Users may not understand how governance proposals are initiated, approved, or executed. - **Hidden Centralization Risks**: Critical governance powers may be concentrated in a small group without public awareness. - **Lack of Upgradeability Transparency**: If upgrade procedures are not well-documented, malicious or unintended changes may go unnoticed. - **Poor Incident Response Handling**: Without clear emergency protocols, governance failures can lead to slow or inadequate responses to attacks.",
+  "id": "VULN-OWASP-SCWE-015",
+  "name": "Poor Governance Documentation",
+  "owasp": "SCWE-015",
+  "remediation": "- **Comprehensive Governance Documentation**: Clearly outline roles, permissions, voting mechanisms, and upgradeability in technical and non-technical formats. - **Public Governance Reports**: Regularly publish governance decisions, major votes, and protocol updates in a transparent manner. - **Well-Defined Emergency Procedures**: Establish and document response plans for governance failures, protocol attacks, or keyholder compromises. - **On-Chain Governance Visibility**: Ensure that governance smart contracts expose relevant functions for transparency and accountability. - **Third-Party Audits of Governance Mechanisms**: Periodically review governance documentation and processes through independent audits.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-015.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

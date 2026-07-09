@@ -1,0 +1,16 @@
+{
+  "category": "Improper Enforcement of Behavioral Workflow",
+  "cwe": "CWE-841",
+  "description": "ERC777 tokens trigger `tokensReceived` hooks on recipients. Contracts that accept tokens without reentrancy protection or without blocking ERC777 hooks can be reentered during token transfers, enabling double-withdrawals or bypassing invariants.",
+  "id": "VULN-OWASP-SCWE-104",
+  "name": "Unprotected ERC777 Token Hooks",
+  "owasp": "SCWE-104",
+  "remediation": "- Add `nonReentrant` guards around token transfer handlers and withdrawals. - Block unexpected token types or disable ERC777 acceptance by rejecting the ERC1820 interface. - Use pull-based withdrawals and avoid performing sensitive logic inside token receive hooks.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-104.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

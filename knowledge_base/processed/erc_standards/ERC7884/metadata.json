@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7884",
+  "erc": "ERC-7884",
+  "events": [],
+  "functions": [
+    {
+      "name": "getOperationHandler",
+      "operation_type": "contract_interaction",
+      "signature": "getOperationHandler(bytes)"
+    }
+  ],
+  "id": "ERC7884",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7884",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7884.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP introduces a protocol that enables smart contracts to redirect write operations to external systems. The protocol defines a standardized way for contracts to indicate that an operation should be handled by either a contract deployed to an L2 chain, to the L1, or an off-chain database, providing an entry point for easy developer experience and client implementations.",
+  "title": "Operation Router"
+}

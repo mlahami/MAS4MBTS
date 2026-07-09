@@ -1,0 +1,16 @@
+{
+  "category": "Improper Validation of Specified Quantity in Input",
+  "cwe": "CWE-1284",
+  "description": "This weakness arises when smart contracts performing cross-chain messaging fail to validate the size of payloads before emitting or sending them. In protocols using relayer-based messaging (e.g., LayerZero, Wormhole), data is typically encoded and emitted as a payload on the source chain, then relayed and decoded on the destination chain. If the encoded payload exceeds the maximum allowed size (often 10,000 bytes or similar, depending on the bridge/messaging protocol), the message transmission or decoding can revert\u2014often because the large payload causes out-of-gas consumption during processing or fails explicit size checks. In lock-mint architectures, this can lead to permanent loss of user funds due to inability to unlock or mint assets on the destination chain.",
+  "id": "VULN-OWASP-SCWE-087",
+  "name": "Missing Payload Size Validation in Cross-Chain Messaging (Denial of Service/Stuck Funds)",
+  "owasp": "SCWE-087",
+  "remediation": "- Enforce maximum payload size validation on both source and destination chains. - Perform defensive coding around payload encoding and decoding to catch out-of-gas or out-of-bound errors. - Consider fallback or reversion handling strategies to safely refund or unlock funds when such failures occur.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-087.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

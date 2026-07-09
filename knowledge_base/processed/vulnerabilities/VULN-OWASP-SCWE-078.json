@@ -1,0 +1,16 @@
+{
+  "category": "Improper Check or Handling of Exceptional Conditions",
+  "cwe": "CWE-703",
+  "description": "Improper handling of Ether transfers in Solidity can lead to unexpected behaviors, such as failed transactions or loss of funds. For instance, when using `transfer()` or `send()`, failure to check for successful execution or not handling exceptions correctly can cause Ether to be locked or lost in the contract.",
+  "id": "VULN-OWASP-SCWE-078",
+  "name": "Improper Handling of Ether Transfers",
+  "owasp": "SCWE-078",
+  "remediation": "Always handle exceptions properly when transferring Ether. Ensure that you check for success or failure using `require()` or `assert()` after Ether transfers. Additionally, use `call()` with a specified gas limit for greater flexibility and error handling.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-078.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

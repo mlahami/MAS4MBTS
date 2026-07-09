@@ -1,0 +1,16 @@
+{
+  "category": "Buffer Access with Incorrect Length Value**",
+  "cwe": "CWE-805",
+  "description": "Incorrect storage packing in Solidity occurs when storage variables are not efficiently packed within a single storage slot, leading to unnecessary gas consumption. Solidity automatically stores variables in 32-byte (256-bit) slots, and inefficient ordering of data types can lead to wasted space. Contracts that fail to optimize storage packing may incur higher gas costs during deployments and transactions.",
+  "id": "VULN-OWASP-SCWE-040",
+  "name": "Incorrect Storage Packing",
+  "owasp": "SCWE-040",
+  "remediation": "To optimize storage packing: - Group smaller data types together (e.g., `uint8`, `bool`) to fit within a single 32-byte slot. - Avoid leaving gaps between variables of different sizes. - Order state variables efficiently to minimize wasted storage slots.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-040.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

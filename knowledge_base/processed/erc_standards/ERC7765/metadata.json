@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7765",
+  "erc": "ERC-7765",
+  "events": [
+    {
+      "name": "PrivilegeExercised",
+      "signature": "PrivilegeExercised(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "exercisePrivilege",
+      "operation_type": "contract_interaction",
+      "signature": "exercisePrivilege(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "isExercisable",
+      "operation_type": "contract_interaction",
+      "signature": "isExercisable(address,uint256,uint256)"
+    },
+    {
+      "name": "isExercised",
+      "operation_type": "contract_interaction",
+      "signature": "isExercised(address,uint256,uint256)"
+    },
+    {
+      "name": "getPrivilegeIds",
+      "operation_type": "contract_interaction",
+      "signature": "getPrivilegeIds(uint256)"
+    },
+    {
+      "name": "privilegeURI",
+      "operation_type": "contract_interaction",
+      "signature": "privilegeURI(uint256)"
+    }
+  ],
+  "id": "ERC7765",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7765",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7765.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP defines an interface to carry a real world asset with some privileges that can be exercised by the holder of the corresponding NFT. The EIP standardizes the interface for non-fungible tokens representing real world assets with privileges to be exercised, such as products sold onchain which can be redeemed in the real world. And the privileges we describe here specifically refer to the rights and interests bound to the RWA NFT that can be executed by the holder in the real world.",
+  "title": "Privileged Non-Fungible Tokens Tied To RWA"
+}

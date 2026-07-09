@@ -1,0 +1,73 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6864",
+  "erc": "ERC-6864",
+  "events": [
+    {
+      "name": "Upgrade",
+      "signature": "Upgrade(address,address,uint256)"
+    },
+    {
+      "name": "Downgrade",
+      "signature": "Downgrade(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "upgrade",
+      "operation_type": "contract_interaction",
+      "signature": "upgrade(address,uint256)"
+    },
+    {
+      "name": "downgrade",
+      "operation_type": "contract_interaction",
+      "signature": "downgrade(address,address,uint256)"
+    },
+    {
+      "name": "baseToken",
+      "operation_type": "contract_interaction",
+      "signature": "baseToken()"
+    },
+    {
+      "name": "combinedTotalSupply",
+      "operation_type": "contract_interaction",
+      "signature": "combinedTotalSupply()"
+    },
+    {
+      "name": "combinedBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "combinedBalanceOf(address)"
+    },
+    {
+      "name": "combinedAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "combinedAllowance(address,address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    }
+  ],
+  "id": "ERC6864",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6864",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6864.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal outlines a smart contract interface for upgrading/downgrading existing [ERC-20](./eip-20.md) smart contracts while maintaining user balances. The interface itself is an extension to the ERC-20 standard so that other smart contracts can continue to interact with the upgraded smart contract without changing anything other than the address.",
+  "title": "Upgradable Fungible Token"
+}

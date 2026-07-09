@@ -1,0 +1,16 @@
+{
+  "category": "Detection of Error Condition Without Action",
+  "cwe": "CWE-390",
+  "description": "Solidity 0.6+ `try/catch` allows catching reverts from external calls. If the catch block does not properly handle the failure\u2014e.g., proceeds without reverting, leaves state inconsistent, or swallows the error without logging\u2014the contract can continue execution under incorrect assumptions. Silent failures can lead to fund loss, corrupted state, or exploitable inconsistencies.",
+  "id": "VULN-OWASP-SCWE-146",
+  "name": "Improper Use of try/catch Leading to Silent Failures",
+  "owasp": "SCWE-146",
+  "remediation": "- In catch blocks, either revert with a clear message or update state to reflect the failure (e.g., mark operation as failed, emit event). - Avoid proceeding with critical logic when the external call failed unless the failure is explicitly handled and documented.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-146.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7946",
+  "erc": "ERC-7946",
+  "events": [],
+  "functions": [
+    {
+      "name": "getCalls",
+      "operation_type": "contract_interaction",
+      "signature": "getCalls(address,bytes)"
+    },
+    {
+      "name": "getErrorCodeDetails",
+      "operation_type": "contract_interaction",
+      "signature": "getErrorCodeDetails(uint256)"
+    }
+  ],
+  "id": "ERC7946",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7946",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7946.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Universal Wallet Uplink (UWULink) is a protocol that allows applications (dApps) to request a wallet to make a batch of contract calls in a single atomic transaction without establishing a two-way connection or revealing the user's address to the requester. The protocol defines a compact binary message format using Protocol Buffers suitable for low-bandwidth channels such as QR codes or NFC tags. Two modes of operation are supported: **Static Mode**, where the request payload directly contains the list of calls, and **Programmable Mode**, where the payload references a contract that generates the list of calls.",
+  "title": "Unidirectional Wallet Uplink aka UWULink"
+}

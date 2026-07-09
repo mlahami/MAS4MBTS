@@ -1,0 +1,47 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5189",
+  "erc": "ERC-5189",
+  "events": [
+    {
+      "name": "UntrustedStarted",
+      "signature": "UntrustedStarted()"
+    },
+    {
+      "name": "UntrustedEnded",
+      "signature": "UntrustedEnded()"
+    },
+    {
+      "name": "Burned",
+      "signature": "Burned(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "simulationSettings",
+      "operation_type": "contract_interaction",
+      "signature": "simulationSettings(Operation)"
+    },
+    {
+      "name": "isOperationReady",
+      "operation_type": "contract_interaction",
+      "signature": "isOperationReady(Operation)"
+    },
+    {
+      "name": "addBurn",
+      "operation_type": "contract_interaction",
+      "signature": "addBurn(address)"
+    }
+  ],
+  "id": "ERC5189",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5189",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5189.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a form of account abstraction (AA) that ensures compatibility with existing smart contract wallets and provides flexibility for alternative designs while avoiding introducing changes to the consensus layer. Instead of defining a strict structure for AA transactions, this proposal introduces the figure of `endorser` contracts. These smart contract instances are tasked with determining the quality of the submitted AA transactions, thus safely helping bundlers determine if a transaction should be kept in the mempool or not. Developers that intend to make their smart contract wallet compatible with this ERC must create and deploy an instance of an `endorser` or use an existing one compatible with their wallet.",
+  "title": "Account Abstraction via Endorsed Operations"
+}

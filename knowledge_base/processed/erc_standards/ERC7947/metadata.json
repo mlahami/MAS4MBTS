@@ -1,0 +1,80 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7947",
+  "erc": "ERC-7947",
+  "events": [
+    {
+      "name": "AccessRecovered",
+      "signature": "AccessRecovered(bytes)"
+    },
+    {
+      "name": "RecoveryProviderAdded",
+      "signature": "RecoveryProviderAdded(address)"
+    },
+    {
+      "name": "RecoveryProviderRemoved",
+      "signature": "RecoveryProviderRemoved(address)"
+    },
+    {
+      "name": "AccountSubscribed",
+      "signature": "AccountSubscribed(address)"
+    },
+    {
+      "name": "AccountUnsubscribed",
+      "signature": "AccountUnsubscribed(address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addRecoveryProvider",
+      "operation_type": "contract_interaction",
+      "signature": "addRecoveryProvider(address,bytes)"
+    },
+    {
+      "name": "removeRecoveryProvider",
+      "operation_type": "contract_interaction",
+      "signature": "removeRecoveryProvider(address)"
+    },
+    {
+      "name": "recoveryProviderAdded",
+      "operation_type": "contract_interaction",
+      "signature": "recoveryProviderAdded(address)"
+    },
+    {
+      "name": "recoverAccess",
+      "operation_type": "contract_interaction",
+      "signature": "recoverAccess(bytes,address,bytes)"
+    },
+    {
+      "name": "subscribe",
+      "operation_type": "contract_interaction",
+      "signature": "subscribe(bytes)"
+    },
+    {
+      "name": "unsubscribe",
+      "operation_type": "contract_interaction",
+      "signature": "unsubscribe()"
+    },
+    {
+      "name": "getRecoveryData",
+      "operation_type": "contract_interaction",
+      "signature": "getRecoveryData(address)"
+    },
+    {
+      "name": "recover",
+      "operation_type": "contract_interaction",
+      "signature": "recover(bytes,bytes)"
+    }
+  ],
+  "id": "ERC7947",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7947",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7947.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Introduce a universal account abstraction recovery mechanism `recoverAccess(subject, provider, proof)` along with recovery provider management functions for smart accounts to securely update their access subject.",
+  "title": "Account Abstraction Recovery Interface"
+}

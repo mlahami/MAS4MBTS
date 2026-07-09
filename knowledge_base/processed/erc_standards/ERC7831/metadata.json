@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7831",
+  "erc": "ERC-7831",
+  "events": [],
+  "functions": [
+    {
+      "name": "chainId",
+      "operation_type": "contract_interaction",
+      "signature": "chainId()"
+    },
+    {
+      "name": "coinType",
+      "operation_type": "contract_interaction",
+      "signature": "coinType()"
+    },
+    {
+      "name": "acceptsName",
+      "operation_type": "contract_interaction",
+      "signature": "acceptsName(bytes32)"
+    }
+  ],
+  "id": "ERC7831",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7831",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7831.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a chain-specific address format that allows specifying both an account and the chain on which that account intends to transact. These chain-specific addresses take the form of `(example.eth:optimism)`, `6A10161835a36302BfD39bDA9B44f5734442234e:ethereum:11155111`, and so on. The target chain is resolved using a registry stored on ENS.",
+  "title": "Multi-Chain Addressing"
+}

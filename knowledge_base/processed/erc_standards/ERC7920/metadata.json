@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7920",
+  "erc": "ERC-7920",
+  "events": [],
+  "functions": [
+    {
+      "name": "_verifyMerkleProof",
+      "operation_type": "contract_interaction",
+      "signature": "_verifyMerkleProof(bytes32,bytes32[],bytes32)"
+    }
+  ],
+  "id": "ERC7920",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7920",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7920.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC provides a standard for signing multiple typed-data messages with a single signature by encoding them into a Merkle tree. This allows components to independently verify messages, without requiring full knowledge of the others. It provides a significant UX improvement by reducing the number of signature prompts to one, while preserving the security and flexibility of the [EIP-712](./eip-712.md) standard. This ERC also gives applications the flexibility to verify messages in isolation, or in aggregate. This opens up new verification modalities: for e.g, an application can require that message (`x`) is only valid when signed in combination message (`y`).",
+  "title": "Composite EIP-712 Signatures"
+}

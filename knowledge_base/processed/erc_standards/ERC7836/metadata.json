@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7836",
+  "erc": "ERC-7836",
+  "events": [],
+  "functions": [],
+  "id": "ERC7836",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7836",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7836.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal defines complementary JSON-RPC methods to [EIP-5792's `wallet_sendCalls`](./eip-5792.md) to enable an Application to sign over a call bundle (instead of the Wallet). Methods defined in this proposal are purposed for the Application to sign over `calls` and submit them to the Wallet with an accompanying signature. This is in contrast to `wallet_sendCalls`, where a Wallet itself signs over the call bundle.",
+  "title": "Wallet Call Preparation API"
+}

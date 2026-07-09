@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5192",
+  "erc": "ERC-5192",
+  "events": [
+    {
+      "name": "Locked",
+      "signature": "Locked(uint256)"
+    },
+    {
+      "name": "Unlocked",
+      "signature": "Unlocked(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "locked",
+      "operation_type": "contract_interaction",
+      "signature": "locked(...)"
+    },
+    {
+      "name": "locked",
+      "operation_type": "contract_interaction",
+      "signature": "locked(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC5192",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5192",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5192.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [EIP-721](./eip-721.md). It proposes a minimal interface to make tokens soulbound using the feature detection functionality of [EIP-165](./eip-165.md). A soulbound token is a non-fungible token bound to a single account.",
+  "title": "Minimal Soulbound NFTs"
+}

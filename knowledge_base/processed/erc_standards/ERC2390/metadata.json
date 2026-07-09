@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2390",
+  "erc": "ERC-2390",
+  "events": [
+    {
+      "name": "GeoENSRecordChanged",
+      "signature": "GeoENSRecordChanged(bytes32,bytes8,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setGeoAddr",
+      "operation_type": "contract_interaction",
+      "signature": "setGeoAddr(bytes32,string,address)"
+    },
+    {
+      "name": "geoAddr",
+      "operation_type": "contract_interaction",
+      "signature": "geoAddr(bytes32,string)"
+    },
+    {
+      "name": "chartobase32",
+      "operation_type": "contract_interaction",
+      "signature": "chartobase32(byte)"
+    },
+    {
+      "name": "geoAddr",
+      "operation_type": "contract_interaction",
+      "signature": "geoAddr(bytes32,bytes8,uint8)"
+    },
+    {
+      "name": "setGeoAddr",
+      "operation_type": "contract_interaction",
+      "signature": "setGeoAddr(bytes32,bytes8,address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC2390",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2390",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2390.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP specifies an ENS resolver interface for geographically split horizon DNS. Geographic split horizon DNS returns resource records that are specific to an end user's location. This technique is commonly used by CDNs to direct traffic to content caches nearest users. Geographic split horizon resolution is primarily geared towards ENS resolvers storing DNS resource records [EIP-1185](./eip-1185.md), although the technique could be used on other interfaces like IPFS content hash storage [EIP-1062](./eip-1062.md).",
+  "title": "Geo-ENS"
+}

@@ -1,0 +1,119 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7649",
+  "erc": "ERC-7649",
+  "events": [
+    {
+      "name": "Trade",
+      "signature": "Trade(address,address,bool,uint256,uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getPrice",
+      "operation_type": "contract_interaction",
+      "signature": "getPrice(uint256,uint256)"
+    },
+    {
+      "name": "getSharesSubject",
+      "operation_type": "contract_interaction",
+      "signature": "getSharesSubject()"
+    },
+    {
+      "name": "getFeePercent",
+      "operation_type": "contract_interaction",
+      "signature": "getFeePercent()"
+    },
+    {
+      "name": "getSharesIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "getSharesIssuer()"
+    },
+    {
+      "name": "getSharesBalance",
+      "operation_type": "contract_interaction",
+      "signature": "getSharesBalance(address)"
+    },
+    {
+      "name": "getSharesSupply",
+      "operation_type": "contract_interaction",
+      "signature": "getSharesSupply()"
+    },
+    {
+      "name": "getBuyPrice",
+      "operation_type": "contract_interaction",
+      "signature": "getBuyPrice(uint256,uint256)"
+    },
+    {
+      "name": "getSellPrice",
+      "operation_type": "contract_interaction",
+      "signature": "getSellPrice(uint256,uint256)"
+    },
+    {
+      "name": "getBuyPriceAfterFee",
+      "operation_type": "contract_interaction",
+      "signature": "getBuyPriceAfterFee(uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "getSellPriceAfterFee",
+      "operation_type": "contract_interaction",
+      "signature": "getSellPriceAfterFee(uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "getBuyPrice",
+      "operation_type": "contract_interaction",
+      "signature": "getBuyPrice(uint256)"
+    },
+    {
+      "name": "getSellPrice",
+      "operation_type": "contract_interaction",
+      "signature": "getSellPrice(uint256)"
+    },
+    {
+      "name": "getBuyPriceAfterFee",
+      "operation_type": "contract_interaction",
+      "signature": "getBuyPriceAfterFee(uint256)"
+    },
+    {
+      "name": "getSellPriceAfterFee",
+      "operation_type": "contract_interaction",
+      "signature": "getSellPriceAfterFee(uint256)"
+    },
+    {
+      "name": "buyShares",
+      "operation_type": "contract_interaction",
+      "signature": "buyShares(uint256)"
+    },
+    {
+      "name": "buySharesTo",
+      "operation_type": "contract_interaction",
+      "signature": "buySharesTo(uint256,address)"
+    },
+    {
+      "name": "sellShares",
+      "operation_type": "contract_interaction",
+      "signature": "sellShares(uint256)"
+    },
+    {
+      "name": "sellSharesTo",
+      "operation_type": "contract_interaction",
+      "signature": "sellSharesTo(uint256,address)"
+    },
+    {
+      "name": "getTradeVolume",
+      "operation_type": "contract_interaction",
+      "signature": "getTradeVolume()"
+    }
+  ],
+  "id": "ERC7649",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7649",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7649.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a standard for embedding Bonding Curve-like liquidity into Non-Fungible Tokens (NFTs) without modifying the [ERC-721](./eip-721.md) standard. The proposed standard allows the attachment of an embedded liquidity contract, referred to as Tradable Shares, to an ERC-721 NFT. Tradable Shares leverage a Bonding Curve-like approach to attract liquidity, enabling trading of shares based on the bonding curve price formula.",
+  "title": "Bonding curve-embedded liquidity for NFTs"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+  "cwe": "CWE-362",
+  "description": "Changing an ERC20 allowance from value `X` to `Y` with a single `approve` call allows a spender to front-run and spend `X` before the change, then spend `Y` after, effectively double-spending. Integrations that do not use `increaseAllowance`/`decreaseAllowance` are exposed.",
+  "id": "VULN-OWASP-SCWE-103",
+  "name": "ERC20 Approval Double-Spend (Allowance Race)",
+  "owasp": "SCWE-103",
+  "remediation": "- Follow the allowance reset pattern: set allowance to `0`, then set the new value. - Prefer `increaseAllowance`/`decreaseAllowance` or EIP-2612 `permit` with nonces. - For critical flows, pull tokens via `transferFrom` after verifying allowance updates.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-103.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

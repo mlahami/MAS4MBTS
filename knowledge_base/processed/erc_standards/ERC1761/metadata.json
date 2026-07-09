@@ -1,0 +1,61 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1761",
+  "erc": "ERC-1761",
+  "events": [
+    {
+      "name": "ApprovalForScope",
+      "signature": "ApprovalForScope(address,address,bytes32,bool)"
+    },
+    {
+      "name": "IdsAddedToScope",
+      "signature": "IdsAddedToScope(uint256,uint256,bytes32)"
+    },
+    {
+      "name": "IdsRemovedFromScope",
+      "signature": "IdsRemovedFromScope(uint256,uint256,bytes32)"
+    },
+    {
+      "name": "ScopeURI",
+      "signature": "ScopeURI(string,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "scopeCountForId",
+      "operation_type": "contract_interaction",
+      "signature": "scopeCountForId(uint256)"
+    },
+    {
+      "name": "scopeForId",
+      "operation_type": "contract_interaction",
+      "signature": "scopeForId(uint256,uint32)"
+    },
+    {
+      "name": "scopeUri",
+      "operation_type": "contract_interaction",
+      "signature": "scopeUri(bytes32)"
+    },
+    {
+      "name": "setApprovalForScope",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalForScope(address,bytes32,bool)"
+    },
+    {
+      "name": "isApprovedForScope",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForScope(address,address,bytes32)"
+    }
+  ],
+  "id": "ERC1761",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1761",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1761.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This interface is designed for use with token contracts that have an \"ID\" domain, such as ERC-1155 or ERC-721. This enables restricted approval of one or more Token IDs to a specific \"scope\". When considering a smart contract managing tokens from multiple different domains, it makes sense to limit approvals to those domains. Scoped approval is a generalization of this idea. Implementors can define scopes as needed. Sample use cases for scopes: * A company may represent its fleet of vehicles on the blockchain and it could create a scope for each regional office. * Game developers could share an [ERC-1155](./eip-1155.md) contract where each developer manages tokens under a specified scope. * Tokens of different value could be split into separate scopes. High-value tokens could be kept in sma",
+  "title": "Scoped Approval Interface"
+}

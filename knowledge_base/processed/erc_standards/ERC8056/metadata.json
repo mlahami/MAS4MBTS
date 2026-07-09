@@ -1,0 +1,93 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8056",
+  "erc": "ERC-8056",
+  "events": [
+    {
+      "name": "UIMultiplierUpdated",
+      "signature": "UIMultiplierUpdated(uint256,uint256,uint256)"
+    },
+    {
+      "name": "TransferWithUIAmount",
+      "signature": "TransferWithUIAmount(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "uiMultiplier",
+      "operation_type": "contract_interaction",
+      "signature": "uiMultiplier()"
+    },
+    {
+      "name": "toUIAmount",
+      "operation_type": "contract_interaction",
+      "signature": "toUIAmount(uint256)"
+    },
+    {
+      "name": "fromUIAmount",
+      "operation_type": "contract_interaction",
+      "signature": "fromUIAmount(uint256)"
+    },
+    {
+      "name": "balanceOfUI",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfUI(address)"
+    },
+    {
+      "name": "totalSupplyUI",
+      "operation_type": "contract_interaction",
+      "signature": "totalSupplyUI()"
+    },
+    {
+      "name": "newUIMultiplier",
+      "operation_type": "contract_interaction",
+      "signature": "newUIMultiplier()"
+    },
+    {
+      "name": "effectiveAt",
+      "operation_type": "contract_interaction",
+      "signature": "effectiveAt()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "setUIMultiplier",
+      "operation_type": "contract_interaction",
+      "signature": "setUIMultiplier(uint256,uint256)"
+    },
+    {
+      "name": "_update",
+      "operation_type": "contract_interaction",
+      "signature": "_update(address,address,uint256)"
+    },
+    {
+      "name": "toUIAmount",
+      "operation_type": "contract_interaction",
+      "signature": "toUIAmount(rawAmount,multiplier)"
+    },
+    {
+      "name": "fromUIAmount",
+      "operation_type": "contract_interaction",
+      "signature": "fromUIAmount(uiAmount,multiplier)"
+    },
+    {
+      "name": "displayBalance",
+      "operation_type": "contract_interaction",
+      "signature": "displayBalance(tokenAddress,userAddress)"
+    }
+  ],
+  "id": "ERC8056",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8056",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8056.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes a standard extension to [ERC-20](./eip-20.md) tokens that enables issuers to apply an updatable multiplier to the UI (user interface) amount of tokens. This allows for efficient representation of stock splits, without requiring actual token minting or transfers. The extension provides a cosmetic layer that modifies how token balances are displayed to users while maintaining the underlying token economics.",
+  "title": "Scaled UI Amount Extension for ERC-20 Tokens"
+}

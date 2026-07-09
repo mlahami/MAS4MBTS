@@ -1,0 +1,150 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7506",
+  "erc": "ERC-7506",
+  "events": [
+    {
+      "name": "HintValueChanged",
+      "signature": "HintValueChanged(address,bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "HintListOwnerChanged",
+      "signature": "HintListOwnerChanged(address,bytes32,address)"
+    },
+    {
+      "name": "HintListDelegateAdded",
+      "signature": "HintListDelegateAdded(address,bytes32,address)"
+    },
+    {
+      "name": "HintListDelegateRemoved",
+      "signature": "HintListDelegateRemoved(address,bytes32,address)"
+    },
+    {
+      "name": "HintListStatusChanged",
+      "signature": "HintListStatusChanged(address,bytes32,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getHint",
+      "operation_type": "contract_interaction",
+      "signature": "getHint(address,bytes32,bytes32)"
+    },
+    {
+      "name": "setHint",
+      "operation_type": "contract_interaction",
+      "signature": "setHint(address,bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "setHintSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setHintSigned(address,bytes32,bytes32,bytes32,address,bytes)"
+    },
+    {
+      "name": "setHints",
+      "operation_type": "contract_interaction",
+      "signature": "setHints(address,bytes32,bytes32[],bytes32[])"
+    },
+    {
+      "name": "setHintsSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setHintsSigned(address,bytes32,bytes32[],bytes32[],address,bytes)"
+    },
+    {
+      "name": "setHintDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "setHintDelegated(address,bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "setHintDelegatedSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setHintDelegatedSigned(address,bytes32,bytes32,bytes32,address,bytes)"
+    },
+    {
+      "name": "setHintsDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "setHintsDelegated(address,bytes32,bytes32[],bytes32[])"
+    },
+    {
+      "name": "setHintsDelegatedSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setHintsDelegatedSigned(address,bytes32,bytes32[],bytes32[],address,bytes)"
+    },
+    {
+      "name": "setListStatus",
+      "operation_type": "contract_interaction",
+      "signature": "setListStatus(address,bytes32,bool)"
+    },
+    {
+      "name": "setListStatusSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setListStatusSigned(address,bytes32,bool,address,bytes)"
+    },
+    {
+      "name": "setListOwner",
+      "operation_type": "contract_interaction",
+      "signature": "setListOwner(address,bytes32,address)"
+    },
+    {
+      "name": "setListOwnerSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setListOwnerSigned(address,bytes32,address,address,bytes)"
+    },
+    {
+      "name": "addListDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "addListDelegate(address,bytes32,address,uint256)"
+    },
+    {
+      "name": "addListDelegateSigned",
+      "operation_type": "contract_interaction",
+      "signature": "addListDelegateSigned(address,bytes32,address,uint256,address,bytes)"
+    },
+    {
+      "name": "removeListDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "removeListDelegate(address,bytes32,address)"
+    },
+    {
+      "name": "removeListDelegateSigned",
+      "operation_type": "contract_interaction",
+      "signature": "removeListDelegateSigned(address,bytes32,address,address,bytes)"
+    },
+    {
+      "name": "getMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadata(address,bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "setMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "setMetadata(address,bytes32,bytes32,bytes32,bytes)"
+    },
+    {
+      "name": "setMetadataSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setMetadataSigned(address,bytes32,bytes32,bytes32,bytes,address,bytes)"
+    },
+    {
+      "name": "setMetadataDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "setMetadataDelegated(address,bytes32,bytes32,bytes32,bytes)"
+    },
+    {
+      "name": "setMetadataDelegatedSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setMetadataDelegatedSigned(address,bytes32,bytes32,bytes32,bytes,address,bytes)"
+    }
+  ],
+  "id": "ERC7506",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7506",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7506.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP standardizes a system for managing on-chain metadata (hints), enabling claim interpretation, reliability, and verification. It structures these hints within defined namespaces and lists, enabling structured organization and retrieval, as well as permissioned write access. The system permits namespace owners to delegate hint management tasks, enhancing operational flexibility. It incorporates secure meta transactions via [EIP-712](./eip-712.md)-enabled signatures and offers optional ENS integration for trust verification and discoverability. The interface is equipped to emit specific events for activities like hint modifications, facilitating easy traceability of changes to hints. This setup aims to provide a robust, standardized framework for managing claim- and ecosystem-related",
+  "title": "Trusted Hint Registry"
+}

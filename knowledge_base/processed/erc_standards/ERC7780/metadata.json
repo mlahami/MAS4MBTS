@@ -1,0 +1,64 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7780",
+  "erc": "ERC-7780",
+  "events": [],
+  "functions": [
+    {
+      "name": "checkUserOpPolicy",
+      "operation_type": "contract_interaction",
+      "signature": "checkUserOpPolicy(bytes32,PackedUserOperation)"
+    },
+    {
+      "name": "checkSignaturePolicy",
+      "operation_type": "contract_interaction",
+      "signature": "checkSignaturePolicy(bytes32,address,bytes32,bytes)"
+    },
+    {
+      "name": "checkUserOpSignature",
+      "operation_type": "contract_interaction",
+      "signature": "checkUserOpSignature(bytes32,PackedUserOperation,bytes32)"
+    },
+    {
+      "name": "checkSignature",
+      "operation_type": "contract_interaction",
+      "signature": "checkSignature(bytes32,address,bytes32,bytes)"
+    },
+    {
+      "name": "validateSignatureWithData",
+      "operation_type": "contract_interaction",
+      "signature": "validateSignatureWithData(bytes32,bytes,bytes)"
+    },
+    {
+      "name": "isModuleType",
+      "operation_type": "contract_interaction",
+      "signature": "isModuleType(uint256)"
+    },
+    {
+      "name": "preValidationHookERC1271",
+      "operation_type": "contract_interaction",
+      "signature": "preValidationHookERC1271(address,bytes32,bytes)"
+    },
+    {
+      "name": "preValidationHookERC4337",
+      "operation_type": "contract_interaction",
+      "signature": "preValidationHookERC4337(PackedUserOperation,uint256,bytes32)"
+    },
+    {
+      "name": "validateSignatureWithDataWithSender",
+      "operation_type": "contract_interaction",
+      "signature": "validateSignatureWithDataWithSender(address,bytes32,bytes,bytes)"
+    }
+  ],
+  "id": "ERC7780",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7780",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7780.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces three new module types on top of the existing modules described in [ERC-7579](./eip-7579). The modules are policy, signer and stateless validator. None of these modules are required to be implemented by accounts, but accounts can choose to implement them or other modules can choose to make use of them for additional composability. Policy modules can be used to check what a `UserOperation` or action is trying to achieve and determine if this is allowed. Signer modules can be used to validate signatures on provided hashes. Stateless validators are modules that are used to both validate signatures and compare them to a calldata-provided data blob which could, for example, include owners to check signatures against.",
+  "title": "Validation Module Extension for ERC-7579"
+}

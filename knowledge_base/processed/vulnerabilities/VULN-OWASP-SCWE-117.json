@@ -1,0 +1,16 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "If the proxy\u2019s implementation contract exposes `selfdestruct` (or `SELFDESTRUCT` reachable through a function), an attacker or careless admin can destroy the implementation. The proxy then points to a non-existent code address, bricking upgrades or locking funds.",
+  "id": "VULN-OWASP-SCWE-117",
+  "name": "Proxy Implementation Selfdestruct Exposure",
+  "owasp": "SCWE-117",
+  "remediation": "- Remove or disable `selfdestruct` in implementations; use `disableInitializers()` patterns. - Gate any destruct-like functionality behind timelock + multisig and migration plans. - Monitor implementation addresses and block upgrades that reduce code size to zero.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-117.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

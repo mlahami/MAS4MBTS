@@ -1,0 +1,114 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5050",
+  "erc": "ERC-5050",
+  "events": [
+    {
+      "name": "SendAction",
+      "signature": "SendAction(bytes4,address,address,uint256,address,uint256,address,bytes)"
+    },
+    {
+      "name": "ApprovalForAction",
+      "signature": "ApprovalForAction(address,bytes4,address)"
+    },
+    {
+      "name": "ApprovalForAllActions",
+      "signature": "ApprovalForAllActions(address,address,bool)"
+    },
+    {
+      "name": "ActionReceived",
+      "signature": "ActionReceived(bytes4,address,address,uint256,address,uint256,address,bytes)"
+    },
+    {
+      "name": "ControllerApproval",
+      "signature": "ControllerApproval(address,bytes4,bool)"
+    },
+    {
+      "name": "ControllerApprovalForAll",
+      "signature": "ControllerApprovalForAll(address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "sendAction",
+      "operation_type": "contract_interaction",
+      "signature": "sendAction(Action)"
+    },
+    {
+      "name": "isValid",
+      "operation_type": "contract_interaction",
+      "signature": "isValid(bytes32,uint256)"
+    },
+    {
+      "name": "sendableActions",
+      "operation_type": "contract_interaction",
+      "signature": "sendableActions()"
+    },
+    {
+      "name": "approveForAction",
+      "operation_type": "contract_interaction",
+      "signature": "approveForAction(address,bytes4,address)"
+    },
+    {
+      "name": "setApprovalForAllActions",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalForAllActions(address,bool)"
+    },
+    {
+      "name": "getApprovedForAction",
+      "operation_type": "contract_interaction",
+      "signature": "getApprovedForAction(address,bytes4)"
+    },
+    {
+      "name": "isApprovedForAllActions",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAllActions(address,address)"
+    },
+    {
+      "name": "onActionReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onActionReceived(Action,uint256)"
+    },
+    {
+      "name": "receivableActions",
+      "operation_type": "contract_interaction",
+      "signature": "receivableActions()"
+    },
+    {
+      "name": "interfaceURI",
+      "operation_type": "contract_interaction",
+      "signature": "interfaceURI(bytes4)"
+    },
+    {
+      "name": "setControllerApproval",
+      "operation_type": "contract_interaction",
+      "signature": "setControllerApproval(address,bytes4,bool)"
+    },
+    {
+      "name": "setControllerApprovalForAll",
+      "operation_type": "contract_interaction",
+      "signature": "setControllerApprovalForAll(address,bool)"
+    },
+    {
+      "name": "isApprovedController",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedController(address,bytes4)"
+    },
+    {
+      "name": "selectors",
+      "operation_type": "contract_interaction",
+      "signature": "selectors(`bytes4(keccack256(action_key)"
+    }
+  ],
+  "id": "ERC5050",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5050",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5050.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard defines a broadly applicable action messaging protocol for the transmission of user-initiated actions between tokens. Modular statefulness is achieved with optional state controller contracts (i.e. environments) that manage shared state, and provide arbitration and settlement of the action process.",
+  "title": "Interactive NFTs with Modular Environments"
+}

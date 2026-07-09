@@ -1,0 +1,16 @@
+{
+  "category": "Improper Enforcement of Behavioral Workflow",
+  "cwe": "CWE-841",
+  "description": "Hardcoding gas price/basefee assumptions (e.g., fixed `gasprice` limits or expecting refunds) can break on EIP-1559 chains. Contracts that require exact `block.basefee` ranges or reimburse fixed gas can become stuck or exploitable via gas griefing.",
+  "id": "VULN-OWASP-SCWE-127",
+  "name": "EIP-1559 Basefee Assumptions",
+  "owasp": "SCWE-127",
+  "remediation": "- Avoid relying on specific basefee values; parameterize and allow updates via governance with delays. - Use robust gas estimation and caps on external calls; avoid refund-dependent logic. - Simulate on mainnet forks with varying basefee to validate liveness.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-127.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

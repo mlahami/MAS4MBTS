@@ -1,0 +1,17 @@
+{
+  "category": "Use of Obsolete Function",
+  "cwe": "CWE-477",
+  "description": "`tx.origin` is a global variable in Solidity which returns the address of the account that sent the transaction. Using the variable for authorization could make a contract vulnerable if an authorized account calls into a malicious contract. A call could be made to the vulnerable contract that passes the authorization check since `tx.origin` returns the original sender of the transaction which in this case is the authorized account.",
+  "id": "VULN-SWC-115",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "`tx.origin` should not be used for authorization. Use `msg.sender` instead.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-115.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-115"
+}

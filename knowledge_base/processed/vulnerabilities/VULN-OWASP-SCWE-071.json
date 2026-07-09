@@ -1,0 +1,16 @@
+{
+  "category": "Use of Uninitialized Variable",
+  "cwe": "CWE-457",
+  "description": "An uninitialized storage pointer in Solidity refers to a variable that has been declared but not assigned a value before being used. This can result in unpredictable behavior, as the variable might point to unintended locations in the contract's storage, potentially exposing sensitive data or allowing attackers to exploit the uninitialized pointer. This is a critical issue because Solidity does not automatically initialize storage variables, leaving them with default values that may be unsafe.",
+  "id": "VULN-OWASP-SCWE-071",
+  "name": "Uninitialized Storage Pointer",
+  "owasp": "SCWE-071",
+  "remediation": "Always initialize storage pointers to avoid potential vulnerabilities. Ensure that all variables, especially storage pointers, are properly assigned a value before being used. This prevents accessing uninitialized or garbage data from the contract\u2019s storage.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-071.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

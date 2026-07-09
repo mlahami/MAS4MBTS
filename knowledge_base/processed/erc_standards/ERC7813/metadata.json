@@ -1,0 +1,71 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7813",
+  "erc": "ERC-7813",
+  "events": [
+    {
+      "name": "Store_SetRecord",
+      "signature": "Store_SetRecord(ResourceId,bytes32[],bytes,EncodedLengths,bytes)"
+    },
+    {
+      "name": "Store_SpliceStaticData",
+      "signature": "Store_SpliceStaticData(ResourceId,bytes32[],uint48,bytes)"
+    },
+    {
+      "name": "Store_SpliceDynamicData",
+      "signature": "Store_SpliceDynamicData(ResourceId,bytes32[],uint8,uint48,uint40,EncodedLengths,bytes)"
+    },
+    {
+      "name": "Store_DeleteRecord",
+      "signature": "Store_DeleteRecord(ResourceId,bytes32[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getRecord",
+      "operation_type": "contract_interaction",
+      "signature": "getRecord(ResourceId,bytes32[])"
+    },
+    {
+      "name": "getField",
+      "operation_type": "contract_interaction",
+      "signature": "getField(ResourceId,bytes32[],uint8)"
+    },
+    {
+      "name": "getFieldLength",
+      "operation_type": "contract_interaction",
+      "signature": "getFieldLength(ResourceId,bytes32[],uint8)"
+    },
+    {
+      "name": "storeKey",
+      "operation_type": "contract_interaction",
+      "signature": "storeKey(tableId:,keyTuple:)"
+    },
+    {
+      "name": "bytesSplice",
+      "operation_type": "contract_interaction",
+      "signature": "bytesSplice(data:,start:,deleteCount,newData:)"
+    },
+    {
+      "name": "bytesLength",
+      "operation_type": "contract_interaction",
+      "signature": "bytesLength(data:)"
+    },
+    {
+      "name": "processStoreEvent",
+      "operation_type": "contract_interaction",
+      "signature": "processStoreEvent(log:)"
+    }
+  ],
+  "id": "ERC7813",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7813",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7813.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This standard introduces a flexible on-chain storage pattern that organizes data into structured tables that consist of records with fixed key and value schemas, similar to a traditional database. This storage pattern consists of a unified contract interface for data access, along with a compact binary encoding format for both static and dynamic data types. State changes are tracked through standardized events that enable automatic, schema-aware state replication by off-chain indexers. New tables can be dynamically registered at runtime through a special table that stores schema metadata for all tables, allowing the system to evolve without breaking existing contracts or integrations.",
+  "title": "Store, Table-Based Introspectable Storage"
+}

@@ -1,0 +1,118 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7527",
+  "erc": "ERC-7527",
+  "events": [
+    {
+      "name": "Wrap",
+      "signature": "Wrap(address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "Unwrap",
+      "signature": "Unwrap(address,uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "iconstructor",
+      "operation_type": "contract_interaction",
+      "signature": "iconstructor()"
+    },
+    {
+      "name": "wrap",
+      "operation_type": "contract_interaction",
+      "signature": "wrap(address,bytes)"
+    },
+    {
+      "name": "unwrap",
+      "operation_type": "contract_interaction",
+      "signature": "unwrap(address,uint256,bytes)"
+    },
+    {
+      "name": "getStrategy",
+      "operation_type": "contract_interaction",
+      "signature": "getStrategy()"
+    },
+    {
+      "name": "getWrapOracle",
+      "operation_type": "contract_interaction",
+      "signature": "getWrapOracle(bytes)"
+    },
+    {
+      "name": "getUnwrapOracle",
+      "operation_type": "contract_interaction",
+      "signature": "getUnwrapOracle(bytes)"
+    },
+    {
+      "name": "description",
+      "operation_type": "contract_interaction",
+      "signature": "description()"
+    },
+    {
+      "name": "getMaxSupply",
+      "operation_type": "contract_interaction",
+      "signature": "getMaxSupply()"
+    },
+    {
+      "name": "getName",
+      "operation_type": "contract_interaction",
+      "signature": "getName(uint256)"
+    },
+    {
+      "name": "getAgency",
+      "operation_type": "contract_interaction",
+      "signature": "getAgency()"
+    },
+    {
+      "name": "setAgency",
+      "operation_type": "contract_interaction",
+      "signature": "setAgency(address)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,bytes)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256,bytes)"
+    },
+    {
+      "name": "deployWrap",
+      "operation_type": "contract_interaction",
+      "signature": "deployWrap(AgencySettings,AppSettings,bytes)"
+    },
+    {
+      "name": "_transfer",
+      "operation_type": "contract_interaction",
+      "signature": "_transfer(address,address,uint256)"
+    },
+    {
+      "name": "_isApprovedOrOwner",
+      "operation_type": "contract_interaction",
+      "signature": "_isApprovedOrOwner(address,address,uint256)"
+    },
+    {
+      "name": "_getImmutableArgsOffset",
+      "operation_type": "contract_interaction",
+      "signature": "_getImmutableArgsOffset()"
+    },
+    {
+      "name": "_getAgency",
+      "operation_type": "contract_interaction",
+      "signature": "_getAgency()"
+    }
+  ],
+  "id": "ERC7527",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7527",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7527.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal outlines interfaces for wrapping [ERC-20](./eip-20.md) or ETH to [ERC-721](./eip-721.md) and unwrap ERC-721 to ERC-20 or ETH. A function oracle feeds mint/burn prices based on an embedded equation of Function Oracle Automated Market Maker(FOAMM), which executes and clears the mint and burn of NFT.",
+  "title": "Token Bound Function Oracle AMM"
+}

@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6357",
+  "erc": "ERC-6357",
+  "events": [],
+  "functions": [
+    {
+      "name": "multicall",
+      "operation_type": "contract_interaction",
+      "signature": "multicall(bytes[])"
+    },
+    {
+      "name": "multicallPayable",
+      "operation_type": "contract_interaction",
+      "signature": "multicallPayable(bytes[],uint256[])"
+    }
+  ],
+  "id": "ERC6357",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6357",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6357.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This EIP standardizes an interface containing a single function, `multicall`, allowing EOAs to call multiple functions of a smart contract in a single transaction, and revert all calls if any call fails.",
+  "title": "Single-contract Multi-delegatecall"
+}

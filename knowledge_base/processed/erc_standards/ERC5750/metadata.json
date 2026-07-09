@@ -1,0 +1,94 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5750",
+  "erc": "ERC-5750",
+  "events": [],
+  "functions": [
+    {
+      "name": "methodName",
+      "operation_type": "contract_interaction",
+      "signature": "methodName(type1,type2,...)"
+    },
+    {
+      "name": "methodName1",
+      "operation_type": "contract_interaction",
+      "signature": "methodName1(uint256,address,bytes)"
+    },
+    {
+      "name": "firstNonRelatedMethod",
+      "operation_type": "contract_interaction",
+      "signature": "firstNonRelatedMethod(uint256)"
+    },
+    {
+      "name": "secondNonRelatedMethod",
+      "operation_type": "contract_interaction",
+      "signature": "secondNonRelatedMethod(uint256)"
+    },
+    {
+      "name": "methodName2",
+      "operation_type": "contract_interaction",
+      "signature": "methodName2(uint256,address)"
+    },
+    {
+      "name": "methodName2",
+      "operation_type": "contract_interaction",
+      "signature": "methodName2(uint256,address,bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256,bytes)"
+    },
+    {
+      "name": "send",
+      "operation_type": "contract_interaction",
+      "signature": "send(address,uint256,bytes)"
+    },
+    {
+      "name": "diamondCut",
+      "operation_type": "contract_interaction",
+      "signature": "diamondCut(FacetCut[],address,bytes)"
+    },
+    {
+      "name": "diamondCut",
+      "operation_type": "contract_interaction",
+      "signature": "diamondCut(FacetCut[],address,bytes,bytes)"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes,bytes)"
+    }
+  ],
+  "id": "ERC5750",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5750",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5750.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP standardizes the passing of unstructured call data to functions to enable future extensibility.",
+  "title": "General Extensibility for Method Behaviors"
+}

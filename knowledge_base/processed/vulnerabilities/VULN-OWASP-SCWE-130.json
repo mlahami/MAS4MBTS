@@ -1,0 +1,16 @@
+{
+  "category": "Origin Validation Error",
+  "cwe": "CWE-346",
+  "description": "Price feeds that allow an admin to push arbitrary values immediately (no delay or quorum) let insiders force liquidations, manipulate collateralization, or drain AMMs. Even trusted operators can be compromised.",
+  "id": "VULN-OWASP-SCWE-130",
+  "name": "Admin-Write Oracle Without Delay",
+  "owasp": "SCWE-130",
+  "remediation": "- Require multi-sig + timelock for manual price pushes; emit events for monitoring. - Use decentralized oracles with aggregation/quorum instead of single-writer feeds. - Enforce bounds/deviation checks against reference feeds and reject outliers.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-130.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

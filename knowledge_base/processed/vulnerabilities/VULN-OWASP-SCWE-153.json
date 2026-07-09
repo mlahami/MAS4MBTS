@@ -1,0 +1,16 @@
+{
+  "category": "Use of Insufficiently Random Values",
+  "cwe": "CWE-330",
+  "description": "Post-merge (Ethereum PoS), `block.difficulty` was replaced by `block.prevrandao`. Both are manipulable by validators: they can influence the value within protocol rules. Using `block.prevrandao` (or `block.difficulty`) for high-value randomness\u2014lotteries, airdrops, winner selection\u2014allows validators or sophisticated actors to predict or bias outcomes. SCWE-024 and SCWE-084 cover blockhash/timestamp; this weakness specifically addresses `block.prevrandao`.",
+  "id": "VULN-OWASP-SCWE-153",
+  "name": "Reliance on block.prevrandao for High-Value Randomness",
+  "owasp": "SCWE-153",
+  "remediation": "- Do not use `block.prevrandao` or `block.difficulty` for value-at-stake randomness. - Use Chainlink VRF, commit-reveal schemes, or other verifiable randomness sources.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-153.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

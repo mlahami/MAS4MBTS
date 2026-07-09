@@ -1,0 +1,69 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1319",
+  "erc": "ERC-1319",
+  "events": [
+    {
+      "name": "VersionRelease",
+      "signature": "VersionRelease(string,string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "generateReleaseId",
+      "operation_type": "contract_interaction",
+      "signature": "generateReleaseId(string,string)"
+    },
+    {
+      "name": "release",
+      "operation_type": "contract_interaction",
+      "signature": "release(string,string,string)"
+    },
+    {
+      "name": "getAllPackageIds",
+      "operation_type": "contract_interaction",
+      "signature": "getAllPackageIds(uint,uint)"
+    },
+    {
+      "name": "getPackageName",
+      "operation_type": "contract_interaction",
+      "signature": "getPackageName(bytes32)"
+    },
+    {
+      "name": "getReleaseId",
+      "operation_type": "contract_interaction",
+      "signature": "getReleaseId(string,string)"
+    },
+    {
+      "name": "getAllReleaseIds",
+      "operation_type": "contract_interaction",
+      "signature": "getAllReleaseIds(string,uint,uint)"
+    },
+    {
+      "name": "getReleaseData",
+      "operation_type": "contract_interaction",
+      "signature": "getReleaseData(bytes32)"
+    },
+    {
+      "name": "numPackageIds",
+      "operation_type": "contract_interaction",
+      "signature": "numPackageIds()"
+    },
+    {
+      "name": "numReleaseIds",
+      "operation_type": "contract_interaction",
+      "signature": "numReleaseIds(string)"
+    }
+  ],
+  "id": "ERC1319",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1319",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1319.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP specifies an interface for publishing to and retrieving assets from smart contract package registries. It is a companion EIP to [1123](./eip-1123.md) which defines a standard for smart contract package manifests.",
+  "title": "Smart Contract Package Registry Interface"
+}

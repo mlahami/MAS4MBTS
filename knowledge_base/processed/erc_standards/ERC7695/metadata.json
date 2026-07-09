@@ -1,0 +1,181 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7695",
+  "erc": "ERC-7695",
+  "events": [
+    {
+      "name": "ContextUpdated",
+      "signature": "ContextUpdated(bytes32,address,uint64)"
+    },
+    {
+      "name": "ContextAttached",
+      "signature": "ContextAttached(bytes32,uint256)"
+    },
+    {
+      "name": "ContextDetachmentRequested",
+      "signature": "ContextDetachmentRequested(bytes32,uint256)"
+    },
+    {
+      "name": "ContextDetached",
+      "signature": "ContextDetached(bytes32,uint256)"
+    },
+    {
+      "name": "ContextUserAssigned",
+      "signature": "ContextUserAssigned(bytes32,uint256,address)"
+    },
+    {
+      "name": "ContextLockUpdated",
+      "signature": "ContextLockUpdated(bytes32,uint256,bool)"
+    },
+    {
+      "name": "OwnershipDelegationStarted",
+      "signature": "OwnershipDelegationStarted(uint256,address,uint64)"
+    },
+    {
+      "name": "OwnershipDelegationAccepted",
+      "signature": "OwnershipDelegationAccepted(uint256,address,uint64)"
+    },
+    {
+      "name": "OwnershipDelegationStopped",
+      "signature": "OwnershipDelegationStopped(uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "maxDetachingDuration",
+      "operation_type": "contract_interaction",
+      "signature": "maxDetachingDuration()"
+    },
+    {
+      "name": "getContext",
+      "operation_type": "contract_interaction",
+      "signature": "getContext(bytes32)"
+    },
+    {
+      "name": "createContext",
+      "operation_type": "contract_interaction",
+      "signature": "createContext(address,uint64,bytes)"
+    },
+    {
+      "name": "updateContext",
+      "operation_type": "contract_interaction",
+      "signature": "updateContext(bytes32,address,uint64)"
+    },
+    {
+      "name": "isAttachedWithContext",
+      "operation_type": "contract_interaction",
+      "signature": "isAttachedWithContext(bytes32,uint256)"
+    },
+    {
+      "name": "attachContext",
+      "operation_type": "contract_interaction",
+      "signature": "attachContext(bytes32,uint256,bytes)"
+    },
+    {
+      "name": "requestDetachContext",
+      "operation_type": "contract_interaction",
+      "signature": "requestDetachContext(bytes32,uint256,bytes)"
+    },
+    {
+      "name": "execDetachContext",
+      "operation_type": "contract_interaction",
+      "signature": "execDetachContext(bytes32,uint256,bytes)"
+    },
+    {
+      "name": "getContextUser",
+      "operation_type": "contract_interaction",
+      "signature": "getContextUser(bytes32,uint256)"
+    },
+    {
+      "name": "setContextUser",
+      "operation_type": "contract_interaction",
+      "signature": "setContextUser(bytes32,uint256,address)"
+    },
+    {
+      "name": "isTokenContextLocked",
+      "operation_type": "contract_interaction",
+      "signature": "isTokenContextLocked(bytes32,uint256)"
+    },
+    {
+      "name": "setContextLock",
+      "operation_type": "contract_interaction",
+      "signature": "setContextLock(bytes32,uint256,bool)"
+    },
+    {
+      "name": "getOwnershipManager",
+      "operation_type": "contract_interaction",
+      "signature": "getOwnershipManager(uint256)"
+    },
+    {
+      "name": "getOwnershipDelegatee",
+      "operation_type": "contract_interaction",
+      "signature": "getOwnershipDelegatee(uint256)"
+    },
+    {
+      "name": "pendingOwnershipDelegatee",
+      "operation_type": "contract_interaction",
+      "signature": "pendingOwnershipDelegatee(uint256)"
+    },
+    {
+      "name": "startDelegateOwnership",
+      "operation_type": "contract_interaction",
+      "signature": "startDelegateOwnership(uint256,address,uint64)"
+    },
+    {
+      "name": "acceptOwnershipDelegation",
+      "operation_type": "contract_interaction",
+      "signature": "acceptOwnershipDelegation(uint256)"
+    },
+    {
+      "name": "stopOwnershipDelegation",
+      "operation_type": "contract_interaction",
+      "signature": "stopOwnershipDelegation(uint256)"
+    },
+    {
+      "name": "getContext",
+      "operation_type": "contract_interaction",
+      "signature": "getContext(uint256)"
+    },
+    {
+      "name": "getContextCount",
+      "operation_type": "contract_interaction",
+      "signature": "getContextCount()"
+    },
+    {
+      "name": "getAttachedContext",
+      "operation_type": "contract_interaction",
+      "signature": "getAttachedContext(uint256,uint256)"
+    },
+    {
+      "name": "getAttachedContextCount",
+      "operation_type": "contract_interaction",
+      "signature": "getAttachedContextCount(uint256)"
+    },
+    {
+      "name": "onAttached",
+      "operation_type": "contract_interaction",
+      "signature": "onAttached(bytes32,uint256,address,bytes)"
+    },
+    {
+      "name": "onDetachRequested",
+      "operation_type": "contract_interaction",
+      "signature": "onDetachRequested(bytes32,uint256,address,bytes)"
+    },
+    {
+      "name": "onExecDetachContext",
+      "operation_type": "contract_interaction",
+      "signature": "onExecDetachContext(bytes32,uint256,address,address,bytes)"
+    }
+  ],
+  "id": "ERC7695",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7695",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7695.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension for [ERC-721](./eip-721.md), designed to specify users for various contexts with a locking feature and allow temporary ownership delegation without changing the original owner. This EIP preserves the benefits and rights of the owner while expanding the utility of NFTs across various dApps by adding the concepts of Ownership Delegation and Contexts, which define specific roles: Controller and User, who can use the NFT within defined contexts.",
+  "title": "Ownership Delegation and Context for ERC-721"
+}

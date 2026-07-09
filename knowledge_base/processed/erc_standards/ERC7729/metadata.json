@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7729",
+  "erc": "ERC-7729",
+  "events": [],
+  "functions": [
+    {
+      "name": "metadata",
+      "operation_type": "contract_interaction",
+      "signature": "metadata()"
+    }
+  ],
+  "id": "ERC7729",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7729",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7729.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard extends the [ERC-20](./eip-20.md) standard to include a `metadata` function interface and a JSON schema for metadata.",
+  "title": "Token with Metadata"
+}

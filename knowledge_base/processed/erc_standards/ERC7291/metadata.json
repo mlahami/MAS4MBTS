@@ -1,0 +1,151 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7291",
+  "erc": "ERC-7291",
+  "events": [
+    {
+      "name": "NewPBMTypeCreated",
+      "signature": "NewPBMTypeCreated(uint256,string,uint256,uint256,address)"
+    },
+    {
+      "name": "MerchantList",
+      "signature": "MerchantList(string,address[],string)"
+    },
+    {
+      "name": "Blacklist",
+      "signature": "Blacklist(string,address[],string)"
+    },
+    {
+      "name": "PBMrevokeWithdraw",
+      "signature": "PBMrevokeWithdraw(address,uint256,address,uint256)"
+    },
+    {
+      "name": "TokenUnwrapForTarget",
+      "signature": "TokenUnwrapForTarget(address,address,uint256[],uint256[],address,uint256)"
+    },
+    {
+      "name": "TokenUnwrapForPBMBurn",
+      "signature": "TokenUnwrapForPBMBurn(address,address,uint256[],uint256[],address,uint256)"
+    },
+    {
+      "name": "TokenWrap",
+      "signature": "TokenWrap(address,uint256[],uint256[],address,uint256)"
+    },
+    {
+      "name": "TokenLoad",
+      "signature": "TokenLoad(address,address,uint256,address,uint256)"
+    },
+    {
+      "name": "TokenUnload",
+      "signature": "TokenUnload(address,address,uint256,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createPBMTokenType",
+      "operation_type": "contract_interaction",
+      "signature": "createPBMTokenType(string,uint256,uint256,string)"
+    },
+    {
+      "name": "getTokenDetails",
+      "operation_type": "contract_interaction",
+      "signature": "getTokenDetails(uint256)"
+    },
+    {
+      "name": "isBlacklisted",
+      "operation_type": "contract_interaction",
+      "signature": "isBlacklisted(address)"
+    },
+    {
+      "name": "isMerchant",
+      "operation_type": "contract_interaction",
+      "signature": "isMerchant(address)"
+    },
+    {
+      "name": "initialise",
+      "operation_type": "contract_interaction",
+      "signature": "initialise(address,uint256,address)"
+    },
+    {
+      "name": "uri",
+      "operation_type": "contract_interaction",
+      "signature": "uri(uint256)"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "safeMintBatch",
+      "operation_type": "contract_interaction",
+      "signature": "safeMintBatch(address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "burnBatch",
+      "operation_type": "contract_interaction",
+      "signature": "burnBatch(address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "unwrap",
+      "operation_type": "contract_interaction",
+      "signature": "unwrap(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "revokePBM",
+      "operation_type": "contract_interaction",
+      "signature": "revokePBM(uint256)"
+    },
+    {
+      "name": "onPBMRC1Unwrap",
+      "operation_type": "contract_interaction",
+      "signature": "onPBMRC1Unwrap(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "onPBMRC1BatchUnwrap",
+      "operation_type": "contract_interaction",
+      "signature": "onPBMRC1BatchUnwrap(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "load",
+      "operation_type": "contract_interaction",
+      "signature": "load(uint256)"
+    },
+    {
+      "name": "underlyingBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "underlyingBalanceOf(address)"
+    },
+    {
+      "name": "unload",
+      "operation_type": "contract_interaction",
+      "signature": "unload(uint256)"
+    }
+  ],
+  "id": "ERC7291",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7291",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7291.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A Purpose Bound Money (PBM) token is a wrapper around an [ERC-1155](./eip-1155.md) token that can be used for a limited activity. This proposal outlines a smart contract interface that builds upon the ERC-1155 standard to implement the purpose bound money (PBM) concept: - A PBM consists of a PBM wrapper and the digital money token it wraps. A digital money token (e.g., stablecoins, central bank digital currencies, tokenized bank deposits, and similar instruments) serves as a store of value (abbreviated as \"sov\"). Thus, a digital money token (also referred to as \"sovToken\") **SHOULD** be: - a good store of value; - a suitable unit of account; and - a medium of exchange. - PBMs are bearer instruments, with self-contained programming logic, and can be transferred between two parties without i",
+  "title": "Purpose bound money"
+}

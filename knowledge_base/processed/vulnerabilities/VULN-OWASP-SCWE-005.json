@@ -1,0 +1,16 @@
+{
+  "category": "Exposure of Resource to Wrong Sphere",
+  "cwe": "CWE-668",
+  "description": "Insecure upgradeable proxy designs occur when a smart contract implements an upgradeable proxy pattern without properly securing or validating upgrades. This may allow unauthorized actors to change the contract\u2019s logic, possibly introducing malicious behavior. It often happens when the upgrade functionality lacks proper access controls or when there is no timelock to delay the upgrade, giving malicious actors an opportunity to exploit the contract. This vulnerability can lead to critical failures, including the redirection of contract calls to malicious logic or unauthorized updates that compromise the integrity of the contract.",
+  "id": "VULN-OWASP-SCWE-005",
+  "name": "Insecure Upgradeable Proxy Design",
+  "owasp": "SCWE-005",
+  "remediation": "- **Access Control:** Ensure only trusted parties (e.g., contract owners, multisig wallets) can perform upgrades. - **Timelock Mechanism:** Implement a timelock to delay upgrades and provide transparency. - **Transparent Proxy Pattern:** Use patterns that prevent unauthorized contract logic changes, such as the Transparent Proxy Pattern. - **Audit Proxy Logic Regularly:** Conduct regular audits to ensure that the upgrade mechanism is secure and follows best practices.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-005.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

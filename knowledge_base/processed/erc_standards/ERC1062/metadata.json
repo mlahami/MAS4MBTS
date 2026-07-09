@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1062",
+  "erc": "ERC-1062",
+  "events": [],
+  "functions": [
+    {
+      "name": "setMultihash",
+      "operation_type": "contract_interaction",
+      "signature": "setMultihash(bytes32,bytes)"
+    },
+    {
+      "name": "multihash",
+      "operation_type": "contract_interaction",
+      "signature": "multihash(bytes32)"
+    }
+  ],
+  "id": "ERC1062",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1062",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1062.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard details the implementation of how to combine the IPFS cryptographic hash unique fingerprint with ENS public resolver. This standard provides a functionality to get and set IPFS online resources to ENS resolver. We think that this implementation is not only aim to let more developers and communities to provide more use cases, but also leverage the human-readable features to gain more user adoption accessing decentralized resources. We considered the IPFS ENS resolver mapping standard a cornerstone for building future Web3.0 service.",
+  "title": "Formalize IPFS hash into ENS(Ethereum Name Service) resolver"
+}

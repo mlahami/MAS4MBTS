@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3569",
+  "erc": "ERC-3569",
+  "events": [
+    {
+      "name": "Sealed",
+      "signature": "Sealed(uint256,uint256,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "seal",
+      "operation_type": "contract_interaction",
+      "signature": "seal(uint256,uint256,string)"
+    },
+    {
+      "name": "sealedURI",
+      "operation_type": "contract_interaction",
+      "signature": "sealedURI(uint256)"
+    },
+    {
+      "name": "isSealed",
+      "operation_type": "contract_interaction",
+      "signature": "isSealed(uint256)"
+    }
+  ],
+  "id": "ERC3569",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3569",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3569.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard accomplishes three things; it provides a way for potential collectors to verify that the NFT metadata will not change, allows creators to immortalize metadata for multiple tokens at one time, and allows metadata for many NFTs to be read and cached from one file. A creator can call the `seal` function for a range of one or many sequential NFTs. Included as an argument is a URI which points to a decentralized storage service like IPFS and will be stored in the smart contract. The URI will return a JSON object in which the keys are token IDs and the values are either a string which is a URI pointing to a metadata file stored on a decentralized file system, or raw metadata JSON for each token ID. The token ID(s) will then be marked as sealed in the smart contract and cannot be se",
+  "title": "Sealed NFT Metadata Standard"
+}

@@ -1,0 +1,99 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7858",
+  "erc": "ERC-7858",
+  "events": [
+    {
+      "name": "TokenExpiryUpdated",
+      "signature": "TokenExpiryUpdated(uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "expiryType",
+      "operation_type": "contract_interaction",
+      "signature": "expiryType()"
+    },
+    {
+      "name": "isTokenExpired",
+      "operation_type": "contract_interaction",
+      "signature": "isTokenExpired(uint256)"
+    },
+    {
+      "name": "startTime",
+      "operation_type": "contract_interaction",
+      "signature": "startTime(uint256)"
+    },
+    {
+      "name": "endTime",
+      "operation_type": "contract_interaction",
+      "signature": "endTime(uint256)"
+    },
+    {
+      "name": "currentEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "currentEpoch()"
+    },
+    {
+      "name": "epochLength",
+      "operation_type": "contract_interaction",
+      "signature": "epochLength()"
+    },
+    {
+      "name": "isEpochExpired",
+      "operation_type": "contract_interaction",
+      "signature": "isEpochExpired(uint256)"
+    },
+    {
+      "name": "unexpiredBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "unexpiredBalanceOf(address)"
+    },
+    {
+      "name": "unexpiredBalanceOfAtEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "unexpiredBalanceOfAtEpoch(uint256,address)"
+    },
+    {
+      "name": "validityDuration",
+      "operation_type": "contract_interaction",
+      "signature": "validityDuration()"
+    },
+    {
+      "name": "getRemainingDurationBeforeTokenExpired",
+      "operation_type": "contract_interaction",
+      "signature": "getRemainingDurationBeforeTokenExpired(uint256)"
+    },
+    {
+      "name": "getEpochBalance",
+      "operation_type": "contract_interaction",
+      "signature": "getEpochBalance(uint256)"
+    },
+    {
+      "name": "getEpochInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getEpochInfo(uint256)"
+    },
+    {
+      "name": "getNearestExpiryOf",
+      "operation_type": "contract_interaction",
+      "signature": "getNearestExpiryOf(address)"
+    },
+    {
+      "name": "getRemainingDurationBeforeEpochChange",
+      "operation_type": "contract_interaction",
+      "signature": "getRemainingDurationBeforeEpochChange()"
+    }
+  ],
+  "id": "ERC7858",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7858",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7858.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Introduces an extension for [ERC-721](./eip-721.md) Non-Fungible Tokens (NFTs) and Soulbound Tokens (SBTs) that adds an expiration mechanism, allowing tokens to become invalid after a predefined period. This additional layer of functionality ensures that the expiration mechanism does not interfere with existing NFTs or SBTs, preserving transferability for NFTs and compatibility with current DApps such as NFT Marketplace. Expiration can be defined using either block height or timestamp, offering flexibility for various use cases.",
+  "title": "Expirable NFTs and SBTs"
+}

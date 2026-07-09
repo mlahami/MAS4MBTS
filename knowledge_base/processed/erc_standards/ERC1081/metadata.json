@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1081",
+  "erc": "ERC-1081",
+  "events": [],
+  "functions": [],
+  "id": "ERC1081",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1081",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1081.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "In order to encourage cross-platform interoperability of bounties on Ethereum, and for easier reputational tracking, StandardBounties can facilitate the administration of funds in exchange for deliverables corresponding to a completed task, in a publicly auditable and immutable fashion.",
+  "title": "Standard Bounties"
+}

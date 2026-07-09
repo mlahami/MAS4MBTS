@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-897",
+  "erc": "ERC-897",
+  "events": [],
+  "functions": [
+    {
+      "name": "proxyType",
+      "operation_type": "contract_interaction",
+      "signature": "proxyType()"
+    },
+    {
+      "name": "implementation",
+      "operation_type": "contract_interaction",
+      "signature": "implementation()"
+    }
+  ],
+  "id": "ERC897",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-897",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-897.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Using proxies that delegate their own logic to another contract is becoming an increasingly popular technique for both smart contract upgradeability and creating cheap clone contracts. We don't believe there is value in standardizing any particular implementation of a DelegateProxy, given its simplicity, but we believe there is a lot of value in agreeing on an interface all proxies use that allows for a standard way to operate with proxies.",
+  "title": "DelegateProxy"
+}

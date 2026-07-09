@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Loops that iterate over user-controlled arrays and perform external calls (transfers, approvals, or other contract calls) in each iteration can exhaust gas when the array is large. Each external call consumes gas; unbounded loops cause the transaction to hit the block gas limit and revert, resulting in denial of service. SCWE-109 covers unbounded loops generally; this weakness focuses on loops that perform external calls.",
+  "id": "VULN-OWASP-SCWE-148",
+  "name": "Gas Exhaustion via Unbounded Loops with External Calls",
+  "owasp": "SCWE-148",
+  "remediation": "- Impose an upper bound on loop iterations or batch size. - Use pull-based patterns: let users claim individually instead of pushing to many addresses in one tx. - Process in chunks with pagination or checkpoints.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-148.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

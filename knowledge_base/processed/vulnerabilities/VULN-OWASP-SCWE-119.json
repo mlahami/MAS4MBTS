@@ -1,0 +1,16 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "Using the same key to control both the proxy admin (upgrade rights) and logic contract owner concentrates power. A single key compromise allows hostile upgrades and privileged function abuse with no separation of duties.",
+  "id": "VULN-OWASP-SCWE-119",
+  "name": "Shared Proxy Admin and Logic Owner Key",
+  "owasp": "SCWE-119",
+  "remediation": "- Separate roles: proxy admin under multisig+timelock; logic owner under different multisig. - Use role-based access (e.g., OZ AccessControl) and distinct keys for operational vs. upgrade actions. - Document and monitor role boundaries; rotate keys periodically.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-119.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

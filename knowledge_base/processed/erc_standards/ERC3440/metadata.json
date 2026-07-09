@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3440",
+  "erc": "ERC-3440",
+  "events": [
+    {
+      "name": "Signed",
+      "signature": "Signed(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "_designateArtist",
+      "operation_type": "contract_interaction",
+      "signature": "_designateArtist(address)"
+    },
+    {
+      "name": "_designateOriginal",
+      "operation_type": "contract_interaction",
+      "signature": "_designateOriginal(uint256)"
+    },
+    {
+      "name": "_setLimitedEditions",
+      "operation_type": "contract_interaction",
+      "signature": "_setLimitedEditions(uint256)"
+    },
+    {
+      "name": "_createEditions",
+      "operation_type": "contract_interaction",
+      "signature": "_createEditions(string)"
+    },
+    {
+      "name": "_hash",
+      "operation_type": "contract_interaction",
+      "signature": "_hash(Signature)"
+    },
+    {
+      "name": "_signEdition",
+      "operation_type": "contract_interaction",
+      "signature": "_signEdition(uint256,Signature,bytes)"
+    },
+    {
+      "name": "getSignature",
+      "operation_type": "contract_interaction",
+      "signature": "getSignature(uint256)"
+    },
+    {
+      "name": "isSigned",
+      "operation_type": "contract_interaction",
+      "signature": "isSigned(Signature,bytes,uint)"
+    },
+    {
+      "name": "_equals",
+      "operation_type": "contract_interaction",
+      "signature": "_equals(bytes,bytes)"
+    },
+    {
+      "name": "sign",
+      "operation_type": "contract_interaction",
+      "signature": "sign(uint256,Signature,bytes)"
+    }
+  ],
+  "id": "ERC3440",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3440",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3440.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "ERC-3440 is an ERC-721 extension specifically designed to make NFTs more robust for works of art. This extends the original ERC-721 spec by providing the ability to designate the original and limited-edition prints with a specialized enumeration extension similar to the [original 721 extension](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/extensions/ERC721Enumerable.sol) built-in. The key improvement of this extension is allowing artists to designate the limited nature of their prints and provide a signed piece of data that represents their unique signature to a given token Id, much like an artist would sign a print of their work.",
+  "title": "ERC-721 Editions Standard"
+}

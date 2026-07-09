@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7280",
+  "erc": "ERC-7280",
+  "events": [],
+  "functions": [],
+  "id": "ERC7280",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7280",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7280.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal expands the metadata format for Non-Fungible Tokens ([ERC-721](./eip-721.md), [ERC-1155](./eip-1155.md), [ERC-3525](./eip-3525.md), and others), adding support for linked data like JSON-LD format. The additional data is stored under the linked_data key in the metadata JSON.",
+  "title": "NFT Metadata Extension like JSON-LD"
+}

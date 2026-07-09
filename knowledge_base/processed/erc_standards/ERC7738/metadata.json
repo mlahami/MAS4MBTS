@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7738",
+  "erc": "ERC-7738",
+  "events": [
+    {
+      "name": "ScriptUpdate",
+      "signature": "ScriptUpdate(address,string[])"
+    },
+    {
+      "name": "ScriptUpdate",
+      "signature": "ScriptUpdate(address,scriptURI)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "scriptURI",
+      "operation_type": "contract_interaction",
+      "signature": "scriptURI(address)"
+    },
+    {
+      "name": "setScriptURI",
+      "operation_type": "contract_interaction",
+      "signature": "setScriptURI(address,string[])"
+    },
+    {
+      "name": "_addScriptURIs",
+      "operation_type": "contract_interaction",
+      "signature": "_addScriptURIs(address,address,string[],uint256)"
+    }
+  ],
+  "id": "ERC7738",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7738",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7738.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP provides a means to create a standard registry for locating executable scripts associated with the token.",
+  "title": "Permissionless Script Registry"
+}

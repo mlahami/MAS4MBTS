@@ -1,0 +1,82 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4675",
+  "erc": "ERC-4675",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256,uint256)"
+    },
+    {
+      "name": "TokenAddition",
+      "signature": "TokenAddition(address,uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,uint256)"
+    },
+    {
+      "name": "setParentNFT",
+      "operation_type": "contract_interaction",
+      "signature": "setParentNFT(address,uint256,uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply(uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address,uint256)"
+    },
+    {
+      "name": "isRegistered",
+      "operation_type": "contract_interaction",
+      "signature": "isRegistered(address,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "onERC721Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC721Received(address,address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC4675",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4675",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4675.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard outlines a smart contract interface eligible to represent any number of fractionalized non-fungible tokens. Existing projects utilizing standards like [EIP-1633](./eip-1633.md) conventionally deploy separate [EIP-20](./eip-20.md) compatible token contracts to fractionalize the non-fungible token into EIP-20 tokens. In contrast, this ERC allows each token ID to represent a token type representing(fractionalizing) the non-fungible token. This standard is approximate in terms of using `_id` for distinguishing token types. However, this ERC has a clear difference with [EIP-1155](./eip-1155.md) as each `_id` represents a distinct NFT.",
+  "title": "Multi-Fractional Non-Fungible Tokens"
+}

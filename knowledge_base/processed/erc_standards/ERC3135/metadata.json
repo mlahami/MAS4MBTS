@@ -1,0 +1,91 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3135",
+  "erc": "ERC-3135",
+  "events": [
+    {
+      "name": "Deposit",
+      "signature": "Deposit(address,uint256)"
+    },
+    {
+      "name": "Withdraw",
+      "signature": "Withdraw(address,uint256)"
+    },
+    {
+      "name": "TransferIssuer",
+      "signature": "TransferIssuer(address,address)"
+    },
+    {
+      "name": "Claim",
+      "signature": "Claim(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "iconUrl",
+      "operation_type": "contract_interaction",
+      "signature": "iconUrl()"
+    },
+    {
+      "name": "issuer",
+      "operation_type": "contract_interaction",
+      "signature": "issuer()"
+    },
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "transferIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "transferIssuer(address)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(address,uint256)"
+    },
+    {
+      "name": "depositBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "depositBalanceOf(address)"
+    },
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim(address,uint,uint,bytes)"
+    },
+    {
+      "name": "prefixed",
+      "operation_type": "contract_interaction",
+      "signature": "prefixed(bytes32)"
+    },
+    {
+      "name": "recoverSigner",
+      "operation_type": "contract_interaction",
+      "signature": "recoverSigner(bytes32,bytes)"
+    },
+    {
+      "name": "splitSignature",
+      "operation_type": "contract_interaction",
+      "signature": "splitSignature(bytes)"
+    }
+  ],
+  "id": "ERC3135",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3135",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3135.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP defines a set of additions to the default token standard such as ERC-20, that allows online/offline service providers establish micropayment channels with any number of users by signing and verifying messages about the consumption of token off chain. Using this mechanism will reduce interactions with blockchain to minimal for both participants, thus saving gas and improve performance.",
+  "title": "Exclusive Claimable Token"
+}

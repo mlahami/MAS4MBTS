@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7700",
+  "erc": "ERC-7700",
+  "events": [],
+  "functions": [
+    {
+      "name": "setValue",
+      "operation_type": "contract_interaction",
+      "signature": "setValue(bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "keygen",
+      "operation_type": "contract_interaction",
+      "signature": "keygen(username,//,//)"
+    },
+    {
+      "name": "setAddr",
+      "operation_type": "contract_interaction",
+      "signature": "setAddr(bytes32,address)"
+    },
+    {
+      "name": "setText",
+      "operation_type": "contract_interaction",
+      "signature": "setText(bytes32,string,string)"
+    },
+    {
+      "name": "setText",
+      "operation_type": "contract_interaction",
+      "signature": "setText(bytes32,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC7700",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7700",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7700.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The following standard provides a mechanism by which smart contracts can route storage to external providers. In particular, protocols can reduce the gas fees associated with storing data on mainnet by routing the handling of storage operations to another system or network. These storage routers act as an extension to the core L1 contract. Methods in this document specifically target security and cost-effectiveness of storage routing to three router types: L1, L2 and databases. The cross-chain data written with these methods can be retrieved by generic [EIP-3668](./eip-3668)-compliant contracts, thus completing the cross-chain data life cycle. This document, nicknamed CCIP-Store, alongside [EIP-3668](./eip-3668), is a meaningful step toward a secure infrastructure for cross-chain storage r",
+  "title": "Cross-chain Storage Router Protocol"
+}

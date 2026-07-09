@@ -1,0 +1,127 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7806",
+  "erc": "ERC-7806",
+  "events": [
+    {
+      "name": "HashUsed",
+      "signature": "HashUsed(address,uint256)"
+    },
+    {
+      "name": "StandardRegistered",
+      "signature": "StandardRegistered(address,address)"
+    },
+    {
+      "name": "StandardUnregistered",
+      "signature": "StandardUnregistered(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "validateUserIntent",
+      "operation_type": "contract_interaction",
+      "signature": "validateUserIntent(bytes)"
+    },
+    {
+      "name": "unpackOperations",
+      "operation_type": "contract_interaction",
+      "signature": "unpackOperations(bytes)"
+    },
+    {
+      "name": "executeUserIntent",
+      "operation_type": "contract_interaction",
+      "signature": "executeUserIntent(bytes)"
+    },
+    {
+      "name": "getSenderAndStandard",
+      "operation_type": "contract_interaction",
+      "signature": "getSenderAndStandard(bytes)"
+    },
+    {
+      "name": "getLengths",
+      "operation_type": "contract_interaction",
+      "signature": "getLengths(bytes)"
+    },
+    {
+      "name": "getSignatureLength",
+      "operation_type": "contract_interaction",
+      "signature": "getSignatureLength(bytes)"
+    },
+    {
+      "name": "getIntentLength",
+      "operation_type": "contract_interaction",
+      "signature": "getIntentLength(bytes)"
+    },
+    {
+      "name": "getIntentLengthFromSection",
+      "operation_type": "contract_interaction",
+      "signature": "getIntentLengthFromSection(bytes6)"
+    },
+    {
+      "name": "checkHash",
+      "operation_type": "contract_interaction",
+      "signature": "checkHash(address,uint256)"
+    },
+    {
+      "name": "markHash",
+      "operation_type": "contract_interaction",
+      "signature": "markHash(uint256)"
+    },
+    {
+      "name": "_validateSignatures",
+      "operation_type": "contract_interaction",
+      "signature": "_validateSignatures(address,bytes,uint256)"
+    },
+    {
+      "name": "sampleIntent",
+      "operation_type": "contract_interaction",
+      "signature": "sampleIntent(address,address,address,uint128,bytes[])"
+    },
+    {
+      "name": "sampleERC20Execution",
+      "operation_type": "contract_interaction",
+      "signature": "sampleERC20Execution(address,address,uint256)"
+    },
+    {
+      "name": "permit",
+      "operation_type": "contract_interaction",
+      "signature": "permit(bool,address,address,uint256,bytes)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(bool,address,uint256)"
+    },
+    {
+      "name": "isNonceUsed",
+      "operation_type": "contract_interaction",
+      "signature": "isNonceUsed(address,uint256)"
+    },
+    {
+      "name": "isRegistered",
+      "operation_type": "contract_interaction",
+      "signature": "isRegistered(address,address)"
+    },
+    {
+      "name": "_process",
+      "operation_type": "contract_interaction",
+      "signature": "_process(bool,address,address,uint256)"
+    },
+    {
+      "name": "executeOtherIntent",
+      "operation_type": "contract_interaction",
+      "signature": "executeOtherIntent(bytes)"
+    }
+  ],
+  "id": "ERC7806",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7806",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7806.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal defines a standard interface for intent-centric smart accounts. It enables externally owned accounts (EOAs) to delegate contract code to a smart account implementation, allowing them to sign intents. These intents can then be executed by solvers (or relayers) on behalf of the account owner, streamlining interactions and expanding the capabilities of EOAs.",
+  "title": "Minimal intent-centric EOA smart account"
+}

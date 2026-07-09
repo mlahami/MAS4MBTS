@@ -1,0 +1,87 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7621",
+  "erc": "ERC-7621",
+  "events": [
+    {
+      "name": "Contributed",
+      "signature": "Contributed(address,address,uint256,uint256[])"
+    },
+    {
+      "name": "Withdrawn",
+      "signature": "Withdrawn(address,address,uint256,uint256[])"
+    },
+    {
+      "name": "Rebalanced",
+      "signature": "Rebalanced(address[],uint256[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getConstituents",
+      "operation_type": "contract_interaction",
+      "signature": "getConstituents()"
+    },
+    {
+      "name": "totalConstituents",
+      "operation_type": "contract_interaction",
+      "signature": "totalConstituents()"
+    },
+    {
+      "name": "getReserve",
+      "operation_type": "contract_interaction",
+      "signature": "getReserve(address)"
+    },
+    {
+      "name": "getWeight",
+      "operation_type": "contract_interaction",
+      "signature": "getWeight(address)"
+    },
+    {
+      "name": "isConstituent",
+      "operation_type": "contract_interaction",
+      "signature": "isConstituent(address)"
+    },
+    {
+      "name": "totalBasketValue",
+      "operation_type": "contract_interaction",
+      "signature": "totalBasketValue()"
+    },
+    {
+      "name": "contribute",
+      "operation_type": "contract_interaction",
+      "signature": "contribute(uint256[],address,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256,address,uint256[])"
+    },
+    {
+      "name": "rebalance",
+      "operation_type": "contract_interaction",
+      "signature": "rebalance(address[],uint256[])"
+    },
+    {
+      "name": "previewContribute",
+      "operation_type": "contract_interaction",
+      "signature": "previewContribute(uint256[])"
+    },
+    {
+      "name": "previewWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "previewWithdraw(uint256)"
+    }
+  ],
+  "id": "ERC7621",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7621",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7621.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines a multi-asset basket token that extends [ERC-20](./eip-20.md). A basket holds a set of [ERC-20](./eip-20.md) constituent tokens at configurable target weights. The basket contract itself is the share token: holders of the basket's [ERC-20](./eip-20.md) supply have a proportional claim on its underlying reserves. A designated owner, identified via [ERC-173](./eip-173.md), has authority to rebalance the basket's composition.",
+  "title": "Basket Token"
+}

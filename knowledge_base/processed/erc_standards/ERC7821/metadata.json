@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7821",
+  "erc": "ERC-7821",
+  "events": [],
+  "functions": [
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(bytes32,bytes)"
+    },
+    {
+      "name": "supportsExecutionMode",
+      "operation_type": "contract_interaction",
+      "signature": "supportsExecutionMode(bytes32)"
+    },
+    {
+      "name": "_executionModeId",
+      "operation_type": "contract_interaction",
+      "signature": "_executionModeId(bytes32)"
+    },
+    {
+      "name": "_execute",
+      "operation_type": "contract_interaction",
+      "signature": "_execute(Call[],bytes)"
+    },
+    {
+      "name": "_execute",
+      "operation_type": "contract_interaction",
+      "signature": "_execute(Call[])"
+    },
+    {
+      "name": "_execute",
+      "operation_type": "contract_interaction",
+      "signature": "_execute(address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC7821",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7821",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7821.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal defines a minimal batch executor interface for delegations. A delegation is a smart contract that implements logic which other smart contracts can delegate to. This allows atomic batched executions to be prepared in a standardized way.",
+  "title": "Minimal Batch Executor Interface"
+}

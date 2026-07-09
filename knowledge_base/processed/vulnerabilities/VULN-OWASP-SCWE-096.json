@@ -1,0 +1,16 @@
+{
+  "category": "Insufficient Verification of Data Authenticity",
+  "cwe": "CWE-345",
+  "description": "This weakness occurs when a cross-chain bridge allows withdrawals from Chain B to Chain A without properly burning or locking the corresponding token on the source chain (Chain B) before initiating the cross-chain transaction. As a result, the same token can exist simultaneously on both chains, enabling a double-spend scenario where malicious actors can sell, transfer, or use the same token on multiple chains.",
+  "id": "VULN-OWASP-SCWE-096",
+  "name": "Missing Token Burn During Cross-Chain NFT Withdrawal",
+  "owasp": "SCWE-096",
+  "remediation": "1. Burn the NFT - Call the `burn(tokenId)` function on the L2 NFT contract before sending the cross-chain withdrawal request. - This ensures that the NFT no longer exists on L2 and cannot be reused, transferred, or sold. 2. Alternatively, Lock the NFT (if burning isn\u2019t possible) - If NFTs are not meant to be permanently destroyed, implement a lock mechanism to freeze the token on L2 until the cross-chain withdrawal is completed successfully. 3. Update Cross-Chain Workflow - Enforce the burn/lock operation as part of the withdrawal process. - Revert the entire transaction if the burn/lock fails.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-096.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

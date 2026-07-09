@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "This weakness arises when a smart contract using LayerZero for cross-chain communication fails to validate the minimum gas limit in the adapter parameters. Attackers (or misconfigured clients) can specify an adapter params gas value that is too low for the destination chain execution. As a result, message processing reverts before reaching business logic or error-handling, and the message is recorded as a failed payload on the destination chain. Accumulating failed payloads can disrupt protocol liveness by blocking the cross-chain communication pathway until manual intervention is performed.",
+  "id": "VULN-OWASP-SCWE-094",
+  "name": "Insufficient Gas Limit Validation in LayerZero Message Sending",
+  "owasp": "SCWE-094",
+  "remediation": "- **Validate minimum gas limit:** Decode LayerZero adapter parameters and enforce a protocol-defined minimum gas limit per message type. - **Use safe defaults:** Provide default adapter params with adequate gas and reject user-supplied values below the threshold. - **Granular minima:** If different message types have varying complexity, define per-endpoint or per-function minimum gas values. - **Robust failure handling:** Implement operational procedures and tooling to safely retry or clear failed payloads without compromising security.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-094.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7578",
+  "erc": "ERC-7578",
+  "events": [
+    {
+      "name": "PropertiesSet",
+      "signature": "PropertiesSet(uint256,Properties)"
+    },
+    {
+      "name": "PropertiesRemoved",
+      "signature": "PropertiesRemoved(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getPropertiesOf",
+      "operation_type": "contract_interaction",
+      "signature": "getPropertiesOf(uint256)"
+    },
+    {
+      "name": "_setPropertiesOf",
+      "operation_type": "contract_interaction",
+      "signature": "_setPropertiesOf(uint256,Properties)"
+    },
+    {
+      "name": "_removePropertiesOf",
+      "operation_type": "contract_interaction",
+      "signature": "_removePropertiesOf(uint256)"
+    },
+    {
+      "name": "_update",
+      "operation_type": "contract_interaction",
+      "signature": "_update(address,uint256,address)"
+    }
+  ],
+  "id": "ERC7578",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7578",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7578.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal is an extension of [ERC-721](./eip-721.md) and implements additional functionality and information pertaining to the NFT\u2019s underlying physical asset by capturing information that enables the holder of physical asset backed NFTs to verify authenticity and facilitate redemption of the underlying physical assets. This proposal is primarily aimed at providing transparency by disclosing details of involved parties and provides opportunity to define and make readily available relevant legal relationship between NFT holder and the owner/holder of the respective underlying physical asset. This proposal makes the token issuer accountable to embed accurate information on a set of standardized information about the underlying physical asset and the involved key parties.",
+  "title": "Physical Asset Redemption"
+}

@@ -1,0 +1,98 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6150",
+  "erc": "ERC-6150",
+  "events": [
+    {
+      "name": "Minted",
+      "signature": "Minted(address,address,uint256,uint256)"
+    },
+    {
+      "name": "ParentTransferred",
+      "signature": "ParentTransferred(uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "parentOf",
+      "operation_type": "contract_interaction",
+      "signature": "parentOf(uint256)"
+    },
+    {
+      "name": "childrenOf",
+      "operation_type": "contract_interaction",
+      "signature": "childrenOf(uint256)"
+    },
+    {
+      "name": "isRoot",
+      "operation_type": "contract_interaction",
+      "signature": "isRoot(uint256)"
+    },
+    {
+      "name": "isLeaf",
+      "operation_type": "contract_interaction",
+      "signature": "isLeaf(uint256)"
+    },
+    {
+      "name": "childrenCountOf",
+      "operation_type": "contract_interaction",
+      "signature": "childrenCountOf(uint256)"
+    },
+    {
+      "name": "childOfParentByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "childOfParentByIndex(uint256,uint256)"
+    },
+    {
+      "name": "indexInChildrenEnumeration",
+      "operation_type": "contract_interaction",
+      "signature": "indexInChildrenEnumeration(uint256,uint256)"
+    },
+    {
+      "name": "safeBurn",
+      "operation_type": "contract_interaction",
+      "signature": "safeBurn(uint256)"
+    },
+    {
+      "name": "safeBatchBurn",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchBurn(uint256[])"
+    },
+    {
+      "name": "transferParent",
+      "operation_type": "contract_interaction",
+      "signature": "transferParent(uint256,uint256)"
+    },
+    {
+      "name": "batchTransferParent",
+      "operation_type": "contract_interaction",
+      "signature": "batchTransferParent(uint256,uint256[])"
+    },
+    {
+      "name": "isAdminOf",
+      "operation_type": "contract_interaction",
+      "signature": "isAdminOf(uint256,address)"
+    },
+    {
+      "name": "canMintChildren",
+      "operation_type": "contract_interaction",
+      "signature": "canMintChildren(uint256,address)"
+    },
+    {
+      "name": "canBurnTokenByAccount",
+      "operation_type": "contract_interaction",
+      "signature": "canBurnTokenByAccount(uint256,address)"
+    }
+  ],
+  "id": "ERC6150",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6150",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6150.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension to [EIP-721](./eip-721.md). It proposes a multi-layer filesystem-like hierarchical NFTs. This standard provides interfaces to get parent NFT or children NFTs and whether NFT is a leaf node or root node, maintaining the hierarchical relationship among them.",
+  "title": "Hierarchical NFTs"
+}

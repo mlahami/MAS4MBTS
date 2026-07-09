@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7405",
+  "erc": "ERC-7405",
+  "events": [
+    {
+      "name": "AccountMigrated",
+      "signature": "AccountMigrated(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "prepareAccountMigration",
+      "operation_type": "contract_interaction",
+      "signature": "prepareAccountMigration(address,bytes)"
+    },
+    {
+      "name": "cancelAccountMigration",
+      "operation_type": "contract_interaction",
+      "signature": "cancelAccountMigration()"
+    },
+    {
+      "name": "handleAccountMigration",
+      "operation_type": "contract_interaction",
+      "signature": "handleAccountMigration(address,bytes,bytes)"
+    },
+    {
+      "name": "migrationDataExists",
+      "operation_type": "contract_interaction",
+      "signature": "migrationDataExists(address)"
+    },
+    {
+      "name": "getMigrationData",
+      "operation_type": "contract_interaction",
+      "signature": "getMigrationData(address)"
+    },
+    {
+      "name": "setMigrationData",
+      "operation_type": "contract_interaction",
+      "signature": "setMigrationData(address,uint48)"
+    },
+    {
+      "name": "deleteMigrationData",
+      "operation_type": "contract_interaction",
+      "signature": "deleteMigrationData(address)"
+    }
+  ],
+  "id": "ERC7405",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7405",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7405.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Portable Smart Contract Accounts (PSCA) address the lack of portability and compatibility faced by Smart Contract Accounts (SCA) across different wallet providers. Based on [ERC-1967](./eip-1967.md), the PSCA system allows users to easily migrate their SCAs between different wallets using new, randomly generated migration keys. This provides a similar experience to exporting an externally owned account (EOA) with a private key or mnemonic. The system ensures security by employing signatures and time locks, allowing users to verify and cancel migration operations during the lock period, thereby preventing potential malicious actions. PSCA offers a non-intrusive and cost-effective approach, enhancing the interoperability and composability within the Account Abstraction (AA) ecosystem.",
+  "title": "Portable Smart Contract Accounts"
+}

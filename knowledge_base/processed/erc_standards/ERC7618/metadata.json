@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7618",
+  "erc": "ERC-7618",
+  "events": [],
+  "functions": [],
+  "id": "ERC7618",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7618",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7618.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "In the context of the [ERC-6860](./eip-6860.md) `web3://` standard, this ERC extends the [ERC-6944](./eip-6944.md) resolve mode: This standard specifies that if a `Content-Encoding` header is returned by the `request()` call, then the returned data is decoded if necessary according to the specified algorithm before being returned to the client.",
+  "title": "Content encoding in ERC-5219 mode Web3 URL"
+}

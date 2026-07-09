@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Conversion between Numeric Types**",
+  "cwe": "CWE-681",
+  "description": "Unsafe downcasting occurs when a larger integer type is implicitly or explicitly converted to a smaller type, leading to precision loss, unintended value changes, or integer overflows. Solidity does not automatically check for overflow when performing explicit type conversions, making it possible to unintentionally truncate values.",
+  "id": "VULN-OWASP-SCWE-041",
+  "name": "Unsafe Downcasting",
+  "owasp": "SCWE-041",
+  "remediation": "To prevent unsafe downcasting: - Always validate that the value fits within the target data type before casting. - Use safe mathematical libraries like OpenZeppelin's `SafeCast` to ensure proper conversions. - Avoid unnecessary downcasting unless explicitly needed for gas optimization.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-041.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

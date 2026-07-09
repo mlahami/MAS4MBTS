@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7555",
+  "erc": "ERC-7555",
+  "events": [],
+  "functions": [
+    {
+      "name": "auth",
+      "operation_type": "contract_interaction",
+      "signature": "auth()"
+    }
+  ],
+  "id": "ERC7555",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7555",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7555.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal establishes a standardized interface and functionality for applications to discover user accounts besides the readily available EOA. Specifically discovering normal accounts and smart accounts that may have been deployed or configured using a signing key that is not the standard Ethereum secp256k1 curve. The objective is to ensure uniformity of address retrieval across applications, and domains.",
+  "title": "Single Sign-On for Account Discovery"
+}

@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7638",
+  "erc": "ERC-7638",
+  "events": [],
+  "functions": [
+    {
+      "name": "atomSignCall",
+      "operation_type": "contract_interaction",
+      "signature": "atomSignCall(bytes,uint32,bytes)"
+    },
+    {
+      "name": "makeAtomSignInvalid",
+      "operation_type": "contract_interaction",
+      "signature": "makeAtomSignInvalid()"
+    },
+    {
+      "name": "executeOperation",
+      "operation_type": "contract_interaction",
+      "signature": "executeOperation(address,bytes)"
+    }
+  ],
+  "id": "ERC7638",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7638",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7638.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Batch Calls Encoding (BCE) outlines a solution for Smart Contract Account (SCA) wallets to consolidate multiple calls into a single call, encoding multiple parameters into bytes, compressing on-chain data, and saving gas. It can be used to implement atomic operations as well as non-atomic operations.",
+  "title": "Batch Calls Encoding in SCA"
+}

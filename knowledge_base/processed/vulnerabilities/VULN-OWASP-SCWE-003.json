@@ -1,0 +1,16 @@
+{
+  "category": "Modules with Circular Dependencies",
+  "cwe": "CWE-1047",
+  "description": "Lack of modularity refers to a design flaw where a system's components are not sufficiently separated into independent, reusable modules. This deficiency leads to tightly coupled code, making the system difficult to understand, maintain, and extend. In the context of smart contracts, this manifests as monolithic contracts where all functionalities are bundled together, increasing complexity and the potential for errors.",
+  "id": "VULN-OWASP-SCWE-003",
+  "name": "Lack of Modularity",
+  "owasp": "SCWE-003",
+  "remediation": "- **Modular Design:** Break down the contract into smaller, focused modules that handle specific responsibilities. - **Use of Libraries:** Leverage existing, well-tested libraries to handle common functionalities, reducing the need for custom code. - **Simplify Logic:** Avoid unnecessary complexity by streamlining the contract's logic and removing redundant code. - **Regular Audits:** Conduct periodic code reviews and audits to identify and address areas of excessive complexity.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-003.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

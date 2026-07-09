@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5679",
+  "erc": "ERC-5679",
+  "events": [],
+  "functions": [
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256,bytes)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256,bytes)"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(address,uint256,bytes)"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "safeMintBatch",
+      "operation_type": "contract_interaction",
+      "signature": "safeMintBatch(address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256,uint256,bytes[])"
+    },
+    {
+      "name": "burnBatch",
+      "operation_type": "contract_interaction",
+      "signature": "burnBatch(address,uint256[],uint256[],bytes)"
+    }
+  ],
+  "id": "ERC5679",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5679",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5679.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP introduces a consistent way to extend token standards for minting and burning.",
+  "title": "Token Minting and Burning"
+}

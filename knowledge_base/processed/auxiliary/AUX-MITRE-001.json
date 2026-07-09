@@ -1,0 +1,44 @@
+{
+  "applies_to": [
+    "oracle manipulation",
+    "bridge compromise",
+    "wallet compromise",
+    "governance manipulation",
+    "off-chain infrastructure compromise",
+    "DEX manipulation"
+  ],
+  "description": "Maps generated blockchain and ERC threats to adversary tactics, techniques, and procedures when the threat involves attacker behavior beyond a pure smart-contract weakness.",
+  "id": "AUX-MITRE-001",
+  "kind": "adversary_behavior_mapping",
+  "mappings": [
+    {
+      "mitre_context": "Data manipulation or compromise of trusted external data sources.",
+      "stride": "Tampering",
+      "threat_family": "Oracle manipulation",
+      "use_in_etm": "Attach as auxiliary context to the generated threat rationale and attack scenario."
+    },
+    {
+      "mitre_context": "Abuse of valid permissions, compromised accounts, or manipulation of decision-making workflows.",
+      "stride": "Elevation of Privilege",
+      "threat_family": "Governance manipulation",
+      "use_in_etm": "Attach as auxiliary context when attack steps include off-chain compromise or social coordination."
+    },
+    {
+      "mitre_context": "Credential or key compromise enabling an attacker to act as a legitimate user.",
+      "stride": "Spoofing",
+      "threat_family": "Wallet or private-key compromise",
+      "use_in_etm": "Attach as auxiliary context when the smart contract threat depends on account compromise."
+    }
+  ],
+  "name": "MITRE ATT&CK for blockchain threat contextualization",
+  "role": "contextualization",
+  "source": {
+    "source_id": "mitre_attack",
+    "source_url": "https://attack.mitre.org/"
+  },
+  "usage_guidelines": [
+    "Do not use MITRE ATT&CK as the primary source for ERC-specific vulnerabilities.",
+    "Use it to enrich attack scenarios and attack trees with real-world adversary behavior.",
+    "Prefer ERC, OWASP, SWC, CWE, and EthTrust for identifying smart-contract weaknesses."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Protection Mechanism Failure",
+  "cwe": "CWE-693",
+  "description": "Inline assembly that writes to memory without preserving the Solidity free-memory pointer (at `0x40`) can corrupt ABI encoding for later calls or returns. Downstream decodes may misread buffers, leading to unexpected reverts or data leaks.",
+  "id": "VULN-OWASP-SCWE-123",
+  "name": "Corrupt Free Memory Pointer in Assembly",
+  "owasp": "SCWE-123",
+  "remediation": "- Save and restore the free-memory pointer when using custom memory writes. - Prefer Solidity primitives unless assembly is necessary; encapsulate unsafe sections. - Use formalized patterns for encoding/decoding (e.g., `abi.encode`) to avoid manual pointer math.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-123.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7795",
+  "erc": "ERC-7795",
+  "events": [],
+  "functions": [],
+  "id": "ERC7795",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7795",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7795.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC extends [EIP-5792](./eip-5792.md) by defining capabilities that allow dApps to specify common token prerequisites for transactions, such as having certain [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), or [ERC-1155](./eip-1155.md) tokens. Wallets can then help users meet these requirements before executing the transactions.",
+  "title": "Wallet Call Token Capabilities"
+}

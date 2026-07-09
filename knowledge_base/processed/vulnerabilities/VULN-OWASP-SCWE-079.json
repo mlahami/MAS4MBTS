@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "The use of `.transfer()` and `.send()` for Ether transfers in Solidity is insecure because they impose a fixed gas limit of 2300 gas. This restriction can cause transactions to fail unexpectedly when the receiving contract has complex logic that requires more gas. Additionally, it can result in a Denial of Service (DoS) vulnerability if the receiving contract cannot execute due to insufficient gas. This issue is especially problematic in upgradable smart contracts or protocol interactions, where the gas requirements of a receiving contract might change over time.",
+  "id": "VULN-OWASP-SCWE-079",
+  "name": "Insecure Use of Transfer and Send",
+  "owasp": "SCWE-079",
+  "remediation": "Instead of `.transfer()` and `.send()`, use `.call{value: msg.value}(\"\")`, which allows more flexible gas allocation and prevents DoS risks. Always check for the return value of `.call()` to ensure the transfer was successful.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-079.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

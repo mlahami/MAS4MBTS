@@ -1,0 +1,16 @@
+{
+  "category": "Use of Outdated or Insecure Software",
+  "cwe": "CWE-1103",
+  "description": "Using an outdated compiler version can expose a smart contract to vulnerabilities that have already been patched in newer versions. Compiler versions often include security fixes, optimizations, and new features that are crucial for the safety and performance of contracts.",
+  "id": "VULN-OWASP-SCWE-061",
+  "name": "Outdated Compiler Version",
+  "owasp": "SCWE-061",
+  "remediation": "To mitigate this vulnerability, always use the most up-to-date stable version of the Solidity compiler. Ensure that your development environment is regularly updated to incorporate the latest security patches, optimizations, and features provided by newer versions of the compiler.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-061.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

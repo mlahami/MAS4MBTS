@@ -1,0 +1,96 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1923",
+  "erc": "ERC-1923",
+  "events": [
+    {
+      "name": "NewProofSubmitted",
+      "signature": "NewProofSubmitted(bytes32,uint256[],uint64[])"
+    },
+    {
+      "name": "NewVkRegistered",
+      "signature": "NewVkRegistered(bytes32)"
+    },
+    {
+      "name": "NewVerifierContractRegistered",
+      "signature": "NewVerifierContractRegistered(address)"
+    },
+    {
+      "name": "NewAttestation",
+      "signature": "NewAttestation(bytes32,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getVk",
+      "operation_type": "contract_interaction",
+      "signature": "getVk(bytes32)"
+    },
+    {
+      "name": "registerVerifierContract",
+      "operation_type": "contract_interaction",
+      "signature": "registerVerifierContract(address)"
+    },
+    {
+      "name": "registerVk",
+      "operation_type": "contract_interaction",
+      "signature": "registerVk(uint256[],address[])"
+    },
+    {
+      "name": "submitProof",
+      "operation_type": "contract_interaction",
+      "signature": "submitProof(uint256[],uint64[],bytes32)"
+    },
+    {
+      "name": "submitProof",
+      "operation_type": "contract_interaction",
+      "signature": "submitProof(uint256[],uint64[],bytes32,address)"
+    },
+    {
+      "name": "submitProofAndVerify",
+      "operation_type": "contract_interaction",
+      "signature": "submitProofAndVerify(uint256[],uint64[],bytes32,address)"
+    },
+    {
+      "name": "attestProof",
+      "operation_type": "contract_interaction",
+      "signature": "attestProof(bytes32,bytes32,bool)"
+    },
+    {
+      "name": "attestProofs",
+      "operation_type": "contract_interaction",
+      "signature": "attestProofs(bytes32[],bytes32[],bool[])"
+    },
+    {
+      "name": "challengeAttestation",
+      "operation_type": "contract_interaction",
+      "signature": "challengeAttestation(bytes32,uint256[],uint64[],address)"
+    },
+    {
+      "name": "createNewVkId",
+      "operation_type": "contract_interaction",
+      "signature": "createNewVkId(uint256[])"
+    },
+    {
+      "name": "createNewProofId",
+      "operation_type": "contract_interaction",
+      "signature": "createNewProofId(uint256[],uint64[])"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC1923",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1923",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1923.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard contract API for the registration of zk-SNARKs (\"Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge\"), also known as \"proofs\", \"arguments\", or \"commitments\". TODO: Which functionality is exposed in this standard interface?",
+  "title": "zk-SNARK Verifier Registry Standard"
+}

@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7399",
+  "erc": "ERC-7399",
+  "events": [],
+  "functions": [
+    {
+      "name": "maxFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "maxFlashLoan(address)"
+    },
+    {
+      "name": "flashFee",
+      "operation_type": "contract_interaction",
+      "signature": "flashFee(IERC20,uint256)"
+    },
+    {
+      "name": "flash",
+      "operation_type": "contract_interaction",
+      "signature": "flash(address,ERC20,uint256,bytes,///,and,but)"
+    }
+  ],
+  "id": "ERC7399",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7399",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7399.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "A flash loan is a loan between lender and borrower smart contracts that must be repaid, plus an optional fee, before the end of the transaction. This ERC specifies interfaces for lenders to accept flash loan requests, and for borrowers to take temporary control of the transaction within the lender execution. The process for the safe execution of flash loans is also specified.",
+  "title": "\u26a1 Flash Loans \u26a1"
+}

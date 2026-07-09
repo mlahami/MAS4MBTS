@@ -1,0 +1,64 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1753",
+  "erc": "ERC-1753",
+  "events": [],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "grantAuthority",
+      "operation_type": "contract_interaction",
+      "signature": "grantAuthority(address)"
+    },
+    {
+      "name": "revokeAuthority",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAuthority(address)"
+    },
+    {
+      "name": "hasAuthority",
+      "operation_type": "contract_interaction",
+      "signature": "hasAuthority(address)"
+    },
+    {
+      "name": "issue",
+      "operation_type": "contract_interaction",
+      "signature": "issue(address,uint256,uint256)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(address)"
+    },
+    {
+      "name": "hasValid",
+      "operation_type": "contract_interaction",
+      "signature": "hasValid(address)"
+    },
+    {
+      "name": "purchase",
+      "operation_type": "contract_interaction",
+      "signature": "purchase(uint256,uint256)"
+    }
+  ],
+  "id": "ERC1753",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1753",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1753.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This Ethereum Improvement Proposal (EIP) proposes an Ethereum standard for the issuance of licences, permits and grants (Licences). A Licence is a limited and temporary authority, granted to a natural (e.g. you) or legal person (e.g. a corporation), to do something that would otherwise be unlawful pursuant to a legal framework. A public Licence is granted by the government, directly (e.g. by the New South Wales Department of Primary Industries, Australia) or indirectly (e.g. by an agent operating under the government\u2019s authority), and derives its authority from legislation, though this is often practically achieved via delegated legislation such as regulations. This can be contrasted to a private licence \u2013 for example, the licence you grant to a visitor who comes onto your property. A Lice",
+  "title": "Smart Contract Interface for Licences"
+}

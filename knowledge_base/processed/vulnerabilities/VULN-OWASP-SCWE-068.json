@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Type Conversion or Cast",
+  "cwe": "CWE-704",
+  "description": "In Solidity, state variables have a default visibility of `internal`, which means they can only be accessed within the contract or derived contracts (not by external callers). Omitting explicit visibility can lead to unintended behavior: for example, if a developer intends `private` but forgets to specify it, derived contracts can still access the variable; if they intend `public` but omit it, no getter is generated and external callers cannot read the value. Explicit visibility ensures the variable behaves as intended.",
+  "id": "VULN-OWASP-SCWE-068",
+  "name": "State Variable Default Visibility",
+  "owasp": "SCWE-068",
+  "remediation": "Always explicitly specify the visibility of state variables. The possible visibility options are: - `public`: Accessible by anyone, both externally and internally. - `internal`: Accessible only within the contract or derived contracts (default). - `private`: Accessible only within the contract.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-068.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

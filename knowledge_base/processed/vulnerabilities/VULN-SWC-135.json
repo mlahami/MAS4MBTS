@@ -1,0 +1,17 @@
+{
+  "category": "Improper Adherence to Coding Standards",
+  "cwe": "CWE-710",
+  "description": "In Solidity, it's possible to write code that does not produce the intended effects. Currently, the solidity compiler will not return a warning for effect-free code. This can lead to the introduction of \"dead\" code that does not properly perform an intended action. For example, it's easy to miss the trailing parentheses in `msg.sender.call.value(address(this).balance)(\"\");`, which could lead to a function proceeding without transferring funds to `msg.sender`. Although, this should be avoided by checking the return value of the call.",
+  "id": "VULN-SWC-135",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "It's important to carefully ensure that your contract works as intended. Write unit tests to verify correct behaviour of the code.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-135.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-135"
+}

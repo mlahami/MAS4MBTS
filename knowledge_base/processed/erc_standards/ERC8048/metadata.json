@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8048",
+  "erc": "ERC-8048",
+  "events": [
+    {
+      "name": "MetadataSet",
+      "signature": "MetadataSet(uint256,string,string,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "metadata",
+      "operation_type": "contract_interaction",
+      "signature": "metadata(uint256,string)"
+    },
+    {
+      "name": "setMetadata",
+      "operation_type": "contract_interaction",
+      "signature": "setMetadata(uint256,string,bytes)"
+    },
+    {
+      "name": "_getOnchainMetadataStorage",
+      "operation_type": "contract_interaction",
+      "signature": "_getOnchainMetadataStorage()"
+    }
+  ],
+  "id": "ERC8048",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8048",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8048.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines an onchain metadata standard for multi-token and NFT registries including [ERC-721](./eip-721.md), [ERC-1155](./eip-1155.md), and [ERC-6909](./eip-6909.md). The standard provides a key-value store allowing for arbitrary bytes to be stored onchain.",
+  "title": "Onchain Metadata for Token Registries"
+}

@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7546",
+  "erc": "ERC-7546",
+  "events": [
+    {
+      "name": "DictionaryUpgraded",
+      "signature": "DictionaryUpgraded(address)"
+    },
+    {
+      "name": "ImplementationUpgraded",
+      "signature": "ImplementationUpgraded(bytes4,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "getImplementation(bytes4)"
+    },
+    {
+      "name": "setImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "setImplementation(bytes4,address)"
+    },
+    {
+      "name": "supportsInterfaces",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterfaces()"
+    },
+    {
+      "name": "selector",
+      "operation_type": "contract_interaction",
+      "signature": "selector(interface)"
+    }
+  ],
+  "id": "ERC7546",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7546",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7546.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "It has been a significant challenge for developers attempting to create cloneable and upgradeable contracts on the Ethereum Virtual Machine (EVM). While [ERC-2535](./eip-2535.md) Diamonds and other existing proxy standards offer partial solutions, a comprehensive answer has remained elusive. Our proposal addresses this gap through the introduction of two main features. ### Function-Level Upgradeability In alignment with [ERC-2535](./eip-2535.md), this functionality permits the selective redirection of implementation contracts for individual function calls. This granular control over upgrades allows for modifications on a per-function basis. Moreover, segmenting implementation contracts by function helps mitigate the limitations posed by the contract size cap (24.576kB as of EVM version Sha",
+  "title": "Upgradeable Clone for Scalable Contracts"
+}

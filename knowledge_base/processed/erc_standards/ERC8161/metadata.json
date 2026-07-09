@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8161",
+  "erc": "ERC-8161",
+  "events": [],
+  "functions": [],
+  "id": "ERC8161",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8161",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8161.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This standard extends [ERC-7540](./eip-7540.md) by adding optional transferability of pending deposit and redeem Requests. It introduces two separate interfaces that allow a controller to transfer their pending Request balance to a new controller. Implementations may support either or both interfaces independently.",
+  "title": "Transferable Tokenized Vault Requests"
+}

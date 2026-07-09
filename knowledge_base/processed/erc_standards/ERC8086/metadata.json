@@ -1,0 +1,96 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8086",
+  "erc": "ERC-8086",
+  "events": [
+    {
+      "name": "CommitmentAppended",
+      "signature": "CommitmentAppended(uint32,bytes32,uint32,uint256)"
+    },
+    {
+      "name": "NullifierSpent",
+      "signature": "NullifierSpent(bytes32)"
+    },
+    {
+      "name": "Minted",
+      "signature": "Minted(address,bytes32,bytes,uint32,uint32,uint256)"
+    },
+    {
+      "name": "Transaction",
+      "signature": "Transaction(bytes32[2],bytes[],uint256[2],uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint8,bytes,bytes)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(uint8,bytes,bytes[])"
+    },
+    {
+      "name": "nullifiers",
+      "operation_type": "contract_interaction",
+      "signature": "nullifiers(bytes32)"
+    },
+    {
+      "name": "activeSubtreeRoot",
+      "operation_type": "contract_interaction",
+      "signature": "activeSubtreeRoot()"
+    },
+    {
+      "name": "privacyConfigURI",
+      "operation_type": "contract_interaction",
+      "signature": "privacyConfigURI()"
+    },
+    {
+      "name": "setPrivacyConfigURI",
+      "operation_type": "contract_interaction",
+      "signature": "setPrivacyConfigURI(string)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint8,bytes,...)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(uint8,bytes,...)"
+    }
+  ],
+  "id": "ERC8086",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8086",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8086.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines `IZRC20`, a minimal interface for privacy-preserving fungible tokens on Ethereum. It uses zero-knowledge proofs to enable confidential transfers where transaction amounts, sender, and recipient identities remain hidden. The core mechanism relies on cryptographic commitments stored in a Merkle tree, with nullifiers preventing double-spending. This interface serves as a foundational building block for both wrapper protocols (adding privacy to existing [ERC-20](./eip-20) tokens) and dual-mode tokens (single tokens supporting both transparent and private transfers).",
+  "title": "Privacy Token"
+}

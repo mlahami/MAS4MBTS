@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8106",
+  "erc": "ERC-8106",
+  "events": [
+    {
+      "name": "EntityTypeUpdated",
+      "signature": "EntityTypeUpdated(address,EntityType,bytes32,address)"
+    },
+    {
+      "name": "ComplianceObserved",
+      "signature": "ComplianceObserved(bytes32,address,//,address,uint256,EntityType,EntityType,ComplianceFlag,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "entityTypeOf",
+      "operation_type": "contract_interaction",
+      "signature": "entityTypeOf(address)"
+    },
+    {
+      "name": "registerComplianceEntity",
+      "operation_type": "contract_interaction",
+      "signature": "registerComplianceEntity(address,bytes32)"
+    },
+    {
+      "name": "purchaseRWA",
+      "operation_type": "contract_interaction",
+      "signature": "purchaseRWA(bytes32,uint256)"
+    }
+  ],
+  "id": "ERC8106",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8106",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8106.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines an event-based compliance framework for Real World Asset (RWA) tokens on [ERC-20](./eip-20.md), providing: 1. A standardized entity classification system distinguishing between Compliance Entities (CE) and Decentralized Entities (DE) 2. Event-driven compliance observation enabling auditability through standardized events and actual value flows, without enforcing hard transaction reverts This standard is intentionally minimal and does not prescribe business-specific RWA workflows, off-chain settlement mechanisms, minting policies, or specific transfer patterns.",
+  "title": "RWA Event-based Compliance Framework"
+}

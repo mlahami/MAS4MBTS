@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6506",
+  "erc": "ERC-6506",
+  "events": [
+    {
+      "name": "incentiveSent",
+      "signature": "incentiveSent(address,address,uint256,address,bytes)"
+    },
+    {
+      "name": "incentiveReclaimed",
+      "signature": "incentiveReclaimed(address,address,address,uint256,bytes)"
+    },
+    {
+      "name": "modifiedClaimer",
+      "signature": "modifiedClaimer(address,address,bool)"
+    },
+    {
+      "name": "incentiveClaimed",
+      "signature": "incentiveClaimed(address,address,bytes32,bytes)"
+    },
+    {
+      "name": "disputeInitiated",
+      "signature": "disputeInitiated(bytes32,address,address)"
+    },
+    {
+      "name": "disputeResolved",
+      "signature": "disputeResolved(bytes32,address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "incentivize",
+      "operation_type": "contract_interaction",
+      "signature": "incentivize(bytes32,bytes)"
+    },
+    {
+      "name": "claimIncentive",
+      "operation_type": "contract_interaction",
+      "signature": "claimIncentive(bytes32,bytes,address)"
+    },
+    {
+      "name": "reclaimIncentive",
+      "operation_type": "contract_interaction",
+      "signature": "reclaimIncentive(bytes32,bytes)"
+    },
+    {
+      "name": "verifyVote",
+      "operation_type": "contract_interaction",
+      "signature": "verifyVote(bytes32,bytes)"
+    },
+    {
+      "name": "modifyClaimer",
+      "operation_type": "contract_interaction",
+      "signature": "modifyClaimer(address,bool)"
+    },
+    {
+      "name": "beginDispute",
+      "operation_type": "contract_interaction",
+      "signature": "beginDispute(bytes32,bytes)"
+    },
+    {
+      "name": "resolveDispute",
+      "operation_type": "contract_interaction",
+      "signature": "resolveDispute(bytes32,bytes)"
+    }
+  ],
+  "id": "ERC6506",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6506",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6506.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following EIP defines the interface for a contract that facilitates the exchange of a governance-incentive for users to vote in a designated direction on a DAO-proposal while escrowing funds until the vote can be verified.",
+  "title": "P2P Escrowed Governance Incentives"
+}

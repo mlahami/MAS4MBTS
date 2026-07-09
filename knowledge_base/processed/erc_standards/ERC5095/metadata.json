@@ -1,0 +1,89 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5095",
+  "erc": "ERC-5095",
+  "events": [
+    {
+      "name": "Redeem",
+      "signature": "Redeem(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(uint256,address,address)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256,address,address)"
+    },
+    {
+      "name": "_transferOut",
+      "operation_type": "contract_interaction",
+      "signature": "_transferOut(address,uint256)"
+    },
+    {
+      "name": "convertToUnderlying",
+      "operation_type": "contract_interaction",
+      "signature": "convertToUnderlying(uint256)"
+    },
+    {
+      "name": "_convertToUnderlying",
+      "operation_type": "contract_interaction",
+      "signature": "_convertToUnderlying(uint256)"
+    },
+    {
+      "name": "convertToPrincipal",
+      "operation_type": "contract_interaction",
+      "signature": "convertToPrincipal(uint256)"
+    },
+    {
+      "name": "_convertToPrincipal",
+      "operation_type": "contract_interaction",
+      "signature": "_convertToPrincipal(uint256)"
+    },
+    {
+      "name": "previewRedeem",
+      "operation_type": "contract_interaction",
+      "signature": "previewRedeem(uint256)"
+    },
+    {
+      "name": "_previewRedeem",
+      "operation_type": "contract_interaction",
+      "signature": "_previewRedeem(uint256)"
+    },
+    {
+      "name": "maxRedeem",
+      "operation_type": "contract_interaction",
+      "signature": "maxRedeem(address)"
+    },
+    {
+      "name": "previewWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "previewWithdraw(uint256)"
+    },
+    {
+      "name": "_previewWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "_previewWithdraw(uint256)"
+    },
+    {
+      "name": "maxWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "maxWithdraw(address)"
+    }
+  ],
+  "id": "ERC5095",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5095",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5095.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Principal tokens represent ownership of an underlying [EIP-20](./eip-20.md) token at a future timestamp. This specification is an extension on the [EIP-20](./eip-20.md) token that provides basic functionality for depositing and withdrawing tokens and reading balances and the [EIP-2612](./eip-2612.md) specification that provides [EIP-712](./eip-712.md) signature based approvals.",
+  "title": "Principal Token"
+}

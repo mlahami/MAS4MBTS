@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7710",
+  "erc": "ERC-7710",
+  "events": [],
+  "functions": [
+    {
+      "name": "redeemDelegations",
+      "operation_type": "contract_interaction",
+      "signature": "redeemDelegations(bytes[],bytes32[],bytes[])"
+    }
+  ],
+  "id": "ERC7710",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7710",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7710.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a standard way for smart contracts to delegate capabilities to other smart contracts or Externally Owned Accounts (EOAs). The delegating contract (delegator) must be able to authorize a `DelegationManager` contract to call the delegator to execute the desired action. This framework empowers a delegating contract with the ability to delegate any actions it has the authority to perform, thereby enabling more flexible and scalable contract interactions. This standard outlines the minimal interface necessary to facilitate such delegation. Additionally, this proposal is compatible with [ERC-4337](./eip-4337.md), although its implementation does not necessitate [ERC-4337](./eip-4337.md).",
+  "title": "Smart Contract Delegation"
+}

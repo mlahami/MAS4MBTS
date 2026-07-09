@@ -1,0 +1,100 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2266",
+  "erc": "ERC-2266",
+  "events": [
+    {
+      "name": "SetUp",
+      "signature": "SetUp(bytes32,address,address,address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "Initiated",
+      "signature": "Initiated(uint256,bytes32,address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "Participated",
+      "signature": "Participated(uint256,bytes32,address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "PremiumFilled",
+      "signature": "PremiumFilled(uint256,bytes32,address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "InitiatorAssetRedeemed",
+      "signature": "InitiatorAssetRedeemed(uint256,bytes32,bytes32,address,address,uint256)"
+    },
+    {
+      "name": "ParticipantAssetRedeemed",
+      "signature": "ParticipantAssetRedeemed(uint256,bytes32,bytes32,address,address,uint256)"
+    },
+    {
+      "name": "InitiatorAssetRefunded",
+      "signature": "InitiatorAssetRefunded(uint256,bytes32,address,address,uint256)"
+    },
+    {
+      "name": "ParticipantAssetRefunded",
+      "signature": "ParticipantAssetRefunded(uint256,bytes32,address,address,uint256)"
+    },
+    {
+      "name": "PremiumRedeemed",
+      "signature": "PremiumRedeemed(uint256,bytes32,address,address,uint256)"
+    },
+    {
+      "name": "PremiumRefunded",
+      "signature": "PremiumRefunded(uint256,bytes32,address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setup",
+      "operation_type": "contract_interaction",
+      "signature": "setup(bytes32,address,address,address,uint256,address,uint256,uint256)"
+    },
+    {
+      "name": "initiate",
+      "operation_type": "contract_interaction",
+      "signature": "initiate(bytes32,uint256)"
+    },
+    {
+      "name": "fillPremium",
+      "operation_type": "contract_interaction",
+      "signature": "fillPremium(bytes32,uint256)"
+    },
+    {
+      "name": "participate",
+      "operation_type": "contract_interaction",
+      "signature": "participate(bytes32,uint256)"
+    },
+    {
+      "name": "redeemAsset",
+      "operation_type": "contract_interaction",
+      "signature": "redeemAsset(bytes32,bytes32)"
+    },
+    {
+      "name": "refundAsset",
+      "operation_type": "contract_interaction",
+      "signature": "refundAsset(bytes32)"
+    },
+    {
+      "name": "redeemPremium",
+      "operation_type": "contract_interaction",
+      "signature": "redeemPremium(bytes32)"
+    },
+    {
+      "name": "refundPremium",
+      "operation_type": "contract_interaction",
+      "signature": "refundPremium(bytes32)"
+    }
+  ],
+  "id": "ERC2266",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2266",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2266.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This standard provides functionality to make Atomic Swap-based American Call Option payment. The Atomic Swap protocol based on Hashed Time-Locked Contract (HTLC) [^1] has optionality [^2], and such optionality can be utilised to construct American Call Options without trusted third party. This standard defines the common way of implementing this protocol. In particular, this EIP defines technical terms, provides interfaces, and gives reference implementations of this protocol.",
+  "title": "Atomic Swap-based American Call Option Contract Standard"
+}

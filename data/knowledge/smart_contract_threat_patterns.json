@@ -1,0 +1,64 @@
+{
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "Unauthorized privileged action",
+      "stride": "Elevation of Privilege",
+      "vulnerability": {
+        "name": "Missing access control",
+        "category": "Authorization",
+        "severity": "High",
+        "cwe": "CWE-284",
+        "swc": "SWC-105"
+      },
+      "countermeasure": "Restrict privileged functions with role-based access control or onlyOwner.",
+      "security_property": "Only authorized actors can execute privileged operations.",
+      "test_objective": "Verify that unauthorized callers cannot execute privileged functions."
+    },
+    {
+      "id": "P2",
+      "name": "Approval race condition",
+      "stride": "Tampering",
+      "vulnerability": {
+        "name": "Transaction-ordering dependent allowance update",
+        "category": "Transaction ordering",
+        "severity": "Medium",
+        "cwe": "CWE-362",
+        "swc": "SWC-114"
+      },
+      "countermeasure": "Use allowance increase/decrease functions or require resetting allowance to zero before changing it.",
+      "security_property": "Allowance updates must not enable a spender to consume both old and new allowances.",
+      "test_objective": "Verify that allowance changes cannot be exploited through front-running."
+    },
+    {
+      "id": "P3",
+      "name": "Reentrancy during value transfer",
+      "stride": "Tampering",
+      "vulnerability": {
+        "name": "Reentrancy",
+        "category": "External call",
+        "severity": "High",
+        "cwe": "CWE-841",
+        "swc": "SWC-107"
+      },
+      "countermeasure": "Apply checks-effects-interactions and/or a reentrancy guard.",
+      "security_property": "State must be updated before external calls that may transfer control.",
+      "test_objective": "Verify that a malicious receiver cannot re-enter and consume state twice."
+    },
+    {
+      "id": "P4",
+      "name": "Balance or supply invariant violation",
+      "stride": "Tampering",
+      "vulnerability": {
+        "name": "Incorrect accounting",
+        "category": "Business logic",
+        "severity": "High",
+        "cwe": "CWE-682",
+        "swc": "N/A"
+      },
+      "countermeasure": "Check preconditions and preserve balance and total-supply invariants after every state transition.",
+      "security_property": "Token transfers must preserve accounting invariants.",
+      "test_objective": "Verify that transfers and mint/burn operations preserve expected token accounting."
+    }
+  ]
+}

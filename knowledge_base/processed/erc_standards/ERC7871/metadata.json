@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7871",
+  "erc": "ERC-7871",
+  "events": [],
+  "functions": [],
+  "id": "ERC7871",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7871",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7871.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Defines a new JSON-RPC method `wallet_sign` which enables apps to ask a wallet to sign [EIP-191](./eip-191.md) messages. Applications can use this JSON-RPC method to request a signature over any version of `signed_data` as defined by [EIP-191](./eip-191.md). The new JSON-RPC method allows for support of future [EIP-191](./eip-191.md) `signed_data` versions. The new JSON-RPC method also supports [EIP-5792](./eip-5792.md)-style `capabilities`, and support for signing capabilities can be discovered using `wallet_getCapabilities` as defined in [EIP-5792](./eip-5792.md).",
+  "title": "Wallet Signing API"
+}

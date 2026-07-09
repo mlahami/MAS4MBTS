@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1633",
+  "erc": "ERC-1633",
+  "events": [],
+  "functions": [
+    {
+      "name": "parentToken",
+      "operation_type": "contract_interaction",
+      "signature": "parentToken()"
+    },
+    {
+      "name": "parentTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "parentTokenId()"
+    },
+    {
+      "name": "confirmRFT",
+      "operation_type": "contract_interaction",
+      "signature": "confirmRFT(address)"
+    },
+    {
+      "name": "confirmRFT",
+      "operation_type": "contract_interaction",
+      "signature": "confirmRFT(web3)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "confirmRFT",
+      "operation_type": "contract_interaction",
+      "signature": "confirmRFT(address,uint256)"
+    }
+  ],
+  "id": "ERC1633",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1633",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1633.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The intention of this proposal, the Re-Fungible Token Standard, is to extend the ERC-20 Token Standard and utilize ERC-165 Standard Interface Detection in order to represent the shared ownership of an ERC-721 Non-Fungible Token. The ERC-20 Token Standard was modified as little as possible in order to allow this new class of token to operate in all of the ways and locations which are familiar to assets that follow the original ERC-20 specification. While there are many possible variations of this specification that would enable many different capabilities and scenarios for shared ownership, this proposal is focused on the minimal commonalities to enable as much flexibility as possible for various further extensions. This proposal makes it possible to verify, from the contract level or from",
+  "title": "Re-Fungible Token Standard (RFT)"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Improper Enforcement of Behavioral Workflow",
+  "cwe": "CWE-841",
+  "description": "Multicall-style aggregators that forward calls without guarding against reentrancy or context changes let attackers reorder actions within one tx (e.g., deposit then withdraw) or impersonate `msg.sender` when inner calls use `tx.origin` or cached sender state.",
+  "id": "VULN-OWASP-SCWE-128",
+  "name": "Insecure Multicall Context Forwarding",
+  "owasp": "SCWE-128",
+  "remediation": "- Apply reentrancy guards around multicall entrypoints. - Avoid caching `msg.sender` across calls; pass explicit sender/context to internal functions. - Restrict callable selectors/targets or enforce allowlists.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-128.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

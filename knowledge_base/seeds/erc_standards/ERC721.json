@@ -1,0 +1,37 @@
+{
+  "id": "ERC721",
+  "erc": "ERC-721",
+  "eip": "EIP-721",
+  "title": "Non-Fungible Token Standard",
+  "status": "Final",
+  "category": "ERC",
+  "source": {
+    "source_id": "ethereum_ercs_website",
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-721"
+  },
+  "summary": "ERC-721 defines a standard interface for non-fungible tokens, including ownership, approvals, operators, safe transfers, and transfer/approval events.",
+  "functions": [
+    {"name": "ownerOf", "signature": "ownerOf(uint256)", "operation_type": "ownership_query"},
+    {"name": "balanceOf", "signature": "balanceOf(address)", "operation_type": "balance_query"},
+    {"name": "transferFrom", "signature": "transferFrom(address,address,uint256)", "operation_type": "nft_transfer"},
+    {"name": "safeTransferFrom", "signature": "safeTransferFrom(address,address,uint256)", "operation_type": "safe_nft_transfer"},
+    {"name": "approve", "signature": "approve(address,uint256)", "operation_type": "token_approval"},
+    {"name": "setApprovalForAll", "signature": "setApprovalForAll(address,bool)", "operation_type": "operator_approval"}
+  ],
+  "events": [
+    {"name": "Transfer", "signature": "Transfer(address,address,uint256)"},
+    {"name": "Approval", "signature": "Approval(address,address,uint256)"},
+    {"name": "ApprovalForAll", "signature": "ApprovalForAll(address,address,bool)"}
+  ],
+  "assets": [
+    {"name": "Token ownership", "type": "contract_state", "criticality": "high"},
+    {"name": "Token approvals", "type": "contract_state", "criticality": "high"},
+    {"name": "Operator approvals", "type": "contract_state", "criticality": "high"},
+    {"name": "Token metadata", "type": "metadata", "criticality": "medium"}
+  ],
+  "security_properties": [
+    {"name": "Ownership authorization", "description": "Only the owner, approved address, or authorized operator can transfer a token."},
+    {"name": "Safe receiver compatibility", "description": "Safe transfers to contracts must validate receiver compatibility."},
+    {"name": "Approval consistency", "description": "Approvals must not allow unauthorized transfers."}
+  ]
+}

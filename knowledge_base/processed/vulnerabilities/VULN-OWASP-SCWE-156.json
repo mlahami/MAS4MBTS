@@ -1,0 +1,16 @@
+{
+  "category": "Protection Mechanism Failure",
+  "cwe": "CWE-693",
+  "description": "A circuit breaker is a threshold-based or condition-based halt mechanism that stops critical operations when anomalies are detected (e.g., TVL drop >X%, unusual withdrawal volume, oracle deviation). Unlike simple pausability (SCWE-014), a circuit breaker automatically or semi-automatically triggers based on predefined conditions, providing an additional safety layer during attacks or market stress.",
+  "id": "VULN-OWASP-SCWE-156",
+  "name": "Missing Emergency Circuit Breaker for Critical Operations",
+  "owasp": "SCWE-156",
+  "remediation": "- Implement circuit breakers that halt deposits, withdrawals, or swaps when thresholds are exceeded. - Use oracle-based triggers (e.g., price deviation) or rate-limit triggers. - Ensure the circuit breaker can be reset by governance or after cooldown.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-156.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

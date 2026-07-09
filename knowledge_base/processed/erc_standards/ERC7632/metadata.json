@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7632",
+  "erc": "ERC-7632",
+  "events": [],
+  "functions": [
+    {
+      "name": "idToName",
+      "operation_type": "contract_interaction",
+      "signature": "idToName(uint256)"
+    },
+    {
+      "name": "nameToId",
+      "operation_type": "contract_interaction",
+      "signature": "nameToId(string)"
+    },
+    {
+      "name": "isValidTokenName",
+      "operation_type": "contract_interaction",
+      "signature": "isValidTokenName(string)"
+    },
+    {
+      "name": "normalizeTokenName",
+      "operation_type": "contract_interaction",
+      "signature": "normalizeTokenName(string)"
+    }
+  ],
+  "id": "ERC7632",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7632",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7632.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Extends tokens using `uint256 tokenId` to support `tokenName` of type `string` and to convert back to `tokenId`.",
+  "title": "Interfaces for Named Token"
+}

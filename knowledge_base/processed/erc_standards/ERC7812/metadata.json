@@ -1,0 +1,134 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7812",
+  "erc": "ERC-7812",
+  "events": [
+    {
+      "name": "RootUpdated",
+      "signature": "RootUpdated(bytes32,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "add",
+      "operation_type": "contract_interaction",
+      "signature": "add(bytes32,bytes32)"
+    },
+    {
+      "name": "remove",
+      "operation_type": "contract_interaction",
+      "signature": "remove(bytes32)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(bytes32,bytes32)"
+    },
+    {
+      "name": "getRoot",
+      "operation_type": "contract_interaction",
+      "signature": "getRoot()"
+    },
+    {
+      "name": "getSize",
+      "operation_type": "contract_interaction",
+      "signature": "getSize()"
+    },
+    {
+      "name": "getMaxHeight",
+      "operation_type": "contract_interaction",
+      "signature": "getMaxHeight()"
+    },
+    {
+      "name": "getProof",
+      "operation_type": "contract_interaction",
+      "signature": "getProof(bytes32)"
+    },
+    {
+      "name": "getValue",
+      "operation_type": "contract_interaction",
+      "signature": "getValue(bytes32)"
+    },
+    {
+      "name": "addStatement",
+      "operation_type": "contract_interaction",
+      "signature": "addStatement(bytes32,bytes32)"
+    },
+    {
+      "name": "removeStatement",
+      "operation_type": "contract_interaction",
+      "signature": "removeStatement(bytes32)"
+    },
+    {
+      "name": "updateStatement",
+      "operation_type": "contract_interaction",
+      "signature": "updateStatement(bytes32,bytes32)"
+    },
+    {
+      "name": "getRootTimestamp",
+      "operation_type": "contract_interaction",
+      "signature": "getRootTimestamp(bytes32)"
+    },
+    {
+      "name": "getIsolatedKey",
+      "operation_type": "contract_interaction",
+      "signature": "getIsolatedKey(address,bytes32)"
+    },
+    {
+      "name": "__EvidenceDB_init",
+      "operation_type": "contract_interaction",
+      "signature": "__EvidenceDB_init(address,uint32)"
+    },
+    {
+      "name": "getEvidenceRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "getEvidenceRegistry()"
+    },
+    {
+      "name": "_requireEvidenceRegistry",
+      "operation_type": "contract_interaction",
+      "signature": "_requireEvidenceRegistry()"
+    },
+    {
+      "name": "_hash2",
+      "operation_type": "contract_interaction",
+      "signature": "_hash2(bytes32,bytes32)"
+    },
+    {
+      "name": "_hash3",
+      "operation_type": "contract_interaction",
+      "signature": "_hash3(bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "__EvidenceRegistry_init",
+      "operation_type": "contract_interaction",
+      "signature": "__EvidenceRegistry_init(address)"
+    },
+    {
+      "name": "getIsolatedKey",
+      "operation_type": "contract_interaction",
+      "signature": "getIsolatedKey(address)"
+    },
+    {
+      "name": "getEvidenceDB",
+      "operation_type": "contract_interaction",
+      "signature": "getEvidenceDB()"
+    },
+    {
+      "name": "_requireInPrimeField",
+      "operation_type": "contract_interaction",
+      "signature": "_requireInPrimeField(bytes32)"
+    }
+  ],
+  "id": "ERC7812",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7812",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7812.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP introduces an on-chain registry system for storing and proving abstract statements. Users may utilize the system to store commitments to their private data to later prove its validity and authenticity via zero knowledge, without disclosing anything about the data itself. Moreover, developers may use the singleton `EvidenceRegistry` contract available at `0x781246D2256dc0C1d8357c9dDc1eEe926a9c7812` to integrate custom business-specific registrars for managing and processing particular statements.",
+  "title": "ZK Identity Registry"
+}

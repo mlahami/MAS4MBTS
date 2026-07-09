@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6047",
+  "erc": "ERC-6047",
+  "events": [],
+  "functions": [],
+  "id": "ERC6047",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6047",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6047.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP extends [ERC-721](./eip-721.md) to allow the tracking and indexing of NFTs by mandating that a pre-existing event be emitted during contract creation. ERC-721 requires a `Transfer` event to be emitted whenever a transfer or mint (i.e. transfer from `0x0`) or burn (i.e. transfer to `0x0`) occurs, **except during contract creation**. This EIP mandates that compliant contracts emit a `Transfer` event **regardless of whether it occurs during or after contract creation.**",
+  "title": "ERC-721 Balance indexing via Transfer event"
+}

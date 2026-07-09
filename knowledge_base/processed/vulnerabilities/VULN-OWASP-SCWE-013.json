@@ -1,0 +1,16 @@
+{
+  "category": "Improper Handling of Parameters",
+  "cwe": "CWE-233",
+  "description": "Unauthorized parameter changes occur when privileged smart contract parameters\u2014such as fees, governance rules, withdrawal limits, or security configurations\u2014can be modified by a single entity or an unauthorized user. This can lead to **unexpected behavior, security risks, or financial loss** if an attacker gains access to the privileged account. Key risks associated with unauthorized parameter changes: - **Single Point of Control**: A centralized owner can unilaterally alter critical parameters, leading to governance concerns. - **Malicious Modifications**: Attackers who exploit an access control flaw may change key parameters, resulting in stolen funds or manipulated contract logic. - **Lack of Transparency**: Hidden or undocumented parameter changes can mislead users and investors, reducing trust. - **Impact on DeFi Protocols**: Unauthorized changes to liquidity pool fees, interest rates, or reward mechanisms can disrupt incentives and harm protocol users.",
+  "id": "VULN-OWASP-SCWE-013",
+  "name": "Unauthorized Parameter Changes",
+  "owasp": "SCWE-013",
+  "remediation": "- **Use Role-Based Access Control (RBAC)**: Assign granular roles and restrict who can modify key parameters. - **Multisig Approval for Parameter Changes**: Require governance approval (e.g., Gnosis Safe) before making critical updates. - **Timelocks for Parameter Changes**: Introduce time delays on modifications to allow community review and prevent instant malicious changes. - **On-Chain Governance for DAOs**: Utilize decentralized governance mechanisms where stakeholders vote on parameter updates. - **Emit Events for Transparency**: Log all parameter changes on-chain to ensure visibility and auditability.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-013.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

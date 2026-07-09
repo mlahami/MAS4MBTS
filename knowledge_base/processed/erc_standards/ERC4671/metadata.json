@@ -1,0 +1,161 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4671",
+  "erc": "ERC-4671",
+  "events": [
+    {
+      "name": "Minted",
+      "signature": "Minted(address,uint256)"
+    },
+    {
+      "name": "Revoked",
+      "signature": "Revoked(address,uint256)"
+    },
+    {
+      "name": "Added",
+      "signature": "Added(address,address)"
+    },
+    {
+      "name": "Removed",
+      "signature": "Removed(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "isValid",
+      "operation_type": "contract_interaction",
+      "signature": "isValid(uint256)"
+    },
+    {
+      "name": "hasValid",
+      "operation_type": "contract_interaction",
+      "signature": "hasValid(address)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "emittedCount",
+      "operation_type": "contract_interaction",
+      "signature": "emittedCount()"
+    },
+    {
+      "name": "holdersCount",
+      "operation_type": "contract_interaction",
+      "signature": "holdersCount()"
+    },
+    {
+      "name": "tokenOfOwnerByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "tokenOfOwnerByIndex(address,uint256)"
+    },
+    {
+      "name": "tokenByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "tokenByIndex(uint256)"
+    },
+    {
+      "name": "delegate",
+      "operation_type": "contract_interaction",
+      "signature": "delegate(address,address)"
+    },
+    {
+      "name": "delegateBatch",
+      "operation_type": "contract_interaction",
+      "signature": "delegateBatch(address[],address[])"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address)"
+    },
+    {
+      "name": "mintBatch",
+      "operation_type": "contract_interaction",
+      "signature": "mintBatch(address[])"
+    },
+    {
+      "name": "issuerOf",
+      "operation_type": "contract_interaction",
+      "signature": "issuerOf(uint256)"
+    },
+    {
+      "name": "voters",
+      "operation_type": "contract_interaction",
+      "signature": "voters()"
+    },
+    {
+      "name": "approveMint",
+      "operation_type": "contract_interaction",
+      "signature": "approveMint(address)"
+    },
+    {
+      "name": "approveRevoke",
+      "operation_type": "contract_interaction",
+      "signature": "approveRevoke(uint256)"
+    },
+    {
+      "name": "pull",
+      "operation_type": "contract_interaction",
+      "signature": "pull(uint256,address,bytes)"
+    },
+    {
+      "name": "add",
+      "operation_type": "contract_interaction",
+      "signature": "add(address)"
+    },
+    {
+      "name": "remove",
+      "operation_type": "contract_interaction",
+      "signature": "remove(address)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(address)"
+    },
+    {
+      "name": "giveThatManABadge",
+      "operation_type": "contract_interaction",
+      "signature": "giveThatManABadge(address)"
+    },
+    {
+      "name": "_baseURI",
+      "operation_type": "contract_interaction",
+      "signature": "_baseURI()"
+    }
+  ],
+  "id": "ERC4671",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4671",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4671.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A non-tradable token, or NTT, represents inherently personal possessions (material or immaterial), such as university diplomas, online training certificates, government issued documents (national id, driving license, visa, wedding, etc.), labels, and so on. As the name implies, non-tradable tokens are made to not be traded or transferred, they are \"soulbound\". They don't have monetary value, they are personally delivered to **you**, and they only serve as a **proof of possession/achievement**. In other words, the possession of a token carries a strong meaning in itself depending on **why** it was delivered.",
+  "title": "Non-Tradable Tokens Standard"
+}

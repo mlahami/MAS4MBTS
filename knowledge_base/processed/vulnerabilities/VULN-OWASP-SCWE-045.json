@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Permission Assignment for Critical Resource",
+  "cwe": "CWE-732",
+  "description": "Insecure use of modifiers refers to vulnerabilities that arise when modifiers are used improperly. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of vulnerabilities in contract logic.",
+  "id": "VULN-OWASP-SCWE-045",
+  "name": "Insecure Use of Modifiers",
+  "owasp": "SCWE-045",
+  "remediation": "- **Restrict access:** Ensure only authorized addresses can use the modifier. - **Validate inputs:** Ensure all inputs to the modifier are properly validated. - **Test thoroughly:** Conduct extensive testing to ensure modifiers are secure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-045.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

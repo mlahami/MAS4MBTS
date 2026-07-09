@@ -1,0 +1,16 @@
+{
+  "category": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+  "cwe": "CWE-367",
+  "description": "Reentrancy attacks occur when a contract allows untrusted external calls during execution without properly updating state variables or implementing protections. This enables attackers to repeatedly call functions and manipulate the contract\u2019s state before execution completes. Common issues include: - Making external calls before updating state variables. - Lack of mechanisms to prevent repeated or recursive calls. - Improper handling of external interactions.",
+  "id": "VULN-OWASP-SCWE-046",
+  "name": "Reentrancy Attacks",
+  "owasp": "SCWE-046",
+  "remediation": "- **Update state first:** Modify critical state variables before any external calls. - **Implement reentrancy guards:** Use tools like `nonReentrant` modifiers to block recursive calls.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-046.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

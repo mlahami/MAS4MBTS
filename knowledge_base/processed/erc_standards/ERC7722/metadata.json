@@ -1,0 +1,94 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7722",
+  "erc": "ERC-7722",
+  "events": [
+    {
+      "name": "CreateToken",
+      "signature": "CreateToken(address,bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "Issue",
+      "signature": "Issue(address,bytes32[],address,bytes32)"
+    },
+    {
+      "name": "ReorgHolderBaskets",
+      "signature": "ReorgHolderBaskets(address,bytes32[],bytes32[],bytes32)"
+    },
+    {
+      "name": "ReorgSupplyBaskets",
+      "signature": "ReorgSupplyBaskets(address,bytes32[],bytes32[],bytes32)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,bytes32[],bytes32)"
+    },
+    {
+      "name": "Redeem",
+      "signature": "Redeem(address,bytes32[],bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "oracleConfig",
+      "operation_type": "contract_interaction",
+      "signature": "oracleConfig()"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner(bytes32)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply(bytes32)"
+    },
+    {
+      "name": "operator",
+      "operation_type": "contract_interaction",
+      "signature": "operator()"
+    },
+    {
+      "name": "createToken",
+      "operation_type": "contract_interaction",
+      "signature": "createToken(bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "issue",
+      "operation_type": "contract_interaction",
+      "signature": "issue(bytes32[],address,bytes32)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(bytes32[],address,bytes32)"
+    },
+    {
+      "name": "reorgHolderBaskets",
+      "operation_type": "contract_interaction",
+      "signature": "reorgHolderBaskets(SIGNATURE[],bytes32[],bytes32[],bytes32)"
+    },
+    {
+      "name": "reorgSupplyBaskets",
+      "operation_type": "contract_interaction",
+      "signature": "reorgSupplyBaskets(SIGNATURE[],bytes32[],bytes32[],bytes32)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(bytes32[],bytes32)"
+    }
+  ],
+  "id": "ERC7722",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7722",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7722.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a specification for an opaque token that enhances privacy by concealing balance information. Privacy is achieved by representing balances as off-chain data encapsulated in hashes, referred to as \"baskets\". These baskets can be reorganized, transferred, and managed through token functions on-chain.",
+  "title": "Opaque Token"
+}

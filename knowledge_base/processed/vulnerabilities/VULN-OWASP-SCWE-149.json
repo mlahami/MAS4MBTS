@@ -1,0 +1,16 @@
+{
+  "category": "Improper Handling of Exceptional Conditions",
+  "cwe": "CWE-755",
+  "description": "Sending ETH or tokens to addresses that cannot receive them (e.g., contracts with no `receive`/`fallback`, or that revert on receive) causes the transfer to fail. In push-based distributions (e.g., airdrops, reward payouts), if one recipient cannot receive, the entire transaction reverts\u2014leading to denial of service for all recipients. Pull-based patterns avoid this by letting users claim individually.",
+  "id": "VULN-OWASP-SCWE-149",
+  "name": "Transfers to Addresses That Cannot Receive Funds",
+  "owasp": "SCWE-149",
+  "remediation": "- Prefer pull-based over push-based distributions. - If push-based is required, use `try/catch` to skip failing recipients and track failures, or validate recipients (e.g., reject contracts that don't implement a receiver interface).",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-149.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

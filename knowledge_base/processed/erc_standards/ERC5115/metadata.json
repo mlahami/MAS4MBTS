@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5115",
+  "erc": "ERC-5115",
+  "events": [
+    {
+      "name": "Deposit",
+      "signature": "Deposit(address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "Redeem",
+      "signature": "Redeem(address,address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,address,uint256,uint256,bool)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(address,uint256,address,uint256,bool)"
+    },
+    {
+      "name": "exchangeRate",
+      "operation_type": "contract_interaction",
+      "signature": "exchangeRate()"
+    },
+    {
+      "name": "getTokensIn",
+      "operation_type": "contract_interaction",
+      "signature": "getTokensIn()"
+    },
+    {
+      "name": "getTokensOut",
+      "operation_type": "contract_interaction",
+      "signature": "getTokensOut()"
+    },
+    {
+      "name": "yieldToken",
+      "operation_type": "contract_interaction",
+      "signature": "yieldToken()"
+    },
+    {
+      "name": "previewDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "previewDeposit(address,uint256)"
+    },
+    {
+      "name": "previewRedeem",
+      "operation_type": "contract_interaction",
+      "signature": "previewRedeem(address,uint256)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    }
+  ],
+  "id": "ERC5115",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5115",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5115.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard proposes an API for wrapped yield-bearing tokens within smart contracts. It is an extension on the [ERC-20](./eip-20.md) token that provides basic functionality for transferring, depositing, withdrawing tokens, as well as reading balances.",
+  "title": "SY Token"
+}

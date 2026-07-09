@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7444",
+  "erc": "ERC-7444",
+  "events": [],
+  "functions": [
+    {
+      "name": "getMaturity",
+      "operation_type": "contract_interaction",
+      "signature": "getMaturity(bytes32)"
+    },
+    {
+      "name": "constructor",
+      "operation_type": "contract_interaction",
+      "signature": "constructor(address)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint256,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(bytes32)"
+    }
+  ],
+  "id": "ERC7444",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7444",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7444.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP defines a standardized method to communicate the date on which a time-locked system will become unlocked. This allows for the determination of maturities for a wide variety of asset classes and increases the ease with which these assets may be valued.",
+  "title": "Time Locks Maturity"
+}

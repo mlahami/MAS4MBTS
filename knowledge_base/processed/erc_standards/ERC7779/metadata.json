@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7779",
+  "erc": "ERC-7779",
+  "events": [],
+  "functions": [
+    {
+      "name": "accountId",
+      "operation_type": "contract_interaction",
+      "signature": "accountId()"
+    },
+    {
+      "name": "accountStorageBases",
+      "operation_type": "contract_interaction",
+      "signature": "accountStorageBases()"
+    },
+    {
+      "name": "onRedelegation",
+      "operation_type": "contract_interaction",
+      "signature": "onRedelegation()"
+    }
+  ],
+  "id": "ERC7779",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7779",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7779.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal outlines the interfaces to make delegated EOAs interoperable after the merge of [EIP-7702](./eip-7702.md). With [EIP-7702](./eip-7702.md), EOAs will be able to enable execution abstraction, which leads to a more feature-rich account, including gas sponsorship, batch execution, and more. However, there is a need to help facilitate storage management for redelegation, as invalid management of storage may incur storage collisions that can lead to unexpected behavior of accounts (e.g., account getting locked, security vulnerabilities, etc) The interface `InteroperableDelegatedAccount` suggests the interfaces for delegated EOAs to be interoperable and facilitate a better environment for redelegation.",
+  "title": "Interoperable Delegated Accounts"
+}

@@ -1,0 +1,164 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6956",
+  "erc": "ERC-6956",
+  "events": [
+    {
+      "name": "AnchorApproval",
+      "signature": "AnchorApproval(address,address,bytes32,uint256)"
+    },
+    {
+      "name": "AnchorTransfer",
+      "signature": "AnchorTransfer(address,address,bytes32,uint256)"
+    },
+    {
+      "name": "AttestationUse",
+      "signature": "AttestationUse(address,bytes32,bytes32,uint256)"
+    },
+    {
+      "name": "OracleUpdate",
+      "signature": "OracleUpdate(address,bool)"
+    },
+    {
+      "name": "GlobalAttestationLimitUpdate",
+      "signature": "GlobalAttestationLimitUpdate(uint256,address)"
+    },
+    {
+      "name": "AttestationLimitUpdate",
+      "signature": "AttestationLimitUpdate(bytes32,uint256,uint256,address)"
+    },
+    {
+      "name": "AttestationLimitReached",
+      "signature": "AttestationLimitReached(bytes32,uint256,uint256)"
+    },
+    {
+      "name": "FloatingStateChange",
+      "signature": "FloatingStateChange(bytes32,uint256,FloatState,address)"
+    },
+    {
+      "name": "FloatingAuthorizationChange",
+      "signature": "FloatingAuthorizationChange(Authorization,Authorization,address)"
+    },
+    {
+      "name": "FloatingAllStateChange",
+      "signature": "FloatingAllStateChange(bool,address)"
+    },
+    {
+      "name": "ValidAnchorsUpdate",
+      "signature": "ValidAnchorsUpdate(bytes32,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "anchorByToken",
+      "operation_type": "contract_interaction",
+      "signature": "anchorByToken(uint256)"
+    },
+    {
+      "name": "tokenByAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "tokenByAnchor(bytes32)"
+    },
+    {
+      "name": "attestationsUsedByAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "attestationsUsedByAnchor(bytes32)"
+    },
+    {
+      "name": "decodeAttestationIfValid",
+      "operation_type": "contract_interaction",
+      "signature": "decodeAttestationIfValid(bytes,bytes)"
+    },
+    {
+      "name": "burnAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "burnAuthorization()"
+    },
+    {
+      "name": "approveAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "approveAuthorization()"
+    },
+    {
+      "name": "transferAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "transferAnchor(bytes)"
+    },
+    {
+      "name": "transferAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "transferAnchor(bytes,bytes)"
+    },
+    {
+      "name": "approveAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "approveAnchor(bytes)"
+    },
+    {
+      "name": "approveAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "approveAnchor(bytes,bytes)"
+    },
+    {
+      "name": "burnAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "burnAnchor(bytes)"
+    },
+    {
+      "name": "burnAnchor",
+      "operation_type": "contract_interaction",
+      "signature": "burnAnchor(bytes,bytes)"
+    },
+    {
+      "name": "attestationLimit",
+      "operation_type": "contract_interaction",
+      "signature": "attestationLimit(bytes32)"
+    },
+    {
+      "name": "attestationUsagesLeft",
+      "operation_type": "contract_interaction",
+      "signature": "attestationUsagesLeft(bytes32)"
+    },
+    {
+      "name": "attestationLimitPolicy",
+      "operation_type": "contract_interaction",
+      "signature": "attestationLimitPolicy()"
+    },
+    {
+      "name": "floating",
+      "operation_type": "contract_interaction",
+      "signature": "floating(bytes32)"
+    },
+    {
+      "name": "floatStartAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "floatStartAuthorization()"
+    },
+    {
+      "name": "floatStopAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "floatStopAuthorization()"
+    },
+    {
+      "name": "float",
+      "operation_type": "contract_interaction",
+      "signature": "float(bytes32,FloatState)"
+    },
+    {
+      "name": "anchorValid",
+      "operation_type": "contract_interaction",
+      "signature": "anchorValid(bytes32,bytes32[])"
+    }
+  ],
+  "id": "ERC6956",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6956",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6956.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This standard allows integrating physical and digital ASSETS without signing capabilities into dApps/web3 by extending [ERC-721](eip-721.md). An ASSET, for example a physical object, is marked with a uniquely identifiable ANCHOR. The ANCHOR is bound in a secure and inseparable manner 1:1 to an NFT on-chain - over the complete life cycle of the ASSET. Through an ATTESTATION, an ORACLE testifies that a particular ASSET associated with an ANCHOR has been CONTROLLED when defining the `to`-address for certain operations (mint, transfer, burn, approve, ...). The ORACLE signs the ATTESTATION off-chain. The operations are authorized through verifying on-chain that ATTESTATION has been signed by a trusted ORACLE. Note that authorization is solely provided through the ATTESTATION, or in other words,",
+  "title": "Asset-bound Non-Fungible Tokens"
+}

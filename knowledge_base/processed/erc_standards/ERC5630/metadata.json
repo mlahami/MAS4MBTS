@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5630",
+  "erc": "ERC-5630",
+  "events": [],
+  "functions": [
+    {
+      "name": "encryptTo",
+      "operation_type": "contract_interaction",
+      "signature": "encryptTo(bytes,bytes32)"
+    }
+  ],
+  "id": "ERC5630",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5630",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5630.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes a new way to encrypt and decrypt using Ethereum keys. This EIP uses _only_ the `secp256k1` curve, and proposes two new RPC methods: `eth_getEncryptionPublicKey` and `eth_performECDH`. These two methods, in conjunction, allow users to receive encryptions and perform decryptions (respectively). We require that the wallet _only_ perform the core ECDH operation, leaving the ECIES operations up to implementers (we do suggest a standardized version of ECIES, however). In contrast, a previous EIPs used the same secret key, in both signing and encryption, on two _different_ curves (namely, `secp256k1` and `ec25519`), and hardcoded a particular version of ECIES.",
+  "title": "New approach for encryption / decryption"
+}

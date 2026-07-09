@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6860",
+  "erc": "ERC-6860",
+  "events": [],
+  "functions": [
+    {
+      "name": "resolveMode",
+      "operation_type": "contract_interaction",
+      "signature": "resolveMode()"
+    },
+    {
+      "name": "signature",
+      "operation_type": "contract_interaction",
+      "signature": "signature(``uint``)"
+    }
+  ],
+  "id": "ERC6860",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6860",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6860.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard translates an [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986) URI like `web3://uniswap.eth/` to an EVM message such as: ``` EVMMessage { To: 0xaabbccddee.... // where uniswap.eth's address registered at ENS Calldata: 0x ... } ``` \u26a0\ufe0f This proposal updates [ERC-4804](./eip-4804.md) with minor corrections, clarifications and modifications.",
+  "title": "Web3 URL to EVM Call Message Translation"
+}

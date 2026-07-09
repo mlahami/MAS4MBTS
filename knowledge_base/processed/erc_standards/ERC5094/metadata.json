@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5094",
+  "erc": "ERC-5094",
+  "events": [],
+  "functions": [],
+  "id": "ERC5094",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5094",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5094.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard includes all needed information for adding a network to a wallet via URL, by including parameters such as `chainId`, `rpc_url`, `chain_name` and others, such that the network configuration is provided through the URL itself.",
+  "title": "URL Format for Ethereum Network Switching"
+}

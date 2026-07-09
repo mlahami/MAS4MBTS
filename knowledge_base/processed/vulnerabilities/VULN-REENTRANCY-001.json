@@ -1,0 +1,14 @@
+{
+  "category": "External call",
+  "cwe": "CWE-841",
+  "description": "External control flow can re-enter a function before state is finalized.",
+  "id": "VULN-REENTRANCY-001",
+  "name": "Reentrancy",
+  "owasp": "Smart Contract Reentrancy",
+  "severity": "high",
+  "source": {
+    "note": "Historical SWC label complemented by OWASP/CWE.",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-107"
+}

@@ -1,0 +1,284 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7857",
+  "erc": "ERC-7857",
+  "events": [
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "Authorization",
+      "signature": "Authorization(address,address,uint256)"
+    },
+    {
+      "name": "AuthorizationRevoked",
+      "signature": "AuthorizationRevoked(address,address,uint256)"
+    },
+    {
+      "name": "Transferred",
+      "signature": "Transferred(uint256,address,address)"
+    },
+    {
+      "name": "Cloned",
+      "signature": "Cloned(uint256,uint256,address,address)"
+    },
+    {
+      "name": "PublishedSealedKey",
+      "signature": "PublishedSealedKey(address,uint256,bytes[])"
+    },
+    {
+      "name": "DelegateAccess",
+      "signature": "DelegateAccess(address,address)"
+    },
+    {
+      "name": "AttestationContractUpdated",
+      "signature": "AttestationContractUpdated(AttestationConfig[])"
+    },
+    {
+      "name": "Updated",
+      "signature": "Updated(uint256,IntelligentData[],IntelligentData[])"
+    },
+    {
+      "name": "Minted",
+      "signature": "Minted(uint256,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "verifyTransferValidity",
+      "operation_type": "contract_interaction",
+      "signature": "verifyTransferValidity(TransferValidityProof[])"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "intelligentDataOf",
+      "operation_type": "contract_interaction",
+      "signature": "intelligentDataOf(uint256)"
+    },
+    {
+      "name": "verifier",
+      "operation_type": "contract_interaction",
+      "signature": "verifier()"
+    },
+    {
+      "name": "iTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "iTransfer(address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "iClone",
+      "operation_type": "contract_interaction",
+      "signature": "iClone(address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "authorizeUsage",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeUsage(uint256,address)"
+    },
+    {
+      "name": "revokeAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAuthorization(uint256,address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "delegateAccess",
+      "operation_type": "contract_interaction",
+      "signature": "delegateAccess(address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "authorizedUsersOf",
+      "operation_type": "contract_interaction",
+      "signature": "authorizedUsersOf(uint256)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(uint256)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "getDelegateAccess",
+      "operation_type": "contract_interaction",
+      "signature": "getDelegateAccess(address)"
+    },
+    {
+      "name": "_checkAndMarkProof",
+      "operation_type": "contract_interaction",
+      "signature": "_checkAndMarkProof(bytes32)"
+    },
+    {
+      "name": "cleanExpiredProofs",
+      "operation_type": "contract_interaction",
+      "signature": "cleanExpiredProofs(bytes32[])"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(AttestationConfig[],address)"
+    },
+    {
+      "name": "updateAttestationContract",
+      "operation_type": "contract_interaction",
+      "signature": "updateAttestationContract(AttestationConfig[])"
+    },
+    {
+      "name": "updateMaxProofAge",
+      "operation_type": "contract_interaction",
+      "signature": "updateMaxProofAge(uint256)"
+    },
+    {
+      "name": "pause",
+      "operation_type": "contract_interaction",
+      "signature": "pause()"
+    },
+    {
+      "name": "unpause",
+      "operation_type": "contract_interaction",
+      "signature": "unpause()"
+    },
+    {
+      "name": "hashNonce",
+      "operation_type": "contract_interaction",
+      "signature": "hashNonce(bytes)"
+    },
+    {
+      "name": "teeOracleVerify",
+      "operation_type": "contract_interaction",
+      "signature": "teeOracleVerify(bytes32,bytes)"
+    },
+    {
+      "name": "verifyAccessibility",
+      "operation_type": "contract_interaction",
+      "signature": "verifyAccessibility(AccessProof)"
+    },
+    {
+      "name": "verfifyOwnershipProof",
+      "operation_type": "contract_interaction",
+      "signature": "verfifyOwnershipProof(OwnershipProof)"
+    },
+    {
+      "name": "processTransferProof",
+      "operation_type": "contract_interaction",
+      "signature": "processTransferProof(TransferValidityProof)"
+    },
+    {
+      "name": "_getAgentStorage",
+      "operation_type": "contract_interaction",
+      "signature": "_getAgentStorage()"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(string,string,string,address,address)"
+    },
+    {
+      "name": "updateVerifier",
+      "operation_type": "contract_interaction",
+      "signature": "updateVerifier(address)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(uint256,IntelligentData[])"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(IntelligentData[],address)"
+    },
+    {
+      "name": "_proofCheck",
+      "operation_type": "contract_interaction",
+      "signature": "_proofCheck(address,address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "_transfer",
+      "operation_type": "contract_interaction",
+      "signature": "_transfer(address,address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "iTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "iTransferFrom(address,address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "_clone",
+      "operation_type": "contract_interaction",
+      "signature": "_clone(address,address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "iCloneFrom",
+      "operation_type": "contract_interaction",
+      "signature": "iCloneFrom(address,address,uint256,TransferValidityProof[])"
+    },
+    {
+      "name": "storageInfo",
+      "operation_type": "contract_interaction",
+      "signature": "storageInfo(uint256)"
+    },
+    {
+      "name": "_exists",
+      "operation_type": "contract_interaction",
+      "signature": "_exists(uint256)"
+    },
+    {
+      "name": "_isApprovedOrOwner",
+      "operation_type": "contract_interaction",
+      "signature": "_isApprovedOrOwner(address,uint256)"
+    },
+    {
+      "name": "batchAuthorizeUsage",
+      "operation_type": "contract_interaction",
+      "signature": "batchAuthorizeUsage(uint256,address[])"
+    }
+  ],
+  "id": "ERC7857",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7857",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7857.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A standard interface for NFTs specifically designed for AI agents, where the metadata represents agent capabilities and requires privacy protection. Unlike traditional NFT standards that focus on static metadata, this standard introduces mechanisms for verifiable data ownership and secure transfer. By defining a unified interface for different verification methods (e.g., Trusted Execution Environment (TEE), Zero-Knowledge Proof (ZKP)), it enables secure management of valuable agent metadata such as models, memory, and character definitions, while maintaining confidentiality and verifiability.",
+  "title": "AI Agents NFT with Private Metadata"
+}

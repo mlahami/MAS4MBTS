@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5585",
+  "erc": "ERC-5585",
+  "events": [
+    {
+      "name": "authorizeUser",
+      "signature": "authorizeUser(uint256,address,string[],uint)"
+    },
+    {
+      "name": "updateUserLimit",
+      "signature": "updateUserLimit(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getRights",
+      "operation_type": "contract_interaction",
+      "signature": "getRights()"
+    },
+    {
+      "name": "authorizeUser",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeUser(uint256,address,uint)"
+    },
+    {
+      "name": "authorizeUser",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeUser(uint256,address,string[],uint)"
+    },
+    {
+      "name": "transferUserRights",
+      "operation_type": "contract_interaction",
+      "signature": "transferUserRights(uint256,address)"
+    },
+    {
+      "name": "extendDuration",
+      "operation_type": "contract_interaction",
+      "signature": "extendDuration(uint256,address,uint)"
+    },
+    {
+      "name": "updateUserRights",
+      "operation_type": "contract_interaction",
+      "signature": "updateUserRights(uint256,address,string[])"
+    },
+    {
+      "name": "getExpires",
+      "operation_type": "contract_interaction",
+      "signature": "getExpires(uint256,address)"
+    },
+    {
+      "name": "getUserRights",
+      "operation_type": "contract_interaction",
+      "signature": "getUserRights(uint256,address)"
+    },
+    {
+      "name": "updateUserLimit",
+      "operation_type": "contract_interaction",
+      "signature": "updateUserLimit(uint256)"
+    },
+    {
+      "name": "updateResetAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "updateResetAllowed(bool)"
+    },
+    {
+      "name": "checkAuthorizationAvailability",
+      "operation_type": "contract_interaction",
+      "signature": "checkAuthorizationAvailability(uint256)"
+    },
+    {
+      "name": "resetUser",
+      "operation_type": "contract_interaction",
+      "signature": "resetUser(uint256,address)"
+    }
+  ],
+  "id": "ERC5585",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5585",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5585.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP separates the [ERC-721](./eip-721.md) NFT's commercial usage rights from its ownership to allow for the independent management of those rights.",
+  "title": "ERC-721 NFT Authorization"
+}

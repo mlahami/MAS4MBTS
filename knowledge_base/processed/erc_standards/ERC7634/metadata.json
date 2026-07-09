@@ -1,0 +1,58 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7634",
+  "erc": "ERC-7634",
+  "events": [
+    {
+      "name": "TransferCountIncreased",
+      "signature": "TransferCountIncreased(uint256,uint256)"
+    },
+    {
+      "name": "TransferLimitUpdated",
+      "signature": "TransferLimitUpdated(uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transferCountOf",
+      "operation_type": "contract_interaction",
+      "signature": "transferCountOf(uint256)"
+    },
+    {
+      "name": "setTransferLimit",
+      "operation_type": "contract_interaction",
+      "signature": "setTransferLimit(uint256,uint256)"
+    },
+    {
+      "name": "transferLimitOf",
+      "operation_type": "contract_interaction",
+      "signature": "transferLimitOf(uint256)"
+    },
+    {
+      "name": "_beforeTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_beforeTokenTransfer(address,address,uint256)"
+    },
+    {
+      "name": "_afterTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_afterTokenTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC7634",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7634",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7634.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard extends [ERC-721](./eip-721.md) with a mechanism that lets token owners/minters cap how many times a specific token can be transferred. It specifies functions to set and read a per-token transfer limit, to query a per-token transfer count, and defines transfer-time hooks to enforce the cap. The goal is fine-grained, enforceable transfer restrictions while preserving ERC-721 compatibility.",
+  "title": "Limited Transfer Count NFT"
+}

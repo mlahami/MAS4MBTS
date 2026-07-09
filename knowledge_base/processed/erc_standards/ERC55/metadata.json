@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-55",
+  "erc": "ERC-55",
+  "events": [],
+  "functions": [
+    {
+      "name": "toChecksumAddress",
+      "operation_type": "contract_interaction",
+      "signature": "toChecksumAddress(address)"
+    }
+  ],
+  "id": "ERC55",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-55",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-55.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "",
+  "title": "Mixed-case checksum address encoding"
+}

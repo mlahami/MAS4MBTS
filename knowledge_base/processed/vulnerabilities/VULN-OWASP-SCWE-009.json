@@ -1,0 +1,16 @@
+{
+  "category": "Use of Obsolete Function",
+  "cwe": "CWE-477",
+  "description": "The use of deprecated variables and functions refers to employing code elements that are no longer recommended for use, either due to obsolescence, security concerns, or the introduction of better alternatives. Using such elements can cause issues, including reduced compatibility, poor maintainability, and security vulnerabilities. Specific concerns related to deprecated usage are: - **Security risks**: Deprecated functions may have known vulnerabilities or might not be patched. - **Compatibility issues**: Newer compiler versions and environments may not support deprecated code. - **Maintenance difficulties**: Continuing to use deprecated code increases the complexity of codebase management and prevents clean upgrades.",
+  "id": "VULN-OWASP-SCWE-009",
+  "name": "Deprecated Variable and Function Usage",
+  "owasp": "SCWE-009",
+  "remediation": "- **Replace deprecated functions**: Always use the recommended and supported alternatives in the latest compiler versions. - **Update dependencies**: If relying on libraries that use deprecated elements, upgrade to versions that support current standards. - **Monitor for deprecation warnings**: Stay informed about deprecated functions in the Solidity language or external libraries and refactor the code when necessary.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-009.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

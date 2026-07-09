@@ -1,0 +1,16 @@
+{
+  "category": "Improper Check for Unusual or Exceptional Conditions",
+  "cwe": "CWE-754",
+  "description": "This weakness occurs when smart contracts perform ERC20 token transfers without first validating that the transfer amount is greater than zero. While most ERC20 tokens allow zero\u2011value transfers, some implementations (e.g., LEND and others) revert when the amount is zero. This inconsistency can cause unexpected reverts in production, disrupt execution flow, and prevent critical contract logic from completing successfully. Common risks include: - Unexpected revert when interacting with non\u2011standard ERC20 tokens that disallow zero\u2011value operations. - Potential denial\u2011of\u2011service conditions if an attacker or integration repeatedly triggers zero\u2011value transfers. - Broken integrations when protocols assume uniform ERC20 behavior across diverse tokens.",
+  "id": "VULN-OWASP-SCWE-091",
+  "name": "Lack of Zero Value Check in Token Transfers",
+  "owasp": "SCWE-091",
+  "remediation": "- **Validate transfer amounts:** Ensure `amount > 0` before calling `transfer`/`transferFrom`. - **Treat zero as a no\u2011op if acceptable:** Early\u2011return when `amount == 0` rather than calling token methods. - **Use robust token wrappers:** Centralize token operations (e.g., via OpenZeppelin `SafeERC20`) and standardize zero\u2011value handling. - **Integration testing:** Include zero\u2011value cases for all integrated tokens (especially known non\u2011standard tokens like LEND). - **Input sanitization:** Validate and sanitize externally supplied amounts prior to token interactions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-091.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

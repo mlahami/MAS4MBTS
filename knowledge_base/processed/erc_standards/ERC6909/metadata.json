@@ -1,0 +1,67 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6909",
+  "erc": "ERC-6909",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "OperatorSet",
+      "signature": "OperatorSet(address,address,bool)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256,uint256)"
+    },
+    {
+      "name": "setOperator",
+      "operation_type": "contract_interaction",
+      "signature": "setOperator(address,bool)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_mint",
+      "operation_type": "contract_interaction",
+      "signature": "_mint(address,uint256,uint256)"
+    },
+    {
+      "name": "_burn",
+      "operation_type": "contract_interaction",
+      "signature": "_burn(address,uint256,uint256)"
+    }
+  ],
+  "id": "ERC6909",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6909",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6909.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The following specifies a multi-token contract as a simplified alternative to the [ERC-1155](./eip-1155.md) Multi-Token Standard. In contrast to ERC-1155, callbacks and batching have been removed from the interface and the permission system is a hybrid operator-approval scheme for granular and scalable permissions. Functionally, the interface has been reduced to the bare minimum required to manage multiple tokens under the same contract.",
+  "title": "Minimal Multi-Token Interface"
+}

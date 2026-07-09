@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Calculation",
+  "cwe": "CWE-682",
+  "description": "Assuming an ERC20 transfer moves the full requested amount fails with fee-on-transfer or deflationary tokens. Protocols that credit users for the requested amount instead of the received amount can be drained or mis-account balances.",
+  "id": "VULN-OWASP-SCWE-110",
+  "name": "Fee-On-Transfer Token Misaccounting",
+  "owasp": "SCWE-110",
+  "remediation": "- Measure token balances before and after transfers to calculate the actual received amount. - Maintain allowlists/blocks for incompatible tokens or handle fee-on-transfer explicitly. - Validate that accounting uses the net amount when updating shares or debts.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMP\\SCWE-110.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

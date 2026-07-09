@@ -1,0 +1,101 @@
+{
+  "assets": [
+    {
+      "criticality": "high",
+      "name": "Underlying assets",
+      "type": "vault_asset"
+    },
+    {
+      "criticality": "high",
+      "name": "Vault shares",
+      "type": "tokenized_share"
+    },
+    {
+      "criticality": "high",
+      "name": "Asset/share exchange rate",
+      "type": "accounting_rule"
+    },
+    {
+      "criticality": "high",
+      "name": "Preview and conversion correctness",
+      "type": "business_logic"
+    }
+  ],
+  "category": "ERC",
+  "eip": "EIP-4626",
+  "erc": "ERC-4626",
+  "events": [
+    {
+      "name": "Deposit",
+      "signature": "Deposit(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Withdraw",
+      "signature": "Withdraw(address,address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "asset",
+      "operation_type": "asset_query",
+      "signature": "asset()"
+    },
+    {
+      "name": "totalAssets",
+      "operation_type": "vault_accounting_query",
+      "signature": "totalAssets()"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint256,address)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "share_minting",
+      "signature": "mint(uint256,address)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256,address,address)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(uint256,address,address)"
+    },
+    {
+      "name": "convertToShares",
+      "operation_type": "conversion_preview",
+      "signature": "convertToShares(uint256)"
+    },
+    {
+      "name": "convertToAssets",
+      "operation_type": "conversion_preview",
+      "signature": "convertToAssets(uint256)"
+    }
+  ],
+  "id": "ERC4626",
+  "security_properties": [
+    {
+      "description": "Deposit, mint, withdraw, and redeem operations must preserve asset/share accounting.",
+      "name": "Share accounting integrity"
+    },
+    {
+      "description": "Preview and conversion functions must be consistent with executed operations.",
+      "name": "Conversion consistency"
+    },
+    {
+      "description": "Only authorized actors can withdraw or redeem on behalf of an owner.",
+      "name": "Withdrawal authorization"
+    }
+  ],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4626",
+    "source_id": "ethereum_ercs_website"
+  },
+  "status": "Final",
+  "summary": "ERC-4626 defines a standard interface for tokenized vaults, including deposits, withdrawals, minting, redemption, and asset/share conversions.",
+  "title": "Tokenized Vault Standard"
+}

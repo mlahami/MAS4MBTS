@@ -1,0 +1,87 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1900",
+  "erc": "ERC-1900",
+  "events": [
+    {
+      "name": "LogNew",
+      "signature": "LogNew(bytes32,uint256)"
+    },
+    {
+      "name": "LogUpdate",
+      "signature": "LogUpdate(bytes32,uint256)"
+    },
+    {
+      "name": "LogRemove",
+      "signature": "LogRemove(bytes32,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "structureBytes",
+      "operation_type": "contract_interaction",
+      "signature": "structureBytes(bytes)"
+    },
+    {
+      "name": "destructureBytes",
+      "operation_type": "contract_interaction",
+      "signature": "destructureBytes(myBalance)"
+    },
+    {
+      "name": "isInstanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "isInstanceOf(myBalance)"
+    },
+    {
+      "name": "map",
+      "operation_type": "contract_interaction",
+      "signature": "map(address,bytes4,myBalance[])"
+    },
+    {
+      "name": "insert",
+      "operation_type": "contract_interaction",
+      "signature": "insert(dTypeLib.dType)"
+    },
+    {
+      "name": "remove",
+      "operation_type": "contract_interaction",
+      "signature": "remove(bytes32)"
+    },
+    {
+      "name": "count",
+      "operation_type": "contract_interaction",
+      "signature": "count()"
+    },
+    {
+      "name": "getTypeIdentifier",
+      "operation_type": "contract_interaction",
+      "signature": "getTypeIdentifier(string)"
+    },
+    {
+      "name": "getByIdentifier",
+      "operation_type": "contract_interaction",
+      "signature": "getByIdentifier(bytes32)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(string)"
+    },
+    {
+      "name": "isRegistered",
+      "operation_type": "contract_interaction",
+      "signature": "isRegistered(bytes32)"
+    }
+  ],
+  "id": "ERC1900",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1900",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1900.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "We are proposing a decentralized Type System for Ethereum, to introduce data definition (and therefore ABI) consistency. This ERC focuses on defining an on-chain Type Registry (named `dType`) and a common interface for creating types, based on `struct`s.",
+  "title": "dType - Decentralized Type System for EVM"
+}

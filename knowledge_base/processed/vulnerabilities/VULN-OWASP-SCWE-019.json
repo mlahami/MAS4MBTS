@@ -1,0 +1,16 @@
+{
+  "category": "Improper Verification of Cryptographic Signature",
+  "cwe": "CWE-347",
+  "description": "Insecure signature verification occurs when a contract improperly verifies a cryptographic signature or fails to securely validate signatures, allowing attackers to forge or manipulate them. This vulnerability can allow unauthorized transactions or the bypassing of important security mechanisms, potentially leading to fraud, unauthorized access, or other attacks. Common causes of insecure signature verification include: - Not validating the signer's address. - Using weak or outdated cryptographic libraries. - Failing to check signature validity before processing actions. - Incorrectly handling the signature format.",
+  "id": "VULN-OWASP-SCWE-019",
+  "name": "Insecure Signature Verification",
+  "owasp": "SCWE-019",
+  "remediation": "- **Verify signatures properly:** Always verify that the signature matches the intended signer by using the `ecrecover` function for Ethereum addresses and comparing the result to the expected signer address. - **Use strong cryptographic methods:** Ensure the use of robust cryptographic techniques and libraries. Avoid using outdated or weak algorithms. - **Use secure signature formats:** Make sure that signature formats are validated properly (e.g., ensure proper handling of `v`, `r`, `s` values in Ethereum signatures). - **Implement checks before acting on the signature:** Always perform checks for valid signature and relevant parameters before executing any logic that could be influenced by the signature.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-019.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

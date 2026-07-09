@@ -1,0 +1,33 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7662",
+  "erc": "ERC-7662",
+  "events": [
+    {
+      "name": "AgentUpdated",
+      "signature": "AgentUpdated(uint256)"
+    },
+    {
+      "name": "AgentCreated",
+      "signature": "AgentCreated(string,string,string,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getAgentData",
+      "operation_type": "contract_interaction",
+      "signature": "getAgentData(uint256)"
+    }
+  ],
+  "id": "ERC7662",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7662",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7662.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a standard for AI agent NFTs. When AI Agents are created and traded as NFTs, it doesn't make sense to put the prompts in the token metadata, therefore it requires a standard custom struct. It also doesn't make sense to store the prompts directly onchain as they can be quite large, therefore this standard proposes they be stored as decentralized storage URLs. This standard also proposes two options on how this data should be made private to the owner of the NFT, with the favored implementation option being encrypting the data using custom contract parameters for decryption that decrypt only to the owner of the NFT.",
+  "title": "AI Agent NFTs"
+}

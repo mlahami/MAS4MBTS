@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Unchecked external calls describe any situation where a smart contract invokes another contract or address (via `call`, `delegatecall`, `staticcall`, or high-level calls like `transfer`/`send`) **without fully accounting for** the callee\u2019s behavior, return value, or reentrancy potential. The calling contract implicitly trusts that the callee will behave as expected\u2014returning success, not re-entering, and not executing arbitrary logic. When that assumption is violated, the caller can be left in an inconsistent state or exploited. This affects all contract types that perform external interactions: DeFi (token transfers, DEX swaps, vault deposits, flash loan callbacks), NFTs (transfers with hooks, marketplace payouts), DAOs (execution of proposal calldata), bridges (message relay, asset transfers), and composable protocols (arbitrary callbacks, ERC-777/ERC-721/ERC-1155 receiver hooks, ERC-4626 deposit/withdraw hooks). On non-EVM chains, analogous patterns exist (e.g., Move\u2019s `vector::borrow`, Solana CPI) where cross-program invocations can re-enter or behave unexpectedly. Few areas to focus on: - **Token transfers** (ERC-20, ERC-721, ERC-1155) and non-standard return values or reverting behavior - **Callback and hook interfaces** (ERC-777 `tokensReceived`, ERC-4626 `afterDeposit`/`beforeWithdraw`, `onFlashLoan`, `onERC721Received`) - **Low-level calls** (`call`, `delegatecall`, `callcode`) and gas/storage implications - **Composability flows** (vault calling strategy, strategy calling DEX) where reentrancy can cross multiple contracts Attackers exploit: - **Reentrancy** by implementing malicious logic in callbacks or in tokens that hook into transfers (see SC08) - **Silent failures** when return values are ignored (e.g., non-returning ERC-20s) and state is left inconsisten",
+  "id": "VULN-OWASP-SC06",
+  "name": "SC06:2026 Unchecked External Calls",
+  "owasp": "SC06",
+  "remediation": "- **Treat all external calls as untrusted**: - Even \u201cstandard\u201d tokens or well-known protocols can be upgraded or replaced. - Assume they may re-enter or revert unexpectedly. - Use the **checks-effects-interactions** pattern: - Validate pre-conditions. - Update internal state. - Only then perform external calls. - Prefer **pull** over **push** for payments: - Allow users to withdraw rather than pushing funds to arbitrary addresses in loops. - Check return values and handle all failure modes: - Use libraries like OpenZeppelin\u2019s `SafeERC20` to wrap token operations. - Be extremely careful with: - Low-level calls (`call`, `delegatecall`, `callcode`) - Arbitrary callbacks (e.g., hooks, onERC721Received, onFlashLoan callbacks)",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC06-UncheckedExternalCalls.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

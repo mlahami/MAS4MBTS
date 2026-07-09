@@ -1,0 +1,16 @@
+{
+  "category": "Variable Shadowing",
+  "cwe": "CWE-1001",
+  "description": "Shadowing occurs when a state variable in a derived contract uses the same name as one in the base contract. This can lead to confusion and unexpected behavior, as the derived contract will hide the state variable from the base contract, potentially causing errors in contract logic or making it harder to maintain and audit the code. It is essential to avoid naming state variables in derived contracts the same as those in base contracts to ensure that the intended state is correctly accessed and modified.",
+  "id": "VULN-OWASP-SCWE-069",
+  "name": "Shadowing State Variables",
+  "owasp": "SCWE-069",
+  "remediation": "To avoid state variable shadowing, use unique names for state variables in derived contracts or explicitly refer to the base contract variable using `super`. This will ensure that the correct state variable is accessed and manipulated as intended.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-069.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

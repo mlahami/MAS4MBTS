@@ -1,0 +1,14 @@
+{
+  "category": "Authorization",
+  "cwe": "CWE-284",
+  "description": "A privileged function can be executed by an unauthorized actor.",
+  "id": "VULN-ACCESS-001",
+  "name": "Missing access control",
+  "owasp": "Smart Contract Access Control",
+  "severity": "high",
+  "source": {
+    "note": "Historical SWC label complemented by OWASP/CWE.",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-105"
+}

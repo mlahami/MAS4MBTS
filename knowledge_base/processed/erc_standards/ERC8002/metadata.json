@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8002",
+  "erc": "ERC-8002",
+  "events": [
+    {
+      "name": "MainchainHeadUpdated",
+      "signature": "MainchainHeadUpdated(uint64,bytes32)"
+    },
+    {
+      "name": "BlockHeaderAdded",
+      "signature": "BlockHeaderAdded(uint64,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addBlockHeader",
+      "operation_type": "contract_interaction",
+      "signature": "addBlockHeader(bytes)"
+    },
+    {
+      "name": "addBlockHeaderBatch",
+      "operation_type": "contract_interaction",
+      "signature": "addBlockHeaderBatch(bytes[])"
+    },
+    {
+      "name": "checkTxInclusion",
+      "operation_type": "contract_interaction",
+      "signature": "checkTxInclusion(bytes32[],bytes32,bytes32,uint256,uint256)"
+    },
+    {
+      "name": "getMainchainHead",
+      "operation_type": "contract_interaction",
+      "signature": "getMainchainHead()"
+    },
+    {
+      "name": "getMainchainHeight",
+      "operation_type": "contract_interaction",
+      "signature": "getMainchainHeight()"
+    },
+    {
+      "name": "getBlockHeader",
+      "operation_type": "contract_interaction",
+      "signature": "getBlockHeader(bytes32)"
+    },
+    {
+      "name": "getBlockStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getBlockStatus(bytes32)"
+    },
+    {
+      "name": "getBlockMerkleRoot",
+      "operation_type": "contract_interaction",
+      "signature": "getBlockMerkleRoot(bytes32)"
+    },
+    {
+      "name": "getBlockHeight",
+      "operation_type": "contract_interaction",
+      "signature": "getBlockHeight(bytes32)"
+    },
+    {
+      "name": "getBlockHash",
+      "operation_type": "contract_interaction",
+      "signature": "getBlockHash(uint64)"
+    },
+    {
+      "name": "blockExists",
+      "operation_type": "contract_interaction",
+      "signature": "blockExists(bytes32)"
+    }
+  ],
+  "id": "ERC8002",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8002",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8002.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Introduce a singleton contract for on-chain verification of transactions that happened on Bitcoin. The contract is available at \"0xTODO\" <!-- TODO -->, acting as a trustless Simplified Payment Verification (SPV) gateway where anyone can submit Bitcoin block headers. The gateway maintains the mainchain of blocks and allows the existence of Bitcoin transactions to be verified via Merkle proofs.",
+  "title": "Simplified Payment Verification Gateway"
+}

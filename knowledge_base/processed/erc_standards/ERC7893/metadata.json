@@ -1,0 +1,112 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7893",
+  "erc": "ERC-7893",
+  "events": [
+    {
+      "name": "SolvencyMetricsUpdated",
+      "signature": "SolvencyMetricsUpdated(uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "RiskAlert",
+      "signature": "RiskAlert(string,uint256,uint256,uint256)"
+    },
+    {
+      "name": "OracleUpdated",
+      "signature": "OracleUpdated(address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getProtocolAssets",
+      "operation_type": "contract_interaction",
+      "signature": "getProtocolAssets()"
+    },
+    {
+      "name": "getProtocolLiabilities",
+      "operation_type": "contract_interaction",
+      "signature": "getProtocolLiabilities()"
+    },
+    {
+      "name": "getSolvencyRatio",
+      "operation_type": "contract_interaction",
+      "signature": "getSolvencyRatio()"
+    },
+    {
+      "name": "verifySolvency",
+      "operation_type": "contract_interaction",
+      "signature": "verifySolvency()"
+    },
+    {
+      "name": "getSolvencyHistory",
+      "operation_type": "contract_interaction",
+      "signature": "getSolvencyHistory(uint256,uint256)"
+    },
+    {
+      "name": "updateAssets",
+      "operation_type": "contract_interaction",
+      "signature": "updateAssets(address[],uint256[],uint256[])"
+    },
+    {
+      "name": "updateLiabilities",
+      "operation_type": "contract_interaction",
+      "signature": "updateLiabilities(address[],uint256[],uint256[])"
+    },
+    {
+      "name": "setOracle",
+      "operation_type": "contract_interaction",
+      "signature": "setOracle(address,bool)"
+    },
+    {
+      "name": "calculateRatio",
+      "operation_type": "contract_interaction",
+      "signature": "calculateRatio(uint256,uint256)"
+    },
+    {
+      "name": "_checkCircuitBreaker",
+      "operation_type": "contract_interaction",
+      "signature": "_checkCircuitBreaker(uint256,uint256)"
+    },
+    {
+      "name": "_validatePriceConsensus",
+      "operation_type": "contract_interaction",
+      "signature": "_validatePriceConsensus(address,uint256)"
+    },
+    {
+      "name": "getHistoricalDataInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getHistoricalDataInfo()"
+    },
+    {
+      "name": "emergencyPause",
+      "operation_type": "contract_interaction",
+      "signature": "emergencyPause()"
+    },
+    {
+      "name": "emergencyUnpause",
+      "operation_type": "contract_interaction",
+      "signature": "emergencyUnpause()"
+    },
+    {
+      "name": "getEmergencyStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getEmergencyStatus()"
+    },
+    {
+      "name": "safeLiquidation",
+      "operation_type": "contract_interaction",
+      "signature": "safeLiquidation(address,address,uint256,uint256,uint256)"
+    }
+  ],
+  "id": "ERC7893",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7893",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7893.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A standardized interface that enables DeFi protocols to implement verifiable solvency proofs through smart contracts. This interface works by defining structured data types for assets and liabilities, with oracle-validated price feeds tracking token values in real-time. The technical implementation calculates solvency ratios using configurable risk thresholds (105% minimum solvency ratio), maintains historical metrics for trend analysis, and emits structured events upon threshold breaches. The interface standardizes methods for querying current financial health, retrieving historical data points, and updating protocol positions, all while enforcing proper validation and security controls.",
+  "title": "DeFi Protocol Solvency Proof Mechanism"
+}

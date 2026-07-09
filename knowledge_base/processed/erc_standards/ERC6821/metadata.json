@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6821",
+  "erc": "ERC-6821",
+  "events": [],
+  "functions": [],
+  "id": "ERC6821",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6821",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6821.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines the mapping from an Ethereum name service (ENS) name to an Ethereum address for [ERC-4804](./eip-4804.md).",
+  "title": "Support ENS Name for Web3 URL"
+}

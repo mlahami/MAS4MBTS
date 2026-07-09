@@ -1,0 +1,139 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7509",
+  "erc": "ERC-7509",
+  "events": [],
+  "functions": [
+    {
+      "name": "createEntity",
+      "operation_type": "contract_interaction",
+      "signature": "createEntity()"
+    },
+    {
+      "name": "entityExists",
+      "operation_type": "contract_interaction",
+      "signature": "entityExists(uint256)"
+    },
+    {
+      "name": "getEntityCount",
+      "operation_type": "contract_interaction",
+      "signature": "getEntityCount()"
+    },
+    {
+      "name": "setEntityState",
+      "operation_type": "contract_interaction",
+      "signature": "setEntityState(uint256,bool)"
+    },
+    {
+      "name": "getEntityState",
+      "operation_type": "contract_interaction",
+      "signature": "getEntityState(uint256)"
+    },
+    {
+      "name": "registerComponent",
+      "operation_type": "contract_interaction",
+      "signature": "registerComponent(address)"
+    },
+    {
+      "name": "componentExists",
+      "operation_type": "contract_interaction",
+      "signature": "componentExists(address)"
+    },
+    {
+      "name": "getComponents",
+      "operation_type": "contract_interaction",
+      "signature": "getComponents()"
+    },
+    {
+      "name": "setComponentState",
+      "operation_type": "contract_interaction",
+      "signature": "setComponentState(address,bool)"
+    },
+    {
+      "name": "getComponentState",
+      "operation_type": "contract_interaction",
+      "signature": "getComponentState(address)"
+    },
+    {
+      "name": "addComponent",
+      "operation_type": "contract_interaction",
+      "signature": "addComponent(uint256,address)"
+    },
+    {
+      "name": "hasComponent",
+      "operation_type": "contract_interaction",
+      "signature": "hasComponent(uint256,address)"
+    },
+    {
+      "name": "removeComponent",
+      "operation_type": "contract_interaction",
+      "signature": "removeComponent(uint256,address)"
+    },
+    {
+      "name": "getEntityComponents",
+      "operation_type": "contract_interaction",
+      "signature": "getEntityComponents(uint256)"
+    },
+    {
+      "name": "registerSystem",
+      "operation_type": "contract_interaction",
+      "signature": "registerSystem(address)"
+    },
+    {
+      "name": "systemExists",
+      "operation_type": "contract_interaction",
+      "signature": "systemExists(address)"
+    },
+    {
+      "name": "getSystems",
+      "operation_type": "contract_interaction",
+      "signature": "getSystems()"
+    },
+    {
+      "name": "setSystemState",
+      "operation_type": "contract_interaction",
+      "signature": "setSystemState(address,bool)"
+    },
+    {
+      "name": "getSystemState",
+      "operation_type": "contract_interaction",
+      "signature": "getSystemState(address)"
+    },
+    {
+      "name": "world",
+      "operation_type": "contract_interaction",
+      "signature": "world()"
+    },
+    {
+      "name": "types",
+      "operation_type": "contract_interaction",
+      "signature": "types()"
+    },
+    {
+      "name": "set",
+      "operation_type": "contract_interaction",
+      "signature": "set(uint256,bytes)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(uint256)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(uint256,bytes)"
+    }
+  ],
+  "id": "ERC7509",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7509",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7509.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal defines a minimal Entity Component System (ECS). Entities are unique identities that are assigned to multiple components (data) and then processed using the system (logic). This proposal standardizes the interface specification for using ECS in smart contracts, providing a set of basic functions that allow users to freely combine and manage multi-contract applications.",
+  "title": "Entity Component System"
+}

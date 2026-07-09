@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7913",
+  "erc": "ERC-7913",
+  "events": [],
+  "functions": [
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(bytes,bytes32,bytes)"
+    },
+    {
+      "name": "isValidSignatureNow",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignatureNow(bytes,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7913",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7913",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7913.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Externally Owned Accounts (EOA) can sign messages with their associated private keys. Additionally [ERC-1271](./eip-1271.md) defines a method for signature verification by smart accounts such as multisig. In both cases the identity of the signer is an ethereum address. We propose a standard to extend this concept of signer description, and signature verification, to keys that do not have an ethereum identity of their own, in the sense that they don't have their own address to represent them. This new mechanism can be used to integrate new signers such as non-ethereum cryptographic curves, hardware devices, or even email addresses. This is particularly relevant when dealing with things like social-recovery of smart accounts.",
+  "title": "Signature Verifiers"
+}

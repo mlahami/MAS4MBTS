@@ -1,0 +1,17 @@
+{
+  "category": "Insufficient Control Flow Management",
+  "cwe": "CWE-691",
+  "description": "Insufficient gas griefing attacks can be performed on contracts which accept data and use it in a sub-call on another contract. If the sub-call fails, either the whole transaction is reverted, or execution is continued. In the case of a relayer contract, the user who executes the transaction, the 'forwarder', can effectively censor transactions by using just enough gas to execute the transaction, but not enough for the sub-call to succeed.",
+  "id": "VULN-SWC-126",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "There are two options to prevent insufficient gas griefing: - Only allow trusted users to relay transactions. - Require that the forwarder provides enough gas.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-126.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-126"
+}

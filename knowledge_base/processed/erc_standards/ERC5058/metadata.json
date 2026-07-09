@@ -1,0 +1,81 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5058",
+  "erc": "ERC-5058",
+  "events": [
+    {
+      "name": "Locked",
+      "signature": "Locked(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Unlocked",
+      "signature": "Unlocked(address,address,uint256)"
+    },
+    {
+      "name": "LockApproval",
+      "signature": "LockApproval(address,address,uint256)"
+    },
+    {
+      "name": "LockApprovalForAll",
+      "signature": "LockApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "lockerOf",
+      "operation_type": "contract_interaction",
+      "signature": "lockerOf(uint256)"
+    },
+    {
+      "name": "lock",
+      "operation_type": "contract_interaction",
+      "signature": "lock(uint256,uint256)"
+    },
+    {
+      "name": "unlock",
+      "operation_type": "contract_interaction",
+      "signature": "unlock(uint256)"
+    },
+    {
+      "name": "lockApprove",
+      "operation_type": "contract_interaction",
+      "signature": "lockApprove(address,uint256)"
+    },
+    {
+      "name": "setLockApprovalForAll",
+      "operation_type": "contract_interaction",
+      "signature": "setLockApprovalForAll(address,bool)"
+    },
+    {
+      "name": "getLockApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getLockApproved(uint256)"
+    },
+    {
+      "name": "isLockApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isLockApprovedForAll(address,address)"
+    },
+    {
+      "name": "isLocked",
+      "operation_type": "contract_interaction",
+      "signature": "isLocked(uint256)"
+    },
+    {
+      "name": "lockExpiredTime",
+      "operation_type": "contract_interaction",
+      "signature": "lockExpiredTime(uint256)"
+    }
+  ],
+  "id": "ERC5058",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5058",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5058.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "We propose to extend the [EIP-721](./eip-721.md) standard with a secure locking mechanism. The NFT owners approve the operator to lock the NFT through `setLockApprovalForAll()` or `lockApprove()`. The approved operator locks the NFT through `lock()`. The locked NFTs cannot be transferred until the end of the locking period. An immediate use case is to allow NFTs to participate in smart contracts without leaving the wallets of their owners.",
+  "title": "Lockable Non-Fungible Tokens"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Price Oracle manipulation refers to the exploitation of vulnerabilities in price oracles to manipulate contract logic. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of the contract's logic.",
+  "id": "VULN-OWASP-SCWE-028",
+  "name": "Price Oracle Manipulation",
+  "owasp": "SCWE-028",
+  "remediation": "- **Use decentralized oracles:** Leverage multiple decentralized oracles for price data. - **Validate inputs:** Ensure all oracle data is properly validated before use. - **Implement circuit breakers:** Add mechanisms to halt operations in case of suspicious activity.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-028.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

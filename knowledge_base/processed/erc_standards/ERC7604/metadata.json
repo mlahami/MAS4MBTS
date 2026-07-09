@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7604",
+  "erc": "ERC-7604",
+  "events": [],
+  "functions": [
+    {
+      "name": "permit",
+      "operation_type": "contract_interaction",
+      "signature": "permit(address,address,uint256,uint256,uint256,bytes)"
+    },
+    {
+      "name": "nonces",
+      "operation_type": "contract_interaction",
+      "signature": "nonces(address,uint256)"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR()"
+    }
+  ],
+  "id": "ERC7604",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7604",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7604.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The \"permit\" approval flow for both [ERC-20](./eip-20.md) and [ERC-721](./eip-721.md) are large improvements for the existing UX of the token underlying each ERC. This ERC extends the \"permit\" pattern to [ERC-1155](./eip-20.md) tokens, borrowing heavily upon both [ERC-4494](./eip-4494.md) and [ERC-2612](./eip-2612.md). The structure of [ERC-1155](./eip-1155.md) tokens requires a new ERC to account for the token standard's use of both token IDs and balances (also why this ERC requires [ERC-5216](./eip-5216.md)).",
+  "title": "ERC-1155 Permit Approvals"
+}

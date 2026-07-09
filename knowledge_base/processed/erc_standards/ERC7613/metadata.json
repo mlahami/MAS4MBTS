@@ -1,0 +1,119 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7613",
+  "erc": "ERC-7613",
+  "events": [],
+  "functions": [
+    {
+      "name": "success",
+      "operation_type": "contract_interaction",
+      "signature": "success(uint256)"
+    },
+    {
+      "name": "failure",
+      "operation_type": "contract_interaction",
+      "signature": "failure()"
+    },
+    {
+      "name": "logicFailurePayload",
+      "operation_type": "contract_interaction",
+      "signature": "logicFailurePayload()"
+    },
+    {
+      "name": "call",
+      "operation_type": "contract_interaction",
+      "signature": "call(address,bytes)"
+    },
+    {
+      "name": "call",
+      "operation_type": "contract_interaction",
+      "signature": "call(address,bytes,uint256)"
+    },
+    {
+      "name": "testDeployDeterministic",
+      "operation_type": "contract_interaction",
+      "signature": "testDeployDeterministic()"
+    },
+    {
+      "name": "testPuppetDelegates",
+      "operation_type": "contract_interaction",
+      "signature": "testPuppetDelegates()"
+    },
+    {
+      "name": "testPuppetDelegatesWithEmptyCalldata",
+      "operation_type": "contract_interaction",
+      "signature": "testPuppetDelegatesWithEmptyCalldata()"
+    },
+    {
+      "name": "testPuppetBubblesRevertPayload",
+      "operation_type": "contract_interaction",
+      "signature": "testPuppetBubblesRevertPayload()"
+    },
+    {
+      "name": "testPuppetDoesNothingForNonDeployer",
+      "operation_type": "contract_interaction",
+      "signature": "testPuppetDoesNothingForNonDeployer()"
+    },
+    {
+      "name": "testCallingWithCalldataShorterThan32BytesDoesNothing",
+      "operation_type": "contract_interaction",
+      "signature": "testCallingWithCalldataShorterThan32BytesDoesNothing()"
+    },
+    {
+      "name": "testCallingWithDelegationAddressOver20BytesDoesNothing",
+      "operation_type": "contract_interaction",
+      "signature": "testCallingWithDelegationAddressOver20BytesDoesNothing()"
+    },
+    {
+      "name": "testCallingPuppetDoesNothing",
+      "operation_type": "contract_interaction",
+      "signature": "testCallingPuppetDoesNothing()"
+    },
+    {
+      "name": "testTransferFromDeployerToPuppet",
+      "operation_type": "contract_interaction",
+      "signature": "testTransferFromDeployerToPuppet()"
+    },
+    {
+      "name": "testTransferToPuppet",
+      "operation_type": "contract_interaction",
+      "signature": "testTransferToPuppet()"
+    },
+    {
+      "name": "deploy",
+      "operation_type": "contract_interaction",
+      "signature": "deploy()"
+    },
+    {
+      "name": "deployDeterministic",
+      "operation_type": "contract_interaction",
+      "signature": "deployDeterministic(bytes32)"
+    },
+    {
+      "name": "predictDeterministicAddress",
+      "operation_type": "contract_interaction",
+      "signature": "predictDeterministicAddress(bytes32)"
+    },
+    {
+      "name": "predictDeterministicAddress",
+      "operation_type": "contract_interaction",
+      "signature": "predictDeterministicAddress(bytes32,address)"
+    },
+    {
+      "name": "delegationCalldata",
+      "operation_type": "contract_interaction",
+      "signature": "delegationCalldata(address,bytes)"
+    }
+  ],
+  "id": "ERC7613",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7613",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7613.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "A puppet is a contract that, when called, acts like an empty account. It doesn't do anything and it has no API, except when it is called by the address that deployed it. In that case, it delegates the call to the address passed to it in calldata. This gives the deployer the ability to execute any logic they want in the context of the puppet.",
+  "title": "Puppet Proxy Contract"
+}

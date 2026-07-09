@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Constructors that accept critical parameters (owner, oracle, fee recipient, token addresses) without validation can deploy a contract in a broken or insecure state. Zero addresses, invalid values, or inconsistent configuration (e.g., fee > 100%) may be impossible to fix after deployment if there is no setter or upgrade path.",
+  "id": "VULN-OWASP-SCWE-145",
+  "name": "Unvalidated Constructor Parameters",
+  "owasp": "SCWE-145",
+  "remediation": "- Validate all constructor parameters: zero address checks, range checks (e.g., fee <= 100%), and consistency checks. - Use `require` or custom errors to revert deployment with a clear message when validation fails.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-145.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

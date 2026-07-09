@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6454",
+  "erc": "ERC-6454",
+  "events": [],
+  "functions": [
+    {
+      "name": "isTransferable",
+      "operation_type": "contract_interaction",
+      "signature": "isTransferable(uint256,address,address)"
+    }
+  ],
+  "id": "ERC6454",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6454",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6454.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The Minimalistic Transferable interface for Non-Fungible Tokens standard extends [ERC-721](./eip-721.md) by introducing the ability to identify whether an NFT can be transferred or not. This proposal introduces the ability to prevent a token from being transferred from their owner, making them bound to the externally owned account, abstracted account, smart contract or token that owns it.",
+  "title": "Minimal Transferable NFT detection interface"
+}

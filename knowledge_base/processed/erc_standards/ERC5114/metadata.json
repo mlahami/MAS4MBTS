@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5114",
+  "erc": "ERC-5114",
+  "events": [
+    {
+      "name": "Mint",
+      "signature": "Mint(uint256,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "collectionUri",
+      "operation_type": "contract_interaction",
+      "signature": "collectionUri()"
+    },
+    {
+      "name": "badgeUri",
+      "operation_type": "contract_interaction",
+      "signature": "badgeUri(uint256)"
+    },
+    {
+      "name": "metadataFormat",
+      "operation_type": "contract_interaction",
+      "signature": "metadataFormat()"
+    }
+  ],
+  "id": "ERC5114",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5114",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5114.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "A soulbound badge is a token that, when minted, is bound to another Non-Fungible Token (NFT), and cannot be transferred/moved after that.",
+  "title": "Soulbound Badge"
+}

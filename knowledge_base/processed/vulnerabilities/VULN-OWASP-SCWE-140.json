@@ -1,0 +1,16 @@
+{
+  "category": "Improper Resource Shutdown or Release",
+  "cwe": "CWE-404",
+  "description": "Contracts can receive ETH via `receive()`, `fallback()`, `selfdestruct` from another contract, or accidental sends. If the contract has no function to withdraw or forward this ETH, the funds become permanently locked. This can occur when a contract was not designed to hold ETH, when the withdrawal function is restricted to a role that no longer exists, or when the contract lacks a rescue/withdraw mechanism for unexpected inflows.",
+  "id": "VULN-OWASP-SCWE-140",
+  "name": "Ether Locked Due to Missing Withdrawal Path",
+  "owasp": "SCWE-140",
+  "remediation": "- Implement a withdrawal or rescue function for authorized roles to recover stuck ETH. - If the contract should not accept ETH, use `receive() external payable { revert(\"ETH not accepted\"); }`. - Document how unexpected ETH (e.g., from `selfdestruct`) is handled.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-140.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

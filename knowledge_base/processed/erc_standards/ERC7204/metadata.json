@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7204",
+  "erc": "ERC-7204",
+  "events": [
+    {
+      "name": "TokenApproval",
+      "signature": "TokenApproval(address,address,address,uint256)"
+    },
+    {
+      "name": "TokenApprovalForAll",
+      "signature": "TokenApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "tokenApprove",
+      "operation_type": "contract_interaction",
+      "signature": "tokenApprove(address,address,uint256)"
+    },
+    {
+      "name": "tokenAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "tokenAllowance(address,address)"
+    },
+    {
+      "name": "tokenApproveForAll",
+      "operation_type": "contract_interaction",
+      "signature": "tokenApproveForAll(address,bool)"
+    },
+    {
+      "name": "tokenIsApproveForAll",
+      "operation_type": "contract_interaction",
+      "signature": "tokenIsApproveForAll(address)"
+    },
+    {
+      "name": "tokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "tokenTransfer(address,address,uint256)"
+    }
+  ],
+  "id": "ERC7204",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7204",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7204.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a smart contract wallet-based approach for managing tokens, focusing on utilizing the programmable features of smart contract wallets for asset management. Additionally, it introduces functions such as `tokenTransfer`, `tokenApprove`, `tokenApproveForAll`, `tokenIsApproveForAll` and `tokenAllowance`, which provide enhanced control over token transactions. This approach seeks to enhance token management by utilizing the built-in features of smart contract wallets, thus offering a more adaptable, secure, and efficient method for managing token transactions.",
+  "title": "Contract wallet management token"
+}

@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7015",
+  "erc": "ERC-7015",
+  "events": [
+    {
+      "name": "CreatorAttribution",
+      "signature": "CreatorAttribution(bytes32,string,string,address,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "_validateSignature",
+      "operation_type": "contract_interaction",
+      "signature": "_validateSignature(bytes32,address,bytes)"
+    },
+    {
+      "name": "_isValid",
+      "operation_type": "contract_interaction",
+      "signature": "_isValid(bytes32,address,bytes)"
+    }
+  ],
+  "id": "ERC7015",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7015",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7015.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This Ethereum Improvement Proposal aims to solve the issue of creator attribution for Non-Fungible Token (NFT) standards ([ERC-721](./eip-721.md), [ERC-1155](./eip-1155.md)). To achieve this, this EIP proposes a mechanism where the NFT creator signs the required parameters for the NFT creation, including the NFT metadata in a hash along with any other relevant information. The signed parameters and the signature are then validated and emitted during the deployment transaction, which allows the NFT to validate the creator and NFT platforms to attribute creatorship correctly. This method ensures that even if a different wallet sends the deployment transaction, the correct account is attributed as the creator.",
+  "title": "NFT Creator Attribution"
+}

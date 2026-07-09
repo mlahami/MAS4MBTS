@@ -1,0 +1,58 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7721",
+  "erc": "ERC-7721",
+  "events": [
+    {
+      "name": "Lock",
+      "signature": "Lock(uint256,address,address,uint256)"
+    },
+    {
+      "name": "Unlock",
+      "signature": "Unlock(uint256,address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "lock",
+      "operation_type": "contract_interaction",
+      "signature": "lock(uint256,address,uint256)"
+    },
+    {
+      "name": "lock",
+      "operation_type": "contract_interaction",
+      "signature": "lock(uint256,address,address,uint256)"
+    },
+    {
+      "name": "unlock",
+      "operation_type": "contract_interaction",
+      "signature": "unlock(uint256,address,uint256)"
+    },
+    {
+      "name": "transferAndLock",
+      "operation_type": "contract_interaction",
+      "signature": "transferAndLock(address,address,uint256,uint256,bool)"
+    },
+    {
+      "name": "getLocked",
+      "operation_type": "contract_interaction",
+      "signature": "getLocked(uint256,address,address)"
+    },
+    {
+      "name": "setApprovalForId",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalForId(uint256,address,uint256)"
+    }
+  ],
+  "id": "ERC7721",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7721",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7721.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The Lockable Extension for [ERC-1155](./eip-1155.md) introduces a robust locking mechanism for specific Non-Fungible Tokens (NFTs) within the ERC-1155 token standard, allowing for various uses while preventing sale or transfer. The token's `owner` can `lock` it, setting up locker address (either an EOA or a contract) that exclusively holds the power to unlock the token. Owner can also provide approval for `tokenId`, enabling ability to lock asset while address holds the token approval. Token can also be locked by `approved`, assigning locker to itself. Upon token transfer, these rights get purged. Inspired by the need for enhanced security and control over tokenized assets, this extension enables token owners to lock individual NFTs with `tokenId`, ensuring that only approved users can wit",
+  "title": "Lockable Extension for ERC-1155"
+}

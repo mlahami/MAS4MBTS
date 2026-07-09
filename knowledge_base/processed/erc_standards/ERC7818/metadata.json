@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7818",
+  "erc": "ERC-7818",
+  "events": [],
+  "functions": [
+    {
+      "name": "balanceOfAtEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfAtEpoch(uint256,address)"
+    },
+    {
+      "name": "currentEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "currentEpoch()"
+    },
+    {
+      "name": "epochLength",
+      "operation_type": "contract_interaction",
+      "signature": "epochLength()"
+    },
+    {
+      "name": "epochType",
+      "operation_type": "contract_interaction",
+      "signature": "epochType()"
+    },
+    {
+      "name": "validityDuration",
+      "operation_type": "contract_interaction",
+      "signature": "validityDuration()"
+    },
+    {
+      "name": "isEpochExpired",
+      "operation_type": "contract_interaction",
+      "signature": "isEpochExpired(uint256)"
+    },
+    {
+      "name": "transferAtEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "transferAtEpoch(uint256,address,uint256)"
+    },
+    {
+      "name": "transferFromAtEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromAtEpoch(uint256,address,address,uint256)"
+    }
+  ],
+  "id": "ERC7818",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7818",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7818.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Introduces an extension for [ERC-20](./eip-20.md) tokens, which facilitates the implementation of an expiration mechanism. Through this extension, tokens have a predetermined validity period, after which they become invalid and can no longer be transferred or used. This functionality proves beneficial in scenarios such as time-limited bonds, loyalty rewards, or game tokens necessitating automatic invalidation after a specific duration. The extension is crafted to seamlessly align with the existing [ERC-20](./eip-20.md) standard, ensuring smooth integration with the prevailing token smart contract while introducing the capability to govern and enforce token expiration at the contract level.",
+  "title": "Expirable ERC-20"
+}

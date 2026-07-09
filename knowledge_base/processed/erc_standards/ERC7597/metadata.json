@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7597",
+  "erc": "ERC-7597",
+  "events": [],
+  "functions": [
+    {
+      "name": "permit",
+      "operation_type": "contract_interaction",
+      "signature": "permit(address,address,uint,uint,bytes)"
+    },
+    {
+      "name": "nonces",
+      "operation_type": "contract_interaction",
+      "signature": "nonces(address)"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR()"
+    },
+    {
+      "name": "permit",
+      "operation_type": "contract_interaction",
+      "signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "permit",
+      "operation_type": "contract_interaction",
+      "signature": "permit(address,address,uint256,uint256,bytes)"
+    }
+  ],
+  "id": "ERC7597",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7597",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7597.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal aims to extend the functionality of the existing [ERC-2612](./eip-2612.md) Permit to support gasless [ERC-20](./eip-20.md) approval operations initiated by smart contract wallets.",
+  "title": "Signature Validation Extension for Permit"
+}

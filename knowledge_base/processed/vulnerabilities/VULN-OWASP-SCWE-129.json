@@ -1,0 +1,16 @@
+{
+  "category": "Improper Access Control",
+  "cwe": "CWE-284",
+  "description": "Relying on a single externally owned account (EOA) as contract admin creates a single point of failure. Key compromise, loss, or coercion can lead to irreversible upgrades, pauses, or fund drains with no recovery.",
+  "id": "VULN-OWASP-SCWE-129",
+  "name": "Single EOA Admin Without Rotation",
+  "owasp": "SCWE-129",
+  "remediation": "- Use multisig (>=2-of-3) with hardware keys and timelocks for admin roles. - Document and test key rotation and recovery procedures. - Limit admin powers by role (upgrade vs. ops) and enforce separation of duties.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-129.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

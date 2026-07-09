@@ -1,0 +1,118 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6123",
+  "erc": "ERC-6123",
+  "events": [
+    {
+      "name": "TradeIncepted",
+      "signature": "TradeIncepted(address,string,string)"
+    },
+    {
+      "name": "TradeConfirmed",
+      "signature": "TradeConfirmed(address,string)"
+    },
+    {
+      "name": "TradeCanceled",
+      "signature": "TradeCanceled(address,string)"
+    },
+    {
+      "name": "TradeActivated",
+      "signature": "TradeActivated(string)"
+    },
+    {
+      "name": "TradeTerminationRequest",
+      "signature": "TradeTerminationRequest(address,string,int256,string)"
+    },
+    {
+      "name": "TradeTerminationConfirmed",
+      "signature": "TradeTerminationConfirmed(address,string,int256,string)"
+    },
+    {
+      "name": "TradeTerminationCanceled",
+      "signature": "TradeTerminationCanceled(address,string,string)"
+    },
+    {
+      "name": "TradeTerminated",
+      "signature": "TradeTerminated(string)"
+    },
+    {
+      "name": "SettlementRequested",
+      "signature": "SettlementRequested(address,string,string)"
+    },
+    {
+      "name": "SettlementDetermined",
+      "signature": "SettlementDetermined(address,int256,string)"
+    },
+    {
+      "name": "SettlementTransferred",
+      "signature": "SettlementTransferred(string)"
+    },
+    {
+      "name": "SettlementFailed",
+      "signature": "SettlementFailed(string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "inceptTrade",
+      "operation_type": "contract_interaction",
+      "signature": "inceptTrade(address,string,int256,int256,string)"
+    },
+    {
+      "name": "confirmTrade",
+      "operation_type": "contract_interaction",
+      "signature": "confirmTrade(address,string,int256,int256,string)"
+    },
+    {
+      "name": "cancelTrade",
+      "operation_type": "contract_interaction",
+      "signature": "cancelTrade(address,string,int256,int256,string)"
+    },
+    {
+      "name": "requestTradeTermination",
+      "operation_type": "contract_interaction",
+      "signature": "requestTradeTermination(string,int256,string)"
+    },
+    {
+      "name": "confirmTradeTermination",
+      "operation_type": "contract_interaction",
+      "signature": "confirmTradeTermination(string,int256,string)"
+    },
+    {
+      "name": "cancelTradeTermination",
+      "operation_type": "contract_interaction",
+      "signature": "cancelTradeTermination(string,int256,string)"
+    },
+    {
+      "name": "initiateSettlement",
+      "operation_type": "contract_interaction",
+      "signature": "initiateSettlement()"
+    },
+    {
+      "name": "performSettlement",
+      "operation_type": "contract_interaction",
+      "signature": "performSettlement(int256,string)"
+    },
+    {
+      "name": "afterSettlement",
+      "operation_type": "contract_interaction",
+      "signature": "afterSettlement()"
+    },
+    {
+      "name": "afterTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "afterTransfer(bool,uint256,string)"
+    }
+  ],
+  "id": "ERC6123",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6123",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6123.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The Smart Derivative Contract (SDC) allows fully automizing and securing a financial product's - e.g. a financial derivative or bond - complete trade life cycle.[^1] The SDC leverages the advantages of smart contracts to remove many of the frictions associated with the classical derivative life cycle. Most notably, the protocol allows the removal of counterpart risk essentially. The SDC can be implemented using a pre-agreed valuation oracle and valuation model, removing ambiguity in the settlement amounts. The SDC provides methods and callbacks to enable fully automated and fully transactional settlements (delivery-versus-payment, payment-vs-payment). Token-based settlement can be realized by any contract implementation implementing an [ERC-20](./eip-20.md) token. Proof of concepts in term",
+  "title": "Smart Derivative Contract"
+}

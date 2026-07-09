@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7776",
+  "erc": "ERC-7776",
+  "events": [],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "currency",
+      "operation_type": "contract_interaction",
+      "signature": "currency()"
+    },
+    {
+      "name": "revenue",
+      "operation_type": "contract_interaction",
+      "signature": "revenue(uint256,uint256)"
+    },
+    {
+      "name": "cogs",
+      "operation_type": "contract_interaction",
+      "signature": "cogs(uint256,uint256)"
+    },
+    {
+      "name": "operatingExpenses",
+      "operation_type": "contract_interaction",
+      "signature": "operatingExpenses(uint256,uint256)"
+    },
+    {
+      "name": "operatingIncome",
+      "operation_type": "contract_interaction",
+      "signature": "operatingIncome(uint256,uint256)"
+    },
+    {
+      "name": "ebitda",
+      "operation_type": "contract_interaction",
+      "signature": "ebitda(uint256,uint256)"
+    },
+    {
+      "name": "otherIncomeExpenses",
+      "operation_type": "contract_interaction",
+      "signature": "otherIncomeExpenses(uint256,uint256)"
+    },
+    {
+      "name": "netIncome",
+      "operation_type": "contract_interaction",
+      "signature": "netIncome(uint256,uint256)"
+    },
+    {
+      "name": "earningsPerShare",
+      "operation_type": "contract_interaction",
+      "signature": "earningsPerShare(uint256,uint256)"
+    },
+    {
+      "name": "fullFinancialReport",
+      "operation_type": "contract_interaction",
+      "signature": "fullFinancialReport(uint256,uint256)"
+    }
+  ],
+  "id": "ERC7776",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7776",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7776.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal defines a standard API that enables EVM Blockchain-based companies (or also called \"protocols\") to publish their financial information, specifically Income Statements and Balance Sheets, on- chain in a transparent and accessible manner through solidity smart contracts. This standard aims to emulate the reporting structure used by publicly traded companies in traditional stocks markets, like the SEC 10-Q filings. The financial statements include key information, namely as Revenue, Cost of Goods Sold, Operating Expenses, Operating Income, Earnings before Interest, Taxes, Depreciation, and Amortization (EBITDA) and Earnings Per Share-Token (EPS), allowing investors to assess the financial health of blockchain-based companies in a standardized, transparent, clear and reliable for",
+  "title": "Transparent Financial Statements"
+}

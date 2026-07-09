@@ -1,0 +1,148 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1261",
+  "erc": "ERC-1261",
+  "events": [
+    {
+      "name": "Assigned",
+      "signature": "Assigned(address,uint[])"
+    },
+    {
+      "name": "Revoked",
+      "signature": "Revoked(address)"
+    },
+    {
+      "name": "Forfeited",
+      "signature": "Forfeited(address)"
+    },
+    {
+      "name": "ApprovedMembership",
+      "signature": "ApprovedMembership(address,uint[])"
+    },
+    {
+      "name": "RequestedMembership",
+      "signature": "RequestedMembership(address)"
+    },
+    {
+      "name": "ModifiedAttributes",
+      "signature": "ModifiedAttributes(address,uint,uint)"
+    },
+    {
+      "name": "OwnershipTransferred",
+      "signature": "OwnershipTransferred(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addAttributeSet",
+      "operation_type": "contract_interaction",
+      "signature": "addAttributeSet(bytes32,bytes32[])"
+    },
+    {
+      "name": "modifyAttributeByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "modifyAttributeByIndex(address,uint,uint)"
+    },
+    {
+      "name": "requestMembership",
+      "operation_type": "contract_interaction",
+      "signature": "requestMembership(uint[])"
+    },
+    {
+      "name": "forfeitMembership",
+      "operation_type": "contract_interaction",
+      "signature": "forfeitMembership()"
+    },
+    {
+      "name": "approveRequest",
+      "operation_type": "contract_interaction",
+      "signature": "approveRequest(address)"
+    },
+    {
+      "name": "discardRequest",
+      "operation_type": "contract_interaction",
+      "signature": "discardRequest(address)"
+    },
+    {
+      "name": "assignTo",
+      "operation_type": "contract_interaction",
+      "signature": "assignTo(address,uint[])"
+    },
+    {
+      "name": "revokeFrom",
+      "operation_type": "contract_interaction",
+      "signature": "revokeFrom(address)"
+    },
+    {
+      "name": "isCurrentMember",
+      "operation_type": "contract_interaction",
+      "signature": "isCurrentMember(address)"
+    },
+    {
+      "name": "getAttributeExhaustiveCollection",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributeExhaustiveCollection(bytes32)"
+    },
+    {
+      "name": "getAllMembers",
+      "operation_type": "contract_interaction",
+      "signature": "getAllMembers()"
+    },
+    {
+      "name": "getCurrentMemberCount",
+      "operation_type": "contract_interaction",
+      "signature": "getCurrentMemberCount()"
+    },
+    {
+      "name": "getAttributeNames",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributeNames()"
+    },
+    {
+      "name": "getAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributes(address)"
+    },
+    {
+      "name": "getAttributeByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributeByIndex(address,uint)"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    },
+    {
+      "name": "transferOwnership",
+      "operation_type": "contract_interaction",
+      "signature": "transferOwnership(address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    }
+  ],
+  "id": "ERC1261",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1261",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1261.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for Membership Verification Token within smart contracts(called entities). This standard provides basic functionality to track membership of individuals in certain on-chain \u2018organizations\u2019. This allows for several use cases like automated compliance, and several forms of governance and membership structures. We considered use cases of MVTs being assigned to individuals which are non-transferable and revocable by the owner. MVTs can represent proof of recognition, proof of membership, proof of right-to-vote and several such otherwise abstract concepts on the blockchain. The following are some examples of those use cases, and it is possible to come up with several others: - Voting: Voting is inherently supposed to be a pe",
+  "title": "Membership Verification Token (MVT)"
+}

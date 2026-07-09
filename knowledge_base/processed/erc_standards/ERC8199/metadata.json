@@ -1,0 +1,73 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8199",
+  "erc": "ERC-8199",
+  "events": [
+    {
+      "name": "AgentRegistered",
+      "signature": "AgentRegistered(Agent)"
+    },
+    {
+      "name": "AgentRemoved",
+      "signature": "AgentRemoved(Agent)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerAgents",
+      "operation_type": "contract_interaction",
+      "signature": "registerAgents(Agent[])"
+    },
+    {
+      "name": "removeAgents",
+      "operation_type": "contract_interaction",
+      "signature": "removeAgents(Agent[])"
+    },
+    {
+      "name": "getAgents",
+      "operation_type": "contract_interaction",
+      "signature": "getAgents()"
+    },
+    {
+      "name": "isAgentActive",
+      "operation_type": "contract_interaction",
+      "signature": "isAgentActive(address)"
+    },
+    {
+      "name": "invokeAgentExec",
+      "operation_type": "contract_interaction",
+      "signature": "invokeAgentExec(Execution[],bytes)"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    },
+    {
+      "name": "executeFromOwner",
+      "operation_type": "contract_interaction",
+      "signature": "executeFromOwner(Execution[])"
+    },
+    {
+      "name": "preCheck",
+      "operation_type": "contract_interaction",
+      "signature": "preCheck(Execution[],bytes)"
+    },
+    {
+      "name": "postCheck",
+      "operation_type": "contract_interaction",
+      "signature": "postCheck(Execution[],bytes)"
+    }
+  ],
+  "id": "ERC8199",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8199",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8199.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Automation through Agents in a wallet is widely being adopted, and many approaches have been discussed and proposed for secure delegation of access/assets to agents. Including session keys, Trusted Execution Environment (TEE) based policy engine, shared account key, in which some degree of trust and trade-offs exist. This standard outlines the smart wallet particularly useful for agents of high frequency trading entities to operate in a completely sandboxed(detached) environment, or any other wallets seeking for secure agentic operations, while still enabling the owner to have complete control over the sandboxed smart wallet. The sandbox is achieved through the complete detach of agent smart wallet from the owner wallet and only having the owner wallet persistent access to the agent smart",
+  "title": "Sandboxed Smart Wallet"
+}

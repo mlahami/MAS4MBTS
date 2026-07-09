@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8000",
+  "erc": "ERC-8000",
+  "events": [],
+  "functions": [
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(Call[])"
+    },
+    {
+      "name": "onBehalfOf",
+      "operation_type": "contract_interaction",
+      "signature": "onBehalfOf()"
+    },
+    {
+      "name": "_msgSender",
+      "operation_type": "contract_interaction",
+      "signature": "_msgSender()"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(address,uint256)"
+    }
+  ],
+  "id": "ERC8000",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8000",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8000.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines a contract interface that enables externally owned accounts (EOAs) to perform batch call executions via a standard Operator contract, without requiring them to delegate control or convert into smart contract accounts.",
+  "title": "Operator contract for non delegated EOAs"
+}

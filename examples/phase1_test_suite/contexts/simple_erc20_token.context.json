@@ -1,0 +1,101 @@
+{
+  "ercStandard": "ERC-20",
+  "ercStandards": [
+    "ERC-20"
+  ],
+  "contractName": "SimpleERC20Token",
+  "address": "N/A",
+  "compilerVersion": "^0.8.20",
+  "sourceType": "solidity",
+  "inheritance": [
+    "IERC20",
+    "Ownable"
+  ],
+  "imports": [
+    "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+    "@openzeppelin/contracts/access/Ownable.sol"
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "signature": "totalSupply()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "balanceOf",
+      "signature": "balanceOf(address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "allowance",
+      "signature": "allowance(address,address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "transfer",
+      "signature": "transfer(address,uint256)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "bool"
+      ],
+      "operationType": "Token transfer"
+    },
+    {
+      "name": "approve",
+      "signature": "approve(address,uint256)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "bool"
+      ],
+      "operationType": "Approval management"
+    },
+    {
+      "name": "transferFrom",
+      "signature": "transferFrom(address,address,uint256)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "bool"
+      ],
+      "operationType": "Delegated token transfer"
+    },
+    {
+      "name": "mint",
+      "signature": "mint(address,uint256)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "operationType": "Token minting"
+    }
+  ],
+  "events": [],
+  "modifiers": [],
+  "stateVariables": [
+    "_totalSupply",
+    "allowances",
+    "balances",
+    "decimals",
+    "name",
+    "symbol",
+    "true"
+  ]
+}

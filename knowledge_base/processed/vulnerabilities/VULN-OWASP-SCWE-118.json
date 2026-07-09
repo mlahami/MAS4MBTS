@@ -1,0 +1,16 @@
+{
+  "category": "Missing Authentication for Critical Function",
+  "cwe": "CWE-306",
+  "description": "Beacon proxies rely on a beacon address that determines implementation. If the beacon upgrade function lacks proper access control or timelock, an attacker can point all proxies to malicious code, taking over state and funds.",
+  "id": "VULN-OWASP-SCWE-118",
+  "name": "Unauthenticated Beacon Upgrade",
+  "owasp": "SCWE-118",
+  "remediation": "- Restrict beacon upgrades to multisig+timelock and emit events on change. - Validate new implementation bytecode (e.g., initializer disabled, interfaces intact). - Monitor beacon address changes on-chain with alerts.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-118.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

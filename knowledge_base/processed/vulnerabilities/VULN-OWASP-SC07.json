@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Arithmetic errors (rounding and precision loss) describe any situation where a smart contract performs integer-based calculations that produce incorrect or exploitable results due to truncation, scaling, or unit conversion. Smart contracts are limited to integer arithmetic; any division, fixed-point scaling, or conversion between units can lose precision, introduce asymmetric rounding, or\u2014when combined with unchecked blocks or non-EVM semantics\u2014cause overflow/underflow (see SC09). This affects all contract types that compute numeric values: DeFi (share minting/burning, LP tokens, interest accrual, swap outputs, AMM invariant updates), yield vaults and ERC-4626 (asset/share conversions), rebasing tokens, reward distribution, and NFT/token economics. On non-EVM chains (e.g., Move, Rust-based), integer semantics and available precision differ; similar risks apply wherever arithmetic drives economic outcomes. Few areas to focus on: - **Share and LP token calculations** (deposit/withdraw formulas, rounding direction) - **Interest and reward accrual** (compounding, time-weighted averages) - **Swap and AMM math** (constant product, concentrated liquidity, output calculations) - **Fixed-point and scaling** (1e18, 1e8 conventions, cross-token conversions) - **Rebasing and proportional distribution** (per-user vs. global accounting) Attackers exploit: - **Rounding bias** (e.g., rounding that favors depositor or protocol under adversarial sequences) - **Repeated small gains** via flash loans (SC04) or high-frequency interactions - **Edge cases** (zero total supply, first depositor, extreme ratios) where formulas break down - **Precision loss** in multi-step computations that accumulates across operations When combined with flash loans (SC04) or business logic flaws (SC02), arithme",
+  "id": "VULN-OWASP-SC07",
+  "name": "SC07:2026 Arithmetic Errors (Rounding & Precision)",
+  "owasp": "SC07",
+  "remediation": "- **Use safe math patterns** (Solidity 0.8+ has built-in checks, but logic around them still matters). - Clearly document and test your **rounding strategy**: - Decide whether rounding should favor the protocol or users. - Prove that repeated interactions cannot create \u201cfree value\u201d. - Rely on **well-reviewed math libraries** for complex operations: - Fixed-point math (e.g., 1e18 scaling) - High-precision exponentiation or logarithms - Incorporate **invariant checks**: - E.g., `totalAssets` vs. sum of user balances, or share/value consistency after operations. - Use **fuzz testing and differential testing** to discover edge cases around small/large values and repeated operations.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC07-ArithmeticErrors.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

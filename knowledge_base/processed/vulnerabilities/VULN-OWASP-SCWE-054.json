@@ -1,0 +1,16 @@
+{
+  "category": "Insufficient Verification of Data Authenticity",
+  "cwe": "CWE-345",
+  "description": "Signature malleability refers to the ability to modify a valid signature without changing its validity. This can occur when signatures are not properly verified or when certain components of a signature (like the `v`, `r`, and `s` values) can be altered while still producing a valid signature. Attackers can modify a signature\u2019s `s` value or flip `v` between 27 and 28, generating different valid signatures for the same message. This can lead to: - Replay attacks, where transactions can be re-executed with modified signatures. - Transaction hijacking, where a valid signature is altered to redirect funds or manipulate contract state.",
+  "id": "VULN-OWASP-SCWE-054",
+  "name": "Signature Malleability",
+  "owasp": "SCWE-054",
+  "remediation": "To mitigate signature malleability, ensure that the signature verification process is robust. Use secure cryptographic libraries that properly handle signature validation, such as ECDSA or EdDSA with additional checks to prevent malleability. When verifying signatures, consider using a canonical format for signature components to avoid malleability.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-054.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

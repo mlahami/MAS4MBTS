@@ -1,0 +1,16 @@
+{
+  "category": "Inclusion of Functionality from Untrusted Control Sphere",
+  "cwe": "CWE-829",
+  "description": "Insecure use of external calls refers to vulnerabilities that arise when calling external contracts without proper validation or safeguards. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of vulnerabilities in the called contract.",
+  "id": "VULN-OWASP-SCWE-042",
+  "name": "Insecure Use of External Calls",
+  "owasp": "SCWE-042",
+  "remediation": "- **Validate targets:** Ensure the target contract is trusted and secure. - **Use secure libraries:** Leverage well-audited libraries for external calls. - **Test thoroughly:** Conduct extensive testing to ensure external calls are secure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-042.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

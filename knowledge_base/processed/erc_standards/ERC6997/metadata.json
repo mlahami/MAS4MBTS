@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6997",
+  "erc": "ERC-6997",
+  "events": [
+    {
+      "name": "ValidateTransfer",
+      "signature": "ValidateTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "ValidateApproval",
+      "signature": "ValidateApproval(address,address,uint256,bool,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isValidatorContract",
+      "operation_type": "contract_interaction",
+      "signature": "isValidatorContract()"
+    },
+    {
+      "name": "transferValidation",
+      "operation_type": "contract_interaction",
+      "signature": "transferValidation(uint256)"
+    },
+    {
+      "name": "approvalValidation",
+      "operation_type": "contract_interaction",
+      "signature": "approvalValidation(uint256)"
+    },
+    {
+      "name": "totalTransferValidations",
+      "operation_type": "contract_interaction",
+      "signature": "totalTransferValidations()"
+    },
+    {
+      "name": "totalApprovalValidations",
+      "operation_type": "contract_interaction",
+      "signature": "totalApprovalValidations()"
+    },
+    {
+      "name": "_transferValidation",
+      "operation_type": "contract_interaction",
+      "signature": "_transferValidation(uint256)"
+    },
+    {
+      "name": "_approvalValidation",
+      "operation_type": "contract_interaction",
+      "signature": "_approvalValidation(uint256)"
+    },
+    {
+      "name": "_validateTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_validateTransfer(uint256)"
+    },
+    {
+      "name": "_validateApproval",
+      "operation_type": "contract_interaction",
+      "signature": "_validateApproval(uint256)"
+    },
+    {
+      "name": "_transfer",
+      "operation_type": "contract_interaction",
+      "signature": "_transfer(address,address,uint256)"
+    },
+    {
+      "name": "_approve",
+      "operation_type": "contract_interaction",
+      "signature": "_approve(address,uint256)"
+    },
+    {
+      "name": "_setApprovalForAll",
+      "operation_type": "contract_interaction",
+      "signature": "_setApprovalForAll(address,address,bool)"
+    }
+  ],
+  "id": "ERC6997",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6997",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6997.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It defines new validation functionality to avoid wallet draining: every `transfer` or `approve` will be locked waiting for validation.",
+  "title": "ERC-721 with transaction validation step."
+}

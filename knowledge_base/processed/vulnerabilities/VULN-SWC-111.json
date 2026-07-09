@@ -1,0 +1,17 @@
+{
+  "category": "Use of Obsolete Function",
+  "cwe": "CWE-477",
+  "description": "Several functions and operators in Solidity are deprecated. Using them leads to reduced code quality. With new major versions of the Solidity compiler, deprecated functions and operators may result in side effects and compile errors.",
+  "id": "VULN-SWC-111",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Solidity provides alternatives to the deprecated constructions. Most of them are aliases, thus replacing old constructions will not break current behavior. For example, `sha3` can be replaced with `keccak256`. | Deprecated | Alternative | | ----------------------- | ----------------------- | | `suicide(address)` | `selfdestruct(address)` | | `block.blockhash(uint)` | `blockhash(uint)` | | `sha3(...)` | `keccak256(...)` | | `callcode(...)` | `delegatecall(...)` | | `throw` | `revert()` | | `msg.gas` | `gasleft` | | `constant` | `view` | | `var` | corresponding type name |",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-111.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-111"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7535",
+  "erc": "ERC-7535",
+  "events": [],
+  "functions": [],
+  "id": "ERC7535",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7535",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7535.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of the [ERC-4626](./eip-4626.md) spec with an identical interface and behavioral overrides for handling Ether or any native asset as the underlying.",
+  "title": "Native Asset ERC-4626 Tokenized Vault"
+}

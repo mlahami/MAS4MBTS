@@ -1,0 +1,16 @@
+{
+  "category": "Improper Check for Unusual or Exceptional Conditions",
+  "cwe": "CWE-754",
+  "description": "In Ethereum smart contracts, assertions (`assert`) are commonly used for internal consistency checks and to prevent erroneous states. However, if not used correctly, they can lead to unexpected behavior. When an `assert` statement fails, it reverts the entire transaction, and all changes made in the transaction are reverted. This can be problematic if it is used for conditions that can be expected during normal contract execution. Using `assert` for conditions that can occur under normal circumstances (e.g., user inputs or contract logic) may cause unnecessary reverts and loss of gas. It\u2019s important to reserve `assert` for critical errors, such as invariants and internal state checks that should never fail.",
+  "id": "VULN-OWASP-SCWE-067",
+  "name": "Assert Violation",
+  "owasp": "SCWE-067",
+  "remediation": "To avoid unnecessary assertion failures, use `require` for input validation and conditions that can reasonably fail. `assert` should only be used for internal error detection and state validation that should never happen, as it signals a critical issue if violated.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-067.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

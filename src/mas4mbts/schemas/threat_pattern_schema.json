@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mas4mbts/threat-pattern.schema.json",
+  "title": "Threat Pattern Record",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "description",
+    "applicable_to",
+    "related_entry_points",
+    "stride",
+    "vulnerability",
+    "security_property",
+    "test_objective",
+    "countermeasure"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "applicable_to": {"type": "array", "items": {"type": "string"}},
+    "related_entry_points": {"type": "array", "items": {"type": "string"}},
+    "stride": {"type": "string"},
+    "vulnerability": {"type": "string"},
+    "cwe": {"type": "string"},
+    "swc": {"type": "string"},
+    "owasp": {"type": "string"},
+    "security_property": {"type": "string"},
+    "test_objective": {"type": "string"},
+    "countermeasure": {"type": "string"}
+  }
+}

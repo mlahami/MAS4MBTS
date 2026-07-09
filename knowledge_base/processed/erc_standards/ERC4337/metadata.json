@@ -1,0 +1,84 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4337",
+  "erc": "ERC-4337",
+  "events": [],
+  "functions": [
+    {
+      "name": "handleOps",
+      "operation_type": "contract_interaction",
+      "signature": "handleOps(PackedUserOperation[],address)"
+    },
+    {
+      "name": "validateUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "validateUserOp(PackedUserOperation,bytes32,uint256)"
+    },
+    {
+      "name": "executeUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "executeUserOp(PackedUserOperation,bytes32)"
+    },
+    {
+      "name": "getNonce",
+      "operation_type": "contract_interaction",
+      "signature": "getNonce(address,uint192)"
+    },
+    {
+      "name": "validatePaymasterUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "validatePaymasterUserOp(PackedUserOperation,bytes32,uint256)"
+    },
+    {
+      "name": "postOp",
+      "operation_type": "contract_interaction",
+      "signature": "postOp(PostOpMode,bytes,uint256,uint256)"
+    },
+    {
+      "name": "addStake",
+      "operation_type": "contract_interaction",
+      "signature": "addStake(uint32)"
+    },
+    {
+      "name": "unlockStake",
+      "operation_type": "contract_interaction",
+      "signature": "unlockStake()"
+    },
+    {
+      "name": "withdrawStake",
+      "operation_type": "contract_interaction",
+      "signature": "withdrawStake(address)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "depositTo",
+      "operation_type": "contract_interaction",
+      "signature": "depositTo(address)"
+    },
+    {
+      "name": "withdrawTo",
+      "operation_type": "contract_interaction",
+      "signature": "withdrawTo(address,uint256)"
+    },
+    {
+      "name": "getCurrentUserOpHash",
+      "operation_type": "contract_interaction",
+      "signature": "getCurrentUserOpHash()"
+    }
+  ],
+  "id": "ERC4337",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4337",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4337.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Historically, users could interact with Ethereum only by sending transactions from special accounts controlled by private keys, with transaction validation entirely enforced by fixed protocol rules. Account abstraction is an alternative model that allows each account to supply its own validation logic executed as smart contract code, while the protocol provides only minimal constraints. This document is an account abstraction proposal which completely avoids the need for consensus-layer protocol changes. Instead of adding new protocol features and changing the bottom-layer transaction type, this proposal instead introduces a higher-layer pseudo-transaction object called a `UserOperation`. Users send `UserOperation` objects into a separate mempool. A special class of actor called bundlers p",
+  "title": "Account Abstraction Using Alt Mempool"
+}

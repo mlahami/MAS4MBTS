@@ -1,0 +1,82 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5218",
+  "erc": "ERC-5218",
+  "events": [
+    {
+      "name": "CreateLicense",
+      "signature": "CreateLicense(uint256,uint256,uint256,address,string,address)"
+    },
+    {
+      "name": "RevokeLicense",
+      "signature": "RevokeLicense(uint256)"
+    },
+    {
+      "name": "TransferLicense",
+      "signature": "TransferLicense(uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isLicenseActive",
+      "operation_type": "contract_interaction",
+      "signature": "isLicenseActive(uint256)"
+    },
+    {
+      "name": "getLicenseTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "getLicenseTokenId(uint256)"
+    },
+    {
+      "name": "getParentLicenseId",
+      "operation_type": "contract_interaction",
+      "signature": "getParentLicenseId(uint256)"
+    },
+    {
+      "name": "getLicenseHolder",
+      "operation_type": "contract_interaction",
+      "signature": "getLicenseHolder(uint256)"
+    },
+    {
+      "name": "getLicenseURI",
+      "operation_type": "contract_interaction",
+      "signature": "getLicenseURI(uint256)"
+    },
+    {
+      "name": "getLicenseRevoker",
+      "operation_type": "contract_interaction",
+      "signature": "getLicenseRevoker(uint256)"
+    },
+    {
+      "name": "getLicenseIdByTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "getLicenseIdByTokenId(uint256)"
+    },
+    {
+      "name": "createLicense",
+      "operation_type": "contract_interaction",
+      "signature": "createLicense(uint256,uint256,address,string,address)"
+    },
+    {
+      "name": "revokeLicense",
+      "operation_type": "contract_interaction",
+      "signature": "revokeLicense(uint256)"
+    },
+    {
+      "name": "transferSublicense",
+      "operation_type": "contract_interaction",
+      "signature": "transferSublicense(uint256,address)"
+    }
+  ],
+  "id": "ERC5218",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5218",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5218.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard defines an API for managing NFT licenses. This standard provides basic functionality to create, transfer, and revoke licenses, and to determine the current licensing state of an NFT. The standard does not define the legal details of the license. Instead, it provides a structured framework for recording licensing details. We consider use cases of NFT creators who wish to give the NFT holder a copyright license to use a work associated with the NFT. The holder of an active license can issue sublicenses to others to carry out the rights granted under the license. The license can be transferred with the NFT, so do all the sublicenses. The license can optionally be revoked under conditions specified by the creator.",
+  "title": "NFT Rights Management"
+}

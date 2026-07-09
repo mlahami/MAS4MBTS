@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2335",
+  "erc": "ERC-2335",
+  "events": [],
+  "functions": [],
+  "id": "ERC2335",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2335",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2335.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "A keystore is a mechanism for storing private keys. It is a JSON file that encrypts a private key and is the standard for interchanging keys between devices as until a user provides their password, their key is safe.",
+  "title": "BLS12-381 Keystore"
+}

@@ -1,0 +1,69 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7566",
+  "erc": "ERC-7566",
+  "events": [],
+  "functions": [
+    {
+      "name": "createRoom",
+      "operation_type": "contract_interaction",
+      "signature": "createRoom()"
+    },
+    {
+      "name": "getRoomCount",
+      "operation_type": "contract_interaction",
+      "signature": "getRoomCount()"
+    },
+    {
+      "name": "joinRoom",
+      "operation_type": "contract_interaction",
+      "signature": "joinRoom(uint256)"
+    },
+    {
+      "name": "getMemberId",
+      "operation_type": "contract_interaction",
+      "signature": "getMemberId(uint256,address)"
+    },
+    {
+      "name": "hasMember",
+      "operation_type": "contract_interaction",
+      "signature": "hasMember(uint256,address)"
+    },
+    {
+      "name": "getRoomIds",
+      "operation_type": "contract_interaction",
+      "signature": "getRoomIds(address)"
+    },
+    {
+      "name": "getMemberCount",
+      "operation_type": "contract_interaction",
+      "signature": "getMemberCount(uint256)"
+    },
+    {
+      "name": "sendMessage",
+      "operation_type": "contract_interaction",
+      "signature": "sendMessage(uint256,uint256[],bytes,Types.Type[])"
+    },
+    {
+      "name": "getMessageIds",
+      "operation_type": "contract_interaction",
+      "signature": "getMessageIds(uint256,uint256)"
+    },
+    {
+      "name": "getMessage",
+      "operation_type": "contract_interaction",
+      "signature": "getMessage(uint256,uint256)"
+    }
+  ],
+  "id": "ERC7566",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7566",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7566.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a multiplayer game communication (MGC) interface, using `room` to match and group players, and using `message` to process actions between players. This allows one smart contract to handle multiple players playing games on the chain, preventing centralized servers from affecting the fairness of the game.",
+  "title": "Multiplayer Game Communication"
+}

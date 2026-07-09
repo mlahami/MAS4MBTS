@@ -1,0 +1,16 @@
+{
+  "category": "**: [Improper Initialization",
+  "cwe": "CWE-665",
+  "description": "This weakness occurs when upgradeable proxy contracts (e.g., UUPS or Transparent Proxy patterns) do not include a call to `_disableInitializers()` inside their constructor. Without this safeguard, malicious actors may invoke the `initialize()` function directly on the implementation contract. This can lead to takeover of admin roles, unauthorized ownership assignment, or malicious configuration of protocol-critical parameters. This mistake is frequently observed in contracts built with OpenZeppelin Upgradeable libraries where developers forget to disable initializers in the implementation contract\u2019s constructor.",
+  "id": "VULN-OWASP-SCWE-092",
+  "name": "Missing Disable Initializer in Constructor for Proxy Contracts",
+  "owasp": "SCWE-092",
+  "remediation": "- Always call `_disableInitializers()` in the constructor of implementation contracts. - Review all upgradeable contracts to ensure the implementation cannot be directly initialized. - Use OpenZeppelin\u2019s recommended pattern and annotations (e.g., `@custom:oz-upgrades-unsafe-allow constructor`) when disabling initializers.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-092.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

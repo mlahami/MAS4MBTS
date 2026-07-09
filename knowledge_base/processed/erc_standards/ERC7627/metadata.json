@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7627",
+  "erc": "ERC-7627",
+  "events": [
+    {
+      "name": "MessageSent",
+      "signature": "MessageSent(address,address,bytes32,bytes32,bytes)"
+    },
+    {
+      "name": "PublicKeyUpdated",
+      "signature": "PublicKeyUpdated(address,bytes32,PublicKey)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "updatePublicKey",
+      "operation_type": "contract_interaction",
+      "signature": "updatePublicKey(bytes32,PublicKey)"
+    },
+    {
+      "name": "sendMessage",
+      "operation_type": "contract_interaction",
+      "signature": "sendMessage(address,bytes32,bytes32,bytes)"
+    },
+    {
+      "name": "getUserPublicKey",
+      "operation_type": "contract_interaction",
+      "signature": "getUserPublicKey(address,bytes32)"
+    }
+  ],
+  "id": "ERC7627",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7627",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7627.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal implements the capability to securely exchange encrypted messages on-chain. Users can register their public keys and encryption algorithms by registration and subsequently send encrypted messages to other users using their addresses. The interface also includes enumerations for public key algorithms and a structure for user information to support various encryption algorithms and user information management.",
+  "title": "Secure Messaging Protocol"
+}

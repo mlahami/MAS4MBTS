@@ -1,0 +1,92 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2980",
+  "erc": "ERC-2980",
+  "events": [
+    {
+      "name": "FundsReassigned",
+      "signature": "FundsReassigned(address,address,uint256)"
+    },
+    {
+      "name": "FundsRevoked",
+      "signature": "FundsRevoked(address,uint256)"
+    },
+    {
+      "name": "FundsFrozen",
+      "signature": "FundsFrozen(address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "frozenlist",
+      "operation_type": "contract_interaction",
+      "signature": "frozenlist(address)"
+    },
+    {
+      "name": "whitelist",
+      "operation_type": "contract_interaction",
+      "signature": "whitelist(address)"
+    },
+    {
+      "name": "addAddressToWhitelist",
+      "operation_type": "contract_interaction",
+      "signature": "addAddressToWhitelist(address)"
+    },
+    {
+      "name": "removeAddressFromWhitelist",
+      "operation_type": "contract_interaction",
+      "signature": "removeAddressFromWhitelist(address)"
+    },
+    {
+      "name": "addAddressToFrozenlist",
+      "operation_type": "contract_interaction",
+      "signature": "addAddressToFrozenlist(address)"
+    },
+    {
+      "name": "removeAddressFromFrozenlist",
+      "operation_type": "contract_interaction",
+      "signature": "removeAddressFromFrozenlist(address)"
+    },
+    {
+      "name": "isIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "isIssuer(address)"
+    },
+    {
+      "name": "addIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "addIssuer(address)"
+    },
+    {
+      "name": "removeIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "removeIssuer(address)"
+    },
+    {
+      "name": "transferIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "transferIssuer(address)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(address)"
+    },
+    {
+      "name": "reassign",
+      "operation_type": "contract_interaction",
+      "signature": "reassign(address,address)"
+    }
+  ],
+  "id": "ERC2980",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2980",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2980.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This new standard is an [ERC-20](./eip-20.md) compatible token with restrictions that comply with the following Swiss laws: the [Stock Exchange Act](../assets/eip-2980/Swiss-Confederation-SESTA.pdf), the [Banking Act](../assets/eip-2980/Swiss-Confederation-BA.pdf), the [Financial Market Infrastructure Act](../assets/eip-2980/Swiss-Confederation-FMIA.pdf), the [Act on Collective Investment Schemes](../assets/eip-2980/Swiss-Confederation-CISA.pdf) and the [Anti-Money Laundering Act](../assets/eip-2980/Swiss-Confederation-AMLA.pdf). The [Financial Services Act](../assets/eip-2980/Swiss-Confederation-FINSA.pdf) and the [Financial Institutions Act](../assets/eip-2980/Swiss-Confederation-FINIA.pdf) must also be considered. The solution achieved meet also the European jurisdiction. This new stand",
+  "title": "Swiss Compliant Asset Token"
+}

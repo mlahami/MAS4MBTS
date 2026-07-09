@@ -1,0 +1,77 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4341",
+  "erc": "ERC-4341",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "TransferBatch",
+      "signature": "TransferBatch(address,address,uint256[],uint256[])"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "safePhraseTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safePhraseTransferFrom(address,address,uint256[],bytes)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address,uint256)"
+    },
+    {
+      "name": "balanceOfPhrase",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfPhrase(address)"
+    },
+    {
+      "name": "balanceOfBatch",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfBatch(address[],uint256[])"
+    },
+    {
+      "name": "retrievePhrase",
+      "operation_type": "contract_interaction",
+      "signature": "retrievePhrase(address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    }
+  ],
+  "id": "ERC4341",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4341",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4341.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard introduces a smart contract interface that can represent a batch of non-fungible tokens of which the ordering information shall be retained and managed. Such information is particularly useful if `tokenId`s are encoded with the sets of `unicodes` for logographic characters and emojis. As a result, NFTs can be utilized as carriers of meanings.",
+  "title": "Ordered NFT Batch Standard"
+}

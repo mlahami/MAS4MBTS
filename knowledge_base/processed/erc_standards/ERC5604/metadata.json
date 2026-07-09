@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5604",
+  "erc": "ERC-5604",
+  "events": [
+    {
+      "name": "OnLienPlaced",
+      "signature": "OnLienPlaced(uint256,address,bytes)"
+    },
+    {
+      "name": "OnLienRemoved",
+      "signature": "OnLienRemoved(uint256,address,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addLienHolder",
+      "operation_type": "contract_interaction",
+      "signature": "addLienHolder(uint256,address,bytes)"
+    },
+    {
+      "name": "removeLienHolder",
+      "operation_type": "contract_interaction",
+      "signature": "removeLienHolder(uint256,address,bytes)"
+    },
+    {
+      "name": "hasLien",
+      "operation_type": "contract_interaction",
+      "signature": "hasLien(uint256,address,bytes)"
+    }
+  ],
+  "id": "ERC5604",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5604",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5604.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC introduces NFT liens, a form of security interest over an item of property to secure the recovery of liability or performance of some other obligation. It introduces an interface to place and remove a lien, plus an event.",
+  "title": "NFT Lien"
+}

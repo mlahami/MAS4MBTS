@@ -1,0 +1,122 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7093",
+  "erc": "ERC-7093",
+  "events": [
+    {
+      "name": "RecoveryStarted",
+      "signature": "RecoveryStarted(bytes,uint256,uint48)"
+    },
+    {
+      "name": "RecoveryExecuted",
+      "signature": "RecoveryExecuted(bytes,uint256)"
+    },
+    {
+      "name": "RecoveryCanceled",
+      "signature": "RecoveryCanceled(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isValidSigners",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSigners(bytes[])"
+    },
+    {
+      "name": "isValidPermission",
+      "operation_type": "contract_interaction",
+      "signature": "isValidPermission(bytes32,bytes,bytes)"
+    },
+    {
+      "name": "isValidPermissions",
+      "operation_type": "contract_interaction",
+      "signature": "isValidPermissions(bytes32,bytes[],bytes[])"
+    },
+    {
+      "name": "getGuardianVerifierInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getGuardianVerifierInfo()"
+    },
+    {
+      "name": "verifyRecoveryPolicy",
+      "operation_type": "contract_interaction",
+      "signature": "verifyRecoveryPolicy(Permission[],uint64[])"
+    },
+    {
+      "name": "getPolicyVerifierInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getPolicyVerifierInfo()"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR_NAME",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR_NAME()"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR_VERSION",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR_VERSION()"
+    },
+    {
+      "name": "domainSeparatorV4",
+      "operation_type": "contract_interaction",
+      "signature": "domainSeparatorV4()"
+    },
+    {
+      "name": "updateGuardians",
+      "operation_type": "contract_interaction",
+      "signature": "updateGuardians(RecoveryConfigArg[])"
+    },
+    {
+      "name": "startRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "startRecovery(uint256,bytes,Permission[])"
+    },
+    {
+      "name": "executeRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "executeRecovery(uint256)"
+    },
+    {
+      "name": "cancelRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "cancelRecovery(uint256)"
+    },
+    {
+      "name": "cancelRecoveryByGuardians",
+      "operation_type": "contract_interaction",
+      "signature": "cancelRecoveryByGuardians(uint256,Permission[])"
+    },
+    {
+      "name": "isGuardian",
+      "operation_type": "contract_interaction",
+      "signature": "isGuardian(uint256,identity)"
+    },
+    {
+      "name": "getRecoveryConfigs",
+      "operation_type": "contract_interaction",
+      "signature": "getRecoveryConfigs()"
+    },
+    {
+      "name": "getRecoveryNonce",
+      "operation_type": "contract_interaction",
+      "signature": "getRecoveryNonce()"
+    },
+    {
+      "name": "getRecoveryStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getRecoveryStatus(address)"
+    }
+  ],
+  "id": "ERC7093",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7093",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7093.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes a standard interface for social recovery of smart contract accounts. It separates identity and policy verification from the recovery process, allowing more ways to authenticate (known as Guardians) than just on-chain accounts. It also lets users customize recovery policies without changing the account\u2019s smart contract.",
+  "title": "Social Recovery Interface"
+}

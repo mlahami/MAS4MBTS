@@ -1,0 +1,152 @@
+{
+  "sources": [
+    {
+      "id": "ethereum_ercs_repo",
+      "name": "Ethereum ERCs GitHub repository",
+      "url": "https://github.com/ethereum/ERCs",
+      "raw_url_template": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-{erc_number}.md",
+      "source_type": "official_erc_repository",
+      "authority_level": "primary",
+      "maintenance_status": "active",
+      "usage_policy": "Use for versioned ERC specification collection and change detection."
+    },
+    {
+      "id": "ethereum_ercs_website",
+      "name": "Ethereum ERC canonical website",
+      "url": "https://eips.ethereum.org/erc",
+      "canonical_url_template": "https://eips.ethereum.org/ERCS/erc-{erc_number}",
+      "source_type": "official_erc_publication",
+      "authority_level": "canonical",
+      "maintenance_status": "active",
+      "usage_policy": "Use as the canonical published URL stored in metadata."
+    },
+    {
+      "id": "swc_registry",
+      "name": "Smart Contract Weakness Classification Registry",
+      "url": "https://github.com/SmartContractSecurity/SWC-registry",
+      "source_type": "vulnerability_taxonomy",
+      "authority_level": "historical_reference",
+      "maintenance_status": "not_actively_maintained",
+      "usage_policy": "Use for legacy SWC labels and mappings, complemented by OWASP, CWE, and EthTrust."
+    },
+    {
+      "id": "owasp_smart_contract_security",
+      "name": "OWASP Smart Contract Security",
+      "url": "https://scs.owasp.org/",
+      "pages": [
+        {
+          "id": "owasp_scs_home",
+          "url": "https://scs.owasp.org/"
+        },
+        {
+          "id": "owasp_scs_top10",
+          "url": "https://scs.owasp.org/Top10/"
+        },
+        {
+          "id": "owasp_scwe",
+          "url": "https://scs.owasp.org/SCWE/"
+        },
+        {
+          "id": "owasp_scstg",
+          "url": "https://scs.owasp.org/SCSTG/"
+        },
+        {
+          "id": "owasp_scsvs",
+          "url": "https://scs.owasp.org/SCSVS/"
+        }
+      ],
+      "source_type": "security_standard",
+      "authority_level": "primary",
+      "maintenance_status": "active",
+      "usage_policy": "Use for smart-contract security controls, weaknesses, tests, and Top 10 categories."
+    },
+    {
+      "id": "cwe",
+      "name": "Common Weakness Enumeration",
+      "url": "https://cwe.mitre.org/",
+      "source_type": "weakness_taxonomy",
+      "authority_level": "primary",
+      "maintenance_status": "active",
+      "usage_policy": "Use as a generic software weakness taxonomy mapped to smart contract vulnerabilities."
+    },
+    {
+      "id": "ethtrust",
+      "name": "EEA EthTrust Security Levels",
+      "url": "https://entethalliance.org/specs/ethtrust-sl/",
+      "source_type": "smart_contract_security_standard",
+      "authority_level": "primary",
+      "maintenance_status": "active",
+      "usage_policy": "Use for Solidity-specific security requirements."
+    },
+    {
+      "id": "mitre_attack",
+      "name": "MITRE ATT&CK",
+      "url": "https://attack.mitre.org/",
+      "pages": [
+        {
+          "id": "mitre_attack_home",
+          "url": "https://attack.mitre.org/"
+        },
+        {
+          "id": "mitre_attack_enterprise",
+          "url": "https://attack.mitre.org/matrices/enterprise/"
+        },
+        {
+          "id": "mitre_attack_ics",
+          "url": "https://attack.mitre.org/matrices/ics/"
+        }
+      ],
+      "source_type": "adversary_behavior_knowledge_base",
+      "authority_level": "auxiliary",
+      "maintenance_status": "active",
+      "usage_policy": "Use as auxiliary knowledge for mapping generated threats to adversary tactics, techniques, and procedures."
+    },
+    {
+      "id": "first_cvss",
+      "name": "Common Vulnerability Scoring System",
+      "url": "https://www.first.org/cvss/",
+      "pages": [
+        {
+          "id": "first_cvss_home",
+          "url": "https://www.first.org/cvss/"
+        },
+        {
+          "id": "first_cvss_v4_0",
+          "url": "https://www.first.org/cvss/v4.0/specification-document"
+        },
+        {
+          "id": "first_cvss_v3_1",
+          "url": "https://www.first.org/cvss/v3.1/specification-document"
+        }
+      ],
+      "source_type": "risk_scoring_model",
+      "authority_level": "auxiliary",
+      "maintenance_status": "active",
+      "usage_policy": "Use for optional quantitative scoring of known vulnerabilities and generated threats."
+    },
+    {
+      "id": "dread",
+      "name": "DREAD risk assessment model",
+      "url": "N/A",
+      "source_type": "risk_scoring_model",
+      "authority_level": "auxiliary",
+      "maintenance_status": "historical",
+      "usage_policy": "Use as a lightweight qualitative scoring model for early-stage threat prioritization."
+    },
+    {
+      "id": "nist_sp_800_53",
+      "name": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final",
+      "pages": [
+        {
+          "id": "nist_sp_800_53_rev5_final",
+          "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+        }
+      ],
+      "source_type": "security_control_catalog",
+      "authority_level": "auxiliary",
+      "maintenance_status": "active",
+      "usage_policy": "Use as auxiliary knowledge for mitigation and control recommendations."
+    }
+  ]
+}

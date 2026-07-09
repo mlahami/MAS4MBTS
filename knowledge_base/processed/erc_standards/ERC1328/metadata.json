@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1328",
+  "erc": "ERC-1328",
+  "events": [],
+  "functions": [],
+  "id": "ERC1328",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1328",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1328.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard defines how the data to connect some application and a wallet can be encoded with a URI. This URI can then be shown either as a QR code or as a link.",
+  "title": "WalletConnect URI Format"
+}

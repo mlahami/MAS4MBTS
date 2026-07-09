@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8127",
+  "erc": "ERC-8127",
+  "events": [],
+  "functions": [],
+  "id": "ERC8127",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8127",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8127.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a format for identifying tokens in onchain registries using optional human readable aliases. A Token Identifier combines an optional human readable alias, a unique token ID from an onchain registry, and the registry location encoded as an [ERC-7930](./eip-7930.md) interoperable address. This format is useful for NFTs, real-world assets (RWAs), agents, and other tokenized assets. For example, agent registries like [ERC-8004](./eip-8004.md) can use this format to identify agents with human readable names.",
+  "title": "Human Readable Token Identifiers"
+}

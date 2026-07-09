@@ -1,0 +1,104 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1996",
+  "erc": "ERC-1996",
+  "events": [
+    {
+      "name": "HoldCreated",
+      "signature": "HoldCreated(address,string,address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "HoldExecuted",
+      "signature": "HoldExecuted(address,string,address,uint256,uint256)"
+    },
+    {
+      "name": "HoldReleased",
+      "signature": "HoldReleased(address,string,HoldStatusCode)"
+    },
+    {
+      "name": "HoldRenewed",
+      "signature": "HoldRenewed(address,string,uint256,uint256)"
+    },
+    {
+      "name": "AuthorizedHoldOperator",
+      "signature": "AuthorizedHoldOperator(address,address)"
+    },
+    {
+      "name": "RevokedHoldOperator",
+      "signature": "RevokedHoldOperator(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "hold",
+      "operation_type": "contract_interaction",
+      "signature": "hold(string,address,address,uint256,uint256)"
+    },
+    {
+      "name": "holdFrom",
+      "operation_type": "contract_interaction",
+      "signature": "holdFrom(string,address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "releaseHold",
+      "operation_type": "contract_interaction",
+      "signature": "releaseHold(string)"
+    },
+    {
+      "name": "executeHold",
+      "operation_type": "contract_interaction",
+      "signature": "executeHold(string,uint256)"
+    },
+    {
+      "name": "renewHold",
+      "operation_type": "contract_interaction",
+      "signature": "renewHold(string,uint256)"
+    },
+    {
+      "name": "retrieveHoldData",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveHoldData(string)"
+    },
+    {
+      "name": "balanceOnHold",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOnHold(address)"
+    },
+    {
+      "name": "netBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "netBalanceOf(address)"
+    },
+    {
+      "name": "totalSupplyOnHold",
+      "operation_type": "contract_interaction",
+      "signature": "totalSupplyOnHold()"
+    },
+    {
+      "name": "authorizeHoldOperator",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeHoldOperator(address)"
+    },
+    {
+      "name": "revokeHoldOperator",
+      "operation_type": "contract_interaction",
+      "signature": "revokeHoldOperator(address)"
+    },
+    {
+      "name": "isHoldOperatorFor",
+      "operation_type": "contract_interaction",
+      "signature": "isHoldOperatorFor(address,address)"
+    }
+  ],
+  "id": "ERC1996",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1996",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1996.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A hold specifies a payer, a payee, a maximum amount, a notary and an expiration time. When the hold is created, the specified token balance from the payer is put on hold. A held balance cannot be transferred until the hold is either executed or released. The hold can only be executed by the notary, which triggers the transfer of the tokens from the payer to the payee. If a hold is released, either by the notary at any time, or by anyone after the expiration, no transfer is carried out and the amount is available again for the payer. A hold can be partially executed, if the execution specifies an amount less than the maximum amount. In this case the specified amount is transferred to the payee and the remaining amount is available again to the payer. Holds can be specified to be perpetual.",
+  "title": "Holdable Token"
+}

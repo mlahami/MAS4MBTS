@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1581",
+  "erc": "ERC-1581",
+  "events": [],
+  "functions": [],
+  "id": "ERC1581",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1581",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1581.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "BIP32 defines a way to generate hierarchical trees of keys which can be derived from a common master key. BIP32 and [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) defines the usage of these keys as wallets. In this EIP we describe the usage of such keys outside the scope of the blockchain defining a logical tree for key usage which can coexist (and thus share the same master) with existing BIP44 compatible wallets.",
+  "title": "Non-wallet usage of keys derived from BIP-32 trees"
+}

@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5409",
+  "erc": "ERC-5409",
+  "events": [],
+  "functions": [
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    }
+  ],
+  "id": "ERC5409",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5409",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5409.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard is an extension of [EIP-1155](./eip-1155.md). It proposes an additional function, `ownerOf`, which allows EIP-1155 tokens to support Non-Fungibility (unique owners). By implementing this extra function, EIP-1155 tokens can benefit from [EIP-721](./eip-721.md)'s core functionality without implementing the (less efficient) EIP-721 specification in the same contract.",
+  "title": "EIP-1155 Non-Fungible Token extension"
+}

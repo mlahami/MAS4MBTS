@@ -1,0 +1,76 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-823",
+  "erc": "ERC-823",
+  "events": [
+    {
+      "name": "Exchange",
+      "signature": "Exchange(address,address,uint)"
+    },
+    {
+      "name": "ExchangeSpent",
+      "signature": "ExchangeSpent(address,address,address,uint)"
+    },
+    {
+      "name": "Exchange",
+      "signature": "Exchange(address,address,uint,address)"
+    },
+    {
+      "name": "ExchangeAndSpent",
+      "signature": "ExchangeAndSpent(address,address,uint,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "exchangeToken",
+      "operation_type": "contract_interaction",
+      "signature": "exchangeToken(address,uint)"
+    },
+    {
+      "name": "exchangeAndSpend",
+      "operation_type": "contract_interaction",
+      "signature": "exchangeAndSpend(address,uint,address)"
+    },
+    {
+      "name": "__exchangerCallback",
+      "operation_type": "contract_interaction",
+      "signature": "__exchangerCallback(address,address,uint)"
+    },
+    {
+      "name": "__targetExchangeCallback",
+      "operation_type": "contract_interaction",
+      "signature": "__targetExchangeCallback(uint,uint)"
+    },
+    {
+      "name": "__targetExchangeAndSpendCallback",
+      "operation_type": "contract_interaction",
+      "signature": "__targetExchangeAndSpendCallback(address,address,uint)"
+    },
+    {
+      "name": "registerToken",
+      "operation_type": "contract_interaction",
+      "signature": "registerToken(address)"
+    },
+    {
+      "name": "exchangeToken",
+      "operation_type": "contract_interaction",
+      "signature": "exchangeToken(address,uint,address)"
+    },
+    {
+      "name": "exchangeAndSpend",
+      "operation_type": "contract_interaction",
+      "signature": "exchangeAndSpend(address,uint,address,address)"
+    }
+  ],
+  "id": "ERC823",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-823",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-823.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard provides functionally to make payments in the form of any other registered tokens, as well as allow token contracts to store any other tokens in an existing token contract. This standard allows ERC20 token holders to exchange their token with another ERC20 token and use the exchanged tokens to make payments. After a successful payment, the former specified ERC20 tokens, will be stored within the ERC20 token contract they are exchanged with. This proposal uses the term target contract which is used to denote the contract to the token with whom we want to exchange our tokens.",
+  "title": "Token Exchange Standard"
+}

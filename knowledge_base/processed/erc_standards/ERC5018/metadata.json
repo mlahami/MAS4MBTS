@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5018",
+  "erc": "ERC-5018",
+  "events": [],
+  "functions": [
+    {
+      "name": "write",
+      "operation_type": "contract_interaction",
+      "signature": "write(bytes,bytes)"
+    },
+    {
+      "name": "read",
+      "operation_type": "contract_interaction",
+      "signature": "read(bytes)"
+    },
+    {
+      "name": "size",
+      "operation_type": "contract_interaction",
+      "signature": "size(bytes)"
+    },
+    {
+      "name": "remove",
+      "operation_type": "contract_interaction",
+      "signature": "remove(bytes)"
+    },
+    {
+      "name": "countChunks",
+      "operation_type": "contract_interaction",
+      "signature": "countChunks(bytes)"
+    },
+    {
+      "name": "writeChunk",
+      "operation_type": "contract_interaction",
+      "signature": "writeChunk(bytes,uint256,bytes)"
+    },
+    {
+      "name": "readChunk",
+      "operation_type": "contract_interaction",
+      "signature": "readChunk(bytes,uint256)"
+    },
+    {
+      "name": "chunkSize",
+      "operation_type": "contract_interaction",
+      "signature": "chunkSize(bytes,uint256)"
+    },
+    {
+      "name": "removeChunk",
+      "operation_type": "contract_interaction",
+      "signature": "removeChunk(bytes,uint256)"
+    },
+    {
+      "name": "truncate",
+      "operation_type": "contract_interaction",
+      "signature": "truncate(bytes,uint256)"
+    },
+    {
+      "name": "getChunkHash",
+      "operation_type": "contract_interaction",
+      "signature": "getChunkHash(bytes,uint256)"
+    }
+  ],
+  "id": "ERC5018",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5018",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5018.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standardizes an API for directories and files within smart contracts, similar to traditional filesystems. This standard provides basic functionality to read/write binary objects of any size, as well as allow reading/writing chunks of the object if the object is too large to fit in a single transaction.",
+  "title": "Filesystem-like Interface for Contracts"
+}

@@ -1,0 +1,70 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8153",
+  "erc": "ERC-8153",
+  "events": [
+    {
+      "name": "FacetAdded",
+      "signature": "FacetAdded(address)"
+    },
+    {
+      "name": "FacetReplaced",
+      "signature": "FacetReplaced(address,address)"
+    },
+    {
+      "name": "FacetRemoved",
+      "signature": "FacetRemoved(address)"
+    },
+    {
+      "name": "DiamondDelegateCall",
+      "signature": "DiamondDelegateCall(address,bytes)"
+    },
+    {
+      "name": "DiamondMetadata",
+      "signature": "DiamondMetadata(bytes32,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "facets",
+      "operation_type": "contract_interaction",
+      "signature": "facets()"
+    },
+    {
+      "name": "facetFunctionSelectors",
+      "operation_type": "contract_interaction",
+      "signature": "facetFunctionSelectors(address)"
+    },
+    {
+      "name": "facetAddresses",
+      "operation_type": "contract_interaction",
+      "signature": "facetAddresses()"
+    },
+    {
+      "name": "facetAddress",
+      "operation_type": "contract_interaction",
+      "signature": "facetAddress(bytes4)"
+    },
+    {
+      "name": "exportSelectors",
+      "operation_type": "contract_interaction",
+      "signature": "exportSelectors()"
+    },
+    {
+      "name": "upgradeDiamond",
+      "operation_type": "contract_interaction",
+      "signature": "upgradeDiamond(address[],FacetReplacement[],address[],address,bytes,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC8153",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8153",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8153.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "A diamond is a proxy contract that `delegatecall`s to multiple implementation contracts called facets. ![Diagram showing how a diamond contract works](../assets/eip-8153/basic-diamond-diagram.svg) Diamond contracts were originally standardized by [ERC-2535](./eip-2535). This ERC builds on that foundation by defining a facet-based architecture in which facets self-describe their function selectors through a standardized introspection interface. By moving selector discovery on-chain, this approach eliminates the need for off-chain selector management. As a result, diamond deployment and upgrades become simpler, more deterministic, and more gas efficient. This ERC introduces a facet introspection function, `exportSelectors()`, which every facet MUST implement. This function returns the list o",
+  "title": "Facet-Based Diamonds"
+}

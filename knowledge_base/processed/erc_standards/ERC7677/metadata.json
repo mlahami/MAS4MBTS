@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7677",
+  "erc": "ERC-7677",
+  "events": [],
+  "functions": [],
+  "id": "ERC7677",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7677",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7677.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "With [EIP-5792](./eip-5792.md), apps can communicate with wallets about advanced features via capabilities. This proposal defines a capability that allows apps to request that [ERC-4337](./eip-4337.md) wallets communicate with a specified paymaster web service. To support this, we also define a standardized API for paymaster web services.",
+  "title": "Paymaster Web Service Capability"
+}

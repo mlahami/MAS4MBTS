@@ -1,0 +1,78 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-900",
+  "erc": "ERC-900",
+  "events": [
+    {
+      "name": "Staked",
+      "signature": "Staked(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "Unstaked",
+      "signature": "Unstaked(address,uint256,uint256,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "stake",
+      "operation_type": "contract_interaction",
+      "signature": "stake(uint256,bytes)"
+    },
+    {
+      "name": "stakeFor",
+      "operation_type": "contract_interaction",
+      "signature": "stakeFor(address,uint256,bytes)"
+    },
+    {
+      "name": "unstake",
+      "operation_type": "contract_interaction",
+      "signature": "unstake(uint256,bytes)"
+    },
+    {
+      "name": "totalStakedFor",
+      "operation_type": "contract_interaction",
+      "signature": "totalStakedFor(address)"
+    },
+    {
+      "name": "totalStaked",
+      "operation_type": "contract_interaction",
+      "signature": "totalStaked()"
+    },
+    {
+      "name": "token",
+      "operation_type": "contract_interaction",
+      "signature": "token()"
+    },
+    {
+      "name": "supportsHistory",
+      "operation_type": "contract_interaction",
+      "signature": "supportsHistory()"
+    },
+    {
+      "name": "lastStakedFor",
+      "operation_type": "contract_interaction",
+      "signature": "lastStakedFor(address)"
+    },
+    {
+      "name": "totalStakedForAt",
+      "operation_type": "contract_interaction",
+      "signature": "totalStakedForAt(address,uint256)"
+    },
+    {
+      "name": "totalStakedAt",
+      "operation_type": "contract_interaction",
+      "signature": "totalStakedAt(uint256)"
+    }
+  ],
+  "id": "ERC900",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-900",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-900.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard describes a common staking interface allowing for easy to use staking systems. The interface is kept simple allowing for various use cases to be implemented. This standard describes the common functionality for staking as well as providing information on stakes.",
+  "title": "Simple Staking Interface"
+}

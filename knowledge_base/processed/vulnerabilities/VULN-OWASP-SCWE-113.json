@@ -1,0 +1,16 @@
+{
+  "category": "Origin Validation Error",
+  "cwe": "CWE-346",
+  "description": "TWAP oracles that use very short windows or a single cumulative observation can be manipulated within a block or a few trades. Attackers can swing the average price temporarily to borrow, liquidate, or mint at a favorable rate.",
+  "id": "VULN-OWASP-SCWE-113",
+  "name": "Insufficient TWAP Window or Single Observation",
+  "owasp": "SCWE-113",
+  "remediation": "- Use sufficiently long averaging windows and multiple observations with minimum elapsed time. - Enforce maximum per-block updates to prevent same-block manipulation. - Cross-check TWAP output against external reference feeds or deviation thresholds.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-113.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

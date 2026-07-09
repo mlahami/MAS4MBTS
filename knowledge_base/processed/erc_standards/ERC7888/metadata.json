@@ -1,0 +1,97 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7888",
+  "erc": "ERC-7888",
+  "events": [
+    {
+      "name": "MessageBroadcast",
+      "signature": "MessageBroadcast(bytes32,address)"
+    },
+    {
+      "name": "ImplementationAddressSet",
+      "signature": "ImplementationAddressSet(uint256,address,bytes32,address)"
+    },
+    {
+      "name": "Burn",
+      "signature": "Burn(BurnMessage)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "broadcastMessage",
+      "operation_type": "contract_interaction",
+      "signature": "broadcastMessage(bytes32)"
+    },
+    {
+      "name": "verifyTargetStateCommitment",
+      "operation_type": "contract_interaction",
+      "signature": "verifyTargetStateCommitment(bytes32,bytes)"
+    },
+    {
+      "name": "getTargetStateCommitment",
+      "operation_type": "contract_interaction",
+      "signature": "getTargetStateCommitment(bytes)"
+    },
+    {
+      "name": "verifyStorageSlot",
+      "operation_type": "contract_interaction",
+      "signature": "verifyStorageSlot(bytes32,bytes)"
+    },
+    {
+      "name": "version",
+      "operation_type": "contract_interaction",
+      "signature": "version()"
+    },
+    {
+      "name": "implementationCodeHash",
+      "operation_type": "contract_interaction",
+      "signature": "implementationCodeHash()"
+    },
+    {
+      "name": "implementationAddress",
+      "operation_type": "contract_interaction",
+      "signature": "implementationAddress()"
+    },
+    {
+      "name": "accumulator",
+      "operation_type": "contract_interaction",
+      "signature": "accumulator(address[])"
+    },
+    {
+      "name": "verifyBroadcastMessage",
+      "operation_type": "contract_interaction",
+      "signature": "verifyBroadcastMessage(RemoteReadArgs,bytes32,address)"
+    },
+    {
+      "name": "updateStateProverCopy",
+      "operation_type": "contract_interaction",
+      "signature": "updateStateProverCopy(RemoteReadArgs,IStateProver)"
+    },
+    {
+      "name": "stateProverCopy",
+      "operation_type": "contract_interaction",
+      "signature": "stateProverCopy(bytes32)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(address,uint256)"
+    },
+    {
+      "name": "mintTokens",
+      "operation_type": "contract_interaction",
+      "signature": "mintTokens(IReceiver.RemoteReadArgs,BurnMessage)"
+    }
+  ],
+  "id": "ERC7888",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7888",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7888.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a protocol for cross-rollup messaging using state commitments. Users can broadcast messages on a source chain, and those messages can be verified on any other chain that shares a common ancestor with the source chain. A state commitment is a `bytes32` hash that commits to a chain's state (e.g., block hash or state root). The protocol supports different types of state commitments depending on what the rollup commits to its parent chain. Block hashes are the recommended state commitment, but state roots or other commitments may be used, such as batch hashes (since some rollups don't commit single blocks, but batches of blocks instead). Each chain deploys a singleton Receiver and Broadcaster contract. Broadcasters store messages; Receivers verify the Broadcasters' state on re",
+  "title": "Crosschain Broadcaster"
+}

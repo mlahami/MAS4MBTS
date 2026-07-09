@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Using block values (such as `block.timestamp`, `block.number`, or `block.difficulty` / `block.prevrandao` post-merge) as a proxy for time in Ethereum smart contracts can be problematic. Block values are determined by validators (or miners on PoW chains) and can be manipulated within certain limits, making them unreliable for time-sensitive logic. Relying on these values for critical decisions like deadlines or expiration dates can result in unexpected behaviors, such as manipulations by validators (or miners on PoW chains) or unintended contract states.",
+  "id": "VULN-OWASP-SCWE-065",
+  "name": "Block Values as a Proxy for Time",
+  "owasp": "SCWE-065",
+  "remediation": "To mitigate this vulnerability, account for the manipulation bounds of block values. `block.timestamp` can vary by ~15 seconds per block; design deadlines and time checks with this tolerance in mind. Time oracles are uncommon; the standard approach is to use `block.timestamp` with appropriate buffers. Where precision is critical, consider commit-reveal or multi-block confirmation.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-065.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,115 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-777",
+  "erc": "ERC-777",
+  "events": [
+    {
+      "name": "Sent",
+      "signature": "Sent(address,address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "Minted",
+      "signature": "Minted(address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "Burned",
+      "signature": "Burned(address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "AuthorizedOperator",
+      "signature": "AuthorizedOperator(address,address)"
+    },
+    {
+      "name": "RevokedOperator",
+      "signature": "RevokedOperator(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "granularity",
+      "operation_type": "contract_interaction",
+      "signature": "granularity()"
+    },
+    {
+      "name": "defaultOperators",
+      "operation_type": "contract_interaction",
+      "signature": "defaultOperators()"
+    },
+    {
+      "name": "isOperatorFor",
+      "operation_type": "contract_interaction",
+      "signature": "isOperatorFor(address,address)"
+    },
+    {
+      "name": "authorizeOperator",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeOperator(address)"
+    },
+    {
+      "name": "revokeOperator",
+      "operation_type": "contract_interaction",
+      "signature": "revokeOperator(address)"
+    },
+    {
+      "name": "send",
+      "operation_type": "contract_interaction",
+      "signature": "send(address,uint256,bytes)"
+    },
+    {
+      "name": "operatorSend",
+      "operation_type": "contract_interaction",
+      "signature": "operatorSend(address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256,bytes)"
+    },
+    {
+      "name": "operatorBurn",
+      "operation_type": "contract_interaction",
+      "signature": "operatorBurn(address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "tokensToSend",
+      "operation_type": "contract_interaction",
+      "signature": "tokensToSend(address,address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "tokensReceived",
+      "operation_type": "contract_interaction",
+      "signature": "tokensReceived(address,address,address,uint256,bytes,bytes)"
+    }
+  ],
+  "id": "ERC777",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-777",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-777.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard defines a new way to interact with a token contract while remaining backward compatible with [ERC-20]. It defines advanced features to interact with tokens. Namely, *operators* to send tokens on behalf of another address&mdash;contract or regular account&mdash;and send/receive *hooks* to offer token holders more control over their tokens. It takes advantage of [ERC-1820] to find out whether and where to notify contracts and regular addresses when they receive tokens as well as to allow compatibility with already-deployed contracts.",
+  "title": "Token Standard"
+}

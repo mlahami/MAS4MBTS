@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1154",
+  "erc": "ERC-1154",
+  "events": [],
+  "functions": [
+    {
+      "name": "receiveResult",
+      "operation_type": "contract_interaction",
+      "signature": "receiveResult(bytes32,bytes)"
+    },
+    {
+      "name": "resultFor",
+      "operation_type": "contract_interaction",
+      "signature": "resultFor(bytes32)"
+    }
+  ],
+  "id": "ERC1154",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1154",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1154.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Withdrawn",
+  "summary": "In order for ethereum smart contracts to interact with off-chain systems, oracles must be used. These oracles report values which are normally off-chain, allowing smart contracts to react to the state of off-chain systems. A distinction and a choice is made between push and pull based oracle systems. Furthermore, a standard interface for oracles is described here, allowing different oracle implementations to be interchangeable.",
+  "title": "Oracle Interface"
+}

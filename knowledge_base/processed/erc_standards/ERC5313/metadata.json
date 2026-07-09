@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5313",
+  "erc": "ERC-5313",
+  "events": [],
+  "functions": [
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    }
+  ],
+  "id": "ERC5313",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5313",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5313.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This specification defines the minimum interface required to identify an account that controls a contract.",
+  "title": "Light Contract Ownership"
+}

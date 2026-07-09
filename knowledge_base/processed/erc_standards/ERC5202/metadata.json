@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5202",
+  "erc": "ERC-5202",
+  "events": [],
+  "functions": [],
+  "id": "ERC5202",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5202",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5202.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Define a standard for \"blueprint\" contracts, or contracts which represent initcode that is stored on-chain.",
+  "title": "Blueprint contract format"
+}

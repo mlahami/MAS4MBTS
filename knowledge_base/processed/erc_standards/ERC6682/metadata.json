@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6682",
+  "erc": "ERC-6682",
+  "events": [],
+  "functions": [
+    {
+      "name": "flashFeeToken",
+      "operation_type": "contract_interaction",
+      "signature": "flashFeeToken()"
+    },
+    {
+      "name": "availableForFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "availableForFlashLoan(address,uint256)"
+    },
+    {
+      "name": "maxFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "maxFlashLoan(address)"
+    },
+    {
+      "name": "flashFee",
+      "operation_type": "contract_interaction",
+      "signature": "flashFee(address,uint256)"
+    },
+    {
+      "name": "flashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "flashLoan(IERC3156FlashBorrower,address,uint256,bytes)"
+    },
+    {
+      "name": "onERC721Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC721Received(address,address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC6682",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6682",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6682.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension of the existing flashloan standard ([ERC-3156](./eip-3156.md)) to support [ERC-721](./eip-721.md) NFT flashloans. It proposes a way for flashloan providers to lend NFTs to contracts, with the condition that the loan is repaid in the same transaction along with some fee.",
+  "title": "NFT Flashloans"
+}

@@ -1,0 +1,97 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4973",
+  "erc": "ERC-4973",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(msg.sender,to,tokenId)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(from,msg.sender,tokenId)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "unequip",
+      "operation_type": "contract_interaction",
+      "signature": "unequip(address)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "unequip",
+      "operation_type": "contract_interaction",
+      "signature": "unequip(uint256)"
+    },
+    {
+      "name": "isValidSignatureNow",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignatureNow(...)"
+    },
+    {
+      "name": "give",
+      "operation_type": "contract_interaction",
+      "signature": "give(...)"
+    },
+    {
+      "name": "give",
+      "operation_type": "contract_interaction",
+      "signature": "give(address,bytes,bytes)"
+    },
+    {
+      "name": "take",
+      "operation_type": "contract_interaction",
+      "signature": "take(...)"
+    },
+    {
+      "name": "take",
+      "operation_type": "contract_interaction",
+      "signature": "take(address,bytes,bytes)"
+    },
+    {
+      "name": "decodeURI",
+      "operation_type": "contract_interaction",
+      "signature": "decodeURI(bytes)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(...)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(...)"
+    }
+  ],
+  "id": "ERC4973",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4973",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4973.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Proposes a standard API for account-bound Tokens (ABT) within smart contracts. An ABT is a non-fungible token bound to a single account. ABTs don't implement a canonical interface for transfers. This EIP defines basic functionality to mint, assign, revoke and track ABTs.",
+  "title": "Account-bound Tokens"
+}

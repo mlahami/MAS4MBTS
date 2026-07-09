@@ -1,0 +1,16 @@
+{
+  "category": "** Use of a Broken or Risky Cryptographic Algorithm",
+  "cwe": "CWE-327",
+  "description": "Vulnerable cryptographic algorithms refer to the use of outdated or insecure cryptographic algorithms, such as MD5 or SHA-1. This can lead to: - Exploitation of the contract\u2019s logic. - Loss of funds or data. - Reduced trust in the contract\u2019s security.",
+  "id": "VULN-OWASP-SCWE-027",
+  "name": "Vulnerable Cryptographic Algorithms",
+  "owasp": "SCWE-027",
+  "remediation": "- **Use secure algorithms:** Leverage modern cryptographic algorithms like SHA-256 or Keccak-256. - **Avoid deprecated algorithms:** Do not use algorithms known to be insecure. - **Test thoroughly:** Conduct extensive testing to ensure cryptographic security.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-027.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

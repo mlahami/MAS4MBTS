@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7598",
+  "erc": "ERC-7598",
+  "events": [],
+  "functions": [
+    {
+      "name": "transferWithAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "transferWithAuthorization(address,address,uint256,uint256,uint256,bytes32,bytes)"
+    },
+    {
+      "name": "receiveWithAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "receiveWithAuthorization(address,address,uint256,uint256,uint256,bytes32,bytes)"
+    },
+    {
+      "name": "cancelAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "cancelAuthorization(address,bytes32,bytes)"
+    },
+    {
+      "name": "transferWithAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "transferWithAuthorization(address,address,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "_transferWithAuthorization",
+      "operation_type": "contract_interaction",
+      "signature": "_transferWithAuthorization(address,address,uint256,uint256,uint256,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7598",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7598",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7598.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal aims to extend the functionality of the existing [ERC-3009](./eip-3009.md) standard, \"Transfer With Authorization,\" to support transfer operations initiated by smart contract wallets.",
+  "title": "Use contract signature for signed transfer"
+}

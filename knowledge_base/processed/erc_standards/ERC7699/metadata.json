@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7699",
+  "erc": "ERC-7699",
+  "events": [
+    {
+      "name": "TransferReference",
+      "signature": "TransferReference(bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,bytes)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "_logReference",
+      "operation_type": "contract_interaction",
+      "signature": "_logReference(bytes)"
+    }
+  ],
+  "id": "ERC7699",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7699",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7699.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The [ERC-20](./eip-20.md) token standard does not provide a built-in mechanism for including a payment transfer reference (message for recipient) in token transfers. This proposal extends the existing ERC-20 token standard by adding minimal methods to include a transfer reference in token transfers and transferFrom operations. The addition of a reference can help users, merchants, and service providers to associate and reconcile individual transactions with specific orders or invoices.",
+  "title": "ERC-20 Transfer Reference Extension"
+}

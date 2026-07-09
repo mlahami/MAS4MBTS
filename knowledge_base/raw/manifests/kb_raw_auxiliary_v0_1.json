@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-07-06T14:57:36+00:00",
+  "file_count": 7,
+  "raw_root": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw",
+  "snapshot_id": "kb_raw_auxiliary_v0_1",
+  "source_count": 3,
+  "source_records": [
+    {
+      "collected_at": "2026-07-06T14:57:22+00:00",
+      "files": [
+        {
+          "bytes": 1510478,
+          "page_id": "mitre_attack_home",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\mitre_attack\\mitre_attack_home.html",
+          "sha256": "deb01d761ac935c8106cfae211657fa91b0cfb9c1dfdc371848b9ca85cf1ef32",
+          "status": 200,
+          "url": "https://attack.mitre.org/"
+        },
+        {
+          "bytes": 1507328,
+          "page_id": "mitre_attack_enterprise",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\mitre_attack\\mitre_attack_enterprise.html",
+          "sha256": "994cf506b6c9ec3ee4c4ffab119d3eb198b92f45052d28131dbd1dbe1c4a6b40",
+          "status": 200,
+          "url": "https://attack.mitre.org/matrices/enterprise/"
+        },
+        {
+          "bytes": 248077,
+          "page_id": "mitre_attack_ics",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\mitre_attack\\mitre_attack_ics.html",
+          "sha256": "58333405ec4ffe2892b904eb54e0eddf5bceaef179d0d7bbb96cc90e4c4c0fa0",
+          "status": 200,
+          "url": "https://attack.mitre.org/matrices/ics/"
+        }
+      ],
+      "source_id": "mitre_attack"
+    },
+    {
+      "collected_at": "2026-07-06T14:57:30+00:00",
+      "files": [
+        {
+          "bytes": 29644,
+          "page_id": "first_cvss_home",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\risk_models\\cvss\\first_cvss_home.html",
+          "sha256": "3342e3eb27235ce500f0ae4de6f1d468e300cbbef470be21debf303fdcd5240a",
+          "status": 200,
+          "url": "https://www.first.org/cvss/"
+        },
+        {
+          "bytes": 118262,
+          "page_id": "first_cvss_v4_0",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\risk_models\\cvss\\first_cvss_v4_0.html",
+          "sha256": "0261643143e3a639a4a47a7c9ed44bf9aa61bb6f7bf7ebb429496ca80bc70d76",
+          "status": 200,
+          "url": "https://www.first.org/cvss/v4.0/specification-document"
+        },
+        {
+          "bytes": 89589,
+          "page_id": "first_cvss_v3_1",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\risk_models\\cvss\\first_cvss_v3_1.html",
+          "sha256": "3b27ec7e1e6c8334b3d0248c353c389eeea739c26957e16d014e4c25919b2315",
+          "status": 200,
+          "url": "https://www.first.org/cvss/v3.1/specification-document"
+        }
+      ],
+      "source_id": "first_cvss"
+    },
+    {
+      "collected_at": "2026-07-06T14:57:36+00:00",
+      "files": [
+        {
+          "bytes": 57367,
+          "page_id": "nist_sp_800_53_rev5_final",
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\nist\\nist_sp_800_53_rev5_final.html",
+          "sha256": "de62322e3b82e9aeb45d79c5d0548e816c78f103a1979989111fb16b1125f3b4",
+          "status": 200,
+          "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+        }
+      ],
+      "source_id": "nist_sp_800_53"
+    }
+  ]
+}

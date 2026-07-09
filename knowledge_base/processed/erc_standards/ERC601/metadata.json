@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-601",
+  "erc": "ERC-601",
+  "events": [],
+  "functions": [],
+  "id": "ERC601",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-601",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-601.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP defines a logical hierarchy for deterministic wallets based on [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), the purpose scheme defined in [BIP43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki) and eip-draft-ethereum-purpose. This EIP is a particular application of eip-draft-ethereum-purpose.",
+  "title": "Ethereum hierarchy for deterministic wallets"
+}

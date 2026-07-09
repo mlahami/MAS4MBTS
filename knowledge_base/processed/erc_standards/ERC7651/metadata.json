@@ -1,0 +1,135 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7651",
+  "erc": "ERC-7651",
+  "events": [
+    {
+      "name": "FractionalApproval",
+      "signature": "FractionalApproval(address,address,uint256)"
+    },
+    {
+      "name": "FractionalTransfer",
+      "signature": "FractionalTransfer(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "NonFungibleApproval",
+      "signature": "NonFungibleApproval(address,address,uint256)"
+    },
+    {
+      "name": "NonFungibleTransfer",
+      "signature": "NonFungibleTransfer(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "getBankedNFTsLength",
+      "operation_type": "contract_interaction",
+      "signature": "getBankedNFTsLength()"
+    },
+    {
+      "name": "getBankedNFTs",
+      "operation_type": "contract_interaction",
+      "signature": "getBankedNFTs(uint256,uint256)"
+    },
+    {
+      "name": "totalNonFungibleSupply",
+      "operation_type": "contract_interaction",
+      "signature": "totalNonFungibleSupply()"
+    }
+  ],
+  "id": "ERC7651",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7651",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7651.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a standard for fractionally represented non-fungible tokens, allowing NFTs to be managed and owned fractionally within a single contract. This approach enables NFTs to coexist with an underlying fungible representation seamlessly, enhancing liquidity and access without dividing the NFT itself, or requiring an explicit conversion step. The standard includes mechanisms for both fractional and whole token transfers, approvals, and event emissions. This specification draws from design in both [ERC-721](./eip-721.md) and [ERC-20](./eip-20.md), but is not fully compatible with either standard.",
+  "title": "Fractionally Represented Non-Fungible Token"
+}

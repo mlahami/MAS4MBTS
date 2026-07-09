@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7887",
+  "erc": "ERC-7887",
+  "events": [],
+  "functions": [],
+  "id": "ERC7887",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7887",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7887.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The following standard extends [ERC-7540](./eip-7540.md) by adding support for asynchronous cancelation flows. New methods are added to asynchronously cancel a deposit or redeem Request, view the status of the cancelation Request, and claim the assets or shares as a result of the cancelation Request.",
+  "title": "Cancelation for ERC-7540 Tokenized Vaults"
+}

@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3668",
+  "erc": "ERC-3668",
+  "events": [],
+  "functions": [
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "balanceOfWithProof",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfWithProof(bytes,bytes)"
+    },
+    {
+      "name": "a",
+      "operation_type": "contract_interaction",
+      "signature": "a(bytes)"
+    },
+    {
+      "name": "aCallback",
+      "operation_type": "contract_interaction",
+      "signature": "aCallback(bytes,bytes)"
+    },
+    {
+      "name": "httpcall",
+      "operation_type": "contract_interaction",
+      "signature": "httpcall(urls,to,callData)"
+    },
+    {
+      "name": "durin_call",
+      "operation_type": "contract_interaction",
+      "signature": "durin_call(provider,to,data)"
+    }
+  ],
+  "id": "ERC3668",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3668",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3668.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Contracts wishing to support lookup of data from external sources may, instead of returning the data directly, revert using `OffchainLookup(address sender, string[] urls, bytes callData, bytes4 callbackFunction, bytes extraData)`. Clients supporting this specification then make an RPC call to a URL from `urls`, supplying `callData`, and getting back an opaque byte string `response`. Finally, clients call the function specified by `callbackFunction` on the contract, providing `response` and `extraData`. The contract can then decode and verify the returned data using an implementation-specific method. This mechanism allows for offchain lookups of data in a way that is transparent to clients, and allows contract authors to implement whatever validation is necessary; in many cases this can be",
+  "title": "CCIP Read\u2014Secure offchain data retrieval"
+}

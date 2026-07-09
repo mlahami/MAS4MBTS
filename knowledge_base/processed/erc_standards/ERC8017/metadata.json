@@ -1,0 +1,77 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8017",
+  "erc": "ERC-8017",
+  "events": [
+    {
+      "name": "Purchased",
+      "signature": "Purchased(address,address,uint256,uint256)"
+    },
+    {
+      "name": "PaymentConfigUpdated",
+      "signature": "PaymentConfigUpdated(address,uint256,address)"
+    },
+    {
+      "name": "OwnershipTransferred",
+      "signature": "OwnershipTransferred(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "payoutAsset",
+      "operation_type": "contract_interaction",
+      "signature": "payoutAsset()"
+    },
+    {
+      "name": "desiredAsset",
+      "operation_type": "contract_interaction",
+      "signature": "desiredAsset()"
+    },
+    {
+      "name": "requiredPayment",
+      "operation_type": "contract_interaction",
+      "signature": "requiredPayment()"
+    },
+    {
+      "name": "paymentSink",
+      "operation_type": "contract_interaction",
+      "signature": "paymentSink()"
+    },
+    {
+      "name": "purchase",
+      "operation_type": "contract_interaction",
+      "signature": "purchase(address)"
+    },
+    {
+      "name": "setRequiredPayment",
+      "operation_type": "contract_interaction",
+      "signature": "setRequiredPayment(uint256)"
+    },
+    {
+      "name": "setPaymentSink",
+      "operation_type": "contract_interaction",
+      "signature": "setPaymentSink(address)"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    },
+    {
+      "name": "transferOwnership",
+      "operation_type": "contract_interaction",
+      "signature": "transferOwnership(address)"
+    }
+  ],
+  "id": "ERC8017",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8017",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8017.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC specifies a small contract surface for a \"payout race\": a bucket that holds a single payout asset type and transfers the entire bucket to a recipient when a caller pays a fixed **required payment** in a configured desired payment asset. The desired payment asset can be ETH or one [ERC-20](./eip-20.md). The payout asset can be ETH or one ERC-20. This ERC is inspired by the Uniswap Foundation's **Unistaker** proposal, which introduced the term **Payout Race** and motivated this design.",
+  "title": "Payout Race"
+}

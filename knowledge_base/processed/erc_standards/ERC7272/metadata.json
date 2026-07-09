@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7272",
+  "erc": "ERC-7272",
+  "events": [],
+  "functions": [],
+  "id": "ERC7272",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7272",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7272.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "An Ethereum Access Token (EAT) is an [EIP-712](./eip-712.md) conformant, signed message, used by off-chain services to grant Ethereum accounts access to specific on-chain resources. EATs share similarities with JSON Web Tokens (JWTs); both are used for short-lived authorizations. However Ethereum Access Tokens are specifically designed to be verified on-chain and tailored to authorize smart contract function calls.",
+  "title": "Ethereum Access Token"
+}

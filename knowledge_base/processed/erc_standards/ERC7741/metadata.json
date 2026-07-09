@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7741",
+  "erc": "ERC-7741",
+  "events": [
+    {
+      "name": "OperatorSet",
+      "signature": "OperatorSet(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setOperator",
+      "operation_type": "contract_interaction",
+      "signature": "setOperator(address,bool)"
+    },
+    {
+      "name": "isOperator",
+      "operation_type": "contract_interaction",
+      "signature": "isOperator(address,address)"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR()"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(address,bytes32,bytes)"
+    },
+    {
+      "name": "authorizeOperator",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeOperator(address,address,bool,bytes32,uint256,bytes)"
+    },
+    {
+      "name": "invalidateNonce",
+      "operation_type": "contract_interaction",
+      "signature": "invalidateNonce(bytes32)"
+    }
+  ],
+  "id": "ERC7741",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7741",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7741.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "A set of functions to enable meta-transactions and atomic interactions with contracts implementing an operator model, via signatures conforming to the [EIP-712](./eip-712.md) typed message signing specification.",
+  "title": "Authorize Operator"
+}

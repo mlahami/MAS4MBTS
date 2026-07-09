@@ -1,0 +1,81 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5501",
+  "erc": "ERC-5501",
+  "events": [
+    {
+      "name": "UpdateUser",
+      "signature": "UpdateUser(uint256,address,uint64,bool)"
+    },
+    {
+      "name": "AgreeToTerminateBorrow",
+      "signature": "AgreeToTerminateBorrow(uint256,address,bool)"
+    },
+    {
+      "name": "ResetTerminationAgreements",
+      "signature": "ResetTerminationAgreements(uint256)"
+    },
+    {
+      "name": "TerminateBorrow",
+      "signature": "TerminateBorrow(uint256,address,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setUser",
+      "operation_type": "contract_interaction",
+      "signature": "setUser(uint256,address,uint64,bool)"
+    },
+    {
+      "name": "userOf",
+      "operation_type": "contract_interaction",
+      "signature": "userOf(uint256)"
+    },
+    {
+      "name": "userExpires",
+      "operation_type": "contract_interaction",
+      "signature": "userExpires(uint256)"
+    },
+    {
+      "name": "userIsBorrowed",
+      "operation_type": "contract_interaction",
+      "signature": "userIsBorrowed(uint256)"
+    },
+    {
+      "name": "userBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "userBalanceOf(address)"
+    },
+    {
+      "name": "tokenOfUserByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "tokenOfUserByIndex(address,uint256)"
+    },
+    {
+      "name": "setBorrowTermination",
+      "operation_type": "contract_interaction",
+      "signature": "setBorrowTermination(uint256)"
+    },
+    {
+      "name": "getBorrowTermination",
+      "operation_type": "contract_interaction",
+      "signature": "getBorrowTermination(uint256)"
+    },
+    {
+      "name": "terminateBorrow",
+      "operation_type": "contract_interaction",
+      "signature": "terminateBorrow(uint256)"
+    }
+  ],
+  "id": "ERC5501",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5501",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5501.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard proposes an additional `user` role for [EIP-721](./eip-721.md). This role grants the permission to use the NFT with no ability to transfer or set users. It has an expiry and a flag if the token is borrowed or not. `Owner` can delegate the NFT for usage to hot wallets or lend the NFT. If the token is borrowed, not even the owner can change the user until the status expires or both parties agree to terminate. This way, it is possible to keep both roles active at the same time.",
+  "title": "Rental & Delegation NFT - EIP-721 Extension"
+}

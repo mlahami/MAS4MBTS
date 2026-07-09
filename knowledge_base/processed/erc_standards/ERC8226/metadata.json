@@ -1,0 +1,165 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8226",
+  "erc": "ERC-8226",
+  "events": [
+    {
+      "name": "PrincipalGranted",
+      "signature": "PrincipalGranted(address,bytes32)"
+    },
+    {
+      "name": "PrincipalRevoked",
+      "signature": "PrincipalRevoked(address,bytes32,ReasonCode)"
+    },
+    {
+      "name": "MandateGranted",
+      "signature": "MandateGranted(address,address,address,address,uint48,uint48,bytes32)"
+    },
+    {
+      "name": "ActionEnabled",
+      "signature": "ActionEnabled(address,address,bytes32)"
+    },
+    {
+      "name": "MandateRevoked",
+      "signature": "MandateRevoked(address,address,address)"
+    },
+    {
+      "name": "MandateExtended",
+      "signature": "MandateExtended(address,address,uint48)"
+    },
+    {
+      "name": "OperatorSet",
+      "signature": "OperatorSet(address,address,bool)"
+    },
+    {
+      "name": "ExecutionRecorded",
+      "signature": "ExecutionRecorded(address,address,bytes32,uint256,uint256)"
+    },
+    {
+      "name": "AgentFrozen",
+      "signature": "AgentFrozen(address,address)"
+    },
+    {
+      "name": "AgentUnfrozen",
+      "signature": "AgentUnfrozen(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "grantPrincipal",
+      "operation_type": "contract_interaction",
+      "signature": "grantPrincipal(address,bytes32,uint48)"
+    },
+    {
+      "name": "revokePrincipal",
+      "operation_type": "contract_interaction",
+      "signature": "revokePrincipal(address,ReasonCode)"
+    },
+    {
+      "name": "checkPrincipal",
+      "operation_type": "contract_interaction",
+      "signature": "checkPrincipal(address,bytes32)"
+    },
+    {
+      "name": "canExecute",
+      "operation_type": "contract_interaction",
+      "signature": "canExecute(address,address,address,bytes32,uint256)"
+    },
+    {
+      "name": "grantMandate",
+      "operation_type": "contract_interaction",
+      "signature": "grantMandate(GrantMandateParams,bytes)"
+    },
+    {
+      "name": "revokeMandate",
+      "operation_type": "contract_interaction",
+      "signature": "revokeMandate(address,address,uint256,bytes)"
+    },
+    {
+      "name": "extendMandate",
+      "operation_type": "contract_interaction",
+      "signature": "extendMandate(address,address,uint48,uint256,bytes)"
+    },
+    {
+      "name": "freezeAgent",
+      "operation_type": "contract_interaction",
+      "signature": "freezeAgent(address)"
+    },
+    {
+      "name": "unfreezeAgent",
+      "operation_type": "contract_interaction",
+      "signature": "unfreezeAgent(address)"
+    },
+    {
+      "name": "setOperator",
+      "operation_type": "contract_interaction",
+      "signature": "setOperator(address,address,bool,uint256,bytes)"
+    },
+    {
+      "name": "recordExecution",
+      "operation_type": "contract_interaction",
+      "signature": "recordExecution(address,address,bytes32,uint256)"
+    },
+    {
+      "name": "isActionEnabled",
+      "operation_type": "contract_interaction",
+      "signature": "isActionEnabled(address,address,bytes32)"
+    },
+    {
+      "name": "getMandate",
+      "operation_type": "contract_interaction",
+      "signature": "getMandate(address,address)"
+    },
+    {
+      "name": "isOperator",
+      "operation_type": "contract_interaction",
+      "signature": "isOperator(address,address)"
+    },
+    {
+      "name": "isFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "isFrozen(address)"
+    },
+    {
+      "name": "nonces",
+      "operation_type": "contract_interaction",
+      "signature": "nonces(address)"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR()"
+    },
+    {
+      "name": "selector",
+      "operation_type": "contract_interaction",
+      "signature": "selector(as)"
+    },
+    {
+      "name": "canTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "canTransfer(address,address,uint256)"
+    },
+    {
+      "name": "_update",
+      "operation_type": "contract_interaction",
+      "signature": "_update(address,address,uint256)"
+    },
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(address,bytes)"
+    }
+  ],
+  "id": "ERC8226",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8226",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8226.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines a compliance delegation layer for AI agents operating on tokenized regulated assets. It specifies how a verified principal can delegate scoped, time-bounded, and financially capped authority to an on-chain agent, and how a regulated token verifies the mandate before an agent-initiated action. Regulated Agent Mandate Standard, or RAMS, is agnostic to the agent identity system, the token standard, and the token compliance framework. It works with any agent identity system (such as [ERC-8004](./eip-8004.md)), any token standard ([ERC-20](./eip-20.md), [ERC-721](./eip-721.md), [ERC-1155](./eip-1155.md)), and any regulated token standard (such as [ERC-7943](./eip-7943.md) or [ERC-3643](./eip-3643.md)).",
+  "title": "Regulated Agent Mandate"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Insecure oracle data updates refer to the failure to properly validate or secure updates to oracle data. This can lead to: - Unauthorized actions by malicious actors. - Loss of funds or data. - Exploitation of the contract's logic.",
+  "id": "VULN-OWASP-SCWE-030",
+  "name": "Insecure Oracle Data Updates",
+  "owasp": "SCWE-030",
+  "remediation": "- **Validate updates:** Ensure all oracle data updates are properly validated. - **Restrict access:** Restrict update permissions to trusted addresses. - **Implement timelocks:** Add delays to oracle updates to allow for review.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-030.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

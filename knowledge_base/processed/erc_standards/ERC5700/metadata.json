@@ -1,0 +1,94 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5700",
+  "erc": "ERC-5700",
+  "events": [
+    {
+      "name": "Bind",
+      "signature": "Bind(address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "Unbind",
+      "signature": "Unbind(address,address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "Bind",
+      "signature": "Bind(address,address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "BindBatch",
+      "signature": "BindBatch(address,address,address,uint256,uint256[],uint256[])"
+    },
+    {
+      "name": "Unbind",
+      "signature": "Unbind(address,address,address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "UnbindBatch",
+      "signature": "UnbindBatch(address,address,address,address,uint256,uint256[],uint256[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "bind",
+      "operation_type": "contract_interaction",
+      "signature": "bind(address,address,uint256,uint256)"
+    },
+    {
+      "name": "unbind",
+      "operation_type": "contract_interaction",
+      "signature": "unbind(address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "binderOf",
+      "operation_type": "contract_interaction",
+      "signature": "binderOf(uint256)"
+    },
+    {
+      "name": "boundBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "boundBalanceOf(address,uint256)"
+    },
+    {
+      "name": "bind",
+      "operation_type": "contract_interaction",
+      "signature": "bind(address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "batchBind",
+      "operation_type": "contract_interaction",
+      "signature": "batchBind(address,address,uint256,uint256[],uint256[])"
+    },
+    {
+      "name": "unbind",
+      "operation_type": "contract_interaction",
+      "signature": "unbind(address,address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "batchUnbind",
+      "operation_type": "contract_interaction",
+      "signature": "batchUnbind(address,address,address,uint256,uint256[],uint256[])"
+    },
+    {
+      "name": "boundBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "boundBalanceOf(address,uint256,uint256)"
+    },
+    {
+      "name": "boundBalanceOfBatch",
+      "operation_type": "contract_interaction",
+      "signature": "boundBalanceOfBatch(address,uint256[],uint256[])"
+    }
+  ],
+  "id": "ERC5700",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5700",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5700.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines an interface for [ERC-721](./eip-721.md) or [ERC-1155](./eip-155.md) tokens, known as \"bindables\", to \"bind\" to [ERC-721](./eip-721.md) NFTs. When bindable tokens \"bind\" to an NFT, even though their ownership is transferred to the NFT, the NFT owner may \"unbind\" the tokens and claim their ownership. This enables bindable tokens to transfer with their bound NFTs without extra cost, offering a more effective way to create and transfer N:1 token-to-NFT bundles. Until an NFT owner decides to unbind them, bound tokens stay locked and resume their base token functionalities after unbinding. This standard supports various use-cases such as: - NFT-bundled physical assets like microchipped streetwear, digitized car collections, and digitally twinned real estate. - NFT-bundled",
+  "title": "Bindable Token Interface"
+}

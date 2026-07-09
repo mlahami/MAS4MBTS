@@ -1,0 +1,184 @@
+{
+  "ercStandard": "ERC-4626",
+  "ercStandards": [
+    "ERC-4626",
+    "ERC-20"
+  ],
+  "contractName": "TokenizedVault4626",
+  "address": "N/A",
+  "compilerVersion": "^0.8.20",
+  "sourceType": "solidity",
+  "inheritance": [
+    "ERC4626",
+    "Ownable"
+  ],
+  "imports": [
+    "@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol",
+    "@openzeppelin/contracts/access/Ownable.sol"
+  ],
+  "functions": [
+    {
+      "name": "asset",
+      "signature": "asset()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "address"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "totalAssets",
+      "signature": "totalAssets()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "convertToShares",
+      "signature": "convertToShares(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "convertToAssets",
+      "signature": "convertToAssets(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "maxDeposit",
+      "signature": "maxDeposit(address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "previewDeposit",
+      "signature": "previewDeposit(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "deposit",
+      "signature": "deposit(uint256,address)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Vault deposit"
+    },
+    {
+      "name": "maxMint",
+      "signature": "maxMint(address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "previewMint",
+      "signature": "previewMint(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "mint",
+      "signature": "mint(uint256,address)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Token minting"
+    },
+    {
+      "name": "maxWithdraw",
+      "signature": "maxWithdraw(address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "previewWithdraw",
+      "signature": "previewWithdraw(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "withdraw",
+      "signature": "withdraw(uint256,address,address)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Vault withdrawal"
+    },
+    {
+      "name": "maxRedeem",
+      "signature": "maxRedeem(address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "previewRedeem",
+      "signature": "previewRedeem(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "redeem",
+      "signature": "redeem(uint256,address,address)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Vault redemption"
+    }
+  ],
+  "events": [],
+  "modifiers": [],
+  "stateVariables": []
+}

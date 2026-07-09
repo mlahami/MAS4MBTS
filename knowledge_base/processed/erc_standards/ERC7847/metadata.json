@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7847",
+  "erc": "ERC-7847",
+  "events": [
+    {
+      "name": "PubEvent",
+      "signature": "PubEvent(bytes32,bytes32,uint256,uint32,string,string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createPost",
+      "operation_type": "contract_interaction",
+      "signature": "createPost(uint256,string,bytes32,bytes32,uint256,uint32,string,string,string)"
+    }
+  ],
+  "id": "ERC7847",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7847",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7847.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal defines a standardized format for representing decentralized social media posts as NFTs. The Nostr protocol has done most of the heavy lifting for creating an open decentralized social media network. This ERC serves to adapt those standards to the most common blockchain non-fungible token standard. In this way we can take advantage of the reach and longevity of a blockchain. It is genericized here so that it can be easily mapped to other event based decentralized social media like the AT protocol. An event can be used as a social media post, blog post, forum post, encrypted message, RSS feed or arbitrary electronic publication. This model is flexible where the meaning and type of an event (original, reply, repost, images, video, text, etc...) is derived from its metadata. A u",
+  "title": "Social Media NFTs"
+}

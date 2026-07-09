@@ -1,0 +1,172 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7629",
+  "erc": "ERC-7629",
+  "events": [
+    {
+      "name": "ERC20Transfer",
+      "signature": "ERC20Transfer(address,address,uint256)"
+    },
+    {
+      "name": "ERC721Transfer",
+      "signature": "ERC721Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "ERC20Approval",
+      "signature": "ERC20Approval(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "ERC20ToERC721",
+      "signature": "ERC20ToERC721(address,uint256,uint256)"
+    },
+    {
+      "name": "ERC20ToERC721",
+      "signature": "ERC20ToERC721(address,uint256,uint256[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "erc20TotalSupply",
+      "operation_type": "contract_interaction",
+      "signature": "erc20TotalSupply()"
+    },
+    {
+      "name": "erc20BalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "erc20BalanceOf(address)"
+    },
+    {
+      "name": "erc721TotalSupply",
+      "operation_type": "contract_interaction",
+      "signature": "erc721TotalSupply()"
+    },
+    {
+      "name": "erc721BalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "erc721BalanceOf(address)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(uint256)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "owned",
+      "operation_type": "contract_interaction",
+      "signature": "owned(address)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "getUnit",
+      "operation_type": "contract_interaction",
+      "signature": "getUnit()"
+    },
+    {
+      "name": "erc721ToERC20",
+      "operation_type": "contract_interaction",
+      "signature": "erc721ToERC20(uint256)"
+    },
+    {
+      "name": "erc20ToERC721",
+      "operation_type": "contract_interaction",
+      "signature": "erc20ToERC721(uint256)"
+    }
+  ],
+  "id": "ERC7629",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7629",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7629.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a protocol that establishes a unified interface for managing both [ERC-20](./eip-20.md) fungible tokens and [ERC-721](./eip-721.md) non-fungible tokens (NFTs) on the Ethereum blockchain. By defining a common set of functions applicable to both token types, developers can seamlessly interact with [ERC-20](./eip-20.md) and [ERC-721](./eip-721.md) tokens using a single interface. This simplifies integration efforts and enhances interoperability within decentralized applications (DApps).",
+  "title": "ERC-20/ERC-721 Unified Token Interface"
+}

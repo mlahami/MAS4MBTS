@@ -1,0 +1,392 @@
+site_name: OWASP Smart Contract Security
+site_url: https://scs.owasp.org
+repo_url: https://github.com/OWASP/owasp-scs
+repo_name: OWASP/owasp-scs
+# use_directory_urls: false # only set for mkdocs build
+
+# https://www.mkdocs.org/user-guide/configuration/#validation
+# due to our use of mkdocs-awesome-pages-plugin, we need to ignore absolute links for nav
+validation:
+  nav:
+    absolute_links: ignore
+
+nav:
+  - Home: index.md
+  - SCSVS:
+    - SCSVS/index.md
+    - Intro:
+        - ... | flat | SCSVS/0[1-4]*.md
+    - SCSVS-ARCH:
+        - Overview: SCSVS/05-SCSVS-ARCH.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-ARCH*.md
+    - SCSVS-CODE:
+        - Overview: SCSVS/06-SCSVS-CODE.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-CODE*.md
+    - SCSVS-GOV:
+        - Overview: SCSVS/07-SCSVS-GOV.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-GOV*.md
+    - SCSVS-AUTH:
+        - Overview: SCSVS/08-SCSVS-AUTH.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-AUTH*.md
+    - SCSVS-COMM:
+        - Overview: SCSVS/09-SCSVS-COMM.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-COMM*.md
+    - SCSVS-CRYPTO:
+        - Overview: SCSVS/10-SCSVS-CRYPTO.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-CRYPTO*.md
+    - SCSVS-ORACLE:
+        - Overview: SCSVS/11-SCSVS-ORACLE.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-ORACLE*.md
+    - SCSVS-BLOCK:
+        - Overview: SCSVS/12-SCSVS-BLOCK.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-BLOCK*.md
+    - SCSVS-BRIDGE:
+        - Overview: SCSVS/13-SCSVS-BRIDGE.md
+        - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-BRIDGE*.md
+    - SCSVS-DEFI:
+      - Overview: SCSVS/14-SCSVS-DEFI.md
+      - Controls:
+        - ... | flat | SCSVS/controls/SCSVS-DEFI*.md
+    - SCSVS-COMP:
+      - Overview: SCSVS/15-SCSVS-COMP.md
+      - Controls:
+          - ... | flat | SCSVS/controls/SCSVS-COMP*.md
+    - Appendix:
+      - ... | flat | SCSVS/1[6-7]*.md
+
+  - "Smart Contract Top 10":
+    - sctop10/index.md
+    - "Alternate Top 15 - Web3 Attack Vectors": sctop10/Web3-Attack-Vectors-Top15.md
+    - "SC01:2026 - Access Control Vulnerabilities": sctop10/SC01-AccessControlVulnerabilities.md
+    - "SC02:2026 - Business Logic Vulnerabilities": sctop10/SC02-BusinessLogicVulnerabilities.md
+    - "SC03:2026 - Price Oracle Manipulation": sctop10/SC03-PriceOracleManipulation.md
+    - "SC04:2026 - Flash Loan–Facilitated Attacks": sctop10/SC04-FlashLoanAttacks.md
+    - "SC05:2026 - Lack of Input Validation": sctop10/SC05-LackOfInputValidation.md
+    - "SC06:2026 - Unchecked External Calls": sctop10/SC06-UncheckedExternalCalls.md
+    - "SC07:2026 - Arithmetic Errors (Rounding & Precision Loss)": sctop10/SC07-ArithmeticErrors.md
+    - "SC08:2026 - Reentrancy Attacks": sctop10/SC08-ReentrancyAttacks.md
+    - "SC09:2026 - Integer Overflow and Underflow": sctop10/SC09-IntegerOverflowUnderflow.md
+    - "SC10:2026 - Proxy & Upgradeability Vulnerabilities": sctop10/SC10-ProxyAndUpgradeabilityVulnerabilities.md
+    - "Methodology & Data":
+      - "Ranking Methodology": sctop10/methodology.md
+      - "Data Sources": sctop10/data-sources.md
+    - "Archive":
+      - "2025":
+        - "Top10:2025": sctop10/archive/2025/Top10:2025.md
+        - "SC01:2025 - Access Control Vulnerabilities": sctop10/archive/2025/SC01-AccessControlVulnerabilities.md
+        - "SC02:2025 - Price Oracle Manipulation": sctop10/archive/2025/SC02-PriceOracleManipulation.md
+        - "SC03:2025 - Logic Errors": sctop10/archive/2025/SC03-LogicErrors.md
+        - "SC04:2025 - Lack of Input Validation": sctop10/archive/2025/SC04-LackOfInputValidation.md
+        - "SC05:2025 - Reentrancy Attacks": sctop10/archive/2025/SC05-Reentrancy.md
+        - "SC06:2025 - Unchecked External Calls": sctop10/archive/2025/SC06-UncheckedExternalCalls.md
+        - "SC07:2025 - Flash Loan Attacks": sctop10/archive/2025/SC07-FlashLoanAttacks.md
+        - "SC08:2025 - Integer Overflow and Underflow": sctop10/archive/2025/SC08-IntegerOverUnderFlow.md
+        - "SC09:2025 - Insecure Randomness": sctop10/archive/2025/SC09-InsecureRandomness.md
+        - "SC10:2025 - Denial of Service (DoS) Attacks": sctop10/archive/2025/SC10-DenialOfService.md
+      - "2023":
+        - "Top10:2023": sctop10/archive/2023/Top10:2023.md
+
+  - SCSTG:
+      - SCSTG/index.md
+      - Intro:
+        - ... | flat | SCSTG/0x0[1-2]*.md 
+        - ... | flat | SCSTG/0x09*.md
+      - General Concepts:
+        - ... | flat | SCSTG/0x04*.md
+      - Tests (Beta):
+        - SCSTG/tests/index.md
+        - Solidity:
+          - SCSVS-ARCH:  
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-ARCH/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-ARCH/*.md
+          - SCSVS-CODE:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-CODE/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-CODE/*.md
+          - SCSVS-GOV:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-GOV/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-GOV/*.md
+          - SCSVS-AUTH:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-AUTH/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-AUTH/*.md
+          - SCSVS-COMM:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-COMM/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-COMM/*.md
+          - SCSVS-CRYPTO:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-CRYPTO/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-CRYPTO/*.md
+          - SCSVS-ORACLE:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-ORACLE/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-ORACLE/*.md
+          - SCSVS-BLOCK:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-BLOCK/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-BLOCK/*.md
+          - SCSVS-BRIDGE:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-BRIDGE/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-BRIDGE/*.md
+          - SCSVS-DEFI:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-DEFI/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-DEFI/*.md
+          - SCSVS-COMP:
+            - Overview: 
+              - ... | flat | SCSTG/tests/SCSVS-COMP/overview/*.md
+            - Tests: 
+              - ... | flat | SCSTG/tests/SCSVS-COMP/*.md
+
+
+  - "SCWE": 
+    - SCWE/index.md
+    - SCSVS-ARCH:
+      - ... | flat | SCWE/SCSVS-ARCH/*.md
+    - SCSVS-CODE:
+      - ... | flat | SCWE/SCSVS-CODE/*.md
+    - SCSVS-GOV:
+      - ... | flat | SCWE/SCSVS-GOV/*.md
+    - SCSVS-AUTH:
+      - ... | flat | SCWE/SCSVS-AUTH/*.md
+    - SCSVS-COMM:
+      - ... | flat | SCWE/SCSVS-COMM/*.md
+    - SCSVS-CRYPTO:
+      - ... | flat | SCWE/SCSVS-CRYPTO/*.md
+    - SCSVS-ORACLE:
+      - ... | flat | SCWE/SCSVS-ORACLE/*.md
+    - SCSVS-BLOCK:
+      - ... | flat | SCWE/SCSVS-BLOCK/*.md
+    - SCSVS-BRIDGE:
+      - ... | flat | SCWE/SCSVS-BRIDGE/*.md
+    - SCSVS-DEFI:
+      - ... | flat | SCWE/SCSVS-DEFI/*.md
+    - SCSVS-COMP:
+      - ... | flat | SCWE/SCSVS-COMP/*.md
+
+
+  - "SCS Checklist":
+     - checklists/index.md
+     - "✨ Interactive Checklist": checklists/interactive.md
+
+
+
+  - News:
+      - news
+  - talks.md
+  - "&#11088; Contribute":
+      - contributing.md
+      - ... | flat | contributing/*.md
+  - "&#128153; Donate":
+      - donate.md
+      - ... | flat | donate/*.md
+  - contact.md
+
+copyright: |
+  <div style="float: left; padding-right: 1em;">
+    <a href="https://www.owasp.org"><img src="https://github.com/OWASP/owasp-scs/blob/main/docs/assets/OWASP_logo_white.png?raw=true" width="100px" /></a>
+  </div>
+  <span style="font-size: smaller">
+    &#169; OWASP Foundation 2026. This work is licensed under 
+    <a href="https://creativecommons.org/licenses/by/4.0">CC-BY-4.0</a>. For any reuse or distribution, you must make clear to others the license terms of this work.
+  </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-scs/blob/master/about_cookies.md">Learn more</a>.</span>
+  <div style="color: #6a6868; font-size: smaller"><span>Made with</span> <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>  | <i>Website Created by <a href="https://www.linkedin.com/in/pratik-lagaskar/" target="_blank">Pratik Lagaskar</a>.</i> | <i>Covers Designed by <a href="https://www.linkedin.com/in/siddharth-neekher-340519117" target="_blank">Siddharth Neekher</a>.</i></div>
+
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: assets/logo_circle.png
+  favicon: assets/logo_circle.png
+  icon:
+    repo: fontawesome/brands/github
+    tag:
+      android: material/android
+      ios: material/apple
+      p: material/eye-circle-outline
+      l1: material/circle
+      l2: material/circle-multiple-outline
+      R: material/circle-double
+      draft: material/information-outline
+      new: material/alert-decagram
+      tool: octicons/tools-24
+      test: octicons/codescan-checkmark-24
+      app: octicons/code-square-24
+      demo: material/flask-outline
+      tech: material/magic-staff 
+      scwe: octicons/shield-24
+      scsvs: simple/owasp
+  features:
+    - search.suggest
+    - search.share
+    # - toc.integrate
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+   # - navigation.sections
+    - toc.follow
+    #- navigation.expand
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    # - navigation.sections
+    - content.code.copy
+    - content.action.edit
+    - announce.dismiss
+
+
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/interactive-checklist.css
+  - https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css
+extra_javascript:
+  - javascripts/external_links.js
+  - https://code.jquery.com/jquery-3.5.1.js
+  - https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js
+  - javascripts/datatables.js
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js
+  - javascripts/interactive-checklist.js
+plugins:
+  # Uses https://github.com/mkdocs/mkdocs-redirects getting the redirects map from src/scripts/generate_redirects.py
+  - search
+  - awesome-pages
+  - mermaid2
+  - blog:
+  # https://squidfunk.github.io/mkdocs-material/plugins/blog/
+      blog_dir: news
+      pagination_per_page: 10
+      post_excerpt_max_authors: 2
+  - tags
+      # tags_file: tags.md # TODO: bug in mkdocs? dynamic tags from hooks not appearing in tags.md
+markdown_extensions:
+  - markdown_grid_tables
+  - meta
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.progressbar
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      check_paths: true
+      restrict_base_path: false
+      base_path:
+        - !relative # allows to include snippets from the same folder
+        # - docs/SCSTG/ # alternative to include snippets from specific folders
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+hooks:
+  - docs/hooks/add_rid_to_checklist.py
+  - docs/hooks/replace_snippets.py
+  - docs/hooks/update_titles.py
+  - docs/hooks/scwe-beta-banner.py
+  - docs/hooks/add-tags.py
+  - docs/hooks/add-cross-references.py
+  - docs/hooks/edit_button_uri.py
+  - docs/hooks/resolve_references.py
+  - docs/hooks/create_dynamic_tables.py
+  - docs/hooks/update_git_info.py
+  - docs/hooks/add-checklists-banner.py
+
+extra:
+  version:
+    default: development
+  generator: false 
+  analytics:
+    provider: google
+    property: G-5M75MP33XQ
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://owasp.slack.com/archives/C07MNDE6TPZ
+    - icon: fontawesome/brands/twitter 
+      link: https://x.com/scs_owasp
+    - icon: fontawesome/brands/github
+      link: https://github.com/OWASP/owasp-scs/discussions
+  tags:
+    android: android
+    ios: ios
+    P: p
+    L1: l1
+    L2: l2
+    R: r
+    draft: draft
+    new: new
+    tool: tool
+    test: test
+    app: app
+    demo: demo
+    tech: tech
+    scwe: scwe
+    SCSVS: SCSVS
+  status:
+    draft: This page is in draft.
+    new: New in this beta!

@@ -1,0 +1,92 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5725",
+  "erc": "ERC-5725",
+  "events": [
+    {
+      "name": "PayoutClaimed",
+      "signature": "PayoutClaimed(uint256,address,uint256)"
+    },
+    {
+      "name": "ClaimApprovalForAll",
+      "signature": "ClaimApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "ClaimApproval",
+      "signature": "ClaimApproval(address,address,uint256,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim(uint256)"
+    },
+    {
+      "name": "claimedPayout",
+      "operation_type": "contract_interaction",
+      "signature": "claimedPayout(uint256)"
+    },
+    {
+      "name": "claimablePayout",
+      "operation_type": "contract_interaction",
+      "signature": "claimablePayout(uint256)"
+    },
+    {
+      "name": "vestedPayout",
+      "operation_type": "contract_interaction",
+      "signature": "vestedPayout(uint256)"
+    },
+    {
+      "name": "vestedPayoutAtTime",
+      "operation_type": "contract_interaction",
+      "signature": "vestedPayoutAtTime(uint256,uint256)"
+    },
+    {
+      "name": "vestingPayout",
+      "operation_type": "contract_interaction",
+      "signature": "vestingPayout(uint256)"
+    },
+    {
+      "name": "vestingPeriod",
+      "operation_type": "contract_interaction",
+      "signature": "vestingPeriod(uint256)"
+    },
+    {
+      "name": "payoutToken",
+      "operation_type": "contract_interaction",
+      "signature": "payoutToken(uint256)"
+    },
+    {
+      "name": "setClaimApprovalForAll",
+      "operation_type": "contract_interaction",
+      "signature": "setClaimApprovalForAll(address,bool)"
+    },
+    {
+      "name": "setClaimApproval",
+      "operation_type": "contract_interaction",
+      "signature": "setClaimApproval(address,bool,uint256)"
+    },
+    {
+      "name": "isClaimApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isClaimApprovedForAll(address,address)"
+    },
+    {
+      "name": "getClaimApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getClaimApproved(uint256)"
+    }
+  ],
+  "id": "ERC5725",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5725",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5725.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A **Non-Fungible Token** (NFT) standard used to vest tokens ([ERC-20](./eip-20.md) or otherwise) over a vesting release curve. The following standard allows for the implementation of a standard API for NFT based contracts that hold and represent the vested and locked properties of any underlying token ([ERC-20](./eip-20.md) or otherwise) that is emitted to the NFT holder. This standard is an extension of the [ERC-721](./eip-721.md) token that provides basic functionality for creating vesting NFTs, claiming the tokens and reading vesting curve properties.",
+  "title": "Transferable Vesting NFT"
+}

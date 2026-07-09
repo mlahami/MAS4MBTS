@@ -1,0 +1,104 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-162",
+  "erc": "ERC-162",
+  "events": [],
+  "functions": [
+    {
+      "name": "state",
+      "operation_type": "contract_interaction",
+      "signature": "state(bytes32)"
+    },
+    {
+      "name": "entries",
+      "operation_type": "contract_interaction",
+      "signature": "entries(bytes32)"
+    },
+    {
+      "name": "getAllowedTime",
+      "operation_type": "contract_interaction",
+      "signature": "getAllowedTime(bytes32)"
+    },
+    {
+      "name": "isAllowed",
+      "operation_type": "contract_interaction",
+      "signature": "isAllowed(bytes32,uint)"
+    },
+    {
+      "name": "startAuction",
+      "operation_type": "contract_interaction",
+      "signature": "startAuction(bytes32)"
+    },
+    {
+      "name": "startAuctions",
+      "operation_type": "contract_interaction",
+      "signature": "startAuctions(bytes32[])"
+    },
+    {
+      "name": "shaBid",
+      "operation_type": "contract_interaction",
+      "signature": "shaBid(bytes32,address,uint,bytes32)"
+    },
+    {
+      "name": "newBid",
+      "operation_type": "contract_interaction",
+      "signature": "newBid(bytes32)"
+    },
+    {
+      "name": "startAuctionsAndBid",
+      "operation_type": "contract_interaction",
+      "signature": "startAuctionsAndBid(bytes32[],bytes32)"
+    },
+    {
+      "name": "unsealBid",
+      "operation_type": "contract_interaction",
+      "signature": "unsealBid(bytes32,address,uint,bytes32)"
+    },
+    {
+      "name": "cancelBid",
+      "operation_type": "contract_interaction",
+      "signature": "cancelBid(bytes32)"
+    },
+    {
+      "name": "finalizeAuction",
+      "operation_type": "contract_interaction",
+      "signature": "finalizeAuction(bytes32)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(bytes32,address)"
+    },
+    {
+      "name": "releaseDeed",
+      "operation_type": "contract_interaction",
+      "signature": "releaseDeed(bytes32)"
+    },
+    {
+      "name": "invalidateName",
+      "operation_type": "contract_interaction",
+      "signature": "invalidateName(string)"
+    },
+    {
+      "name": "eraseNode",
+      "operation_type": "contract_interaction",
+      "signature": "eraseNode(bytes32[])"
+    },
+    {
+      "name": "transferRegistrars",
+      "operation_type": "contract_interaction",
+      "signature": "transferRegistrars(bytes32)"
+    }
+  ],
+  "id": "ERC162",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-162",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-162.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC describes the implementation, as deployed to the main ethereum network on 2017-05-04, of a registrar contract to govern the allocation of names in the Ethereum Name Service (ENS). The corresponding source code is [here](https://github.com/ethereum/ens/blob/mainnet/contracts/HashRegistrarSimplified.sol). For more background, refer to [EIP-137](./eip-137.md). > Registrars are responsible for allocating domain names to users of the system, and are the only entities capable of updating the ENS; the owner of a node in the ENS registry is its registrar. Registrars may be contracts or externally owned accounts, though it is expected that the root and top-level registrars, at a minimum, will be implemented as contracts. > > \\- EIP 137 A well designed and governed registrar is essential to",
+  "title": "Initial ENS Hash Registrar"
+}

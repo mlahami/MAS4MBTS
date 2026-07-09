@@ -1,0 +1,106 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4519",
+  "erc": "ERC-4519",
+  "events": [
+    {
+      "name": "UserAssigned",
+      "signature": "UserAssigned(uint256,address)"
+    },
+    {
+      "name": "UserEngaged",
+      "signature": "UserEngaged(uint256)"
+    },
+    {
+      "name": "OwnerEngaged",
+      "signature": "OwnerEngaged(uint256)"
+    },
+    {
+      "name": "TimeoutAlarm",
+      "signature": "TimeoutAlarm(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setUser",
+      "operation_type": "contract_interaction",
+      "signature": "setUser(uint256,address)"
+    },
+    {
+      "name": "startOwnerEngagement",
+      "operation_type": "contract_interaction",
+      "signature": "startOwnerEngagement(uint256,uint256,uint256)"
+    },
+    {
+      "name": "ownerEngagement",
+      "operation_type": "contract_interaction",
+      "signature": "ownerEngagement(uint256)"
+    },
+    {
+      "name": "startUserEngagement",
+      "operation_type": "contract_interaction",
+      "signature": "startUserEngagement(uint256,uint256,uint256)"
+    },
+    {
+      "name": "userEngagement",
+      "operation_type": "contract_interaction",
+      "signature": "userEngagement(uint256)"
+    },
+    {
+      "name": "checkTimeout",
+      "operation_type": "contract_interaction",
+      "signature": "checkTimeout(uint256)"
+    },
+    {
+      "name": "setTimeout",
+      "operation_type": "contract_interaction",
+      "signature": "setTimeout(uint256,uint256)"
+    },
+    {
+      "name": "updateTimestamp",
+      "operation_type": "contract_interaction",
+      "signature": "updateTimestamp()"
+    },
+    {
+      "name": "tokenFromBCA",
+      "operation_type": "contract_interaction",
+      "signature": "tokenFromBCA(address)"
+    },
+    {
+      "name": "ownerOfFromBCA",
+      "operation_type": "contract_interaction",
+      "signature": "ownerOfFromBCA(address)"
+    },
+    {
+      "name": "userOf",
+      "operation_type": "contract_interaction",
+      "signature": "userOf(uint256)"
+    },
+    {
+      "name": "userOfFromBCA",
+      "operation_type": "contract_interaction",
+      "signature": "userOfFromBCA(address)"
+    },
+    {
+      "name": "userBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "userBalanceOf(address)"
+    },
+    {
+      "name": "userBalanceOfAnOwner",
+      "operation_type": "contract_interaction",
+      "signature": "userBalanceOfAnOwner(address,address)"
+    }
+  ],
+  "id": "ERC4519",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4519",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4519.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP standardizes an interface for non-fungible tokens representing physical assets, such as Internet of Things (IoT) devices. These NFTs are tied to physical assets and can verify the authenticity of the tie. They can include an Ethereum address of the physical asset, permitting physical assets to sign messages and transactions. Physical assets can operate with an operating mode defined by its corresponding NFT.",
+  "title": "Non-Fungible Tokens Tied to Physical Assets"
+}

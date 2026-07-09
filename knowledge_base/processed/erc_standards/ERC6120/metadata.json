@@ -1,0 +1,94 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6120",
+  "erc": "ERC-6120",
+  "events": [],
+  "functions": [
+    {
+      "name": "exec",
+      "operation_type": "contract_interaction",
+      "signature": "exec(Output[],Action[])"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(bytes,uint)"
+    },
+    {
+      "name": "discard",
+      "operation_type": "contract_interaction",
+      "signature": "discard(bytes,uint)"
+    },
+    {
+      "name": "actionMustSentBySender",
+      "operation_type": "contract_interaction",
+      "signature": "actionMustSentBySender(address)"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(address,address,address,uint256)"
+    },
+    {
+      "name": "approveAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "approveAndCall(Input[],address,bytes,address)"
+    },
+    {
+      "name": "_spendAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "_spendAllowance(address,address,uint256)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address)"
+    },
+    {
+      "name": "pay",
+      "operation_type": "contract_interaction",
+      "signature": "pay(bytes,uint256)"
+    },
+    {
+      "name": "discard",
+      "operation_type": "contract_interaction",
+      "signature": "discard(bytes,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_transferToken",
+      "operation_type": "contract_interaction",
+      "signature": "_transferToken(address,address,uint256,address,uint256,uint256)"
+    },
+    {
+      "name": "_balanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "_balanceOf(Output)"
+    }
+  ],
+  "id": "ERC6120",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6120",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6120.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "The default transaction behavior of ETH is *transfer-and-call*, but the widely used [ERC-20](./eip-20.md) standard isn't compatible with this pattern. This incompatibility forces applications to use an inefficient and risky two-step *approve-then-call* process. This approach is costly, creates a poor user experience, and introduces significant security vulnerabilities, as users must approve unaudited and often upgradable contracts. This has led to numerous allowance-related bugs and exploits. The **Universal Token Router** (**UTR**) addresses this issue by separating the token allowance from the application logic. This allows any token to be spent in a single contract call, similar to how ETH is handled, without needing to approve individual application contracts. When tokens are approved",
+  "title": "Universal Token Router"
+}

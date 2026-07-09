@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4494",
+  "erc": "ERC-4494",
+  "events": [],
+  "functions": [
+    {
+      "name": "permit",
+      "operation_type": "contract_interaction",
+      "signature": "permit(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "nonces",
+      "operation_type": "contract_interaction",
+      "signature": "nonces(uint256)"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR()"
+    }
+  ],
+  "id": "ERC4494",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4494",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4494.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The \"Permit\" approval flow outlined in [ERC-2612](./eip-2612.md) has proven a very valuable advancement in UX by creating gasless approvals for ERC20 tokens. This EIP extends the pattern to ERC-721 NFTs. This EIP borrows heavily from ERC-2612. This requires a separate EIP due to the difference in structure between ERC-20 and ERC-721 tokens. While ERC-20 permits use value (the amount of the ERC-20 token being approved) and a nonce based on the owner's address, ERC-721 permits focus on the `tokenId` of the NFT and increment nonce based on the transfers of the NFT.",
+  "title": "Permit for ERC-721 NFTs"
+}

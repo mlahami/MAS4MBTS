@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Lack of input validation describes any situation where a smart contract processes external data\u2014function parameters, calldata, cross-chain messages, or signed payloads\u2014**without rigorously enforcing** that the data is well-formed, within expected bounds, and authorized for the intended operation. Contracts that assume inputs are benign leave themselves open to malformed or adversarial data that pushes the system into unsafe states, corrupts accounting, or bypasses intended checks. This applies across all contract types: DeFi (fee bps, slippage, amounts, addresses), NFTs (token IDs, metadata, royalty config), DAOs (proposal payloads, voting parameters), bridges (message payloads, destination chains), and generic composable contracts that accept arbitrary calldata or relayed calls. On non-EVM chains, the same principle holds: untrusted inputs from users, other contracts, or cross-chain channels must be validated before use. Few areas to focus on: - **Numeric parameters** (amounts, fees, rates, slippage, collateral factors) and safe bounds - **Addresses** (zero address, contract vs. EOA assumptions, delegated or proxy addresses) - **Off-chain and signed data** (signatures, expiry, nonce replay) - **Cross-chain and bridge payloads** (message format, chain ID, sender verification) - **Admin and governance inputs** (configuration values, upgrade parameters)\u2014often treated as trusted but can be misconfigured or exploited Attackers exploit: - **Out-of-bounds values** (e.g., fee &gt; 100%, zero amounts, max uint) that break invariants - **Malformed addresses or payloads** that bypass allowlists or cause unexpected behavior - **Replay and ordering attacks** when nonce/expiry/chain ID are not validated - **Composability edge cases** when contracts assume caller format or trust rela",
+  "id": "VULN-OWASP-SC05",
+  "name": "SC05:2026 Lack of Input Validation",
+  "owasp": "SC05",
+  "remediation": "- **Validate all external inputs**, including: - Function parameters (amounts, addresses, configuration values) - Off-chain-signed data and calldata payloads - Cross-chain messages and bridge payloads - Enforce **tight invariants**: - Ranges for fees, interest rates, leverage, and collateral factors. - Non-zero requirements for key addresses and limits. - Use **custom errors** and explicit checks to keep validation clear and gas-efficient. - Treat **admin and governance inputs** as untrusted until validated\u2014misconfiguration can be as damaging as explicit exploits. - Include **negative tests** for invalid inputs (fuzzing, property tests) to ensure unexpected values are rejected.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC05-LackOfInputValidation.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

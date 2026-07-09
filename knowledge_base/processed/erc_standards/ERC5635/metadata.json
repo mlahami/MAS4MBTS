@@ -1,0 +1,97 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5635",
+  "erc": "ERC-5635",
+  "events": [
+    {
+      "name": "Licence",
+      "signature": "Licence(address,uint256,address,uint256,uint64,LicensingAgreementType,string,string)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "numberOfCredentials",
+      "operation_type": "contract_interaction",
+      "signature": "numberOfCredentials(uint256)"
+    },
+    {
+      "name": "authorizedBy",
+      "operation_type": "contract_interaction",
+      "signature": "authorizedBy(uint256,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "isLicensed",
+      "operation_type": "contract_interaction",
+      "signature": "isLicensed(address,uint256,address,uint256)"
+    },
+    {
+      "name": "licensingInfo",
+      "operation_type": "contract_interaction",
+      "signature": "licensingInfo(address,uint256,address,uint256)"
+    },
+    {
+      "name": "royaltyRate",
+      "operation_type": "contract_interaction",
+      "signature": "royaltyRate(address,uint256,address,uint256)"
+    },
+    {
+      "name": "licence",
+      "operation_type": "contract_interaction",
+      "signature": "licence(address,uint256,address,uint256,uint64,LicensingAgreementType,string,string)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(address,uint256)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address,address)"
+    },
+    {
+      "name": "checkDNFT",
+      "operation_type": "contract_interaction",
+      "signature": "checkDNFT(address)"
+    },
+    {
+      "name": "checkLARegistry",
+      "operation_type": "contract_interaction",
+      "signature": "checkLARegistry(address)"
+    }
+  ],
+  "id": "ERC5635",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5635",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5635.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP standardizes an NFT licensing oracle to store (register) and retrieve (discover) granted licensing agreements for non-fungible token (NFT) derivative works, which are also NFTs but are created using properties of some other underlying NFTs. In this standard, an NFT derivative work is referred to as a **dNFT**, while the original underlying NFT is referred to as an **oNFT**. The NFT owner, known as the `licensor`, may authorize another creator, known as the `licensee`, to create a derivative works (dNFTs), in exchange for an agreed payment, known as a `Royalty`. A licensing agreement outlines terms and conditions related to the deal between the licensor and licensee.",
+  "title": "NFT Licensing Agreements"
+}

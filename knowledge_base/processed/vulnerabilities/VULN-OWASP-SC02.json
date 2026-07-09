@@ -1,0 +1,16 @@
+{
+  "category": "OWASP Smart Contract Top 10",
+  "cwe": "N/A",
+  "description": "Business logic vulnerabilities describe any situation where a smart contract\u2019s *intended* economic or functional behavior can be subverted even though individual low-level checks (e.g., type safety, reentrancy guards, access control) are correct. These are **design flaws** in how the system\u2019s rules, incentives, state transitions, and invariants are modeled on-chain. Unlike low-level bugs (overflow, reentrancy), business logic flaws arise when the rules themselves are unsafe\u2014the code \u201cdoes what it says\u201d, but what it says permits exploitable outcomes. This applies across all smart contract domains: DeFi (lending, AMMs, vaults, yield strategies), NFTs (minting logic, royalties, marketplace mechanics), DAOs (voting, delegation, proposal execution), bridges (burn/mint asymmetry, liquidity rules), gaming (reward distribution, fairness), and cross-chain/L2 systems where multi-hop state transitions create emergent vulnerabilities. Few areas to focus on: - **Invariant violations** across modules (e.g., vault \u2194 strategy \u2194 gauge, collateral \u2194 debt, supply \u2194 backing) - **Reward and fee logic** (double-counting, under/over-accrual, wrong beneficiary) - **Eligibility and limit checks** that are bypassable or inconsistently enforced (borrowing caps, mint limits, liquidation thresholds) - **Path-dependent state machines** that allow manipulative action sequences to reach impossible or inconsistent states - **Cross-module and cross-chain assumptions** (e.g., bridge liquidity, L2 finality, message ordering) Attackers exploit: - **Arbitrage between inconsistent accounting** (vault vs. strategy, internal vs. external balance) - **Order-of-operations edge cases** (deposit/withdraw/claim sequences that break invariants) - **Eligibility bypasses** (e.g., claiming rewards without stake, liquid",
+  "id": "VULN-OWASP-SC02",
+  "name": "SC02:2026 Business Logic Vulnerabilities",
+  "owasp": "SC02",
+  "remediation": "- **Model protocol economics explicitly** (e.g., with adversarial simulations / agent-based models) rather than relying on intuition. - Express **core invariants in code and tests**: - \u201cTotal value withdrawn cannot exceed total deposits + realized yield\u201d - \u201cRewards distribution is proportional to time-weighted stake\u201d - \u201cLiquidations never result in protocol loss under honest oracle data\u201d - Use **formal verification and property-based fuzzing** for key accounting paths (vaults, strategies, reward distribution). - **Version and gate new strategies / spells**: - Roll out behind caps. - Monitor metrics and on-chain invariants before raising limits. - Ensure **governance and operations teams understand invariants**, not just auditors.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\sctop10\\SC02-BusinessLogicVulnerabilities.md",
+    "record_family": "sctop10",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

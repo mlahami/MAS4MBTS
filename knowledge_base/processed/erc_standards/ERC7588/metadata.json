@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7588",
+  "erc": "ERC-7588",
+  "events": [],
+  "functions": [],
+  "id": "ERC7588",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7588",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7588.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP introduces a standard for attaching metadata to blobs carried by blob transactions, as outlined in [EIP-4844](./eip-4844.md). The metadata is represented as a JSON object adhering to a predefined schema, and its string representation is placed in the data field of the blob transaction.",
+  "title": "Blob Transactions Metadata JSON Schema"
+}

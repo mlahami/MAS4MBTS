@@ -1,0 +1,90 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6353",
+  "erc": "ERC-6353",
+  "events": [
+    {
+      "name": "AddedToWhitelist",
+      "signature": "AddedToWhitelist(address)"
+    },
+    {
+      "name": "RemovedFromWhitelist",
+      "signature": "RemovedFromWhitelist(address)"
+    },
+    {
+      "name": "DonnationAddressChanged",
+      "signature": "DonnationAddressChanged(address)"
+    },
+    {
+      "name": "DonnationAddressAndRateChanged",
+      "signature": "DonnationAddressAndRateChanged(address,uint256)"
+    },
+    {
+      "name": "ModifiedCharityRate",
+      "signature": "ModifiedCharityRate(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "charityInfo",
+      "operation_type": "contract_interaction",
+      "signature": "charityInfo(address)"
+    },
+    {
+      "name": "addToWhitelist",
+      "operation_type": "contract_interaction",
+      "signature": "addToWhitelist(address)"
+    },
+    {
+      "name": "deleteFromWhitelist",
+      "operation_type": "contract_interaction",
+      "signature": "deleteFromWhitelist(address)"
+    },
+    {
+      "name": "getAllWhitelistedAddresses",
+      "operation_type": "contract_interaction",
+      "signature": "getAllWhitelistedAddresses()"
+    },
+    {
+      "name": "getRate",
+      "operation_type": "contract_interaction",
+      "signature": "getRate()"
+    },
+    {
+      "name": "setSpecificRate",
+      "operation_type": "contract_interaction",
+      "signature": "setSpecificRate(address,uint256)"
+    },
+    {
+      "name": "setSpecificDefaultAddress",
+      "operation_type": "contract_interaction",
+      "signature": "setSpecificDefaultAddress(address)"
+    },
+    {
+      "name": "setSpecificDefaultAddressAndRate",
+      "operation_type": "contract_interaction",
+      "signature": "setSpecificDefaultAddressAndRate(address,uint256)"
+    },
+    {
+      "name": "specificDefaultAddress",
+      "operation_type": "contract_interaction",
+      "signature": "specificDefaultAddress()"
+    },
+    {
+      "name": "deleteDefaultAddress",
+      "operation_type": "contract_interaction",
+      "signature": "deleteDefaultAddress()"
+    }
+  ],
+  "id": "ERC6353",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6353",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6353.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "An extension to [EIP-20](./eip-20.md) that can automatically send an additional percentage of each transfer to a third party, and that provides an interface for retrieving this information. This can allow token owners to make donations to a charity with every transfer. This can also be used to allow automated savings programs.",
+  "title": "Charity token"
+}

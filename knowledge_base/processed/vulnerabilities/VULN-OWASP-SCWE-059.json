@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Insufficient gas griefing occurs when an attacker intentionally sends a transaction with insufficient gas to force the contract to fail. This can lead to resource consumption issues and potential denial of service for the contract or other users. If a contract relies on external calls or interacts with other contracts and does not properly handle gas estimation, it may be vulnerable to such attacks.",
+  "id": "VULN-OWASP-SCWE-059",
+  "name": "Insufficient Gas Griefing",
+  "owasp": "SCWE-059",
+  "remediation": "To mitigate this vulnerability, ensure that gas estimation and proper gas limits are handled when performing contract calls, especially when interacting with other contracts. Additionally, use mechanisms to handle failures gracefully, such as revert messages and checks for sufficient gas before initiating important operations.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-059.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

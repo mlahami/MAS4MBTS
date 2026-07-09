@@ -1,0 +1,91 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5554",
+  "erc": "ERC-5554",
+  "events": [
+    {
+      "name": "CommercialExploitation",
+      "signature": "CommercialExploitation(uint256,uint256,string)"
+    },
+    {
+      "name": "ReproductionCreated",
+      "signature": "ReproductionCreated(uint256,uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "DerivativeCreated",
+      "signature": "DerivativeCreated(uint256,uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "CommercialExploitation",
+      "signature": "CommercialExploitation(uint256,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getCopyrightOwner",
+      "operation_type": "contract_interaction",
+      "signature": "getCopyrightOwner(uint256)"
+    },
+    {
+      "name": "logReproduction",
+      "operation_type": "contract_interaction",
+      "signature": "logReproduction(uint256,address,uint256)"
+    },
+    {
+      "name": "logDerivative",
+      "operation_type": "contract_interaction",
+      "signature": "logDerivative(uint256,address,uint256)"
+    },
+    {
+      "name": "logCommercialExploitation",
+      "operation_type": "contract_interaction",
+      "signature": "logCommercialExploitation(uint256,string)"
+    },
+    {
+      "name": "getReproductionTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "getReproductionTokenId(uint256)"
+    },
+    {
+      "name": "getReproductionLicenseId",
+      "operation_type": "contract_interaction",
+      "signature": "getReproductionLicenseId(uint256)"
+    },
+    {
+      "name": "getReproductionCollection",
+      "operation_type": "contract_interaction",
+      "signature": "getReproductionCollection(uint256)"
+    },
+    {
+      "name": "getDerivativeTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "getDerivativeTokenId(uint256)"
+    },
+    {
+      "name": "getDerivativeLicenseId",
+      "operation_type": "contract_interaction",
+      "signature": "getDerivativeLicenseId(uint256)"
+    },
+    {
+      "name": "getDerivativeCollection",
+      "operation_type": "contract_interaction",
+      "signature": "getDerivativeCollection(uint256)"
+    },
+    {
+      "name": "copyrightOwner",
+      "operation_type": "contract_interaction",
+      "signature": "copyrightOwner(uint256)"
+    }
+  ],
+  "id": "ERC5554",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5554",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5554.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP extends any other token standard to provide: * Explicit rights for the token holder related to commercial exploitation, derivative works, and reproduction; * [EIP-5218](./eip-5218.md) interface for creating, viewing, and checking the status of licenses * Standard format for extended license information in the token metadata; * Standard events to track off chain creation of derivative works, commercial exploitation, and reproduction; * On chain tracking of derivative works and reproductions * Additional required fields in the smart contract to reference the copyright owner * Function calls for commercial exploitation, derivative works and reproduction.",
+  "title": "NFT Legal Use, Repurposing, and Remixing"
+}

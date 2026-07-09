@@ -1,0 +1,85 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6960",
+  "erc": "ERC-6960",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "TransferBatch",
+      "signature": "TransferBatch(address,address,uint256[],uint256[],uint256[])"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "URI",
+      "signature": "URI(string,string,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,uint256,bytes)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "subBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "subBalanceOf(address,uint256,uint256)"
+    },
+    {
+      "name": "balanceOfBatch",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfBatch(address[],uint256[],uint256[])"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address,uint256,uint256)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "onDLTReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onDLTReceived(address,address,uint256,uint256,uint256,bytes)"
+    },
+    {
+      "name": "onDLTBatchReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onDLTBatchReceived(address,address,uint256[],uint256[],uint256[],bytes)"
+    }
+  ],
+  "id": "ERC6960",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6960",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6960.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The dual-layer token combines the functionalities of [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), and [ERC-1155](./eip-1155.md) while adding a classification layer that uses `mainId` as the main asset type identifier and `subId` as the unique attributes or variations of the main asset. ![Dual Layer Token](../assets/eip-6960/eip-6960-dual-layer-token-dlt.png) The proposed token aims to offer more granularity in token management, facilitating a well-organized token ecosystem and simplifying the process of tracking tokens within a contract. This standard is particularly useful for tokenizing and enabling the fractional ownership of Real World Assets (RWAs). It also allows for efficient and flexible management of both fungible and non-fungible assets. The following are examples of assets th",
+  "title": "Dual Layer Token"
+}

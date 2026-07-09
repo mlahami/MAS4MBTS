@@ -1,0 +1,115 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8033",
+  "erc": "ERC-8033",
+  "events": [
+    {
+      "name": "RequestCreated",
+      "signature": "RequestCreated(uint256,address,string,uint256,uint256,uint256)"
+    },
+    {
+      "name": "AgentCommitted",
+      "signature": "AgentCommitted(uint256,address,bytes32)"
+    },
+    {
+      "name": "AgentRevealed",
+      "signature": "AgentRevealed(uint256,address,bytes)"
+    },
+    {
+      "name": "JudgeSelected",
+      "signature": "JudgeSelected(uint256,address)"
+    },
+    {
+      "name": "ResolutionFinalized",
+      "signature": "ResolutionFinalized(uint256,bytes)"
+    },
+    {
+      "name": "RewardsDistributed",
+      "signature": "RewardsDistributed(uint256,address[],uint256[])"
+    },
+    {
+      "name": "ResolutionFailed",
+      "signature": "ResolutionFailed(uint256,string)"
+    },
+    {
+      "name": "DisputeInitiated",
+      "signature": "DisputeInitiated(uint256,address,string)"
+    },
+    {
+      "name": "DisputeWindowOpened",
+      "signature": "DisputeWindowOpened(uint256,uint256)"
+    },
+    {
+      "name": "DisputeResolved",
+      "signature": "DisputeResolved(uint256,bool,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createRequest",
+      "operation_type": "contract_interaction",
+      "signature": "createRequest(string,uint256,uint256,uint256,uint256,address,address,string,AgentCapabilities)"
+    },
+    {
+      "name": "commit",
+      "operation_type": "contract_interaction",
+      "signature": "commit(uint256,bytes32)"
+    },
+    {
+      "name": "reveal",
+      "operation_type": "contract_interaction",
+      "signature": "reveal(uint256,bytes,uint256)"
+    },
+    {
+      "name": "aggregate",
+      "operation_type": "contract_interaction",
+      "signature": "aggregate(uint256,bytes,address[],bytes)"
+    },
+    {
+      "name": "distributeRewards",
+      "operation_type": "contract_interaction",
+      "signature": "distributeRewards(uint256)"
+    },
+    {
+      "name": "getResolution",
+      "operation_type": "contract_interaction",
+      "signature": "getResolution(uint256)"
+    },
+    {
+      "name": "initiateDispute",
+      "operation_type": "contract_interaction",
+      "signature": "initiateDispute(uint256,string)"
+    },
+    {
+      "name": "resolveDispute",
+      "operation_type": "contract_interaction",
+      "signature": "resolveDispute(uint256,bool,bytes,address[])"
+    },
+    {
+      "name": "getRequest",
+      "operation_type": "contract_interaction",
+      "signature": "getRequest(uint256)"
+    },
+    {
+      "name": "getCommits",
+      "operation_type": "contract_interaction",
+      "signature": "getCommits(uint256)"
+    },
+    {
+      "name": "getReveals",
+      "operation_type": "contract_interaction",
+      "signature": "getReveals(uint256)"
+    }
+  ],
+  "id": "ERC8033",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8033",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8033.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a standard interface for oracle contracts that use multi-agent councils to resolve arbitrary information queries. It enables dApps to request resolutions, general information arbitration, and build consensus and validation in a trust-minimized way, with agents submitting answers to the queries on-chain. The ERC works by a requester opening a query to be resolved. The contract then emits the RequestCreated event with parameters specifying the query, number of infoAgents, commit deadline, and reward/bond amounts, specifications, and capabilities required. A commit phase is initiated where InfoAgents can participate by staking the required bond and submitting a hash of the answer to the query as a commit. After the quorum of infoAgents have committed, the reveal process is in",
+  "title": "Agent Council Oracles"
+}

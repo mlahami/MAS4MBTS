@@ -1,0 +1,42 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6239",
+  "erc": "ERC-6239",
+  "events": [
+    {
+      "name": "CreateRDF",
+      "signature": "CreateRDF(uint256,string)"
+    },
+    {
+      "name": "UpdateRDF",
+      "signature": "UpdateRDF(uint256,string)"
+    },
+    {
+      "name": "RemoveRDF",
+      "signature": "RemoveRDF(uint256,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "rdfOf",
+      "operation_type": "contract_interaction",
+      "signature": "rdfOf(uint256)"
+    },
+    {
+      "name": "schemaURI",
+      "operation_type": "contract_interaction",
+      "signature": "schemaURI()"
+    }
+  ],
+  "id": "ERC6239",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6239",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6239.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal extends [ERC-721](./eip-721.md) and [ERC-5192](./eip-5192.md) by introducing Resource Description Framework (RDF) triples to Soulbound Tokens' (\u2018SBTs\u2018) metadata.",
+  "title": "Semantic Soulbound Tokens"
+}

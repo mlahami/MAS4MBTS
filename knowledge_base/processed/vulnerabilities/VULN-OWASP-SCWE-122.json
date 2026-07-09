@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Functions that `abi.decode` calldata without first checking expected length can revert unpredictably or read malformed inputs. Attackers can craft short calldata to trigger reverts that lock functionality or bypass logic that runs before decode.",
+  "id": "VULN-OWASP-SCWE-122",
+  "name": "Calldata Length Not Validated Before Decode",
+  "owasp": "SCWE-122",
+  "remediation": "- Validate `msg.data.length` against expected sizes (including selector). - Prefer Solidity typed arguments but still guard against undersized calldata on low-level entrypoints. - Reject unexpected trailing data when strict parsing is required.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-122.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

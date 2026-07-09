@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Calculation**",
+  "cwe": "CWE-682",
+  "description": "In blockchain networks like Ethereum, block variables `(block.timestamp, block.number, block.difficulty` / `block.prevrandao` post-merge, etc.) provide information about the current state of the blockchain. However, these values are not fully deterministic and can be manipulated by validators (or miners on PoW chains), leading to vulnerabilities in smart contracts. Block timestamps are not guaranteed to be accurate or consistent, and validators (or miners on PoW chains) can influence them within a certain range. This can cause issues when contracts depend on precise timing for critical functionality, such as token distribution, access control, or other time-sensitive events. Potential issues that arise from insecure timestamp usage include: - Timestamp Manipulation: Validators (or miners on PoW) can slightly alter `block.timestamp` to influence time-sensitive logic (e.g., auctions, token distributions, staking rewards). - Predictable Randomness: Using `block.number` or `block.difficulty` as a source of randomness allows attackers to predict and manipulate outcomes. - Exploitable Access Control: Contracts that rely on block timestamps for permissions or actions may be bypassed if timestamps are adjusted.",
+  "id": "VULN-OWASP-SCWE-031",
+  "name": "Insecure use of Block Variables",
+  "owasp": "SCWE-031",
+  "remediation": "- **Avoid timestamp-based conditions**: Where possible, use block numbers instead of timestamps. Block numbers are more reliable and less subject to manipulation. - **Use Oracles**: For time-sensitive contracts, consider using trusted oracles to provide external time data.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-031.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

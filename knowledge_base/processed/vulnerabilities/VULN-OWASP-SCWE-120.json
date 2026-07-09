@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Comparison",
+  "cwe": "CWE-697",
+  "description": "Low-level calls that decode return values without checking `returndatasize` can read zeroed or truncated data. Attackers can craft contracts that return short payloads so callers mis-interpret success flags, prices, or balances.",
+  "id": "VULN-OWASP-SCWE-120",
+  "name": "Missing Return Data Length Validation",
+  "owasp": "SCWE-120",
+  "remediation": "- Verify `returndatasize` matches expected length before decoding. - Prefer high-level interfaces that perform ABI decoding checks. - Revert on unexpected return sizes and log anomalies.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-120.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

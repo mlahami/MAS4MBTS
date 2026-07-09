@@ -1,0 +1,16 @@
+{
+  "category": "Untrusted Control Sphere",
+  "cwe": "CWE-852",
+  "description": "Incorrect Ether balance tracking occurs when a contract manually maintains an internal balance variable instead of relying on `address(this).balance`. This creates inconsistencies when Ether is received outside of expected functions (e.g., via `selfdestruct()`, `transfer()`, or direct deposits). Attackers can exploit this by artificially inflating the contract's perceived balance, leading to unauthorized withdrawals or failed transactions. This issue is common in poorly designed deposit/withdraw systems that do not properly verify the actual contract balance.",
+  "id": "VULN-OWASP-SCWE-075",
+  "name": "Incorrect Ether Balance Tracking",
+  "owasp": "SCWE-075",
+  "remediation": "- **Use `address(this).balance`** instead of manually tracking Ether balance. - **Prevent external Ether deposits** by disabling the fallback function unless explicitly needed. - **Ensure proper accounting** by always reconciling balances before allowing withdrawals.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-075.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

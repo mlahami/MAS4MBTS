@@ -1,0 +1,58 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6366",
+  "erc": "ERC-6366",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "permissionOf",
+      "operation_type": "contract_interaction",
+      "signature": "permissionOf(address)"
+    },
+    {
+      "name": "permissionRequire",
+      "operation_type": "contract_interaction",
+      "signature": "permissionRequire(uint256,uint256)"
+    },
+    {
+      "name": "hasPermission",
+      "operation_type": "contract_interaction",
+      "signature": "hasPermission(address,address,uint256)"
+    },
+    {
+      "name": "delegated",
+      "operation_type": "contract_interaction",
+      "signature": "delegated(address,address)"
+    }
+  ],
+  "id": "ERC6366",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6366",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6366.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP offers an alternative to Access Control Lists (ACLs) for granting authorization and enhancing security. A `uint256` is used to store permission of given address in a ecosystem. Each permission is represented by a single bit in a `uint256` as described in [ERC-6617](./eip-6617.md). Bitwise operators and bitmasks are used to determine the access right which is much more efficient and flexible than `string` or `keccak256` comparison.",
+  "title": "Permission Token"
+}

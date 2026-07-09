@@ -1,0 +1,16 @@
+{
+  "category": "Unchecked Return Value",
+  "cwe": "CWE-252",
+  "description": "When using low-level `call`, `staticcall`, or `delegatecall` to a user-supplied or dynamic address, the target may be an EOA (externally owned account) with no contract code. In that case, the call returns `success = true` and empty return data, but no code executes. Contracts that assume the target performed logic (e.g., a callback, validation, or state change) can proceed under false assumptions, leading to bypassed checks, unexecuted logic, or incorrect accounting.",
+  "id": "VULN-OWASP-SCWE-134",
+  "name": "Low-Level Call to Non-Contract Address",
+  "owasp": "SCWE-134",
+  "remediation": "- Verify that the target address contains code using `extcodesize` (or `address.code.length` in Solidity 0.8.12+) before low-level calls. - Use allowlists for callable targets instead of accepting arbitrary addresses. - Prefer high-level interface calls when the target is known to be a contract.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-134.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

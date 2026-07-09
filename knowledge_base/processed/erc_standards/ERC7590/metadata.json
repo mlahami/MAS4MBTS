@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7590",
+  "erc": "ERC-7590",
+  "events": [
+    {
+      "name": "ReceivedERC20",
+      "signature": "ReceivedERC20(address,uint256,address,uint256)"
+    },
+    {
+      "name": "TransferredERC20",
+      "signature": "TransferredERC20(address,uint256,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "balanceOfERC20",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfERC20(address,uint256)"
+    },
+    {
+      "name": "transferHeldERC20FromToken",
+      "operation_type": "contract_interaction",
+      "signature": "transferHeldERC20FromToken(address,uint256,address,uint256,bytes)"
+    },
+    {
+      "name": "transferERC20ToToken",
+      "operation_type": "contract_interaction",
+      "signature": "transferERC20ToToken(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "erc20TransferOutNonce",
+      "operation_type": "contract_interaction",
+      "signature": "erc20TransferOutNonce(uint256)"
+    }
+  ],
+  "id": "ERC7590",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7590",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7590.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal suggests an extension to [ERC-721](./eip-721.md) to enable easy exchange of [ERC-20](./eip-20.md) tokens. By enhancing [ERC-721](./eip-721.md), it allows unique tokens to manage and trade [ERC-20](./eip-20.md) fungible tokens bundled in a single NFT. This is achieved by including methods to pull [ERC-20](./eip-20.md) tokens into the NFT contract to a specific NFT, and transferring them out by the owner of such NFT. A transfer out nonce is included to prevent front-running issues.",
+  "title": "ERC-20 Holder Extension for NFTs"
+}

@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7994",
+  "erc": "ERC-7994",
+  "events": [
+    {
+      "name": "PurposeBound",
+      "signature": "PurposeBound(bytes32,address,address,uint256)"
+    },
+    {
+      "name": "Claimed",
+      "signature": "Claimed(bytes32,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "bindPurpose",
+      "operation_type": "contract_interaction",
+      "signature": "bindPurpose(address,uint256,UnlockCondition[],uint256)"
+    },
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim(bytes32)"
+    },
+    {
+      "name": "isUnlocked",
+      "operation_type": "contract_interaction",
+      "signature": "isUnlocked(bytes32)"
+    },
+    {
+      "name": "isConditionMet",
+      "operation_type": "contract_interaction",
+      "signature": "isConditionMet(address,bytes)"
+    },
+    {
+      "name": "setConditionResolver",
+      "operation_type": "contract_interaction",
+      "signature": "setConditionResolver(bytes32,address)"
+    }
+  ],
+  "id": "ERC7994",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7994",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7994.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC extends the concept introduced in [ERC-7291] by enabling [ERC-20]-compatible tokens to carry multi-condition unlocking constraints, combining temporal, identity, and usage restrictions into a programmable structure. It aims to support controlled disbursement of tokens where funds are only accessible under predefined, auditable, and verifiable conditions.",
+  "title": "Purpose-Bound ERC-20 with Conditional Unlock"
+}

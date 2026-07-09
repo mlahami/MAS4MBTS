@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7856",
+  "erc": "ERC-7856",
+  "events": [],
+  "functions": [],
+  "id": "ERC7856",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7856",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7856.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes a standardized URI scheme for chain-specific payment requests, enabling users to specify transactions in the form \"send me X tokens of type Y on chain Z\". The URI format includes essential components such as the recipient's blockchain account, the amount of tokens, the token contract address, and optional success and error callback URLs. This standard aims to eliminate ambiguity in multi-chain payment requests, ensuring clarity and accuracy in peer-to-peer transactions and vendor or dApp requests across different blockchain networks.",
+  "title": "Chain-Specific Payment Requests"
+}

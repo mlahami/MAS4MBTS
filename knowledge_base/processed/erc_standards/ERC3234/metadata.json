@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3234",
+  "erc": "ERC-3234",
+  "events": [],
+  "functions": [
+    {
+      "name": "maxFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "maxFlashLoan(address[])"
+    },
+    {
+      "name": "flashFee",
+      "operation_type": "contract_interaction",
+      "signature": "flashFee(address[],uint256[])"
+    },
+    {
+      "name": "batchFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "batchFlashLoan(IERC3234BatchFlashBorrower,address[],uint256[],bytes[])"
+    },
+    {
+      "name": "batchFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "batchFlashLoan(IERC3234BatchFlashBorrower,address[],uint256[],bytes)"
+    },
+    {
+      "name": "onBatchFlashLoan",
+      "operation_type": "contract_interaction",
+      "signature": "onBatchFlashLoan(address,address[],uint256[],uint256[],bytes)"
+    }
+  ],
+  "id": "ERC3234",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3234",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3234.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This ERC provides standard interfaces and processes for multiple-asset flash loans.",
+  "title": "Batch Flash Loans"
+}

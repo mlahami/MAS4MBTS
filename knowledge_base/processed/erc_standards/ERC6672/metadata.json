@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6672",
+  "erc": "ERC-6672",
+  "events": [
+    {
+      "name": "Redeem",
+      "signature": "Redeem(address,uint256,address,bytes32,string)"
+    },
+    {
+      "name": "Cancel",
+      "signature": "Cancel(address,uint256,bytes32,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isRedeemed",
+      "operation_type": "contract_interaction",
+      "signature": "isRedeemed(address,bytes32,uint256)"
+    },
+    {
+      "name": "getRedemptionIds",
+      "operation_type": "contract_interaction",
+      "signature": "getRedemptionIds(address,uint256)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(bytes32,uint256,string)"
+    },
+    {
+      "name": "cancel",
+      "operation_type": "contract_interaction",
+      "signature": "cancel(bytes32,uint256,string)"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    }
+  ],
+  "id": "ERC6672",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6672",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6672.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes an extension to the [ERC-721](./eip-721.md) standard for Non-Fungible Tokens (NFTs) to enable multi-redeemable NFTs. Redemption provides a means for NFT holders to demonstrate ownership and eligibility of their NFT, which in turn enables them to receive a physical or digital item. This extension would allow an NFT to be redeemed in multiple scenarios and maintain a record of its redemption status on the blockchain.",
+  "title": "Multi-redeemable NFTs"
+}

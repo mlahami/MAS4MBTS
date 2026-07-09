@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4353",
+  "erc": "ERC-4353",
+  "events": [],
+  "functions": [
+    {
+      "name": "stakedAmount",
+      "operation_type": "contract_interaction",
+      "signature": "stakedAmount(uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256,string)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    }
+  ],
+  "id": "ERC4353",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4353",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4353.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "[EIP-721](./eip-721.md) tokens can be deposited or staked in NFTs for a variety of reasons including escrow, rewards, benefits, and others. There is currently no means of retrieving the number of tokens staked and/or bound to an NFT. This proposal outlines a standard that may be implemented by all wallets and marketplaces easily to correctly retrieve the staked token amount of an NFT.",
+  "title": "Interface for Staked Tokens in NFTs"
+}

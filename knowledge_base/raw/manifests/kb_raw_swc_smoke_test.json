@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-07-06T11:50:41+00:00",
+  "file_count": 5,
+  "raw_root": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw",
+  "snapshot_id": "kb_raw_swc_smoke_test",
+  "source_count": 1,
+  "source_records": [
+    {
+      "collected_at": "2026-07-06T11:50:41+00:00",
+      "files": [
+        {
+          "api_url": "https://api.github.com/repos/SmartContractSecurity/SWC-registry/contents/README.md?ref=master",
+          "bytes": 2892,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\README.md",
+          "repo_path": "README.md",
+          "sha256": "08cbd286ed81d1de00d3b5af6dd342ba65d13587df622bd840825eb0aa2340d5",
+          "url": "https://github.com/SmartContractSecurity/SWC-registry/blob/master/README.md"
+        },
+        {
+          "api_url": "https://api.github.com/repos/SmartContractSecurity/SWC-registry/contents/mkdocs.yml?ref=master",
+          "bytes": 1544,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\mkdocs.yml",
+          "repo_path": "mkdocs.yml",
+          "sha256": "4b9883cfc7d2717466ffe13ccecee9cfcbbce884f40eb20635682584481a1899",
+          "url": "https://github.com/SmartContractSecurity/SWC-registry/blob/master/mkdocs.yml"
+        },
+        {
+          "api_url": "https://api.github.com/repos/SmartContractSecurity/SWC-registry/contents/entries/index.md?ref=master",
+          "bytes": 10843,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\index.md",
+          "repo_path": "entries/index.md",
+          "sha256": "1b72b31c1a7f8d287441828fc3d7df661143e2cfecc18fbcc83490ed0d3b9d6a",
+          "url": "https://github.com/SmartContractSecurity/SWC-registry/blob/master/entries/index.md"
+        },
+        {
+          "api_url": "https://api.github.com/repos/SmartContractSecurity/SWC-registry/contents/.github/workflows/main.yml?ref=master",
+          "bytes": 702,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\.github\\workflows\\main.yml",
+          "repo_path": ".github/workflows/main.yml",
+          "sha256": "73d8f6de36aa1b73ed48e22032092b04052ec4e4ae5e9626e229c05c468f0f91",
+          "url": "https://github.com/SmartContractSecurity/SWC-registry/blob/master/.github/workflows/main.yml"
+        },
+        {
+          "api_url": "https://api.github.com/repos/SmartContractSecurity/SWC-registry/contents/entries/docs/SWC-100.md?ref=master",
+          "bytes": 3591,
+          "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-100.md",
+          "repo_path": "entries/docs/SWC-100.md",
+          "sha256": "b46cee9434cab1f814fdfce3211f4ad66a965f046b568694b80a566490d5b0d9",
+          "url": "https://github.com/SmartContractSecurity/SWC-registry/blob/master/entries/docs/SWC-100.md"
+        }
+      ],
+      "ref": "master",
+      "repo": {
+        "commit_sha": "1b6227074ecd180b374e4844153afdda0332f979",
+        "default_branch": "master",
+        "html_url": "https://github.com/SmartContractSecurity/SWC-registry",
+        "owner": "SmartContractSecurity",
+        "repo": "SWC-registry"
+      },
+      "source_id": "swc_registry"
+    }
+  ]
+}

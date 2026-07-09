@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7656",
+  "erc": "ERC-7656",
+  "events": [
+    {
+      "name": "Created",
+      "signature": "Created(address,address,bytes32,uint256,bytes12,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "operation_type": "contract_interaction",
+      "signature": "create(address,bytes32,uint256,bytes12,address,uint256)"
+    },
+    {
+      "name": "compute",
+      "operation_type": "contract_interaction",
+      "signature": "compute(address,bytes32,uint256,bytes12,address,uint256)"
+    },
+    {
+      "name": "linkedData",
+      "operation_type": "contract_interaction",
+      "signature": "linkedData()"
+    },
+    {
+      "name": "linkedData",
+      "operation_type": "contract_interaction",
+      "signature": "linkedData(address)"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    }
+  ],
+  "id": "ERC7656",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7656",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7656.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal defines a factory capable of deploying generic services linked to specific contracts, such as [ERC-4337](./eip-4337.md) accounts or [ERC-721](./eip-721.md) tokens (NFTs). These linked services extend the functionalities of the target contract, operating under the ownership of the contract's or NFT's owner without requiring modifications to the original contract's code. This approach enables extending existing contracts with new capabilities while maintaining backward compatibility with deployed instances.",
+  "title": "Generalized Contract-Linked Services"
+}

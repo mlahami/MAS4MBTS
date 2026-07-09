@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7955",
+  "erc": "ERC-7955",
+  "events": [],
+  "functions": [
+    {
+      "name": "deploy",
+      "operation_type": "contract_interaction",
+      "signature": "deploy()"
+    },
+    {
+      "name": "bootstrap",
+      "operation_type": "contract_interaction",
+      "signature": "bootstrap()"
+    }
+  ],
+  "id": "ERC7955",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7955",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7955.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a permissionless and deterministic deployment mechanism across all EVM-compatible chains. It uses the [EIP-7702](./eip-7702.md) `Set Code for EOAs (0x4)` transaction type to deploy a universal CREATE2 factory contract to a fixed address (`0xC0DEb853af168215879d284cc8B4d0A645fA9b0E`) with known bytecode. The factory can then create any new contract to a deterministic address using the [EIP-1014](./eip-1014.md) `CREATE2 (0xf5)` opcode. It does not require preinstalls, secret keys, or chain-specific infrastructure.",
+  "title": "Permissionless CREATE2 Factory"
+}

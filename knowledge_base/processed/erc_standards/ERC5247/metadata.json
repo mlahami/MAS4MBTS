@@ -1,0 +1,38 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5247",
+  "erc": "ERC-5247",
+  "events": [
+    {
+      "name": "ProposalCreated",
+      "signature": "ProposalCreated(address,uint256,address[],uint256[],uint256[],bytes[],bytes)"
+    },
+    {
+      "name": "ProposalExecuted",
+      "signature": "ProposalExecuted(address,uint256,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createProposal",
+      "operation_type": "contract_interaction",
+      "signature": "createProposal(uint256,address[],uint256[],uint256[],bytes[],bytes)"
+    },
+    {
+      "name": "executeProposal",
+      "operation_type": "contract_interaction",
+      "signature": "executeProposal(uint256,bytes)"
+    }
+  ],
+  "id": "ERC5247",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5247",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5247.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP presents an interface for \"smart contract executable proposals\": proposals that are submitted to, recorded on, and possibly executed on-chain. Such proposals include a series of information about function calls including the target contract address, ether value to be transmitted, gas limits and calldatas.",
+  "title": "Smart Contract Executable Proposal Interface"
+}

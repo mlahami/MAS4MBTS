@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7846",
+  "erc": "ERC-7846",
+  "events": [],
+  "functions": [],
+  "id": "ERC7846",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7846",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7846.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC introduces a new wallet connection JSON-RPC method focused on extensibility, `wallet_connect`. It leverages the modular capabilities approach defined in [ERC-5792](./eip-5792.md#wallet_getcapabilities) to streamline connections and authentication into a single interaction.",
+  "title": "Wallet Connection API"
+}

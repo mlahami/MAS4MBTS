@@ -1,0 +1,78 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6551",
+  "erc": "ERC-6551",
+  "events": [
+    {
+      "name": "ERC6551AccountCreated",
+      "signature": "ERC6551AccountCreated(address,address,bytes32,uint256,address,uint256)"
+    },
+    {
+      "name": "log4",
+      "signature": "log4(0x6c,0x60,//,address,bytes32,uint256,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createAccount",
+      "operation_type": "contract_interaction",
+      "signature": "createAccount(address,bytes32,uint256,address,uint256)"
+    },
+    {
+      "name": "account",
+      "operation_type": "contract_interaction",
+      "signature": "account(address,bytes32,uint256,address,uint256)"
+    },
+    {
+      "name": "token",
+      "operation_type": "contract_interaction",
+      "signature": "token()"
+    },
+    {
+      "name": "state",
+      "operation_type": "contract_interaction",
+      "signature": "state()"
+    },
+    {
+      "name": "isValidSigner",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSigner(address,bytes)"
+    },
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(address,uint256,bytes,uint8)"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    },
+    {
+      "name": "_isValidSigner",
+      "operation_type": "contract_interaction",
+      "signature": "_isValidSigner(address)"
+    }
+  ],
+  "id": "ERC6551",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6551",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6551.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal defines a system which assigns Ethereum accounts to all non-fungible tokens. These token bound accounts allow NFTs to own assets and interact with applications, without requiring changes to existing smart contracts or infrastructure.",
+  "title": "Non-fungible Token Bound Accounts"
+}

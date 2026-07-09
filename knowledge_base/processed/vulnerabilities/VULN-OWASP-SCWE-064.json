@@ -1,0 +1,16 @@
+{
+  "category": "Variable Shadowing",
+  "cwe": "CWE-1001",
+  "description": "Incorrect inheritance order in Solidity can lead to unintended behavior, especially when multiple base contracts define similar variables or functions. Solidity\u2019s linearization of the inheritance order can result in one contract unintentionally overriding or shadowing variables or functions defined in a parent contract, leading to confusion, errors, and potential vulnerabilities. In Solidity, the order of inheritance matters. If the inheritance hierarchy is not properly structured, the wrong version of a variable or function may be called, causing bugs or security issues.",
+  "id": "VULN-OWASP-SCWE-064",
+  "name": "Incorrect Inheritance Order",
+  "owasp": "SCWE-064",
+  "remediation": "To mitigate this vulnerability, carefully review and order the inheritance structure. Ensure that parent contracts are inherited in a logical sequence and that any variables or functions are not unintentionally shadowed or overridden. Consider following a clear and consistent inheritance pattern.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-064.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

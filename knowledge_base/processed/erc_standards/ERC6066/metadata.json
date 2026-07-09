@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6066",
+  "erc": "ERC-6066",
+  "events": [],
+  "functions": [
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(uint256,bytes32,bytes)"
+    },
+    {
+      "name": "sign",
+      "operation_type": "contract_interaction",
+      "signature": "sign(uint256,bytes32)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC6066",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6066",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6066.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "While **E**xternally **O**wned **A**ccounts can validate signed messages with `ecrecover()` and smart contracts can validate signatures using specifications outlined in [ERC-1271](./eip-1271.md), currently there is no standard method to create or validate signatures made by NFTs. We propose a standard way for anyone to validate whether a signature made by an NFT is valid. This is possible via a modified signature validation function originally found in [ERC-1271](./eip-1271.md): `isValidSignature(tokenId, hash, data)`.",
+  "title": "Signature Validation Method for NFTs"
+}

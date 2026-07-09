@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7744",
+  "erc": "ERC-7744",
+  "events": [],
+  "functions": [
+    {
+      "name": "isEIP7702",
+      "operation_type": "contract_interaction",
+      "signature": "isEIP7702(address)"
+    },
+    {
+      "name": "isValidContainer",
+      "operation_type": "contract_interaction",
+      "signature": "isValidContainer(address)"
+    },
+    {
+      "name": "register",
+      "operation_type": "contract_interaction",
+      "signature": "register(address)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(bytes32)"
+    }
+  ],
+  "id": "ERC7744",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7744",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7744.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This EIP defines a standard interface for indexing smart contracts on Ethereum by their bytecode hash. This enables trustless discovery and verification of contract code, facilitating use cases like bytecode signing, whitelisting, and decentralized distribution mechanisms.",
+  "title": "Code Index"
+}

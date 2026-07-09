@@ -1,0 +1,17 @@
+{
+  "category": "User Interface (UI) Misrepresentation of Critical Information",
+  "cwe": "CWE-451",
+  "description": "Malicious actors can use the Right-To-Left-Override unicode character to force RTL text rendering and confuse users as to the real intent of a contract.",
+  "id": "VULN-SWC-130",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "There are very few legitimate uses of the U+202E character. It should not appear in the source code of a smart contract.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-130.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-130"
+}

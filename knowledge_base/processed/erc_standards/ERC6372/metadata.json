@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6372",
+  "erc": "ERC-6372",
+  "events": [],
+  "functions": [
+    {
+      "name": "clock",
+      "operation_type": "contract_interaction",
+      "signature": "clock()"
+    },
+    {
+      "name": "CLOCK_MODE",
+      "operation_type": "contract_interaction",
+      "signature": "CLOCK_MODE()"
+    }
+  ],
+  "id": "ERC6372",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6372",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6372.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "Many contracts rely on some clock for enforcing delays and storing historical data. While some contracts rely on block numbers, others use timestamps. There is currently no easy way to discover which time-tracking function a contract internally uses. This EIP proposes to standardize an interface for contracts to expose their internal clock and thus improve composability and interoperability.",
+  "title": "Contract clock"
+}

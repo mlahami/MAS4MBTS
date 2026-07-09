@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-820",
+  "erc": "ERC-820",
+  "events": [
+    {
+      "name": "InterfaceImplementerSet",
+      "signature": "InterfaceImplementerSet(address,bytes32,address)"
+    },
+    {
+      "name": "ManagerChanged",
+      "signature": "ManagerChanged(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "canImplementInterfaceForAddress",
+      "operation_type": "contract_interaction",
+      "signature": "canImplementInterfaceForAddress(bytes32,address)"
+    },
+    {
+      "name": "getInterfaceImplementer",
+      "operation_type": "contract_interaction",
+      "signature": "getInterfaceImplementer(address,bytes32)"
+    },
+    {
+      "name": "setInterfaceImplementer",
+      "operation_type": "contract_interaction",
+      "signature": "setInterfaceImplementer(address,bytes32,address)"
+    },
+    {
+      "name": "setManager",
+      "operation_type": "contract_interaction",
+      "signature": "setManager(address,address)"
+    },
+    {
+      "name": "getManager",
+      "operation_type": "contract_interaction",
+      "signature": "getManager(address)"
+    },
+    {
+      "name": "interfaceHash",
+      "operation_type": "contract_interaction",
+      "signature": "interfaceHash(string)"
+    },
+    {
+      "name": "updateERC165Cache",
+      "operation_type": "contract_interaction",
+      "signature": "updateERC165Cache(address,bytes4)"
+    },
+    {
+      "name": "implementsERC165Interface",
+      "operation_type": "contract_interaction",
+      "signature": "implementsERC165Interface(address,bytes4)"
+    },
+    {
+      "name": "implementsERC165InterfaceNoCache",
+      "operation_type": "contract_interaction",
+      "signature": "implementsERC165InterfaceNoCache(address,bytes4)"
+    },
+    {
+      "name": "isERC165Interface",
+      "operation_type": "contract_interaction",
+      "signature": "isERC165Interface(bytes32)"
+    },
+    {
+      "name": "noThrowCall",
+      "operation_type": "contract_interaction",
+      "signature": "noThrowCall(address,bytes4)"
+    }
+  ],
+  "id": "ERC820",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-820",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-820.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard defines a registry where smart contracts and regular accounts can publish which functionalities they implement---either directly or through a proxy contract. Anyone can query this registry to ask if a specific address implements a given interface and which smart contract handles its implementation. This registry MAY be deployed on any chain and shares the same address on all chains. Interfaces with zeroes (`0`) as the last 28 bytes are considered [ERC-165] interfaces, and this registry SHALL forward the call to the contract to see if it implements the interface. This contract also acts as an [ERC-165] cache to reduce gas consumption.",
+  "title": "Pseudo-introspection Registry Contract"
+}

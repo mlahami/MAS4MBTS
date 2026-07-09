@@ -1,0 +1,16 @@
+{
+  "category": "Insufficient Verification of Data Authenticity",
+  "cwe": "CWE-345",
+  "description": "Relayers may deliver fabricated payloads if the destination contract does not validate Merkle proofs, light-client headers, or signatures that attest to the message on the source chain. Forged messages can mint wrapped assets or execute arbitrary calls.",
+  "id": "VULN-OWASP-SCWE-108",
+  "name": "Unverified Cross-Chain Message Proofs",
+  "owasp": "SCWE-108",
+  "remediation": "- Verify message inclusion against a trusted root (Merkle/Patricia proof) or light-client header. - Validate signatures from authorized validators and enforce quorum thresholds. - Reject messages that fail proof verification or originate from unrecognized relayers.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-108.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

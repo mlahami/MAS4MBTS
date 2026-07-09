@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6384",
+  "erc": "ERC-6384",
+  "events": [],
+  "functions": [
+    {
+      "name": "evalEIP712Buffer",
+      "operation_type": "contract_interaction",
+      "signature": "evalEIP712Buffer(bytes32,string,bytes)"
+    }
+  ],
+  "id": "ERC6384",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6384",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6384.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP introduces the `evalEIP712Buffer` function, which takes an [EIP-712](./eip-712.md) buffer and returns a human-readable text description.",
+  "title": "Human-readable offline signatures"
+}

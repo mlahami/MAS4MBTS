@@ -1,0 +1,85 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7837",
+  "erc": "ERC-7837",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Burn",
+      "signature": "Burn(address,uint256)"
+    },
+    {
+      "name": "FeeUpdated",
+      "signature": "FeeUpdated(uint256)"
+    },
+    {
+      "name": "MaxSupplyUpdated",
+      "signature": "MaxSupplyUpdated(uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    },
+    {
+      "name": "setMaxSupply",
+      "operation_type": "contract_interaction",
+      "signature": "setMaxSupply(uint256)"
+    },
+    {
+      "name": "setTransferFee",
+      "operation_type": "contract_interaction",
+      "signature": "setTransferFee(uint256)"
+    },
+    {
+      "name": "withdrawFees",
+      "operation_type": "contract_interaction",
+      "signature": "withdrawFees(address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    }
+  ],
+  "id": "ERC7837",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7837",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7837.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This ERC proposes a standard for a new type of fungible token, called **Diffusive Tokens (DIFF)**. Unlike traditional [ERC-20](./eip-20.md) tokens, transferring DIFF tokens does not decrease the sender\u2019s balance. Instead, it *mints* new tokens directly to the recipient, increasing the total supply on every transfer action. A fixed native currency fee is charged per token transferred, and this fee is paid by the sender to the contract owner. The supply growth is limited by a maximum supply set by the owner. Token holders can also burn their tokens to reduce the total supply. These features enable a controlled, incentivized token distribution model that merges fungibility with a built-in economic mechanism.",
+  "title": "Diffusive Tokens"
+}

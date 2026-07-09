@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8085",
+  "erc": "ERC-8085",
+  "events": [],
+  "functions": [
+    {
+      "name": "toPrivate",
+      "operation_type": "contract_interaction",
+      "signature": "toPrivate(uint256,uint8,bytes,bytes)"
+    },
+    {
+      "name": "toPublic",
+      "operation_type": "contract_interaction",
+      "signature": "toPublic(address,uint8,bytes,bytes[])"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "totalPrivacySupply",
+      "operation_type": "contract_interaction",
+      "signature": "totalPrivacySupply()"
+    },
+    {
+      "name": "isNullifierSpent",
+      "operation_type": "contract_interaction",
+      "signature": "isNullifierSpent(bytes32)"
+    }
+  ],
+  "id": "ERC8085",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8085",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8085.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP defines a **permissionless** interface for fungible tokens that operate in two modes: transparent mode (fully compatible with [ERC-20](./eip-20)) and privacy mode (using [ERC-8086](./eip-8086) privacy primitives). Token holders can convert balances between modes. The transparent mode uses account-based balances, while the privacy mode uses the standardized `IZRC20` interface from ERC-8086. Total supply is maintained as the sum of both modes. **Permissionless Nature**: Anyone can implement and deploy dual-mode tokens using this standard without intermediaries, governance approval, or restrictions.",
+  "title": "Dual-Mode Fungible Tokens"
+}

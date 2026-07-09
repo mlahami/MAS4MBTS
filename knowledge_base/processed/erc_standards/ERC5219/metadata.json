@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5219",
+  "erc": "ERC-5219",
+  "events": [],
+  "functions": [],
+  "id": "ERC5219",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5219",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5219.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP standardizes an interface to make resource requests to smart contracts and to receive HTTP-like responses.",
+  "title": "Contract Resource Requests"
+}

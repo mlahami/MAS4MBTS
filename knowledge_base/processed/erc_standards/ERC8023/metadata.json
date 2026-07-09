@@ -1,0 +1,82 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8023",
+  "erc": "ERC-8023",
+  "events": [
+    {
+      "name": "OwnershipTransferInitiated",
+      "signature": "OwnershipTransferInitiated(address,address)"
+    },
+    {
+      "name": "OwnershipTransferConfirmed",
+      "signature": "OwnershipTransferConfirmed(address,address)"
+    },
+    {
+      "name": "OwnershipTransferred",
+      "signature": "OwnershipTransferred(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "initiateOwnershipTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "initiateOwnershipTransfer(address)"
+    },
+    {
+      "name": "confirmOwnershipTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "confirmOwnershipTransfer(address)"
+    },
+    {
+      "name": "cancelPendingOwnershipTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "cancelPendingOwnershipTransfer()"
+    },
+    {
+      "name": "acceptOwnershipTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "acceptOwnershipTransfer()"
+    },
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    },
+    {
+      "name": "pendingOwner",
+      "operation_type": "contract_interaction",
+      "signature": "pendingOwner()"
+    },
+    {
+      "name": "preConfirmedOwner",
+      "operation_type": "contract_interaction",
+      "signature": "preConfirmedOwner()"
+    },
+    {
+      "name": "getOwnershipTransferBuffer",
+      "operation_type": "contract_interaction",
+      "signature": "getOwnershipTransferBuffer()"
+    },
+    {
+      "name": "initiateOwnershipBufferUpdate",
+      "operation_type": "contract_interaction",
+      "signature": "initiateOwnershipBufferUpdate(uint256)"
+    },
+    {
+      "name": "confirmOwnershipBufferUpdate",
+      "operation_type": "contract_interaction",
+      "signature": "confirmOwnershipBufferUpdate(uint256)"
+    }
+  ],
+  "id": "ERC8023",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8023",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8023.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "We define a multi-stepped contract ownership interface for more secure contract ownership management. This makes the ownership transfer into 3 distinct steps. With the first 2 steps, performed by the original owner (initiate \u2192 confirm) and the remaining 1 step performed by the new owner (accept). We enforce an optional time window between the initiate and confirm stages to give additional room for review, and make ownership key compromise scenarios less fatal.",
+  "title": "Multi-step Contract Ownership"
+}

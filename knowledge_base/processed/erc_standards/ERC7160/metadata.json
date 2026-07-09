@@ -1,0 +1,68 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7160",
+  "erc": "ERC-7160",
+  "events": [
+    {
+      "name": "TokenUriPinned",
+      "signature": "TokenUriPinned(uint256,uint256)"
+    },
+    {
+      "name": "TokenUriUnpinned",
+      "signature": "TokenUriUnpinned(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "tokenURIs",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURIs(uint256)"
+    },
+    {
+      "name": "pinTokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "pinTokenURI(uint256,uint256)"
+    },
+    {
+      "name": "unpinTokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "unpinTokenURI(uint256)"
+    },
+    {
+      "name": "hasPinnedTokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "hasPinnedTokenURI(uint256)"
+    },
+    {
+      "name": "_getTokenURIIndex",
+      "operation_type": "contract_interaction",
+      "signature": "_getTokenURIIndex(uint256)"
+    },
+    {
+      "name": "tokenURI",
+      "operation_type": "contract_interaction",
+      "signature": "tokenURI(uint256)"
+    },
+    {
+      "name": "setUri",
+      "operation_type": "contract_interaction",
+      "signature": "setUri(uint256,uint256,string)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC7160",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7160",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7160.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes an extension to the [ERC-721](./eip-721.md) standard to support multiple metadata URIs per token. It introduces a new interface, `IERC721MultiMetadata`, which provides methods for accessing the metadata URIs associated with a token, including a pinned URI index and a list of all metadata URIs. The extension is designed to be backward compatible with existing `ERC721Metadata` implementations.",
+  "title": "ERC-721 Multi-Metadata Extension"
+}

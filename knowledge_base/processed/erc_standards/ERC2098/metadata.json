@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2098",
+  "erc": "ERC-2098",
+  "events": [],
+  "functions": [],
+  "id": "ERC2098",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2098",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2098.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The secp256k1 curve permits the computation of the public key of signed digest when coupled with a signature, which is used implicitly to establish the origin of a transaction from an Externally Owned Account as well as on-chain in EVM contracts for example, in meta-transactions and multi-sig contracts. Currently signatures require 65 bytes to represent, which when aligned to 256-bit words, requires 96 bytes (with 31 zero bytes injected). The yParity in RLP-encoded transactions also require (on average) 1.5 bytes. With compact signatures, this can be reduced to 64 bytes, which remains 64 bytes when word-aligned, and in the case of RLP-encoded transactions saves the 1.5 bytes required for the yParity.",
+  "title": "Compact Signature Representation"
+}

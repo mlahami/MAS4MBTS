@@ -1,0 +1,191 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7777",
+  "erc": "ERC-7777",
+  "events": [
+    {
+      "name": "RuleAdded",
+      "signature": "RuleAdded(bytes)"
+    },
+    {
+      "name": "RuleRemoved",
+      "signature": "RuleRemoved(bytes)"
+    },
+    {
+      "name": "SubscribedToCharter",
+      "signature": "SubscribedToCharter(address)"
+    },
+    {
+      "name": "UnsubscribedFromCharter",
+      "signature": "UnsubscribedFromCharter(address)"
+    },
+    {
+      "name": "UserRegistered",
+      "signature": "UserRegistered(address,UserType,bytes[])"
+    },
+    {
+      "name": "UserLeft",
+      "signature": "UserLeft(address)"
+    },
+    {
+      "name": "ComplianceChecked",
+      "signature": "ComplianceChecked(address,bytes[])"
+    },
+    {
+      "name": "RuleSetUpdated",
+      "signature": "RuleSetUpdated(bytes[],address)"
+    },
+    {
+      "name": "ComplianceChecked",
+      "signature": "ComplianceChecked(address,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getHardwareIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "getHardwareIdentity()"
+    },
+    {
+      "name": "generateChallenge",
+      "operation_type": "contract_interaction",
+      "signature": "generateChallenge()"
+    },
+    {
+      "name": "verifyChallenge",
+      "operation_type": "contract_interaction",
+      "signature": "verifyChallenge(bytes32,bytes)"
+    },
+    {
+      "name": "addRule",
+      "operation_type": "contract_interaction",
+      "signature": "addRule(bytes)"
+    },
+    {
+      "name": "removeRule",
+      "operation_type": "contract_interaction",
+      "signature": "removeRule(bytes)"
+    },
+    {
+      "name": "checkCompliance",
+      "operation_type": "contract_interaction",
+      "signature": "checkCompliance(bytes)"
+    },
+    {
+      "name": "registerUser",
+      "operation_type": "contract_interaction",
+      "signature": "registerUser(UserType,bytes[])"
+    },
+    {
+      "name": "leaveSystem",
+      "operation_type": "contract_interaction",
+      "signature": "leaveSystem()"
+    },
+    {
+      "name": "checkCompliance",
+      "operation_type": "contract_interaction",
+      "signature": "checkCompliance(address,bytes[])"
+    },
+    {
+      "name": "updateRuleSet",
+      "operation_type": "contract_interaction",
+      "signature": "updateRuleSet(bytes[])"
+    },
+    {
+      "name": "terminateContract",
+      "operation_type": "contract_interaction",
+      "signature": "terminateContract()"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(address)"
+    },
+    {
+      "name": "updateHardwareIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "updateHardwareIdentity(HardwareIdentity)"
+    },
+    {
+      "name": "subscribeAndRegisterToCharter",
+      "operation_type": "contract_interaction",
+      "signature": "subscribeAndRegisterToCharter(address,uint256)"
+    },
+    {
+      "name": "leaveCharter",
+      "operation_type": "contract_interaction",
+      "signature": "leaveCharter(address)"
+    },
+    {
+      "name": "updateCompliance",
+      "operation_type": "contract_interaction",
+      "signature": "updateCompliance(bytes,bool)"
+    },
+    {
+      "name": "getRule",
+      "operation_type": "contract_interaction",
+      "signature": "getRule(bytes)"
+    },
+    {
+      "name": "getSubscribedCharters",
+      "operation_type": "contract_interaction",
+      "signature": "getSubscribedCharters(address)"
+    },
+    {
+      "name": "getComplianceStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getComplianceStatus(bytes)"
+    },
+    {
+      "name": "initialize",
+      "operation_type": "contract_interaction",
+      "signature": "initialize(address,address)"
+    },
+    {
+      "name": "_verifyRobotHardware",
+      "operation_type": "contract_interaction",
+      "signature": "_verifyRobotHardware(address)"
+    },
+    {
+      "name": "_checkRobotCompliance",
+      "operation_type": "contract_interaction",
+      "signature": "_checkRobotCompliance(address,uint256)"
+    },
+    {
+      "name": "getLatestRuleSetVersion",
+      "operation_type": "contract_interaction",
+      "signature": "getLatestRuleSetVersion()"
+    },
+    {
+      "name": "getRuleSet",
+      "operation_type": "contract_interaction",
+      "signature": "getRuleSet(uint256)"
+    },
+    {
+      "name": "getRuleSetVersion",
+      "operation_type": "contract_interaction",
+      "signature": "getRuleSetVersion(bytes32)"
+    },
+    {
+      "name": "getUserInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getUserInfo(address)"
+    },
+    {
+      "name": "paused",
+      "operation_type": "contract_interaction",
+      "signature": "paused()"
+    }
+  ],
+  "id": "ERC7777",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7777",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7777.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal defines two core interfaces: `IUniversalIdentity` and `IUniversalCharter`, providing mechanisms for humans, and robots to establish their identities and to create decentralized communities governed by specific rule sets. The `IUniversalIdentity` interface establishes the fair and equitable treatment of sentient computer architectures other than the human brain, enabling robots to acquire on-chain identities, and thereby interact and transact with humans. Additionally the `IUniversalIdentity` interface also includes support for hardware-backed identity verification, enabling physical robots to prove their identity through cryptographic signatures derived from secure hardware elements and a challenge-response scheme. The `IUniversalCharter` enables humans and robots to create,",
+  "title": "Governance for Human Robot Societies"
+}

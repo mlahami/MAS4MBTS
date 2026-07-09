@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7985",
+  "erc": "ERC-7985",
+  "events": [],
+  "functions": [],
+  "id": "ERC7985",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7985",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7985.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines standard attributes for [ERC-7786] cross-chain messaging gateways to enable consistent cancellation, timeout, retry, dependency, and delivery control mechanisms across implementations. These attributes provide applications with predictable control over message lifecycle, ordering, and delivery requirements. [ERC-7786]: ./eip-7786.md",
+  "title": "Gateway Attributes for Message Control"
+}

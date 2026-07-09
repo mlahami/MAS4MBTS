@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7754",
+  "erc": "ERC-7754",
+  "events": [],
+  "functions": [
+    {
+      "name": "signedRequest",
+      "operation_type": "contract_interaction",
+      "signature": "signedRequest(requestPayload:,signature:,keyId:)"
+    }
+  ],
+  "id": "ERC7754",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7754",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7754.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Tamperproof Web Immutable Secure Transaction (TWIST) introduces a new RPC method to be implemented by wallets, `wallet_signedRequest`, that enables dapps to interact with wallets in a tamperproof manner via \"signed requests\". The dapp associates a public key with its DNS record and uses the corresponding private key to sign payloads sent to the wallet via `wallet_signedRequest`. Wallets can then use the public key in the DNS record to validate the integrity of the payload.",
+  "title": "Tamperproof Extension Wallets API (TWIST)"
+}

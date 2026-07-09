@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6604",
+  "erc": "ERC-6604",
+  "events": [
+    {
+      "name": "Reify",
+      "signature": "Reify(AbstractTokenMessage)"
+    },
+    {
+      "name": "Dereify",
+      "signature": "Dereify(AbstractTokenMessage)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "reify",
+      "operation_type": "contract_interaction",
+      "signature": "reify(AbstractTokenMessage)"
+    },
+    {
+      "name": "status",
+      "operation_type": "contract_interaction",
+      "signature": "status(AbstractTokenMessage)"
+    },
+    {
+      "name": "dereify",
+      "operation_type": "contract_interaction",
+      "signature": "dereify(AbstractTokenMessage)"
+    },
+    {
+      "name": "id",
+      "operation_type": "contract_interaction",
+      "signature": "id(AbstractTokenMessage)"
+    },
+    {
+      "name": "amount",
+      "operation_type": "contract_interaction",
+      "signature": "amount(AbstractTokenMessage)"
+    },
+    {
+      "name": "uri",
+      "operation_type": "contract_interaction",
+      "signature": "uri(AbstractTokenMessage)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,AbstractTokenMessage)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,AbstractTokenMessage)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes,AbstractTokenMessage)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes,AbstractTokenMessage)"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes,AbstractTokenMessage[])"
+    }
+  ],
+  "id": "ERC6604",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6604",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6604.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Abstract tokens provide a standard interface to: * Mint tokens off-chain as messages * Reify tokens on-chain via smart contract * Dereify tokens back into messages Abstract tokens can comply with existing standards like [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), and [ERC-1155](./eip-1155.md). The standard allows wallets and other applications to better handle *potential* tokens before any consensus-dependent events occur on-chain.",
+  "title": "Abstract Token"
+}

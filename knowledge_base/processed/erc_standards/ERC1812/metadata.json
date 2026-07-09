@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1812",
+  "erc": "ERC-1812",
+  "events": [],
+  "functions": [
+    {
+      "name": "verifyIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "verifyIssuer(Know,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "vouch",
+      "operation_type": "contract_interaction",
+      "signature": "vouch(Know,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(bytes32)"
+    },
+    {
+      "name": "revoked",
+      "operation_type": "contract_interaction",
+      "signature": "revoked(address,bytes32)"
+    }
+  ],
+  "id": "ERC1812",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1812",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1812.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A new method for Off-Chain Verifiable Claims built on [EIP-712](./eip-712.md). These Claims can be issued by any user with a EIP 712 compatible web3 provider. Claims can be stored off chain and verified on-chain by Solidity Smart Contracts, State Channel Implementations or off-chain libraries.",
+  "title": "Ethereum Verifiable Claims"
+}

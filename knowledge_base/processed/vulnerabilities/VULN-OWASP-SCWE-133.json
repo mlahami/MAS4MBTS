@@ -1,0 +1,16 @@
+{
+  "category": "Authentication Bypass by Capture-replay",
+  "cwe": "CWE-294",
+  "description": "Bridge receivers that do not track nonces per source chain/sender allow the same message to be replayed, causing duplicate mints or withdrawals. Forked chains can also replay historical messages if lanes are not isolated.",
+  "id": "VULN-OWASP-SCWE-133",
+  "name": "Missing Replay Nonce per Bridge Lane",
+  "owasp": "SCWE-133",
+  "remediation": "- Maintain monotonically increasing nonces per (sourceChain, sourceSender). - Reject messages with reused or out-of-order nonces. - Bind nonces into signed payloads or proofs to prevent tampering.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-133.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

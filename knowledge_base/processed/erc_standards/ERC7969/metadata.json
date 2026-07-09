@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7969",
+  "erc": "ERC-7969",
+  "events": [
+    {
+      "name": "KeyHashRegistered",
+      "signature": "KeyHashRegistered(bytes32,bytes32)"
+    },
+    {
+      "name": "KeyHashRevoked",
+      "signature": "KeyHashRevoked(bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isKeyHashValid",
+      "operation_type": "contract_interaction",
+      "signature": "isKeyHashValid(bytes32,bytes32)"
+    },
+    {
+      "name": "setKeyHash",
+      "operation_type": "contract_interaction",
+      "signature": "setKeyHash(bytes32,bytes32)"
+    },
+    {
+      "name": "setKeyHashes",
+      "operation_type": "contract_interaction",
+      "signature": "setKeyHashes(bytes32,bytes32[])"
+    },
+    {
+      "name": "revokeKeyHash",
+      "operation_type": "contract_interaction",
+      "signature": "revokeKeyHash(bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC7969",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7969",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7969.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes a standard interface for registering and validating DomainKeys Identified Mail (DKIM) public key hashes on the Ethereum blockchain. The interface allows domain owners to register their DKIM public key hashes and enables third parties to verify the validity of these hashes. The registry operates by storing hashes of both domain names and DKIM public keys, creating a mapping that enables on-chain verification of DKIM signatures. Domain owners register their DKIM public key hashes by extracting the public key from their DNS TXT records (as specified in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376)), computing the hash, and submitting it to the registry. DKIM clients can then query the registry to verify that a given public key hash is authorized for a specific domain, e",
+  "title": "DomainKeys Identified Mail (DKIM) Registry"
+}

@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1620",
+  "erc": "ERC-1620",
+  "events": [
+    {
+      "name": "LogCreate",
+      "signature": "LogCreate(uint256,address,address,address,uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "LogWithdraw",
+      "signature": "LogWithdraw(uint256,address,uint256)"
+    },
+    {
+      "name": "LogRedeem",
+      "signature": "LogRedeem(uint256,address,address,uint256,uint256)"
+    },
+    {
+      "name": "LogConfirmUpdate",
+      "signature": "LogConfirmUpdate(uint256,address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "LogRevokeUpdate",
+      "signature": "LogRevokeUpdate(uint256,address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "LogExecuteUpdate",
+      "signature": "LogExecuteUpdate(uint256,address,address,address,uint256,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(uint256,address)"
+    },
+    {
+      "name": "getStream",
+      "operation_type": "contract_interaction",
+      "signature": "getStream(uint256)"
+    },
+    {
+      "name": "create",
+      "operation_type": "contract_interaction",
+      "signature": "create(address,address,uint256,uint256,uint256,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256,uint256)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(uint256)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(uint256,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "confirmUpdate",
+      "operation_type": "contract_interaction",
+      "signature": "confirmUpdate(uint256,address,uint256,uint256,uint256)"
+    }
+  ],
+  "id": "ERC1620",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1620",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1620.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following describes a standard whereby time is measured using block numbers and streams are mappings in a master contract. 1. A provider sets up a money streaming contract. 2. A prospective payer can interact with the contract and start the stream right away by depositing the funds required for the chosen period. 3. The payee is able to withdraw money from the contract based on its ongoing solvency. That is: `payment rate * (current block height - starting block height)` 4. The stream terms (payment rate, length, metadata) can be updated at any time if both parties pledge their signatures. 5. The stream can be stopped at any point in time by any party without on-chain consensus. 6. If the stream period ended and it was not previously stopped by any party, the payee is entitled to withd",
+  "title": "Money Streaming"
+}

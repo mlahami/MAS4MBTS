@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6229",
+  "erc": "ERC-6229",
+  "events": [],
+  "functions": [],
+  "id": "ERC6229",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6229",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6229.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard extends [EIP-4626](./eip-4626.md) to support lock-in periods.",
+  "title": "Tokenized Vaults with Lock-in Period"
+}

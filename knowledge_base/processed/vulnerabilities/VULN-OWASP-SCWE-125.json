@@ -1,0 +1,16 @@
+{
+  "category": "Improper Check for Unusual or Exceptional Conditions",
+  "cwe": "CWE-754",
+  "description": "Lending/borrowing protocols that do not re-evaluate health factors after actions (borrow, withdraw, leverage) allow users to exit with unhealthy positions. Attackers can drain collateral or avoid liquidation by skipping post-operation solvency checks.",
+  "id": "VULN-OWASP-SCWE-125",
+  "name": "Missing Post-Operation Health Check",
+  "owasp": "SCWE-125",
+  "remediation": "- Recompute health factor after every state-changing action and revert if below threshold. - Lock price/oracle reads during the operation to avoid mid-tx manipulation. - Add invariant/fuzz tests to ensure every path enforces solvency.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-125.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

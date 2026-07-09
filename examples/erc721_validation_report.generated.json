@@ -1,0 +1,51 @@
+{
+  "schema_valid": true,
+  "consistent": true,
+  "standard_match": true,
+  "standard": {
+    "context": "ERC-721",
+    "model": "ERC-721"
+  },
+  "coverage": {
+    "actors": 4,
+    "trustLevels": 4,
+    "assets": 5,
+    "entryPoints": 5,
+    "vulnerabilities": 4,
+    "threats": 4,
+    "countermeasures": 4,
+    "securityProperties": 4,
+    "testObjectives": 4,
+    "relations": 34,
+    "knowledgeSources": 15
+  },
+  "missing_relations": {
+    "targets": [],
+    "exploits": [],
+    "mitigatedBy": [],
+    "violates": [],
+    "validatedBy": []
+  },
+  "swc": {
+    "na_count": 1,
+    "mapped": [
+      "SWC-105",
+      "SWC-107"
+    ]
+  },
+  "issues": [],
+  "warnings": [
+    "vulnerabilities:V4 has no knowledgeSources.",
+    "threats:T1 has no knowledgeSources.",
+    "threats:T2 has no knowledgeSources.",
+    "countermeasures:CM1 has no knowledgeSources.",
+    "countermeasures:CM2 has no knowledgeSources.",
+    "countermeasures:CM3 has no knowledgeSources.",
+    "countermeasures:CM4 has no knowledgeSources.",
+    "testObjectives:TO1 has no knowledgeSources.",
+    "testObjectives:TO2 has no knowledgeSources.",
+    "testObjectives:TO3 has no knowledgeSources.",
+    "testObjectives:TO4 has no knowledgeSources.",
+    "1 vulnerabilities have SWC: N/A."
+  ]
+}

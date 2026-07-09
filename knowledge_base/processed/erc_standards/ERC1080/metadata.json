@@ -1,0 +1,84 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1080",
+  "erc": "ERC-1080",
+  "events": [
+    {
+      "name": "AccountClaimedLost",
+      "signature": "AccountClaimedLost(address,address)"
+    },
+    {
+      "name": "AccountClaimedLost",
+      "signature": "AccountClaimedLost(address)"
+    },
+    {
+      "name": "PendingTransfer",
+      "signature": "PendingTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "ChargebackRequested",
+      "signature": "ChargebackRequested(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Chargeback",
+      "signature": "Chargeback(address,address,uint256,uint256)"
+    },
+    {
+      "name": "AccountFrozen",
+      "signature": "AccountFrozen(address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "claimLost",
+      "operation_type": "contract_interaction",
+      "signature": "claimLost(address)"
+    },
+    {
+      "name": "claimLost",
+      "operation_type": "contract_interaction",
+      "signature": "claimLost()"
+    },
+    {
+      "name": "reportStolen",
+      "operation_type": "contract_interaction",
+      "signature": "reportStolen()"
+    },
+    {
+      "name": "chargeback",
+      "operation_type": "contract_interaction",
+      "signature": "chargeback(uint256)"
+    },
+    {
+      "name": "getPendingTransferTime",
+      "operation_type": "contract_interaction",
+      "signature": "getPendingTransferTime(address)"
+    },
+    {
+      "name": "setPendingTransferTime",
+      "operation_type": "contract_interaction",
+      "signature": "setPendingTransferTime(uint256)"
+    },
+    {
+      "name": "getLostAccountRecoveryTimeInMinutes",
+      "operation_type": "contract_interaction",
+      "signature": "getLostAccountRecoveryTimeInMinutes(address)"
+    },
+    {
+      "name": "setLostAccountRecoveryTimeInMinutes",
+      "operation_type": "contract_interaction",
+      "signature": "setLostAccountRecoveryTimeInMinutes(uint256)"
+    }
+  ],
+  "id": "ERC1080",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1080",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1080.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for tokens extending ERC-20 or ERC-791. This standard provides basic functionality to recover stolen or lost accounts, as well as provide for the chargeback of tokens.",
+  "title": "Recoverable Token"
+}

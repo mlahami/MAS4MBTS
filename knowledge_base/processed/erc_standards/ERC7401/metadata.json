@@ -1,0 +1,100 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7401",
+  "erc": "ERC-7401",
+  "events": [
+    {
+      "name": "NestTransfer",
+      "signature": "NestTransfer(address,address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "ChildProposed",
+      "signature": "ChildProposed(uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "ChildAccepted",
+      "signature": "ChildAccepted(uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "AllChildrenRejected",
+      "signature": "AllChildrenRejected(uint256)"
+    },
+    {
+      "name": "ChildTransferred",
+      "signature": "ChildTransferred(uint256,uint256,address,uint256,bool,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "directOwnerOf",
+      "operation_type": "contract_interaction",
+      "signature": "directOwnerOf(uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256,uint256)"
+    },
+    {
+      "name": "addChild",
+      "operation_type": "contract_interaction",
+      "signature": "addChild(uint256,uint256)"
+    },
+    {
+      "name": "acceptChild",
+      "operation_type": "contract_interaction",
+      "signature": "acceptChild(uint256,uint256,address,uint256)"
+    },
+    {
+      "name": "rejectAllChildren",
+      "operation_type": "contract_interaction",
+      "signature": "rejectAllChildren(uint256,uint256)"
+    },
+    {
+      "name": "transferChild",
+      "operation_type": "contract_interaction",
+      "signature": "transferChild(uint256,address,uint256,uint256,address,uint256,bool,bytes)"
+    },
+    {
+      "name": "childrenOf",
+      "operation_type": "contract_interaction",
+      "signature": "childrenOf(uint256)"
+    },
+    {
+      "name": "pendingChildrenOf",
+      "operation_type": "contract_interaction",
+      "signature": "pendingChildrenOf(uint256)"
+    },
+    {
+      "name": "childOf",
+      "operation_type": "contract_interaction",
+      "signature": "childOf(uint256,uint256)"
+    },
+    {
+      "name": "pendingChildOf",
+      "operation_type": "contract_interaction",
+      "signature": "pendingChildOf(uint256,uint256)"
+    },
+    {
+      "name": "nestTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "nestTransferFrom(address,address,uint256,uint256,bytes)"
+    }
+  ],
+  "id": "ERC7401",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7401",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7401.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "\u2757\ufe0f **[ERC-7401](./eip-7401.md) supersedes [ERC-6059](./eip-6059.md).** \u2757\ufe0f The Parent-Governed NFT Nesting standard extends [ERC-721](./eip-721.md) by allowing for a new inter-NFT relationship and interaction. At its core, the idea behind the proposal is simple: the owner of an NFT does not have to be an Externally Owned Account (EOA) or a smart contract, it can also be an NFT. The process of nesting an NFT into another is functionally identical to sending it to another user. The process of sending a token out of another one involves issuing a transaction from the account owning the parent token. An NFT can be owned by a single other NFT, but can in turn have a number of NFTs that it owns. This proposal establishes the framework for the parent-child relationships of NFTs. A parent token is",
+  "title": "Parent-Governed Non-Fungible Tokens Nesting"
+}

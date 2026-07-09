@@ -1,0 +1,123 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7832",
+  "erc": "ERC-7832",
+  "events": [
+    {
+      "name": "CreatorTermsUpdated",
+      "signature": "CreatorTermsUpdated(uint256,uint256,uint256)"
+    },
+    {
+      "name": "DonationReceived",
+      "signature": "DonationReceived(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "currentTokenId",
+      "operation_type": "contract_interaction",
+      "signature": "currentTokenId()"
+    },
+    {
+      "name": "mintBaseFee",
+      "operation_type": "contract_interaction",
+      "signature": "mintBaseFee()"
+    },
+    {
+      "name": "creatorSignatureFee",
+      "operation_type": "contract_interaction",
+      "signature": "creatorSignatureFee()"
+    },
+    {
+      "name": "maxMintsPerUserInCycle",
+      "operation_type": "contract_interaction",
+      "signature": "maxMintsPerUserInCycle()"
+    },
+    {
+      "name": "lastUpdateTimestamp",
+      "operation_type": "contract_interaction",
+      "signature": "lastUpdateTimestamp()"
+    },
+    {
+      "name": "UPDATE_INTERVAL",
+      "operation_type": "contract_interaction",
+      "signature": "UPDATE_INTERVAL()"
+    },
+    {
+      "name": "getCreatorSignature",
+      "operation_type": "contract_interaction",
+      "signature": "getCreatorSignature()"
+    },
+    {
+      "name": "CONTRIBUTOR_ROLE",
+      "operation_type": "contract_interaction",
+      "signature": "CONTRIBUTOR_ROLE()"
+    },
+    {
+      "name": "CREATOR_ROLE",
+      "operation_type": "contract_interaction",
+      "signature": "CREATOR_ROLE()"
+    },
+    {
+      "name": "ADMIN_ROLE",
+      "operation_type": "contract_interaction",
+      "signature": "ADMIN_ROLE()"
+    },
+    {
+      "name": "mintsPerUserInCycle",
+      "operation_type": "contract_interaction",
+      "signature": "mintsPerUserInCycle(address)"
+    },
+    {
+      "name": "donate",
+      "operation_type": "contract_interaction",
+      "signature": "donate(address)"
+    },
+    {
+      "name": "mintFee",
+      "operation_type": "contract_interaction",
+      "signature": "mintFee()"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    },
+    {
+      "name": "pause",
+      "operation_type": "contract_interaction",
+      "signature": "pause()"
+    },
+    {
+      "name": "unpause",
+      "operation_type": "contract_interaction",
+      "signature": "unpause()"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(string)"
+    },
+    {
+      "name": "updateTerms",
+      "operation_type": "contract_interaction",
+      "signature": "updateTerms(uint256,uint256,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(uint256)"
+    }
+  ],
+  "id": "ERC7832",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7832",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7832.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP proposes a standard for creating economically sustainable NFT governance for collections built on collaborative models based on [ERC-721](./eip-721.md). It introduces dynamic minting fees, role-based access control, and a donation-based engagement model to enhance creator-community interactions. These mechanisms aim to balance scarcity, incentivize meaningful participation, and ensure sustainable growth for both creators and contributors. The model defines \"economically sustainable\" as tokens whose minting value, creator subscription fees, and token quantity within each progressive discount cycle can only be adjusted once every certain hours from the last update by an `ADMIN` user. These mechanisms prevent excessive administrative modifications that could disrupt market stability,",
+  "title": "Sustainable collaborative NFT collections"
+}

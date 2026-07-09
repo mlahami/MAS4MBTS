@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1077",
+  "erc": "ERC-1077",
+  "events": [],
+  "functions": [
+    {
+      "name": "executeGasRelay",
+      "operation_type": "contract_interaction",
+      "signature": "executeGasRelay(bytes,uint256,uint256,address,address,bytes)"
+    },
+    {
+      "name": "executeGasRelayMsg",
+      "operation_type": "contract_interaction",
+      "signature": "executeGasRelayMsg(uint256,bytes,uint256,uint256,address,address)"
+    },
+    {
+      "name": "executeGasRelayERC191Msg",
+      "operation_type": "contract_interaction",
+      "signature": "executeGasRelayERC191Msg(uint256,bytes,uint256,uint256,address,address)"
+    },
+    {
+      "name": "lastNonce",
+      "operation_type": "contract_interaction",
+      "signature": "lastNonce()"
+    }
+  ],
+  "id": "ERC1077",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1077",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1077.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "A main barrier for the adoption of DApps is the requirement of multiple tokens for executing in chain actions. Allowing users to sign messages to show intent of execution, but allowing a third party relayer to execute them can circumvent this problem, while ETH will always be required for ethereum transactions, it's possible for smart contract to take [EIP-191] signatures and forward a payment incentive to an untrusted party with ETH for executing the transaction.",
+  "title": "Gas relay for contract calls"
+}

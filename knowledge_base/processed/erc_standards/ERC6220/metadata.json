@@ -1,0 +1,108 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6220",
+  "erc": "ERC-6220",
+  "events": [
+    {
+      "name": "ChildAssetEquipped",
+      "signature": "ChildAssetEquipped(uint256,uint64,uint64,uint256,address,uint64)"
+    },
+    {
+      "name": "ChildAssetUnequipped",
+      "signature": "ChildAssetUnequipped(uint256,uint64,uint64,uint256,address,uint64)"
+    },
+    {
+      "name": "ValidParentEquippableGroupIdSet",
+      "signature": "ValidParentEquippableGroupIdSet(uint64,uint64,address)"
+    },
+    {
+      "name": "AddedPart",
+      "signature": "AddedPart(uint64,ItemType,uint8,address[],string)"
+    },
+    {
+      "name": "AddedEquippables",
+      "signature": "AddedEquippables(uint64,address[])"
+    },
+    {
+      "name": "SetEquippables",
+      "signature": "SetEquippables(uint64,address[])"
+    },
+    {
+      "name": "SetEquippableToAll",
+      "signature": "SetEquippableToAll(uint64)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "equip",
+      "operation_type": "contract_interaction",
+      "signature": "equip(IntakeEquip)"
+    },
+    {
+      "name": "unequip",
+      "operation_type": "contract_interaction",
+      "signature": "unequip(uint256,uint64,uint64)"
+    },
+    {
+      "name": "isChildEquipped",
+      "operation_type": "contract_interaction",
+      "signature": "isChildEquipped(uint256,address,uint256)"
+    },
+    {
+      "name": "canTokenBeEquippedWithAssetIntoSlot",
+      "operation_type": "contract_interaction",
+      "signature": "canTokenBeEquippedWithAssetIntoSlot(address,uint256,uint64,uint64)"
+    },
+    {
+      "name": "getEquipment",
+      "operation_type": "contract_interaction",
+      "signature": "getEquipment(uint256,address,uint64)"
+    },
+    {
+      "name": "getAssetAndEquippableData",
+      "operation_type": "contract_interaction",
+      "signature": "getAssetAndEquippableData(uint256,uint64)"
+    },
+    {
+      "name": "getMetadataURI",
+      "operation_type": "contract_interaction",
+      "signature": "getMetadataURI()"
+    },
+    {
+      "name": "getType",
+      "operation_type": "contract_interaction",
+      "signature": "getType()"
+    },
+    {
+      "name": "checkIsEquippable",
+      "operation_type": "contract_interaction",
+      "signature": "checkIsEquippable(uint64,address)"
+    },
+    {
+      "name": "checkIsEquippableToAll",
+      "operation_type": "contract_interaction",
+      "signature": "checkIsEquippableToAll(uint64)"
+    },
+    {
+      "name": "getPart",
+      "operation_type": "contract_interaction",
+      "signature": "getPart(uint64)"
+    },
+    {
+      "name": "getParts",
+      "operation_type": "contract_interaction",
+      "signature": "getParts(uint64[])"
+    }
+  ],
+  "id": "ERC6220",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6220",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6220.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The Composable NFTs utilizing equippable parts standard extends [ERC-721](./eip-721.md) by allowing the NFTs to selectively add parts to themselves via equipping. Tokens can be composed by cherry picking the list of parts from a Catalog for each NFT instance, and are able to equip other NFTs into slots, which are also defined within the Catalog. Catalogs contain parts from which NFTs can be composed. This proposal introduces two types of parts; slot type of parts and fixed type of parts. The slot type of parts allow for other NFT collections to be equipped into them, while fixed parts are full components with their own metadata. Equipping a part into an NFT doesn't generate a new token, but rather adds another component to be rendered when retrieving the token.",
+  "title": "Composable NFTs utilizing Equippable Parts"
+}

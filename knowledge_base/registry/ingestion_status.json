@@ -1,0 +1,86 @@
+{
+  "items": [
+    {
+      "id": "ERC1155",
+      "kind": "erc_standard",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\erc_standards\\ERC1155\\metadata.json"
+    },
+    {
+      "id": "ERC20",
+      "kind": "erc_standard",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\erc_standards\\ERC20\\metadata.json"
+    },
+    {
+      "id": "ERC4626",
+      "kind": "erc_standard",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\erc_standards\\ERC4626\\metadata.json"
+    },
+    {
+      "id": "ERC721",
+      "kind": "erc_standard",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\erc_standards\\ERC721\\metadata.json"
+    },
+    {
+      "id": "VULN-ACCESS-001",
+      "kind": "vulnerability",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-ACCESS-001.json"
+    },
+    {
+      "id": "VULN-REENTRANCY-001",
+      "kind": "vulnerability",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-REENTRANCY-001.json"
+    },
+    {
+      "id": "VULN-ORDERING-001",
+      "kind": "vulnerability",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-ORDERING-001.json"
+    },
+    {
+      "id": "VULN-ACCOUNTING-001",
+      "kind": "vulnerability",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\vulnerabilities\\VULN-ACCOUNTING-001.json"
+    },
+    {
+      "id": "TP-ACCESS-001",
+      "kind": "threat_pattern",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\threat_patterns\\TP-ACCESS-001.json"
+    },
+    {
+      "id": "TP-ERC20-ALLOWANCE-001",
+      "kind": "threat_pattern",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\threat_patterns\\TP-ERC20-ALLOWANCE-001.json"
+    },
+    {
+      "id": "TP-REENTRANCY-001",
+      "kind": "threat_pattern",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\threat_patterns\\TP-REENTRANCY-001.json"
+    },
+    {
+      "id": "TP-ACCOUNTING-001",
+      "kind": "threat_pattern",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\threat_patterns\\TP-ACCOUNTING-001.json"
+    },
+    {
+      "id": "AUX-MITRE-001",
+      "kind": "auxiliary",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-MITRE-001.json"
+    },
+    {
+      "id": "AUX-NIST-001",
+      "kind": "auxiliary",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-NIST-001.json"
+    },
+    {
+      "id": "AUX-RISK-DREAD-001",
+      "kind": "auxiliary",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-RISK-DREAD-001.json"
+    },
+    {
+      "id": "AUX-RISK-CVSS-001",
+      "kind": "auxiliary",
+      "path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\processed\\auxiliary\\AUX-RISK-CVSS-001.json"
+    }
+  ],
+  "last_run": "2026-07-08T11:00:31+00:00",
+  "mode": "offline_seed"
+}

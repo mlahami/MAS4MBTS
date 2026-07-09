@@ -1,0 +1,17 @@
+{
+  "category": "Using Components with Known Vulnerabilities",
+  "cwe": "CWE-937",
+  "description": "Using an outdated compiler version can be problematic especially if there are publicly disclosed bugs and issues that affect the current compiler version.",
+  "id": "VULN-SWC-102",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "It is recommended to use a recent version of the Solidity compiler.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-102.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-102"
+}

@@ -1,0 +1,104 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8273",
+  "erc": "ERC-8273",
+  "events": [
+    {
+      "name": "Attested",
+      "signature": "Attested(uint256,address,bytes32,bytes32,bytes32,address,uint256,bytes32,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "isAttested",
+      "operation_type": "contract_interaction",
+      "signature": "isAttested(SubjectRef,bytes32,bytes32)"
+    },
+    {
+      "name": "latestAttestationId",
+      "operation_type": "contract_interaction",
+      "signature": "latestAttestationId(SubjectRef,bytes32,bytes32)"
+    },
+    {
+      "name": "getAttestation",
+      "operation_type": "contract_interaction",
+      "signature": "getAttestation(uint256)"
+    },
+    {
+      "name": "getActiveAttestation",
+      "operation_type": "contract_interaction",
+      "signature": "getActiveAttestation(SubjectRef,bytes32,bytes32)"
+    },
+    {
+      "name": "isAttestedAddress",
+      "operation_type": "contract_interaction",
+      "signature": "isAttestedAddress(address,bytes32,bytes32)"
+    },
+    {
+      "name": "getActiveAttestationByWallet",
+      "operation_type": "contract_interaction",
+      "signature": "getActiveAttestationByWallet(address,bytes32,bytes32)"
+    },
+    {
+      "name": "attestAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "attestAndCall(SubjectRef,bytes32,bytes32,address,ExecutionRequest)"
+    },
+    {
+      "name": "executeFromRelayer",
+      "operation_type": "contract_interaction",
+      "signature": "executeFromRelayer(AgentCall[],bytes)"
+    },
+    {
+      "name": "_subjectHash",
+      "operation_type": "contract_interaction",
+      "signature": "_subjectHash(uint256,bytes32)"
+    },
+    {
+      "name": "_lookupKey",
+      "operation_type": "contract_interaction",
+      "signature": "_lookupKey(bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "_walletTSlot",
+      "operation_type": "contract_interaction",
+      "signature": "_walletTSlot(address,bytes32,bytes32)"
+    },
+    {
+      "name": "_subjectTSlot",
+      "operation_type": "contract_interaction",
+      "signature": "_subjectTSlot(bytes32,bytes32,bytes32)"
+    },
+    {
+      "name": "_attestTransient",
+      "operation_type": "contract_interaction",
+      "signature": "_attestTransient(SubjectRef,bytes32,bytes32,bytes32,address)"
+    },
+    {
+      "name": "_executeAgentProfile",
+      "operation_type": "contract_interaction",
+      "signature": "_executeAgentProfile(address,ExecutionRequest,uint256)"
+    },
+    {
+      "name": "_executeUserOpProfile",
+      "operation_type": "contract_interaction",
+      "signature": "_executeUserOpProfile(address,ExecutionRequest,uint256)"
+    }
+  ],
+  "id": "ERC8273",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8273",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8273.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a standard interface for an **on-chain Agent Attestation Registry**. The registry manages attestations issued by Attestors. Each attestation has a complete lifecycle, issuance and transaction-scoped consumption, and is described by an `AttestationRecord` containing: - **subjectId / subjectType**: identifies the attested subject, for example `subjectId = agentId` + `subjectType = keccak256(\"ERC8004_AGENT\")`, independently of any specific identity system; - **capability** + **actionDigest**: two independent axes that identify the authorization scope. `capability` is a coarse-grained capability identifier, such as `keccak256(\"DEFI_ACCESS_V1\")`, and expresses \"which class of authorization this is.\" `actionDigest` is a fine-grained action fingerprint and expresses \"which concre",
+  "title": "Attestation-Gated Agentic Actions"
+}

@@ -1,0 +1,168 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7794",
+  "erc": "ERC-7794",
+  "events": [
+    {
+      "name": "GrantRegistered",
+      "signature": "GrantRegistered(bytes32,uint256,uint256,string,address)"
+    },
+    {
+      "name": "OwnershipTransferred",
+      "signature": "OwnershipTransferred(bytes32,address)"
+    },
+    {
+      "name": "GranteeAdded",
+      "signature": "GranteeAdded(bytes32,address)"
+    },
+    {
+      "name": "GranteeRemoved",
+      "signature": "GranteeRemoved(bytes32,address)"
+    },
+    {
+      "name": "StartDateSet",
+      "signature": "StartDateSet(bytes32,uint256)"
+    },
+    {
+      "name": "MilestoneDateAdded",
+      "signature": "MilestoneDateAdded(bytes32,uint256)"
+    },
+    {
+      "name": "MilestoneDateRemoved",
+      "signature": "MilestoneDateRemoved(bytes32,uint256)"
+    },
+    {
+      "name": "DisbursementAdded",
+      "signature": "DisbursementAdded(bytes32,uint256,address,uint256)"
+    },
+    {
+      "name": "DisbursementRemoved",
+      "signature": "DisbursementRemoved(bytes32,uint256)"
+    },
+    {
+      "name": "DisbursementMade",
+      "signature": "DisbursementMade(bytes32,uint256,bool)"
+    },
+    {
+      "name": "ExternalLinkAdded",
+      "signature": "ExternalLinkAdded(bytes32,string)"
+    },
+    {
+      "name": "ExternalLinkRemoved",
+      "signature": "ExternalLinkRemoved(bytes32,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerGrant",
+      "operation_type": "contract_interaction",
+      "signature": "registerGrant(uint256,uint256,string,address)"
+    },
+    {
+      "name": "transferOwnership",
+      "operation_type": "contract_interaction",
+      "signature": "transferOwnership(bytes32,address)"
+    },
+    {
+      "name": "addGrantee",
+      "operation_type": "contract_interaction",
+      "signature": "addGrantee(bytes32,address)"
+    },
+    {
+      "name": "removeGrantee",
+      "operation_type": "contract_interaction",
+      "signature": "removeGrantee(bytes32,address)"
+    },
+    {
+      "name": "setStartDate",
+      "operation_type": "contract_interaction",
+      "signature": "setStartDate(bytes32,uint256)"
+    },
+    {
+      "name": "addMilestoneDate",
+      "operation_type": "contract_interaction",
+      "signature": "addMilestoneDate(bytes32,uint256)"
+    },
+    {
+      "name": "removeMilestoneDate",
+      "operation_type": "contract_interaction",
+      "signature": "removeMilestoneDate(bytes32,uint256)"
+    },
+    {
+      "name": "addDisbursement",
+      "operation_type": "contract_interaction",
+      "signature": "addDisbursement(bytes32,uint256,address,uint256)"
+    },
+    {
+      "name": "removeDisbursement",
+      "operation_type": "contract_interaction",
+      "signature": "removeDisbursement(bytes32,uint256)"
+    },
+    {
+      "name": "setDisbursementStatus",
+      "operation_type": "contract_interaction",
+      "signature": "setDisbursementStatus(bytes32,uint256,bool)"
+    },
+    {
+      "name": "addExternalLink",
+      "operation_type": "contract_interaction",
+      "signature": "addExternalLink(bytes32,string)"
+    },
+    {
+      "name": "removeExternalLink",
+      "operation_type": "contract_interaction",
+      "signature": "removeExternalLink(bytes32,uint256)"
+    },
+    {
+      "name": "getGrant",
+      "operation_type": "contract_interaction",
+      "signature": "getGrant(bytes32)"
+    },
+    {
+      "name": "getGrantManager",
+      "operation_type": "contract_interaction",
+      "signature": "getGrantManager(bytes32)"
+    },
+    {
+      "name": "getGrantees",
+      "operation_type": "contract_interaction",
+      "signature": "getGrantees(bytes32)"
+    },
+    {
+      "name": "getMilestonesDates",
+      "operation_type": "contract_interaction",
+      "signature": "getMilestonesDates(bytes32)"
+    },
+    {
+      "name": "getDisbursement",
+      "operation_type": "contract_interaction",
+      "signature": "getDisbursement(bytes32,uint256)"
+    },
+    {
+      "name": "getExternalLinks",
+      "operation_type": "contract_interaction",
+      "signature": "getExternalLinks(bytes32)"
+    },
+    {
+      "name": "_requireManager",
+      "operation_type": "contract_interaction",
+      "signature": "_requireManager(bytes32)"
+    },
+    {
+      "name": "_requireMilestoneDate",
+      "operation_type": "contract_interaction",
+      "signature": "_requireMilestoneDate(bytes32,uint256)"
+    }
+  ],
+  "id": "ERC7794",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7794",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7794.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a Grant Registry contract intended for managing financial, research, or project-based grants that provide funding for projects across multiple blockchains. The contract standardizes the registration, management, and tracking of these grants by organizing data into distinct categories, enabling clear separation between immutable fields and mutable fields. It supports modular disbursement tracking and allows for external links to off-chain documentation. This registry emits lifecycle events, enabling external protocols to efficiently access grant data, which promotes transparency, interoperability, and enhanced insights into grant program performance.",
+  "title": "Grant Registry"
+}

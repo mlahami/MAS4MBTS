@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7303",
+  "erc": "ERC-7303",
+  "events": [],
+  "functions": [
+    {
+      "name": "_grantRoleByERC721",
+      "operation_type": "contract_interaction",
+      "signature": "_grantRoleByERC721(bytes32,address)"
+    },
+    {
+      "name": "_grantRoleByERC1155",
+      "operation_type": "contract_interaction",
+      "signature": "_grantRoleByERC1155(bytes32,address,uint256)"
+    },
+    {
+      "name": "_checkHasToken",
+      "operation_type": "contract_interaction",
+      "signature": "_checkHasToken(bytes32,address)"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(address,uint256)"
+    },
+    {
+      "name": "burn",
+      "operation_type": "burning",
+      "signature": "burn(uint256)"
+    }
+  ],
+  "id": "ERC7303",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7303",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7303.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC introduces an access control scheme termed Token-Controlled Token Circulation (TCTC). By representing the privileges associated with a role as an [ERC-721](./eip-721.md) or [ERC-1155](./eip-1155.md) token (referred to as a `control token`), the processes of granting or revoking a role can be facilitated through the minting or burning of the corresponding `control token`.",
+  "title": "Token-Controlled Token Circulation"
+}

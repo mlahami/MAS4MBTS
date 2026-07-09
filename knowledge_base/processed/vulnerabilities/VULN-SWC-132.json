@@ -1,0 +1,17 @@
+{
+  "category": "Improper Locking",
+  "cwe": "CWE-667",
+  "description": "Contracts can behave erroneously when they strictly assume a specific Ether balance. It is always possible to forcibly send ether to a contract (without triggering its fallback function), using selfdestruct, or by mining to the account. In the worst case scenario this could lead to DOS conditions that might render the contract unusable.",
+  "id": "VULN-SWC-132",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Avoid strict equality checks for the Ether balance in a contract.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-132.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-132"
+}

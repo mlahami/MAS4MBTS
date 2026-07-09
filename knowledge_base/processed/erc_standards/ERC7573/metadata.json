@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7573",
+  "erc": "ERC-7573",
+  "events": [
+    {
+      "name": "TransferIncepted",
+      "signature": "TransferIncepted(uint256,int,address,address,bytes,bytes)"
+    },
+    {
+      "name": "TransferConfirmed",
+      "signature": "TransferConfirmed(uint256,int,address,address,bytes,bytes)"
+    },
+    {
+      "name": "TokenClaimed",
+      "signature": "TokenClaimed(uint256,bytes)"
+    },
+    {
+      "name": "TokenReclaimed",
+      "signature": "TokenReclaimed(uint256,bytes)"
+    },
+    {
+      "name": "TransferKeyRequested",
+      "signature": "TransferKeyRequested(address,uint256,bytes)"
+    },
+    {
+      "name": "TransferKeyReleased",
+      "signature": "TransferKeyReleased(address,uint256,bool,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "inceptTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "inceptTransfer(uint256,int,address,bytes,bytes)"
+    },
+    {
+      "name": "confirmTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "confirmTransfer(uint256,int,address,bytes,bytes)"
+    },
+    {
+      "name": "transferWithKey",
+      "operation_type": "contract_interaction",
+      "signature": "transferWithKey(uint256,bytes)"
+    },
+    {
+      "name": "transferAndDecrypt",
+      "operation_type": "contract_interaction",
+      "signature": "transferAndDecrypt(uint256,int,address,bytes,bytes)"
+    },
+    {
+      "name": "cancelAndDecrypt",
+      "operation_type": "contract_interaction",
+      "signature": "cancelAndDecrypt(uint256,address,bytes,bytes)"
+    },
+    {
+      "name": "releaseKey",
+      "operation_type": "contract_interaction",
+      "signature": "releaseKey(uint256,bytes)"
+    }
+  ],
+  "id": "ERC7573",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7573",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7573.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The interfaces in this proposal model a functional transaction scheme to establish a secure *delivery-versus-payment* across two blockchains, where a) no intermediary is required and b) one of the two chains can securely interact with a stateless \"decryption oracle\". Here, *delivery-versus-payment* refers to the exchange of, e.g., an asset against a payment; however, the concept is generic to make a transfer of one token on one chain (e.g., the payment) conditional to the successful transfer of another token on another chain (e.g., the asset). The scheme is realized by two smart contracts, one on each chain. One smart contract implements the `ILockingContract` interface on one chain (e.g. the \"asset chain\"), and another smart contract implements the `IDecryptionContract` interface on the o",
+  "title": "Conditional-upon-Transfer-Decryption for DvP"
+}

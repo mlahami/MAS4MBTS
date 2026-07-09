@@ -1,0 +1,111 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8065",
+  "erc": "ERC-8065",
+  "events": [
+    {
+      "name": "CommitmentUpdated",
+      "signature": "CommitmentUpdated(uint256,bytes32,address,uint256)"
+    },
+    {
+      "name": "Deposited",
+      "signature": "Deposited(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Withdrawn",
+      "signature": "Withdrawn(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Reminted",
+      "signature": "Reminted(address,address,uint256,uint256,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "remint",
+      "operation_type": "contract_interaction",
+      "signature": "remint(address,uint256,uint256,RemintData)"
+    },
+    {
+      "name": "previewDeposit",
+      "operation_type": "contract_interaction",
+      "signature": "previewDeposit(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "previewWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "previewWithdraw(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "previewRemint",
+      "operation_type": "contract_interaction",
+      "signature": "previewRemint(address,uint256,uint256,RemintData)"
+    },
+    {
+      "name": "getLatestCommitment",
+      "operation_type": "contract_interaction",
+      "signature": "getLatestCommitment(uint256)"
+    },
+    {
+      "name": "hasCommitment",
+      "operation_type": "contract_interaction",
+      "signature": "hasCommitment(uint256,bytes32)"
+    },
+    {
+      "name": "getCommitLeafCount",
+      "operation_type": "contract_interaction",
+      "signature": "getCommitLeafCount(uint256)"
+    },
+    {
+      "name": "getCommitLeaves",
+      "operation_type": "contract_interaction",
+      "signature": "getCommitLeaves(uint256,uint256,uint256)"
+    },
+    {
+      "name": "getUnderlying",
+      "operation_type": "contract_interaction",
+      "signature": "getUnderlying()"
+    },
+    {
+      "name": "verifyProof",
+      "operation_type": "contract_interaction",
+      "signature": "verifyProof(bytes,uint256[])"
+    },
+    {
+      "name": "remint",
+      "operation_type": "contract_interaction",
+      "signature": "remint(address,uint256,uint256,IERC8065.RemintData)"
+    },
+    {
+      "name": "previewRemint",
+      "operation_type": "contract_interaction",
+      "signature": "previewRemint(address,uint256,uint256,IERC8065.RemintData)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC8065",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8065",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8065.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a standard for the Zero Knowledge Token Wrapper, a wrapper that adds privacy to tokens \u2014 including [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), [ERC-1155](./eip-1155.md) and [ERC-6909](./eip-6909.md) \u2014 while preserving all of the tokens' original properties, such as transferability, tradability, and composability. It specifies [EIP-7503](./eip-7503.md)-style provable burn-and-remint flows, enabling users to break on-chain traceability and making privacy a native feature of all tokens on Ethereum.",
+  "title": "Zero Knowledge Token Wrapper"
+}

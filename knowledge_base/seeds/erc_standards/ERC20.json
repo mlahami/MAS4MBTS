@@ -1,0 +1,35 @@
+{
+  "id": "ERC20",
+  "erc": "ERC-20",
+  "eip": "EIP-20",
+  "title": "Token Standard",
+  "status": "Final",
+  "category": "ERC",
+  "source": {
+    "source_id": "ethereum_ercs_website",
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-20"
+  },
+  "summary": "ERC-20 defines a standard interface for fungible tokens, including token transfers, delegated transfers, allowances, and transfer/approval events.",
+  "functions": [
+    {"name": "totalSupply", "signature": "totalSupply()", "operation_type": "supply_query"},
+    {"name": "balanceOf", "signature": "balanceOf(address)", "operation_type": "balance_query"},
+    {"name": "transfer", "signature": "transfer(address,uint256)", "operation_type": "token_transfer"},
+    {"name": "transferFrom", "signature": "transferFrom(address,address,uint256)", "operation_type": "delegated_token_transfer"},
+    {"name": "approve", "signature": "approve(address,uint256)", "operation_type": "allowance_management"},
+    {"name": "allowance", "signature": "allowance(address,address)", "operation_type": "allowance_query"}
+  ],
+  "events": [
+    {"name": "Transfer", "signature": "Transfer(address,address,uint256)"},
+    {"name": "Approval", "signature": "Approval(address,address,uint256)"}
+  ],
+  "assets": [
+    {"name": "Token balances", "type": "contract_state", "criticality": "high"},
+    {"name": "Token allowances", "type": "contract_state", "criticality": "high"},
+    {"name": "Total supply", "type": "contract_state", "criticality": "high"}
+  ],
+  "security_properties": [
+    {"name": "Transfer authorization", "description": "Only a token holder can transfer its own tokens."},
+    {"name": "Allowance bounded spending", "description": "A spender cannot transfer more than the approved allowance."},
+    {"name": "Accounting integrity", "description": "Transfers preserve balance and total-supply invariants."}
+  ]
+}

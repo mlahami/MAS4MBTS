@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Adding or removing liquidity in AMMs (e.g., Uniswap, Curve) without enforcing a minimum amount of LP tokens or underlying assets received can expose users to sandwich attacks or unfavorable execution. Similar to swap slippage (SCWE-090), LP operations can be front-run: an attacker manipulates the pool before the user's add/remove, then reverses after. Without `amountMin` or equivalent checks, users may receive far less than expected.",
+  "id": "VULN-OWASP-SCWE-151",
+  "name": "Add/Remove Liquidity Without Minimum Output Validation",
+  "owasp": "SCWE-151",
+  "remediation": "- Accept `amountMin` (or `minLPTokens`, `minAmounts`) from users and enforce it when adding/removing liquidity. - Use deadline parameters (SCWE-141) in addition to slippage protection.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-151.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

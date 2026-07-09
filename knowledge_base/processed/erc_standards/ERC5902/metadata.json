@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5902",
+  "erc": "ERC-5902",
+  "events": [],
+  "functions": [
+    {
+      "name": "registerHook",
+      "operation_type": "contract_interaction",
+      "signature": "registerHook(address,uint256,bytes)"
+    },
+    {
+      "name": "verifyHook",
+      "operation_type": "contract_interaction",
+      "signature": "verifyHook(address,uint256,bytes)"
+    },
+    {
+      "name": "updateHook",
+      "operation_type": "contract_interaction",
+      "signature": "updateHook(address,uint256,bytes)"
+    },
+    {
+      "name": "removeHook",
+      "operation_type": "contract_interaction",
+      "signature": "removeHook(address,uint256,bytes)"
+    },
+    {
+      "name": "registerSubscriber",
+      "operation_type": "contract_interaction",
+      "signature": "registerSubscriber(address,address,uint256,uint256,uint256,uint256,uint256,address)"
+    },
+    {
+      "name": "updateSubscriber",
+      "operation_type": "contract_interaction",
+      "signature": "updateSubscriber(address,address,uint256,uint256)"
+    },
+    {
+      "name": "removeSubscription",
+      "operation_type": "contract_interaction",
+      "signature": "removeSubscription(address,address,uint256)"
+    },
+    {
+      "name": "fireHook",
+      "operation_type": "contract_interaction",
+      "signature": "fireHook(bytes,bytes32,uint256)"
+    },
+    {
+      "name": "addHook",
+      "operation_type": "contract_interaction",
+      "signature": "addHook(uint256,bytes)"
+    },
+    {
+      "name": "verifyEventHookRegistration",
+      "operation_type": "contract_interaction",
+      "signature": "verifyEventHookRegistration(uint256,bytes)"
+    },
+    {
+      "name": "verifyEventHook",
+      "operation_type": "contract_interaction",
+      "signature": "verifyEventHook(bytes32,uint256,uint256,uint256)"
+    },
+    {
+      "name": "verifyHook",
+      "operation_type": "contract_interaction",
+      "signature": "verifyHook(address,bytes,uint256,uint256,uint256)"
+    }
+  ],
+  "id": "ERC5902",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5902",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5902.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP proposes a standard for creating \"hooks\" that allow a smart contract function to be called automatically in response to a trigger fired by another contract, by using a public relayer network as a messaging bus. While there are many similar solutions in existence already, this proposal describes a simple yet powerful primitive that can be employed by many applications in an open, permissionless and decentralized manner. It relies on two interfaces, one for a publisher contract and one for a subscriber contract. The publisher contract emits events that are picked up by \"relayers\", who are independent entities that subscribe to \"hook\" events on publisher contracts, and call a function on the respective subscriber contracts, whenever a hook event is fired by the publisher contracts. W",
+  "title": "Smart Contract Event Hooks"
+}

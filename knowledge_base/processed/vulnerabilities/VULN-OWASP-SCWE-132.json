@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Calculation",
+  "cwe": "CWE-682",
+  "description": "Bridging tokens with differing decimals without normalization can over- or under-mint wrapped assets. Attackers can exploit decimal confusion to siphon value or lock funds when withdrawing back to the origin chain.",
+  "id": "VULN-OWASP-SCWE-132",
+  "name": "Mismatched Token Decimals in Bridge Mint/Burn",
+  "owasp": "SCWE-132",
+  "remediation": "- Normalize amounts to a canonical precision before mint/burn. - Store per-token decimal config and validate consistency during bridge operations. - Add tests for round-trip conversions across chains with varying decimals.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-132.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

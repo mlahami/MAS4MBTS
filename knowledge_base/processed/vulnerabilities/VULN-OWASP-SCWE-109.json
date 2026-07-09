@@ -1,0 +1,16 @@
+{
+  "category": "Excessive Iteration",
+  "cwe": "CWE-834",
+  "description": "Iterating over user-controlled arrays or mappings without bounds lets attackers submit large inputs that exhaust gas, causing denial of service. Functions like batch withdrawals, reward distribution, or liquidations may become permanently unusable.",
+  "id": "VULN-OWASP-SCWE-109",
+  "name": "Unbounded Loops on Untrusted Input",
+  "owasp": "SCWE-109",
+  "remediation": "- Impose upper bounds on loop iterations or batch sizes. - Use pagination/iterative processing with checkpoints. - Avoid on-chain iteration over untrusted lists; rely on off-chain aggregation with verifiable proofs (Merkle leaves).",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-109.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

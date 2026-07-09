@@ -1,0 +1,53 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7498",
+  "erc": "ERC-7498",
+  "events": [
+    {
+      "name": "CampaignUpdated",
+      "signature": "CampaignUpdated(uint256,Campaign,string)"
+    },
+    {
+      "name": "Redemption",
+      "signature": "Redemption(uint256,uint256,bytes32,uint256[],uint256[],address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getCampaign",
+      "operation_type": "contract_interaction",
+      "signature": "getCampaign(uint256)"
+    },
+    {
+      "name": "createCampaign",
+      "operation_type": "contract_interaction",
+      "signature": "createCampaign(Campaign,string)"
+    },
+    {
+      "name": "updateCampaign",
+      "operation_type": "contract_interaction",
+      "signature": "updateCampaign(uint256,Campaign,string)"
+    },
+    {
+      "name": "redeem",
+      "operation_type": "share_redemption",
+      "signature": "redeem(uint256[],address,bytes)"
+    },
+    {
+      "name": "mintRedemption",
+      "operation_type": "contract_interaction",
+      "signature": "mintRedemption(uint256,address,OfferItem,ConsiderationItem[],TraitRedemption[])"
+    }
+  ],
+  "id": "ERC7498",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7498",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7498.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification introduces a new interface that extends [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) to enable the discovery and use of onchain and offchain redeemables for NFTs. Onchain getters and events facilitate discovery of redeemable campaigns and their requirements. New onchain mints use an interface that gives context to the minting contract of what was redeemed. For redeeming physical products and goods (offchain redeemables) a `redemptionHash` and `signer` can tie onchain redemptions with offchain order identifiers that contain chosen product and shipping information.",
+  "title": "NFT Redeemables"
+}

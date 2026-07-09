@@ -1,0 +1,27 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8092",
+  "erc": "ERC-8092",
+  "events": [
+    {
+      "name": "AssociationCreated",
+      "signature": "AssociationCreated(bytes32,bytes32,bytes32,SignedAssociationRecord)"
+    },
+    {
+      "name": "AssociationRevoked",
+      "signature": "AssociationRevoked(bytes32,bytes32,uint256)"
+    }
+  ],
+  "functions": [],
+  "id": "ERC8092",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8092",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8092.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification defines a standard for establishing and verifying associations between blockchain accounts. This allows addresses to publicly declare, prove and revoke a relationship with other addresses by sharing a standardized payload. For onchain applications, this payload may be signed by both parties for third-party authentication. This enables use cases like sub-account identity inheritance, authorization delegation, and reputation collation.",
+  "title": "Associated Accounts"
+}

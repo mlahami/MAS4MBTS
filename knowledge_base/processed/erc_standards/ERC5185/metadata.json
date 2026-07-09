@@ -1,0 +1,23 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5185",
+  "erc": "ERC-5185",
+  "events": [
+    {
+      "name": "MetadataUpdates",
+      "signature": "MetadataUpdates(string)"
+    }
+  ],
+  "functions": [],
+  "id": "ERC5185",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5185",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5185.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This specification defines a standard way to allow controlled NFTs' metadata updates along predefined formulas. Updates of the original metadata are restricted and defined by a set of recipes and the sequence and results of these recipes are deterministic and fully verifiable with on-chain metadata updates event. The proposal depends on and extends the [EIP-721](./eip-721.md) and [EIP-1155](./eip-1155.md).",
+  "title": "NFT Updatable Metadata Extension"
+}

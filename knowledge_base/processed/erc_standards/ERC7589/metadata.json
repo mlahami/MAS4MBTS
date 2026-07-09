@@ -1,0 +1,115 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7589",
+  "erc": "ERC-7589",
+  "events": [
+    {
+      "name": "TokensCommitted",
+      "signature": "TokensCommitted(address,uint256,address,uint256,uint256)"
+    },
+    {
+      "name": "RoleGranted",
+      "signature": "RoleGranted(uint256,bytes32,address,uint64,bool,bytes)"
+    },
+    {
+      "name": "RoleRevoked",
+      "signature": "RoleRevoked(uint256,bytes32,address)"
+    },
+    {
+      "name": "TokensReleased",
+      "signature": "TokensReleased(uint256)"
+    },
+    {
+      "name": "RoleApprovalForAll",
+      "signature": "RoleApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "commitTokens",
+      "operation_type": "contract_interaction",
+      "signature": "commitTokens(address,address,uint256,uint256)"
+    },
+    {
+      "name": "grantRole",
+      "operation_type": "contract_interaction",
+      "signature": "grantRole(uint256,bytes32,address,uint64,bool,bytes)"
+    },
+    {
+      "name": "revokeRole",
+      "operation_type": "contract_interaction",
+      "signature": "revokeRole(uint256,bytes32,address)"
+    },
+    {
+      "name": "releaseTokens",
+      "operation_type": "contract_interaction",
+      "signature": "releaseTokens(uint256)"
+    },
+    {
+      "name": "setRoleApprovalForAll",
+      "operation_type": "contract_interaction",
+      "signature": "setRoleApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "grantorOf",
+      "operation_type": "contract_interaction",
+      "signature": "grantorOf(uint256)"
+    },
+    {
+      "name": "tokenAddressOf",
+      "operation_type": "contract_interaction",
+      "signature": "tokenAddressOf(uint256)"
+    },
+    {
+      "name": "tokenIdOf",
+      "operation_type": "contract_interaction",
+      "signature": "tokenIdOf(uint256)"
+    },
+    {
+      "name": "tokenAmountOf",
+      "operation_type": "contract_interaction",
+      "signature": "tokenAmountOf(uint256)"
+    },
+    {
+      "name": "roleData",
+      "operation_type": "contract_interaction",
+      "signature": "roleData(uint256,bytes32,address)"
+    },
+    {
+      "name": "roleExpirationDate",
+      "operation_type": "contract_interaction",
+      "signature": "roleExpirationDate(uint256,bytes32,address)"
+    },
+    {
+      "name": "isRoleRevocable",
+      "operation_type": "contract_interaction",
+      "signature": "isRoleRevocable(uint256,bytes32,address)"
+    },
+    {
+      "name": "isRoleApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isRoleApprovedForAll(address,address,address)"
+    },
+    {
+      "name": "commitTokensAndGrantRole",
+      "operation_type": "contract_interaction",
+      "signature": "commitTokensAndGrantRole(address,address,uint256,uint256,bytes32,address,uint64,bool,bytes)"
+    },
+    {
+      "name": "roleBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "roleBalanceOf(bytes32,address,uint256,address)"
+    }
+  ],
+  "id": "ERC7589",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7589",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7589.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard introduces role management for SFTs (Semi-Fungible Tokens). Each role assignment is granted to a single user (grantee) and expires automatically. Roles are defined as `bytes32` and feature a custom `_data` field of arbitrary size to allow customization.",
+  "title": "Semi-Fungible Token Roles"
+}

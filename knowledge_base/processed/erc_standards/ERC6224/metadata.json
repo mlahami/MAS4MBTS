@@ -1,0 +1,146 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6224",
+  "erc": "ERC-6224",
+  "events": [
+    {
+      "name": "ContractAdded",
+      "signature": "ContractAdded(string,address)"
+    },
+    {
+      "name": "ProxyContractAdded",
+      "signature": "ProxyContractAdded(string,address,address)"
+    },
+    {
+      "name": "ProxyContractUpgraded",
+      "signature": "ProxyContractUpgraded(string,address)"
+    },
+    {
+      "name": "ContractRemoved",
+      "signature": "ContractRemoved(string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getContract",
+      "operation_type": "contract_interaction",
+      "signature": "getContract(string)"
+    },
+    {
+      "name": "hasContract",
+      "operation_type": "contract_interaction",
+      "signature": "hasContract(string)"
+    },
+    {
+      "name": "injectDependencies",
+      "operation_type": "contract_interaction",
+      "signature": "injectDependencies(string)"
+    },
+    {
+      "name": "injectDependenciesWithData",
+      "operation_type": "contract_interaction",
+      "signature": "injectDependenciesWithData(string,bytes)"
+    },
+    {
+      "name": "upgradeContract",
+      "operation_type": "contract_interaction",
+      "signature": "upgradeContract(string,address)"
+    },
+    {
+      "name": "upgradeContractAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "upgradeContractAndCall(string,address,bytes)"
+    },
+    {
+      "name": "addContract",
+      "operation_type": "contract_interaction",
+      "signature": "addContract(string,address)"
+    },
+    {
+      "name": "addProxyContract",
+      "operation_type": "contract_interaction",
+      "signature": "addProxyContract(string,address)"
+    },
+    {
+      "name": "addProxyContractAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "addProxyContractAndCall(string,address,bytes)"
+    },
+    {
+      "name": "justAddProxyContract",
+      "operation_type": "contract_interaction",
+      "signature": "justAddProxyContract(string,address)"
+    },
+    {
+      "name": "removeContract",
+      "operation_type": "contract_interaction",
+      "signature": "removeContract(string)"
+    },
+    {
+      "name": "setDependencies",
+      "operation_type": "contract_interaction",
+      "signature": "setDependencies(address,bytes)"
+    },
+    {
+      "name": "setInjector",
+      "operation_type": "contract_interaction",
+      "signature": "setInjector(address)"
+    },
+    {
+      "name": "getInjector",
+      "operation_type": "contract_interaction",
+      "signature": "getInjector()"
+    },
+    {
+      "name": "upgrade",
+      "operation_type": "contract_interaction",
+      "signature": "upgrade(address,address,bytes)"
+    },
+    {
+      "name": "getImplementation",
+      "operation_type": "contract_interaction",
+      "signature": "getImplementation(address)"
+    },
+    {
+      "name": "_onlyOwner",
+      "operation_type": "contract_interaction",
+      "signature": "_onlyOwner()"
+    },
+    {
+      "name": "__ContractsRegistry_init",
+      "operation_type": "contract_interaction",
+      "signature": "__ContractsRegistry_init()"
+    },
+    {
+      "name": "getProxyUpgrader",
+      "operation_type": "contract_interaction",
+      "signature": "getProxyUpgrader()"
+    },
+    {
+      "name": "_deployProxy",
+      "operation_type": "contract_interaction",
+      "signature": "_deployProxy(address,address,bytes)"
+    },
+    {
+      "name": "_setInjector",
+      "operation_type": "contract_interaction",
+      "signature": "_setInjector(address)"
+    },
+    {
+      "name": "_checkInjector",
+      "operation_type": "contract_interaction",
+      "signature": "_checkInjector()"
+    }
+  ],
+  "id": "ERC6224",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6224",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6224.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This EIP introduces an on-chain registry system that a decentralized protocol may use to manage its smart contracts. The proposed system consists of two components: `ContractsRegistry` and `Dependant`. The `ContractsRegistry` contract stores references to every smart contract used within a protocol, optionally making them upgradeable by deploying self-managed proxies on top, and acts as a hub the `Dependant` contracts query to fetch their required dependencies from.",
+  "title": "Contracts Dependencies Registry"
+}

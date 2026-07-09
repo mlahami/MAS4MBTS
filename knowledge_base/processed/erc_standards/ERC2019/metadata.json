@@ -1,0 +1,98 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2019",
+  "erc": "ERC-2019",
+  "events": [
+    {
+      "name": "FundOrdered",
+      "signature": "FundOrdered(address,string,address,uint256,string)"
+    },
+    {
+      "name": "FundInProcess",
+      "signature": "FundInProcess(address,string)"
+    },
+    {
+      "name": "FundExecuted",
+      "signature": "FundExecuted(address,string)"
+    },
+    {
+      "name": "FundRejected",
+      "signature": "FundRejected(address,string,string)"
+    },
+    {
+      "name": "FundCancelled",
+      "signature": "FundCancelled(address,string)"
+    },
+    {
+      "name": "FundOperatorAuthorized",
+      "signature": "FundOperatorAuthorized(address,address)"
+    },
+    {
+      "name": "FundOperatorRevoked",
+      "signature": "FundOperatorRevoked(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "authorizeFundOperator",
+      "operation_type": "contract_interaction",
+      "signature": "authorizeFundOperator(address)"
+    },
+    {
+      "name": "revokeFundOperator",
+      "operation_type": "contract_interaction",
+      "signature": "revokeFundOperator(address)"
+    },
+    {
+      "name": "orderFund",
+      "operation_type": "contract_interaction",
+      "signature": "orderFund(string,uint256,string)"
+    },
+    {
+      "name": "orderFundFrom",
+      "operation_type": "contract_interaction",
+      "signature": "orderFundFrom(string,address,uint256,string)"
+    },
+    {
+      "name": "cancelFund",
+      "operation_type": "contract_interaction",
+      "signature": "cancelFund(string)"
+    },
+    {
+      "name": "processFund",
+      "operation_type": "contract_interaction",
+      "signature": "processFund(string)"
+    },
+    {
+      "name": "executeFund",
+      "operation_type": "contract_interaction",
+      "signature": "executeFund(string)"
+    },
+    {
+      "name": "rejectFund",
+      "operation_type": "contract_interaction",
+      "signature": "rejectFund(string,string)"
+    },
+    {
+      "name": "isFundOperatorFor",
+      "operation_type": "contract_interaction",
+      "signature": "isFundOperatorFor(address,address)"
+    },
+    {
+      "name": "retrieveFundData",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveFundData(address,string)"
+    }
+  ],
+  "id": "ERC2019",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2019",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2019.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Token wallet owners (or approved addresses) can order tokenization requests through blockchain. This is done by calling the ```orderFund``` or ```orderFundFrom``` methods, which initiate the workflow for the token contract operator to either honor or reject the fund request. In this case, fund instructions are provided when submitting the request, which are used by the operator to determine the source of the funds to be debited in order to do fund the token wallet (through minting). In general, it is not advisable to place explicit routing instructions for debiting funds on a verbatim basis on the blockchain, and it is advised to use a private communication alternatives, such as private channels, encrypted storage or similar, to do so (external to the blockchain ledger). Another (less desi",
+  "title": "Fundable Token"
+}

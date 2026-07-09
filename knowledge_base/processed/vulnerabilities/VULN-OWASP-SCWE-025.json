@@ -1,0 +1,16 @@
+{
+  "category": "Cryptographic Issues",
+  "cwe": "CWE-310",
+  "description": "Improper cryptographic key management refers to the failure to securely generate, store, or use cryptographic keys. This can lead to: - Unauthorized access to sensitive data. - Exploitation of the contract's logic. - Loss of funds or data.",
+  "id": "VULN-OWASP-SCWE-025",
+  "name": "Improper Cryptographic Key Management",
+  "owasp": "SCWE-025",
+  "remediation": "- **Use secure key management:** Leverage secure key management systems or libraries. - **Avoid hardcoding keys:** Never hardcode cryptographic keys in the contract. - **Regularly rotate keys:** Periodically update cryptographic keys to reduce risks.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-025.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

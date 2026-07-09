@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3770",
+  "erc": "ERC-3770",
+  "events": [],
+  "functions": [],
+  "id": "ERC3770",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3770",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3770.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "[ERC-3770](./eip-3770.md) introduces a new address standard to be adapted by wallets and dApps to display chain-specific addresses by using a human-readable prefix.",
+  "title": "Chain-specific addresses"
+}

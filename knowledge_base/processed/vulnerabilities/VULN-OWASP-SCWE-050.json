@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Permission Assignment for Critical Resource",
+  "cwe": "CWE-732",
+  "description": "The `SELFDESTRUCT` instruction in Ethereum allows a contract to destroy itself and send its remaining Ether balance to a specified address. If this instruction is not properly protected with access controls, an attacker could trigger it, causing the contract to self-destruct and possibly transferring all the funds to an unauthorized address. This can result in the total loss of funds or disruption of contract functionality.",
+  "id": "VULN-OWASP-SCWE-050",
+  "name": "Unprotected SELFDESTRUCT Instruction",
+  "owasp": "SCWE-050",
+  "remediation": "To mitigate this vulnerability, it is crucial to protect the `SELFDESTRUCT` instruction with proper access control mechanisms. Only authorized users, such as the contract owner or admin, should be allowed to call the `SELFDESTRUCT` function. Consider using modifiers like `onlyOwner` or a role-based access control system to enforce permission checks before allowing this critical operation. **Note:** `selfdestruct` is deprecated per EIP-6049 (Solidity 0.8.24+); prefer migration patterns where possible.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-050.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

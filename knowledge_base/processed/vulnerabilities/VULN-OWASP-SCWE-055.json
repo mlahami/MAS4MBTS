@@ -1,0 +1,16 @@
+{
+  "category": "Authentication Bypass by Capture-replay",
+  "cwe": "CWE-294",
+  "description": "Signature replay attacks occur when a valid signature from a previous transaction is reused in a different context, such as a different transaction or contract call. Without proper protection, an attacker can capture and replay a signature, potentially bypassing authentication checks and causing unauthorized actions or transactions.",
+  "id": "VULN-OWASP-SCWE-055",
+  "name": "Missing Protection against Signature Replay Attacks",
+  "owasp": "SCWE-055",
+  "remediation": "To prevent signature replay attacks, include additional checks that ensure the signature is valid for a specific transaction or context. This can be done by incorporating unique identifiers like a nonce, timestamp, or a unique transaction hash into the signature to bind it to a specific use. Always verify that the signature is only valid for the intended action.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-055.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

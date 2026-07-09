@@ -1,0 +1,72 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2157",
+  "erc": "ERC-2157",
+  "events": [
+    {
+      "name": "LogNew",
+      "signature": "LogNew(bytes32,uint256)"
+    },
+    {
+      "name": "LogUpdate",
+      "signature": "LogUpdate(bytes32,uint256)"
+    },
+    {
+      "name": "LogRemove",
+      "signature": "LogRemove(bytes32,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "insert",
+      "operation_type": "contract_interaction",
+      "signature": "insert(TypeALib.TypeA)"
+    },
+    {
+      "name": "insertBytes",
+      "operation_type": "contract_interaction",
+      "signature": "insertBytes(bytes)"
+    },
+    {
+      "name": "remove",
+      "operation_type": "contract_interaction",
+      "signature": "remove(bytes32)"
+    },
+    {
+      "name": "update",
+      "operation_type": "contract_interaction",
+      "signature": "update(bytes32,TypeALib.TypeA)"
+    },
+    {
+      "name": "isStored",
+      "operation_type": "contract_interaction",
+      "signature": "isStored(bytes32)"
+    },
+    {
+      "name": "getByHash",
+      "operation_type": "contract_interaction",
+      "signature": "getByHash(bytes32)"
+    },
+    {
+      "name": "getByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "getByIndex(uint256)"
+    },
+    {
+      "name": "count",
+      "operation_type": "contract_interaction",
+      "signature": "count()"
+    }
+  ],
+  "id": "ERC2157",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2157",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2157.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The storage extension will enable easy navigation and retrieval of type data that is intended to be of public use. This is possible through standardizing the ABI of the dType storage contracts, with the effect of having a deterministic path to a type instance record. This standardization enables a more effective on-chain and off-chain use of data and opens up possibilities for decentralized applications, enabling developers to build on top of public global data.",
+  "title": "dType Storage Extension - Decentralized Type System for EVM"
+}

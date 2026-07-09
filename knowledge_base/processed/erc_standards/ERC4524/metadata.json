@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4524",
+  "erc": "ERC-4524",
+  "events": [],
+  "functions": [
+    {
+      "name": "safeTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransfer(address,uint256)"
+    },
+    {
+      "name": "safeTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransfer(address,uint256,bytes)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "selector",
+      "operation_type": "contract_interaction",
+      "signature": "selector(`0x4fc35859`)"
+    },
+    {
+      "name": "onERC20Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC20Received(address,address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC4524",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4524",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4524.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard extends [ERC-20](./eip-20.md) tokens with [EIP-165](./eip-165.md), and adds familiar functions from [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) ensuring receiving contracts have implemented proper functionality.",
+  "title": "Safer ERC-20"
+}

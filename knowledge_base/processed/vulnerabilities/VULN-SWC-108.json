@@ -1,0 +1,17 @@
+{
+  "category": "Improper Adherence to Coding Standards",
+  "cwe": "CWE-710",
+  "description": "Labeling the visibility explicitly makes it easier to catch incorrect assumptions about who can access the variable.",
+  "id": "VULN-SWC-108",
+  "name": "Please note, this content is no longer actively maintained.",
+  "owasp": "N/A",
+  "remediation": "Variables can be specified as being `public`, `internal` or `private`. Explicitly define visibility for all state variables.",
+  "severity": "unknown",
+  "source": {
+    "maintenance_status": "not_actively_maintained",
+    "note": "SWC is retained as a historical smart contract weakness taxonomy.",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\swc\\entries\\docs\\SWC-108.md",
+    "source_id": "swc_registry"
+  },
+  "swc": "SWC-108"
+}

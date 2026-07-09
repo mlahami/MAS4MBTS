@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1337",
+  "erc": "ERC-1337",
+  "events": [],
+  "functions": [
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "isValidSubscription",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSubscription(uint256)"
+    },
+    {
+      "name": "getSubscriptionStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getSubscriptionStatus(uint256)"
+    },
+    {
+      "name": "getSubscriptionHash",
+      "operation_type": "contract_interaction",
+      "signature": "getSubscriptionHash(address,uint256,bytes,Enum.Operation,uint256,uint256,uint256,address,bytes)"
+    },
+    {
+      "name": "getModifyStatusHash",
+      "operation_type": "contract_interaction",
+      "signature": "getModifyStatusHash(bytes32)"
+    },
+    {
+      "name": "modifyStatus",
+      "operation_type": "contract_interaction",
+      "signature": "modifyStatus(uint256,Enum.SubscriptionStatus,bytes)"
+    },
+    {
+      "name": "executeSubscription",
+      "operation_type": "contract_interaction",
+      "signature": "executeSubscription(address,uint256,bytes,Enum.Operation,uint256,uint256,uint256,address,bytes,bytes)"
+    }
+  ],
+  "id": "ERC1337",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1337",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1337.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "To enable replay-able transactions users sign a concatenated bytes hash that is composed of the input data needed to execute the transaction. This data is stored off chain by the recipient of the payment and is transmitted to the customers smart contract for execution alongside a provided signature.",
+  "title": "Subscriptions on the blockchain"
+}

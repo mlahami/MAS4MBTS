@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7996",
+  "erc": "ERC-7996",
+  "events": [],
+  "functions": [
+    {
+      "name": "supportsFeature",
+      "operation_type": "contract_interaction",
+      "signature": "supportsFeature(bytes4)"
+    }
+  ],
+  "id": "ERC7996",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7996",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7996.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Creates a standard method `supportsFeature(bytes4)` in the same spirit as `supportsInterface(bytes4)` to publish and detect what features a smart contract implements that lack a derivable [ERC-165](./eip-165.md) interface.",
+  "title": "Contract Feature Detection"
+}

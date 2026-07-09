@@ -1,0 +1,33 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4906",
+  "erc": "ERC-4906",
+  "events": [
+    {
+      "name": "MetadataUpdate",
+      "signature": "MetadataUpdate(uint256)"
+    },
+    {
+      "name": "BatchMetadataUpdate",
+      "signature": "BatchMetadataUpdate(uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC4906",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4906",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4906.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [EIP-721](./eip-721.md). It adds a `MetadataUpdate` event to EIP-721 tokens.",
+  "title": "EIP-721 Metadata Update Extension"
+}

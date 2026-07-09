@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Chain split risks refer to vulnerabilities that arise when a blockchain splits into multiple chains, such as during a hard fork. This can lead to: - Confusion or inconsistencies in contract logic. - Loss of funds or data. - Exploitation of vulnerabilities in cross-chain operations.",
+  "id": "VULN-OWASP-SCWE-033",
+  "name": "Chain Split Risks",
+  "owasp": "SCWE-033",
+  "remediation": "- **Handle chain splits:** Implement logic to handle potential chain splits. - **Use chain identifiers:** Include chain identifiers in cross-chain communications. - **Test thoroughly:** Conduct extensive testing to ensure contract logic is robust.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BRIDGE\\SCWE-033.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

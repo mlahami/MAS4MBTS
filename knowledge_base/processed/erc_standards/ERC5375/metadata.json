@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5375",
+  "erc": "ERC-5375",
+  "events": [],
+  "functions": [],
+  "id": "ERC5375",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5375",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5375.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP standardizes a JSON format for storing off-chain information about NFT authors. Specifically, it adds a new field which provides a list of author names, addresses, and proofs of _authorship consent_: proofs that the authors have agreed to be named as authors. Note that a proof of authorship _consent_ is not a proof of authorship: an address can consent without having authored the NFT.",
+  "title": "NFT Author Information and Consent"
+}

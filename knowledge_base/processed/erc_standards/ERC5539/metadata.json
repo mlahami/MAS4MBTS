@@ -1,0 +1,130 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5539",
+  "erc": "ERC-5539",
+  "events": [
+    {
+      "name": "RevocationStatusChanged",
+      "signature": "RevocationStatusChanged(address,bytes32,bytes32,bool)"
+    },
+    {
+      "name": "RevocationListOwnerChanged",
+      "signature": "RevocationListOwnerChanged(address,bytes32,address)"
+    },
+    {
+      "name": "RevocationListDelegateAdded",
+      "signature": "RevocationListDelegateAdded(address,bytes32,address)"
+    },
+    {
+      "name": "RevocationListDelegateRemoved",
+      "signature": "RevocationListDelegateRemoved(address,bytes32,address)"
+    },
+    {
+      "name": "RevocationListStatusChanged",
+      "signature": "RevocationListStatusChanged(address,bytes32,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isRevoked",
+      "operation_type": "contract_interaction",
+      "signature": "isRevoked(address,bytes32,bytes32)"
+    },
+    {
+      "name": "changeStatus",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatus(bool,address,bytes32,bytes32)"
+    },
+    {
+      "name": "changeStatusSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusSigned(bool,address,bytes32,bytes32,address,bytes)"
+    },
+    {
+      "name": "changeStatusDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusDelegated(bool,address,bytes32,bytes32)"
+    },
+    {
+      "name": "changeStatusDelegatedSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusDelegatedSigned(bool,address,bytes32,bytes32,address,bytes)"
+    },
+    {
+      "name": "changeStatusesInList",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusesInList(bool[],address,bytes32,bytes32[])"
+    },
+    {
+      "name": "changeStatusesInListSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusesInListSigned(bool[],address,bytes32,bytes32[],address,bytes)"
+    },
+    {
+      "name": "changeStatusesInListDelegated",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusesInListDelegated(bool[],address,bytes32,bytes32[])"
+    },
+    {
+      "name": "changeStatusesInListDelegatedSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeStatusesInListDelegatedSigned(bool[],address,bytes32,bytes32[],address,bytes)"
+    },
+    {
+      "name": "listIsRevoked",
+      "operation_type": "contract_interaction",
+      "signature": "listIsRevoked(address,bytes32)"
+    },
+    {
+      "name": "changeListStatus",
+      "operation_type": "contract_interaction",
+      "signature": "changeListStatus(bool,address,bytes32)"
+    },
+    {
+      "name": "changeListStatusSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeListStatusSigned(bool,address,bytes32,address,bytes)"
+    },
+    {
+      "name": "changeListOwner",
+      "operation_type": "contract_interaction",
+      "signature": "changeListOwner(address,address,bytes32)"
+    },
+    {
+      "name": "changeListOwnerSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeListOwnerSigned(address,address,bytes32,address,bytes)"
+    },
+    {
+      "name": "addListDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "addListDelegate(address,address,bytes32)"
+    },
+    {
+      "name": "addListDelegateSigned",
+      "operation_type": "contract_interaction",
+      "signature": "addListDelegateSigned(address,address,bytes32,address,bytes)"
+    },
+    {
+      "name": "removeListDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "removeListDelegate(address,address,bytes32)"
+    },
+    {
+      "name": "removeListDelegateSigned",
+      "operation_type": "contract_interaction",
+      "signature": "removeListDelegateSigned(address,address,bytes32,address,bytes)"
+    }
+  ],
+  "id": "ERC5539",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5539",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5539.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP proposes a set of methods and standards for a role-based registry of indicators aimed for usage in revocations.",
+  "title": "Revocation List Registry"
+}

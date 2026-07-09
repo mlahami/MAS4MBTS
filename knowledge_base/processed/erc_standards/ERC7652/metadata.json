@@ -1,0 +1,47 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7652",
+  "erc": "ERC-7652",
+  "events": [
+    {
+      "name": "GuaranteeIsEstablshed",
+      "signature": "GuaranteeIsEstablshed(address,uint256,address,uint256)"
+    },
+    {
+      "name": "GuaranteeIsCancel",
+      "signature": "GuaranteeIsCancel(address,uint256,address,uint256)"
+    },
+    {
+      "name": "GuaranteeSequenceIsEstablshed",
+      "signature": "GuaranteeSequenceIsEstablshed(address,uint256,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setNFTGuarantedInfo",
+      "operation_type": "contract_interaction",
+      "signature": "setNFTGuarantedInfo(uint256,address,uint256,uint256)"
+    },
+    {
+      "name": "establishNFTGuarantee",
+      "operation_type": "contract_interaction",
+      "signature": "establishNFTGuarantee(uint256,address,uint256,uint256)"
+    },
+    {
+      "name": "FulfillGuaranteeTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "FulfillGuaranteeTransfer(address,uint256)"
+    }
+  ],
+  "id": "ERC7652",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7652",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7652.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This specification defines functions outlining a guarantor role for instance of [EIP-721](./eip-721.md). The guarantee interface implements the user-set valuation and guarantee share for a given NFT (token ID), as well as the guarantee rights enjoyed and obligations assumed during subsequent transactions. An implementation enables the user to read or set the current guarantee value for a given NFT (token ID), and also realizes the distribution of guarantee interest and the performance of guarantee obligations. It sends the standardized events when the status changes. This proposal relies on and extends the existing [EIP-721](./eip-721.md).",
+  "title": "ERC-721 Guarantee Extension"
+}

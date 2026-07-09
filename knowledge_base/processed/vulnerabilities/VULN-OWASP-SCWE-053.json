@@ -1,0 +1,16 @@
+{
+  "category": "Incomplete Cleanup**",
+  "cwe": "CWE-459",
+  "description": "In Solidity, mappings (`mapping(address => uint256)`) do not store key-value pairs in a way that allows them to be iterated over or deleted in a straightforward manner. Deleting a mapping variable does not remove its entries; it only resets the reference to the mapping, leaving stale data accessible if another variable references the same mapping. Improper deletion of mappings can lead to storage inconsistencies, potential access control issues, and unintended behavior.",
+  "id": "VULN-OWASP-SCWE-053",
+  "name": "Improper Deletion of Mappings",
+  "owasp": "SCWE-053",
+  "remediation": "- Instead of using `delete mappingVariable;`, explicitly set each key\u2019s value to zero where necessary. - Consider additional data structures (e.g., arrays or linked lists) to track mapping keys if deletion is required. - Ensure mapping deletions do not leave residual data that can be accessed unexpectedly.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-053.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

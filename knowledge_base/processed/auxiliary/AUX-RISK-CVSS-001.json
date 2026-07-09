@@ -1,0 +1,51 @@
+{
+  "applies_to": [
+    "known vulnerabilities",
+    "deployed smart contract weaknesses",
+    "security reporting"
+  ],
+  "description": "Standardized scoring model for assessing the severity of known vulnerabilities using metrics such as attack vector, complexity, privileges, user interaction, scope, and CIA impact.",
+  "fields": [
+    {
+      "meaning": "How the vulnerability is exploited.",
+      "name": "attack_vector"
+    },
+    {
+      "meaning": "Conditions beyond attacker control required for exploitation.",
+      "name": "attack_complexity"
+    },
+    {
+      "meaning": "Privileges required before exploitation.",
+      "name": "privileges_required"
+    },
+    {
+      "meaning": "Whether another user must participate.",
+      "name": "user_interaction"
+    },
+    {
+      "meaning": "Impact on confidentiality.",
+      "name": "confidentiality"
+    },
+    {
+      "meaning": "Impact on integrity.",
+      "name": "integrity"
+    },
+    {
+      "meaning": "Impact on availability.",
+      "name": "availability"
+    }
+  ],
+  "id": "AUX-RISK-CVSS-001",
+  "kind": "risk_scoring_model",
+  "name": "CVSS",
+  "role": "vulnerability_scoring",
+  "source": {
+    "source_id": "first_cvss",
+    "source_url": "https://www.first.org/cvss/"
+  },
+  "usage_guidelines": [
+    "Use CVSS when a threat is grounded in a concrete vulnerability.",
+    "Adapt metric interpretation carefully for blockchain execution semantics.",
+    "Keep the vector string and rationale in the generated model."
+  ]
+}

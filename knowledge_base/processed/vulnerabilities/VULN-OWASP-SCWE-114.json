@@ -1,0 +1,16 @@
+{
+  "category": "Reusing a Nonce, Key Pair in Encryption",
+  "cwe": "CWE-323",
+  "description": "Reusing the same ECDSA nonce (`k`) across signatures (or using predictable nonces) leaks the private key. Contracts that accept off-chain signatures for permits, meta-txs, or governance can be compromised if signing infrastructure mismanages nonces.",
+  "id": "VULN-OWASP-SCWE-114",
+  "name": "ECDSA Nonce Reuse",
+  "owasp": "SCWE-114",
+  "remediation": "- Use battle-tested libraries/wallets that generate unique, random or RFC6979 deterministic nonces per message. - Monitor and rotate keys if nonce reuse is suspected; support key revocation on-chain. - Avoid custom signing code or manual nonce management in scripts.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-114.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

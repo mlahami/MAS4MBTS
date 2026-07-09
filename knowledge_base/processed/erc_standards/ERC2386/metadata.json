@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2386",
+  "erc": "ERC-2386",
+  "events": [],
+  "functions": [],
+  "id": "ERC2386",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2386",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2386.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "Ethereum has the concept of keystores: pieces of data that define a key (see [EIP-2335](https://eips.ethereum.org/EIPS/eip-2335) for details). This adds the concept of walletstores: stores that define wallets and how keys in said wallets are created.",
+  "title": "Ethereum 2 Hierarchical Deterministic Walletstore"
+}

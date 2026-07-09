@@ -1,0 +1,95 @@
+{
+  "assets": [
+    {
+      "criticality": "high",
+      "name": "Token ownership",
+      "type": "contract_state"
+    },
+    {
+      "criticality": "high",
+      "name": "Token approvals",
+      "type": "contract_state"
+    },
+    {
+      "criticality": "high",
+      "name": "Operator approvals",
+      "type": "contract_state"
+    },
+    {
+      "criticality": "medium",
+      "name": "Token metadata",
+      "type": "metadata"
+    }
+  ],
+  "category": "ERC",
+  "eip": "EIP-721",
+  "erc": "ERC-721",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "nft_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_nft_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "token_approval",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    }
+  ],
+  "id": "ERC721",
+  "security_properties": [
+    {
+      "description": "Only the owner, approved address, or authorized operator can transfer a token.",
+      "name": "Ownership authorization"
+    },
+    {
+      "description": "Safe transfers to contracts must validate receiver compatibility.",
+      "name": "Safe receiver compatibility"
+    },
+    {
+      "description": "Approvals must not allow unauthorized transfers.",
+      "name": "Approval consistency"
+    }
+  ],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-721",
+    "source_id": "ethereum_ercs_website"
+  },
+  "status": "Final",
+  "summary": "ERC-721 defines a standard interface for non-fungible tokens, including ownership, approvals, operators, safe transfers, and transfer/approval events.",
+  "title": "Non-Fungible Token Standard"
+}

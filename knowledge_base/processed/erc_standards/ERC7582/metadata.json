@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7582",
+  "erc": "ERC-7582",
+  "events": [
+    {
+      "name": "UserOperationEvent",
+      "signature": "UserOperationEvent(bytes32,address,address,uint256,bool,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "validateUserOp",
+      "operation_type": "contract_interaction",
+      "signature": "validateUserOp(PackedUserOperation,bytes32,uint256)"
+    },
+    {
+      "name": "getNonce",
+      "operation_type": "contract_interaction",
+      "signature": "getNonce(address,uint192)"
+    }
+  ],
+  "id": "ERC7582",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7582",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7582.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal standardizes a method for adding plugins and composable logic to smart contract accounts built on existing interfaces like [ERC-4337](eip-4337.md) (e.g., ERC-4337's `IAccount`). Specifically, by formalizing how applications can use the ERC-4337 Entry Point `NonceManager` and the emission of the `IEntryPoint` `UserOperationEvent` to account for plugin interactions, as well, as how to extract designated validators (in this case, by means of `IAccount`'s `validateUserOp`), accounts can specify how they call plugin contracts and grant special executory access for more advanced operations. Furthermore, this minimalist plugin approach is developer-friendly and complimentary to existing account abstraction standards by not requiring any additional functions for contracts that follow",
+  "title": "Modular Accounts with Delegated Validation"
+}

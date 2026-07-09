@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8217",
+  "erc": "ERC-8217",
+  "events": [
+    {
+      "name": "AgentBound",
+      "signature": "AgentBound(uint256,TokenStandard,address,uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "bindingOf",
+      "operation_type": "contract_interaction",
+      "signature": "bindingOf(uint256)"
+    }
+  ],
+  "id": "ERC8217",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8217",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8217.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a standard onchain metadata record and verification interface for expressing that an [ERC-8004](./eip-8004.md) agent identity is bound to an external NFT or tokenized asset contract. The metadata record stores only the binding contract address (20 bytes) under a reserved metadata key. The binding contract is expected to be deployed as a canonical per-chain singleton. Token standard, token contract, and token id are read from that contract via `bindingOf(agentId)` and are not duplicated in metadata.",
+  "title": "Agent NFT Identity Bindings"
+}

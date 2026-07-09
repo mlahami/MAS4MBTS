@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1078",
+  "erc": "ERC-1078",
+  "events": [],
+  "functions": [],
+  "id": "ERC1078",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1078",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1078.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This presents a method to replace the usual signup/login design pattern with a minimal ethereum native scheme, that doesn\u2019t require passwords, backing up private keys nor typing seed phrases. From the user's point of view it will be very similar to patterns they\u2019re already used to with second factor authentication (without relying in a central server), but for dapp developers it requires a new way to think about ethereum transactions.",
+  "title": "Universal login / signup using ENS subdomains"
+}

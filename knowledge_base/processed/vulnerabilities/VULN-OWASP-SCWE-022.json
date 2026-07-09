@@ -1,0 +1,16 @@
+{
+  "category": "Authentication Bypass by Capture-replay",
+  "cwe": "CWE-294",
+  "description": "Message replay vulnerabilities occur when an attacker can reuse a valid message or transaction to perform unauthorized actions. This can lead to: - Unauthorized access to sensitive functions. - Loss of funds or data. - Exploitation of the contract's logic.",
+  "id": "VULN-OWASP-SCWE-022",
+  "name": "Message Replay Vulnerabilities",
+  "owasp": "SCWE-022",
+  "remediation": "- **Use nonces:** Include a unique nonce in each message to prevent reuse. - **Validate timestamps:** Ensure messages are only valid for a limited time. - **Implement replay protection:** Use established libraries or mechanisms to prevent replay attacks.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-COMM\\SCWE-022.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

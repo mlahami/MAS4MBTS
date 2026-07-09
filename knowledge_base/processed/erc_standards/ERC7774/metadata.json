@@ -1,0 +1,23 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7774",
+  "erc": "ERC-7774",
+  "events": [
+    {
+      "name": "ClearPathCache",
+      "signature": "ClearPathCache(string[])"
+    }
+  ],
+  "functions": [],
+  "id": "ERC7774",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7774",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7774.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "In the context of the [ERC-6860](./eip-6860.md) `web3://` standard, this ERC extends the [ERC-6944](./eip-6944.md) resolve mode. It introduces mechanisms to address limitations that prevent the use of standard [RFC 9111](https://www.rfc-editor.org/rfc/rfc9111) HTTP caching.",
+  "title": "Cache invalidation in ERC-5219 mode Web3 URL"
+}

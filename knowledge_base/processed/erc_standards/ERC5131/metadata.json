@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5131",
+  "erc": "ERC-5131",
+  "events": [],
+  "functions": [
+    {
+      "name": "getLinkedAddress",
+      "operation_type": "contract_interaction",
+      "signature": "getLinkedAddress(provider:,address:)"
+    },
+    {
+      "name": "resolver",
+      "operation_type": "contract_interaction",
+      "signature": "resolver(bytes32)"
+    },
+    {
+      "name": "addr",
+      "operation_type": "contract_interaction",
+      "signature": "addr(bytes32)"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name(bytes32)"
+    },
+    {
+      "name": "text",
+      "operation_type": "contract_interaction",
+      "signature": "text(bytes32,string)"
+    },
+    {
+      "name": "validateSender",
+      "operation_type": "contract_interaction",
+      "signature": "validateSender(address,address,bytes32,string,bytes32)"
+    },
+    {
+      "name": "validate",
+      "operation_type": "contract_interaction",
+      "signature": "validate(address,address,bytes32,string,address,bytes32)"
+    },
+    {
+      "name": "_verifyMainENS",
+      "operation_type": "contract_interaction",
+      "signature": "_verifyMainENS(address,address,bytes32,string,address)"
+    },
+    {
+      "name": "_verifyAuthENS",
+      "operation_type": "contract_interaction",
+      "signature": "_verifyAuthENS(address,address,string,address,bytes32)"
+    },
+    {
+      "name": "sha3HexAddress",
+      "operation_type": "contract_interaction",
+      "signature": "sha3HexAddress(address)"
+    },
+    {
+      "name": "_addressToString",
+      "operation_type": "contract_interaction",
+      "signature": "_addressToString(address)"
+    }
+  ],
+  "id": "ERC5131",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5131",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5131.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP links one or more signing wallets via Ethereum Name Service Specification ([EIP-137](./eip-137.md)) to prove control and asset ownership of a main wallet.",
+  "title": "SAFE Authentication For ENS"
+}

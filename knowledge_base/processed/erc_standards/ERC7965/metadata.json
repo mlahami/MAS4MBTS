@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7965",
+  "erc": "ERC-7965",
+  "events": [],
+  "functions": [],
+  "id": "ERC7965",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7965",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7965.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This document defines standardized broadcasting semantics and attributes for [ERC-7786] cross-chain messaging that enable trustless message verification through cryptographic proofs. Messages are committed on source chains in verifiable ways, then verified on destination chains using cryptographic proofs of the source chain's state or transaction history. This approach provides cross-chain communication without relying on external validators or bridge operators. [ERC-7786]: ./eip-7786.md",
+  "title": "Proof-based Broadcast in ERC-7786 Gateways"
+}

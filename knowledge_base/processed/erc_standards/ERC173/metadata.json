@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-173",
+  "erc": "ERC-173",
+  "events": [
+    {
+      "name": "OwnershipTransferred",
+      "signature": "OwnershipTransferred(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner()"
+    },
+    {
+      "name": "transferOwnership",
+      "operation_type": "contract_interaction",
+      "signature": "transferOwnership(address)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC173",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-173",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-173.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This specification defines standard functions for owning or controlling a contract. An implementation allows reading the current owner (`owner() returns (address)`) and transferring ownership (`transferOwnership(address newOwner)`) along with a standardized event for when ownership is changed (`OwnershipTransferred(address indexed previousOwner, address indexed newOwner)`).",
+  "title": "Contract Ownership Standard"
+}

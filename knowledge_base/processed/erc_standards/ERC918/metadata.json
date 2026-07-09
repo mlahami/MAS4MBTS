@@ -1,0 +1,114 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-918",
+  "erc": "ERC-918",
+  "events": [
+    {
+      "name": "Mint",
+      "signature": "Mint(address,uint,uint,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint256)"
+    },
+    {
+      "name": "getAdjustmentInterval",
+      "operation_type": "contract_interaction",
+      "signature": "getAdjustmentInterval()"
+    },
+    {
+      "name": "getChallengeNumber",
+      "operation_type": "contract_interaction",
+      "signature": "getChallengeNumber()"
+    },
+    {
+      "name": "getMiningDifficulty",
+      "operation_type": "contract_interaction",
+      "signature": "getMiningDifficulty()"
+    },
+    {
+      "name": "getMiningTarget",
+      "operation_type": "contract_interaction",
+      "signature": "getMiningTarget()"
+    },
+    {
+      "name": "getMiningReward",
+      "operation_type": "contract_interaction",
+      "signature": "getMiningReward()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "hash",
+      "operation_type": "contract_interaction",
+      "signature": "hash(uint256)"
+    },
+    {
+      "name": "_reward",
+      "operation_type": "contract_interaction",
+      "signature": "_reward()"
+    },
+    {
+      "name": "_newEpoch",
+      "operation_type": "contract_interaction",
+      "signature": "_newEpoch(uint256)"
+    },
+    {
+      "name": "_adjustDifficulty",
+      "operation_type": "contract_interaction",
+      "signature": "_adjustDifficulty()"
+    },
+    {
+      "name": "merge",
+      "operation_type": "contract_interaction",
+      "signature": "merge(uint256,address[])"
+    },
+    {
+      "name": "merge",
+      "operation_type": "contract_interaction",
+      "signature": "merge(uint256,bytes32,address[])"
+    },
+    {
+      "name": "prepareDelegatedMintTxn",
+      "operation_type": "contract_interaction",
+      "signature": "prepareDelegatedMintTxn(nonce,account)"
+    },
+    {
+      "name": "delegatedMint",
+      "operation_type": "contract_interaction",
+      "signature": "delegatedMint(uint256,address,bytes)"
+    },
+    {
+      "name": "delegatedMintHashing",
+      "operation_type": "contract_interaction",
+      "signature": "delegatedMintHashing(uint256,address)"
+    },
+    {
+      "name": "metadataURI",
+      "operation_type": "contract_interaction",
+      "signature": "metadataURI()"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint256,bytes32)"
+    }
+  ],
+  "id": "ERC918",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-918",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-918.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "",
+  "title": "Mineable Token Standard"
+}

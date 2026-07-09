@@ -1,0 +1,62 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6464",
+  "erc": "ERC-6464",
+  "events": [
+    {
+      "name": "ExplicitApprovalFor",
+      "signature": "ExplicitApprovalFor(address,uint256,bool)"
+    },
+    {
+      "name": "AllExplicitApprovalsRevoked",
+      "signature": "AllExplicitApprovalsRevoked(address)"
+    },
+    {
+      "name": "AllExplicitApprovalsRevoked",
+      "signature": "AllExplicitApprovalsRevoked(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setExplicitApproval",
+      "operation_type": "contract_interaction",
+      "signature": "setExplicitApproval(address,uint256,bool)"
+    },
+    {
+      "name": "setExplicitApproval",
+      "operation_type": "contract_interaction",
+      "signature": "setExplicitApproval(address,uint256[],bool)"
+    },
+    {
+      "name": "revokeAllExplicitApprovals",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAllExplicitApprovals()"
+    },
+    {
+      "name": "revokeAllExplicitApprovals",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAllExplicitApprovals(uint256)"
+    },
+    {
+      "name": "isExplicitlyApprovedFor",
+      "operation_type": "contract_interaction",
+      "signature": "isExplicitlyApprovedFor(address,uint256)"
+    },
+    {
+      "name": "isApprovedFor",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedFor(address,uint256)"
+    }
+  ],
+  "id": "ERC6464",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6464",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6464.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "[ERC-721](./eip-721.md) did not foresee the approval of multiple operators to manage a specific token on behalf of its owner. This lead to the establishment of `setApprovalForAll()` as the predominant way to authorise operators, which affords the approved address control over all assets and creates an unnecessarily broad security risk that has already been exploited in a multitude of phishing attacks. The presented EIP extends ERC-721 by introducing a fine-grained, on-chain approval mechanism that allows owners to authorise multiple, specific operators on a per-token basis; this removes unnecessary access permissions and shrinks the surface for exploits to a minimum. The provided reference implementation further enables cheap revocation of all approvals on a per-owner or per-token basis.",
+  "title": "Multi-operator, per-token ERC-721 approvals."
+}

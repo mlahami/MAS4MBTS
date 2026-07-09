@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Decoding calldata or bytes with `abi.decode` without first verifying the input length can cause unexpected reverts. In modern Solidity (0.4.22+), `abi.decode` with data shorter than expected reverts due to bounds checking; malformed or incorrectly typed data can produce wrong values. SCWE-122 covers calldata length validation; this weakness addresses the broader pattern of decoding without length checks.",
+  "id": "VULN-OWASP-SCWE-154",
+  "name": "Calldata Decode Without Length Check",
+  "owasp": "SCWE-154",
+  "remediation": "- Validate `data.length >= expectedLength` before `abi.decode`. - Use `abi.decode` with the correct type and ensure the encoded data matches.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-154.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

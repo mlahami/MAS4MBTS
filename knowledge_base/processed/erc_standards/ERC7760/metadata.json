@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7760",
+  "erc": "ERC-7760",
+  "events": [],
+  "functions": [
+    {
+      "name": "initCodeFor20ByteFactoryAddress",
+      "operation_type": "contract_interaction",
+      "signature": "initCodeFor20ByteFactoryAddress()"
+    },
+    {
+      "name": "initCodeFor14ByteFactoryAddress",
+      "operation_type": "contract_interaction",
+      "signature": "initCodeFor14ByteFactoryAddress()"
+    },
+    {
+      "name": "initCode",
+      "operation_type": "contract_interaction",
+      "signature": "initCode()"
+    },
+    {
+      "name": "deploy",
+      "operation_type": "contract_interaction",
+      "signature": "deploy(address,bytes)"
+    },
+    {
+      "name": "upgrade",
+      "operation_type": "contract_interaction",
+      "signature": "upgrade(address,address,bytes)"
+    },
+    {
+      "name": "initCode",
+      "operation_type": "contract_interaction",
+      "signature": "initCode(address,bytes)"
+    }
+  ],
+  "id": "ERC7760",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7760",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7760.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard defines minimal [ERC-1967](./eip-1967.md) proxies for three patterns: (1) transparent, (2) UUPS, (3) beacon. The proxies support optional immutable arguments which are appended to the end of their runtime bytecode. Additional variants which support onchain implementation querying are provided.",
+  "title": "Minimal Upgradeable Proxies"
+}

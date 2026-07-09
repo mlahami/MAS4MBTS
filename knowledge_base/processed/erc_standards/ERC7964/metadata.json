@@ -1,0 +1,89 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7964",
+  "erc": "ERC-7964",
+  "events": [],
+  "functions": [
+    {
+      "name": "isValidCrossChainSignatureNow",
+      "operation_type": "contract_interaction",
+      "signature": "isValidCrossChainSignatureNow(address,bytes32,bytes,function(bytes32)"
+    },
+    {
+      "name": "parseCrossChainSignature",
+      "operation_type": "contract_interaction",
+      "signature": "parseCrossChainSignature(bytes)"
+    },
+    {
+      "name": "_empty32BytesArrayCalldata",
+      "operation_type": "contract_interaction",
+      "signature": "_empty32BytesArrayCalldata()"
+    },
+    {
+      "name": "executeIntent",
+      "operation_type": "contract_interaction",
+      "signature": "executeIntent(address,ChainOperation,uint256,uint256,bytes)"
+    },
+    {
+      "name": "_crossChainStructHash",
+      "operation_type": "contract_interaction",
+      "signature": "_crossChainStructHash(bytes32)"
+    },
+    {
+      "name": "_structHash",
+      "operation_type": "contract_interaction",
+      "signature": "_structHash(ChainOperation)"
+    },
+    {
+      "name": "castVoteWithSignature",
+      "operation_type": "contract_interaction",
+      "signature": "castVoteWithSignature(ChainVote,uint256,address,bytes)"
+    },
+    {
+      "name": "_structHash",
+      "operation_type": "contract_interaction",
+      "signature": "_structHash(ChainVote)"
+    },
+    {
+      "name": "updateAccountWithSignature",
+      "operation_type": "contract_interaction",
+      "signature": "updateAccountWithSignature(AccountUpdate,uint256,bytes)"
+    },
+    {
+      "name": "_structHash",
+      "operation_type": "contract_interaction",
+      "signature": "_structHash(AccountUpdate)"
+    },
+    {
+      "name": "_addSigner",
+      "operation_type": "contract_interaction",
+      "signature": "_addSigner(bytes,uint256)"
+    },
+    {
+      "name": "initiateRecoveryWithSignature",
+      "operation_type": "contract_interaction",
+      "signature": "initiateRecoveryWithSignature(ChainRecovery,uint256,address[],bytes[])"
+    },
+    {
+      "name": "_computeRecoveryStructHash",
+      "operation_type": "contract_interaction",
+      "signature": "_computeRecoveryStructHash(bytes32)"
+    },
+    {
+      "name": "_structHash",
+      "operation_type": "contract_interaction",
+      "signature": "_structHash(ChainRecovery)"
+    }
+  ],
+  "id": "ERC7964",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7964",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7964.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC defines a standard approach for creating and verifying crosschain signatures using [EIP-712]. By omitting the `chainId` field from the EIP-712 domain, a signature can be valid across multiple chains. Chain-specific operations are encoded as an array of structured messages, where each chain receives the array of message hashes and only the full message data relevant to that chain. This enables efficient crosschain signature validation using standard EIP-712 encoding without requiring special wallet support. [EIP-712]: ./eip-712.md [EIP-7702]: ./eip-7702.md [ERC-1271]: ./eip-1271.md [ERC-5267]: ./eip-5267.md",
+  "title": "Crosschain EIP-712 Signatures"
+}

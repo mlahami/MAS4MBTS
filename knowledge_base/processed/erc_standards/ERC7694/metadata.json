@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7694",
+  "erc": "ERC-7694",
+  "events": [],
+  "functions": [
+    {
+      "name": "setValue",
+      "operation_type": "contract_interaction",
+      "signature": "setValue(bytes32,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC7694",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7694",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7694.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The following standard is an extension to the cross-chain storage router protocol introducing the storage router for Solana blockchain. With this specification, any Ethereum L1 contract can defer a call to Solana blockchain as part of its core functionality, provided that the client is equipped to handle Solana transactions. It was previously possible to defer write and storage operations to other Ethereum L1 contracts, L2 contracts and off-chain databases, and this document extends that functionality to include alternative L1 chains. The data stored on Solana must be translated to [EIP-3668](./eip-3668)-compliant format by an appropriate HTTP gateway where it can be retrieved by generic Ethereum contracts. This standard allows Ethereum to utilise a broader range of cross-chain blockspaces",
+  "title": "Solana Storage Router"
+}

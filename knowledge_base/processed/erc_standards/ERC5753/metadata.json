@@ -1,0 +1,78 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5753",
+  "erc": "ERC-5753",
+  "events": [
+    {
+      "name": "Lock",
+      "signature": "Lock(address,uint256)"
+    },
+    {
+      "name": "Unlock",
+      "signature": "Unlock(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "lock",
+      "operation_type": "contract_interaction",
+      "signature": "lock(address,uint256)"
+    },
+    {
+      "name": "unlock",
+      "operation_type": "contract_interaction",
+      "signature": "unlock(uint256)"
+    },
+    {
+      "name": "getLocked",
+      "operation_type": "contract_interaction",
+      "signature": "getLocked(uint256)"
+    },
+    {
+      "name": "_lock",
+      "operation_type": "contract_interaction",
+      "signature": "_lock(address,uint256)"
+    },
+    {
+      "name": "_unlock",
+      "operation_type": "contract_interaction",
+      "signature": "_unlock(uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "_beforeTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_beforeTokenTransfer(address,address,uint256)"
+    },
+    {
+      "name": "_afterTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_afterTokenTransfer(address,address,uint256)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC5753",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5753",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5753.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard is an extension of [EIP-721](./eip-721.md). It introduces lockable NFTs. The locked asset can be used in any way except by selling and/or transferring it. The owner or operator can lock the token. When a token is locked, the unlocker address (an EOA or a contract) is set. Only the unlocker is able to `unlock` the token.",
+  "title": "Lockable Extension for EIP-721"
+}

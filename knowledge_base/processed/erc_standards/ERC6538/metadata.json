@@ -1,0 +1,73 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6538",
+  "erc": "ERC-6538",
+  "events": [
+    {
+      "name": "StealthMetaAddressSet",
+      "signature": "StealthMetaAddressSet(address,uint256,bytes)"
+    },
+    {
+      "name": "NonceIncremented",
+      "signature": "NonceIncremented(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "registerKeys",
+      "operation_type": "contract_interaction",
+      "signature": "registerKeys(uint256,bytes)"
+    },
+    {
+      "name": "registerKeysOnBehalf",
+      "operation_type": "contract_interaction",
+      "signature": "registerKeysOnBehalf(address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "incrementNonce",
+      "operation_type": "contract_interaction",
+      "signature": "incrementNonce()"
+    },
+    {
+      "name": "DOMAIN_SEPARATOR",
+      "operation_type": "contract_interaction",
+      "signature": "DOMAIN_SEPARATOR()"
+    },
+    {
+      "name": "_computeDomainSeparator",
+      "operation_type": "contract_interaction",
+      "signature": "_computeDomainSeparator()"
+    },
+    {
+      "name": "isValidSignature",
+      "operation_type": "contract_interaction",
+      "signature": "isValidSignature(bytes32,bytes)"
+    },
+    {
+      "name": "stealthMetaAddressOf",
+      "operation_type": "contract_interaction",
+      "signature": "stealthMetaAddressOf(address,uint256)"
+    },
+    {
+      "name": "ERC6538REGISTRY_ENTRY_TYPE_HASH",
+      "operation_type": "contract_interaction",
+      "signature": "ERC6538REGISTRY_ENTRY_TYPE_HASH()"
+    },
+    {
+      "name": "nonceOf",
+      "operation_type": "contract_interaction",
+      "signature": "nonceOf(address)"
+    }
+  ],
+  "id": "ERC6538",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6538",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6538.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This specification defines a standardized way of storing and retrieving an entity's stealth meta-address, by extending [ERC-5564](./eip-5564.md). An entity may register their stealth meta-address directly. A third party can also register on behalf of an entity using a valid [EIP-712](./eip-712.md) or [EIP-1271](./eip-1271.md) signature. Once registered, the stealth meta-address for the entity can be retrieved by any smart contract or user. One can use the stealth meta-address with `generateStealthAddress` specified in [ERC-5564](./eip-5564.md) to send assets to the generated stealth address without revealing the entity's address.",
+  "title": "Stealth Meta-Address Registry"
+}

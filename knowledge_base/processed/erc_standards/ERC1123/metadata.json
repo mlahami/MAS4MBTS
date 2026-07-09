@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1123",
+  "erc": "ERC-1123",
+  "events": [],
+  "functions": [],
+  "id": "ERC1123",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1123",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1123.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Withdrawn",
+  "summary": "",
+  "title": "Revised Ethereum Smart Contract Packaging Standard"
+}

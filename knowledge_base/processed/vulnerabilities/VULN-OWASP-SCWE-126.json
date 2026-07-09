@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Protocols that queue withdrawals without bounding length or processing batches can face gas exhaustion when executing large queues. Attackers can spam small requests to DoS withdrawal execution or force users to accept delays.",
+  "id": "VULN-OWASP-SCWE-126",
+  "name": "Unbounded Withdrawal Queue Growth",
+  "owasp": "SCWE-126",
+  "remediation": "- Cap queue size or use batched/paged processing with upper gas limits. - Charge fees or require minimum amounts to discourage spam. - Allow users to cancel/claim in smaller chunks rather than processing the entire queue at once.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-126.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

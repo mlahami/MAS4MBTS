@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Nonce values are used to ensure that transactions are processed in the correct order and prevent replay attacks. Improper handling or validation of nonces can lead to issues such as transaction replay or improper sequencing of transactions, which can be exploited by attackers.",
+  "id": "VULN-OWASP-SCWE-081",
+  "name": "Improper Handling of Nonce",
+  "owasp": "SCWE-081",
+  "remediation": "Always validate nonce values to ensure that they are correctly incremented and avoid reusing nonces. Ensure that nonce handling is robust, especially in cases where external calls are involved, to prevent replay attacks or transaction malleability.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-081.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7827",
+  "erc": "ERC-7827",
+  "events": [],
+  "functions": [
+    {
+      "name": "json",
+      "operation_type": "contract_interaction",
+      "signature": "json()"
+    },
+    {
+      "name": "version",
+      "operation_type": "contract_interaction",
+      "signature": "version(string)"
+    },
+    {
+      "name": "write",
+      "operation_type": "contract_interaction",
+      "signature": "write(string[],string[],bool)"
+    }
+  ],
+  "id": "ERC7827",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7827",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7827.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP defines a smart contract interface that allows for managing a JSON object within a smart contract, offering both real-time JSON output and a version-controlled history for each value. The interface includes methods to retrieve the most recent JSON state as well as the version history of each key in the JSON object. This approach supports REST developers familiar with JSON-based data interactions, thus improving accessibility for developers new to Web3 and Ethereum.",
+  "title": "JSON Contract with Value Version Control"
+}

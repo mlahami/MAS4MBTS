@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2193",
+  "erc": "ERC-2193",
+  "events": [
+    {
+      "name": "AliasSet",
+      "signature": "AliasSet(bytes32,bytes1,string,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setAlias",
+      "operation_type": "contract_interaction",
+      "signature": "setAlias(bytes32,bytes1,string,bytes32,bytes)"
+    },
+    {
+      "name": "getAliased",
+      "operation_type": "contract_interaction",
+      "signature": "getAliased(bytes1,string)"
+    }
+  ],
+  "id": "ERC2193",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2193",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2193.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The dType Alias is a system for providing human-readable resource identifiers to on-chain content. A resource identifier is based on the type of data (identifier provided by dType, [EIP-1900](./eip-1900.md)) and the data content (identifier provided by a dType Storage Contract, [EIP-2157](./eip-2157.md)). It is a universal way of addressing content, supporting any type of data.",
+  "title": "dType Alias Extension - Decentralized Type System"
+}

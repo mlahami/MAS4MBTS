@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2520",
+  "erc": "ERC-2520",
+  "events": [],
+  "functions": [
+    {
+      "name": "setContenthash",
+      "operation_type": "contract_interaction",
+      "signature": "setContenthash(bytes32,bytes,bytes)"
+    },
+    {
+      "name": "contenthash",
+      "operation_type": "contract_interaction",
+      "signature": "contenthash(bytes32,bytes)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC2520",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2520",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2520.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "ENS support for multiple `contenthash` records on a single ENS name.",
+  "title": "Multiple contenthash records for ENS"
+}

@@ -1,0 +1,47 @@
+{
+  "applies_to": [
+    "early-stage threat modeling",
+    "generated ETM threats",
+    "pre-deployment risk ranking"
+  ],
+  "description": "Qualitative scoring model for prioritizing threats using Damage, Reproducibility, Exploitability, Affected Users, and Discoverability.",
+  "fields": [
+    {
+      "meaning": "Potential damage if exploited.",
+      "name": "damage",
+      "scale": "0-10"
+    },
+    {
+      "meaning": "Ease of reproducing the attack.",
+      "name": "reproducibility",
+      "scale": "0-10"
+    },
+    {
+      "meaning": "Ease of exploitation.",
+      "name": "exploitability",
+      "scale": "0-10"
+    },
+    {
+      "meaning": "Scope of affected users or assets.",
+      "name": "affected_users",
+      "scale": "0-10"
+    },
+    {
+      "meaning": "Ease of discovering the weakness.",
+      "name": "discoverability",
+      "scale": "0-10"
+    }
+  ],
+  "id": "AUX-RISK-DREAD-001",
+  "kind": "risk_scoring_model",
+  "name": "DREAD",
+  "role": "threat_prioritization",
+  "source": {
+    "source_id": "dread"
+  },
+  "usage_guidelines": [
+    "Use DREAD for lightweight prioritization of generated threats.",
+    "Store the scoring rationale, not only the numeric score.",
+    "Use as optional ETM enrichment through a RiskAssessment relation."
+  ]
+}

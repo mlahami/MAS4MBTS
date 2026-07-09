@@ -1,0 +1,16 @@
+{
+  "category": "Variable Shadowing",
+  "cwe": "CWE-1001",
+  "description": "In Solidity, the constructor is a special function used to initialize a contract's state variables when it is deployed. If a constructor is incorrectly named, it will not function as expected, leading to issues such as failing to initialize state variables or triggering unexpected behavior. The constructor must have the exact name of the contract and no return type. If the constructor name is not correct, it will not be executed as intended, and the contract may not behave as expected, potentially leaving it in an uninitialized or inconsistent state.",
+  "id": "VULN-OWASP-SCWE-070",
+  "name": "Incorrect Constructor Name",
+  "owasp": "SCWE-070",
+  "remediation": "Ensure that the constructor has the correct name, which must match the contract name and contain no return type. In newer versions of Solidity (0.4.22 and later), the constructor keyword is used instead of the contract name for constructor functions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-070.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

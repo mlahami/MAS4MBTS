@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7746",
+  "erc": "ERC-7746",
+  "events": [],
+  "functions": [
+    {
+      "name": "beforeCall",
+      "operation_type": "contract_interaction",
+      "signature": "beforeCall(bytes,bytes4,address,uint256,bytes)"
+    },
+    {
+      "name": "afterCall",
+      "operation_type": "contract_interaction",
+      "signature": "afterCall(bytes,bytes4,address,uint256,bytes,bytes)"
+    }
+  ],
+  "id": "ERC7746",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7746",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7746.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "This EIP proposes a standard interface, `ILayer`, for implementing composable security layers in smart contracts. These layers act as middleware, enabling runtime validation of function calls before and after execution, independent of the protected contract's logic. This approach facilitates modular security, allowing independent providers to manage and upgrade security layers across multiple contracts.",
+  "title": "Composable Security Middleware Hooks"
+}

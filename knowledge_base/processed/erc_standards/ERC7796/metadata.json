@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7796",
+  "erc": "ERC-7796",
+  "events": [],
+  "functions": [],
+  "id": "ERC7796",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7796",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7796.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP proposes a new JSON-RPC API method `eth_sendRawTransactionConditional` for block builders and sequencers, enhancing transaction integration by allowing users to express preconditions for transaction inclusion. This method aims to improve efficiency by reducing the need for transaction simulation, thereby improving the computational efficiency of transaction ordering.",
+  "title": "Conditional send transaction RPC"
+}

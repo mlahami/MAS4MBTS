@@ -1,0 +1,16 @@
+{
+  "category": "Origin Validation Error",
+  "cwe": "CWE-346",
+  "description": "Using a single on-chain DEX spot price from an illiquid pool lets attackers move the price with small trades or flash loans, then exploit inflated/deflated valuations for lending, liquidations, or swaps.",
+  "id": "VULN-OWASP-SCWE-112",
+  "name": "Reliance on Low-Liquidity Spot Prices",
+  "owasp": "SCWE-112",
+  "remediation": "- Require minimum liquidity thresholds and sanity bounds before trusting a pool. - Use robust oracles (Chainlink, TWAP, median of multiple feeds) instead of raw spot prices. - Apply deviation checks against reference feeds and revert when deviation exceeds limits.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ORACLE\\SCWE-112.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

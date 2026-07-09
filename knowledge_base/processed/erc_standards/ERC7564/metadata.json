@@ -1,0 +1,67 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7564",
+  "erc": "ERC-7564",
+  "events": [
+    {
+      "name": "NftApproval",
+      "signature": "NftApproval(address,address,address,uint256)"
+    },
+    {
+      "name": "NftApprovalForOneAll",
+      "signature": "NftApprovalForOneAll(address,address,address,bool)"
+    },
+    {
+      "name": "NftApprovalForAllAll",
+      "signature": "NftApprovalForAllAll(address,address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "nftApprove",
+      "operation_type": "contract_interaction",
+      "signature": "nftApprove(address,address,uint256)"
+    },
+    {
+      "name": "nftSetApprovalForOneAll",
+      "operation_type": "contract_interaction",
+      "signature": "nftSetApprovalForOneAll(address,address,bool)"
+    },
+    {
+      "name": "nftSetApprovalForAllAll",
+      "operation_type": "contract_interaction",
+      "signature": "nftSetApprovalForAllAll(address,bool)"
+    },
+    {
+      "name": "nftGetApproved",
+      "operation_type": "contract_interaction",
+      "signature": "nftGetApproved(address,address,uint256)"
+    },
+    {
+      "name": "nftIsApprovedForOneAll",
+      "operation_type": "contract_interaction",
+      "signature": "nftIsApprovedForOneAll(address,address)"
+    },
+    {
+      "name": "nftIsApprovedForAllAll",
+      "operation_type": "contract_interaction",
+      "signature": "nftIsApprovedForAllAll(address)"
+    },
+    {
+      "name": "nftTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "nftTransfer(address,address,uint256)"
+    }
+  ],
+  "id": "ERC7564",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7564",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7564.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal introduces a smart contract wallet-based approach for managing NFTs, focusing on utilizing the programmable features of smart contract wallets for NFT asset management. Additionally, it introduces functions such as `nftApprove`, `nftSetApprovalForOneAll`, `nftSetApprovalForAllAll`, `nftGetApproved`, `nftIsApprovedForOneAll`, `nftIsApprovedForAllAll` and `nftTransfer`, which provide enhanced control over NFT transactions. This approach seeks to enhance NFT management by utilizing the built-in features of smart contract wallets, thus offering a more adaptable, secure, and efficient method for managing token transactions.",
+  "title": "Contract wallet management NFT"
+}

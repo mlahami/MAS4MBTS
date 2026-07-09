@@ -1,0 +1,58 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1202",
+  "erc": "ERC-1202",
+  "events": [
+    {
+      "name": "VoteCast",
+      "signature": "VoteCast(address,uint256,uint8,uint256,string,bytes)"
+    },
+    {
+      "name": "MultiVoteCast",
+      "signature": "MultiVoteCast(address,uint256,uint8[],uint256[],string,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "castVote",
+      "operation_type": "contract_interaction",
+      "signature": "castVote(uint256,uint8,uint256,string,bytes)"
+    },
+    {
+      "name": "castVoteFrom",
+      "operation_type": "contract_interaction",
+      "signature": "castVoteFrom(address,uint256,uint8,uint256,string,bytes)"
+    },
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(uint256,bytes)"
+    },
+    {
+      "name": "castMultiVote",
+      "operation_type": "contract_interaction",
+      "signature": "castMultiVote(uint256,uint8[],uint256[],string,bytes)"
+    },
+    {
+      "name": "votingPeriodFor",
+      "operation_type": "contract_interaction",
+      "signature": "votingPeriodFor(uint256)"
+    },
+    {
+      "name": "eligibleVotingWeight",
+      "operation_type": "contract_interaction",
+      "signature": "eligibleVotingWeight(uint256,address)"
+    }
+  ],
+  "id": "ERC1202",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1202",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1202.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This EIP defines an API for implementing voting with smart contracts. This standard provides functionality for voting, viewing vote results, and setting voting status.",
+  "title": "Voting Interface"
+}

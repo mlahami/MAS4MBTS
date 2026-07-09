@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5573",
+  "erc": "ERC-5573",
+  "events": [],
+  "functions": [],
+  "id": "ERC5573",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5573",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5573.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "[ERC-4361](./eip-4361.md), or Sign-In with Ethereum (SIWE), describes how Ethereum accounts authenticate with off-chain services. This proposal, known as ReCaps, describes a mechanism on top of SIWE to give informed consent to authorize a Relying Party to exercise certain scoped capabilities. How a Relying Party authenticates against the target resource is out of scope for this specification and depends on the implementation of the target resource.",
+  "title": "Sign-In with Ethereum Capabilities, ReCaps"
+}

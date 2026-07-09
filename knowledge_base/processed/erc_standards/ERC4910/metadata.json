@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4910",
+  "erc": "ERC-4910",
+  "events": [],
+  "functions": [
+    {
+      "name": "royaltyPayOut",
+      "operation_type": "contract_interaction",
+      "signature": "royaltyPayOut(uint256,address,address,uint256)"
+    },
+    {
+      "name": "getRoyaltyAccount",
+      "operation_type": "contract_interaction",
+      "signature": "getRoyaltyAccount(uint256)"
+    },
+    {
+      "name": "updateRoyaltyAccount",
+      "operation_type": "contract_interaction",
+      "signature": "updateRoyaltyAccount(uint256,`RoyaltyAccount)"
+    },
+    {
+      "name": "deleteRoyaltyAccount",
+      "operation_type": "contract_interaction",
+      "signature": "deleteRoyaltyAccount(uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,NFTToken[],address)"
+    },
+    {
+      "name": "listNFT",
+      "operation_type": "contract_interaction",
+      "signature": "listNFT(uint256[],uint256,address)"
+    },
+    {
+      "name": "removeNFTListing",
+      "operation_type": "contract_interaction",
+      "signature": "removeNFTListing(uint256)"
+    },
+    {
+      "name": "executePayment",
+      "operation_type": "contract_interaction",
+      "signature": "executePayment(address,address,uint,uint256,string,int256)"
+    },
+    {
+      "name": "reversePayment",
+      "operation_type": "contract_interaction",
+      "signature": "reversePayment(uint256,string)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "distributePayment",
+      "operation_type": "contract_interaction",
+      "signature": "distributePayment(uint256,uint265)"
+    },
+    {
+      "name": "_royaltyPayOut",
+      "operation_type": "contract_interaction",
+      "signature": "_royaltyPayOut(uint256,address,address,uint256)"
+    }
+  ],
+  "id": "ERC4910",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4910",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4910.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The proposal directly connects NFTs and royalties in a smart contract architecture extending the [ERC-721](./eip-721.md) standard, with the aim of precluding central authorities from manipulating or circumventing payments to those who are legally entitled to them. The proposal builds upon the OpenZeppelin Smart Contract Toolbox architecture, and extends it to include royalty account management (CRUD), royalty balance and payments management, simple trading capabilities -- Listing/De-Listing/Buying -- and capabilities to trace trading on exchanges. The royalty management capabilities allow for hierarchical royalty structures, referred to herein as royalty trees, to be established by logically connecting a \"parent\" NFT to its \"children\", and recursively enabling NFT \"children\" to have more c",
+  "title": "Royalty Bearing NFTs"
+}

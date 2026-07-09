@@ -1,0 +1,89 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4393",
+  "erc": "ERC-4393",
+  "events": [
+    {
+      "name": "ApprovalForNFT",
+      "signature": "ApprovalForNFT(address[],address,uint256,bool)"
+    },
+    {
+      "name": "Deposit",
+      "signature": "Deposit(address,address,uint256,uint256)"
+    },
+    {
+      "name": "WithdrawReward",
+      "signature": "WithdrawReward(address,address,uint256)"
+    },
+    {
+      "name": "InitializeTipToken",
+      "signature": "InitializeTipToken(address,address,address)"
+    },
+    {
+      "name": "Tip",
+      "signature": "Tip(address,address[],address,uint256,uint256,address,uint256[])"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setApprovalForNFT",
+      "operation_type": "contract_interaction",
+      "signature": "setApprovalForNFT(address[],address,uint256,bool)"
+    },
+    {
+      "name": "isApprovalForNFT",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovalForNFT(address,address,uint256)"
+    },
+    {
+      "name": "tip",
+      "operation_type": "contract_interaction",
+      "signature": "tip(address,uint256,uint256)"
+    },
+    {
+      "name": "tipBatch",
+      "operation_type": "contract_interaction",
+      "signature": "tipBatch(address[],address[],uint256[],uint256[])"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,uint256)"
+    },
+    {
+      "name": "withdrawReward",
+      "operation_type": "contract_interaction",
+      "signature": "withdrawReward(uint256)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "balanceDepositOf",
+      "operation_type": "contract_interaction",
+      "signature": "balanceDepositOf(address)"
+    },
+    {
+      "name": "rewardPendingOf",
+      "operation_type": "contract_interaction",
+      "signature": "rewardPendingOf(address)"
+    }
+  ],
+  "id": "ERC4393",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4393",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4393.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard outlines a smart contract interface for tipping to non-fungible and multi tokens. Holders of the tokens are able to withdraw the tips as [EIP-20](./eip-20.md) rewards. For the purpose of this EIP, a micropayment is termed as a financial transaction that involves usually a small sum of money called \"tips\" that are sent to specific [EIP-721](./eip-721.md) NFTs and [EIP-1155](./eip-1155.md) multi tokens, as rewards to their holders. A holder (also referred to as controller) is used as a more generic term for owner, as NFTs may represent non-digital assets such as services.",
+  "title": "Micropayments for NFTs and Multi Tokens"
+}

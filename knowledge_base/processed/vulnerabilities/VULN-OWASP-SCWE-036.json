@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Inadequate gas limit handling occurs when a contract fails to manage gas constraints efficiently, leading to performance bottlenecks and denial-of-service (DoS) risks. Poor gas handling can result in: - Unoptimized execution: Unnecessary gas-heavy computations increasing costs. - DoS vulnerabilities: Transactions failing due to excessive gas usage, blocking operations. - Inefficient batch processing: Overloaded loops or storage updates causing out-of-gas (OOG) errors. Unlike **SCWE-032**, which focuses on the protocol-level block gas limit, this issue arises due to poor gas management at the smart contract level.",
+  "id": "VULN-OWASP-SCWE-036",
+  "name": "Inadequate Gas Limit Handling",
+  "owasp": "SCWE-036",
+  "remediation": "- **Optimize gas usage:** Minimize gas consumption in contract operations. - **Avoid unbounded loops:** Ensure loops have a fixed upper limit. - **Test thoroughly:** Conduct extensive testing to ensure operations stay within gas limits.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-036.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

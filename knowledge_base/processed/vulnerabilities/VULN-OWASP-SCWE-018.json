@@ -1,0 +1,16 @@
+{
+  "category": "**: Origin Validation Error",
+  "cwe": "CWE-346",
+  "description": "The use of `tx.origin` for authorization is a security vulnerability in which a smart contract checks the origin of the transaction to determine if a user is authorized to perform an action. This approach is flawed because `tx.origin` can be exploited by an attacker through a chain of transactions, allowing unauthorized users to interact with the contract. An attacker could trick the contract into performing an action on behalf of the victim by utilizing another contract in the transaction chain. **Key Issues**: - Allows unauthorized transactions by using the `tx.origin` variable instead of `msg.sender`. - Vulnerable to phishing and reentrancy attacks, where attackers can use contracts to impersonate the victim. - Mismanagement of roles and improper transaction flow handling.",
+  "id": "VULN-OWASP-SCWE-018",
+  "name": "Use of tx.origin for Authorization",
+  "owasp": "SCWE-018",
+  "remediation": "- **Use `msg.sender` instead of `tx.origin`**: Always rely on `msg.sender` for authentication and authorization, as it correctly represents the immediate sender of the current call. - **Strict validation checks**: Ensure that authorization checks are done on the direct sender of the transaction, i.e., `msg.sender`, and not the originator.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-018.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

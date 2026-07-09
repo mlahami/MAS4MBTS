@@ -1,0 +1,88 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-223",
+  "erc": "ERC-223",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256,bytes)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint,bytes)"
+    },
+    {
+      "name": "tokenReceived",
+      "operation_type": "contract_interaction",
+      "signature": "tokenReceived(address,uint,bytes)"
+    },
+    {
+      "name": "and",
+      "operation_type": "contract_interaction",
+      "signature": "and(2)"
+    },
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(uint,address)"
+    },
+    {
+      "name": "isContract",
+      "operation_type": "contract_interaction",
+      "signature": "isContract(address)"
+    },
+    {
+      "name": "standard",
+      "operation_type": "contract_interaction",
+      "signature": "standard()"
+    }
+  ],
+  "id": "ERC223",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-223",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-223.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The following describes an interface and logic for fungible tokens that supports a `tokenReceived` callback to notify contract recipients when tokens are received. This makes tokens behave identical to ether.",
+  "title": "Token with transaction handling model"
+}

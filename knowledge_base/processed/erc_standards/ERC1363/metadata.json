@@ -1,0 +1,103 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1363",
+  "erc": "ERC-1363",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transferAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "transferAndCall(address,uint256)"
+    },
+    {
+      "name": "transferAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "transferAndCall(address,uint256,bytes)"
+    },
+    {
+      "name": "transferFromAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromAndCall(address,address,uint256)"
+    },
+    {
+      "name": "transferFromAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromAndCall(address,address,uint256,bytes)"
+    },
+    {
+      "name": "approveAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "approveAndCall(address,uint256)"
+    },
+    {
+      "name": "approveAndCall",
+      "operation_type": "contract_interaction",
+      "signature": "approveAndCall(address,uint256,bytes)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "onTransferReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onTransferReceived(address,address,uint256,bytes)"
+    },
+    {
+      "name": "onApprovalReceived",
+      "operation_type": "contract_interaction",
+      "signature": "onApprovalReceived(address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC1363",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1363",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1363.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "Standard functions a token contract and contracts working with tokens can implement to make a token Payable. `transferAndCall` and `transferFromAndCall` will call an `onTransferReceived` on a `ERC1363Receiver` contract. `approveAndCall` will call an `onApprovalReceived` on a `ERC1363Spender` contract.",
+  "title": "Payable Token"
+}

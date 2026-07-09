@@ -1,0 +1,16 @@
+{
+  "category": "Error Handling",
+  "cwe": "CWE-388",
+  "description": "Ignoring revert data (e.g., using `require(ok)` without bubbling reason) hides the root cause of failures. Protocols may proceed under incorrect assumptions, misprice risk, or block user funds without actionable errors.",
+  "id": "VULN-OWASP-SCWE-121",
+  "name": "Swallowed Revert Reasons",
+  "owasp": "SCWE-121",
+  "remediation": "- Bubble revert reasons from external calls (`(bool ok, bytes memory data)`, then `assembly { revert(add(data,32), mload(data)) }` when `!ok`). - Standardize error handling with custom errors and propagate upstream. - Emit diagnostics when external calls fail to aid monitoring.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-121.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

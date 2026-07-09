@@ -1,0 +1,20 @@
+{
+  "applicable_to": [
+    "ERC-20"
+  ],
+  "countermeasure": "Use increase/decrease allowance or require resetting allowance to zero before changing it.",
+  "cwe": "CWE-362",
+  "description": "A spender exploits transaction ordering around approve() to consume both old and new allowances.",
+  "id": "TP-ERC20-ALLOWANCE-001",
+  "name": "ERC-20 approval race condition",
+  "owasp": "Smart Contract Transaction Order Dependence",
+  "related_entry_points": [
+    "approve",
+    "transferFrom"
+  ],
+  "security_property": "Allowance updates must not allow unintended double spending.",
+  "stride": "Tampering",
+  "swc": "SWC-114",
+  "test_objective": "Verify that allowance changes cannot be exploited through front-running.",
+  "vulnerability": "Transaction-ordering dependent allowance update"
+}

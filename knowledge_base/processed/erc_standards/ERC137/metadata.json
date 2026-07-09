@@ -1,0 +1,115 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-137",
+  "erc": "ERC-137",
+  "events": [
+    {
+      "name": "AddrChanged",
+      "signature": "AddrChanged(bytes32,address)"
+    },
+    {
+      "name": "NewOwner",
+      "signature": "NewOwner(bytes32,bytes32,address)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(bytes32,address)"
+    },
+    {
+      "name": "NewResolver",
+      "signature": "NewResolver(bytes32,address)"
+    },
+    {
+      "name": "ContentChanged",
+      "signature": "ContentChanged(bytes32,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "owner",
+      "operation_type": "contract_interaction",
+      "signature": "owner(bytes32)"
+    },
+    {
+      "name": "resolver",
+      "operation_type": "contract_interaction",
+      "signature": "resolver(bytes32)"
+    },
+    {
+      "name": "ttl",
+      "operation_type": "contract_interaction",
+      "signature": "ttl(bytes32)"
+    },
+    {
+      "name": "setOwner",
+      "operation_type": "contract_interaction",
+      "signature": "setOwner(bytes32,address)"
+    },
+    {
+      "name": "setSubnodeOwner",
+      "operation_type": "contract_interaction",
+      "signature": "setSubnodeOwner(bytes32,bytes32,address)"
+    },
+    {
+      "name": "setResolver",
+      "operation_type": "contract_interaction",
+      "signature": "setResolver(bytes32,address)"
+    },
+    {
+      "name": "setTTL",
+      "operation_type": "contract_interaction",
+      "signature": "setTTL(bytes32,uint64)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "addr",
+      "operation_type": "contract_interaction",
+      "signature": "addr(bytes32)"
+    },
+    {
+      "name": "ENS",
+      "operation_type": "contract_interaction",
+      "signature": "ENS(address)"
+    },
+    {
+      "name": "Resolver",
+      "operation_type": "contract_interaction",
+      "signature": "Resolver()"
+    },
+    {
+      "name": "setAddr",
+      "operation_type": "contract_interaction",
+      "signature": "setAddr(bytes32,address)"
+    },
+    {
+      "name": "PublicResolver",
+      "operation_type": "contract_interaction",
+      "signature": "PublicResolver(address)"
+    },
+    {
+      "name": "FIFSRegistrar",
+      "operation_type": "contract_interaction",
+      "signature": "FIFSRegistrar(address,bytes32)"
+    },
+    {
+      "name": "register",
+      "operation_type": "contract_interaction",
+      "signature": "register(bytes32,address)"
+    }
+  ],
+  "id": "ERC137",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-137",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-137.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "",
+  "title": "Ethereum Domain Name Service - Specification"
+}

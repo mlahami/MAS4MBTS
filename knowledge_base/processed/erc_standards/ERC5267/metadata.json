@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5267",
+  "erc": "ERC-5267",
+  "events": [
+    {
+      "name": "EIP712DomainChanged",
+      "signature": "EIP712DomainChanged()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "eip712Domain",
+      "operation_type": "contract_interaction",
+      "signature": "eip712Domain()"
+    },
+    {
+      "name": "getDomain",
+      "operation_type": "contract_interaction",
+      "signature": "getDomain(contract)"
+    },
+    {
+      "name": "buildBasicDomain",
+      "operation_type": "contract_interaction",
+      "signature": "buildBasicDomain(fields,name,version,chainId,verifyingContract,salt)"
+    }
+  ],
+  "id": "ERC5267",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5267",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5267.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP complements [EIP-712](./eip-712.md) by standardizing how contracts should publish the fields and values that describe their domain. This enables applications to retrieve this description and generate appropriate domain separators in a general way, and thus integrate EIP-712 signatures securely and scalably.",
+  "title": "Retrieval of EIP-712 domain"
+}

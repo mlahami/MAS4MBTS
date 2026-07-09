@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7412",
+  "erc": "ERC-7412",
+  "events": [],
+  "functions": [
+    {
+      "name": "oracleId",
+      "operation_type": "contract_interaction",
+      "signature": "oracleId()"
+    },
+    {
+      "name": "fulfillOracleQuery",
+      "operation_type": "contract_interaction",
+      "signature": "fulfillOracleQuery(bytes)"
+    },
+    {
+      "name": "prepareTransaction",
+      "operation_type": "contract_interaction",
+      "signature": "prepareTransaction(originalTx)"
+    },
+    {
+      "name": "retrieveCrossChainData",
+      "operation_type": "contract_interaction",
+      "signature": "retrieveCrossChainData(uint,address,bytes)"
+    },
+    {
+      "name": "_verify",
+      "operation_type": "contract_interaction",
+      "signature": "_verify(bytes)"
+    },
+    {
+      "name": "functionA",
+      "operation_type": "contract_interaction",
+      "signature": "functionA(uint)"
+    },
+    {
+      "name": "functionB",
+      "operation_type": "contract_interaction",
+      "signature": "functionB(uint)"
+    },
+    {
+      "name": "add",
+      "operation_type": "contract_interaction",
+      "signature": "add(uint,address,uint,address)"
+    }
+  ],
+  "id": "ERC7412",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7412",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7412.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Contracts may require off-chain data during execution. A smart contract function could implement the standard proposed here by reverting with `error OracleDataRequired(address oracleContract, bytes oracleQuery, uint256 feeRequired)`. Clients supporting this standard would recognize this error message during a simulation of the request, query the specified decentralized oracle network for signed data, and instead stage a transaction with a multicall that prepends the verification of the required off-chain data. The data would be written on-chain during verification to a smart contract for the subsequent call to read, avoiding the error.",
+  "title": "On-Demand Off-Chain Data Retrieval"
+}

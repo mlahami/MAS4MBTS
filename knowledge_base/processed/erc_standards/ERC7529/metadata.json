@@ -1,0 +1,43 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7529",
+  "erc": "ERC-7529",
+  "events": [
+    {
+      "name": "AddDomain",
+      "signature": "AddDomain(string)"
+    },
+    {
+      "name": "RemoveDomain",
+      "signature": "RemoveDomain(string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "checkDomain",
+      "operation_type": "contract_interaction",
+      "signature": "checkDomain(string)"
+    },
+    {
+      "name": "addDomain",
+      "operation_type": "contract_interaction",
+      "signature": "addDomain(string)"
+    },
+    {
+      "name": "removeDomain",
+      "operation_type": "contract_interaction",
+      "signature": "removeDomain(string)"
+    }
+  ],
+  "id": "ERC7529",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7529",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7529.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The introduction of DNS over HTTPS (DoH) in [RFC 8484](https://www.rfc-editor.org/rfc/rfc8484) has enabled tamper-resistant client-side queries of DNS records directly from a web application. This proposal describes a simple standard leveraging DoH to fetch TXT records (from traditional DNS service providers) which are used for discovering and verifying the association of a smart contract with a common DNS domain. This standard can be used as a straightforward technique to mitigate smart contract authorship spoofing and enhance the discoverability of smart contracts through standard web search mechanisms.",
+  "title": "Contract Discovery and eTLD+1 Association"
+}

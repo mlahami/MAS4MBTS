@@ -1,0 +1,16 @@
+{
+  "category": "Protection Mechanism Failure",
+  "cwe": "CWE-693",
+  "description": "Tokens or lending systems without hard supply caps allow privileged accounts or flawed logic to mint unlimited units, inflating supply and draining collateralized protocols. Lack of caps also breaks price assumptions in AMMs and oracles.",
+  "id": "VULN-OWASP-SCWE-116",
+  "name": "Missing Supply Cap Enforcement",
+  "owasp": "SCWE-116",
+  "remediation": "- Define immutable max supply and enforce it on every mint path. - Separate minting roles with multi-sig and timelock; emit events for mint changes. - Include cap checks in upgrades and cross-chain minting/bridging logic.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-116.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

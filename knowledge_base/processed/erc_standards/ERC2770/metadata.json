@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2770",
+  "erc": "ERC-2770",
+  "events": [],
+  "functions": [
+    {
+      "name": "registerRequestType",
+      "operation_type": "contract_interaction",
+      "signature": "registerRequestType(string,string)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(ForwardRequest,bytes32,bytes32,bytes,bytes)"
+    },
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(ForwardRequest,bytes32,bytes32,bytes,bytes)"
+    },
+    {
+      "name": "calculateSuffixData",
+      "operation_type": "contract_interaction",
+      "signature": "calculateSuffixData(ExtendedRequest)"
+    },
+    {
+      "name": "hashExtraData",
+      "operation_type": "contract_interaction",
+      "signature": "hashExtraData(ExtraData)"
+    }
+  ],
+  "id": "ERC2770",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2770",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2770.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Withdrawn",
+  "summary": "This proposal defines an external API of an extensible Forwarder whose responsibility is to validate transaction signatures on-chain and expose the signer to the destination contract, that is expected to accommodate all use-cases. The ERC-712 structure of the forwarding request can be extended allowing wallets to display readable data even for types not known during the Forwarder contract deployment.",
+  "title": "Meta-Transactions Forwarder Contract"
+}

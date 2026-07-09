@@ -1,0 +1,83 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7929",
+  "erc": "ERC-7929",
+  "events": [
+    {
+      "name": "AssetBoundContractSet",
+      "signature": "AssetBoundContractSet(address)"
+    },
+    {
+      "name": "TokenRevealed",
+      "signature": "TokenRevealed(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "tokenExists",
+      "operation_type": "contract_interaction",
+      "signature": "tokenExists(uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "reveal",
+      "operation_type": "contract_interaction",
+      "signature": "reveal(uint256[])"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    }
+  ],
+  "id": "ERC7929",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7929",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7929.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard introduces a subclass of tokens known as **PermaLink Asset Bound Tokens (PermaLink-ABTs)**. They are a specific implementation of the broader **Asset Bound Token (ABT)** concept. ABTs establish a novel ownership paradigm where **an asset can own another asset**, enabling composable, nested, and portfolio-like token structures that evolve together over time. PermaLink-ABTs implement a permanent binding mechanism where a token in one smart contract is irreversibly linked to a token in another contract. These links mirror key state data such as `ownerOf`, `tokenId`, `totalSupply`, and `balanceOf` using the `assetBoundContract` interface. Traditional token transfer and approval functions are omitted to enforce immutability and structural cohesion between bound assets. Instead of",
+  "title": "PermaLink Asset Bound Token"
+}

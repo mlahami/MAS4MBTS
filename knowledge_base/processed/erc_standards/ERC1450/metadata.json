@@ -1,0 +1,590 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1450",
+  "erc": "ERC-1450",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "IssuerChanged",
+      "signature": "IssuerChanged(address,address)"
+    },
+    {
+      "name": "TransferAgentUpdated",
+      "signature": "TransferAgentUpdated(address,address)"
+    },
+    {
+      "name": "TokensMinted",
+      "signature": "TokensMinted(address,uint256,uint16,uint256,uint256)"
+    },
+    {
+      "name": "TokensBurned",
+      "signature": "TokensBurned(address,uint256,uint16,uint256)"
+    },
+    {
+      "name": "RegulatedTransfer",
+      "signature": "RegulatedTransfer(address,address,uint256,uint16,uint256)"
+    },
+    {
+      "name": "TransferRequested",
+      "signature": "TransferRequested(uint256,address,address,uint256,uint256,address)"
+    },
+    {
+      "name": "RequestStatusChanged",
+      "signature": "RequestStatusChanged(uint256,RequestStatus,RequestStatus,uint256)"
+    },
+    {
+      "name": "TransferExecuted",
+      "signature": "TransferExecuted(uint256,address,address,uint256)"
+    },
+    {
+      "name": "TransferRejected",
+      "signature": "TransferRejected(uint256,uint16,//)"
+    },
+    {
+      "name": "TransferExpired",
+      "signature": "TransferExpired(uint256,uint256)"
+    },
+    {
+      "name": "FeeParametersUpdated",
+      "signature": "FeeParametersUpdated(uint8,uint256)"
+    },
+    {
+      "name": "FeeTokenUpdated",
+      "signature": "FeeTokenUpdated(address,address)"
+    },
+    {
+      "name": "FeesWithdrawn",
+      "signature": "FeesWithdrawn(uint256,address)"
+    },
+    {
+      "name": "BrokerStatusUpdated",
+      "signature": "BrokerStatusUpdated(address,bool,address)"
+    },
+    {
+      "name": "AccountFrozen",
+      "signature": "AccountFrozen(address,bool,address)"
+    },
+    {
+      "name": "ControllerTransfer",
+      "signature": "ControllerTransfer(address,address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "ControllerRedemption",
+      "signature": "ControllerRedemption(address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "DocumentUpdated",
+      "signature": "DocumentUpdated(bytes32,string,bytes32)"
+    },
+    {
+      "name": "DocumentRemoved",
+      "signature": "DocumentRemoved(bytes32,string,bytes32)"
+    },
+    {
+      "name": "RecoveryInitiated",
+      "signature": "RecoveryInitiated(uint256,address,address,uint256)"
+    },
+    {
+      "name": "RecoveryCancelled",
+      "signature": "RecoveryCancelled(uint256,address)"
+    },
+    {
+      "name": "SignerAdded",
+      "signature": "SignerAdded(address)"
+    },
+    {
+      "name": "SignerRemoved",
+      "signature": "SignerRemoved(address)"
+    },
+    {
+      "name": "RequiredSignaturesUpdated",
+      "signature": "RequiredSignaturesUpdated(uint256,uint256)"
+    },
+    {
+      "name": "OperationSubmitted",
+      "signature": "OperationSubmitted(uint256,address)"
+    },
+    {
+      "name": "OperationConfirmed",
+      "signature": "OperationConfirmed(uint256,address)"
+    },
+    {
+      "name": "OperationExecuted",
+      "signature": "OperationExecuted(uint256)"
+    },
+    {
+      "name": "OperationRevoked",
+      "signature": "OperationRevoked(uint256,address)"
+    },
+    {
+      "name": "OperatorRotated",
+      "signature": "OperatorRotated(address,address)"
+    },
+    {
+      "name": "RequestSubmitted",
+      "signature": "RequestSubmitted(uint256,address,address,uint256)"
+    },
+    {
+      "name": "TransferRequested",
+      "signature": "TransferRequested(address,address,uint256,uint256)"
+    },
+    {
+      "name": "TransferApproved",
+      "signature": "TransferApproved(address,address,uint256)"
+    },
+    {
+      "name": "TransferRejected",
+      "signature": "TransferRejected(address,address,uint256,uint16)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "changeIssuer",
+      "operation_type": "contract_interaction",
+      "signature": "changeIssuer(address)"
+    },
+    {
+      "name": "setTransferAgent",
+      "operation_type": "contract_interaction",
+      "signature": "setTransferAgent(address)"
+    },
+    {
+      "name": "isTransferAgent",
+      "operation_type": "contract_interaction",
+      "signature": "isTransferAgent(address)"
+    },
+    {
+      "name": "transferFromRegulated",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromRegulated(address,address,uint256,uint16,uint256)"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(address,uint256,uint16,uint256)"
+    },
+    {
+      "name": "batchMint",
+      "operation_type": "contract_interaction",
+      "signature": "batchMint(address[],uint256[],uint16[],uint256[])"
+    },
+    {
+      "name": "burnFrom",
+      "operation_type": "contract_interaction",
+      "signature": "burnFrom(address,uint256)"
+    },
+    {
+      "name": "burnFromRegulated",
+      "operation_type": "contract_interaction",
+      "signature": "burnFromRegulated(address,uint256,uint16,uint256)"
+    },
+    {
+      "name": "burnFromRegulation",
+      "operation_type": "contract_interaction",
+      "signature": "burnFromRegulation(address,uint256,uint16)"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "isSecurityToken",
+      "operation_type": "contract_interaction",
+      "signature": "isSecurityToken()"
+    },
+    {
+      "name": "version",
+      "operation_type": "contract_interaction",
+      "signature": "version()"
+    },
+    {
+      "name": "isKYCVerified",
+      "operation_type": "contract_interaction",
+      "signature": "isKYCVerified(address)"
+    },
+    {
+      "name": "getHolderRegulations",
+      "operation_type": "contract_interaction",
+      "signature": "getHolderRegulations(address)"
+    },
+    {
+      "name": "getRegulationSupply",
+      "operation_type": "contract_interaction",
+      "signature": "getRegulationSupply(uint16)"
+    },
+    {
+      "name": "getDetailedBatchInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getDetailedBatchInfo(address)"
+    },
+    {
+      "name": "batchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "batchTransferFrom(address[],address[],uint256[],uint16[],uint256[])"
+    },
+    {
+      "name": "batchBurnFrom",
+      "operation_type": "contract_interaction",
+      "signature": "batchBurnFrom(address[],uint256[],uint16[],uint256[])"
+    },
+    {
+      "name": "setBrokerStatus",
+      "operation_type": "contract_interaction",
+      "signature": "setBrokerStatus(address,bool)"
+    },
+    {
+      "name": "isRegisteredBroker",
+      "operation_type": "contract_interaction",
+      "signature": "isRegisteredBroker(address)"
+    },
+    {
+      "name": "requestTransferWithFee",
+      "operation_type": "contract_interaction",
+      "signature": "requestTransferWithFee(address,address,uint256,uint256)"
+    },
+    {
+      "name": "requestTransferWithPermit",
+      "operation_type": "contract_interaction",
+      "signature": "requestTransferWithPermit(address,address,uint256,uint256,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "getTransferFee",
+      "operation_type": "contract_interaction",
+      "signature": "getTransferFee(address,address,uint256)"
+    },
+    {
+      "name": "getFeeToken",
+      "operation_type": "contract_interaction",
+      "signature": "getFeeToken()"
+    },
+    {
+      "name": "setFeeToken",
+      "operation_type": "contract_interaction",
+      "signature": "setFeeToken(address)"
+    },
+    {
+      "name": "setFeeParameters",
+      "operation_type": "contract_interaction",
+      "signature": "setFeeParameters(uint8,uint256)"
+    },
+    {
+      "name": "withdrawFees",
+      "operation_type": "contract_interaction",
+      "signature": "withdrawFees(uint256,address)"
+    },
+    {
+      "name": "processTransferRequest",
+      "operation_type": "contract_interaction",
+      "signature": "processTransferRequest(uint256,bool)"
+    },
+    {
+      "name": "rejectTransferRequest",
+      "operation_type": "contract_interaction",
+      "signature": "rejectTransferRequest(uint256,uint16,bool)"
+    },
+    {
+      "name": "getRequestStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getRequestStatus(uint256)"
+    },
+    {
+      "name": "updateRequestStatus",
+      "operation_type": "contract_interaction",
+      "signature": "updateRequestStatus(uint256,RequestStatus)"
+    },
+    {
+      "name": "preCheckCompliance",
+      "operation_type": "contract_interaction",
+      "signature": "preCheckCompliance(address,address,uint256)"
+    },
+    {
+      "name": "preCheckComplianceCallback",
+      "operation_type": "contract_interaction",
+      "signature": "preCheckComplianceCallback(bytes,bytes)"
+    },
+    {
+      "name": "setDocument",
+      "operation_type": "contract_interaction",
+      "signature": "setDocument(bytes32,string,bytes32)"
+    },
+    {
+      "name": "getDocument",
+      "operation_type": "contract_interaction",
+      "signature": "getDocument(bytes32)"
+    },
+    {
+      "name": "removeDocument",
+      "operation_type": "contract_interaction",
+      "signature": "removeDocument(bytes32)"
+    },
+    {
+      "name": "getAllDocuments",
+      "operation_type": "contract_interaction",
+      "signature": "getAllDocuments()"
+    },
+    {
+      "name": "initiateRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "initiateRecovery(address,address,bytes32,string,bytes32)"
+    },
+    {
+      "name": "cancelRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "cancelRecovery(uint256)"
+    },
+    {
+      "name": "executeRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "executeRecovery(uint256)"
+    },
+    {
+      "name": "controllerTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "controllerTransfer(address,address,uint256,bytes,bytes)"
+    },
+    {
+      "name": "setAccountFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "setAccountFrozen(address,bool)"
+    },
+    {
+      "name": "isAccountFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "isAccountFrozen(address)"
+    },
+    {
+      "name": "getRecoveryDetails",
+      "operation_type": "contract_interaction",
+      "signature": "getRecoveryDetails(uint256)"
+    },
+    {
+      "name": "hasPendingRecovery",
+      "operation_type": "contract_interaction",
+      "signature": "hasPendingRecovery(address)"
+    },
+    {
+      "name": "call",
+      "operation_type": "contract_interaction",
+      "signature": "call(e.g.,abi.encodeWithSignature(\"mint(...)"
+    },
+    {
+      "name": "submitOperation",
+      "operation_type": "contract_interaction",
+      "signature": "submitOperation(address,bytes,uint256)"
+    },
+    {
+      "name": "confirmOperation",
+      "operation_type": "contract_interaction",
+      "signature": "confirmOperation(uint256)"
+    },
+    {
+      "name": "revokeConfirmation",
+      "operation_type": "contract_interaction",
+      "signature": "revokeConfirmation(uint256)"
+    },
+    {
+      "name": "executeOperation",
+      "operation_type": "contract_interaction",
+      "signature": "executeOperation(uint256)"
+    },
+    {
+      "name": "addSigner",
+      "operation_type": "contract_interaction",
+      "signature": "addSigner(address)"
+    },
+    {
+      "name": "removeSigner",
+      "operation_type": "contract_interaction",
+      "signature": "removeSigner(address)"
+    },
+    {
+      "name": "updateRequiredSignatures",
+      "operation_type": "contract_interaction",
+      "signature": "updateRequiredSignatures(uint256)"
+    },
+    {
+      "name": "getSigners",
+      "operation_type": "contract_interaction",
+      "signature": "getSigners()"
+    },
+    {
+      "name": "hasConfirmed",
+      "operation_type": "contract_interaction",
+      "signature": "hasConfirmed(uint256,address)"
+    },
+    {
+      "name": "getOperation",
+      "operation_type": "contract_interaction",
+      "signature": "getOperation(uint256)"
+    },
+    {
+      "name": "submitTransferRequest",
+      "operation_type": "contract_interaction",
+      "signature": "submitTransferRequest(address,address,address,uint256,address,uint256)"
+    },
+    {
+      "name": "rotateOperator",
+      "operation_type": "contract_interaction",
+      "signature": "rotateOperator(address)"
+    },
+    {
+      "name": "isOperator",
+      "operation_type": "contract_interaction",
+      "signature": "isOperator(address)"
+    },
+    {
+      "name": "executeSplit",
+      "operation_type": "contract_interaction",
+      "signature": "executeSplit(uint256)"
+    },
+    {
+      "name": "claim",
+      "operation_type": "contract_interaction",
+      "signature": "claim()"
+    },
+    {
+      "name": "executeMandatoryRedemption",
+      "operation_type": "contract_interaction",
+      "signature": "executeMandatoryRedemption(address,uint256,uint256,string)"
+    },
+    {
+      "name": "acceptOffer",
+      "operation_type": "contract_interaction",
+      "signature": "acceptOffer(uint256)"
+    },
+    {
+      "name": "exchangeTokens",
+      "operation_type": "contract_interaction",
+      "signature": "exchangeTokens(uint256)"
+    },
+    {
+      "name": "takeSnapshot",
+      "operation_type": "contract_interaction",
+      "signature": "takeSnapshot()"
+    },
+    {
+      "name": "balanceOfAt",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfAt(address,uint256)"
+    },
+    {
+      "name": "recordVote",
+      "operation_type": "contract_interaction",
+      "signature": "recordVote(uint256,address,uint256,uint256)"
+    },
+    {
+      "name": "calculateQuorum",
+      "operation_type": "contract_interaction",
+      "signature": "calculateQuorum(uint256)"
+    },
+    {
+      "name": "isQuorumMet",
+      "operation_type": "contract_interaction",
+      "signature": "isQuorumMet(uint256)"
+    },
+    {
+      "name": "initiateVote",
+      "operation_type": "contract_interaction",
+      "signature": "initiateVote(string,uint256)"
+    },
+    {
+      "name": "collectW9",
+      "operation_type": "contract_interaction",
+      "signature": "collectW9(address)"
+    },
+    {
+      "name": "collectW8",
+      "operation_type": "contract_interaction",
+      "signature": "collectW8(address,W8Type)"
+    },
+    {
+      "name": "calculateWithholding",
+      "operation_type": "contract_interaction",
+      "signature": "calculateWithholding(address,uint256)"
+    },
+    {
+      "name": "generate1099",
+      "operation_type": "contract_interaction",
+      "signature": "generate1099(address,uint256)"
+    },
+    {
+      "name": "generate1042S",
+      "operation_type": "contract_interaction",
+      "signature": "generate1042S(address,uint256)"
+    },
+    {
+      "name": "updateTaxDocumentHash",
+      "operation_type": "contract_interaction",
+      "signature": "updateTaxDocumentHash(string,string)"
+    },
+    {
+      "name": "submitMatchedTrade",
+      "operation_type": "contract_interaction",
+      "signature": "submitMatchedTrade(address,address,uint256)"
+    },
+    {
+      "name": "executeTrade",
+      "operation_type": "contract_interaction",
+      "signature": "executeTrade(uint256,uint256,uint256)"
+    },
+    {
+      "name": "handleRejection",
+      "operation_type": "contract_interaction",
+      "signature": "handleRejection(address,address,uint16)"
+    }
+  ],
+  "id": "ERC1450",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1450",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1450.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Last Call",
+  "summary": "[ERC-1450](./eip-1450.md) facilitates the recording of ownership and transfer of securities sold in compliance with Securities Act Regulations CF, D, and A. This standard is informed by practical operational experience from SEC-registered transfer agents, broker-dealers, and alternative trading systems that have collectively managed billions in compliant securities offerings. The design addresses the full lifecycle of digital securities from issuance through secondary trading. The standard introduces a unique RTA-controlled model where the Registered Transfer Agent maintains exclusive authority over all token operations. Unlike permissionless tokens, ERC-1450 enforces strict compliance by requiring the RTA to execute all mints, burns, and transfers, while disabling direct value movement vi",
+  "title": "RTA-Controlled Security Token"
+}

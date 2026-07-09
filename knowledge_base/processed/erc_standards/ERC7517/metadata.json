@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7517",
+  "erc": "ERC-7517",
+  "events": [],
+  "functions": [],
+  "id": "ERC7517",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7517",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7517.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP proposes a standardized approach to declaring mining preferences for digital media content on the EVM-compatible blockchains. This extends digital media metadata standards like [ERC-7053](./eip-7053.md) and NFT metadata standards like [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md), allowing asset creators to specify how their assets are used in data mining, AI training, and machine learning workflows.",
+  "title": "Content Consent for AI/ML Data Mining"
+}

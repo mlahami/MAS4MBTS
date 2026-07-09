@@ -1,0 +1,67 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-725",
+  "erc": "ERC-725",
+  "events": [
+    {
+      "name": "Executed",
+      "signature": "Executed(uint256,address,uint256,bytes4)"
+    },
+    {
+      "name": "ContractCreated",
+      "signature": "ContractCreated(uint256,address,uint256,bytes32)"
+    },
+    {
+      "name": "DataChanged",
+      "signature": "DataChanged(bytes32,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(uint256,address,uint256,bytes)"
+    },
+    {
+      "name": "executeBatch",
+      "operation_type": "contract_interaction",
+      "signature": "executeBatch(uint256[],address[],uint256[],bytes[])"
+    },
+    {
+      "name": "getData",
+      "operation_type": "contract_interaction",
+      "signature": "getData(bytes32)"
+    },
+    {
+      "name": "getDataBatch",
+      "operation_type": "contract_interaction",
+      "signature": "getDataBatch(bytes32[])"
+    },
+    {
+      "name": "setData",
+      "operation_type": "contract_interaction",
+      "signature": "setData(bytes32,bytes)"
+    },
+    {
+      "name": "setDataBatch",
+      "operation_type": "contract_interaction",
+      "signature": "setDataBatch(bytes32[],bytes[])"
+    },
+    {
+      "name": "executeBatch",
+      "operation_type": "contract_interaction",
+      "signature": "executeBatch(uint256[],address[],uint256[],bytes)"
+    }
+  ],
+  "id": "ERC725",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-725",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-725.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The following describes two standards that allow for a generic data storage in a smart contract and a generic execution through a smart contract. These can be used separately or in conjunction and can serve as building blocks for smart contract accounts, upgradable metadata, and other means.",
+  "title": "General data key/value store and execution"
+}

@@ -1,0 +1,95 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5005",
+  "erc": "ERC-5005",
+  "events": [
+    {
+      "name": "EnabledModule",
+      "signature": "EnabledModule(address)"
+    },
+    {
+      "name": "DisabledModule",
+      "signature": "DisabledModule(address)"
+    },
+    {
+      "name": "ExecutionFromModuleSuccess",
+      "signature": "ExecutionFromModuleSuccess(address)"
+    },
+    {
+      "name": "ExecutionFromModuleFailure",
+      "signature": "ExecutionFromModuleFailure(address)"
+    },
+    {
+      "name": "ChangedGuard",
+      "signature": "ChangedGuard(address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "enableModule",
+      "operation_type": "contract_interaction",
+      "signature": "enableModule(address)"
+    },
+    {
+      "name": "disableModule",
+      "operation_type": "contract_interaction",
+      "signature": "disableModule(address,address)"
+    },
+    {
+      "name": "execTransactionFromModule",
+      "operation_type": "contract_interaction",
+      "signature": "execTransactionFromModule(address,uint256,bytes,Enum.Operation)"
+    },
+    {
+      "name": "execTransactionFromModuleReturnData",
+      "operation_type": "contract_interaction",
+      "signature": "execTransactionFromModuleReturnData(address,uint256,bytes,Enum.Operation)"
+    },
+    {
+      "name": "isModuleEnabled",
+      "operation_type": "contract_interaction",
+      "signature": "isModuleEnabled(address)"
+    },
+    {
+      "name": "getModulesPaginated",
+      "operation_type": "contract_interaction",
+      "signature": "getModulesPaginated(address,uint256)"
+    },
+    {
+      "name": "checkTransaction",
+      "operation_type": "contract_interaction",
+      "signature": "checkTransaction(address,uint256,bytes,Enum.Operation,uint256,uint256,uint256,address,address,bytes,address)"
+    },
+    {
+      "name": "checkAfterExecution",
+      "operation_type": "contract_interaction",
+      "signature": "checkAfterExecution(bytes32,bool)"
+    },
+    {
+      "name": "setGuard",
+      "operation_type": "contract_interaction",
+      "signature": "setGuard(address)"
+    },
+    {
+      "name": "getGuard",
+      "operation_type": "contract_interaction",
+      "signature": "getGuard()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC5005",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5005",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5005.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This EIP standardizes interfaces for composable and interoperable tooling for programmable Ethereum accounts. These interfaces separate contract accounts (\"avatars\") from their authentication and execution logic (\"guards\" and \"modules\"). Avatars implement the `IAvatar` interface, and guards implement the `IGuard` interface. Modules may take any form.",
+  "title": "Zodiac Modular Accounts"
+}

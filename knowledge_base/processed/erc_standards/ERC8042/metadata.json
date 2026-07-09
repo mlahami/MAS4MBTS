@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8042",
+  "erc": "ERC-8042",
+  "events": [],
+  "functions": [
+    {
+      "name": "getStorage",
+      "operation_type": "contract_interaction",
+      "signature": "getStorage()"
+    },
+    {
+      "name": "setRegistryLimit",
+      "operation_type": "contract_interaction",
+      "signature": "setRegistryLimit(uint256)"
+    },
+    {
+      "name": "addERC721Contract",
+      "operation_type": "contract_interaction",
+      "signature": "addERC721Contract(address)"
+    },
+    {
+      "name": "getERC721Registry",
+      "operation_type": "contract_interaction",
+      "signature": "getERC721Registry()"
+    }
+  ],
+  "id": "ERC8042",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8042",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8042.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard formalizes the diamond storage pattern originally introduced by [ERC-2535 Diamonds](./eip-2535.md) and widely adopted across smart contracts. Though originally created for proxy contracts, diamond storage can be used to organize storage and data access within *any* smart contract. Diamond storage defines the location of structs in contract storage using the `keccak256` hash of human-readable identifiers. [ERC-8042](./eip-8042) standardizes this simple and production-proven approach, offering a lightweight alternative to [ERC-7201](./eip-7201.md) for new and existing projects.",
+  "title": "Diamond Storage"
+}

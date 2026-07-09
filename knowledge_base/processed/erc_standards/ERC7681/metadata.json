@@ -1,0 +1,133 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7681",
+  "erc": "ERC-7681",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "TransferSingle",
+      "signature": "TransferSingle(address,address,address,uint256,uint256)"
+    },
+    {
+      "name": "TransferBatch",
+      "signature": "TransferBatch(address,address,address,uint256[],uint256[])"
+    },
+    {
+      "name": "ApprovalForAll",
+      "signature": "ApprovalForAll(address,address,bool)"
+    },
+    {
+      "name": "URI",
+      "signature": "URI(string,uint256)"
+    },
+    {
+      "name": "SkipTokenSet",
+      "signature": "SkipTokenSet(address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address,uint256)"
+    },
+    {
+      "name": "balanceOfBatch",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfBatch(address[],uint256[])"
+    },
+    {
+      "name": "setApprovalForAll",
+      "operation_type": "operator_approval",
+      "signature": "setApprovalForAll(address,bool)"
+    },
+    {
+      "name": "isApprovedForAll",
+      "operation_type": "contract_interaction",
+      "signature": "isApprovedForAll(address,address)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+    },
+    {
+      "name": "getSkipToken",
+      "operation_type": "contract_interaction",
+      "signature": "getSkipToken(address)"
+    },
+    {
+      "name": "setSkipToken",
+      "operation_type": "contract_interaction",
+      "signature": "setSkipToken(bool)"
+    }
+  ],
+  "id": "ERC7681",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7681",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7681.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal [ERC-7681](./eip-7681.md) delineates the integration of the fungible [ERC-20](./eip-20.md) token contract with the semi-fungible [ERC-1155](./eip-1155.md) multi-token standard, enabling cohesive operations between both standards within a single contract framework. It defines a mechanism for combining two token contracts and synchronizing operations between them.",
+  "title": "Dual Nature Multi Token Protocol"
+}

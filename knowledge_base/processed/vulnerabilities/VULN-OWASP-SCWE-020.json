@@ -1,0 +1,16 @@
+{
+  "category": "Business Logic Errors",
+  "cwe": "CWE-840",
+  "description": "Absence of time-locked functions occurs when smart contracts do not implement mechanisms to delay certain critical functions or actions based on time conditions. This can result in the contract allowing actions that should be restricted or postponed for a certain period, such as emergency fund withdrawals or sensitive administrative actions. Without time-locking mechanisms, malicious actors or faulty logic could trigger these actions at the wrong time, leading to undesired outcomes. Time-locking is commonly used in scenarios like: - Delaying admin or owner functions to prevent immediate misuse. - Ensuring withdrawal or fund transfer happens only after a predefined delay. - Enabling emergency actions only after a certain time or under specific conditions.",
+  "id": "VULN-OWASP-SCWE-020",
+  "name": "Absence of Time-Locked Functions",
+  "owasp": "SCWE-020",
+  "remediation": "- **Implement time-locked functions:** Ensure that critical functions, especially those related to fund transfers or administrative actions, are protected by a time lock, delaying their execution until an appropriate time has passed. - **Use block timestamps:** Leverage block timestamps or block numbers to control the execution of functions. - **Limit emergency access:** If implementing emergency mechanisms, ensure that there are time delays before they can be invoked, to reduce the chance of misuse. - **Review time-based logic regularly:** Verify the correctness of time-based logic to ensure that the system behaves as intended.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-020.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

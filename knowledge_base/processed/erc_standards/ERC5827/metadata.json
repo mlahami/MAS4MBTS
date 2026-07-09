@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5827",
+  "erc": "ERC-5827",
+  "events": [
+    {
+      "name": "RenewableApproval",
+      "signature": "RenewableApproval(address,address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "approveRenewable",
+      "operation_type": "contract_interaction",
+      "signature": "approveRenewable(address,uint256,uint256)"
+    },
+    {
+      "name": "renewableAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "renewableAllowance(address,address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "baseToken",
+      "operation_type": "contract_interaction",
+      "signature": "baseToken()"
+    },
+    {
+      "name": "approveRenewable",
+      "operation_type": "contract_interaction",
+      "signature": "approveRenewable(address,uint256,uint256,uint64)"
+    }
+  ],
+  "id": "ERC5827",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5827",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5827.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This extension adds a renewable allowance mechanism to [ERC-20](./eip-20.md) allowances, in which a `recoveryRate` defines the amount of token per second that the allowance regains towards the initial maximum approval `amount`.",
+  "title": "Auto-renewable allowance extension"
+}

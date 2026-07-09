@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7631",
+  "erc": "ERC-7631",
+  "events": [
+    {
+      "name": "SkipNFTSet",
+      "signature": "SkipNFTSet(address,bool)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "mirrorERC721",
+      "operation_type": "contract_interaction",
+      "signature": "mirrorERC721()"
+    },
+    {
+      "name": "getSkipNFT",
+      "operation_type": "contract_interaction",
+      "signature": "getSkipNFT(address)"
+    },
+    {
+      "name": "setSkipNFT",
+      "operation_type": "contract_interaction",
+      "signature": "setSkipNFT(bool)"
+    },
+    {
+      "name": "baseERC20",
+      "operation_type": "contract_interaction",
+      "signature": "baseERC20()"
+    }
+  ],
+  "id": "ERC7631",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7631",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7631.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A fungible [ERC-20](./eip-20.md) token contract and non-fungible [ERC-721](./eip-721.md) token contract can be interlinked, allowing actions performed on one contract to be reflected on the other. This proposal defines how the relationship between the two token contracts can be queried. It also enables accounts to configure whether ERC-721 mints and transfers should be skipped during ERC-20 to ERC-721 synchronization.",
+  "title": "Dual Nature Token Pair"
+}

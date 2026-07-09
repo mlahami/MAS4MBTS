@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7654",
+  "erc": "ERC-7654",
+  "events": [
+    {
+      "name": "Response",
+      "signature": "Response(bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getMethods",
+      "operation_type": "contract_interaction",
+      "signature": "getMethods(MethodTypes)"
+    },
+    {
+      "name": "getMethodReqAndRes",
+      "operation_type": "contract_interaction",
+      "signature": "getMethodReqAndRes(string)"
+    },
+    {
+      "name": "getMethodInstruction",
+      "operation_type": "contract_interaction",
+      "signature": "getMethodInstruction(string)"
+    },
+    {
+      "name": "get",
+      "operation_type": "contract_interaction",
+      "signature": "get(string,bytes)"
+    },
+    {
+      "name": "post",
+      "operation_type": "contract_interaction",
+      "signature": "post(string,bytes)"
+    },
+    {
+      "name": "put",
+      "operation_type": "contract_interaction",
+      "signature": "put(string,bytes)"
+    },
+    {
+      "name": "options",
+      "operation_type": "contract_interaction",
+      "signature": "options()"
+    }
+  ],
+  "id": "ERC7654",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7654",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7654.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This proposal standardizes a set of request and response communication standards between clients and smart contracts, using POST, GET, and PUT requests to create, read, and update the states of smart contracts. You can customize different request method names, request parameters and response values, and each request method will be mapped to a specific operation.",
+  "title": "Request Method Types"
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mas4mbts/etm.schema.json",
+  "title": "ERC Threat Metamodel Instance",
+  "type": "object",
+  "required": [
+    "ercStandard",
+    "smartContract",
+    "actors",
+    "trustLevels",
+    "assets",
+    "entryPoints",
+    "vulnerabilities",
+    "threats",
+    "countermeasures",
+    "securityProperties",
+    "testObjectives",
+    "relations"
+  ],
+  "properties": {
+    "ercStandard": {
+      "type": "object",
+      "required": ["id", "name", "version", "description"],
+      "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "description": {"type": "string"}
+      }
+    },
+    "smartContract": {
+      "type": "object",
+      "required": ["id", "contractName", "address", "compilerVersion"],
+      "properties": {
+        "id": {"type": "string"},
+        "contractName": {"type": "string"},
+        "address": {"type": "string"},
+        "compilerVersion": {"type": "string"}
+      }
+    },
+    "actors": {"type": "array", "items": {"$ref": "#/$defs/actor"}},
+    "trustLevels": {"type": "array", "items": {"$ref": "#/$defs/trustLevel"}},
+    "assets": {"type": "array", "items": {"$ref": "#/$defs/asset"}},
+    "entryPoints": {"type": "array", "items": {"$ref": "#/$defs/entryPoint"}},
+    "vulnerabilities": {"type": "array", "items": {"$ref": "#/$defs/vulnerability"}},
+    "threats": {"type": "array", "items": {"$ref": "#/$defs/threat"}},
+    "countermeasures": {"type": "array", "items": {"$ref": "#/$defs/countermeasure"}},
+    "securityProperties": {"type": "array", "items": {"$ref": "#/$defs/securityProperty"}},
+    "testObjectives": {"type": "array", "items": {"$ref": "#/$defs/testObjective"}},
+    "relations": {"type": "array", "items": {"$ref": "#/$defs/relation"}}
+  },
+  "$defs": {
+    "actor": {
+      "type": "object",
+      "required": ["id", "actorName", "actorType"],
+      "properties": {
+        "id": {"type": "string"},
+        "actorName": {"type": "string"},
+        "actorType": {"type": "string"}
+      }
+    },
+    "trustLevel": {
+      "type": "object",
+      "required": ["id", "levelName", "permissions"],
+      "properties": {
+        "id": {"type": "string"},
+        "levelName": {"type": "string"},
+        "permissions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "asset": {
+      "type": "object",
+      "required": ["id", "assetName", "assetType", "criticality"],
+      "properties": {
+        "id": {"type": "string"},
+        "assetName": {"type": "string"},
+        "assetType": {"type": "string"},
+        "criticality": {"type": "string"}
+      }
+    },
+    "entryPoint": {
+      "type": "object",
+      "required": ["id", "functionName", "visibility", "operationType"],
+      "properties": {
+        "id": {"type": "string"},
+        "functionName": {"type": "string"},
+        "visibility": {"type": "string"},
+        "operationType": {"type": "string"}
+      }
+    },
+    "vulnerability": {
+      "type": "object",
+      "required": ["id", "vulnerabilityName", "category", "severity", "CWE", "SWC"],
+      "properties": {
+        "id": {"type": "string"},
+        "vulnerabilityName": {"type": "string"},
+        "category": {"type": "string"},
+        "severity": {"type": "string"},
+        "CWE": {"type": "string"},
+        "SWC": {"type": "string"}
+      }
+    },
+    "threat": {
+      "type": "object",
+      "required": ["id", "threatName", "description", "STRIDECategory"],
+      "properties": {
+        "id": {"type": "string"},
+        "threatName": {"type": "string"},
+        "description": {"type": "string"},
+        "STRIDECategory": {"type": "string"}
+      }
+    },
+    "countermeasure": {
+      "type": "object",
+      "required": ["id", "countermeasureName", "description"],
+      "properties": {
+        "id": {"type": "string"},
+        "countermeasureName": {"type": "string"},
+        "description": {"type": "string"}
+      }
+    },
+    "securityProperty": {
+      "type": "object",
+      "required": ["id", "propertyName", "description"],
+      "properties": {
+        "id": {"type": "string"},
+        "propertyName": {"type": "string"},
+        "description": {"type": "string"}
+      }
+    },
+    "testObjective": {
+      "type": "object",
+      "required": ["id", "objectiveName", "expectedBehavior"],
+      "properties": {
+        "id": {"type": "string"},
+        "objectiveName": {"type": "string"},
+        "expectedBehavior": {"type": "string"}
+      }
+    },
+    "relation": {
+      "type": "object",
+      "required": ["type", "from", "to"],
+      "properties": {
+        "type": {"type": "string"},
+        "from": {"type": "string"},
+        "to": {"type": "string"}
+      }
+    }
+  }
+}

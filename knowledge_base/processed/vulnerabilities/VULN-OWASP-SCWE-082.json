@@ -1,0 +1,16 @@
+{
+  "category": "Uncontrolled Resource Consumption",
+  "cwe": "CWE-400",
+  "description": "Gas management is crucial in smart contracts to ensure that they do not run out of gas or cause excessive consumption. If gas consumption is not properly controlled, a contract can fail to execute or can be exploited by attackers to cause denial of service (DoS).",
+  "id": "VULN-OWASP-SCWE-082",
+  "name": "Lack of Proper Gas Management",
+  "owasp": "SCWE-082",
+  "remediation": "Properly estimate the gas required for functions and set appropriate gas limits. Use `require` or other mechanisms to handle gas consumption failures and ensure that gas usage remains within acceptable bounds.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-082.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

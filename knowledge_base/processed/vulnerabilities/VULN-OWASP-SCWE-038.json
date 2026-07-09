@@ -1,0 +1,16 @@
+{
+  "category": "Incorrect Permission Assignment for Critical Resource",
+  "cwe": "CWE-732",
+  "description": "Insecure use of selfdestruct refers to vulnerabilities that arise when the `selfdestruct` function is used without proper safeguards. This can lead to: - Unauthorized destruction of the contract. - Loss of funds or data. - Exploitation of vulnerabilities in contract logic.",
+  "id": "VULN-OWASP-SCWE-038",
+  "name": "Insecure Use of Selfdestruct",
+  "owasp": "SCWE-038",
+  "remediation": "- **Restrict access:** Ensure only authorized addresses can call `selfdestruct`. Note: `selfdestruct` is deprecated per EIP-6049 (Solidity 0.8.24+); prefer migration patterns where possible. - **Implement circuit breakers:** Add mechanisms to halt operations in case of suspicious activity. - **Test thoroughly:** Conduct extensive testing to ensure `selfdestruct` is used securely.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-038.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

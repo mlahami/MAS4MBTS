@@ -1,0 +1,285 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7508",
+  "erc": "ERC-7508",
+  "events": [
+    {
+      "name": "AccessControlRegistration",
+      "signature": "AccessControlRegistration(address,address,address,bool)"
+    },
+    {
+      "name": "AccessControlUpdate",
+      "signature": "AccessControlUpdate(address,string,AccessType,address)"
+    },
+    {
+      "name": "MetadataURIUpdated",
+      "signature": "MetadataURIUpdated(address,string)"
+    },
+    {
+      "name": "CollaboratorUpdate",
+      "signature": "CollaboratorUpdate(address,address,bool)"
+    },
+    {
+      "name": "AddressAttributeUpdated",
+      "signature": "AddressAttributeUpdated(address,uint256,string,address)"
+    },
+    {
+      "name": "BoolAttributeUpdated",
+      "signature": "BoolAttributeUpdated(address,uint256,string,bool)"
+    },
+    {
+      "name": "BytesAttributeUpdated",
+      "signature": "BytesAttributeUpdated(address,uint256,string,bytes)"
+    },
+    {
+      "name": "IntAttributeUpdated",
+      "signature": "IntAttributeUpdated(address,uint256,string,int256)"
+    },
+    {
+      "name": "StringAttributeUpdated",
+      "signature": "StringAttributeUpdated(address,uint256,string,string)"
+    },
+    {
+      "name": "UintAttributeUpdated",
+      "signature": "UintAttributeUpdated(address,uint256,string,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isCollaborator",
+      "operation_type": "contract_interaction",
+      "signature": "isCollaborator(address,address)"
+    },
+    {
+      "name": "isSpecificAddress",
+      "operation_type": "contract_interaction",
+      "signature": "isSpecificAddress(address,address,string)"
+    },
+    {
+      "name": "registerAccessControl",
+      "operation_type": "contract_interaction",
+      "signature": "registerAccessControl(address,address,bool)"
+    },
+    {
+      "name": "manageAccessControl",
+      "operation_type": "contract_interaction",
+      "signature": "manageAccessControl(address,string,AccessType,address)"
+    },
+    {
+      "name": "manageCollaborators",
+      "operation_type": "contract_interaction",
+      "signature": "manageCollaborators(address,address[],bool[])"
+    },
+    {
+      "name": "getAttributesMetadataURIForCollection",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributesMetadataURIForCollection(address)"
+    },
+    {
+      "name": "setAttributesMetadataURIForCollection",
+      "operation_type": "contract_interaction",
+      "signature": "setAttributesMetadataURIForCollection(address,string)"
+    },
+    {
+      "name": "getAddressAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getAddressAttribute(address,uint256,string)"
+    },
+    {
+      "name": "getBoolAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getBoolAttribute(address,uint256,string)"
+    },
+    {
+      "name": "getBytesAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getBytesAttribute(address,uint256,string)"
+    },
+    {
+      "name": "getUintAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getUintAttribute(address,uint256,string)"
+    },
+    {
+      "name": "getStringAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getStringAttribute(address,uint256,string)"
+    },
+    {
+      "name": "getIntAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "getIntAttribute(address,uint256,string)"
+    },
+    {
+      "name": "getAddressAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getAddressAttributes(address[],uint256[],string[])"
+    },
+    {
+      "name": "getBoolAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getBoolAttributes(address[],uint256[],string[])"
+    },
+    {
+      "name": "getBytesAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getBytesAttributes(address[],uint256[],string[])"
+    },
+    {
+      "name": "getIntAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getIntAttributes(address[],uint256[],string[])"
+    },
+    {
+      "name": "getStringAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getStringAttributes(address[],uint256[],string[])"
+    },
+    {
+      "name": "getUintAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getUintAttributes(address[],uint256[],string[])"
+    },
+    {
+      "name": "getAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "getAttributes(address,uint256,string[],string[],string[],string[],string[],string[])"
+    },
+    {
+      "name": "prepareMessageToPresignAddressAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignAddressAttribute(address,uint256,string,address,uint256)"
+    },
+    {
+      "name": "prepareMessageToPresignBoolAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignBoolAttribute(address,uint256,string,bool,uint256)"
+    },
+    {
+      "name": "prepareMessageToPresignBytesAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignBytesAttribute(address,uint256,string,bytes,uint256)"
+    },
+    {
+      "name": "prepareMessageToPresignIntAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignIntAttribute(address,uint256,string,int256,uint256)"
+    },
+    {
+      "name": "prepareMessageToPresignStringAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignStringAttribute(address,uint256,string,string,uint256)"
+    },
+    {
+      "name": "prepareMessageToPresignUintAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "prepareMessageToPresignUintAttribute(address,uint256,string,uint256,uint256)"
+    },
+    {
+      "name": "setAddressAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setAddressAttribute(address,uint256,string,address)"
+    },
+    {
+      "name": "setBoolAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setBoolAttribute(address,uint256,string,bool)"
+    },
+    {
+      "name": "setBytesAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setBytesAttribute(address,uint256,string,bytes)"
+    },
+    {
+      "name": "setIntAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setIntAttribute(address,uint256,string,int256)"
+    },
+    {
+      "name": "setStringAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setStringAttribute(address,uint256,string,string)"
+    },
+    {
+      "name": "setUintAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setUintAttribute(address,uint256,string,uint256)"
+    },
+    {
+      "name": "setAddressAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setAddressAttributes(address[],uint256[],AddressAttribute[])"
+    },
+    {
+      "name": "setBoolAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setBoolAttributes(address[],uint256[],BoolAttribute[])"
+    },
+    {
+      "name": "setBytesAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setBytesAttributes(address[],uint256[],BytesAttribute[])"
+    },
+    {
+      "name": "setIntAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setIntAttributes(address[],uint256[],IntAttribute[])"
+    },
+    {
+      "name": "setStringAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setStringAttributes(address[],uint256[],StringAttribute[])"
+    },
+    {
+      "name": "setUintAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setUintAttributes(address[],uint256[],UintAttribute[])"
+    },
+    {
+      "name": "setAttributes",
+      "operation_type": "contract_interaction",
+      "signature": "setAttributes(address,uint256,AddressAttribute[],BoolAttribute[],BytesAttribute[],IntAttribute[],StringAttribute[],UintAttribute[])"
+    },
+    {
+      "name": "presignedSetAddressAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "presignedSetAddressAttribute(address,address,uint256,string,address,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "presignedSetBoolAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "presignedSetBoolAttribute(address,address,uint256,string,bool,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "presignedSetBytesAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "presignedSetBytesAttribute(address,address,uint256,string,bytes,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "presignedSetIntAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "presignedSetIntAttribute(address,address,uint256,string,int256,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "presignedSetStringAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "presignedSetStringAttribute(address,address,uint256,string,string,uint256,uint8,bytes32,bytes32)"
+    },
+    {
+      "name": "presignedSetUintAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "presignedSetUintAttribute(address,address,uint256,string,uint256,uint256,uint8,bytes32,bytes32)"
+    }
+  ],
+  "id": "ERC7508",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7508",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7508.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The Public On-Chain Non-Fungible Token Attributes Repository standard provides the ability for [ERC-721](./eip-721.md) and [ERC-1155](./eip-1155.md) compatible tokens to store their attributes on-chain available to any external smart contract interacting with them. This proposal introduces the ability to assign attributes to NFTs in a public non-gated repository smart contract that is accessible at the same address in all of the networks. The repository smart contract is designed to be a common-good repository, meaning that it can be used by any ERC-721 or ERC-1155 compatible token.",
+  "title": "Dynamic On-Chain Token Attributes Repository"
+}

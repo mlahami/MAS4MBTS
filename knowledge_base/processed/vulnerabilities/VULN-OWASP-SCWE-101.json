@@ -1,0 +1,16 @@
+{
+  "category": "Time-of-Check Time-of-Use (TOCTOU) Race Condition",
+  "cwe": "CWE-367",
+  "description": "If voting power is measured at execution time without historical snapshots or locking, an attacker can borrow a large balance via flash loan, pass a proposal, and return the loan in the same transaction. Governance decisions then depend on transient liquidity rather than long-term stake.",
+  "id": "VULN-OWASP-SCWE-101",
+  "name": "Flash-Loan-Fueled Governance Manipulation",
+  "owasp": "SCWE-101",
+  "remediation": "- Use token balance snapshots at a fixed block for voting power. - Require vote escrow/locking or minimum voting period spanning multiple blocks. - Set quorum and proposal thresholds based on historical supply, not instantaneous balances.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-101.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Assignment to Variable with No Effect",
+  "cwe": "CWE-563",
+  "description": "The presence of unused variables in smart contracts refers to variables that are declared but never utilized in the contract logic. These variables consume storage or memory space unnecessarily, potentially wasting gas when deployed or executed. This situation often arises due to incomplete code, forgotten variables, or code that was intended for future use but never implemented. The presence of such variables increases the attack surface by making it harder to understand the contract and opens up potential vulnerabilities. Some common risks include: - Wasted gas due to storage and memory consumption. - Increased complexity and difficulty in understanding contract behavior. - Potential confusion for auditors or future developers working on the contract. Unused variables can also hide logic errors or indicate that parts of the contract are not functioning as intended.",
+  "id": "VULN-OWASP-SCWE-007",
+  "name": "Presence of Unused Variables",
+  "owasp": "SCWE-007",
+  "remediation": "- **Remove Unused Variables:** Ensure that any variables that are not required for the contract\u2019s functionality are removed. - **Code Review and Refactoring:** Regularly review and refactor the code to eliminate dead or unnecessary variables. - **Automated Static Analysis Tools:** Use static analysis tools to detect unused variables and other unnecessary code patterns.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-007.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,142 @@
+{
+  "ercStandard": "ERC-777",
+  "ercStandards": [
+    "ERC-777"
+  ],
+  "contractName": "OperatorToken777",
+  "address": "N/A",
+  "compilerVersion": "^0.8.20",
+  "sourceType": "solidity",
+  "inheritance": [
+    "ERC777"
+  ],
+  "imports": [
+    "@openzeppelin/contracts/token/ERC777/ERC777.sol"
+  ],
+  "functions": [
+    {
+      "name": "name",
+      "signature": "name()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "string",
+        "memory"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "symbol",
+      "signature": "symbol()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "string",
+        "memory"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "totalSupply",
+      "signature": "totalSupply()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "balanceOf",
+      "signature": "balanceOf(address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "granularity",
+      "signature": "granularity()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "defaultOperators",
+      "signature": "defaultOperators()",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "address[]",
+        "memory"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "isOperatorFor",
+      "signature": "isOperatorFor(address,address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "bool"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "authorizeOperator",
+      "signature": "authorizeOperator(address)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Operator authorization"
+    },
+    {
+      "name": "revokeOperator",
+      "signature": "revokeOperator(address)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Operator revocation"
+    },
+    {
+      "name": "send",
+      "signature": "send(address,uint256,bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Token send"
+    },
+    {
+      "name": "operatorSend",
+      "signature": "operatorSend(address,address,uint256,bytes,bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Operator token send"
+    },
+    {
+      "name": "burn",
+      "signature": "burn(uint256,bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Token burning"
+    },
+    {
+      "name": "operatorBurn",
+      "signature": "operatorBurn(address,uint256,bytes,bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Operator token burn"
+    }
+  ],
+  "events": [],
+  "modifiers": [],
+  "stateVariables": []
+}

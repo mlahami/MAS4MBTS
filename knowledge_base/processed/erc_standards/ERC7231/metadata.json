@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7231",
+  "erc": "ERC-7231",
+  "events": [
+    {
+      "name": "SetIdentitiesRoot",
+      "signature": "SetIdentitiesRoot(uint256,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setIdentitiesRoot",
+      "operation_type": "contract_interaction",
+      "signature": "setIdentitiesRoot(uint256,bytes32)"
+    },
+    {
+      "name": "getIdentitiesRoot",
+      "operation_type": "contract_interaction",
+      "signature": "getIdentitiesRoot(uint256)"
+    },
+    {
+      "name": "verifyIdentitiesBinding",
+      "operation_type": "contract_interaction",
+      "signature": "verifyIdentitiesBinding(uint256,address,string[],bytes32,bytes)"
+    }
+  ],
+  "id": "ERC7231",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7231",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7231.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard extends [ERC-721](./eip-721.md) by binding individuals' Web2 and Web3 identities to non-fungible tokens (NFTs) and soulbound tokens (SBTs). By binding multiple identities, aggregated and composible identity infomation can be verified, resulting in more beneficial onchain scenarios for individuals, such as self-authentication, social overlapping, commercial value generation from user targetting, etc. By adding a custom schema in the metadata, and updating and verifying the schema hash in the contract, the binding of NFT and identity information is completed.",
+  "title": "Identity-aggregated NFT"
+}

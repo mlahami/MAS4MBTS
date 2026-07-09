@@ -1,0 +1,62 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5851",
+  "erc": "ERC-5851",
+  "events": [
+    {
+      "name": "StandardChanged",
+      "signature": "StandardChanged(uint256,Claim[])"
+    },
+    {
+      "name": "Certified",
+      "signature": "Certified(address,uint256)"
+    },
+    {
+      "name": "Revoked",
+      "signature": "Revoked(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "standardClaim",
+      "operation_type": "contract_interaction",
+      "signature": "standardClaim()"
+    },
+    {
+      "name": "ifVerified",
+      "operation_type": "contract_interaction",
+      "signature": "ifVerified(address,uint256)"
+    },
+    {
+      "name": "standardClaim",
+      "operation_type": "contract_interaction",
+      "signature": "standardClaim(uint256)"
+    },
+    {
+      "name": "changeStandardClaim",
+      "operation_type": "contract_interaction",
+      "signature": "changeStandardClaim(uint256,Claim[])"
+    },
+    {
+      "name": "certify",
+      "operation_type": "contract_interaction",
+      "signature": "certify(address,uint256)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(address,uint256)"
+    }
+  ],
+  "id": "ERC5851",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5851",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5851.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This proposal introduces a method of certifying that a particular address meets a claim, and a method of verifying those certifications using on-chain metadata. Claims are assertions or statements made about a subject having certain properties that may be met conditions (for example: `age >= 18`), and are certified by issuers using a Soundbound Token (SBT).",
+  "title": "On-Chain Verifiable Credentials"
+}

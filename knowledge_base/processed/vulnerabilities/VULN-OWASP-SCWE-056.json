@@ -1,0 +1,16 @@
+{
+  "category": "Insufficient Verification of Data Authenticity",
+  "cwe": "CWE-345",
+  "description": "This vulnerability occurs when a smart contract fails to properly verify whether a signature was produced by an authorized entity. In Ethereum, contracts often use `ecrecover` to check signatures, but failing to validate who signed the message allows: - Unauthorized transactions, where attackers submit signatures from any key. - Replay attacks, where valid signatures are reused to repeat actions. - Malicious contract state manipulation, where attackers gain unauthorized access.",
+  "id": "VULN-OWASP-SCWE-056",
+  "name": "Lack of Proper Signature Verification",
+  "owasp": "SCWE-056",
+  "remediation": "To mitigate this vulnerability, always implement proper signature verification using secure cryptographic methods. Use the `ecrecover` function to recover the signer\u2019s address and ensure that the recovered address matches the expected address. Additionally, verify that the signature is valid for the intended message or transaction and that the signer is authorized to perform the action.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-056.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7785",
+  "erc": "ERC-7785",
+  "events": [],
+  "functions": [],
+  "id": "ERC7785",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7785",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7785.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This ERC proposes to derive chain identifiers as a digest of their chain name (and other information) and to use ENS to map chain names to identifiers in place of the centralized list on GitHub. A solution to support existing chain identifiers that were not derived following this ERC is also proposed.",
+  "title": "Onchain registration of chain identifiers"
+}

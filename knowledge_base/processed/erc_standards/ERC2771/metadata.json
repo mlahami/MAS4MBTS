@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2771",
+  "erc": "ERC-2771",
+  "events": [],
+  "functions": [
+    {
+      "name": "isTrustedForwarder",
+      "operation_type": "contract_interaction",
+      "signature": "isTrustedForwarder(address)"
+    },
+    {
+      "name": "purchaseItem",
+      "operation_type": "contract_interaction",
+      "signature": "purchaseItem(uint256)"
+    },
+    {
+      "name": "_msgSender",
+      "operation_type": "contract_interaction",
+      "signature": "_msgSender()"
+    }
+  ],
+  "id": "ERC2771",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2771",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2771.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP defines a contract-level protocol for `Recipient` contracts to accept meta-transactions through trusted `Forwarder` contracts. No protocol changes are made. `Recipient` contracts are sent the effective `msg.sender` (referred to as `_msgSender()`) and `msg.data` (referred to as `_msgData()`) by appending additional calldata.",
+  "title": "Secure Protocol for Native Meta Transactions"
+}

@@ -1,0 +1,110 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7943",
+  "erc": "ERC-7943",
+  "events": [
+    {
+      "name": "ForcedTransfer",
+      "signature": "ForcedTransfer(address,address,uint256)"
+    },
+    {
+      "name": "Frozen",
+      "signature": "Frozen(address,uint256)"
+    },
+    {
+      "name": "Frozen",
+      "signature": "Frozen(address,uint256,bool)"
+    },
+    {
+      "name": "ForcedTransfer",
+      "signature": "ForcedTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "Frozen",
+      "signature": "Frozen(address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "forcedTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "forcedTransfer(address,address,uint256)"
+    },
+    {
+      "name": "setFrozenTokens",
+      "operation_type": "contract_interaction",
+      "signature": "setFrozenTokens(address,uint256)"
+    },
+    {
+      "name": "canSend",
+      "operation_type": "contract_interaction",
+      "signature": "canSend(address)"
+    },
+    {
+      "name": "canReceive",
+      "operation_type": "contract_interaction",
+      "signature": "canReceive(address)"
+    },
+    {
+      "name": "getFrozenTokens",
+      "operation_type": "contract_interaction",
+      "signature": "getFrozenTokens(address)"
+    },
+    {
+      "name": "canTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "canTransfer(address,address,uint256)"
+    },
+    {
+      "name": "setFrozenTokens",
+      "operation_type": "contract_interaction",
+      "signature": "setFrozenTokens(address,uint256,bool)"
+    },
+    {
+      "name": "getFrozenTokens",
+      "operation_type": "contract_interaction",
+      "signature": "getFrozenTokens(address,uint256)"
+    },
+    {
+      "name": "forcedTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "forcedTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "setFrozenTokens",
+      "operation_type": "contract_interaction",
+      "signature": "setFrozenTokens(address,uint256,uint256)"
+    },
+    {
+      "name": "canTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "canTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "setFrozenTokensWithProof",
+      "operation_type": "contract_interaction",
+      "signature": "setFrozenTokensWithProof(address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "setFrozenTokensIf",
+      "operation_type": "contract_interaction",
+      "signature": "setFrozenTokensIf(address,uint256,uint256)"
+    },
+    {
+      "name": "setFrozenTokensDelta",
+      "operation_type": "contract_interaction",
+      "signature": "setFrozenTokensDelta(address,int256)"
+    }
+  ],
+  "id": "ERC7943",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7943",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7943.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This EIP proposes the Universal RWA (uRWA) standard, a set of interfaces for tokenized Real World Assets (RWAs) such as securities, real estate, commodities, or other physical/financial assets on the blockchain. Real World Assets often require regulatory compliance features not found in standard tokens, including the ability to freeze assets, perform enforcement transfers for legal compliance, and restrict transfers to authorized users. The uRWA standard extends common token standards like [ERC-20](./eip-20.md), [ERC-721](./eip-721.md), or [ERC-1155](./eip-1155.md) by introducing essential compliance functions while remaining minimal and not opinionated about specific implementation details. This enables DeFi protocols and applications to interact with tokenized real-world assets in a stan",
+  "title": "uRWA - Universal Real World Asset Interface"
+}

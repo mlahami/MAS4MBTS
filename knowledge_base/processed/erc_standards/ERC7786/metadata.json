@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7786",
+  "erc": "ERC-7786",
+  "events": [
+    {
+      "name": "MessageSent",
+      "signature": "MessageSent(bytes32,bytes,//,//,uint256,bytes[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "supportsAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "supportsAttribute(bytes4)"
+    },
+    {
+      "name": "sendMessage",
+      "operation_type": "contract_interaction",
+      "signature": "sendMessage(bytes,//,bytes[])"
+    },
+    {
+      "name": "receiveMessage",
+      "operation_type": "contract_interaction",
+      "signature": "receiveMessage(bytes32,//,//)"
+    }
+  ],
+  "id": "ERC7786",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7786",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7786.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal describes an interface, and the corresponding workflow, for smart contracts to send arbitrary data through cross-chain messaging protocols. The end goal of this proposal is to have all such messaging protocols accessible via this interface (natively or using \"adapters\") to improve their composability and interoperability. That would allow a new class of cross-chain native smart contracts to emerge while reducing vendor lock-in. This proposal is modular by design, allowing users to leverage bridge-specific features through attributes (structured metadata) while providing simple \"universal\" access to the simple feature of \"just getting a simple message through\".",
+  "title": "Cross-Chain Messaging Gateway"
+}

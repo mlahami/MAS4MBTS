@@ -1,0 +1,69 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1973",
+  "erc": "ERC-1973",
+  "events": [],
+  "functions": [
+    {
+      "name": "addMinters",
+      "operation_type": "contract_interaction",
+      "signature": "addMinters(address)"
+    },
+    {
+      "name": "removeMinters",
+      "operation_type": "contract_interaction",
+      "signature": "removeMinters(address)"
+    },
+    {
+      "name": "trigger",
+      "operation_type": "contract_interaction",
+      "signature": "trigger()"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw()"
+    },
+    {
+      "name": "readyToMint",
+      "operation_type": "contract_interaction",
+      "signature": "readyToMint()"
+    },
+    {
+      "name": "calculateRewards",
+      "operation_type": "contract_interaction",
+      "signature": "calculateRewards()"
+    },
+    {
+      "name": "mintTokens",
+      "operation_type": "contract_interaction",
+      "signature": "mintTokens()"
+    },
+    {
+      "name": "calculateTPP",
+      "operation_type": "contract_interaction",
+      "signature": "calculateTPP(uint256)"
+    },
+    {
+      "name": "updateRoundMask",
+      "operation_type": "contract_interaction",
+      "signature": "updateRoundMask(uint256)"
+    },
+    {
+      "name": "updateParticipantMask",
+      "operation_type": "contract_interaction",
+      "signature": "updateParticipantMask(address)"
+    }
+  ],
+  "id": "ERC1973",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1973",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1973.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The mintable token rewards interface allows DApps to build a token economy where token rewards are distributed equally among the active participants. The tokens are minted based on per block basis that are configurable (E.g. 10.2356 tokens per block, 0.1 token per block, 1350 tokens per block) and the mint function can be initiated by any active participant. The token rewards distributed to each participant is dependent on the number of participants in the network. At the beginning, when the network has low volume, the tokens rewards per participant is high but as the network scales the token rewards decreases dynamically. ## Motivation Distributing tokens through a push system to a large amount of participants fails due to block gas limit. As the number of participants in the network grow",
+  "title": "Scalable Rewards"
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "The `blockhash` function is often misused to generate randomness in smart contracts. However, `blockhash` is publicly available and can be influenced by validators (or miners on PoW chains), making it an unreliable and insecure source of randomness. Attackers can manipulate `blockhash` by controlling which transactions are included in a block, reordering transactions, or discarding unfavorable blocks. This can lead to predictable random outcomes, allowing malicious actors to exploit lotteries, gaming, and other randomness-dependent mechanisms. **Attack Scenarios** - Lottery Manipulation: A validator (or miner on PoW) can withhold or reorder transactions to ensure a favorable `blockhash` that lets them win. - Game Exploitation: If a game outcome depends on `blockhash`, an attacker can predict future results and place bets accordingly.",
+  "id": "VULN-OWASP-SCWE-084",
+  "name": "Insecure Use of blockhash",
+  "owasp": "SCWE-084",
+  "remediation": "Do not rely on `blockhash` for generating randomness. Use more secure and unpredictable sources of randomness, such as using Chainlink VRF or other trusted oracles.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CRYPTO\\SCWE-084.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

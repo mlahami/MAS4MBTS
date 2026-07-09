@@ -1,0 +1,73 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7861",
+  "erc": "ERC-7861",
+  "events": [
+    {
+      "name": "CredentialIssued",
+      "signature": "CredentialIssued(uint256,address)"
+    },
+    {
+      "name": "CredentialRevoked",
+      "signature": "CredentialRevoked(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "issuer",
+      "operation_type": "contract_interaction",
+      "signature": "issuer()"
+    },
+    {
+      "name": "credentialType",
+      "operation_type": "contract_interaction",
+      "signature": "credentialType()"
+    },
+    {
+      "name": "encryptionMethod",
+      "operation_type": "contract_interaction",
+      "signature": "encryptionMethod()"
+    },
+    {
+      "name": "verificationMethod",
+      "operation_type": "contract_interaction",
+      "signature": "verificationMethod()"
+    },
+    {
+      "name": "credentialURI",
+      "operation_type": "contract_interaction",
+      "signature": "credentialURI(uint256)"
+    },
+    {
+      "name": "isRevoked",
+      "operation_type": "contract_interaction",
+      "signature": "isRevoked(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "issueCredential",
+      "operation_type": "contract_interaction",
+      "signature": "issueCredential(address,uint256)"
+    },
+    {
+      "name": "revokeCredential",
+      "operation_type": "contract_interaction",
+      "signature": "revokeCredential(uint256)"
+    }
+  ],
+  "id": "ERC7861",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7861",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7861.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md) that adds verifiable credential properties at the contract level. A verifiable credential is a secure digital certificate that encapsulates claims issued by a trusted authority and is designed to be tamper-evident and readily verifiable. It allows [ERC-721](./eip-721.md) tokens to natively reference and manage these credentials\u2014as well as other types of off-chain data\u2014by defining mechanisms for storage, encryption, revocation, and verification.",
+  "title": "ERC-721 Verifiable Credential Extension"
+}

@@ -1,0 +1,129 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-884",
+  "erc": "ERC-884",
+  "events": [
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "VerifiedAddressAdded",
+      "signature": "VerifiedAddressAdded(address,bytes32,address)"
+    },
+    {
+      "name": "VerifiedAddressRemoved",
+      "signature": "VerifiedAddressRemoved(address,address)"
+    },
+    {
+      "name": "VerifiedAddressUpdated",
+      "signature": "VerifiedAddressUpdated(address,bytes32,bytes32,address)"
+    },
+    {
+      "name": "VerifiedAddressSuperseded",
+      "signature": "VerifiedAddressSuperseded(address,address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balanceOf",
+      "operation_type": "balance_query",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "addVerified",
+      "operation_type": "contract_interaction",
+      "signature": "addVerified(address,bytes32)"
+    },
+    {
+      "name": "removeVerified",
+      "operation_type": "contract_interaction",
+      "signature": "removeVerified(address)"
+    },
+    {
+      "name": "updateVerified",
+      "operation_type": "contract_interaction",
+      "signature": "updateVerified(address,bytes32)"
+    },
+    {
+      "name": "cancelAndReissue",
+      "operation_type": "contract_interaction",
+      "signature": "cancelAndReissue(address,address)"
+    },
+    {
+      "name": "isVerified",
+      "operation_type": "contract_interaction",
+      "signature": "isVerified(address)"
+    },
+    {
+      "name": "isHolder",
+      "operation_type": "contract_interaction",
+      "signature": "isHolder(address)"
+    },
+    {
+      "name": "hasHash",
+      "operation_type": "contract_interaction",
+      "signature": "hasHash(address,bytes32)"
+    },
+    {
+      "name": "holderCount",
+      "operation_type": "contract_interaction",
+      "signature": "holderCount()"
+    },
+    {
+      "name": "holderAt",
+      "operation_type": "contract_interaction",
+      "signature": "holderAt(uint256)"
+    },
+    {
+      "name": "isSuperseded",
+      "operation_type": "contract_interaction",
+      "signature": "isSuperseded(address)"
+    },
+    {
+      "name": "getCurrentFor",
+      "operation_type": "contract_interaction",
+      "signature": "getCurrentFor(address)"
+    }
+  ],
+  "id": "ERC884",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-884",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-884.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The recently amended 'Title 8 of the Delaware Code Relating to the General Corporation Law' now explicitly allows for the use of blockchains to maintain corporate share registries. This means it is now possible to create a tradable `ERC-20` token where each token represents a share issued by a Delaware corporation. Such a token must conform to the following principles over and above the `ERC-20` standard. 1. Token owners must have their identity verified. 2. The token contract must provide the following three functions of a `Corporations Stock ledger` (Ref: Section 224 of The Act): 1. Reporting: It must enable the corporation to prepare the list of shareholders specified in Sections 219 and 220 of The Act. 2. It must record the information specified in Sections 156, 159, 217(a) and 218 of",
+  "title": "DGCL Token"
+}

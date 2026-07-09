@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5732",
+  "erc": "ERC-5732",
+  "events": [
+    {
+      "name": "Commit",
+      "signature": "Commit(uint256,address,bytes32,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "commit",
+      "operation_type": "contract_interaction",
+      "signature": "commit(bytes32)"
+    },
+    {
+      "name": "commitFrom",
+      "operation_type": "contract_interaction",
+      "signature": "commitFrom(address,bytes32,bytes)"
+    },
+    {
+      "name": "commit",
+      "operation_type": "contract_interaction",
+      "signature": "commit(bytes32,bytes)"
+    }
+  ],
+  "id": "ERC5732",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5732",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5732.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "A simple commit interface to support commit-reveal scheme which provides **only** a commit method but no reveal method, allowing implementations to integrate this interface with arbitrary reveal methods such as `vote` or `transfer`.",
+  "title": "Commit Interface"
+}

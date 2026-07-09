@@ -1,0 +1,79 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5521",
+  "erc": "ERC-5521",
+  "events": [
+    {
+      "name": "UpdateNode",
+      "signature": "UpdateNode(uint256,address,address[],uint256[][],address[],uint256[][])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setNode",
+      "operation_type": "contract_interaction",
+      "signature": "setNode(uint256,address[],uint256[][])"
+    },
+    {
+      "name": "referringOf",
+      "operation_type": "contract_interaction",
+      "signature": "referringOf(address,uint256)"
+    },
+    {
+      "name": "referredOf",
+      "operation_type": "contract_interaction",
+      "signature": "referredOf(address,uint256)"
+    },
+    {
+      "name": "createdTimestampOf",
+      "operation_type": "contract_interaction",
+      "signature": "createdTimestampOf(address,uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "setNodeReferredExternal",
+      "operation_type": "contract_interaction",
+      "signature": "setNodeReferredExternal(address,uint256,uint256[])"
+    },
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(uint256,address[],uint256[][])"
+    },
+    {
+      "name": "setNodeReferring",
+      "operation_type": "contract_interaction",
+      "signature": "setNodeReferring(address[],uint256,uint256[][])"
+    },
+    {
+      "name": "setNodeReferred",
+      "operation_type": "contract_interaction",
+      "signature": "setNodeReferred(address[],uint256,uint256[][])"
+    },
+    {
+      "name": "emitEvents",
+      "operation_type": "contract_interaction",
+      "signature": "emitEvents(uint256,address)"
+    },
+    {
+      "name": "convertMap",
+      "operation_type": "contract_interaction",
+      "signature": "convertMap(uint256,bool)"
+    }
+  ],
+  "id": "ERC5521",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5521",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5521.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It proposes two referable indicators, referring and referred, and a time-based indicator `createdTimestamp`. The relationship between each NFT forms a directed acyclic graph (DAG). The standard allows users to query, track and analyze their relationships. ![System Architecture](../assets/eip-5521/system-arch.png)",
+  "title": "Referable NFT"
+}

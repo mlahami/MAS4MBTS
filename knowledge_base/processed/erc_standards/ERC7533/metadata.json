@@ -1,0 +1,117 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7533",
+  "erc": "ERC-7533",
+  "events": [
+    {
+      "name": "MsgHashAdded",
+      "signature": "MsgHashAdded(uint,address,bytes32,uint,bytes32)"
+    },
+    {
+      "name": "Packed",
+      "signature": "Packed(uint,uint,bytes32)"
+    },
+    {
+      "name": "PackageReceived",
+      "signature": "PackageReceived(uint,uint,bytes32)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "addMsgHash",
+      "operation_type": "contract_interaction",
+      "signature": "addMsgHash(bytes32,uint)"
+    },
+    {
+      "name": "pack",
+      "operation_type": "contract_interaction",
+      "signature": "pack()"
+    },
+    {
+      "name": "getPackage",
+      "operation_type": "contract_interaction",
+      "signature": "getPackage(uint)"
+    },
+    {
+      "name": "getPendingPackage",
+      "operation_type": "contract_interaction",
+      "signature": "getPendingPackage()"
+    },
+    {
+      "name": "receivePackages",
+      "operation_type": "contract_interaction",
+      "signature": "receivePackages(Package[])"
+    },
+    {
+      "name": "getRoot",
+      "operation_type": "contract_interaction",
+      "signature": "getRoot(uint,uint)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(uint,uint,bytes32[],bytes32,address)"
+    },
+    {
+      "name": "_pack",
+      "operation_type": "contract_interaction",
+      "signature": "_pack()"
+    },
+    {
+      "name": "_computeLeaves",
+      "operation_type": "contract_interaction",
+      "signature": "_computeLeaves(bytes32[])"
+    },
+    {
+      "name": "_hashPair",
+      "operation_type": "contract_interaction",
+      "signature": "_hashPair(bytes32,bytes32)"
+    },
+    {
+      "name": "_efficientHash",
+      "operation_type": "contract_interaction",
+      "signature": "_efficientHash(bytes32,bytes32)"
+    },
+    {
+      "name": "_processProof",
+      "operation_type": "contract_interaction",
+      "signature": "_processProof(bytes32[],bytes32)"
+    },
+    {
+      "name": "setTrustBridge",
+      "operation_type": "contract_interaction",
+      "signature": "setTrustBridge(uint,address)"
+    },
+    {
+      "name": "setCrossPair",
+      "operation_type": "contract_interaction",
+      "signature": "setCrossPair(address,address)"
+    },
+    {
+      "name": "getLeaves",
+      "operation_type": "contract_interaction",
+      "signature": "getLeaves(uint,uint,uint)"
+    },
+    {
+      "name": "transferTo",
+      "operation_type": "contract_interaction",
+      "signature": "transferTo(uint,address,uint,address)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(uint,uint,bytes32[],address,uint,address)"
+    }
+  ],
+  "id": "ERC7533",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7533",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7533.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The objective of Public Cross Port (PCP) is to securely and efficiently connect various EVM chains. It replaces the method of pushing message to multiple chains with a method of pulling messages from multiple chains, significantly reducing the number of cross-chain bridges and gas cost, as more cross-chain bridge projects are built on PCP, the overall security increases.",
+  "title": "Public Cross Port"
+}

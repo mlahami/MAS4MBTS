@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6327",
+  "erc": "ERC-6327",
+  "events": [
+    {
+      "name": "SetPassword",
+      "signature": "SetPassword(address,uint)"
+    },
+    {
+      "name": "Verified",
+      "signature": "Verified(address,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "pwdhashOf",
+      "operation_type": "contract_interaction",
+      "signature": "pwdhashOf(address)"
+    },
+    {
+      "name": "resetPassword",
+      "operation_type": "contract_interaction",
+      "signature": "resetPassword(uint[8],uint,uint,uint[8],uint,uint,uint)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(address,uint[8],uint,uint,uint)"
+    },
+    {
+      "name": "verifyProof",
+      "operation_type": "contract_interaction",
+      "signature": "verifyProof(uint[8],uint,uint,//254b)"
+    }
+  ],
+  "id": "ERC6327",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6327",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6327.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Elastic signature (ES) aims to sign data with a human friendly secret. The secret will be verified fully on-chain and is not stored anywhere. A user can change the secret as often as they need to. The secret does not have a fixed length. The secret will be like a password, which is a better understood concept than private key. This is specifically true for non-technical users. This EIP defines a smart contract interface to verify and authorize operations with ES.",
+  "title": "Elastic Signature"
+}

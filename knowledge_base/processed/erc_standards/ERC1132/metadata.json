@@ -1,0 +1,68 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1132",
+  "erc": "ERC-1132",
+  "events": [
+    {
+      "name": "Locked",
+      "signature": "Locked(address,uint256,uint256,uint256)"
+    },
+    {
+      "name": "Unlocked",
+      "signature": "Unlocked(address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "lock",
+      "operation_type": "contract_interaction",
+      "signature": "lock(bytes32,uint256,uint256)"
+    },
+    {
+      "name": "tokensLockedAtTime",
+      "operation_type": "contract_interaction",
+      "signature": "tokensLockedAtTime(address,bytes32,uint256)"
+    },
+    {
+      "name": "totalBalanceOf",
+      "operation_type": "contract_interaction",
+      "signature": "totalBalanceOf(address)"
+    },
+    {
+      "name": "extendLock",
+      "operation_type": "contract_interaction",
+      "signature": "extendLock(bytes32,uint256)"
+    },
+    {
+      "name": "increaseLockAmount",
+      "operation_type": "contract_interaction",
+      "signature": "increaseLockAmount(bytes32,uint256)"
+    },
+    {
+      "name": "tokensUnlockable",
+      "operation_type": "contract_interaction",
+      "signature": "tokensUnlockable(address,bytes32)"
+    },
+    {
+      "name": "getUnlockableTokens",
+      "operation_type": "contract_interaction",
+      "signature": "getUnlockableTokens(address)"
+    },
+    {
+      "name": "unlock",
+      "operation_type": "contract_interaction",
+      "signature": "unlock(address)"
+    }
+  ],
+  "id": "ERC1132",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1132",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1132.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This proposal provides basic functionality to time-lock tokens within an ERC20 smart contract for multiple utilities without the need of transferring tokens to an external escrow smart contract. It also allows fetching balance of locked and transferable tokens. Time-locking can also be achieved via staking (#900), but that requires transfer of tokens to an escrow contract / stake manager, resulting in the following six concerns: 1. additional trust on escrow contract / stake manager 2. additional approval process for token transfer 3. increased ops costs due to gas requirements in transfers 4. tough user experience as the user needs to claim the amount back from external escrows 5. inability for the user to track their true token balance / token activity 6. inability for the user to utiliz",
+  "title": "Extending ERC20 with token locking capability"
+}

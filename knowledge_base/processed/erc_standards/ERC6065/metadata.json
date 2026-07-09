@@ -1,0 +1,64 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6065",
+  "erc": "ERC-6065",
+  "events": [
+    {
+      "name": "Foreclosed",
+      "signature": "Foreclosed(uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "legalDescriptionOf",
+      "operation_type": "contract_interaction",
+      "signature": "legalDescriptionOf(uint256)"
+    },
+    {
+      "name": "addressOf",
+      "operation_type": "contract_interaction",
+      "signature": "addressOf(uint256)"
+    },
+    {
+      "name": "geoJsonOf",
+      "operation_type": "contract_interaction",
+      "signature": "geoJsonOf(uint256)"
+    },
+    {
+      "name": "parcelIdOf",
+      "operation_type": "contract_interaction",
+      "signature": "parcelIdOf(uint256)"
+    },
+    {
+      "name": "legalOwnerOf",
+      "operation_type": "contract_interaction",
+      "signature": "legalOwnerOf(uint256)"
+    },
+    {
+      "name": "operatingAgreementHashOf",
+      "operation_type": "contract_interaction",
+      "signature": "operatingAgreementHashOf(uint256)"
+    },
+    {
+      "name": "debtOf",
+      "operation_type": "contract_interaction",
+      "signature": "debtOf(uint256)"
+    },
+    {
+      "name": "managerOf",
+      "operation_type": "contract_interaction",
+      "signature": "managerOf(uint256)"
+    }
+  ],
+  "id": "ERC6065",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6065",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6065.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal introduces an open structure for physical real estate and property to exist on the blockchain. This standard builds off of [ERC-721](./eip-721.md), adding important functionality necessary for representing real world assets such as real estate. The three objectives this standard aims to meet are: universal transferability of the NFT, private property rights attached to the NFT, and atomic transfer of property rights with the transfer of the NFT. The token contains a hash of the operating agreement detailing the NFT holder\u2019s legal right to the property, unique identifiers for the property, a debt value and foreclosure status, and a manager address.",
+  "title": "Real Estate Token"
+}

@@ -1,0 +1,97 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-4834",
+  "erc": "ERC-4834",
+  "events": [
+    {
+      "name": "SubdomainCreate",
+      "signature": "SubdomainCreate(address,string,address)"
+    },
+    {
+      "name": "SubdomainUpdate",
+      "signature": "SubdomainUpdate(address,string,address,address)"
+    },
+    {
+      "name": "SubdomainDelete",
+      "signature": "SubdomainDelete(address,string,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "hasDomain",
+      "operation_type": "contract_interaction",
+      "signature": "hasDomain(string[])"
+    },
+    {
+      "name": "getDomain",
+      "operation_type": "contract_interaction",
+      "signature": "getDomain(string[])"
+    },
+    {
+      "name": "resolve",
+      "operation_type": "contract_interaction",
+      "signature": "resolve(string[],IDomain)"
+    },
+    {
+      "name": "createDomain",
+      "operation_type": "contract_interaction",
+      "signature": "createDomain(string,address)"
+    },
+    {
+      "name": "setDomain",
+      "operation_type": "contract_interaction",
+      "signature": "setDomain(string,address)"
+    },
+    {
+      "name": "deleteDomain",
+      "operation_type": "contract_interaction",
+      "signature": "deleteDomain(string)"
+    },
+    {
+      "name": "canCreateDomain",
+      "operation_type": "contract_interaction",
+      "signature": "canCreateDomain(address,string,address)"
+    },
+    {
+      "name": "canSetDomain",
+      "operation_type": "contract_interaction",
+      "signature": "canSetDomain(address,string,address)"
+    },
+    {
+      "name": "canDeleteDomain",
+      "operation_type": "contract_interaction",
+      "signature": "canDeleteDomain(address,string)"
+    },
+    {
+      "name": "subdomainByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "subdomainByIndex(uint256)"
+    },
+    {
+      "name": "totalSubdomains",
+      "operation_type": "contract_interaction",
+      "signature": "totalSubdomains()"
+    },
+    {
+      "name": "canMoveSubdomain",
+      "operation_type": "contract_interaction",
+      "signature": "canMoveSubdomain(address,string,IDomain,address)"
+    },
+    {
+      "name": "canDeleteSubdomain",
+      "operation_type": "contract_interaction",
+      "signature": "canDeleteSubdomain(address,string,IDomain)"
+    }
+  ],
+  "id": "ERC4834",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4834",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-4834.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This is a standard for generic name resolution with arbitrarily complex access control and resolution. It permits a contract that implements this EIP (referred to as a \"domain\" hereafter) to be addressable with a more human-friendly name, with a similar purpose to [ERC-137](./eip-137.md) (also known as \"ENS\").",
+  "title": "Hierarchical Domains"
+}

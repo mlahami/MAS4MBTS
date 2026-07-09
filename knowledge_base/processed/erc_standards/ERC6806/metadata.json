@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6806",
+  "erc": "ERC-6806",
+  "events": [],
+  "functions": [
+    {
+      "name": "getHoldingInfo",
+      "operation_type": "contract_interaction",
+      "signature": "getHoldingInfo(uint256)"
+    },
+    {
+      "name": "_afterTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_afterTokenTransfer(address,address,uint256,uint256)"
+    },
+    {
+      "name": "setHoldingTimeWhitelistedAddress",
+      "operation_type": "contract_interaction",
+      "signature": "setHoldingTimeWhitelistedAddress(address,bool)"
+    }
+  ],
+  "id": "ERC6806",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6806",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6806.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It adds an interface that tracks and describes the holding time of a Non-Fungible Token (NFT) by an account.",
+  "title": "ERC-721 Holding Time Tracking"
+}

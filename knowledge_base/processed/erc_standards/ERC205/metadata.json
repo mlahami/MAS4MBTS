@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-205",
+  "erc": "ERC-205",
+  "events": [],
+  "functions": [
+    {
+      "name": "ABI",
+      "operation_type": "contract_interaction",
+      "signature": "ABI(bytes32,uint256)"
+    }
+  ],
+  "id": "ERC205",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-205",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-205.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "ABIs are important metadata required for interacting with most contracts. At present, they are typically supplied out-of-band, which adds an additional burden to interacting with contracts, particularly on a one-off basis or where the ABI may be updated over time. The small size of ABIs permits an alternative solution, storing them in ENS, permitting name lookup and ABI discovery via the same process. ABIs are typically quite compact; the largest in-use ABI we could find, that for the DAO, is 9450 bytes uncompressed JSON, 6920 bytes uncompressed CBOR, and 1128 bytes when the JSON form is compressed with zlib. Further gains on CBOR encoding are possible using a CBOR extension that permits eliminating repeated strings, which feature extensively in ABIs. Most ABIs, however, are far shorter th",
+  "title": "ENS support for contract ABIs"
+}

@@ -1,0 +1,39 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1066",
+  "erc": "ERC-1066",
+  "events": [],
+  "functions": [
+    {
+      "name": "isInt",
+      "operation_type": "contract_interaction",
+      "signature": "isInt(uint)"
+    },
+    {
+      "name": "safeIncrement",
+      "operation_type": "contract_interaction",
+      "signature": "safeIncrement(uint8)"
+    },
+    {
+      "name": "increase",
+      "operation_type": "contract_interaction",
+      "signature": "increase()"
+    },
+    {
+      "name": "appCode",
+      "operation_type": "contract_interaction",
+      "signature": "appCode(Sleep)"
+    }
+  ],
+  "id": "ERC1066",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1066",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1066.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This standard outlines a common set of status codes in a similar vein to HTTP statuses. This provides a shared set of signals to allow smart contracts to react to situations autonomously, expose localized error messages to users, and so on. The current state of the art is to either `revert` on anything other than a clear success (ie: require human intervention), or return a low-context `true` or `false`. Status codes are similar-but-orthogonal to `revert`ing with a reason, but aimed at automation, debugging, and end-user feedback (including translation). _They are fully compatible with both `revert` and `revert`-with-reason._ As is the case with HTTP, having a standard set of known codes has many benefits for developers. They remove friction from needing to develop your own schemes for eve",
+  "title": "Status Codes"
+}

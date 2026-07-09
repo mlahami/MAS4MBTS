@@ -1,0 +1,23 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-2309",
+  "erc": "ERC-2309",
+  "events": [
+    {
+      "name": "ConsecutiveTransfer",
+      "signature": "ConsecutiveTransfer(uint256,uint256,address,address)"
+    }
+  ],
+  "functions": [],
+  "id": "ERC2309",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-2309",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-2309.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "The optional ERC-721 Consecutive Transfer Extension provides a standardized event which could be emitted during the creation/transfer of one, or many non-fungible tokens. This standard does not set the expectation of how you might create/transfer many tokens it is only concerned with the event emitted after the creation, or transfer of ownership of these tokens. This extension assumes that token identifiers are in consecutive order.",
+  "title": "ERC-721 Consecutive Transfer Extension"
+}

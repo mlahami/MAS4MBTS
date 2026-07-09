@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-67",
+  "erc": "ERC-67",
+  "events": [],
+  "functions": [],
+  "id": "ERC67",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-67",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-67.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Withdrawn",
+  "summary": "This proposal (inspired by BIP 21) defines a format for encoding a transaction into a URI, including a recipient, number of ethers (possibly zero), and optional bytecode.",
+  "title": "URI Scheme with Metadata, Value and Bytecode"
+}

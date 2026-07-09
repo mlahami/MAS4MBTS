@@ -1,0 +1,99 @@
+{
+  "ercStandard": "ERC-1155",
+  "ercStandards": [
+    "ERC-1155"
+  ],
+  "contractName": "GameItems1155",
+  "address": "N/A",
+  "compilerVersion": "^0.8.20",
+  "sourceType": "solidity",
+  "inheritance": [
+    "ERC1155",
+    "Ownable"
+  ],
+  "imports": [
+    "@openzeppelin/contracts/token/ERC1155/ERC1155.sol",
+    "@openzeppelin/contracts/access/Ownable.sol"
+  ],
+  "functions": [
+    {
+      "name": "uri",
+      "signature": "uri(uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "string",
+        "memory"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "balanceOf",
+      "signature": "balanceOf(address,uint256)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "balanceOfBatch",
+      "signature": "balanceOfBatch(address[],uint256[])",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "uint256[]",
+        "memory"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "setApprovalForAll",
+      "signature": "setApprovalForAll(address,bool)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Operator approval management"
+    },
+    {
+      "name": "isApprovedForAll",
+      "signature": "isApprovedForAll(address,address)",
+      "visibility": "public",
+      "stateMutability": "view",
+      "modifiers": [
+        "bool"
+      ],
+      "operationType": "Contract interaction"
+    },
+    {
+      "name": "safeTransferFrom",
+      "signature": "safeTransferFrom(address,address,uint256,uint256,bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Safe token transfer"
+    },
+    {
+      "name": "safeBatchTransferFrom",
+      "signature": "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [],
+      "operationType": "Batch token transfer"
+    },
+    {
+      "name": "mintBatch",
+      "signature": "mintBatch(address,uint256[],uint256[],bytes)",
+      "visibility": "public",
+      "stateMutability": "nonpayable",
+      "modifiers": [
+        "onlyOwner"
+      ],
+      "operationType": "Contract interaction"
+    }
+  ],
+  "events": [],
+  "modifiers": [],
+  "stateVariables": []
+}

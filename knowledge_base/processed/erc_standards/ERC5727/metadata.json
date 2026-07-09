@@ -1,0 +1,143 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5727",
+  "erc": "ERC-5727",
+  "events": [
+    {
+      "name": "Revoked",
+      "signature": "Revoked(address,uint256)"
+    },
+    {
+      "name": "Verified",
+      "signature": "Verified(address,uint256,bool)"
+    },
+    {
+      "name": "ApprovalUpdate",
+      "signature": "ApprovalUpdate(uint256,address,ApprovalStatus)"
+    },
+    {
+      "name": "Approve",
+      "signature": "Approve(address,uint256,bool)"
+    },
+    {
+      "name": "Delegate",
+      "signature": "Delegate(address,uint256)"
+    },
+    {
+      "name": "UnDelegate",
+      "signature": "UnDelegate(address,uint256)"
+    },
+    {
+      "name": "Recovered",
+      "signature": "Recovered(address,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "verifierOf",
+      "operation_type": "contract_interaction",
+      "signature": "verifierOf(uint256)"
+    },
+    {
+      "name": "issuerOf",
+      "operation_type": "contract_interaction",
+      "signature": "issuerOf(uint256)"
+    },
+    {
+      "name": "issue",
+      "operation_type": "contract_interaction",
+      "signature": "issue(address,uint256,uint256,BurnAuth,address,bytes)"
+    },
+    {
+      "name": "issue",
+      "operation_type": "contract_interaction",
+      "signature": "issue(uint256,uint256,bytes)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(uint256,bytes)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(uint256,uint256,bytes)"
+    },
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(uint256,bytes)"
+    },
+    {
+      "name": "slotCountOfOwner",
+      "operation_type": "contract_interaction",
+      "signature": "slotCountOfOwner(address)"
+    },
+    {
+      "name": "slotOfOwnerByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "slotOfOwnerByIndex(address,uint256)"
+    },
+    {
+      "name": "ownerBalanceInSlot",
+      "operation_type": "contract_interaction",
+      "signature": "ownerBalanceInSlot(address,uint256)"
+    },
+    {
+      "name": "requestApproval",
+      "operation_type": "contract_interaction",
+      "signature": "requestApproval(address,uint256,uint256,uint256,BurnAuth,address,bytes)"
+    },
+    {
+      "name": "removeApprovalRequest",
+      "operation_type": "contract_interaction",
+      "signature": "removeApprovalRequest(uint256)"
+    },
+    {
+      "name": "voteApproval",
+      "operation_type": "contract_interaction",
+      "signature": "voteApproval(uint256,bool,bytes)"
+    },
+    {
+      "name": "approvalURI",
+      "operation_type": "contract_interaction",
+      "signature": "approvalURI(uint256)"
+    },
+    {
+      "name": "delegate",
+      "operation_type": "contract_interaction",
+      "signature": "delegate(address,uint256)"
+    },
+    {
+      "name": "undelegate",
+      "operation_type": "contract_interaction",
+      "signature": "undelegate(address,uint256)"
+    },
+    {
+      "name": "isOperatorFor",
+      "operation_type": "contract_interaction",
+      "signature": "isOperatorFor(address,uint256)"
+    },
+    {
+      "name": "recover",
+      "operation_type": "contract_interaction",
+      "signature": "recover(address,bytes)"
+    },
+    {
+      "name": "setExpiration",
+      "operation_type": "contract_interaction",
+      "signature": "setExpiration(uint256,uint64,bool)"
+    }
+  ],
+  "id": "ERC5727",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5727",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5727.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "An interface for soulbound tokens (SBT), which are non-transferable tokens representing a person's identity, credentials, affiliations, and reputation. Our interface can handle a combination of fungible and non-fungible tokens in an organized way. It provides a set of core methods that can be used to manage the lifecycle of soulbound tokens, as well as a rich set of extensions that enables DAO governance, delegation, token expiration, and account recovery. This interface aims to provide a flexible and extensible framework for the development of soulbound token systems.",
+  "title": "Semi-Fungible Soulbound Token"
+}

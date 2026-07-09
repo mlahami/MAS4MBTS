@@ -1,0 +1,16 @@
+{
+  "category": "Improper Check for Unusual or Exceptional Conditions",
+  "cwe": "CWE-754",
+  "description": "Governance systems that allow proposal execution based solely on vote counts (e.g., \"for\" > \"against\") without enforcing a minimum participation threshold (quorum) can execute proposals with negligible community participation. A proposal may \"pass\" with only a handful of votes if quorum is not checked, allowing a small group or attacker with accumulated tokens to push through changes that lack legitimate community mandate.",
+  "id": "VULN-OWASP-SCWE-100",
+  "name": "Missing Quorum Validation in Governance Execution",
+  "owasp": "SCWE-100",
+  "remediation": "- Enforce a minimum quorum (e.g., percentage of total supply or voting power) before allowing execution. - Require both vote majority and quorum to be satisfied; revert execution if quorum is not met. - Consider time-weighted or participation-based quorum to prevent last-block manipulation.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-GOV\\SCWE-100.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

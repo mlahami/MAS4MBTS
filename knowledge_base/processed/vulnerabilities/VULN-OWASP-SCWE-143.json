@@ -1,0 +1,16 @@
+{
+  "category": "Improper Input Validation",
+  "cwe": "CWE-20",
+  "description": "Critical address parameters (owner, oracle, fee recipient, token address) that are not validated for `address(0)` can brick the contract or cause funds to be sent to the burn address. Assigning `address(0)` as owner prevents any owner-only actions; using it as a recipient loses funds permanently. SCWE-091 covers zero *value* in token transfers; this weakness addresses zero *address*.",
+  "id": "VULN-OWASP-SCWE-143",
+  "name": "Critical Address Parameters Not Validated for Zero Address",
+  "owasp": "SCWE-143",
+  "remediation": "- Validate `require(addr != address(0), \"Zero address\")` for all critical address parameters in constructors and setters. - Use custom errors for gas efficiency where appropriate.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-143.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

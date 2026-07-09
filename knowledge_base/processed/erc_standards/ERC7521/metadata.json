@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7521",
+  "erc": "ERC-7521",
+  "events": [],
+  "functions": [
+    {
+      "name": "handleIntents",
+      "operation_type": "contract_interaction",
+      "signature": "handleIntents(IntentSolution)"
+    },
+    {
+      "name": "validateIntent",
+      "operation_type": "contract_interaction",
+      "signature": "validateIntent(UserIntent)"
+    },
+    {
+      "name": "registerIntentStandard",
+      "operation_type": "contract_interaction",
+      "signature": "registerIntentStandard(IIntentStandard)"
+    },
+    {
+      "name": "verifyExecutingIntentSegmentForStandard",
+      "operation_type": "contract_interaction",
+      "signature": "verifyExecutingIntentSegmentForStandard(IIntentStandard)"
+    },
+    {
+      "name": "validateIntentSegment",
+      "operation_type": "contract_interaction",
+      "signature": "validateIntentSegment(bytes)"
+    },
+    {
+      "name": "executeIntentSegment",
+      "operation_type": "contract_interaction",
+      "signature": "executeIntentSegment(IntentSolution,uint256,uint256,bytes)"
+    },
+    {
+      "name": "validateUserIntent",
+      "operation_type": "contract_interaction",
+      "signature": "validateUserIntent(UserIntent,bytes32)"
+    },
+    {
+      "name": "generalizedIntentDelegateCall",
+      "operation_type": "contract_interaction",
+      "signature": "generalizedIntentDelegateCall(bytes)"
+    }
+  ],
+  "id": "ERC7521",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7521",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7521.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "A generalized intent specification entry point contract which enables support for a multitude of intent standards as they evolve over time. Instead of smart contract wallets having to constantly upgrade to provide support for new intent standards as they pop up, a single entry point contract is trusted to handle signature verification which then passes off the low level intent data handling and defining to other contracts specified by users at intent sign time. These signed messages, called a `UserIntent`, are gossipped around any host of mempool strategies for MEV searchers to look through and combine with their own `UserIntent` into an object called an `IntentSolution`. MEV searchers then package up an `IntentSolution` object they build into a transaction making a `handleIntents` call to",
+  "title": "General Intents for Smart Contract Wallets"
+}

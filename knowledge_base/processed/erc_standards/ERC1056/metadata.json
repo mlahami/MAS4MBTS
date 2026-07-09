@@ -1,0 +1,92 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1056",
+  "erc": "ERC-1056",
+  "events": [
+    {
+      "name": "DIDOwnerChanged",
+      "signature": "DIDOwnerChanged(address,address,uint)"
+    },
+    {
+      "name": "DIDDelegateChanged",
+      "signature": "DIDDelegateChanged(address,bytes32,address,uint,uint)"
+    },
+    {
+      "name": "DIDAttributeChanged",
+      "signature": "DIDAttributeChanged(address,bytes32,bytes,uint,uint)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "identityOwner",
+      "operation_type": "contract_interaction",
+      "signature": "identityOwner(address)"
+    },
+    {
+      "name": "changeOwner",
+      "operation_type": "contract_interaction",
+      "signature": "changeOwner(address,address)"
+    },
+    {
+      "name": "changeOwnerSigned",
+      "operation_type": "contract_interaction",
+      "signature": "changeOwnerSigned(address,uint8,bytes32,bytes32,address)"
+    },
+    {
+      "name": "validDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "validDelegate(address,bytes32,address)"
+    },
+    {
+      "name": "addDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "addDelegate(address,bytes32,address,uint)"
+    },
+    {
+      "name": "addDelegateSigned",
+      "operation_type": "contract_interaction",
+      "signature": "addDelegateSigned(address,uint8,bytes32,bytes32,bytes32,address,uint)"
+    },
+    {
+      "name": "revokeDelegate",
+      "operation_type": "contract_interaction",
+      "signature": "revokeDelegate(address,bytes32,address)"
+    },
+    {
+      "name": "revokeDelegateSigned",
+      "operation_type": "contract_interaction",
+      "signature": "revokeDelegateSigned(address,uint8,bytes32,bytes32,bytes32,address)"
+    },
+    {
+      "name": "setAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "setAttribute(address,bytes32,bytes,uint)"
+    },
+    {
+      "name": "setAttributeSigned",
+      "operation_type": "contract_interaction",
+      "signature": "setAttributeSigned(address,uint8,bytes32,bytes32,bytes32,bytes,uint)"
+    },
+    {
+      "name": "revokeAttribute",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAttribute(address,bytes32,bytes)"
+    },
+    {
+      "name": "revokeAttributeSigned",
+      "operation_type": "contract_interaction",
+      "signature": "revokeAttributeSigned(address,uint8,bytes32,bytes32,bytes32,bytes)"
+    }
+  ],
+  "id": "ERC1056",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1056",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1056.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This ERC describes a standard for creating and updating identities with a limited use of blockchain resources. An identity can have an unlimited number of `delegates` and `attributes` associated with it. Identity creation is as simple as creating a regular key pair ethereum account, which means that it's free (no gas costs) and all ethereum accounts are valid identities. Furthermore this ERC is fully [DID compliant](https://w3c-ccg.github.io/did-spec/).",
+  "title": "Ethereum Lightweight Identity"
+}

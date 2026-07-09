@@ -1,0 +1,16 @@
+{
+  "category": "Improper Verification of Cryptographic Signature",
+  "cwe": "CWE-347",
+  "description": "Permit (EIP-2612) and meta-transaction signatures that omit a `deadline` or `expiry` parameter can be replayed indefinitely once obtained. An attacker who captures a valid signature (e.g., via phishing or a compromised frontend) can submit it at any future time. SCWE-105 covers domain separator and nonce; this weakness specifically addresses the absence of expiration.",
+  "id": "VULN-OWASP-SCWE-147",
+  "name": "Permit or Meta-Transaction Signatures Without Expiration",
+  "owasp": "SCWE-147",
+  "remediation": "- Include a `deadline` (or `expiry`) in the signed message and enforce `require(block.timestamp <= deadline, \"Expired\")` when processing the signature. - Use EIP-712 structured data with a deadline field.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-AUTH\\SCWE-147.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

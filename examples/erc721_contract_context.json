@@ -1,0 +1,38 @@
+{
+  "ercStandard": "ERC-721",
+  "contractName": "CollectibleNFT",
+  "address": "N/A",
+  "compilerVersion": "0.8.20",
+  "functions": [
+    {
+      "name": "safeTransferFrom",
+      "signature": "safeTransferFrom(address,address,uint256)",
+      "visibility": "public",
+      "operationType": "Safe NFT transfer"
+    },
+    {
+      "name": "transferFrom",
+      "signature": "transferFrom(address,address,uint256)",
+      "visibility": "public",
+      "operationType": "NFT transfer"
+    },
+    {
+      "name": "approve",
+      "signature": "approve(address,uint256)",
+      "visibility": "public",
+      "operationType": "Token approval"
+    },
+    {
+      "name": "setApprovalForAll",
+      "signature": "setApprovalForAll(address,bool)",
+      "visibility": "public",
+      "operationType": "Operator approval management"
+    },
+    {
+      "name": "safeMint",
+      "signature": "safeMint(address,uint256)",
+      "visibility": "public",
+      "operationType": "Safe NFT minting"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6787",
+  "erc": "ERC-6787",
+  "events": [
+    {
+      "name": "PrepareForceWithdraw",
+      "signature": "PrepareForceWithdraw(address,address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "deposit",
+      "operation_type": "vault_deposit",
+      "signature": "deposit(address,uint256)"
+    },
+    {
+      "name": "withdraw",
+      "operation_type": "vault_withdrawal",
+      "signature": "withdraw(address,uint256)"
+    },
+    {
+      "name": "prepareForceWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "prepareForceWithdraw(address,uint256)"
+    },
+    {
+      "name": "commitForceWithdraw",
+      "operation_type": "contract_interaction",
+      "signature": "commitForceWithdraw(uint256)"
+    }
+  ],
+  "id": "ERC6787",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6787",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6787.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "The Order Book DEX Standard is a proposed set of interface specifications that define a decentralized exchange (DEX) protocol for trading assets using order books. This standard provides a set of functions that allow users to deposit, withdraw, and trade assets on a decentralized exchange. Additionally, it proposes a novel two-phase withdrawal scheme to ensure the asset security of both users and the exchange, addressing users' trust issues with the exchange.",
+  "title": "Order Book DEX with Two Phase Withdrawal"
+}

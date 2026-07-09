@@ -1,0 +1,16 @@
+{
+  "category": "Use of Hard-coded, Security-relevant Constants",
+  "cwe": "CWE-547",
+  "description": "Hardcoded constants refer to values that are embedded directly into the code and cannot be easily changed without modifying the code itself. These constants may include critical parameters, addresses, or settings that could be subject to change based on external factors or evolving needs. Hardcoding these values in the code introduces several issues: - **Lack of flexibility**: Once the contract is deployed, these hardcoded values cannot be changed without deploying a new version, leading to inefficiency and reduced adaptability. - **Security risks**: Hardcoded values may expose sensitive information or create vulnerabilities if they are not properly protected. - **Upgrade challenges**: Contracts with hardcoded constants cannot easily evolve to support new functionality or parameters without requiring costly redeployment.",
+  "id": "VULN-OWASP-SCWE-008",
+  "name": "Hardcoded Constants",
+  "owasp": "SCWE-008",
+  "remediation": "- **Use variables instead of constants**: Instead of hardcoding values, define them as variables that can be updated through administrative actions. - **Implement upgradeable contract patterns**: Use proxy contracts or other patterns that support upgrades to allow flexibility in modifying constants. - **External configuration**: Use off-chain storage for configuration values that can be updated without needing to deploy new contract versions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-CODE\\SCWE-008.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

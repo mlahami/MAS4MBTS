@@ -1,0 +1,229 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1491",
+  "erc": "ERC-1491",
+  "events": [
+    {
+      "name": "LogCall",
+      "signature": "LogCall(address,address,address,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "updateIndex",
+      "operation_type": "contract_interaction",
+      "signature": "updateIndex()"
+    },
+    {
+      "name": "iam",
+      "operation_type": "contract_interaction",
+      "signature": "iam()"
+    },
+    {
+      "name": "index",
+      "operation_type": "contract_interaction",
+      "signature": "index()"
+    },
+    {
+      "name": "ringLength",
+      "operation_type": "contract_interaction",
+      "signature": "ringLength()"
+    },
+    {
+      "name": "keyId",
+      "operation_type": "contract_interaction",
+      "signature": "keyId()"
+    },
+    {
+      "name": "merits",
+      "operation_type": "contract_interaction",
+      "signature": "merits()"
+    },
+    {
+      "name": "kbase",
+      "operation_type": "contract_interaction",
+      "signature": "kbase()"
+    },
+    {
+      "name": "desire",
+      "operation_type": "contract_interaction",
+      "signature": "desire(bytes1)"
+    },
+    {
+      "name": "intention",
+      "operation_type": "contract_interaction",
+      "signature": "intention(bool)"
+    },
+    {
+      "name": "flipIntention",
+      "operation_type": "contract_interaction",
+      "signature": "flipIntention()"
+    },
+    {
+      "name": "getDoer",
+      "operation_type": "contract_interaction",
+      "signature": "getDoer()"
+    },
+    {
+      "name": "getBelief",
+      "operation_type": "contract_interaction",
+      "signature": "getBelief(IERC_HUCAP_TYPES.KBase)"
+    },
+    {
+      "name": "getDesire",
+      "operation_type": "contract_interaction",
+      "signature": "getDesire(bytes1)"
+    },
+    {
+      "name": "getIntention",
+      "operation_type": "contract_interaction",
+      "signature": "getIntention(bool)"
+    },
+    {
+      "name": "sign",
+      "operation_type": "contract_interaction",
+      "signature": "sign(address)"
+    },
+    {
+      "name": "sign",
+      "operation_type": "contract_interaction",
+      "signature": "sign()"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke(address)"
+    },
+    {
+      "name": "revoke",
+      "operation_type": "contract_interaction",
+      "signature": "revoke()"
+    },
+    {
+      "name": "trust",
+      "operation_type": "contract_interaction",
+      "signature": "trust(Trust)"
+    },
+    {
+      "name": "incSigns",
+      "operation_type": "contract_interaction",
+      "signature": "incSigns(bytes32)"
+    },
+    {
+      "name": "decSigns",
+      "operation_type": "contract_interaction",
+      "signature": "decSigns(bytes32)"
+    },
+    {
+      "name": "setbdi",
+      "operation_type": "contract_interaction",
+      "signature": "setbdi(KBase,bytes32,bytes32,bytes32,uint)"
+    },
+    {
+      "name": "setbdi",
+      "operation_type": "contract_interaction",
+      "signature": "setbdi(uint,uint,uint,uint,bytes32)"
+    },
+    {
+      "name": "setbdi",
+      "operation_type": "contract_interaction",
+      "signature": "setbdi(bytes32)"
+    },
+    {
+      "name": "setbdi",
+      "operation_type": "contract_interaction",
+      "signature": "setbdi(bytes1,Desire)"
+    },
+    {
+      "name": "setbdi",
+      "operation_type": "contract_interaction",
+      "signature": "setbdi(Intention)"
+    },
+    {
+      "name": "intention",
+      "operation_type": "contract_interaction",
+      "signature": "intention(bool,IERC_HUCAP_TYPES.IS)"
+    },
+    {
+      "name": "flipTo",
+      "operation_type": "contract_interaction",
+      "signature": "flipTo(address)"
+    },
+    {
+      "name": "toggle",
+      "operation_type": "contract_interaction",
+      "signature": "toggle(address)"
+    },
+    {
+      "name": "initAgent",
+      "operation_type": "contract_interaction",
+      "signature": "initAgent(Doers)"
+    },
+    {
+      "name": "getAgent",
+      "operation_type": "contract_interaction",
+      "signature": "getAgent(bytes32)"
+    },
+    {
+      "name": "iam",
+      "operation_type": "contract_interaction",
+      "signature": "iam(address)"
+    },
+    {
+      "name": "isDoer",
+      "operation_type": "contract_interaction",
+      "signature": "isDoer(address)"
+    },
+    {
+      "name": "getAgent",
+      "operation_type": "contract_interaction",
+      "signature": "getAgent(address)"
+    },
+    {
+      "name": "getTalents",
+      "operation_type": "contract_interaction",
+      "signature": "getTalents(bytes32)"
+    },
+    {
+      "name": "incTalent",
+      "operation_type": "contract_interaction",
+      "signature": "incTalent()"
+    },
+    {
+      "name": "decTalent",
+      "operation_type": "contract_interaction",
+      "signature": "decTalent()"
+    },
+    {
+      "name": "setAgent",
+      "operation_type": "contract_interaction",
+      "signature": "setAgent(address,bytes32)"
+    },
+    {
+      "name": "setAgent",
+      "operation_type": "contract_interaction",
+      "signature": "setAgent(address,IS)"
+    },
+    {
+      "name": "setAgent",
+      "operation_type": "contract_interaction",
+      "signature": "setAgent(address,bool)"
+    },
+    {
+      "name": "setAllPromises",
+      "operation_type": "contract_interaction",
+      "signature": "setAllPromises(bytes32)"
+    }
+  ],
+  "id": "ERC1491",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1491",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1491.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard API for HUCAP tokens within smart contracts. This standard provides basic functionality to discover, track and transfer the motivational hierarchy of human resources. While blockchain architecture has succeeded in the financialisation of integrity by way of transparency; correspondingly real world outcomes will be proportional to the degree of individualisation of capital by way of knowledge.",
+  "title": "Human Cost Accounting Standard (Like Gas but for humans)"
+}

@@ -1,0 +1,96 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8001",
+  "erc": "ERC-8001",
+  "events": [
+    {
+      "name": "CoordinationProposed",
+      "signature": "CoordinationProposed(bytes32,address,bytes32,uint256,uint256)"
+    },
+    {
+      "name": "CoordinationAccepted",
+      "signature": "CoordinationAccepted(bytes32,address,bytes32,uint256,uint256)"
+    },
+    {
+      "name": "CoordinationExecuted",
+      "signature": "CoordinationExecuted(bytes32,address,bool,uint256,bytes)"
+    },
+    {
+      "name": "CoordinationCancelled",
+      "signature": "CoordinationCancelled(bytes32,address,string,uint8)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "_participantsHash",
+      "operation_type": "contract_interaction",
+      "signature": "_participantsHash(address[])"
+    },
+    {
+      "name": "_agentIntentStructHash",
+      "operation_type": "contract_interaction",
+      "signature": "_agentIntentStructHash(AgentIntent)"
+    },
+    {
+      "name": "_agentIntentDigest",
+      "operation_type": "contract_interaction",
+      "signature": "_agentIntentDigest(bytes32,AgentIntent)"
+    },
+    {
+      "name": "_acceptanceStructHash",
+      "operation_type": "contract_interaction",
+      "signature": "_acceptanceStructHash(AcceptanceAttestation)"
+    },
+    {
+      "name": "_acceptanceDigest",
+      "operation_type": "contract_interaction",
+      "signature": "_acceptanceDigest(bytes32,AcceptanceAttestation)"
+    },
+    {
+      "name": "proposeCoordination",
+      "operation_type": "contract_interaction",
+      "signature": "proposeCoordination(AgentIntent,bytes,CoordinationPayload)"
+    },
+    {
+      "name": "acceptCoordination",
+      "operation_type": "contract_interaction",
+      "signature": "acceptCoordination(bytes32,AcceptanceAttestation)"
+    },
+    {
+      "name": "executeCoordination",
+      "operation_type": "contract_interaction",
+      "signature": "executeCoordination(bytes32,CoordinationPayload,bytes)"
+    },
+    {
+      "name": "cancelCoordination",
+      "operation_type": "contract_interaction",
+      "signature": "cancelCoordination(bytes32,string)"
+    },
+    {
+      "name": "getCoordinationStatus",
+      "operation_type": "contract_interaction",
+      "signature": "getCoordinationStatus(bytes32)"
+    },
+    {
+      "name": "getRequiredAcceptances",
+      "operation_type": "contract_interaction",
+      "signature": "getRequiredAcceptances(bytes32)"
+    },
+    {
+      "name": "getAgentNonce",
+      "operation_type": "contract_interaction",
+      "signature": "getAgentNonce(address)"
+    }
+  ],
+  "id": "ERC8001",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8001",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8001.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "[ERC-8001](./eip-8001.md) defines a minimal, single-chain primitive for **multi-party agent coordination**. An initiator posts an intent and each participant provides a verifiable acceptance attestation. Once the required set of acceptances is present and fresh, the intent is executable. The standard specifies typed data, lifecycle, mandatory events, and verification rules compatible with [EIP-712], [ERC-1271], [EIP-2098], and [EIP-5267]. [ERC-8001](./eip-8001.md) omits privacy, reputation, threshold policies, bonding, and cross-chain semantics. Those are expected as optional modules that reference this specification.",
+  "title": "Agent Coordination Framework"
+}

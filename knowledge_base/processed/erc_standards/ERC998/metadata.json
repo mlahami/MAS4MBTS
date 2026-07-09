@@ -1,0 +1,214 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-998",
+  "erc": "ERC-998",
+  "events": [
+    {
+      "name": "ReceivedChild",
+      "signature": "ReceivedChild(address,uint256,address,uint256)"
+    },
+    {
+      "name": "TransferChild",
+      "signature": "TransferChild(uint256,address,address,uint256)"
+    },
+    {
+      "name": "ReceivedERC20",
+      "signature": "ReceivedERC20(address,uint256,address,uint256)"
+    },
+    {
+      "name": "TransferERC20",
+      "signature": "TransferERC20(uint256,address,address,uint256)"
+    },
+    {
+      "name": "TransferToParent",
+      "signature": "TransferToParent(address,uint256,uint256)"
+    },
+    {
+      "name": "TransferFromParent",
+      "signature": "TransferFromParent(address,uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "getApproved",
+      "operation_type": "contract_interaction",
+      "signature": "getApproved(uint256)"
+    },
+    {
+      "name": "safeTransferFrom",
+      "operation_type": "safe_transfer",
+      "signature": "safeTransferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "rootOwnerOf",
+      "operation_type": "contract_interaction",
+      "signature": "rootOwnerOf(uint256)"
+    },
+    {
+      "name": "rootOwnerOfChild",
+      "operation_type": "contract_interaction",
+      "signature": "rootOwnerOfChild(address,uint256)"
+    },
+    {
+      "name": "ownerOfChild",
+      "operation_type": "contract_interaction",
+      "signature": "ownerOfChild(address,uint256)"
+    },
+    {
+      "name": "onERC721Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC721Received(address,address,uint256,bytes)"
+    },
+    {
+      "name": "transferChild",
+      "operation_type": "contract_interaction",
+      "signature": "transferChild(uint256,address,address,uint256)"
+    },
+    {
+      "name": "safeTransferChild",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransferChild(uint256,address,address,uint256)"
+    },
+    {
+      "name": "safeTransferChild",
+      "operation_type": "contract_interaction",
+      "signature": "safeTransferChild(uint256,address,address,uint256,bytes)"
+    },
+    {
+      "name": "transferChildToParent",
+      "operation_type": "contract_interaction",
+      "signature": "transferChildToParent(uint256,address,uint256,address,uint256,bytes)"
+    },
+    {
+      "name": "getChild",
+      "operation_type": "contract_interaction",
+      "signature": "getChild(address,uint256,address,uint256)"
+    },
+    {
+      "name": "totalChildContracts",
+      "operation_type": "contract_interaction",
+      "signature": "totalChildContracts(uint256)"
+    },
+    {
+      "name": "childContractByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "childContractByIndex(uint256,uint256)"
+    },
+    {
+      "name": "totalChildTokens",
+      "operation_type": "contract_interaction",
+      "signature": "totalChildTokens(uint256,address)"
+    },
+    {
+      "name": "childTokenByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "childTokenByIndex(uint256,address,uint256)"
+    },
+    {
+      "name": "tokenFallback",
+      "operation_type": "contract_interaction",
+      "signature": "tokenFallback(address,uint256,bytes)"
+    },
+    {
+      "name": "balanceOfERC20",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfERC20(uint256,address)"
+    },
+    {
+      "name": "transferERC20",
+      "operation_type": "contract_interaction",
+      "signature": "transferERC20(uint256,address,address,uint256)"
+    },
+    {
+      "name": "transferERC223",
+      "operation_type": "contract_interaction",
+      "signature": "transferERC223(uint256,address,address,uint256,bytes)"
+    },
+    {
+      "name": "getERC20",
+      "operation_type": "contract_interaction",
+      "signature": "getERC20(address,uint256,address,uint256)"
+    },
+    {
+      "name": "totalERC20Contracts",
+      "operation_type": "contract_interaction",
+      "signature": "totalERC20Contracts(uint256)"
+    },
+    {
+      "name": "erc20ContractByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "erc20ContractByIndex(uint256,uint256)"
+    },
+    {
+      "name": "tokenOwnerOf",
+      "operation_type": "contract_interaction",
+      "signature": "tokenOwnerOf(uint256)"
+    },
+    {
+      "name": "transferToParent",
+      "operation_type": "contract_interaction",
+      "signature": "transferToParent(address,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "transferFromParent",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromParent(address,uint256,address,uint256,bytes)"
+    },
+    {
+      "name": "transferAsChild",
+      "operation_type": "contract_interaction",
+      "signature": "transferAsChild(address,uint256,address,uint256,uint256,bytes)"
+    },
+    {
+      "name": "totalChildTokens",
+      "operation_type": "contract_interaction",
+      "signature": "totalChildTokens(address,uint256)"
+    },
+    {
+      "name": "childTokenByIndex",
+      "operation_type": "contract_interaction",
+      "signature": "childTokenByIndex(address,uint256,uint256)"
+    },
+    {
+      "name": "balanceOfToken",
+      "operation_type": "contract_interaction",
+      "signature": "balanceOfToken(address,uint256)"
+    },
+    {
+      "name": "transferToParent",
+      "operation_type": "contract_interaction",
+      "signature": "transferToParent(address,address,uint256,uint256)"
+    },
+    {
+      "name": "transferFromParent",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromParent(address,uint256,address,uint256)"
+    },
+    {
+      "name": "transferFromParentERC223",
+      "operation_type": "contract_interaction",
+      "signature": "transferFromParentERC223(address,uint256,address,uint256,bytes)"
+    },
+    {
+      "name": "transferAsChild",
+      "operation_type": "contract_interaction",
+      "signature": "transferAsChild(address,uint256,address,uint256,uint256)"
+    }
+  ],
+  "id": "ERC998",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-998",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-998.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "An extension of the [ERC-721 standard](./eip-721.md) to enable ERC-721 tokens to own other ERC-721 tokens and [ERC-20](./eip-20.md) tokens. An extension of the [ERC-20](./eip-20.md) and `ERC-223 https://github.com/ethereum/EIPs/issues/223` standards to enable ERC-20 and `ERC-223` tokens to be owned by ERC-721 tokens. This specification covers four different kinds of composable tokens: 1. [`ERC998ERC721` top-down composable tokens that receive, hold and transfer ERC-721 tokens](#erc-721-top-down-composable) 2. [`ERC998ERC20` top-down composable tokens that receive, hold and transfer ERC-20 tokens](#erc-20-top-down-composable) 3. [`ERC998ERC721` bottom-up composable tokens that attach themselves to other ERC-721 tokens.](#erc-721-bottom-up-composable) 4. [`ERC998ERC20` bottom-up composable t",
+  "title": "Composable Non-Fungible Token"
+}

@@ -1,0 +1,72 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5553",
+  "erc": "ERC-5553",
+  "events": [
+    {
+      "name": "MetadaDataChanged",
+      "signature": "MetadaDataChanged(address,string,string,string,string)"
+    },
+    {
+      "name": "MetadataChanged",
+      "signature": "MetadataChanged(string,string,string,string)"
+    },
+    {
+      "name": "Minted",
+      "signature": "Minted(string,address,address,address,address,uint256,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "changeMetadataURI",
+      "operation_type": "contract_interaction",
+      "signature": "changeMetadataURI(string,string)"
+    },
+    {
+      "name": "royaltyPortionTokens",
+      "operation_type": "contract_interaction",
+      "signature": "royaltyPortionTokens()"
+    },
+    {
+      "name": "ledger",
+      "operation_type": "contract_interaction",
+      "signature": "ledger()"
+    },
+    {
+      "name": "metadataURI",
+      "operation_type": "contract_interaction",
+      "signature": "metadataURI()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "getInterfaceId",
+      "operation_type": "contract_interaction",
+      "signature": "getInterfaceId()"
+    },
+    {
+      "name": "onERC721Received",
+      "operation_type": "contract_interaction",
+      "signature": "onERC721Received(address,address,uint256,bytes)"
+    },
+    {
+      "name": "mintSong",
+      "operation_type": "contract_interaction",
+      "signature": "mintSong(SongMintingParams)"
+    }
+  ],
+  "id": "ERC5553",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5553",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5553.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This proposal introduces a generic way to represent intellectual property on chain, along with a refined royalty representation mechanism and associated metadata link. This standard is not associated with a specific type of IP and could represent many types of IP, such as musical IP, videos, books, images, and more. The standard is kept very generic to allow the industry to evolve new ecosystems that can all rely on the same basic standard at their core. This standard allows market participants to: 1) Observe the canonical on-chain representation of an intellectual property 2) Discover its attached metadata 3) Discover its related royalty structure 4) This will enable building registration, licensing, and payout mechanisms for intellectual property assets in the future.",
+  "title": "Representing IP and its Royalty Structure"
+}

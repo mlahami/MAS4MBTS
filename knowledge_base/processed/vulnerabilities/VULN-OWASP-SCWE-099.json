@@ -1,0 +1,16 @@
+{
+  "category": "Improper Control of a Resource Through its Lifetime",
+  "cwe": "CWE-664",
+  "description": "Upgradeable contracts rely on stable storage slots. Reordering, removing, or inserting state variables (or changing inheritance order) between versions causes storage collisions when the proxy reuses the same slots, corrupting balances, roles, or configuration.",
+  "id": "VULN-OWASP-SCWE-099",
+  "name": "Storage Layout Collision on Upgrade",
+  "owasp": "SCWE-099",
+  "remediation": "- Freeze variable ordering; only append new variables. - Reserve gaps (`uint256[50] private __gap;`) to allow future expansion. - Use automated storage layout diffing and follow upgrade-safe patterns (e.g., OZ Upgradeable tooling).",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-099.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

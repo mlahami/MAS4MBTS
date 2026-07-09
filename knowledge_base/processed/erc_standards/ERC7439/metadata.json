@@ -1,0 +1,49 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7439",
+  "erc": "ERC-7439",
+  "events": [
+    {
+      "name": "TokenStatusChanged",
+      "signature": "TokenStatusChanged(uint256,TokenStatus,bytes)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "safeMint",
+      "operation_type": "contract_interaction",
+      "signature": "safeMint(address,bytes)"
+    },
+    {
+      "name": "changeState",
+      "operation_type": "contract_interaction",
+      "signature": "changeState(uint256,bytes,TokenStatus,uint256)"
+    },
+    {
+      "name": "_burn",
+      "operation_type": "contract_interaction",
+      "signature": "_burn(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_beforeTokenTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "_beforeTokenTransfer(address,address,uint256)"
+    }
+  ],
+  "id": "ERC7439",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7439",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7439.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md) and defines standard functions outlining a scope for ticketing agents or event organizers to take preventative actions to stop audiences being exploited in the ticket scalping market and allow customers to resell their tickets via authorized ticket resellers.",
+  "title": "Prevent ticket touting"
+}

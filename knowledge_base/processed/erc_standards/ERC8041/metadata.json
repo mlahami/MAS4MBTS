@@ -1,0 +1,48 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8041",
+  "erc": "ERC-8041",
+  "events": [
+    {
+      "name": "CollectionUpdated",
+      "signature": "CollectionUpdated(uint256,uint256,bool)"
+    },
+    {
+      "name": "AgentMinted",
+      "signature": "AgentMinted(uint256,uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "getAgentMintNumber",
+      "operation_type": "contract_interaction",
+      "signature": "getAgentMintNumber(uint256)"
+    },
+    {
+      "name": "getCollectionSupply",
+      "operation_type": "contract_interaction",
+      "signature": "getCollectionSupply()"
+    },
+    {
+      "name": "contractURI",
+      "operation_type": "contract_interaction",
+      "signature": "contractURI()"
+    },
+    {
+      "name": "mint",
+      "operation_type": "minting",
+      "signature": "mint(uint256)"
+    }
+  ],
+  "id": "ERC8041",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8041",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8041.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "An interface for creating fixed-supply collections of Agent NFTs that are registered in an [ERC-8004](./eip-8004.md) Agent Registry. While [ERC-8004](./eip-8004.md) provides an unlimited mint registry for agent identities, many use cases require limited collections. Collections can be created with fixed supply limits while maintaining the association between agents and their collection through onchain metadata and mint number tracking.",
+  "title": "Fixed-Supply Agent NFT Collections"
+}

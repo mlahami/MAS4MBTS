@@ -1,0 +1,16 @@
+{
+  "category": "Allocation of Resources Without Limits or Throttling**",
+  "cwe": "CWE-770",
+  "description": "Lack of rate limiting in a smart contract can lead to **Denial of Service (DoS)** attacks, excessive gas consumption, or contract state bloating. Without a mechanism to restrict the frequency of function calls, an attacker can flood the contract with transactions, causing delays, increased gas fees, or complete unavailability of critical functions. This vulnerability is particularly dangerous in **DeFi protocols**, where unlimited function calls could drain funds, abuse governance mechanisms, or overload on-chain processing.",
+  "id": "VULN-OWASP-SCWE-077",
+  "name": "Lack of Rate Limiting",
+  "owasp": "SCWE-077",
+  "remediation": "- Implement **rate-limiting mechanisms** such as **time-based constraints** (e.g., requiring a cooldown period between calls). - Use **counters with expiration timestamps** to track and restrict repetitive actions. - Introduce **gas fees or staking requirements** to deter spam transactions.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-DEFI\\SCWE-077.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

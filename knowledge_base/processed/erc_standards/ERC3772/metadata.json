@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3772",
+  "erc": "ERC-3772",
+  "events": [],
+  "functions": [
+    {
+      "name": "compress",
+      "operation_type": "contract_interaction",
+      "signature": "compress(uint256)"
+    },
+    {
+      "name": "decompress",
+      "operation_type": "contract_interaction",
+      "signature": "decompress(cint64)"
+    },
+    {
+      "name": "decompressRoundingUp",
+      "operation_type": "contract_interaction",
+      "signature": "decompressRoundingUp(cint64)"
+    },
+    {
+      "name": "decompress",
+      "operation_type": "contract_interaction",
+      "signature": "decompress(uint64)"
+    },
+    {
+      "name": "decompressRoundingUp",
+      "operation_type": "contract_interaction",
+      "signature": "decompressRoundingUp(uint64)"
+    }
+  ],
+  "id": "ERC3772",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3772",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3772.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "This document specifies compression of `uint256` to smaller data structures like `uint64`, `uint96`, `uint128`, for optimizing costs for storage. The smaller data structure (represented as `cintx`) is divided into two parts, in the first one we store `significant` bits and in the other number of left `shift`s needed on the significant bits to decompress. This document also includes two specifications for decompression due to the nature of compression being lossy, i.e. it causes underflow.",
+  "title": "Compressed Integers"
+}

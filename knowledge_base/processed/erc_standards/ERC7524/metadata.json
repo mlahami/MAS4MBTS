@@ -1,0 +1,18 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7524",
+  "erc": "ERC-7524",
+  "events": [],
+  "functions": [],
+  "id": "ERC7524",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7524",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7524.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "ZK-SNARKs have enabled ideation for new identity applications based on anonymous proof-of-ownership. One of the primary technologies that would enable the jump from existing apps to systems that require anonymous uniqueness is the development of verifiably deterministic signatures. Because Ethereum is based on ECDSA, there is no way right now for someone to verify that a signature is generated deterministically, even with \u2018deterministic\u2019 ECDSA signatures: a ZK-SNARK proof would need someone\u2019s private key to do so, and some hardware wallets do not even allow viewing of a private key. Broadly, we don\u2019t want to export/copy-paste the private key into a SNARK to be an intended user behavior, and most hardware wallets will not be able to run SNARK arithmetization inside a secure enclave for exis",
+  "title": "PLUME Signature in Wallets"
+}

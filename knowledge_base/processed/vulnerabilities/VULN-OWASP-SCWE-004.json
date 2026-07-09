@@ -1,0 +1,16 @@
+{
+  "category": "Improper Check or Handling of Exceptional Conditions",
+  "cwe": "CWE-703",
+  "description": "Uncaught exceptions occur when a smart contract fails to properly handle errors, leading to unintended behaviors, lost funds, or denial of service (DoS). In Solidity, low-level calls such as `call()`, `delegatecall()`, and `send()` return a boolean instead of reverting automatically, requiring explicit checks. Ignoring return values or using `assert()` instead of `require()` can result in vulnerabilities that attackers can exploit. Common issues with uncaught exceptions: - Ignoring return values of `call()`, `delegatecall()`, `send()` - Unchecked external contract calls - Incorrect use of `assert()` instead of `require()` - Failure to catch errors in `try/catch` blocks",
+  "id": "VULN-OWASP-SCWE-004",
+  "name": "Uncaught Exceptions",
+  "owasp": "SCWE-004",
+  "remediation": "- **Check Return Values:** Always verify the return values of low-level calls to ensure execution succeeded. - **Use `require()` for Input Validation:** `require()` should be used for checking user input, while `assert()` should only be used for invariants. - **Implement Try/Catch:** Use `try/catch` when interacting with external contracts to prevent silent failures. - **Use Safe Libraries:** Utilize OpenZeppelin\u2019s `SafeERC20` for secure token transfers. - **Minimize External Dependencies:** Avoid relying on external contract behavior unless necessary.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-ARCH\\SCWE-004.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

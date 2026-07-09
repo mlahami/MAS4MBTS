@@ -1,0 +1,54 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5791",
+  "erc": "ERC-5791",
+  "events": [
+    {
+      "name": "ChipSet",
+      "signature": "ChipSet(uint256,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "tokenIdFor",
+      "operation_type": "contract_interaction",
+      "signature": "tokenIdFor(address)"
+    },
+    {
+      "name": "isChipSignatureForToken",
+      "operation_type": "contract_interaction",
+      "signature": "isChipSignatureForToken(uint256,bytes,bytes)"
+    },
+    {
+      "name": "transferToken",
+      "operation_type": "contract_interaction",
+      "signature": "transferToken(address,address,bytes,uint256,bool,bytes)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    },
+    {
+      "name": "_validateSigAndUpdateNonce",
+      "operation_type": "contract_interaction",
+      "signature": "_validateSigAndUpdateNonce(address,address,bytes,uint256,bytes)"
+    },
+    {
+      "name": "_getSignatureHash",
+      "operation_type": "contract_interaction",
+      "signature": "_getSignatureHash(uint256,address,address,bytes)"
+    }
+  ],
+  "id": "ERC5791",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5791",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5791.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It proposes a minimal interface for a [ERC-721](./eip-721.md) NFT to be \"physically backed\" and owned by whoever owns the NFT's physical counterpart.",
+  "title": "Physical Backed Tokens"
+}

@@ -1,0 +1,154 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8047",
+  "erc": "ERC-8047",
+  "events": [
+    {
+      "name": "TokenCreated",
+      "signature": "TokenCreated(uint256,uint256,address)"
+    },
+    {
+      "name": "TokenSpent",
+      "signature": "TokenSpent(uint256,uint256,uint256)"
+    },
+    {
+      "name": "TokenMerged",
+      "signature": "TokenMerged(uint256[],uint256,address,uint8)"
+    },
+    {
+      "name": "FrozenToken",
+      "signature": "FrozenToken(uint256)"
+    },
+    {
+      "name": "FrozenBefore",
+      "signature": "FrozenBefore(uint256,uint256)"
+    },
+    {
+      "name": "FrozenAfter",
+      "signature": "FrozenAfter(uint256,uint256)"
+    },
+    {
+      "name": "FrozenLevel",
+      "signature": "FrozenLevel(uint256,uint256)"
+    },
+    {
+      "name": "UnfrozenToken",
+      "signature": "UnfrozenToken(uint256)"
+    },
+    {
+      "name": "UnfrozenBefore",
+      "signature": "UnfrozenBefore(uint256,uint256)"
+    },
+    {
+      "name": "UnfrozenAfter",
+      "signature": "UnfrozenAfter(uint256,uint256)"
+    },
+    {
+      "name": "UnfrozenLevel",
+      "signature": "UnfrozenLevel(uint256,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "latestDAGLevelOf",
+      "operation_type": "contract_interaction",
+      "signature": "latestDAGLevelOf(uint256)"
+    },
+    {
+      "name": "levelOf",
+      "operation_type": "contract_interaction",
+      "signature": "levelOf(uint256)"
+    },
+    {
+      "name": "ownerOf",
+      "operation_type": "ownership_query",
+      "signature": "ownerOf(uint256)"
+    },
+    {
+      "name": "parentOf",
+      "operation_type": "contract_interaction",
+      "signature": "parentOf(uint256)"
+    },
+    {
+      "name": "rootOf",
+      "operation_type": "contract_interaction",
+      "signature": "rootOf(uint256)"
+    },
+    {
+      "name": "token",
+      "operation_type": "contract_interaction",
+      "signature": "token(uint256)"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "calcTokenBucketAndBitIndex",
+      "operation_type": "contract_interaction",
+      "signature": "calcTokenBucketAndBitIndex(uint256)"
+    },
+    {
+      "name": "updateFreezeToken",
+      "operation_type": "contract_interaction",
+      "signature": "updateFreezeToken(uint256,uint256,bool)"
+    },
+    {
+      "name": "isTokenFrozen",
+      "operation_type": "contract_interaction",
+      "signature": "isTokenFrozen(uint256,uint256,uint256)"
+    },
+    {
+      "name": "freezeTokenBefore",
+      "operation_type": "contract_interaction",
+      "signature": "freezeTokenBefore(uint256,uint256)"
+    },
+    {
+      "name": "freezeTokenAfter",
+      "operation_type": "contract_interaction",
+      "signature": "freezeTokenAfter(uint256,uint256)"
+    },
+    {
+      "name": "unfreezeTokenBefore",
+      "operation_type": "contract_interaction",
+      "signature": "unfreezeTokenBefore(uint256,uint256)"
+    },
+    {
+      "name": "unfreezeTokenAfter",
+      "operation_type": "contract_interaction",
+      "signature": "unfreezeTokenAfter(uint256,uint256)"
+    },
+    {
+      "name": "freezeLevel",
+      "operation_type": "contract_interaction",
+      "signature": "freezeLevel(uint256,uint256)"
+    },
+    {
+      "name": "unfreezeLevel",
+      "operation_type": "contract_interaction",
+      "signature": "unfreezeLevel(uint256,uint256)"
+    },
+    {
+      "name": "freezeToken",
+      "operation_type": "contract_interaction",
+      "signature": "freezeToken(uint256,uint256,uint256)"
+    },
+    {
+      "name": "unfreezeToken",
+      "operation_type": "contract_interaction",
+      "signature": "unfreezeToken(uint256,uint256,uint256)"
+    }
+  ],
+  "id": "ERC8047",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8047",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8047.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "Forensic Token (Forest) is a directed acyclic graph (DAG) inspired token model designed to enhance traceability and regulatory compliance in digital currency or e-Money systems. By introducing hierarchical token tracking, it enables efficient enforcement on any token linked to suspicious activity with level/root. Enforcement actions, such as freezing specific tokens or partitioning all tokens with relational links, are optimized to operate at $O(1)$ complexity.",
+  "title": "Forensic Token (Forest)"
+}

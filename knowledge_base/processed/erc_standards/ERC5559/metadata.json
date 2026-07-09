@@ -1,0 +1,37 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5559",
+  "erc": "ERC-5559",
+  "events": [
+    {
+      "name": "L2HandlerDefaultChainIdChanged",
+      "signature": "L2HandlerDefaultChainIdChanged(uint256,uint256)"
+    },
+    {
+      "name": "L2HandlerContractAddressChanged",
+      "signature": "L2HandlerContractAddressChanged(uint256,address,address)"
+    },
+    {
+      "name": "OffChainDatabaseHandlerURLChanged",
+      "signature": "OffChainDatabaseHandlerURLChanged(string,string)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "setAddr",
+      "operation_type": "contract_interaction",
+      "signature": "setAddr(bytes32,address)"
+    }
+  ],
+  "id": "ERC5559",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5559",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5559.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard provides a mechanism in which smart contracts can request various tasks to be resolved by an external handler. This provides a mechanism in which protocols can reduce the gas fees associated with storing data on mainnet by deferring the handling of it to another system/network. These external handlers act as an extension to the core L1 contract. This standard outlines a set of handler types that can be used for managing the execution and storage of mutations (tasks), as well as their corresponding tradeoffs. Each handler type has associated operational costs, finality guarantees, and levels of decentralization. By further specifying the type of handler that the mutation is deferred to, the protocol can better define how to permission and secure their system. This sta",
+  "title": "Cross Chain Write Deferral Protocol"
+}

@@ -1,0 +1,74 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-3000",
+  "erc": "ERC-3000",
+  "events": [
+    {
+      "name": "Scheduled",
+      "signature": "Scheduled(bytes32,ERC3000Data.Payload,ERC3000Data.Collateral)"
+    },
+    {
+      "name": "Executed",
+      "signature": "Executed(bytes32,address,bytes[])"
+    },
+    {
+      "name": "Challenged",
+      "signature": "Challenged(bytes32,address,bytes,uint256,ERC3000Data.Collateral)"
+    },
+    {
+      "name": "Resolved",
+      "signature": "Resolved(bytes32,address,bool)"
+    },
+    {
+      "name": "Vetoed",
+      "signature": "Vetoed(bytes32,address,bytes,ERC3000Data.Collateral)"
+    },
+    {
+      "name": "Configured",
+      "signature": "Configured(bytes32,address,ERC3000Data.Config)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "schedule",
+      "operation_type": "contract_interaction",
+      "signature": "schedule(ERC3000Data.Container)"
+    },
+    {
+      "name": "execute",
+      "operation_type": "contract_interaction",
+      "signature": "execute(ERC3000Data.Container)"
+    },
+    {
+      "name": "challenge",
+      "operation_type": "contract_interaction",
+      "signature": "challenge(ERC3000Data.Container,bytes)"
+    },
+    {
+      "name": "resolve",
+      "operation_type": "contract_interaction",
+      "signature": "resolve(ERC3000Data.Container,uint256)"
+    },
+    {
+      "name": "veto",
+      "operation_type": "contract_interaction",
+      "signature": "veto(bytes32,ERC3000Data.Config,bytes)"
+    },
+    {
+      "name": "configure",
+      "operation_type": "contract_interaction",
+      "signature": "configure(ERC3000Data.Config)"
+    }
+  ],
+  "id": "ERC3000",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-3000",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-3000.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "ERC-3000 presents a basic on-chain spec for contracts to optimistically enact governance decisions made off-chain. The standard is opinionated in defining the 6 entrypoint functions to contracts supporting the standard. But it allows for any sort of resolver mechanism for the challenge/response games characteristic of optimistic contracts. While the authors currently believe resolving challenges [using a subjective oracle](https://aragon.org/blog/snapshot) is the right tradeoff, the standard has been designed such that changing to another mechanism is possible (a deterministic resolver like [Optimism's OVM](https://optimism.io) uses), even allowing to hot-swap it in the same live instance.",
+  "title": "Optimistic enactment governance standard"
+}

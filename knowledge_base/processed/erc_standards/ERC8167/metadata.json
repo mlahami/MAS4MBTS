@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8167",
+  "erc": "ERC-8167",
+  "events": [
+    {
+      "name": "SelectorDelegated",
+      "signature": "SelectorDelegated(bytes4,address)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "implementation",
+      "operation_type": "contract_interaction",
+      "signature": "implementation(bytes4)"
+    },
+    {
+      "name": "selectors",
+      "operation_type": "contract_interaction",
+      "signature": "selectors()"
+    }
+  ],
+  "id": "ERC8167",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8167",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8167.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Review",
+  "summary": "This proposal standardizes dispatch proxies, which dispatch calls to logic modules, called delegates, according to function selector. A modular proxy architecture facilitates upgrades, extensions, and hardening, while working around codesize limits. This minimal standard interface allows tooling to discover the ABI of these proxies and examine their upgrade history.",
+  "title": "Modular Dispatch Proxies"
+}

@@ -1,0 +1,237 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7092",
+  "erc": "ERC-7092",
+  "events": [
+    {
+      "name": "Transfer",
+      "signature": "Transfer(address,address,uint256)"
+    },
+    {
+      "name": "Approval",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "name": "TransferBatch",
+      "signature": "TransferBatch(address[],address[],uint256[])"
+    },
+    {
+      "name": "ApprovalBatch",
+      "signature": "ApprovalBatch(address,address[],uint256[])"
+    },
+    {
+      "name": "CrossChainTransfer",
+      "signature": "CrossChainTransfer(address,address,uint256,bytes32)"
+    },
+    {
+      "name": "CrossChainTransferBatch",
+      "signature": "CrossChainTransferBatch(address[],address[],uint256[],bytes32[])"
+    },
+    {
+      "name": "CrossChainApproval",
+      "signature": "CrossChainApproval(address,address,uint256,bytes32)"
+    },
+    {
+      "name": "CrossChainApprovalBatch",
+      "signature": "CrossChainApprovalBatch(address,address[],uint256[],bytes32[])"
+    }
+  ],
+  "functions": [
+    {
+      "name": "isin",
+      "operation_type": "contract_interaction",
+      "signature": "isin()"
+    },
+    {
+      "name": "name",
+      "operation_type": "contract_interaction",
+      "signature": "name()"
+    },
+    {
+      "name": "symbol",
+      "operation_type": "contract_interaction",
+      "signature": "symbol()"
+    },
+    {
+      "name": "currency",
+      "operation_type": "contract_interaction",
+      "signature": "currency()"
+    },
+    {
+      "name": "denomination",
+      "operation_type": "contract_interaction",
+      "signature": "denomination()"
+    },
+    {
+      "name": "issueVolume",
+      "operation_type": "contract_interaction",
+      "signature": "issueVolume()"
+    },
+    {
+      "name": "couponRate",
+      "operation_type": "contract_interaction",
+      "signature": "couponRate()"
+    },
+    {
+      "name": "issueDate",
+      "operation_type": "contract_interaction",
+      "signature": "issueDate()"
+    },
+    {
+      "name": "maturityDate",
+      "operation_type": "contract_interaction",
+      "signature": "maturityDate()"
+    },
+    {
+      "name": "principalOf",
+      "operation_type": "contract_interaction",
+      "signature": "principalOf(address)"
+    },
+    {
+      "name": "allowance",
+      "operation_type": "allowance_query",
+      "signature": "allowance(address,address)"
+    },
+    {
+      "name": "approve",
+      "operation_type": "allowance_management",
+      "signature": "approve(address,uint256)"
+    },
+    {
+      "name": "decreaseAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "decreaseAllowance(address,uint256)"
+    },
+    {
+      "name": "transfer",
+      "operation_type": "token_transfer",
+      "signature": "transfer(address,uint256,bytes)"
+    },
+    {
+      "name": "transferFrom",
+      "operation_type": "delegated_token_transfer",
+      "signature": "transferFrom(address,address,uint256,bytes)"
+    },
+    {
+      "name": "batchApprove",
+      "operation_type": "contract_interaction",
+      "signature": "batchApprove(address[],uint256[])"
+    },
+    {
+      "name": "batchDecreaseAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "batchDecreaseAllowance(address[],uint256[])"
+    },
+    {
+      "name": "batchTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "batchTransfer(address[],uint256[],bytes[])"
+    },
+    {
+      "name": "batchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "batchTransferFrom(address[],address[],uint256[],bytes[])"
+    },
+    {
+      "name": "decimals",
+      "operation_type": "contract_interaction",
+      "signature": "decimals()"
+    },
+    {
+      "name": "currencyOfCoupon",
+      "operation_type": "contract_interaction",
+      "signature": "currencyOfCoupon()"
+    },
+    {
+      "name": "couponType",
+      "operation_type": "contract_interaction",
+      "signature": "couponType()"
+    },
+    {
+      "name": "couponFrequency",
+      "operation_type": "contract_interaction",
+      "signature": "couponFrequency()"
+    },
+    {
+      "name": "dayCountBasis",
+      "operation_type": "contract_interaction",
+      "signature": "dayCountBasis()"
+    },
+    {
+      "name": "crossChainApprove",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainApprove(address,uint256,bytes32,address)"
+    },
+    {
+      "name": "crossChainBatchApprove",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainBatchApprove(address[],uint256[],bytes32[],address[])"
+    },
+    {
+      "name": "crossChainDecreaseAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainDecreaseAllowance(address,uint256,bytes32,address)"
+    },
+    {
+      "name": "crossChainBatchDecreaseAllowance",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainBatchDecreaseAllowance(address[],uint256[],bytes32[],address[])"
+    },
+    {
+      "name": "crossChainTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainTransfer(address,uint256,bytes,bytes32,address)"
+    },
+    {
+      "name": "crossChainBatchTransfer",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainBatchTransfer(address[],uint256[],bytes[],bytes32[],address[])"
+    },
+    {
+      "name": "crossChainTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainTransferFrom(address,address,uint256,bytes,bytes32,address)"
+    },
+    {
+      "name": "crossChainBatchTransferFrom",
+      "operation_type": "contract_interaction",
+      "signature": "crossChainBatchTransferFrom(address[],address[],uint256[],bytes[],bytes32[],address[])"
+    },
+    {
+      "name": "totalSupply",
+      "operation_type": "supply_query",
+      "signature": "totalSupply()"
+    },
+    {
+      "name": "balance0f",
+      "operation_type": "contract_interaction",
+      "signature": "balance0f(account)"
+    },
+    {
+      "name": "call",
+      "operation_type": "contract_interaction",
+      "signature": "call(address)"
+    },
+    {
+      "name": "put",
+      "operation_type": "contract_interaction",
+      "signature": "put()"
+    },
+    {
+      "name": "convert",
+      "operation_type": "contract_interaction",
+      "signature": "convert()"
+    }
+  ],
+  "id": "ERC7092",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7092",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7092.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal introduces fixed-income financial bonds with key characteristics defined to facilitate bond issuance in the primary market and enable buying or selling bonds in the secondary market. The standard also provides cross-chain functionalities for bonds operations and management across multiple blockchains.",
+  "title": "Financial Bonds"
+}

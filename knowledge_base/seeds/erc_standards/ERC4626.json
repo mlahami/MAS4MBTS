@@ -1,0 +1,38 @@
+{
+  "id": "ERC4626",
+  "erc": "ERC-4626",
+  "eip": "EIP-4626",
+  "title": "Tokenized Vault Standard",
+  "status": "Final",
+  "category": "ERC",
+  "source": {
+    "source_id": "ethereum_ercs_website",
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-4626"
+  },
+  "summary": "ERC-4626 defines a standard interface for tokenized vaults, including deposits, withdrawals, minting, redemption, and asset/share conversions.",
+  "functions": [
+    {"name": "asset", "signature": "asset()", "operation_type": "asset_query"},
+    {"name": "totalAssets", "signature": "totalAssets()", "operation_type": "vault_accounting_query"},
+    {"name": "deposit", "signature": "deposit(uint256,address)", "operation_type": "vault_deposit"},
+    {"name": "mint", "signature": "mint(uint256,address)", "operation_type": "share_minting"},
+    {"name": "withdraw", "signature": "withdraw(uint256,address,address)", "operation_type": "vault_withdrawal"},
+    {"name": "redeem", "signature": "redeem(uint256,address,address)", "operation_type": "share_redemption"},
+    {"name": "convertToShares", "signature": "convertToShares(uint256)", "operation_type": "conversion_preview"},
+    {"name": "convertToAssets", "signature": "convertToAssets(uint256)", "operation_type": "conversion_preview"}
+  ],
+  "events": [
+    {"name": "Deposit", "signature": "Deposit(address,address,uint256,uint256)"},
+    {"name": "Withdraw", "signature": "Withdraw(address,address,address,uint256,uint256)"}
+  ],
+  "assets": [
+    {"name": "Underlying assets", "type": "vault_asset", "criticality": "high"},
+    {"name": "Vault shares", "type": "tokenized_share", "criticality": "high"},
+    {"name": "Asset/share exchange rate", "type": "accounting_rule", "criticality": "high"},
+    {"name": "Preview and conversion correctness", "type": "business_logic", "criticality": "high"}
+  ],
+  "security_properties": [
+    {"name": "Share accounting integrity", "description": "Deposit, mint, withdraw, and redeem operations must preserve asset/share accounting."},
+    {"name": "Conversion consistency", "description": "Preview and conversion functions must be consistent with executed operations."},
+    {"name": "Withdrawal authorization", "description": "Only authorized actors can withdraw or redeem on behalf of an owner."}
+  ]
+}

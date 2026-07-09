@@ -1,0 +1,44 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7507",
+  "erc": "ERC-7507",
+  "events": [
+    {
+      "name": "UpdateUser",
+      "signature": "UpdateUser(uint256,address,uint64)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "userExpires",
+      "operation_type": "contract_interaction",
+      "signature": "userExpires(uint256,address)"
+    },
+    {
+      "name": "setUser",
+      "operation_type": "contract_interaction",
+      "signature": "setUser(uint256,address,uint64)"
+    },
+    {
+      "name": "deployContractFixture",
+      "operation_type": "contract_interaction",
+      "signature": "deployContractFixture()"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC7507",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7507",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7507.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard is an extension of [ERC-721](./eip-721.md). It proposes a new role `user` in addition to `owner` for a token. A token can have multiple users under separate expiration time. It allows the subscription model where an NFT can be subscribed non-exclusively by different users.",
+  "title": "Multi-User NFT Extension"
+}

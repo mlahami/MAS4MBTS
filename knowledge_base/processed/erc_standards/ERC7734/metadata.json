@@ -1,0 +1,52 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-7734",
+  "erc": "ERC-7734",
+  "events": [
+    {
+      "name": "IdentityCreated",
+      "signature": "IdentityCreated(address,bytes32,uint256)"
+    },
+    {
+      "name": "IdentityVerified",
+      "signature": "IdentityVerified(address,bytes32[2],uint256)"
+    },
+    {
+      "name": "IdentityRevoked",
+      "signature": "IdentityRevoked(address,uint256)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "createIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "createIdentity(bytes32)"
+    },
+    {
+      "name": "verifyIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "verifyIdentity(bytes32[2])"
+    },
+    {
+      "name": "revokeIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "revokeIdentity()"
+    },
+    {
+      "name": "getIdentity",
+      "operation_type": "contract_interaction",
+      "signature": "getIdentity(address)"
+    }
+  ],
+  "id": "ERC7734",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-7734",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-7734.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This proposal introduces a standard for decentralized identity verification (DID) on the blockchain. The standard leverages cryptographic hashes to represent identity proofs and events for transparency and traceability. By emphasizing simplicity, privacy, and user control, this proposal aims to reduce overhead for developers and users, ensuring seamless integration into decentralized applications (dApps). It offers a minimalistic solution that keeps identity structure simple and enables off-chain mechanisms for detailed identity management and verification.",
+  "title": "Decentralized Identity Verification (DID)"
+}

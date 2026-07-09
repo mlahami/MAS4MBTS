@@ -1,0 +1,16 @@
+{
+  "category": "Predictable Random Number Generator",
+  "cwe": "CWE-336",
+  "description": "Weak randomness sources refer to the use of predictable or insecure sources of randomness, such as block timestamps or block hashes. This can lead to: - Exploitation of the contract's logic. - Loss of funds or data. - Reduced trust in the contract's security.",
+  "id": "VULN-OWASP-SCWE-024",
+  "name": "Weak Randomness Sources",
+  "owasp": "SCWE-024",
+  "remediation": "- **Use secure randomness:** Leverage secure randomness sources like Chainlink VRF. - **Avoid block variables:** Do not rely on block timestamps or hashes for randomness. - **Test thoroughly:** Conduct extensive testing to ensure randomness is secure.",
+  "severity": "unknown",
+  "source": {
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\owasp\\docs\\SCWE\\SCSVS-BLOCK\\SCWE-024.md",
+    "record_family": "scwe",
+    "source_id": "owasp_smart_contract_security"
+  },
+  "swc": "N/A"
+}

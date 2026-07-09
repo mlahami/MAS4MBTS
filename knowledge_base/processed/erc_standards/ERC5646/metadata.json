@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-5646",
+  "erc": "ERC-5646",
+  "events": [],
+  "functions": [
+    {
+      "name": "getStateFingerprint",
+      "operation_type": "contract_interaction",
+      "signature": "getStateFingerprint(uint256)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC5646",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-5646",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-5646.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Final",
+  "summary": "This specification defines the minimum interface required to unambiguously identify the state of a mutable token without knowledge of implementation details.",
+  "title": "Token State Fingerprint"
+}

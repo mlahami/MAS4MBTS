@@ -1,0 +1,29 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-1922",
+  "erc": "ERC-1922",
+  "events": [],
+  "functions": [
+    {
+      "name": "verify",
+      "operation_type": "contract_interaction",
+      "signature": "verify(uint256[],uint256[],bytes32)"
+    },
+    {
+      "name": "supportsInterface",
+      "operation_type": "contract_interaction",
+      "signature": "supportsInterface(bytes4)"
+    }
+  ],
+  "id": "ERC1922",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-1922",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-1922.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Stagnant",
+  "summary": "The following standard allows for the implementation of a standard contract API for the verification of zk-SNARKs (\"Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge\"), also known as \"proofs\", \"arguments\", or \"commitments\". This standard provides basic functionality to load all necessary parameters for the verification of any zk-SNARK into a verifier contract, so that the proof may ultimately return a `true` or `false` response; corresponding to whether it has been verified or not verified.",
+  "title": "zk-SNARK Verifier Standard"
+}

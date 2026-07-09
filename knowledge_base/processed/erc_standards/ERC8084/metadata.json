@@ -1,0 +1,59 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-8084",
+  "erc": "ERC-8084",
+  "events": [
+    {
+      "name": "CircuitMetadataUpdated",
+      "signature": "CircuitMetadataUpdated(bytes32,uint64,bytes4)"
+    }
+  ],
+  "functions": [
+    {
+      "name": "circuitId",
+      "operation_type": "contract_interaction",
+      "signature": "circuitId()"
+    },
+    {
+      "name": "circuitVersion",
+      "operation_type": "contract_interaction",
+      "signature": "circuitVersion()"
+    },
+    {
+      "name": "publicInputsSchemaHash",
+      "operation_type": "contract_interaction",
+      "signature": "publicInputsSchemaHash()"
+    },
+    {
+      "name": "publicInputsSchemaURI",
+      "operation_type": "contract_interaction",
+      "signature": "publicInputsSchemaURI()"
+    },
+    {
+      "name": "verificationKeyURI",
+      "operation_type": "contract_interaction",
+      "signature": "verificationKeyURI()"
+    },
+    {
+      "name": "proofSystem",
+      "operation_type": "contract_interaction",
+      "signature": "proofSystem()"
+    },
+    {
+      "name": "_adminUpdate",
+      "operation_type": "contract_interaction",
+      "signature": "_adminUpdate(bytes32,uint64,bytes32,string,string,bytes4)"
+    }
+  ],
+  "id": "ERC8084",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-8084",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-8084.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This standard formalizes ZKMeta, a minimal interface for contracts that verify or depend on zero-knowledge proofs. It defines how to expose a proof-system identifier, circuit identifier, circuit version, public-input schema (hash and URI), and verification-key URI. The goal is to enable interoperable wallet, relayer, explorer, rollup, and dApp tooling without prescribing any specific proof format.",
+  "title": "Zero-knowledge proof metadata"
+}

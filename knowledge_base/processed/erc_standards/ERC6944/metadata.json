@@ -1,0 +1,24 @@
+{
+  "assets": [],
+  "category": "ERC",
+  "eip": "EIP-6944",
+  "erc": "ERC-6944",
+  "events": [],
+  "functions": [
+    {
+      "name": "resolveMode",
+      "operation_type": "contract_interaction",
+      "signature": "resolveMode()"
+    }
+  ],
+  "id": "ERC6944",
+  "security_properties": [],
+  "source": {
+    "canonical_url": "https://eips.ethereum.org/EIPS/eip-6944",
+    "raw_path": "D:\\Recherche\\MBTSecurityTesting for Smart contracts\\MAS4MBTS\\knowledge_base\\raw\\ercs\\ERCS\\erc-6944.md",
+    "source_id": "ethereum_ercs_repo"
+  },
+  "status": "Draft",
+  "summary": "This EIP adds a new [ERC-4804](./eip-4804.md) `resolveMode` to resolve [ERC-5219](./eip-5219.md) contract resource requests.",
+  "title": "ERC-5219 Resolve Mode"
+}
