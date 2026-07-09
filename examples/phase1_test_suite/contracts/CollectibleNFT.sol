@@ -19,16 +19,4 @@ contract CollectibleNFT is ERC721, Ownable {
     function setBaseURI(string memory newBaseURI) public onlyOwner {
         baseTokenURI = newBaseURI;
     }
-
-    function transferFrom(address from, address to, uint256 tokenId) public override {
-        super.transferFrom(from, to, tokenId);
-    }
-
-    function safeTransferFrom(address from, address to, uint256 tokenId) public override {
-        super.safeTransferFrom(from, to, tokenId);
-    }
-
-    function setApprovalForAll(address operator, bool approved) public override {
-        super.setApprovalForAll(operator, approved);
-    }
 }
