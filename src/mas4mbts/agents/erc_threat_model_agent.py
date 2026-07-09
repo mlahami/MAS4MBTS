@@ -1,7 +1,7 @@
 """ERC threat model generation agent.
 
-This module is intentionally usable before the full LLM/RAG stack is installed:
-it provides a deterministic ERC-20 fallback and a LangGraph-ready structure.
+This module uses the versioned RAG knowledge base under ``knowledge_base/`` and
+provides deterministic ERC-aware threat model generation.
 """
 
 from __future__ import annotations
@@ -17,7 +17,6 @@ from src.mas4mbts.knowledge.hybrid_retriever import retrieve as retrieve_knowled
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-KNOWLEDGE_DIR = PROJECT_ROOT / "data" / "knowledge"
 SCHEMA_PATH = PROJECT_ROOT / "src" / "mas4mbts" / "schemas" / "etm_schema.json"
 
 
@@ -28,14 +27,6 @@ def load_json(path: Path) -> dict[str, Any]:
 def write_json(path: Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
-
-
-def load_knowledge() -> dict[str, Any]:
-    return {
-        "erc20": (KNOWLEDGE_DIR / "erc20.md").read_text(encoding="utf-8"),
-        "owasp": (KNOWLEDGE_DIR / "owasp_threat_modeling.md").read_text(encoding="utf-8"),
-        "patterns": load_json(KNOWLEDGE_DIR / "smart_contract_threat_patterns.json"),
-    }
 
 
 def normalize_erc_id(value: str | None) -> str:
@@ -1016,7 +1007,6 @@ def run_agent(
     generation_mode: str = "deterministic",
 ) -> dict[str, Any]:
     contract_context = load_json(input_path)
-    _knowledge = load_knowledge()
 
     state = run_agent_pipeline(contract_context, validate=validate, generation_mode=generation_mode)
     model = state["final_threat_model"]
@@ -1034,8 +1024,6 @@ def run_agent_from_context(
     state_output_path: Path | None = None,
     generation_mode: str = "deterministic",
 ) -> dict[str, Any]:
-    _knowledge = load_knowledge()
-
     state = run_agent_pipeline(contract_context, validate=validate, generation_mode=generation_mode)
     model = state["final_threat_model"]
 
