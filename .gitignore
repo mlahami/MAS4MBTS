@@ -1,7 +1,14 @@
 __pycache__/
 *.py[cod]
 .venv/
+node_modules/
 outputs/
+examples/*.generated.json
+examples/*.comparison_report.json
+examples/phase1_test_suite/contexts/operator_token_777.context.json
+examples/phase1_test_suite/threat_models/operator_token_777.threat_model.json
+examples/phase1_test_suite/agent_states/
+examples/phase1_test_suite/validation_reports/
 .env
 .env.*
 !.env.example
