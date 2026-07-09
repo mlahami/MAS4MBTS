@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 node_modules/
 outputs/
+docs/
 examples/*.generated.json
 examples/*.comparison_report.json
 examples/phase1_test_suite/contexts/operator_token_777.context.json
